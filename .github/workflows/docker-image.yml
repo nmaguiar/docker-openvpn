@@ -28,6 +28,5 @@ jobs:
       name: Build and push
       with:
         platforms: linux/amd64,linux/arm64
-        context: "{{defaultContext}}:master"
         push: true
         tags: nmaguiar/openvpn:build
