@@ -1,3 +1,12 @@
+Fork of the original [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn) to keep the image updated and include necessary changes.
+
+Docker registry: [nmaguiar/openvpn](https://hub.docker.com/r/nmaguiar/openvpn/)
+
+List of changes:
+- [Use "data-ciphers" instead of "ciphers"](https://github.com/nmaguiar/docker-openvpn/issues/1)
+
+----
+
 # OpenVPN for Docker
 
 [![Build Status](https://travis-ci.org/kylemanna/docker-openvpn.svg)](https://travis-ci.org/kylemanna/docker-openvpn)
