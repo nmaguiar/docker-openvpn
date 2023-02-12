@@ -7,11 +7,11 @@ FROM alpine:latest
 LABEL maintainer="Nuno Aguiar <nmaguiar@gmail.com>"
 
 # Using stable repo except pamtester
-RUN apk add --update openvpn iptables bash easy-rsa openvpn-auth-pam google-authenticator libqrencode && \
+RUN apk add --no-cache --update openvpn iptables bash easy-rsa openvpn-auth-pam google-authenticator libqrencode && \
     ln -s /usr/share/easy-rsa/easyrsa /usr/local/bin && \
-    rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/* && \
     echo "http://dl-cdn.alpinelinux.org/alpine/edge/testing/" >> /etc/apk/repositories && \
-    apk add --update pamtester
+    apk add --no-cache --update pamtester && \
+    rm -rf /tmp/* /var/tmp/* /var/cache/apk/* /var/cache/distfiles/*
 
 # Needed by scripts
 ENV OPENVPN=/etc/openvpn
