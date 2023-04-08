@@ -1,8 +1,20 @@
-Fork of the original [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn) to keep the image updated and include necessary changes.
+This is a fork of the original [kylemanna/docker-openvpn](https://github.com/kylemanna/docker-openvpn) to keep the image updated and include necessary changes.
 
-Docker registry: [nmaguiar/openvpn](https://hub.docker.com/r/nmaguiar/openvpn/)
+## Current docker image build
 
-List of changes:
+Each week a new build of the image is stored in the docker hub registry: [nmaguiar/openvpn](https://hub.docker.com/r/nmaguiar/openvpn/). 
+
+There are three main tag types:
+
+| Tag | Description |
+|-----|-------------|
+| build | The weekly automatic build with the latest lib updates. |
+| latest | The latest humanly tested build that can be considered stable. |
+| [yyyyMMdd] | A previous latest if there is ever a need to rollback to a previously stable build. |
+
+Status of the latest build: [![Docker Image CI](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml)
+
+## List of changes
 - [Use "data-ciphers" instead of "ciphers"](https://github.com/nmaguiar/docker-openvpn/issues/1)
 
 ----
