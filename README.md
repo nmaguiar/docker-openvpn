@@ -12,7 +12,14 @@ There are three main tag types:
 | latest | The latest humanly tested build that can be considered stable. |
 | [yyyyMMdd] | A previous latest if there is ever a need to rollback to a previously stable build. |
 
-Status of the latest build: [![Docker Image CI](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml)
+Status of the latest build: 
+
+[![Docker Image CI](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml)
+
+Security scans to latest and build container images:
+
+![Docker Image Scan](.github/sec-build.svg)
+![Docker Image Scan](.github/sec-latest.svg)
 
 ## List of changes
 - [Use "data-ciphers" instead of "ciphers"](https://github.com/nmaguiar/docker-openvpn/issues/1)
