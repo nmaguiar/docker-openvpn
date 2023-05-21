@@ -1,0 +1,25 @@
+on: [push]
+
+jobs:
+  Test:
+    runs-on: ubuntu-latest
+    name: Scan images
+    steps:
+    - uses: actions/checkout@v3
+    - uses: openaf/ojob-action@v1
+      with:
+        ojob: 'ojob.io/sec/genSecBadge'
+        args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg'
+        dist: 't8'
+    - uses: openaf/ojob-action@v1
+      with:
+        ojob: 'ojob.io/sec/genSecBadge'
+        args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg'
+        dist: 't8'
+    - run: |
+        git config --global user.email "openaf@users.noreply.github.com"
+        git config --global user.name "OpenAF"
+        git add .github/sec-latest.svg
+        git add .github/sec-build.svg
+        git commit -m "update badge"
+        git push
