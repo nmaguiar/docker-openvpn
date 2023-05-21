@@ -7,7 +7,7 @@ on:
     - cron: '00 1 * * 6'
 
 jobs:
-  Test:
+  Scan-Images:
     runs-on: ubuntu-latest
     name: Scan images
     steps:
@@ -25,7 +25,9 @@ jobs:
     - run: |
         git config --global user.email "openaf@users.noreply.github.com"
         git config --global user.name "OpenAF"
-        git add .github/sec-latest.svg
-        git add .github/sec-build.svg
-        git commit -m "update badge"
-        git push
+        if [[ $(git status --porcelain) ]]; then
+          git add .github/sec-latest.svg
+          git add .github/sec-build.svg
+          git commit -m "update badge"
+          git push
+        fi
