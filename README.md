@@ -18,7 +18,7 @@ Status of the latest build:
 
 Security scans to latest and build container images:
 
-![Docker Image Scan](.github/sec-build.svg)
+![Docker Image Scan](.github/sec-build.svg)<br>
 ![Docker Image Scan](.github/sec-latest.svg)
 
 ## List of changes
