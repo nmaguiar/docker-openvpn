@@ -1,7 +1,6 @@
 name: Scan Images
 
 on:
-  push:
   schedule:
   - cron: '00 7 * * *'
 
