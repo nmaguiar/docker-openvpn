@@ -13,19 +13,33 @@ jobs:
     name       : Scan images
     steps      :
     - uses: actions/checkout@v3
+      name: Checkoout
+
+    - name: Cache OpenAF runtime
+      uses: actions/cache@v3
+      with:
+        key : oaf-nightly
+        path: /tmp/oaf
+
     - uses: openaf/ojob-action@v1
+      name: Check latest
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg'
         dist: 't8'
+
     - uses: openaf/ojob-action@v1
+      name: Check build
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg'
         dist: 't8'
-    - run: |
+
+    - name: Update badges
+      run : |
         git config user.name github-actions
         git config user.email github-actions@github.com
+        if [[ $(git status --porcelain) ]]; then
           git add .github/sec-latest.svg
           git add .github/sec-build.svg
           git commit -m "update badge"
