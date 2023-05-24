@@ -64,7 +64,7 @@ jobs:
       run : |
         git config user.name github-actions
         git config user.email github-actions@github.com
-        if [[ $(git status --porcelain) ]]; then
+        if [[ -n "$(git status --porcelain)" ]]; then
           git add .github/sec-latest.svg
           git add .github/sec-build.svg
           git commit -m "update badge"
