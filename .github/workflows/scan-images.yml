@@ -19,7 +19,7 @@ jobs:
     - name: Cache OpenAF runtime
       uses: actions/cache@v3
       with:
-        key : oaf-nightly
+        key : oaf-t8
         path: /tmp/oaf
 
     - uses: openaf/ojob-action@v3
