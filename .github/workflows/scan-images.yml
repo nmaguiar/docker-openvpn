@@ -10,6 +10,7 @@ jobs:
     runs-on    : ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     name       : Scan images
     steps      :
     - uses: actions/checkout@v3
@@ -21,27 +22,23 @@ jobs:
         key : oaf-nightly
         path: /tmp/oaf
 
-    - uses: openaf/ojob-action@v1
+    - uses: openaf/ojob-action@v3
       name: Check latest
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg'
         dist: 't8'
 
-    - uses: openaf/ojob-action@v1
+    - uses: openaf/ojob-action@v3
       name: Check build
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg'
         dist: 't8'
 
-    - name: Update badges
-      run : |
-        git config user.name github-actions
-        git config user.email github-actions@github.com
-        if [[ -n "$(git status --porcelain)" ]]; then
-          git add .github/sec-latest.svg
-          git add .github/sec-build.svg
-          git commit -m "update badge"
-          git push
-        fi
+    - uses: openaf/ojob-action@v3
+      name: Update badges
+      with:
+        ojob: 'ojob.io/git/githubCheckIn'
+        args: 'message="update\ badge"'
+        dist: 't8'
