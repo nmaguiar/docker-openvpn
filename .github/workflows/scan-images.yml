@@ -38,7 +38,9 @@ jobs:
 
     - uses: openaf/ojob-action@v3
       name: Update badges
+      env :
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        ojob: 'ojob.io/git/githubCheckIn'
+        ojob: 'ojob.io/git/hub/contentIn'
         args: 'message="update\ badge"'
         dist: 't8'
