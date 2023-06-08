@@ -22,21 +22,21 @@ jobs:
         key : oaf-t8
         path: /tmp/oaf
 
-    - uses: openaf/ojob-action@v3
+    - uses: openaf/ojob-action@v4
       name: Check latest
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg reportFile=.github/sec-latest.yaml'
         dist: 't8'
 
-    - uses: openaf/ojob-action@v3
+    - uses: openaf/ojob-action@v4
       name: Check build
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
         dist: 't8'
 
-    - uses: openaf/ojob-action@v3
+    - uses: openaf/ojob-action@v4
       name: Update badges
       env :
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
