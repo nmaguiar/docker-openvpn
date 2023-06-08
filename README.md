@@ -18,8 +18,8 @@ Status of the latest build:
 
 Security scans to latest and build container images:
 
-![Docker Image Scan](.github/sec-build.svg)<br>
-![Docker Image Scan](.github/sec-latest.svg)
+[![Docker Image Scan](.github/sec-build.svg)](.github/sec-build.yaml)<br>
+[![Docker Image Scan](.github/sec-latest.svg)](.github/sec-latest.yaml)
 
 ## List of changes
 - [Use "data-ciphers" instead of "ciphers"](https://github.com/nmaguiar/docker-openvpn/issues/1)
