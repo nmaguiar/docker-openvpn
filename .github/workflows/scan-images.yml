@@ -29,6 +29,12 @@ jobs:
         args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg reportFile=.github/sec-latest.yaml'
         dist: 't8'
 
+    - name: Generate sec-latest.md
+      uses: openaf/ojob-action@v4
+      with:
+        ojob: 'ojob.io/util/toMDTree'
+        args: 'inputFile=.github/sec-latest.yaml file=.github/sec-latest.md'
+
     - uses: openaf/ojob-action@v4
       name: Check build
       with:
@@ -36,11 +42,17 @@ jobs:
         args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
         dist: 't8'
 
+    - name: Generate sec-latest.md
+      uses: openaf/ojob-action@v4
+      with:
+        ojob: 'ojob.io/util/toMDTree'
+        args: 'inputFile=.github/sec-build.yaml file=.github/sec-build.md'
+
     - uses: openaf/ojob-action@v4
       name: Update badges
       env :
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         ojob: 'ojob.io/git/hub/contentIn'
-        args: 'message="update\ badge" paths=.github/sec-latest.svg,.github/sec-build.svg,.github/sec-latest.yaml,.github/sec-build.yaml'
+        args: 'message="update\ badge" paths=.github/'
         dist: 't8'
