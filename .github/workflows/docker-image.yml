@@ -35,6 +35,7 @@ jobs:
     runs-on    : ubuntu-latest
     permissions:
       contents: write
+      pull-requests: write
     name       : Scan images
     steps      :
     - uses: actions/checkout@v3
@@ -46,25 +47,37 @@ jobs:
         key : oaf-t8
         path: /tmp/oaf
 
-    - uses: openaf/ojob-action@v3
+    - uses: openaf/ojob-action@v4
       name: Check latest
       with:
         ojob: 'ojob.io/sec/genSecBadge'
-        args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg'
+        args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg reportFile=.github/sec-latest.yaml'
         dist: 't8'
 
-    - uses: openaf/ojob-action@v3
+    - name: Generate sec-latest.md
+      uses: openaf/ojob-action@v4
+      with:
+        ojob: 'ojob.io/util/toMDTree'
+        args: 'inputFile=.github/sec-latest.yaml file=.github/sec-latest.md'
+
+    - uses: openaf/ojob-action@v4
       name: Check build
       with:
         ojob: 'ojob.io/sec/genSecBadge'
-        args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg'
+        args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
         dist: 't8'
 
-    - name: Update badges
-      uses: openaf/ojob-action@v3
+    - name: Generate sec-build.md
+      uses: openaf/ojob-action@v4
+      with:
+        ojob: 'ojob.io/util/toMDTree'
+        args: 'inputFile=.github/sec-build.yaml file=.github/sec-build.md'
+
+    - uses: openaf/ojob-action@v4
+      name: Update badges
       env :
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
         ojob: 'ojob.io/git/hub/contentIn'
-        args: 'message="Update\ badge"'
+        args: 'message="update\ badge" paths=.github/'
         dist: 't8'
