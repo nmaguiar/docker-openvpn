@@ -42,7 +42,7 @@ jobs:
         args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
         dist: 't8'
 
-    - name: Generate sec-latest.md
+    - name: Generate sec-build.md
       uses: openaf/ojob-action@v4
       with:
         ojob: 'ojob.io/util/toMDTree'
