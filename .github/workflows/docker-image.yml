@@ -3,8 +3,12 @@ name: Docker Image CI
 on:
   push:
     branches: [ "master" ]
+    paths-ignore:
+    - '.github/**'
   pull_request:
     branches: [ "master" ]
+    paths-ignore:
+    - '.github/**'
   schedule:
     - cron: '30 0 * * 6'
   workflow_dispatch:
