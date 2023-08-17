@@ -37,6 +37,7 @@ jobs:
         tags: nmaguiar/openvpn:build
 
   Scan-Images:
+    needs      : build
     runs-on    : ubuntu-latest
     permissions:
       contents: write
