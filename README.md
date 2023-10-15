@@ -21,6 +21,48 @@ Security scans to latest and build container images:
 [![Docker Image Scan](.github/sec-build.svg)](.github/sec-build.md)<br>
 [![Docker Image Scan](.github/sec-latest.svg)](.github/sec-latest.md)
 
+## Setup and creating scripts
+
+### Quick setup
+
+```bash
+# Install OpenAF if you don't have it already
+curl https://openaf.io/install.sh | sh
+
+# Setup OpenVPN (as root)
+mkdir /opt/vpn
+ojob ojob.io/docker/ovpnserver url=udp://my.public.address.or.ip path=/opt/vpn volume=/etc/openvpn dns=10.1.2.3 subnet=10.200.0.0/16 keysize=4096
+
+# Be prepared to answer interactive questions and enter the main certificate password. It might take some minutes to generate the key.
+# In the end a set of scripts will be created also
+```
+
+Options for ojob.io/docker/ovpnserver ([see more](https://ojob.io/docker/ovpnserver.html)):
+
+| Option | Description |
+|--------|-------------|
+| url	| The vpn external url (either "tcp://some.address" or "udp://some.address") |
+| path | Path where the scripts to use the vpn will be created (defaults to ".") |
+| volume | Volume where the openvpn configuration will be stored (defaults to a docker volume openvpn) |
+| dns | Use a specific dns server instead of the Google DNS servers (e.g. 1.2.3.4) |
+| default |	If default=true all traffic will be redirect to this vpn (default is false) |
+| nat | If nat=false vpn clients will not be NATed (default is true) |
+| subnet | Using a specific subnet for the vpn clients (e.g. 10.200.0.0/16) |
+| route	| Specify a specific route for VPN clients (e.g. "192.168.1.0 255.255.255.0") |
+| keysize	| Specify a RSA keysize different from the 4096 default. |
+| pass | Provide the CA password (if not defined it will be prompted; requires unix expect) |
+
+Generated scripts:
+
+| Script | Description | Example | 
+|--------|-------------|---------|
+| openvpn_start | Starts the openvpn docker container	| ./openvpn_start.sh |
+| openvpn_stop | Stops the openvpn docker container | ./openvpn_stop.sh |
+| openvpn_add	| Creates a new vpn certificate	| ./openvpn_add.sh exampleUser |
+| openvpn_del	| Delete a previously created vpn certificate	| ./openvpn_del.sh exampleUser |
+| openvpn_list | List the current enabled vpn certificates	| ./openvpn_list.sh |
+| openvpn_destroy	| Destroys the openvpn docker container	| ./openvpn_destroy.sh |
+
 ## List of changes
 - [Use "data-ciphers" instead of "ciphers"](https://github.com/nmaguiar/docker-openvpn/issues/1)
 
