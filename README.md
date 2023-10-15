@@ -38,6 +38,10 @@ ojob ojob.io/docker/ovpnserver url=udp://my.public.address.or.ip path=/opt/vpn v
 
 # Start the openvpn
 ./openvpn_start.sh
+
+# Add user
+./openvpn_add.sh testuser
+# Use the testuser.ovpn file created with an OpenVPN client to connect
 ```
 
 Options for ojob.io/docker/ovpnserver ([see more](https://ojob.io/docker/ovpnserver.html)):
