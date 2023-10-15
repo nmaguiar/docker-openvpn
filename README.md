@@ -35,6 +35,9 @@ ojob ojob.io/docker/ovpnserver url=udp://my.public.address.or.ip path=/opt/vpn v
 
 # Be prepared to answer interactive questions and enter the main certificate password. It might take some minutes to generate the key.
 # In the end a set of scripts will be created also
+
+# Start the openvpn
+./openvpn_start.sh
 ```
 
 Options for ojob.io/docker/ovpnserver ([see more](https://ojob.io/docker/ovpnserver.html)):
