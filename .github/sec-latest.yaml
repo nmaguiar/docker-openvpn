@@ -200,3 +200,91 @@
     - https://www.openssl.org/news/secadv/20231106.txt
     PublishedDate: '2023-11-06T16:15:00Z'
     LastModifiedDate: '2023-11-07T14:15:00Z'
+  - VulnerabilityID: CVE-2023-46849
+    PkgID: openvpn@2.6.5-r0
+    PkgName: openvpn
+    InstalledVersion: 2.6.5-r0
+    FixedVersion: 2.6.7-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:880792947fa009b1389e247aea10c6311f3c29eec43a2ec55329d02409b44cbe
+      DiffID: sha256:38d0c76590c0e3892109b5d2b87bf2f83a647f07fc7024abb0b0fa366cf4959d
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-46849
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: Using the --fragment option in certain configuration setups OpenVPN ve ...
+    Description: Using the --fragment option in certain configuration setups OpenVPN version 2.6.0 to 2.6.6 allows an attacker to trigger a divide by zero behaviour which could cause an application crash, leading to a denial of service.
+    Severity: UNKNOWN
+    References:
+    - https://community.openvpn.net/openvpn/wiki/CVE-2023-46849
+    - https://openvpn.net/security-advisory/access-server-security-update-cve-2023-46849-cve-2023-46850/
+    PublishedDate: '2023-11-11T01:15:00Z'
+    LastModifiedDate: '2023-11-13T03:16:00Z'
+  - VulnerabilityID: CVE-2023-46850
+    PkgID: openvpn@2.6.5-r0
+    PkgName: openvpn
+    InstalledVersion: 2.6.5-r0
+    FixedVersion: 2.6.7-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:880792947fa009b1389e247aea10c6311f3c29eec43a2ec55329d02409b44cbe
+      DiffID: sha256:38d0c76590c0e3892109b5d2b87bf2f83a647f07fc7024abb0b0fa366cf4959d
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-46850
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: Use after free in OpenVPN version 2.6.0 to 2.6.6 may lead to undefined ...
+    Description: Use after free in OpenVPN version 2.6.0 to 2.6.6 may lead to undefined behavoir, leaking memory buffers or remote execution when sending network buffers to a remote peer.
+    Severity: UNKNOWN
+    References:
+    - https://community.openvpn.net/openvpn/wiki/CVE-2023-46850
+    - https://openvpn.net/security-advisory/access-server-security-update-cve-2023-46849-cve-2023-46850/
+    PublishedDate: '2023-11-11T01:15:00Z'
+    LastModifiedDate: '2023-11-13T03:16:00Z'
+  - VulnerabilityID: CVE-2023-46849
+    PkgID: openvpn-auth-pam@2.6.5-r0
+    PkgName: openvpn-auth-pam
+    InstalledVersion: 2.6.5-r0
+    FixedVersion: 2.6.7-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:880792947fa009b1389e247aea10c6311f3c29eec43a2ec55329d02409b44cbe
+      DiffID: sha256:38d0c76590c0e3892109b5d2b87bf2f83a647f07fc7024abb0b0fa366cf4959d
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-46849
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: Using the --fragment option in certain configuration setups OpenVPN ve ...
+    Description: Using the --fragment option in certain configuration setups OpenVPN version 2.6.0 to 2.6.6 allows an attacker to trigger a divide by zero behaviour which could cause an application crash, leading to a denial of service.
+    Severity: UNKNOWN
+    References:
+    - https://community.openvpn.net/openvpn/wiki/CVE-2023-46849
+    - https://openvpn.net/security-advisory/access-server-security-update-cve-2023-46849-cve-2023-46850/
+    PublishedDate: '2023-11-11T01:15:00Z'
+    LastModifiedDate: '2023-11-13T03:16:00Z'
+  - VulnerabilityID: CVE-2023-46850
+    PkgID: openvpn-auth-pam@2.6.5-r0
+    PkgName: openvpn-auth-pam
+    InstalledVersion: 2.6.5-r0
+    FixedVersion: 2.6.7-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:880792947fa009b1389e247aea10c6311f3c29eec43a2ec55329d02409b44cbe
+      DiffID: sha256:38d0c76590c0e3892109b5d2b87bf2f83a647f07fc7024abb0b0fa366cf4959d
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-46850
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: Use after free in OpenVPN version 2.6.0 to 2.6.6 may lead to undefined ...
+    Description: Use after free in OpenVPN version 2.6.0 to 2.6.6 may lead to undefined behavoir, leaking memory buffers or remote execution when sending network buffers to a remote peer.
+    Severity: UNKNOWN
+    References:
+    - https://community.openvpn.net/openvpn/wiki/CVE-2023-46850
+    - https://openvpn.net/security-advisory/access-server-security-update-cve-2023-46849-cve-2023-46850/
+    PublishedDate: '2023-11-11T01:15:00Z'
+    LastModifiedDate: '2023-11-13T03:16:00Z'
