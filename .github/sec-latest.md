@@ -19,7 +19,7 @@
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Title           : pam: allowing unpriledged user to block another user
+                              ├ Title           : pam: allowing unprivileged user to block another user
                               │                   namespace 
                               ├ Description     : linux-pam (aka Linux PAM) before 1.6.0 allows attackers
                               │                   to cause a denial of service (blocked login process) via
