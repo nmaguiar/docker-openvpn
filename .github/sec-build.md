@@ -88,10 +88,10 @@
                         │     ├ InstalledVersion: 1.5.3-r7 
                         │     ├ FixedVersion    : 1.6.0-r0 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:caebf7c80eedc271caace59991d85581d4a2e12a
-                        │     │                  │         7dbcf4d7952daaaea20e7b01 
-                        │     │                  ╰ DiffID: sha256:9280c4a6b44d731fa5b26867a36d919c2fbdf9c2
-                        │     │                            031b5887fd061132d719ffdf 
+                        │     ├ Layer            ╭ Digest: sha256:a8a18f842bedfc1087b071c221aa9ce70753eecb
+                        │     │                  │         68bc137d0fbd21f25d37140f 
+                        │     │                  ╰ DiffID: sha256:bd2590d2b5f8edcca66d0ab379273f4d5a0eba90
+                        │     │                            76488517393fd6788cbb1902 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-22365 
                         │     ├ DataSource       ╭ ID  : alpine 
