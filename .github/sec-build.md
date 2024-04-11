@@ -96,50 +96,72 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Title           : Issue summary: Some non-default TLS server
-                        │     │                   configurations can cause un ... 
+                        │     ├ Title           : openssl: Unbounded memory growth with session handling
+                        │     │                   in TLSv1.3 
                         │     ├ Description     : Issue summary: Some non-default TLS server
-                        │     │                   configurations can cause unbounded memory growth when
-                        │     │                   processing TLSv1.3 sessions  Impact summary: An attacker may
-                        │     │                   exploit certain server configurations to trigger unbounded
-                        │     │                   memory growth that would lead to a Denial of Service  This
-                        │     │                   problem can occur in TLSv1.3 if the non-default
-                        │     │                   SSL_OP_NO_TICKET option is being used (but not if early_data
-                        │     │                   support is also configured and the default anti-replay
-                        │     │                   protection is in use). In this case, under certain
-                        │     │                   conditions, the session cache can get into an incorrect state
-                        │     │                    and it will fail to flush properly as it fills. The session
-                        │     │                   cache will continue to grow in an unbounded manner. A
+                        │     │                   configurations can cause unbounded
+                        │     │                   memory growth when processing TLSv1.3 sessions
+                        │     │                   
+                        │     │                   Impact summary: An attacker may exploit certain server
+                        │     │                   configurations to trigger
+                        │     │                   unbounded memory growth that would lead to a Denial of
+                        │     │                   Service
+                        │     │                   
+                        │     │                   This problem can occur in TLSv1.3 if the non-default
+                        │     │                   SSL_OP_NO_TICKET option is
+                        │     │                   being used (but not if early_data support is also configured
+                        │     │                   and the default
+                        │     │                   anti-replay protection is in use). In this case, under
+                        │     │                   certain conditions, the
+                        │     │                   session cache can get into an incorrect state and it will
+                        │     │                   fail to flush properly
+                        │     │                   as it fills. The session cache will continue to grow in an
+                        │     │                   unbounded manner. A
                         │     │                   malicious client could deliberately create the scenario for
-                        │     │                   this failure to force a Denial of Service. It may also happen
-                        │     │                    by accident in normal operation.  This issue only affects
-                        │     │                   TLS servers supporting TLSv1.3. It does not affect TLS
-                        │     │                   clients.  The FIPS modules in 3.2, 3.1 and 3.0 are not
-                        │     │                   affected by this issue. OpenSSL 1.0.2 is also not affected by
-                        │     │                    this issue. 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ─ ubuntu: 2 
-                        │     ╰ References       ╭ [0]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE
-                        │                        │      -2024-2511 
-                        │                        ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │                        │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │                        ├ [2]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │                        │      1c07201ad9374c1cd9ac5263bdf35bce
-                        │                        │      (openssl-3.1.y) 
-                        │                        ├ [3]: https://github.com/openssl/openssl/commit/b52867a9
-                        │                        │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │                        ├ [4]: https://github.com/openssl/openssl/commit/b52867a9
-                        │                        │      f618bb955bed2a3ce3db4d4f97ed8e5d
-                        │                        │      (openssl-3.0.y) 
-                        │                        ├ [5]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │                        │      241670332e0443da0f0d4ffb52829f08 
-                        │                        ├ [6]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │                        │      241670332e0443da0f0d4ffb52829f08
-                        │                        │      (openssl-3.2.y) 
-                        │                        ├ [7]: https://github.openssl.org/openssl/extended-releas
-                        │                        │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │                        │      m 
-                        │                        ╰ [8]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                   this failure to
+                        │     │                   force a Denial of Service. It may also happen by accident in
+                        │     │                   normal operation.
+                        │     │                   
+                        │     │                   This issue only affects TLS servers supporting TLSv1.3. It
+                        │     │                   does not affect TLS
+                        │     │                   clients.
+                        │     │                   
+                        │     │                   The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this
+                        │     │                    issue. OpenSSL
+                        │     │                   1.0.2 is also not affected by this issue. 
+                        │     ├ Severity        : LOW 
+                        │     ├ VendorSeverity   ╭ redhat: 1 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:L 
+                        │     │                           ╰ V3Score : 3.7 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [1] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CV
+                        │     │                  │       E-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce
+                        │     │                  │       (openssl-3.1.y) 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d
+                        │     │                  │       (openssl-3.0.y) 
+                        │     │                  ├ [6] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [7] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08
+                        │     │                  │       (openssl-3.2.y) 
+                        │     │                  ├ [8] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [11]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [12]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
+                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
                         ├ [3] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libssl3@3.1.4-r5 
                         │     ├ PkgName         : libssl3 
@@ -156,50 +178,72 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Title           : Issue summary: Some non-default TLS server
-                        │     │                   configurations can cause un ... 
+                        │     ├ Title           : openssl: Unbounded memory growth with session handling
+                        │     │                   in TLSv1.3 
                         │     ├ Description     : Issue summary: Some non-default TLS server
-                        │     │                   configurations can cause unbounded memory growth when
-                        │     │                   processing TLSv1.3 sessions  Impact summary: An attacker may
-                        │     │                   exploit certain server configurations to trigger unbounded
-                        │     │                   memory growth that would lead to a Denial of Service  This
-                        │     │                   problem can occur in TLSv1.3 if the non-default
-                        │     │                   SSL_OP_NO_TICKET option is being used (but not if early_data
-                        │     │                   support is also configured and the default anti-replay
-                        │     │                   protection is in use). In this case, under certain
-                        │     │                   conditions, the session cache can get into an incorrect state
-                        │     │                    and it will fail to flush properly as it fills. The session
-                        │     │                   cache will continue to grow in an unbounded manner. A
+                        │     │                   configurations can cause unbounded
+                        │     │                   memory growth when processing TLSv1.3 sessions
+                        │     │                   
+                        │     │                   Impact summary: An attacker may exploit certain server
+                        │     │                   configurations to trigger
+                        │     │                   unbounded memory growth that would lead to a Denial of
+                        │     │                   Service
+                        │     │                   
+                        │     │                   This problem can occur in TLSv1.3 if the non-default
+                        │     │                   SSL_OP_NO_TICKET option is
+                        │     │                   being used (but not if early_data support is also configured
+                        │     │                   and the default
+                        │     │                   anti-replay protection is in use). In this case, under
+                        │     │                   certain conditions, the
+                        │     │                   session cache can get into an incorrect state and it will
+                        │     │                   fail to flush properly
+                        │     │                   as it fills. The session cache will continue to grow in an
+                        │     │                   unbounded manner. A
                         │     │                   malicious client could deliberately create the scenario for
-                        │     │                   this failure to force a Denial of Service. It may also happen
-                        │     │                    by accident in normal operation.  This issue only affects
-                        │     │                   TLS servers supporting TLSv1.3. It does not affect TLS
-                        │     │                   clients.  The FIPS modules in 3.2, 3.1 and 3.0 are not
-                        │     │                   affected by this issue. OpenSSL 1.0.2 is also not affected by
-                        │     │                    this issue. 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ─ ubuntu: 2 
-                        │     ╰ References       ╭ [0]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE
-                        │                        │      -2024-2511 
-                        │                        ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │                        │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │                        ├ [2]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │                        │      1c07201ad9374c1cd9ac5263bdf35bce
-                        │                        │      (openssl-3.1.y) 
-                        │                        ├ [3]: https://github.com/openssl/openssl/commit/b52867a9
-                        │                        │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │                        ├ [4]: https://github.com/openssl/openssl/commit/b52867a9
-                        │                        │      f618bb955bed2a3ce3db4d4f97ed8e5d
-                        │                        │      (openssl-3.0.y) 
-                        │                        ├ [5]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │                        │      241670332e0443da0f0d4ffb52829f08 
-                        │                        ├ [6]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │                        │      241670332e0443da0f0d4ffb52829f08
-                        │                        │      (openssl-3.2.y) 
-                        │                        ├ [7]: https://github.openssl.org/openssl/extended-releas
-                        │                        │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │                        │      m 
-                        │                        ╰ [8]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                   this failure to
+                        │     │                   force a Denial of Service. It may also happen by accident in
+                        │     │                   normal operation.
+                        │     │                   
+                        │     │                   This issue only affects TLS servers supporting TLSv1.3. It
+                        │     │                   does not affect TLS
+                        │     │                   clients.
+                        │     │                   
+                        │     │                   The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this
+                        │     │                    issue. OpenSSL
+                        │     │                   1.0.2 is also not affected by this issue. 
+                        │     ├ Severity        : LOW 
+                        │     ├ VendorSeverity   ╭ redhat: 1 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:L 
+                        │     │                           ╰ V3Score : 3.7 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [1] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CV
+                        │     │                  │       E-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce
+                        │     │                  │       (openssl-3.1.y) 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d
+                        │     │                  │       (openssl-3.0.y) 
+                        │     │                  ├ [6] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [7] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08
+                        │     │                  │       (openssl-3.2.y) 
+                        │     │                  ├ [8] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [11]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [12]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
+                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2024-22365 
                         │     ├ PkgID           : linux-pam@1.5.3-r7 
                         │     ├ PkgName         : linux-pam 
@@ -224,11 +268,12 @@
                         │     │                   mkfifo because the openat call (for protect_dir) lacks
                         │     │                   O_DIRECTORY. 
                         │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ╭ amazon: 1 
-                        │     │                  ├ nvd   : 2 
-                        │     │                  ├ photon: 2 
-                        │     │                  ├ redhat: 2 
-                        │     │                  ╰ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ amazon     : 1 
+                        │     │                  ├ cbl-mariner: 2 
+                        │     │                  ├ nvd        : 2 
+                        │     │                  ├ photon     : 2 
+                        │     │                  ├ redhat     : 2 
+                        │     │                  ╰ ubuntu     : 2 
                         │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N
                         │     │                  │        │           /I:N/A:H 
                         │     │                  │        ╰ V3Score : 5.5 
@@ -269,50 +314,72 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Title           : Issue summary: Some non-default TLS server
-                        │     │                   configurations can cause un ... 
+                        │     ├ Title           : openssl: Unbounded memory growth with session handling
+                        │     │                   in TLSv1.3 
                         │     ├ Description     : Issue summary: Some non-default TLS server
-                        │     │                   configurations can cause unbounded memory growth when
-                        │     │                   processing TLSv1.3 sessions  Impact summary: An attacker may
-                        │     │                   exploit certain server configurations to trigger unbounded
-                        │     │                   memory growth that would lead to a Denial of Service  This
-                        │     │                   problem can occur in TLSv1.3 if the non-default
-                        │     │                   SSL_OP_NO_TICKET option is being used (but not if early_data
-                        │     │                   support is also configured and the default anti-replay
-                        │     │                   protection is in use). In this case, under certain
-                        │     │                   conditions, the session cache can get into an incorrect state
-                        │     │                    and it will fail to flush properly as it fills. The session
-                        │     │                   cache will continue to grow in an unbounded manner. A
+                        │     │                   configurations can cause unbounded
+                        │     │                   memory growth when processing TLSv1.3 sessions
+                        │     │                   
+                        │     │                   Impact summary: An attacker may exploit certain server
+                        │     │                   configurations to trigger
+                        │     │                   unbounded memory growth that would lead to a Denial of
+                        │     │                   Service
+                        │     │                   
+                        │     │                   This problem can occur in TLSv1.3 if the non-default
+                        │     │                   SSL_OP_NO_TICKET option is
+                        │     │                   being used (but not if early_data support is also configured
+                        │     │                   and the default
+                        │     │                   anti-replay protection is in use). In this case, under
+                        │     │                   certain conditions, the
+                        │     │                   session cache can get into an incorrect state and it will
+                        │     │                   fail to flush properly
+                        │     │                   as it fills. The session cache will continue to grow in an
+                        │     │                   unbounded manner. A
                         │     │                   malicious client could deliberately create the scenario for
-                        │     │                   this failure to force a Denial of Service. It may also happen
-                        │     │                    by accident in normal operation.  This issue only affects
-                        │     │                   TLS servers supporting TLSv1.3. It does not affect TLS
-                        │     │                   clients.  The FIPS modules in 3.2, 3.1 and 3.0 are not
-                        │     │                   affected by this issue. OpenSSL 1.0.2 is also not affected by
-                        │     │                    this issue. 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ─ ubuntu: 2 
-                        │     ╰ References       ╭ [0]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE
-                        │                        │      -2024-2511 
-                        │                        ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │                        │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │                        ├ [2]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │                        │      1c07201ad9374c1cd9ac5263bdf35bce
-                        │                        │      (openssl-3.1.y) 
-                        │                        ├ [3]: https://github.com/openssl/openssl/commit/b52867a9
-                        │                        │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │                        ├ [4]: https://github.com/openssl/openssl/commit/b52867a9
-                        │                        │      f618bb955bed2a3ce3db4d4f97ed8e5d
-                        │                        │      (openssl-3.0.y) 
-                        │                        ├ [5]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │                        │      241670332e0443da0f0d4ffb52829f08 
-                        │                        ├ [6]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │                        │      241670332e0443da0f0d4ffb52829f08
-                        │                        │      (openssl-3.2.y) 
-                        │                        ├ [7]: https://github.openssl.org/openssl/extended-releas
-                        │                        │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │                        │      m 
-                        │                        ╰ [8]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                   this failure to
+                        │     │                   force a Denial of Service. It may also happen by accident in
+                        │     │                   normal operation.
+                        │     │                   
+                        │     │                   This issue only affects TLS servers supporting TLSv1.3. It
+                        │     │                   does not affect TLS
+                        │     │                   clients.
+                        │     │                   
+                        │     │                   The FIPS modules in 3.2, 3.1 and 3.0 are not affected by this
+                        │     │                    issue. OpenSSL
+                        │     │                   1.0.2 is also not affected by this issue. 
+                        │     ├ Severity        : LOW 
+                        │     ├ VendorSeverity   ╭ redhat: 1 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:L 
+                        │     │                           ╰ V3Score : 3.7 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [1] : https://cve.mitre.org/cgi-bin/cvename.cgi?name=CV
+                        │     │                  │       E-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce
+                        │     │                  │       (openssl-3.1.y) 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d
+                        │     │                  │       (openssl-3.0.y) 
+                        │     │                  ├ [6] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [7] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08
+                        │     │                  │       (openssl-3.2.y) 
+                        │     │                  ├ [8] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [11]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [12]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
+                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
                         ╰ [6] ╭ VulnerabilityID : CVE-2023-42366 
                               ├ PkgID           : ssl_client@1.36.1-r15 
                               ├ PkgName         : ssl_client 
