@@ -84,10 +84,10 @@
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:5c42a563f85eb8dfb3087c5dcef42aed7854e0bf
-                        │     │                  │         c52c28c0a17d6da966fec912 
-                        │     │                  ╰ DiffID: sha256:8a85da42b0ba1adab9b47329b9fc2570105d6c3b
-                        │     │                            1244519a22d39528e13b5381 
+                        │     ├ Layer            ╭ Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832a
+                        │     │                  │         a829bb74abacb758b3357d72 
+                        │     │                  ╰ DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae57
+                        │     │                            52df2a9bde27428942742b2f 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -156,10 +156,10 @@
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:5c42a563f85eb8dfb3087c5dcef42aed7854e0bf
-                        │     │                  │         c52c28c0a17d6da966fec912 
-                        │     │                  ╰ DiffID: sha256:8a85da42b0ba1adab9b47329b9fc2570105d6c3b
-                        │     │                            1244519a22d39528e13b5381 
+                        │     ├ Layer            ╭ Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832a
+                        │     │                  │         a829bb74abacb758b3357d72 
+                        │     │                  ╰ DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae57
+                        │     │                            52df2a9bde27428942742b2f 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -228,10 +228,10 @@
                         │     ├ InstalledVersion: 1.5.3-r7 
                         │     ├ FixedVersion    : 1.6.0-r0 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:5c42a563f85eb8dfb3087c5dcef42aed7854e0bf
-                        │     │                  │         c52c28c0a17d6da966fec912 
-                        │     │                  ╰ DiffID: sha256:8a85da42b0ba1adab9b47329b9fc2570105d6c3b
-                        │     │                            1244519a22d39528e13b5381 
+                        │     ├ Layer            ╭ Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832a
+                        │     │                  │         a829bb74abacb758b3357d72 
+                        │     │                  ╰ DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae57
+                        │     │                            52df2a9bde27428942742b2f 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-22365 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -279,10 +279,10 @@
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:5c42a563f85eb8dfb3087c5dcef42aed7854e0bf
-                        │     │                  │         c52c28c0a17d6da966fec912 
-                        │     │                  ╰ DiffID: sha256:8a85da42b0ba1adab9b47329b9fc2570105d6c3b
-                        │     │                            1244519a22d39528e13b5381 
+                        │     ├ Layer            ╭ Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832a
+                        │     │                  │         a829bb74abacb758b3357d72 
+                        │     │                  ╰ DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae57
+                        │     │                            52df2a9bde27428942742b2f 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
