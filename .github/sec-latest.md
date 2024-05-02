@@ -132,22 +132,23 @@
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/04/08/5 
+                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/7e4d731b
                         │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/b52867a9
                         │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/e9d7083e
                         │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
+                        │     │                  ├ [5]: https://github.openssl.org/openssl/extended-releas
                         │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
                         │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [8]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [9]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
+                        │     ╰ LastModifiedDate: 2024-05-01T19:15:23.677Z 
                         ├ [3] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libssl3@3.1.4-r5 
                         │     ├ PkgName         : libssl3 
@@ -204,22 +205,23 @@
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/04/08/5 
+                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/7e4d731b
                         │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/b52867a9
                         │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/e9d7083e
                         │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
+                        │     │                  ├ [5]: https://github.openssl.org/openssl/extended-releas
                         │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
                         │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [8]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [9]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
+                        │     ╰ LastModifiedDate: 2024-05-01T19:15:23.677Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2024-22365 
                         │     ├ PkgID           : linux-pam@1.5.3-r7 
                         │     ├ PkgName         : linux-pam 
@@ -327,22 +329,23 @@
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/04/08/5 
+                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/7e4d731b
                         │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/b52867a9
                         │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/e9d7083e
                         │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
+                        │     │                  ├ [5]: https://github.openssl.org/openssl/extended-releas
                         │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
                         │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [8]: https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [9]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
+                        │     ╰ LastModifiedDate: 2024-05-01T19:15:23.677Z 
                         ╰ [6] ╭ VulnerabilityID : CVE-2023-42366 
                               ├ PkgID           : ssl_client@1.36.1-r15 
                               ├ PkgName         : ssl_client 
