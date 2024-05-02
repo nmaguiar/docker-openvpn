@@ -129,6 +129,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2024/04/08/5
     - https://access.redhat.com/security/cve/CVE-2024-2511
     - https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce
     - https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d
@@ -139,7 +140,7 @@
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-04-08T18:48:40.217Z'
+    LastModifiedDate: '2024-05-01T19:15:23.677Z'
   - VulnerabilityID: CVE-2024-2511
     PkgID: libssl3@3.1.4-r5
     PkgName: libssl3
@@ -187,6 +188,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2024/04/08/5
     - https://access.redhat.com/security/cve/CVE-2024-2511
     - https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce
     - https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d
@@ -197,7 +199,7 @@
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-04-08T18:48:40.217Z'
+    LastModifiedDate: '2024-05-01T19:15:23.677Z'
   - VulnerabilityID: CVE-2024-22365
     PkgID: linux-pam@1.5.3-r7
     PkgName: linux-pam
@@ -292,6 +294,7 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2024/04/08/5
     - https://access.redhat.com/security/cve/CVE-2024-2511
     - https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce
     - https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d
@@ -302,7 +305,7 @@
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-04-08T18:48:40.217Z'
+    LastModifiedDate: '2024-05-01T19:15:23.677Z'
   - VulnerabilityID: CVE-2023-42366
     PkgID: ssl_client@1.36.1-r15
     PkgName: ssl_client
