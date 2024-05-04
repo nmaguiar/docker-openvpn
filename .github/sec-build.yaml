@@ -7,6 +7,7 @@
     PkgName: busybox
     PkgIdentifier:
       PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&distro=3.19.1
+      UID: a71bca140ff5726b
     InstalledVersion: 1.36.1-r15
     FixedVersion: 1.36.1-r25
     Status: fixed
@@ -47,6 +48,7 @@
     PkgName: busybox-binsh
     PkgIdentifier:
       PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86_64&distro=3.19.1
+      UID: 3c2acc699fbc7b01
     InstalledVersion: 1.36.1-r15
     FixedVersion: 1.36.1-r25
     Status: fixed
@@ -87,12 +89,13 @@
     PkgName: libcrypto3
     PkgIdentifier:
       PURL: pkg:apk/alpine/libcrypto3@3.1.4-r6?arch=x86_64&distro=3.19.1
+      UID: d75afcc924a4f8f3
     InstalledVersion: 3.1.4-r6
     FixedVersion: 3.2.1-r2
     Status: fixed
     Layer:
-      Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832aa829bb74abacb758b3357d72
-      DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae5752df2a9bde27428942742b2f
+      Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d05f52ecf126ed20461c7bcb6
+      DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748799db12862552f53980f086c
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-2511
     DataSource:
       ID: alpine
@@ -136,22 +139,24 @@
     - https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08
     - https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640
     - https://nvd.nist.gov/vuln/detail/CVE-2024-2511
+    - https://security.netapp.com/advisory/ntap-20240503-0013/
     - https://www.cve.org/CVERecord?id=CVE-2024-2511
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-05-01T19:15:23.677Z'
+    LastModifiedDate: '2024-05-03T13:15:21.93Z'
   - VulnerabilityID: CVE-2024-2511
     PkgID: libssl3@3.1.4-r6
     PkgName: libssl3
     PkgIdentifier:
       PURL: pkg:apk/alpine/libssl3@3.1.4-r6?arch=x86_64&distro=3.19.1
+      UID: fd3d4dc5a0e89054
     InstalledVersion: 3.1.4-r6
     FixedVersion: 3.2.1-r2
     Status: fixed
     Layer:
-      Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832aa829bb74abacb758b3357d72
-      DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae5752df2a9bde27428942742b2f
+      Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d05f52ecf126ed20461c7bcb6
+      DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748799db12862552f53980f086c
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-2511
     DataSource:
       ID: alpine
@@ -195,22 +200,24 @@
     - https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08
     - https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640
     - https://nvd.nist.gov/vuln/detail/CVE-2024-2511
+    - https://security.netapp.com/advisory/ntap-20240503-0013/
     - https://www.cve.org/CVERecord?id=CVE-2024-2511
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-05-01T19:15:23.677Z'
+    LastModifiedDate: '2024-05-03T13:15:21.93Z'
   - VulnerabilityID: CVE-2024-22365
     PkgID: linux-pam@1.5.3-r7
     PkgName: linux-pam
     PkgIdentifier:
       PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&distro=3.19.1
+      UID: d08029cd950914e6
     InstalledVersion: 1.5.3-r7
     FixedVersion: 1.6.0-r0
     Status: fixed
     Layer:
-      Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832aa829bb74abacb758b3357d72
-      DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae5752df2a9bde27428942742b2f
+      Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d05f52ecf126ed20461c7bcb6
+      DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748799db12862552f53980f086c
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-22365
     DataSource:
@@ -252,12 +259,13 @@
     PkgName: openssl
     PkgIdentifier:
       PURL: pkg:apk/alpine/openssl@3.1.4-r6?arch=x86_64&distro=3.19.1
+      UID: fb72c97c5159c020
     InstalledVersion: 3.1.4-r6
     FixedVersion: 3.2.1-r2
     Status: fixed
     Layer:
-      Digest: sha256:c20bff3afe86f56ce9a862dc75e0b9e46bf6832aa829bb74abacb758b3357d72
-      DiffID: sha256:b56f0a91184cf5b730aba66bc8d142581da4ae5752df2a9bde27428942742b2f
+      Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d05f52ecf126ed20461c7bcb6
+      DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748799db12862552f53980f086c
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-2511
     DataSource:
       ID: alpine
@@ -301,16 +309,18 @@
     - https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08
     - https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640
     - https://nvd.nist.gov/vuln/detail/CVE-2024-2511
+    - https://security.netapp.com/advisory/ntap-20240503-0013/
     - https://www.cve.org/CVERecord?id=CVE-2024-2511
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-05-01T19:15:23.677Z'
+    LastModifiedDate: '2024-05-03T13:15:21.93Z'
   - VulnerabilityID: CVE-2023-42366
     PkgID: ssl_client@1.36.1-r15
     PkgName: ssl_client
     PkgIdentifier:
       PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64&distro=3.19.1
+      UID: 3a57d387f26109e5
     InstalledVersion: 1.36.1-r15
     FixedVersion: 1.36.1-r25
     Status: fixed
