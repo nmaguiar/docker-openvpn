@@ -5,8 +5,9 @@
       ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2023-42366 
                         │     ├ PkgID           : busybox@1.36.1-r15 
                         │     ├ PkgName         : busybox 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&dis
-                        │     │                          tro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&dis
+                        │     │                  │       tro=3.19.1 
+                        │     │                  ╰ UID : a71bca140ff5726b 
                         │     ├ InstalledVersion: 1.36.1-r15 
                         │     ├ FixedVersion    : 1.36.1-r25 
                         │     ├ Status          : fixed 
@@ -42,8 +43,9 @@
                         ├ [1] ╭ VulnerabilityID : CVE-2023-42366 
                         │     ├ PkgID           : busybox-binsh@1.36.1-r15 
                         │     ├ PkgName         : busybox-binsh 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86_
-                        │     │                          64&distro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86_
+                        │     │                  │       64&distro=3.19.1 
+                        │     │                  ╰ UID : 3c2acc699fbc7b01 
                         │     ├ InstalledVersion: 1.36.1-r15 
                         │     ├ FixedVersion    : 1.36.1-r25 
                         │     ├ Status          : fixed 
@@ -79,15 +81,16 @@
                         ├ [2] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libcrypto3@3.1.4-r6 
                         │     ├ PkgName         : libcrypto3 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r6?arch=x86_64&di
-                        │     │                          stro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r6?arch=x86_64&di
+                        │     │                  │       stro=3.19.1 
+                        │     │                  ╰ UID : d75afcc924a4f8f3 
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d
+                        │     │                  │         05f52ecf126ed20461c7bcb6 
+                        │     │                  ╰ DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748
+                        │     │                            799db12862552f53980f086c 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -132,34 +135,39 @@
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
-                        │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
-                        │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       4/08/5 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [5] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7] : https://security.netapp.com/advisory/ntap-2024050
+                        │     │                  │       3-0013/ 
+                        │     │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [9] : https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
+                        │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
                         ├ [3] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libssl3@3.1.4-r6 
                         │     ├ PkgName         : libssl3 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/libssl3@3.1.4-r6?arch=x86_64&distr
-                        │     │                          o=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.1.4-r6?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : fd3d4dc5a0e89054 
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d
+                        │     │                  │         05f52ecf126ed20461c7bcb6 
+                        │     │                  ╰ DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748
+                        │     │                            799db12862552f53980f086c 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -204,34 +212,39 @@
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
-                        │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
-                        │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       4/08/5 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [5] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7] : https://security.netapp.com/advisory/ntap-2024050
+                        │     │                  │       3-0013/ 
+                        │     │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [9] : https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
+                        │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2024-22365 
                         │     ├ PkgID           : linux-pam@1.5.3-r7 
                         │     ├ PkgName         : linux-pam 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&dis
-                        │     │                          tro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&dis
+                        │     │                  │       tro=3.19.1 
+                        │     │                  ╰ UID : d08029cd950914e6 
                         │     ├ InstalledVersion: 1.5.3-r7 
                         │     ├ FixedVersion    : 1.6.0-r0 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d
+                        │     │                  │         05f52ecf126ed20461c7bcb6 
+                        │     │                  ╰ DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748
+                        │     │                            799db12862552f53980f086c 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-22365 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -274,15 +287,16 @@
                         ├ [5] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : openssl@3.1.4-r6 
                         │     ├ PkgName         : openssl 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/openssl@3.1.4-r6?arch=x86_64&distr
-                        │     │                          o=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.1.4-r6?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : fb72c97c5159c020 
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:a69c4de68b33dd59b33d7c816e0c2113078e467d
+                        │     │                  │         05f52ecf126ed20461c7bcb6 
+                        │     │                  ╰ DiffID: sha256:43802d1c56f1d51da37d7dc79d742f2972899748
+                        │     │                            799db12862552f53980f086c 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -327,27 +341,32 @@
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
-                        │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
-                        │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       4/08/5 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [5] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7] : https://security.netapp.com/advisory/ntap-2024050
+                        │     │                  │       3-0013/ 
+                        │     │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [9] : https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
+                        │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
                         ╰ [6] ╭ VulnerabilityID : CVE-2023-42366 
                               ├ PkgID           : ssl_client@1.36.1-r15 
                               ├ PkgName         : ssl_client 
-                              ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64&
-                              │                          distro=3.19.1 
+                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64&
+                              │                  │       distro=3.19.1 
+                              │                  ╰ UID : 3a57d387f26109e5 
                               ├ InstalledVersion: 1.36.1-r15 
                               ├ FixedVersion    : 1.36.1-r25 
                               ├ Status          : fixed 
