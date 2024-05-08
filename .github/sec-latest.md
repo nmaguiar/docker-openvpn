@@ -257,9 +257,11 @@
                         │     │                   mkfifo because the openat call (for protect_dir) lacks
                         │     │                   O_DIRECTORY. 
                         │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ╭ amazon     : 1 
+                        │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ amazon     : 1 
                         │     │                  ├ cbl-mariner: 2 
                         │     │                  ├ nvd        : 2 
+                        │     │                  ├ oracle-oval: 2 
                         │     │                  ├ photon     : 2 
                         │     │                  ├ redhat     : 2 
                         │     │                  ╰ ubuntu     : 2 
@@ -269,19 +271,25 @@
                         │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
                         │     │                           ╰ V3Score : 5.5 
-                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/01/18/3 
-                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-22365 
-                        │     │                  ├ [2]: https://github.com/linux-pam/linux-pam 
-                        │     │                  ├ [3]: https://github.com/linux-pam/linux-pam/commit/031b
-                        │     │                  │      b5a5d0d950253b68138b498dc93be69a64cb 
-                        │     │                  ├ [4]: https://github.com/linux-pam/linux-pam/releases/ta
-                        │     │                  │      g/v1.6.0 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-22365 
-                        │     │                  ├ [6]: https://ubuntu.com/security/notices/USN-6588-1 
-                        │     │                  ├ [7]: https://ubuntu.com/security/notices/USN-6588-2 
-                        │     │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2024-22365 
-                        │     │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2024/0
-                        │     │                         1/18/3 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       1/18/3 
+                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:2438 
+                        │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-22365 
+                        │     │                  ├ [3] : https://bugzilla.redhat.com/2257722 
+                        │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-2438.html 
+                        │     │                  ├ [5] : https://github.com/linux-pam/linux-pam 
+                        │     │                  ├ [6] : https://github.com/linux-pam/linux-pam/commit/031
+                        │     │                  │       bb5a5d0d950253b68138b498dc93be69a64cb 
+                        │     │                  ├ [7] : https://github.com/linux-pam/linux-pam/releases/t
+                        │     │                  │       ag/v1.6.0 
+                        │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2024-22365.html 
+                        │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-2438.html 
+                        │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-22365 
+                        │     │                  ├ [11]: https://ubuntu.com/security/notices/USN-6588-1 
+                        │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-6588-2 
+                        │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2024-22365 
+                        │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2024/
+                        │     │                          01/18/3 
                         │     ├ PublishedDate   : 2024-02-06T08:15:52.203Z 
                         │     ╰ LastModifiedDate: 2024-02-14T00:27:40.143Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2024-2511 
