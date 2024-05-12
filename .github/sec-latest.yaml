@@ -7,6 +7,7 @@
     PkgName: busybox
     PkgIdentifier:
       PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&distro=3.19.1
+      UID: a71bca140ff5726b
     InstalledVersion: 1.36.1-r15
     FixedVersion: 1.36.1-r25
     Status: fixed
@@ -47,6 +48,7 @@
     PkgName: busybox-binsh
     PkgIdentifier:
       PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86_64&distro=3.19.1
+      UID: 3c2acc699fbc7b01
     InstalledVersion: 1.36.1-r15
     FixedVersion: 1.36.1-r25
     Status: fixed
@@ -87,6 +89,7 @@
     PkgName: libcrypto3
     PkgIdentifier:
       PURL: pkg:apk/alpine/libcrypto3@3.1.4-r5?arch=x86_64&distro=3.19.1
+      UID: 2ba4d5b72c7de8cc
     InstalledVersion: 3.1.4-r5
     FixedVersion: 3.2.1-r2
     Status: fixed
@@ -129,22 +132,25 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2024/04/08/5
     - https://access.redhat.com/security/cve/CVE-2024-2511
     - https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce
     - https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d
     - https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08
     - https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640
     - https://nvd.nist.gov/vuln/detail/CVE-2024-2511
+    - https://security.netapp.com/advisory/ntap-20240503-0013/
     - https://www.cve.org/CVERecord?id=CVE-2024-2511
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-04-08T18:48:40.217Z'
+    LastModifiedDate: '2024-05-03T13:15:21.93Z'
   - VulnerabilityID: CVE-2024-2511
     PkgID: libssl3@3.1.4-r5
     PkgName: libssl3
     PkgIdentifier:
       PURL: pkg:apk/alpine/libssl3@3.1.4-r5?arch=x86_64&distro=3.19.1
+      UID: 152e78ab6a7ee0ee
     InstalledVersion: 3.1.4-r5
     FixedVersion: 3.2.1-r2
     Status: fixed
@@ -187,22 +193,25 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2024/04/08/5
     - https://access.redhat.com/security/cve/CVE-2024-2511
     - https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce
     - https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d
     - https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08
     - https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640
     - https://nvd.nist.gov/vuln/detail/CVE-2024-2511
+    - https://security.netapp.com/advisory/ntap-20240503-0013/
     - https://www.cve.org/CVERecord?id=CVE-2024-2511
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-04-08T18:48:40.217Z'
+    LastModifiedDate: '2024-05-03T13:15:21.93Z'
   - VulnerabilityID: CVE-2024-22365
     PkgID: linux-pam@1.5.3-r7
     PkgName: linux-pam
     PkgIdentifier:
       PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&distro=3.19.1
+      UID: d08029cd950914e6
     InstalledVersion: 1.5.3-r7
     FixedVersion: 1.6.0-r0
     Status: fixed
@@ -219,9 +228,11 @@
     Description: linux-pam (aka Linux PAM) before 1.6.0 allows attackers to cause a denial of service (blocked login process) via mkfifo because the openat call (for protect_dir) lacks O_DIRECTORY.
     Severity: MEDIUM
     VendorSeverity:
+      alma: 2
       amazon: 1
       cbl-mariner: 2
       nvd: 2
+      oracle-oval: 2
       photon: 2
       redhat: 2
       ubuntu: 2
@@ -234,10 +245,15 @@
         V3Score: 5.5
     References:
     - http://www.openwall.com/lists/oss-security/2024/01/18/3
+    - https://access.redhat.com/errata/RHSA-2024:2438
     - https://access.redhat.com/security/cve/CVE-2024-22365
+    - https://bugzilla.redhat.com/2257722
+    - https://errata.almalinux.org/9/ALSA-2024-2438.html
     - https://github.com/linux-pam/linux-pam
     - https://github.com/linux-pam/linux-pam/commit/031bb5a5d0d950253b68138b498dc93be69a64cb
     - https://github.com/linux-pam/linux-pam/releases/tag/v1.6.0
+    - https://linux.oracle.com/cve/CVE-2024-22365.html
+    - https://linux.oracle.com/errata/ELSA-2024-2438.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-22365
     - https://ubuntu.com/security/notices/USN-6588-1
     - https://ubuntu.com/security/notices/USN-6588-2
@@ -250,6 +266,7 @@
     PkgName: openssl
     PkgIdentifier:
       PURL: pkg:apk/alpine/openssl@3.1.4-r5?arch=x86_64&distro=3.19.1
+      UID: 769b2aa3c2d6d1b8
     InstalledVersion: 3.1.4-r5
     FixedVersion: 3.2.1-r2
     Status: fixed
@@ -292,22 +309,25 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
         V3Score: 3.7
     References:
+    - http://www.openwall.com/lists/oss-security/2024/04/08/5
     - https://access.redhat.com/security/cve/CVE-2024-2511
     - https://github.com/openssl/openssl/commit/7e4d731b1c07201ad9374c1cd9ac5263bdf35bce
     - https://github.com/openssl/openssl/commit/b52867a9f618bb955bed2a3ce3db4d4f97ed8e5d
     - https://github.com/openssl/openssl/commit/e9d7083e241670332e0443da0f0d4ffb52829f08
     - https://github.openssl.org/openssl/extended-releases/commit/5f8d25770ae6437db119dfc951e207271a326640
     - https://nvd.nist.gov/vuln/detail/CVE-2024-2511
+    - https://security.netapp.com/advisory/ntap-20240503-0013/
     - https://www.cve.org/CVERecord?id=CVE-2024-2511
     - https://www.openssl.org/news/secadv/20240408.txt
     - https://www.openssl.org/news/vulnerabilities.html
     PublishedDate: '2024-04-08T14:15:07.66Z'
-    LastModifiedDate: '2024-04-08T18:48:40.217Z'
+    LastModifiedDate: '2024-05-03T13:15:21.93Z'
   - VulnerabilityID: CVE-2023-42366
     PkgID: ssl_client@1.36.1-r15
     PkgName: ssl_client
     PkgIdentifier:
       PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64&distro=3.19.1
+      UID: 26d4fb565777c531
     InstalledVersion: 1.36.1-r15
     FixedVersion: 1.36.1-r25
     Status: fixed
