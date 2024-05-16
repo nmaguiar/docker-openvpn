@@ -124,6 +124,7 @@
       1.0.2 is also not affected by this issue.
     Severity: LOW
     VendorSeverity:
+      amazon: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -185,6 +186,7 @@
       1.0.2 is also not affected by this issue.
     Severity: LOW
     VendorSeverity:
+      amazon: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -301,6 +303,7 @@
       1.0.2 is also not affected by this issue.
     Severity: LOW
     VendorSeverity:
+      amazon: 2
       photon: 3
       redhat: 1
       ubuntu: 1
