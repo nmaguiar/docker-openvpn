@@ -78,7 +78,94 @@
                         │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42366 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.42Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:08:23.197Z 
-                        ├ [2] ╭ VulnerabilityID : CVE-2024-2511 
+                        ├ [2] ╭ VulnerabilityID : CVE-2024-4603 
+                        │     ├ PkgID           : libcrypto3@3.1.4-r5 
+                        │     ├ PkgName         : libcrypto3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r5?arch=x86_64&di
+                        │     │                  │       stro=3.19.1 
+                        │     │                  ╰ UID : 2ba4d5b72c7de8cc 
+                        │     ├ InstalledVersion: 3.1.4-r5 
+                        │     ├ FixedVersion    : 3.3.0-r2 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca9
+                        │     │                  │         15dc1c92ec14ff61e67fbaf8 
+                        │     │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15a
+                        │     │                            17bb196d637e526349601820 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4603 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: Excessive time spent checking DSA keys and
+                        │     │                   parameters 
+                        │     ├ Description     : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be very
+                        │     │                   slow.
+                        │     │                   
+                        │     │                   Impact summary: Applications that use the functions
+                        │     │                   EVP_PKEY_param_check()
+                        │     │                   or EVP_PKEY_public_check() to check a DSA public key or DSA
+                        │     │                   parameters may
+                        │     │                   experience long delays. Where the key or parameters that are
+                        │     │                   being checked
+                        │     │                   have been obtained from an untrusted source this may lead to
+                        │     │                   a Denial of
+                        │     │                   Service.
+                        │     │                   
+                        │     │                   The functions EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check() perform
+                        │     │                   various checks on DSA parameters. Some of those computations
+                        │     │                   take a long time
+                        │     │                   if the modulus (`p` parameter) is too large.
+                        │     │                   
+                        │     │                   Trying to use a very large modulus is slow and OpenSSL will
+                        │     │                   not allow using
+                        │     │                   public keys with a modulus which is over 10,000 bits in
+                        │     │                   length for signature
+                        │     │                   verification. However the key and parameter check functions
+                        │     │                   do not limit
+                        │     │                   the modulus size when performing the checks.
+                        │     │                   
+                        │     │                   An application that calls EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check()
+                        │     │                   and supplies a key or parameters obtained from an untrusted
+                        │     │                   source could be
+                        │     │                   vulnerable to a Denial of Service attack.
+                        │     │                   
+                        │     │                   These functions are not called by OpenSSL itself on untrusted
+                        │     │                    DSA keys so
+                        │     │                   only applications that directly call these functions may be
+                        │     │                   vulnerable.
+                        │     │                   
+                        │     │                   Also vulnerable are the OpenSSL pkey and pkeyparam command
+                        │     │                   line applications
+                        │     │                   when using the `-check` option.
+                        │     │                   
+                        │     │                   The OpenSSL SSL/TLS implementation is not affected by this
+                        │     │                   issue.
+                        │     │                   
+                        │     │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
+                        │     │                   issue. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ╭ redhat: 1 
+                        │     │                  ╰ ubuntu: 1 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:L 
+                        │     │                           ╰ V3Score : 5.3 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-4603 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/3559e868
+                        │     │                  │      e58005d15c6013a0c1fd832e51c73397 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/53ea0648
+                        │     │                  │      6d296b890d565fb971b2764fcd826e7e 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/9c39b385
+                        │     │                  │      8091c152f52513c066ff2c5a47969f0d 
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/da343d06
+                        │     │                  │      05c826ef197aceedc67e8e04f065f740 
+                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-4603 
+                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4603 
+                        │     │                  ╰ [7]: https://www.openssl.org/news/secadv/20240516.txt 
+                        │     ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
+                        │     ╰ LastModifiedDate: 2024-05-17T18:36:31.297Z 
+                        ├ [3] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libcrypto3@3.1.4-r5 
                         │     ├ PkgName         : libcrypto3 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r5?arch=x86_64&di
@@ -156,7 +243,94 @@
                         │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
                         │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-                        ├ [3] ╭ VulnerabilityID : CVE-2024-2511 
+                        ├ [4] ╭ VulnerabilityID : CVE-2024-4603 
+                        │     ├ PkgID           : libssl3@3.1.4-r5 
+                        │     ├ PkgName         : libssl3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.1.4-r5?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : 152e78ab6a7ee0ee 
+                        │     ├ InstalledVersion: 3.1.4-r5 
+                        │     ├ FixedVersion    : 3.3.0-r2 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca9
+                        │     │                  │         15dc1c92ec14ff61e67fbaf8 
+                        │     │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15a
+                        │     │                            17bb196d637e526349601820 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4603 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: Excessive time spent checking DSA keys and
+                        │     │                   parameters 
+                        │     ├ Description     : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be very
+                        │     │                   slow.
+                        │     │                   
+                        │     │                   Impact summary: Applications that use the functions
+                        │     │                   EVP_PKEY_param_check()
+                        │     │                   or EVP_PKEY_public_check() to check a DSA public key or DSA
+                        │     │                   parameters may
+                        │     │                   experience long delays. Where the key or parameters that are
+                        │     │                   being checked
+                        │     │                   have been obtained from an untrusted source this may lead to
+                        │     │                   a Denial of
+                        │     │                   Service.
+                        │     │                   
+                        │     │                   The functions EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check() perform
+                        │     │                   various checks on DSA parameters. Some of those computations
+                        │     │                   take a long time
+                        │     │                   if the modulus (`p` parameter) is too large.
+                        │     │                   
+                        │     │                   Trying to use a very large modulus is slow and OpenSSL will
+                        │     │                   not allow using
+                        │     │                   public keys with a modulus which is over 10,000 bits in
+                        │     │                   length for signature
+                        │     │                   verification. However the key and parameter check functions
+                        │     │                   do not limit
+                        │     │                   the modulus size when performing the checks.
+                        │     │                   
+                        │     │                   An application that calls EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check()
+                        │     │                   and supplies a key or parameters obtained from an untrusted
+                        │     │                   source could be
+                        │     │                   vulnerable to a Denial of Service attack.
+                        │     │                   
+                        │     │                   These functions are not called by OpenSSL itself on untrusted
+                        │     │                    DSA keys so
+                        │     │                   only applications that directly call these functions may be
+                        │     │                   vulnerable.
+                        │     │                   
+                        │     │                   Also vulnerable are the OpenSSL pkey and pkeyparam command
+                        │     │                   line applications
+                        │     │                   when using the `-check` option.
+                        │     │                   
+                        │     │                   The OpenSSL SSL/TLS implementation is not affected by this
+                        │     │                   issue.
+                        │     │                   
+                        │     │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
+                        │     │                   issue. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ╭ redhat: 1 
+                        │     │                  ╰ ubuntu: 1 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:L 
+                        │     │                           ╰ V3Score : 5.3 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-4603 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/3559e868
+                        │     │                  │      e58005d15c6013a0c1fd832e51c73397 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/53ea0648
+                        │     │                  │      6d296b890d565fb971b2764fcd826e7e 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/9c39b385
+                        │     │                  │      8091c152f52513c066ff2c5a47969f0d 
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/da343d06
+                        │     │                  │      05c826ef197aceedc67e8e04f065f740 
+                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-4603 
+                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4603 
+                        │     │                  ╰ [7]: https://www.openssl.org/news/secadv/20240516.txt 
+                        │     ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
+                        │     ╰ LastModifiedDate: 2024-05-17T18:36:31.297Z 
+                        ├ [5] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libssl3@3.1.4-r5 
                         │     ├ PkgName         : libssl3 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.1.4-r5?arch=x86_64&distr
@@ -234,7 +408,7 @@
                         │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
                         │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-                        ├ [4] ╭ VulnerabilityID : CVE-2024-22365 
+                        ├ [6] ╭ VulnerabilityID : CVE-2024-22365 
                         │     ├ PkgID           : linux-pam@1.5.3-r7 
                         │     ├ PkgName         : linux-pam 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&dis
@@ -294,7 +468,94 @@
                         │     │                          01/18/3 
                         │     ├ PublishedDate   : 2024-02-06T08:15:52.203Z 
                         │     ╰ LastModifiedDate: 2024-02-14T00:27:40.143Z 
-                        ├ [5] ╭ VulnerabilityID : CVE-2024-2511 
+                        ├ [7] ╭ VulnerabilityID : CVE-2024-4603 
+                        │     ├ PkgID           : openssl@3.1.4-r5 
+                        │     ├ PkgName         : openssl 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.1.4-r5?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : 769b2aa3c2d6d1b8 
+                        │     ├ InstalledVersion: 3.1.4-r5 
+                        │     ├ FixedVersion    : 3.3.0-r2 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:401045b4162dbef04e42a60638e1e8485ce52280
+                        │     │                  │         652adc0514915a447fd4b40f 
+                        │     │                  ╰ DiffID: sha256:0aa5790c9060de07bf7684190f9a3a84d42038b0
+                        │     │                            cb76f1a87807327105f73dc6 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4603 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: Excessive time spent checking DSA keys and
+                        │     │                   parameters 
+                        │     ├ Description     : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be very
+                        │     │                   slow.
+                        │     │                   
+                        │     │                   Impact summary: Applications that use the functions
+                        │     │                   EVP_PKEY_param_check()
+                        │     │                   or EVP_PKEY_public_check() to check a DSA public key or DSA
+                        │     │                   parameters may
+                        │     │                   experience long delays. Where the key or parameters that are
+                        │     │                   being checked
+                        │     │                   have been obtained from an untrusted source this may lead to
+                        │     │                   a Denial of
+                        │     │                   Service.
+                        │     │                   
+                        │     │                   The functions EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check() perform
+                        │     │                   various checks on DSA parameters. Some of those computations
+                        │     │                   take a long time
+                        │     │                   if the modulus (`p` parameter) is too large.
+                        │     │                   
+                        │     │                   Trying to use a very large modulus is slow and OpenSSL will
+                        │     │                   not allow using
+                        │     │                   public keys with a modulus which is over 10,000 bits in
+                        │     │                   length for signature
+                        │     │                   verification. However the key and parameter check functions
+                        │     │                   do not limit
+                        │     │                   the modulus size when performing the checks.
+                        │     │                   
+                        │     │                   An application that calls EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check()
+                        │     │                   and supplies a key or parameters obtained from an untrusted
+                        │     │                   source could be
+                        │     │                   vulnerable to a Denial of Service attack.
+                        │     │                   
+                        │     │                   These functions are not called by OpenSSL itself on untrusted
+                        │     │                    DSA keys so
+                        │     │                   only applications that directly call these functions may be
+                        │     │                   vulnerable.
+                        │     │                   
+                        │     │                   Also vulnerable are the OpenSSL pkey and pkeyparam command
+                        │     │                   line applications
+                        │     │                   when using the `-check` option.
+                        │     │                   
+                        │     │                   The OpenSSL SSL/TLS implementation is not affected by this
+                        │     │                   issue.
+                        │     │                   
+                        │     │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
+                        │     │                   issue. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ╭ redhat: 1 
+                        │     │                  ╰ ubuntu: 1 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:L 
+                        │     │                           ╰ V3Score : 5.3 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-4603 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/3559e868
+                        │     │                  │      e58005d15c6013a0c1fd832e51c73397 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/53ea0648
+                        │     │                  │      6d296b890d565fb971b2764fcd826e7e 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/9c39b385
+                        │     │                  │      8091c152f52513c066ff2c5a47969f0d 
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/da343d06
+                        │     │                  │      05c826ef197aceedc67e8e04f065f740 
+                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-4603 
+                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-4603 
+                        │     │                  ╰ [7]: https://www.openssl.org/news/secadv/20240516.txt 
+                        │     ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
+                        │     ╰ LastModifiedDate: 2024-05-17T18:36:31.297Z 
+                        ├ [8] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : openssl@3.1.4-r5 
                         │     ├ PkgName         : openssl 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.1.4-r5?arch=x86_64&distr
@@ -372,7 +633,7 @@
                         │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
                         │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-                        ╰ [6] ╭ VulnerabilityID : CVE-2023-42366 
+                        ╰ [9] ╭ VulnerabilityID : CVE-2023-42366 
                               ├ PkgID           : ssl_client@1.36.1-r15 
                               ├ PkgName         : ssl_client 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64&
