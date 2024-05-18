@@ -5,8 +5,9 @@
       ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2023-42366 
                         │     ├ PkgID           : busybox@1.36.1-r15 
                         │     ├ PkgName         : busybox 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&dis
-                        │     │                          tro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&dis
+                        │     │                  │       tro=3.19.1 
+                        │     │                  ╰ UID : a71bca140ff5726b 
                         │     ├ InstalledVersion: 1.36.1-r15 
                         │     ├ FixedVersion    : 1.36.1-r25 
                         │     ├ Status          : fixed 
@@ -42,8 +43,9 @@
                         ├ [1] ╭ VulnerabilityID : CVE-2023-42366 
                         │     ├ PkgID           : busybox-binsh@1.36.1-r15 
                         │     ├ PkgName         : busybox-binsh 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86_
-                        │     │                          64&distro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86_
+                        │     │                  │       64&distro=3.19.1 
+                        │     │                  ╰ UID : 3c2acc699fbc7b01 
                         │     ├ InstalledVersion: 1.36.1-r15 
                         │     ├ FixedVersion    : 1.36.1-r25 
                         │     ├ Status          : fixed 
@@ -79,15 +81,16 @@
                         ├ [2] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libcrypto3@3.1.4-r6 
                         │     ├ PkgName         : libcrypto3 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r6?arch=x86_64&di
-                        │     │                          stro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r6?arch=x86_64&di
+                        │     │                  │       stro=3.19.1 
+                        │     │                  ╰ UID : d75afcc924a4f8f3 
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:0026d1729b094dfca2ed879e2180d5463aab2291
+                        │     │                  │         e54ef53d7073d7bd124fb815 
+                        │     │                  ╰ DiffID: sha256:8744e015a9be4e67f3e648b4d5c73dcb66a8d504
+                        │     │                            fefa2d3fc91e2a3018354b11 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -126,40 +129,127 @@
                         │     │                    issue. OpenSSL
                         │     │                   1.0.2 is also not affected by this issue. 
                         │     ├ Severity        : LOW 
-                        │     ├ VendorSeverity   ╭ photon: 3 
+                        │     ├ VendorSeverity   ╭ amazon: 2 
+                        │     │                  ├ photon: 3 
                         │     │                  ├ redhat: 1 
                         │     │                  ╰ ubuntu: 1 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
-                        │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
-                        │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       4/08/5 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [5] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7] : https://security.netapp.com/advisory/ntap-2024050
+                        │     │                  │       3-0013/ 
+                        │     │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [9] : https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
-                        ├ [3] ╭ VulnerabilityID : CVE-2024-2511 
+                        │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
+                        ├ [3] ╭ VulnerabilityID : CVE-2024-4603 
+                        │     ├ PkgID           : libcrypto3@3.1.4-r6 
+                        │     ├ PkgName         : libcrypto3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r6?arch=x86_64&di
+                        │     │                  │       stro=3.19.1 
+                        │     │                  ╰ UID : d75afcc924a4f8f3 
+                        │     ├ InstalledVersion: 3.1.4-r6 
+                        │     ├ FixedVersion    : 3.3.0-r2 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:0026d1729b094dfca2ed879e2180d5463aab2291
+                        │     │                  │         e54ef53d7073d7bd124fb815 
+                        │     │                  ╰ DiffID: sha256:8744e015a9be4e67f3e648b4d5c73dcb66a8d504
+                        │     │                            fefa2d3fc91e2a3018354b11 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4603 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be ... 
+                        │     ├ Description     : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be very
+                        │     │                   slow.
+                        │     │                   
+                        │     │                   Impact summary: Applications that use the functions
+                        │     │                   EVP_PKEY_param_check()
+                        │     │                   or EVP_PKEY_public_check() to check a DSA public key or DSA
+                        │     │                   parameters may
+                        │     │                   experience long delays. Where the key or parameters that are
+                        │     │                   being checked
+                        │     │                   have been obtained from an untrusted source this may lead to
+                        │     │                   a Denial of
+                        │     │                   Service.
+                        │     │                   
+                        │     │                   The functions EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check() perform
+                        │     │                   various checks on DSA parameters. Some of those computations
+                        │     │                   take a long time
+                        │     │                   if the modulus (`p` parameter) is too large.
+                        │     │                   
+                        │     │                   Trying to use a very large modulus is slow and OpenSSL will
+                        │     │                   not allow using
+                        │     │                   public keys with a modulus which is over 10,000 bits in
+                        │     │                   length for signature
+                        │     │                   verification. However the key and parameter check functions
+                        │     │                   do not limit
+                        │     │                   the modulus size when performing the checks.
+                        │     │                   
+                        │     │                   An application that calls EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check()
+                        │     │                   and supplies a key or parameters obtained from an untrusted
+                        │     │                   source could be
+                        │     │                   vulnerable to a Denial of Service attack.
+                        │     │                   
+                        │     │                   These functions are not called by OpenSSL itself on untrusted
+                        │     │                    DSA keys so
+                        │     │                   only applications that directly call these functions may be
+                        │     │                   vulnerable.
+                        │     │                   
+                        │     │                   Also vulnerable are the OpenSSL pkey and pkeyparam command
+                        │     │                   line applications
+                        │     │                   when using the `-check` option.
+                        │     │                   
+                        │     │                   The OpenSSL SSL/TLS implementation is not affected by this
+                        │     │                   issue.
+                        │     │                   
+                        │     │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
+                        │     │                   issue. 
+                        │     ├ Severity        : LOW 
+                        │     ├ VendorSeverity   ─ ubuntu: 1 
+                        │     ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3559e868
+                        │     │                  │      e58005d15c6013a0c1fd832e51c73397 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/53ea0648
+                        │     │                  │      6d296b890d565fb971b2764fcd826e7e 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/9c39b385
+                        │     │                  │      8091c152f52513c066ff2c5a47969f0d 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/da343d06
+                        │     │                  │      05c826ef197aceedc67e8e04f065f740 
+                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2024-4603 
+                        │     │                  ╰ [5]: https://www.openssl.org/news/secadv/20240516.txt 
+                        │     ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
+                        │     ╰ LastModifiedDate: 2024-05-16T16:15:10.643Z 
+                        ├ [4] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : libssl3@3.1.4-r6 
                         │     ├ PkgName         : libssl3 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/libssl3@3.1.4-r6?arch=x86_64&distr
-                        │     │                          o=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.1.4-r6?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : fd3d4dc5a0e89054 
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:0026d1729b094dfca2ed879e2180d5463aab2291
+                        │     │                  │         e54ef53d7073d7bd124fb815 
+                        │     │                  ╰ DiffID: sha256:8744e015a9be4e67f3e648b4d5c73dcb66a8d504
+                        │     │                            fefa2d3fc91e2a3018354b11 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -198,40 +288,127 @@
                         │     │                    issue. OpenSSL
                         │     │                   1.0.2 is also not affected by this issue. 
                         │     ├ Severity        : LOW 
-                        │     ├ VendorSeverity   ╭ photon: 3 
+                        │     ├ VendorSeverity   ╭ amazon: 2 
+                        │     │                  ├ photon: 3 
                         │     │                  ├ redhat: 1 
                         │     │                  ╰ ubuntu: 1 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
-                        │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
-                        │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       4/08/5 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [5] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7] : https://security.netapp.com/advisory/ntap-2024050
+                        │     │                  │       3-0013/ 
+                        │     │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [9] : https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
-                        ├ [4] ╭ VulnerabilityID : CVE-2024-22365 
+                        │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
+                        ├ [5] ╭ VulnerabilityID : CVE-2024-4603 
+                        │     ├ PkgID           : libssl3@3.1.4-r6 
+                        │     ├ PkgName         : libssl3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.1.4-r6?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : fd3d4dc5a0e89054 
+                        │     ├ InstalledVersion: 3.1.4-r6 
+                        │     ├ FixedVersion    : 3.3.0-r2 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:0026d1729b094dfca2ed879e2180d5463aab2291
+                        │     │                  │         e54ef53d7073d7bd124fb815 
+                        │     │                  ╰ DiffID: sha256:8744e015a9be4e67f3e648b4d5c73dcb66a8d504
+                        │     │                            fefa2d3fc91e2a3018354b11 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4603 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be ... 
+                        │     ├ Description     : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be very
+                        │     │                   slow.
+                        │     │                   
+                        │     │                   Impact summary: Applications that use the functions
+                        │     │                   EVP_PKEY_param_check()
+                        │     │                   or EVP_PKEY_public_check() to check a DSA public key or DSA
+                        │     │                   parameters may
+                        │     │                   experience long delays. Where the key or parameters that are
+                        │     │                   being checked
+                        │     │                   have been obtained from an untrusted source this may lead to
+                        │     │                   a Denial of
+                        │     │                   Service.
+                        │     │                   
+                        │     │                   The functions EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check() perform
+                        │     │                   various checks on DSA parameters. Some of those computations
+                        │     │                   take a long time
+                        │     │                   if the modulus (`p` parameter) is too large.
+                        │     │                   
+                        │     │                   Trying to use a very large modulus is slow and OpenSSL will
+                        │     │                   not allow using
+                        │     │                   public keys with a modulus which is over 10,000 bits in
+                        │     │                   length for signature
+                        │     │                   verification. However the key and parameter check functions
+                        │     │                   do not limit
+                        │     │                   the modulus size when performing the checks.
+                        │     │                   
+                        │     │                   An application that calls EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check()
+                        │     │                   and supplies a key or parameters obtained from an untrusted
+                        │     │                   source could be
+                        │     │                   vulnerable to a Denial of Service attack.
+                        │     │                   
+                        │     │                   These functions are not called by OpenSSL itself on untrusted
+                        │     │                    DSA keys so
+                        │     │                   only applications that directly call these functions may be
+                        │     │                   vulnerable.
+                        │     │                   
+                        │     │                   Also vulnerable are the OpenSSL pkey and pkeyparam command
+                        │     │                   line applications
+                        │     │                   when using the `-check` option.
+                        │     │                   
+                        │     │                   The OpenSSL SSL/TLS implementation is not affected by this
+                        │     │                   issue.
+                        │     │                   
+                        │     │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
+                        │     │                   issue. 
+                        │     ├ Severity        : LOW 
+                        │     ├ VendorSeverity   ─ ubuntu: 1 
+                        │     ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3559e868
+                        │     │                  │      e58005d15c6013a0c1fd832e51c73397 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/53ea0648
+                        │     │                  │      6d296b890d565fb971b2764fcd826e7e 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/9c39b385
+                        │     │                  │      8091c152f52513c066ff2c5a47969f0d 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/da343d06
+                        │     │                  │      05c826ef197aceedc67e8e04f065f740 
+                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2024-4603 
+                        │     │                  ╰ [5]: https://www.openssl.org/news/secadv/20240516.txt 
+                        │     ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
+                        │     ╰ LastModifiedDate: 2024-05-16T16:15:10.643Z 
+                        ├ [6] ╭ VulnerabilityID : CVE-2024-22365 
                         │     ├ PkgID           : linux-pam@1.5.3-r7 
                         │     ├ PkgName         : linux-pam 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&dis
-                        │     │                          tro=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&dis
+                        │     │                  │       tro=3.19.1 
+                        │     │                  ╰ UID : d08029cd950914e6 
                         │     ├ InstalledVersion: 1.5.3-r7 
                         │     ├ FixedVersion    : 1.6.0-r0 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:0026d1729b094dfca2ed879e2180d5463aab2291
+                        │     │                  │         e54ef53d7073d7bd124fb815 
+                        │     │                  ╰ DiffID: sha256:8744e015a9be4e67f3e648b4d5c73dcb66a8d504
+                        │     │                            fefa2d3fc91e2a3018354b11 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-22365 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -244,9 +421,11 @@
                         │     │                   mkfifo because the openat call (for protect_dir) lacks
                         │     │                   O_DIRECTORY. 
                         │     ├ Severity        : MEDIUM 
-                        │     ├ VendorSeverity   ╭ amazon     : 1 
+                        │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ amazon     : 1 
                         │     │                  ├ cbl-mariner: 2 
                         │     │                  ├ nvd        : 2 
+                        │     │                  ├ oracle-oval: 2 
                         │     │                  ├ photon     : 2 
                         │     │                  ├ redhat     : 2 
                         │     │                  ╰ ubuntu     : 2 
@@ -256,33 +435,40 @@
                         │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
                         │     │                           ╰ V3Score : 5.5 
-                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2024/01/18/3 
-                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2024-22365 
-                        │     │                  ├ [2]: https://github.com/linux-pam/linux-pam 
-                        │     │                  ├ [3]: https://github.com/linux-pam/linux-pam/commit/031b
-                        │     │                  │      b5a5d0d950253b68138b498dc93be69a64cb 
-                        │     │                  ├ [4]: https://github.com/linux-pam/linux-pam/releases/ta
-                        │     │                  │      g/v1.6.0 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-22365 
-                        │     │                  ├ [6]: https://ubuntu.com/security/notices/USN-6588-1 
-                        │     │                  ├ [7]: https://ubuntu.com/security/notices/USN-6588-2 
-                        │     │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2024-22365 
-                        │     │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2024/0
-                        │     │                         1/18/3 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       1/18/3 
+                        │     │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:2438 
+                        │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-22365 
+                        │     │                  ├ [3] : https://bugzilla.redhat.com/2257722 
+                        │     │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-2438.html 
+                        │     │                  ├ [5] : https://github.com/linux-pam/linux-pam 
+                        │     │                  ├ [6] : https://github.com/linux-pam/linux-pam/commit/031
+                        │     │                  │       bb5a5d0d950253b68138b498dc93be69a64cb 
+                        │     │                  ├ [7] : https://github.com/linux-pam/linux-pam/releases/t
+                        │     │                  │       ag/v1.6.0 
+                        │     │                  ├ [8] : https://linux.oracle.com/cve/CVE-2024-22365.html 
+                        │     │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-2438.html 
+                        │     │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-22365 
+                        │     │                  ├ [11]: https://ubuntu.com/security/notices/USN-6588-1 
+                        │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-6588-2 
+                        │     │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2024-22365 
+                        │     │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2024/
+                        │     │                          01/18/3 
                         │     ├ PublishedDate   : 2024-02-06T08:15:52.203Z 
                         │     ╰ LastModifiedDate: 2024-02-14T00:27:40.143Z 
-                        ├ [5] ╭ VulnerabilityID : CVE-2024-2511 
+                        ├ [7] ╭ VulnerabilityID : CVE-2024-2511 
                         │     ├ PkgID           : openssl@3.1.4-r6 
                         │     ├ PkgName         : openssl 
-                        │     ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/openssl@3.1.4-r6?arch=x86_64&distr
-                        │     │                          o=3.19.1 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.1.4-r6?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : fb72c97c5159c020 
                         │     ├ InstalledVersion: 3.1.4-r6 
                         │     ├ FixedVersion    : 3.2.1-r2 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:315cee9df7dbd449c6fb3d9909f18cbb47007860
-                        │     │                  │         3f1c6022696a510cd7a28e6a 
-                        │     │                  ╰ DiffID: sha256:b6057e0db0a447796485c4b844c0eb990247a74c
-                        │     │                            f8817372c304689018799f30 
+                        │     ├ Layer            ╭ Digest: sha256:0026d1729b094dfca2ed879e2180d5463aab2291
+                        │     │                  │         e54ef53d7073d7bd124fb815 
+                        │     │                  ╰ DiffID: sha256:8744e015a9be4e67f3e648b4d5c73dcb66a8d504
+                        │     │                            fefa2d3fc91e2a3018354b11 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-2511 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -321,33 +507,120 @@
                         │     │                    issue. OpenSSL
                         │     │                   1.0.2 is also not affected by this issue. 
                         │     ├ Severity        : LOW 
-                        │     ├ VendorSeverity   ╭ photon: 3 
+                        │     ├ VendorSeverity   ╭ amazon: 2 
+                        │     │                  ├ photon: 3 
                         │     │                  ├ redhat: 1 
                         │     │                  ╰ ubuntu: 1 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:L 
                         │     │                           ╰ V3Score : 3.7 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-2511 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/7e4d731b
-                        │     │                  │      1c07201ad9374c1cd9ac5263bdf35bce 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/b52867a9
-                        │     │                  │      f618bb955bed2a3ce3db4d4f97ed8e5d 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/e9d7083e
-                        │     │                  │      241670332e0443da0f0d4ffb52829f08 
-                        │     │                  ├ [4]: https://github.openssl.org/openssl/extended-releas
-                        │     │                  │      es/commit/5f8d25770ae6437db119dfc951e207271a326640[
-                        │     │                  │      m 
-                        │     │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2024-2511 
-                        │     │                  ├ [7]: https://www.openssl.org/news/secadv/20240408.txt 
-                        │     │                  ╰ [8]: https://www.openssl.org/news/vulnerabilities.html 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/0
+                        │     │                  │       4/08/5 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-2511 
+                        │     │                  ├ [2] : https://github.com/openssl/openssl/commit/7e4d731
+                        │     │                  │       b1c07201ad9374c1cd9ac5263bdf35bce 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/b52867a
+                        │     │                  │       9f618bb955bed2a3ce3db4d4f97ed8e5d 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/e9d7083
+                        │     │                  │       e241670332e0443da0f0d4ffb52829f08 
+                        │     │                  ├ [5] : https://github.openssl.org/openssl/extended-relea
+                        │     │                  │       ses/commit/5f8d25770ae6437db119dfc951e207271a326640
+                        │     │                  │        
+                        │     │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2024-2511 
+                        │     │                  ├ [7] : https://security.netapp.com/advisory/ntap-2024050
+                        │     │                  │       3-0013/ 
+                        │     │                  ├ [8] : https://www.cve.org/CVERecord?id=CVE-2024-2511 
+                        │     │                  ├ [9] : https://www.openssl.org/news/secadv/20240408.txt 
+                        │     │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │     ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
-                        │     ╰ LastModifiedDate: 2024-04-08T18:48:40.217Z 
-                        ╰ [6] ╭ VulnerabilityID : CVE-2023-42366 
+                        │     ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
+                        ├ [8] ╭ VulnerabilityID : CVE-2024-4603 
+                        │     ├ PkgID           : openssl@3.1.4-r6 
+                        │     ├ PkgName         : openssl 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.1.4-r6?arch=x86_64&distr
+                        │     │                  │       o=3.19.1 
+                        │     │                  ╰ UID : fb72c97c5159c020 
+                        │     ├ InstalledVersion: 3.1.4-r6 
+                        │     ├ FixedVersion    : 3.3.0-r2 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:0026d1729b094dfca2ed879e2180d5463aab2291
+                        │     │                  │         e54ef53d7073d7bd124fb815 
+                        │     │                  ╰ DiffID: sha256:8744e015a9be4e67f3e648b4d5c73dcb66a8d504
+                        │     │                            fefa2d3fc91e2a3018354b11 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-4603 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be ... 
+                        │     ├ Description     : Issue summary: Checking excessively long DSA keys or
+                        │     │                   parameters may be very
+                        │     │                   slow.
+                        │     │                   
+                        │     │                   Impact summary: Applications that use the functions
+                        │     │                   EVP_PKEY_param_check()
+                        │     │                   or EVP_PKEY_public_check() to check a DSA public key or DSA
+                        │     │                   parameters may
+                        │     │                   experience long delays. Where the key or parameters that are
+                        │     │                   being checked
+                        │     │                   have been obtained from an untrusted source this may lead to
+                        │     │                   a Denial of
+                        │     │                   Service.
+                        │     │                   
+                        │     │                   The functions EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check() perform
+                        │     │                   various checks on DSA parameters. Some of those computations
+                        │     │                   take a long time
+                        │     │                   if the modulus (`p` parameter) is too large.
+                        │     │                   
+                        │     │                   Trying to use a very large modulus is slow and OpenSSL will
+                        │     │                   not allow using
+                        │     │                   public keys with a modulus which is over 10,000 bits in
+                        │     │                   length for signature
+                        │     │                   verification. However the key and parameter check functions
+                        │     │                   do not limit
+                        │     │                   the modulus size when performing the checks.
+                        │     │                   
+                        │     │                   An application that calls EVP_PKEY_param_check() or
+                        │     │                   EVP_PKEY_public_check()
+                        │     │                   and supplies a key or parameters obtained from an untrusted
+                        │     │                   source could be
+                        │     │                   vulnerable to a Denial of Service attack.
+                        │     │                   
+                        │     │                   These functions are not called by OpenSSL itself on untrusted
+                        │     │                    DSA keys so
+                        │     │                   only applications that directly call these functions may be
+                        │     │                   vulnerable.
+                        │     │                   
+                        │     │                   Also vulnerable are the OpenSSL pkey and pkeyparam command
+                        │     │                   line applications
+                        │     │                   when using the `-check` option.
+                        │     │                   
+                        │     │                   The OpenSSL SSL/TLS implementation is not affected by this
+                        │     │                   issue.
+                        │     │                   
+                        │     │                   The OpenSSL 3.0 and 3.1 FIPS providers are affected by this
+                        │     │                   issue. 
+                        │     ├ Severity        : LOW 
+                        │     ├ VendorSeverity   ─ ubuntu: 1 
+                        │     ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3559e868
+                        │     │                  │      e58005d15c6013a0c1fd832e51c73397 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/53ea0648
+                        │     │                  │      6d296b890d565fb971b2764fcd826e7e 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/9c39b385
+                        │     │                  │      8091c152f52513c066ff2c5a47969f0d 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/da343d06
+                        │     │                  │      05c826ef197aceedc67e8e04f065f740 
+                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2024-4603 
+                        │     │                  ╰ [5]: https://www.openssl.org/news/secadv/20240516.txt 
+                        │     ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
+                        │     ╰ LastModifiedDate: 2024-05-16T16:15:10.643Z 
+                        ╰ [9] ╭ VulnerabilityID : CVE-2023-42366 
                               ├ PkgID           : ssl_client@1.36.1-r15 
                               ├ PkgName         : ssl_client 
-                              ├ PkgIdentifier    ─ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64&
-                              │                          distro=3.19.1 
+                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64&
+                              │                  │       distro=3.19.1 
+                              │                  ╰ UID : 3a57d387f26109e5 
                               ├ InstalledVersion: 1.36.1-r15 
                               ├ FixedVersion    : 1.36.1-r25 
                               ├ Status          : fixed 
