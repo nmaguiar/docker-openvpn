@@ -41,85 +41,7 @@
                         │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42363 
                         │      ├ PublishedDate   : 2023-11-27T22:15:07.94Z 
                         │      ╰ LastModifiedDate: 2023-11-30T05:06:49.523Z 
-                        ├ [1]  ╭ VulnerabilityID : CVE-2023-42364 
-                        │      ├ PkgID           : busybox@1.36.1-r15 
-                        │      ├ PkgName         : busybox 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&di
-                        │      │                  │       stro=3.19.1 
-                        │      │                  ╰ UID : a71bca140ff5726b 
-                        │      ├ InstalledVersion: 1.36.1-r15 
-                        │      ├ FixedVersion    : 1.36.1-r27 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca
-                        │      │                  │         915dc1c92ec14ff61e67fbaf8 
-                        │      │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15
-                        │      │                            a17bb196d637e526349601820 
-                        │      ├ SeveritySource  : nvd 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Title           : busybox: use-after-free 
-                        │      ├ Description     : A use-after-free vulnerability in BusyBox v.1.36.1
-                        │      │                   allows attackers to cause a denial of service via a crafted
-                        │      │                   awk pattern in the awk.c evaluate function. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ╭ nvd   : 2 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                  │        │           N/I:N/A:H 
-                        │      │                  │        ╰ V3Score : 5.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                           │           H/I:H/A:H 
-                        │      │                           ╰ V3Score : 7.8 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2023-42364 
-                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15868 
-                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2023-42364 
-                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
-                        │      ├ PublishedDate   : 2023-11-27T23:15:07.313Z 
-                        │      ╰ LastModifiedDate: 2023-11-30T05:07:10.827Z 
-                        ├ [2]  ╭ VulnerabilityID : CVE-2023-42365 
-                        │      ├ PkgID           : busybox@1.36.1-r15 
-                        │      ├ PkgName         : busybox 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&di
-                        │      │                  │       stro=3.19.1 
-                        │      │                  ╰ UID : a71bca140ff5726b 
-                        │      ├ InstalledVersion: 1.36.1-r15 
-                        │      ├ FixedVersion    : 1.36.1-r27 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca
-                        │      │                  │         915dc1c92ec14ff61e67fbaf8 
-                        │      │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15
-                        │      │                            a17bb196d637e526349601820 
-                        │      ├ SeveritySource  : nvd 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Title           : busybox:  use-after-free 
-                        │      ├ Description     : A use-after-free vulnerability was discovered in
-                        │      │                   BusyBox v.1.36.1 via a crafted awk pattern in the awk.c
-                        │      │                   copyvar function. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ╭ nvd   : 2 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                  │        │           N/I:N/A:H 
-                        │      │                  │        ╰ V3Score : 5.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                           │           H/I:H/A:H 
-                        │      │                           ╰ V3Score : 7.8 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2023-42365 
-                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15871 
-                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2023-42365 
-                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
-                        │      ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
-                        │      ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
-                        ├ [3]  ╭ VulnerabilityID : CVE-2023-42366 
+                        ├ [1]  ╭ VulnerabilityID : CVE-2023-42366 
                         │      ├ PkgID           : busybox@1.36.1-r15 
                         │      ├ PkgName         : busybox 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.36.1-r15?arch=x86_64&di
@@ -157,7 +79,7 @@
                         │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42366 
                         │      ├ PublishedDate   : 2023-11-27T23:15:07.42Z 
                         │      ╰ LastModifiedDate: 2023-11-30T05:08:23.197Z 
-                        ├ [4]  ╭ VulnerabilityID : CVE-2023-42363 
+                        ├ [2]  ╭ VulnerabilityID : CVE-2023-42363 
                         │      ├ PkgID           : busybox-binsh@1.36.1-r15 
                         │      ├ PkgName         : busybox-binsh 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86
@@ -196,85 +118,7 @@
                         │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42363 
                         │      ├ PublishedDate   : 2023-11-27T22:15:07.94Z 
                         │      ╰ LastModifiedDate: 2023-11-30T05:06:49.523Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2023-42364 
-                        │      ├ PkgID           : busybox-binsh@1.36.1-r15 
-                        │      ├ PkgName         : busybox-binsh 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86
-                        │      │                  │       _64&distro=3.19.1 
-                        │      │                  ╰ UID : 3c2acc699fbc7b01 
-                        │      ├ InstalledVersion: 1.36.1-r15 
-                        │      ├ FixedVersion    : 1.36.1-r27 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca
-                        │      │                  │         915dc1c92ec14ff61e67fbaf8 
-                        │      │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15
-                        │      │                            a17bb196d637e526349601820 
-                        │      ├ SeveritySource  : nvd 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Title           : busybox: use-after-free 
-                        │      ├ Description     : A use-after-free vulnerability in BusyBox v.1.36.1
-                        │      │                   allows attackers to cause a denial of service via a crafted
-                        │      │                   awk pattern in the awk.c evaluate function. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ╭ nvd   : 2 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                  │        │           N/I:N/A:H 
-                        │      │                  │        ╰ V3Score : 5.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                           │           H/I:H/A:H 
-                        │      │                           ╰ V3Score : 7.8 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2023-42364 
-                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15868 
-                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2023-42364 
-                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
-                        │      ├ PublishedDate   : 2023-11-27T23:15:07.313Z 
-                        │      ╰ LastModifiedDate: 2023-11-30T05:07:10.827Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2023-42365 
-                        │      ├ PkgID           : busybox-binsh@1.36.1-r15 
-                        │      ├ PkgName         : busybox-binsh 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86
-                        │      │                  │       _64&distro=3.19.1 
-                        │      │                  ╰ UID : 3c2acc699fbc7b01 
-                        │      ├ InstalledVersion: 1.36.1-r15 
-                        │      ├ FixedVersion    : 1.36.1-r27 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca
-                        │      │                  │         915dc1c92ec14ff61e67fbaf8 
-                        │      │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15
-                        │      │                            a17bb196d637e526349601820 
-                        │      ├ SeveritySource  : nvd 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Title           : busybox:  use-after-free 
-                        │      ├ Description     : A use-after-free vulnerability was discovered in
-                        │      │                   BusyBox v.1.36.1 via a crafted awk pattern in the awk.c
-                        │      │                   copyvar function. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ╭ nvd   : 2 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                  │        │           N/I:N/A:H 
-                        │      │                  │        ╰ V3Score : 5.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                           │           H/I:H/A:H 
-                        │      │                           ╰ V3Score : 7.8 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2023-42365 
-                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15871 
-                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2023-42365 
-                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
-                        │      ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
-                        │      ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2023-42366 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2023-42366 
                         │      ├ PkgID           : busybox-binsh@1.36.1-r15 
                         │      ├ PkgName         : busybox-binsh 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r15?arch=x86
@@ -312,7 +156,7 @@
                         │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42366 
                         │      ├ PublishedDate   : 2023-11-27T23:15:07.42Z 
                         │      ╰ LastModifiedDate: 2023-11-30T05:08:23.197Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2024-4603 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2024-4603 
                         │      ├ PkgID           : libcrypto3@3.1.4-r5 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r5?arch=x86_64&d
@@ -399,7 +243,7 @@
                         │      │                  ╰ [7]: https://www.openssl.org/news/secadv/20240516.txt 
                         │      ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
                         │      ╰ LastModifiedDate: 2024-05-17T18:36:31.297Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2024-2511 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2024-2511 
                         │      ├ PkgID           : libcrypto3@3.1.4-r5 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.1.4-r5?arch=x86_64&d
@@ -477,7 +321,7 @@
                         │      │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │      ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
                         │      ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-                        ├ [10] ╭ VulnerabilityID : CVE-2024-4603 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2024-4603 
                         │      ├ PkgID           : libssl3@3.1.4-r5 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.1.4-r5?arch=x86_64&dist
@@ -564,7 +408,7 @@
                         │      │                  ╰ [7]: https://www.openssl.org/news/secadv/20240516.txt 
                         │      ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
                         │      ╰ LastModifiedDate: 2024-05-17T18:36:31.297Z 
-                        ├ [11] ╭ VulnerabilityID : CVE-2024-2511 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2024-2511 
                         │      ├ PkgID           : libssl3@3.1.4-r5 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.1.4-r5?arch=x86_64&dist
@@ -642,7 +486,7 @@
                         │      │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │      ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
                         │      ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-                        ├ [12] ╭ VulnerabilityID : CVE-2024-22365 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2024-22365 
                         │      ├ PkgID           : linux-pam@1.5.3-r7 
                         │      ├ PkgName         : linux-pam 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/linux-pam@1.5.3-r7?arch=x86_64&di
@@ -702,7 +546,7 @@
                         │      │                          /01/18/3 
                         │      ├ PublishedDate   : 2024-02-06T08:15:52.203Z 
                         │      ╰ LastModifiedDate: 2024-02-14T00:27:40.143Z 
-                        ├ [13] ╭ VulnerabilityID : CVE-2024-4603 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2024-4603 
                         │      ├ PkgID           : openssl@3.1.4-r5 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.1.4-r5?arch=x86_64&dist
@@ -789,7 +633,7 @@
                         │      │                  ╰ [7]: https://www.openssl.org/news/secadv/20240516.txt 
                         │      ├ PublishedDate   : 2024-05-16T16:15:10.643Z 
                         │      ╰ LastModifiedDate: 2024-05-17T18:36:31.297Z 
-                        ├ [14] ╭ VulnerabilityID : CVE-2024-2511 
+                        ├ [10] ╭ VulnerabilityID : CVE-2024-2511 
                         │      ├ PkgID           : openssl@3.1.4-r5 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.1.4-r5?arch=x86_64&dist
@@ -867,7 +711,7 @@
                         │      │                  ╰ [10]: https://www.openssl.org/news/vulnerabilities.html 
                         │      ├ PublishedDate   : 2024-04-08T14:15:07.66Z 
                         │      ╰ LastModifiedDate: 2024-05-03T13:15:21.93Z 
-                        ├ [15] ╭ VulnerabilityID : CVE-2023-42363 
+                        ├ [11] ╭ VulnerabilityID : CVE-2023-42363 
                         │      ├ PkgID           : ssl_client@1.36.1-r15 
                         │      ├ PkgName         : ssl_client 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64
@@ -906,85 +750,7 @@
                         │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42363 
                         │      ├ PublishedDate   : 2023-11-27T22:15:07.94Z 
                         │      ╰ LastModifiedDate: 2023-11-30T05:06:49.523Z 
-                        ├ [16] ╭ VulnerabilityID : CVE-2023-42364 
-                        │      ├ PkgID           : ssl_client@1.36.1-r15 
-                        │      ├ PkgName         : ssl_client 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64
-                        │      │                  │       &distro=3.19.1 
-                        │      │                  ╰ UID : 26d4fb565777c531 
-                        │      ├ InstalledVersion: 1.36.1-r15 
-                        │      ├ FixedVersion    : 1.36.1-r27 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca
-                        │      │                  │         915dc1c92ec14ff61e67fbaf8 
-                        │      │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15
-                        │      │                            a17bb196d637e526349601820 
-                        │      ├ SeveritySource  : nvd 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Title           : busybox: use-after-free 
-                        │      ├ Description     : A use-after-free vulnerability in BusyBox v.1.36.1
-                        │      │                   allows attackers to cause a denial of service via a crafted
-                        │      │                   awk pattern in the awk.c evaluate function. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ╭ nvd   : 2 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                  │        │           N/I:N/A:H 
-                        │      │                  │        ╰ V3Score : 5.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                           │           H/I:H/A:H 
-                        │      │                           ╰ V3Score : 7.8 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2023-42364 
-                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15868 
-                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2023-42364 
-                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
-                        │      ├ PublishedDate   : 2023-11-27T23:15:07.313Z 
-                        │      ╰ LastModifiedDate: 2023-11-30T05:07:10.827Z 
-                        ├ [17] ╭ VulnerabilityID : CVE-2023-42365 
-                        │      ├ PkgID           : ssl_client@1.36.1-r15 
-                        │      ├ PkgName         : ssl_client 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64
-                        │      │                  │       &distro=3.19.1 
-                        │      │                  ╰ UID : 26d4fb565777c531 
-                        │      ├ InstalledVersion: 1.36.1-r15 
-                        │      ├ FixedVersion    : 1.36.1-r27 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4abcf20661432fb2d719aaf90656f55c287f8ca
-                        │      │                  │         915dc1c92ec14ff61e67fbaf8 
-                        │      │                  ╰ DiffID: sha256:d4fc045c9e3a848011de66f34b81f052d4f2c15
-                        │      │                            a17bb196d637e526349601820 
-                        │      ├ SeveritySource  : nvd 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Title           : busybox:  use-after-free 
-                        │      ├ Description     : A use-after-free vulnerability was discovered in
-                        │      │                   BusyBox v.1.36.1 via a crafted awk pattern in the awk.c
-                        │      │                   copyvar function. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ╭ nvd   : 2 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                  │        │           N/I:N/A:H 
-                        │      │                  │        ╰ V3Score : 5.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:
-                        │      │                           │           H/I:H/A:H 
-                        │      │                           ╰ V3Score : 7.8 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2023-42365 
-                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15871 
-                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2023-42365 
-                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
-                        │      ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
-                        │      ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
-                        ╰ [18] ╭ VulnerabilityID : CVE-2023-42366 
+                        ╰ [12] ╭ VulnerabilityID : CVE-2023-42366 
                                ├ PkgID           : ssl_client@1.36.1-r15 
                                ├ PkgName         : ssl_client 
                                ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r15?arch=x86_64
