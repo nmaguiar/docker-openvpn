@@ -537,7 +537,7 @@
                         │      │                  ├ [7] : https://github.com/linux-pam/linux-pam/releases/
                         │      │                  │       tag/v1.6.0 
                         │      │                  ├ [8] : https://linux.oracle.com/cve/CVE-2024-22365.html 
-                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-2438.html 
+                        │      │                  ├ [9] : https://linux.oracle.com/errata/ELSA-2024-3163.html 
                         │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2024-22365 
                         │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-6588-1 
                         │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-6588-2 
