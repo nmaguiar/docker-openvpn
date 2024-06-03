@@ -527,10 +527,10 @@
                         │      │                           ╰ V3Score : 5.5 
                         │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2024/
                         │      │                  │       01/18/3 
-                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:3163 
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2024:2438 
                         │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-22365 
                         │      │                  ├ [3] : https://bugzilla.redhat.com/2257722 
-                        │      │                  ├ [4] : https://errata.almalinux.org/8/ALSA-2024-3163.html 
+                        │      │                  ├ [4] : https://errata.almalinux.org/9/ALSA-2024-2438.html 
                         │      │                  ├ [5] : https://github.com/linux-pam/linux-pam 
                         │      │                  ├ [6] : https://github.com/linux-pam/linux-pam/commit/03
                         │      │                  │       1bb5a5d0d950253b68138b498dc93be69a64cb 
