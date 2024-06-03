@@ -467,10 +467,10 @@
         V3Score: 5.5
     References:
     - http://www.openwall.com/lists/oss-security/2024/01/18/3
-    - https://access.redhat.com/errata/RHSA-2024:3163
+    - https://access.redhat.com/errata/RHSA-2024:2438
     - https://access.redhat.com/security/cve/CVE-2024-22365
     - https://bugzilla.redhat.com/2257722
-    - https://errata.almalinux.org/8/ALSA-2024-3163.html
+    - https://errata.almalinux.org/9/ALSA-2024-2438.html
     - https://github.com/linux-pam/linux-pam
     - https://github.com/linux-pam/linux-pam/commit/031bb5a5d0d950253b68138b498dc93be69a64cb
     - https://github.com/linux-pam/linux-pam/releases/tag/v1.6.0
