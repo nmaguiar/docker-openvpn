@@ -1,19 +1,19 @@
-- Target: nmaguiar/openvpn:latest (alpine 3.20.0)
+- Target: nmaguiar/openvpn:latest (alpine 3.20.1)
   Class: os-pkgs
   Type: alpine
   Vulnerabilities:
   - VulnerabilityID: CVE-2023-42364
-    PkgID: busybox@1.36.1-r28
+    PkgID: busybox@1.36.1-r29
     PkgName: busybox
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox@1.36.1-r28?arch=x86_64&distro=3.20.0
-      UID: a82a0980b793801d
-    InstalledVersion: 1.36.1-r28
+      PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&distro=3.20.1
+      UID: ed1c83b0e263b415
+    InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
+      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
+      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42364
     DataSource:
@@ -37,24 +37,26 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - http://lists.busybox.net/pipermail/busybox/2024-May/090762.html
     - https://access.redhat.com/security/cve/CVE-2023-42364
     - https://bugs.busybox.net/show_bug.cgi?id=15868
+    - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42364
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
     LastModifiedDate: '2023-11-30T05:07:10.827Z'
   - VulnerabilityID: CVE-2023-42365
-    PkgID: busybox@1.36.1-r28
+    PkgID: busybox@1.36.1-r29
     PkgName: busybox
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox@1.36.1-r28?arch=x86_64&distro=3.20.0
-      UID: a82a0980b793801d
-    InstalledVersion: 1.36.1-r28
+      PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&distro=3.20.1
+      UID: ed1c83b0e263b415
+    InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
+      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
+      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42365
     DataSource:
@@ -78,24 +80,26 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - http://lists.busybox.net/pipermail/busybox/2024-May/090762.html
     - https://access.redhat.com/security/cve/CVE-2023-42365
     - https://bugs.busybox.net/show_bug.cgi?id=15871
+    - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42365
     - https://www.cve.org/CVERecord?id=CVE-2023-42365
     PublishedDate: '2023-11-27T23:15:07.373Z'
     LastModifiedDate: '2023-11-30T05:08:08.77Z'
   - VulnerabilityID: CVE-2023-42364
-    PkgID: busybox-binsh@1.36.1-r28
+    PkgID: busybox-binsh@1.36.1-r29
     PkgName: busybox-binsh
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r28?arch=x86_64&distro=3.20.0
-      UID: 5aa0bade4a1e3de9
-    InstalledVersion: 1.36.1-r28
+      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_64&distro=3.20.1
+      UID: 799dab1027576e1f
+    InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
+      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
+      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42364
     DataSource:
@@ -119,24 +123,26 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - http://lists.busybox.net/pipermail/busybox/2024-May/090762.html
     - https://access.redhat.com/security/cve/CVE-2023-42364
     - https://bugs.busybox.net/show_bug.cgi?id=15868
+    - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42364
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
     LastModifiedDate: '2023-11-30T05:07:10.827Z'
   - VulnerabilityID: CVE-2023-42365
-    PkgID: busybox-binsh@1.36.1-r28
+    PkgID: busybox-binsh@1.36.1-r29
     PkgName: busybox-binsh
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r28?arch=x86_64&distro=3.20.0
-      UID: 5aa0bade4a1e3de9
-    InstalledVersion: 1.36.1-r28
+      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_64&distro=3.20.1
+      UID: 799dab1027576e1f
+    InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
+      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
+      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42365
     DataSource:
@@ -160,120 +166,26 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - http://lists.busybox.net/pipermail/busybox/2024-May/090762.html
     - https://access.redhat.com/security/cve/CVE-2023-42365
     - https://bugs.busybox.net/show_bug.cgi?id=15871
+    - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42365
     - https://www.cve.org/CVERecord?id=CVE-2023-42365
     PublishedDate: '2023-11-27T23:15:07.373Z'
     LastModifiedDate: '2023-11-30T05:08:08.77Z'
-  - VulnerabilityID: CVE-2024-4741
-    PkgID: libcrypto3@3.3.0-r2
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.3.0-r2?arch=x86_64&distro=3.20.0
-      UID: 4b33e8088ef31713
-    InstalledVersion: 3.3.0-r2
-    FixedVersion: 3.3.0-r3
-    Status: fixed
-    Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-4741
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Use After Free with SSL_free_buffers'
-    Description: A use-after-free vulnerability was found in OpenSSL. Calling the OpenSSL API SSL_free_buffers function may cause memory to be accessed that was previously freed in some situations.
-    Severity: MEDIUM
-    VendorSeverity:
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
-        V3Score: 5.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2024-4741
-    - https://nvd.nist.gov/vuln/detail/CVE-2024-4741
-    - https://www.cve.org/CVERecord?id=CVE-2024-4741
-    - https://www.openssl.org/news/secadv/20240528.txt
-  - VulnerabilityID: CVE-2024-4741
-    PkgID: libssl3@3.3.0-r2
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.3.0-r2?arch=x86_64&distro=3.20.0
-      UID: e8a569b5e48bd1ba
-    InstalledVersion: 3.3.0-r2
-    FixedVersion: 3.3.0-r3
-    Status: fixed
-    Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-4741
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Use After Free with SSL_free_buffers'
-    Description: A use-after-free vulnerability was found in OpenSSL. Calling the OpenSSL API SSL_free_buffers function may cause memory to be accessed that was previously freed in some situations.
-    Severity: MEDIUM
-    VendorSeverity:
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
-        V3Score: 5.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2024-4741
-    - https://nvd.nist.gov/vuln/detail/CVE-2024-4741
-    - https://www.cve.org/CVERecord?id=CVE-2024-4741
-    - https://www.openssl.org/news/secadv/20240528.txt
-  - VulnerabilityID: CVE-2024-4741
-    PkgID: openssl@3.3.0-r2
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.3.0-r2?arch=x86_64&distro=3.20.0
-      UID: 6bea76f58e90ed8f
-    InstalledVersion: 3.3.0-r2
-    FixedVersion: 3.3.0-r3
-    Status: fixed
-    Layer:
-      Digest: sha256:72bf69b9f05f827ed63789ea9468dd905475c0a80f4c59a1f1674fb9acae73a2
-      DiffID: sha256:c123c93d8ef0c418fd2c8b20a8d8415241aefb4f93dc1bc7fc6e3e6fbadc7174
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-4741
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Use After Free with SSL_free_buffers'
-    Description: A use-after-free vulnerability was found in OpenSSL. Calling the OpenSSL API SSL_free_buffers function may cause memory to be accessed that was previously freed in some situations.
-    Severity: MEDIUM
-    VendorSeverity:
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
-        V3Score: 5.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2024-4741
-    - https://nvd.nist.gov/vuln/detail/CVE-2024-4741
-    - https://www.cve.org/CVERecord?id=CVE-2024-4741
-    - https://www.openssl.org/news/secadv/20240528.txt
   - VulnerabilityID: CVE-2023-42364
-    PkgID: ssl_client@1.36.1-r28
+    PkgID: ssl_client@1.36.1-r29
     PkgName: ssl_client
     PkgIdentifier:
-      PURL: pkg:apk/alpine/ssl_client@1.36.1-r28?arch=x86_64&distro=3.20.0
-      UID: 4aecf44d6afdd0d
-    InstalledVersion: 1.36.1-r28
+      PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.1
+      UID: 9da10974b53c2982
+    InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
+      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
+      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42364
     DataSource:
@@ -297,24 +209,26 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - http://lists.busybox.net/pipermail/busybox/2024-May/090762.html
     - https://access.redhat.com/security/cve/CVE-2023-42364
     - https://bugs.busybox.net/show_bug.cgi?id=15868
+    - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42364
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
     LastModifiedDate: '2023-11-30T05:07:10.827Z'
   - VulnerabilityID: CVE-2023-42365
-    PkgID: ssl_client@1.36.1-r28
+    PkgID: ssl_client@1.36.1-r29
     PkgName: ssl_client
     PkgIdentifier:
-      PURL: pkg:apk/alpine/ssl_client@1.36.1-r28?arch=x86_64&distro=3.20.0
-      UID: 4aecf44d6afdd0d
-    InstalledVersion: 1.36.1-r28
+      PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.1
+      UID: 9da10974b53c2982
+    InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:d25f557d7f31bf7acfac935859b5153da41d13c41f2b468d16f729a5b883634f
-      DiffID: sha256:02f2bcb26af5ea6d185dcf509dc795746d907ae10c53918b6944ac85447a0c72
+      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
+      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42365
     DataSource:
@@ -338,8 +252,10 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
         V3Score: 7.8
     References:
+    - http://lists.busybox.net/pipermail/busybox/2024-May/090762.html
     - https://access.redhat.com/security/cve/CVE-2023-42365
     - https://bugs.busybox.net/show_bug.cgi?id=15871
+    - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42365
     - https://www.cve.org/CVERecord?id=CVE-2023-42365
     PublishedDate: '2023-11-27T23:15:07.373Z'
