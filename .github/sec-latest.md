@@ -337,7 +337,7 @@
                         │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
                         │      │                  ╰ [12]: https://www.openssl.org/news/secadv/20240627.txt 
                         │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
-                        │      ╰ LastModifiedDate: 2024-06-28T19:15:07.06Z 
+                        │      ╰ LastModifiedDate: 2024-07-03T02:09:04.14Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2024-5535 
                         │      ├ PkgID           : libssl3@3.3.1-r0 
                         │      ├ PkgName         : libssl3 
@@ -497,7 +497,7 @@
                         │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
                         │      │                  ╰ [12]: https://www.openssl.org/news/secadv/20240627.txt 
                         │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
-                        │      ╰ LastModifiedDate: 2024-06-28T19:15:07.06Z 
+                        │      ╰ LastModifiedDate: 2024-07-03T02:09:04.14Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2024-5535 
                         │      ├ PkgID           : openssl@3.3.1-r0 
                         │      ├ PkgName         : openssl 
@@ -657,7 +657,7 @@
                         │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
                         │      │                  ╰ [12]: https://www.openssl.org/news/secadv/20240627.txt 
                         │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
-                        │      ╰ LastModifiedDate: 2024-06-28T19:15:07.06Z 
+                        │      ╰ LastModifiedDate: 2024-07-03T02:09:04.14Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2024-28882 
                         │      ├ PkgID           : openvpn@2.6.10-r0 
                         │      ├ PkgName         : openvpn 
@@ -681,7 +681,8 @@
                         │      │                   disconnect this client 
                         │      ├ Severity        : MEDIUM 
                         │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
+                        │      ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-6860-1 
+                        │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
                         ├ [8]  ╭ VulnerabilityID : CVE-2024-5594 
                         │      ├ PkgID           : openvpn@2.6.10-r0 
                         │      ├ PkgName         : openvpn 
@@ -699,7 +700,14 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ╰ Severity        : UNKNOWN 
+                        │      ├ Description     : control channel: refuse control channel messages with
+                        │      │                   nonprintable characters in them. Security scope: a malicious
+                        │      │                    openvpn peer can send garbage to openvpn log, or cause high
+                        │      │                    CPU load 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-6860-1 
+                        │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2024-5594 
                         ├ [9]  ╭ VulnerabilityID : CVE-2024-28882 
                         │      ├ PkgID           : openvpn-auth-pam@2.6.10-r0 
                         │      ├ PkgName         : openvpn-auth-pam 
@@ -723,7 +731,8 @@
                         │      │                   disconnect this client 
                         │      ├ Severity        : MEDIUM 
                         │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ╰ References       ─ [0]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
+                        │      ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-6860-1 
+                        │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
                         ├ [10] ╭ VulnerabilityID : CVE-2024-5594 
                         │      ├ PkgID           : openvpn-auth-pam@2.6.10-r0 
                         │      ├ PkgName         : openvpn-auth-pam 
@@ -741,7 +750,14 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ╰ Severity        : UNKNOWN 
+                        │      ├ Description     : control channel: refuse control channel messages with
+                        │      │                   nonprintable characters in them. Security scope: a malicious
+                        │      │                    openvpn peer can send garbage to openvpn log, or cause high
+                        │      │                    CPU load 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-6860-1 
+                        │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2024-5594 
                         ├ [11] ╭ VulnerabilityID : CVE-2023-42364 
                         │      ├ PkgID           : ssl_client@1.36.1-r29 
                         │      ├ PkgName         : ssl_client 
