@@ -308,7 +308,8 @@
                         │      │                   become available. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-200 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      ├ VendorSeverity   ╭ photon: 4 
+                        │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:
                         │      │                           │           N/I:N/A:H 
@@ -468,7 +469,8 @@
                         │      │                   become available. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-200 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      ├ VendorSeverity   ╭ photon: 4 
+                        │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:
                         │      │                           │           N/I:N/A:H 
@@ -628,7 +630,8 @@
                         │      │                   become available. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-200 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      ├ VendorSeverity   ╭ photon: 4 
+                        │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:
                         │      │                           │           N/I:N/A:H 
@@ -675,14 +678,23 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Description     : only call schedule_exit() once (on a given peer).
-                        │      │                   Security scope: an authenticated client can make the server
-                        │      │                   "keep the session" even when the server has been told to
-                        │      │                   disconnect this client 
+                        │      ├ Title           : OpenVPN from 2.6.0 through 2.6.10 in a server role
+                        │      │                   accepts multiple ex ... 
+                        │      ├ Description     : OpenVPN from 2.6.0 through 2.6.10 in a server role
+                        │      │                   accepts multiple exit notifications from authenticated
+                        │      │                   clients which will extend the validity of a closing
+                        │      │                   session 
                         │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-772 
                         │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-6860-1 
-                        │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
+                        │      ├ References       ╭ [0]: https://community.openvpn.net/openvpn/wiki/CVE-20
+                        │      │                  │      24-28882 
+                        │      │                  ├ [1]: https://ubuntu.com/security/notices/USN-6860-1 
+                        │      │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
+                        │      │                  ╰ [3]: https://www.mail-archive.com/openvpn-users@lists.
+                        │      │                         sourceforge.net/msg07634.html 
+                        │      ├ PublishedDate   : 2024-07-08T22:15:02.41Z 
+                        │      ╰ LastModifiedDate: 2024-07-09T18:19:14.047Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2024-5594 
                         │      ├ PkgID           : openvpn@2.6.10-r0 
                         │      ├ PkgName         : openvpn 
@@ -725,14 +737,23 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Description     : only call schedule_exit() once (on a given peer).
-                        │      │                   Security scope: an authenticated client can make the server
-                        │      │                   "keep the session" even when the server has been told to
-                        │      │                   disconnect this client 
+                        │      ├ Title           : OpenVPN from 2.6.0 through 2.6.10 in a server role
+                        │      │                   accepts multiple ex ... 
+                        │      ├ Description     : OpenVPN from 2.6.0 through 2.6.10 in a server role
+                        │      │                   accepts multiple exit notifications from authenticated
+                        │      │                   clients which will extend the validity of a closing
+                        │      │                   session 
                         │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-772 
                         │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ╰ References       ╭ [0]: https://ubuntu.com/security/notices/USN-6860-1 
-                        │                         ╰ [1]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
+                        │      ├ References       ╭ [0]: https://community.openvpn.net/openvpn/wiki/CVE-20
+                        │      │                  │      24-28882 
+                        │      │                  ├ [1]: https://ubuntu.com/security/notices/USN-6860-1 
+                        │      │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2024-28882 
+                        │      │                  ╰ [3]: https://www.mail-archive.com/openvpn-users@lists.
+                        │      │                         sourceforge.net/msg07634.html 
+                        │      ├ PublishedDate   : 2024-07-08T22:15:02.41Z 
+                        │      ╰ LastModifiedDate: 2024-07-09T18:19:14.047Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2024-5594 
                         │      ├ PkgID           : openvpn-auth-pam@2.6.10-r0 
                         │      ├ PkgName         : openvpn-auth-pam 
