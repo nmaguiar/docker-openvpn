@@ -1,0 +1,21 @@
+#!/bin/bas
+EASYRSA_KEY_SIZE=${EASYRSA_KEY_SIZE:-4096}
+
+easyrsa build-client-full $1 ${2:-nopass}
+
+echo ""
+echo "---"
+echo ""
+echo "You can now retrieve the generated client configuration by executing:
+
+-->
+docker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn get $1 > $1.ovpn
+<--
+
+You can also list by executing:
+
+-->
+docker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn ovpn_listclients
+<--
+
+"

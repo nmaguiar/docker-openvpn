@@ -1,0 +1,56 @@
+#!/bin/bash
+
+echo "[1mnmaguiar/openvpn[m"
+echo "[1m================[m"
+echo ""
+echo "To initialize an OpenVPN configuration for the first time you need to:
+
+[1m1. Generate/change configuration[m
+[1m--------------------------------[m
+
+First you need to generate the VPN configuration. You can start easily with:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn ovpn_genconfig -u tcp://my.vpn.com:1194[m
+
+or you can add your own more complex configurations:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --rm -e EASYRSA_KEY_SIZE=4096 nmaguiar/openvpn ovpn_genconfig -N -b -s 10.200.0.0/16 -C AES-256-CBC:AES-256-GCM -a SHA384 -u udp://my.vpn.com:1194 -p 'route 192.168.1.0 255.255.255.0' -n 192.168.1.1[m
+
+To get help on the available options just execute: [2m"docker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -ti -e EASYRSA_KEY_SIZE=4096 nmaguiar/openvpn ovpn_genconfig"[m
+
+
+[1m2. Initialize the PKI[m
+[1m---------------------[m
+
+Execute:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -ti init[m
+
+Depending on the hardware of your system this might take some time. Be prepared to enter a password and certificate details.
+
+
+[1m3. Start OpenVPN[m
+[1m----------------[m
+
+Start OpenVPN with:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn -d -p 1194:1194/tcp --restart=always --cap-add=NET_ADMIN --name openvpn nmaguiar/openvpn[m
+
+
+[1m4. Add, list, delete VPN users[m
+[1m------------------------------[m
+
+To add a new user:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -it nmaguiar/openvpn add my-user[m
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn get my-user > my-user.ovpn[m
+
+To list users (in CSV):
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn list[m
+
+To delete an existing user:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -it nmaguiar/openvpn del my-user[m
+
+"

@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ovpn_getclient $1

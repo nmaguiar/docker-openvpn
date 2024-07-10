@@ -1,0 +1,5 @@
+#!/bin/bash
+echo "To start use a similar command to:"
+echo ""
+echo "[2mdocker run -v /etc/openvpn:/etc/openvpn -d -p 1194:1194/tcp --restart=always --cap-add=NET_ADMIN --name openvpn nmaguiar/openvpn[m"
+echo ""
