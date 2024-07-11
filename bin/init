@@ -1,0 +1,4 @@
+#!/bin/bash
+export EASYRSA_KEY_SIZE=4096
+
+ovpn_initpki $@
