@@ -24,7 +24,7 @@ To get help on the available options just execute: [2m"docker run -v /etc/openv
 
 Execute:
 
-[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -ti init[m
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -ti nmaguiar/openvpn init[m
 
 Depending on the hardware of your system this might take some time. Be prepared to enter a password and certificate details.
 
