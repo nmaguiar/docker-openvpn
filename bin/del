@@ -2,11 +2,8 @@
 ovpn_revokeclient $1
 
 echo "[1m---[m"
-echo "You can now list the existing users by executing:
-
-[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn get $1 > $1.ovpn[m
-
-You can also list the users by executing:
+echo ""
+echo "You can also list the users by executing:
 
 [2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn list[m
 
