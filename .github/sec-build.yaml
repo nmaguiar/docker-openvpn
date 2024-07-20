@@ -179,7 +179,7 @@
     PkgName: ssl_client
     PkgIdentifier:
       PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: ce2c93d0a3eeae5e
+      UID: 6c556bd596ef361c
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
@@ -222,7 +222,7 @@
     PkgName: ssl_client
     PkgIdentifier:
       PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: ce2c93d0a3eeae5e
+      UID: 6c556bd596ef361c
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
