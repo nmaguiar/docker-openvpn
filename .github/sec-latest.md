@@ -335,10 +335,12 @@
                         │      │                  │       [m 
                         │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-5535 
                         │      │                  ├ [10]: https://openssl.org/news/secadv/20240627.txt 
-                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
-                        │      │                  ╰ [12]: https://www.openssl.org/news/secadv/20240627.txt 
+                        │      │                  ├ [11]: https://security.netapp.com/advisory/ntap-202407
+                        │      │                  │       12-0005/ 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
+                        │      │                  ╰ [13]: https://www.openssl.org/news/secadv/20240627.txt 
                         │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
-                        │      ╰ LastModifiedDate: 2024-07-03T02:09:04.14Z 
+                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2024-5535 
                         │      ├ PkgID           : libssl3@3.3.1-r0 
                         │      ├ PkgName         : libssl3 
@@ -496,10 +498,12 @@
                         │      │                  │       [m 
                         │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-5535 
                         │      │                  ├ [10]: https://openssl.org/news/secadv/20240627.txt 
-                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
-                        │      │                  ╰ [12]: https://www.openssl.org/news/secadv/20240627.txt 
+                        │      │                  ├ [11]: https://security.netapp.com/advisory/ntap-202407
+                        │      │                  │       12-0005/ 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
+                        │      │                  ╰ [13]: https://www.openssl.org/news/secadv/20240627.txt 
                         │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
-                        │      ╰ LastModifiedDate: 2024-07-03T02:09:04.14Z 
+                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2024-5535 
                         │      ├ PkgID           : openssl@3.3.1-r0 
                         │      ├ PkgName         : openssl 
@@ -657,10 +661,12 @@
                         │      │                  │       [m 
                         │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-5535 
                         │      │                  ├ [10]: https://openssl.org/news/secadv/20240627.txt 
-                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
-                        │      │                  ╰ [12]: https://www.openssl.org/news/secadv/20240627.txt 
+                        │      │                  ├ [11]: https://security.netapp.com/advisory/ntap-202407
+                        │      │                  │       12-0005/ 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2024-5535 
+                        │      │                  ╰ [13]: https://www.openssl.org/news/secadv/20240627.txt 
                         │      ├ PublishedDate   : 2024-06-27T11:15:24.447Z 
-                        │      ╰ LastModifiedDate: 2024-07-03T02:09:04.14Z 
+                        │      ╰ LastModifiedDate: 2024-07-12T14:15:16.79Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2024-28882 
                         │      ├ PkgID           : openvpn@2.6.10-r0 
                         │      ├ PkgName         : openvpn 
