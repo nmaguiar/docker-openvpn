@@ -259,6 +259,7 @@
     CweIDs:
     - CWE-200
     VendorSeverity:
+      amazon: 2
       photon: 4
       redhat: 1
       ubuntu: 1
@@ -368,6 +369,7 @@
     CweIDs:
     - CWE-200
     VendorSeverity:
+      amazon: 2
       photon: 4
       redhat: 1
       ubuntu: 1
@@ -477,6 +479,7 @@
     CweIDs:
     - CWE-200
     VendorSeverity:
+      amazon: 2
       photon: 4
       redhat: 1
       ubuntu: 1
