@@ -1,20 +1,20 @@
 ````yaml
-─ [0] ╭ Target         : nmaguiar/openvpn:build (alpine 3.20.1) 
+─ [0] ╭ Target         : nmaguiar/openvpn:build (alpine 3.20.2) 
       ├ Class          : os-pkgs 
       ├ Type           : alpine 
       ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2023-42364 
                         │     ├ PkgID           : busybox@1.36.1-r29 
                         │     ├ PkgName         : busybox 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&dis
-                        │     │                  │       tro=3.20.1 
+                        │     │                  │       tro=3.20.2 
                         │     │                  ╰ UID : ed1c83b0e263b415 
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab5
-                        │     │                  │         4b8ef7dd75e5654e2a296e99 
-                        │     │                  ╰ DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8
-                        │     │                            ebdb0dc28395bc98f82f983f 
+                        │     ├ Layer            ╭ Digest: sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86f
+                        │     │                  │         ea8cb9e5ba2e5e6673fde9f6 
+                        │     │                  ╰ DiffID: sha256:78561cef0761903dd2f7d09856150a6d4fb48967
+                        │     │                            a8f113f3e33d79effbf59a07 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -50,15 +50,15 @@
                         │     ├ PkgID           : busybox@1.36.1-r29 
                         │     ├ PkgName         : busybox 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&dis
-                        │     │                  │       tro=3.20.1 
+                        │     │                  │       tro=3.20.2 
                         │     │                  ╰ UID : ed1c83b0e263b415 
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab5
-                        │     │                  │         4b8ef7dd75e5654e2a296e99 
-                        │     │                  ╰ DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8
-                        │     │                            ebdb0dc28395bc98f82f983f 
+                        │     ├ Layer            ╭ Digest: sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86f
+                        │     │                  │         ea8cb9e5ba2e5e6673fde9f6 
+                        │     │                  ╰ DiffID: sha256:78561cef0761903dd2f7d09856150a6d4fb48967
+                        │     │                            a8f113f3e33d79effbf59a07 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -94,15 +94,15 @@
                         │     ├ PkgID           : busybox-binsh@1.36.1-r29 
                         │     ├ PkgName         : busybox-binsh 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_
-                        │     │                  │       64&distro=3.20.1 
+                        │     │                  │       64&distro=3.20.2 
                         │     │                  ╰ UID : 799dab1027576e1f 
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab5
-                        │     │                  │         4b8ef7dd75e5654e2a296e99 
-                        │     │                  ╰ DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8
-                        │     │                            ebdb0dc28395bc98f82f983f 
+                        │     ├ Layer            ╭ Digest: sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86f
+                        │     │                  │         ea8cb9e5ba2e5e6673fde9f6 
+                        │     │                  ╰ DiffID: sha256:78561cef0761903dd2f7d09856150a6d4fb48967
+                        │     │                            a8f113f3e33d79effbf59a07 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -138,15 +138,15 @@
                         │     ├ PkgID           : busybox-binsh@1.36.1-r29 
                         │     ├ PkgName         : busybox-binsh 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_
-                        │     │                  │       64&distro=3.20.1 
+                        │     │                  │       64&distro=3.20.2 
                         │     │                  ╰ UID : 799dab1027576e1f 
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab5
-                        │     │                  │         4b8ef7dd75e5654e2a296e99 
-                        │     │                  ╰ DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8
-                        │     │                            ebdb0dc28395bc98f82f983f 
+                        │     ├ Layer            ╭ Digest: sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86f
+                        │     │                  │         ea8cb9e5ba2e5e6673fde9f6 
+                        │     │                  ╰ DiffID: sha256:78561cef0761903dd2f7d09856150a6d4fb48967
+                        │     │                            a8f113f3e33d79effbf59a07 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -182,15 +182,15 @@
                         │     ├ PkgID           : ssl_client@1.36.1-r29 
                         │     ├ PkgName         : ssl_client 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&
-                        │     │                  │       distro=3.20.1 
+                        │     │                  │       distro=3.20.2 
                         │     │                  ╰ UID : 6c556bd596ef361c 
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab5
-                        │     │                  │         4b8ef7dd75e5654e2a296e99 
-                        │     │                  ╰ DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8
-                        │     │                            ebdb0dc28395bc98f82f983f 
+                        │     ├ Layer            ╭ Digest: sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86f
+                        │     │                  │         ea8cb9e5ba2e5e6673fde9f6 
+                        │     │                  ╰ DiffID: sha256:78561cef0761903dd2f7d09856150a6d4fb48967
+                        │     │                            a8f113f3e33d79effbf59a07 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -226,15 +226,15 @@
                               ├ PkgID           : ssl_client@1.36.1-r29 
                               ├ PkgName         : ssl_client 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&
-                              │                  │       distro=3.20.1 
+                              │                  │       distro=3.20.2 
                               │                  ╰ UID : 6c556bd596ef361c 
                               ├ InstalledVersion: 1.36.1-r29 
                               ├ FixedVersion    : 1.36.1-r30 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab5
-                              │                  │         4b8ef7dd75e5654e2a296e99 
-                              │                  ╰ DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8
-                              │                            ebdb0dc28395bc98f82f983f 
+                              ├ Layer            ╭ Digest: sha256:c6a83fedfae6ed8a4f5f7cbb6a7b6f1c1ec3d86f
+                              │                  │         ea8cb9e5ba2e5e6673fde9f6 
+                              │                  ╰ DiffID: sha256:78561cef0761903dd2f7d09856150a6d4fb48967
+                              │                            a8f113f3e33d79effbf59a07 
                               ├ SeveritySource  : nvd 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
                               ├ DataSource       ╭ ID  : alpine 
