@@ -64,7 +64,7 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Title           : busybox:  use-after-free 
+                        │     ├ Title           : busybox: use-after-free 
                         │     ├ Description     : A use-after-free vulnerability was discovered in BusyBox
                         │     │                    v.1.36.1 via a crafted awk pattern in the awk.c copyvar
                         │     │                   function. 
@@ -152,7 +152,7 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Title           : busybox:  use-after-free 
+                        │     ├ Title           : busybox: use-after-free 
                         │     ├ Description     : A use-after-free vulnerability was discovered in BusyBox
                         │     │                    v.1.36.1 via a crafted awk pattern in the awk.c copyvar
                         │     │                   function. 
@@ -240,7 +240,7 @@
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Title           : busybox:  use-after-free 
+                              ├ Title           : busybox: use-after-free 
                               ├ Description     : A use-after-free vulnerability was discovered in BusyBox
                               │                    v.1.36.1 via a crafted awk pattern in the awk.c copyvar
                               │                   function. 
