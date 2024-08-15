@@ -43,7 +43,8 @@
                         │     │                  │      b/master/main/busybox/CVE-2023-42364-CVE-2023-42365.pat
                         │     │                  │      ch 
                         │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2023-42364 
-                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
+                        │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-6961-1 
+                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.313Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:07:10.827Z 
                         ├ [1] ╭ VulnerabilityID : CVE-2023-42365 
@@ -87,7 +88,8 @@
                         │     │                  │      b/master/main/busybox/CVE-2023-42364-CVE-2023-42365.pat
                         │     │                  │      ch 
                         │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2023-42365 
-                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
+                        │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-6961-1 
+                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
                         ├ [2] ╭ VulnerabilityID : CVE-2023-42364 
@@ -131,7 +133,8 @@
                         │     │                  │      b/master/main/busybox/CVE-2023-42364-CVE-2023-42365.pat
                         │     │                  │      ch 
                         │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2023-42364 
-                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
+                        │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-6961-1 
+                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.313Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:07:10.827Z 
                         ├ [3] ╭ VulnerabilityID : CVE-2023-42365 
@@ -175,7 +178,8 @@
                         │     │                  │      b/master/main/busybox/CVE-2023-42364-CVE-2023-42365.pat
                         │     │                  │      ch 
                         │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2023-42365 
-                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
+                        │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-6961-1 
+                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2023-42364 
@@ -219,7 +223,8 @@
                         │     │                  │      b/master/main/busybox/CVE-2023-42364-CVE-2023-42365.pat
                         │     │                  │      ch 
                         │     │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2023-42364 
-                        │     │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
+                        │     │                  ├ [5]: https://ubuntu.com/security/notices/USN-6961-1 
+                        │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.313Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:07:10.827Z 
                         ╰ [5] ╭ VulnerabilityID : CVE-2023-42365 
@@ -263,7 +268,8 @@
                               │                  │      b/master/main/busybox/CVE-2023-42364-CVE-2023-42365.pat
                               │                  │      ch 
                               │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2023-42365 
-                              │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
+                              │                  ├ [5]: https://ubuntu.com/security/notices/USN-6961-1 
+                              │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
                               ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
                               ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
 ````
