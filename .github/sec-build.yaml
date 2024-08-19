@@ -42,6 +42,7 @@
     - https://bugs.busybox.net/show_bug.cgi?id=15868
     - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42364
+    - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
     LastModifiedDate: '2023-11-30T05:07:10.827Z'
@@ -63,7 +64,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Title: 'busybox:  use-after-free'
+    Title: 'busybox: use-after-free'
     Description: A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.
     Severity: MEDIUM
     CweIDs:
@@ -85,6 +86,7 @@
     - https://bugs.busybox.net/show_bug.cgi?id=15871
     - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42365
+    - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42365
     PublishedDate: '2023-11-27T23:15:07.373Z'
     LastModifiedDate: '2023-11-30T05:08:08.77Z'
@@ -128,6 +130,7 @@
     - https://bugs.busybox.net/show_bug.cgi?id=15868
     - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42364
+    - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
     LastModifiedDate: '2023-11-30T05:07:10.827Z'
@@ -149,7 +152,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Title: 'busybox:  use-after-free'
+    Title: 'busybox: use-after-free'
     Description: A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.
     Severity: MEDIUM
     CweIDs:
@@ -171,6 +174,7 @@
     - https://bugs.busybox.net/show_bug.cgi?id=15871
     - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42365
+    - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42365
     PublishedDate: '2023-11-27T23:15:07.373Z'
     LastModifiedDate: '2023-11-30T05:08:08.77Z'
@@ -214,6 +218,7 @@
     - https://bugs.busybox.net/show_bug.cgi?id=15868
     - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42364
+    - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
     LastModifiedDate: '2023-11-30T05:07:10.827Z'
@@ -235,7 +240,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Title: 'busybox:  use-after-free'
+    Title: 'busybox: use-after-free'
     Description: A use-after-free vulnerability was discovered in BusyBox v.1.36.1 via a crafted awk pattern in the awk.c copyvar function.
     Severity: MEDIUM
     CweIDs:
@@ -257,6 +262,7 @@
     - https://bugs.busybox.net/show_bug.cgi?id=15871
     - https://gitlab.alpinelinux.org/alpine/aports/-/blob/master/main/busybox/CVE-2023-42364-CVE-2023-42365.patch
     - https://nvd.nist.gov/vuln/detail/CVE-2023-42365
+    - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42365
     PublishedDate: '2023-11-27T23:15:07.373Z'
     LastModifiedDate: '2023-11-30T05:08:08.77Z'
