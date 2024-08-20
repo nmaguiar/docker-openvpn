@@ -71,9 +71,10 @@
                         │     │                   function. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-416 
-                        │     ├ VendorSeverity   ╭ nvd   : 2 
-                        │     │                  ├ redhat: 2 
-                        │     │                  ╰ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ cbl-mariner: 2 
+                        │     │                  ├ nvd        : 2 
+                        │     │                  ├ redhat     : 2 
+                        │     │                  ╰ ubuntu     : 2 
                         │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N
                         │     │                  │        │           /I:N/A:H 
                         │     │                  │        ╰ V3Score : 5.5 
@@ -161,9 +162,10 @@
                         │     │                   function. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-416 
-                        │     ├ VendorSeverity   ╭ nvd   : 2 
-                        │     │                  ├ redhat: 2 
-                        │     │                  ╰ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ cbl-mariner: 2 
+                        │     │                  ├ nvd        : 2 
+                        │     │                  ├ redhat     : 2 
+                        │     │                  ╰ ubuntu     : 2 
                         │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N
                         │     │                  │        │           /I:N/A:H 
                         │     │                  │        ╰ V3Score : 5.5 
@@ -251,9 +253,10 @@
                               │                   function. 
                               ├ Severity        : MEDIUM 
                               ├ CweIDs           ─ [0]: CWE-416 
-                              ├ VendorSeverity   ╭ nvd   : 2 
-                              │                  ├ redhat: 2 
-                              │                  ╰ ubuntu: 2 
+                              ├ VendorSeverity   ╭ cbl-mariner: 2 
+                              │                  ├ nvd        : 2 
+                              │                  ├ redhat     : 2 
+                              │                  ╰ ubuntu     : 2 
                               ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N
                               │                  │        │           /I:N/A:H 
                               │                  │        ╰ V3Score : 5.5 
