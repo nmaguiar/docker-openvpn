@@ -71,7 +71,8 @@
                         │     │                   function. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-416 
-                        │     ├ VendorSeverity   ╭ cbl-mariner: 2 
+                        │     ├ VendorSeverity   ╭ azure      : 2 
+                        │     │                  ├ cbl-mariner: 2 
                         │     │                  ├ nvd        : 2 
                         │     │                  ├ redhat     : 2 
                         │     │                  ╰ ubuntu     : 2 
@@ -162,7 +163,8 @@
                         │     │                   function. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-416 
-                        │     ├ VendorSeverity   ╭ cbl-mariner: 2 
+                        │     ├ VendorSeverity   ╭ azure      : 2 
+                        │     │                  ├ cbl-mariner: 2 
                         │     │                  ├ nvd        : 2 
                         │     │                  ├ redhat     : 2 
                         │     │                  ╰ ubuntu     : 2 
@@ -253,7 +255,8 @@
                               │                   function. 
                               ├ Severity        : MEDIUM 
                               ├ CweIDs           ─ [0]: CWE-416 
-                              ├ VendorSeverity   ╭ cbl-mariner: 2 
+                              ├ VendorSeverity   ╭ azure      : 2 
+                              │                  ├ cbl-mariner: 2 
                               │                  ├ nvd        : 2 
                               │                  ├ redhat     : 2 
                               │                  ╰ ubuntu     : 2 
