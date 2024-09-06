@@ -186,7 +186,250 @@
                         │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42365 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
-                        ├ [4] ╭ VulnerabilityID : CVE-2023-42364 
+                        ├ [4] ╭ VulnerabilityID : CVE-2024-6119 
+                        │     ├ PkgID           : libcrypto3@3.3.1-r3 
+                        │     ├ PkgName         : libcrypto3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.1-r3?arch=x86_64&di
+                        │     │                  │       stro=3.20.1 
+                        │     │                  ╰ UID : ed0921710eb7b515 
+                        │     ├ InstalledVersion: 3.3.1-r3 
+                        │     ├ FixedVersion    : 3.3.2-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:5d70f4bd144110c76c44b1cb7b168964db86ccd7
+                        │     │                  │         587b1049e3c38ad9d8365658 
+                        │     │                  ╰ DiffID: sha256:c454498d3dced559a19d6dba72fe71b4cbccdc68
+                        │     │                            bfa186cd9c7550f7e37197f7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-6119 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: Possible denial of service in X.509 name checks 
+                        │     ├ Description     : Issue summary: Applications performing certificate name
+                        │     │                   checks (e.g., TLS
+                        │     │                   clients checking server certificates) may attempt to read an
+                        │     │                   invalid memory
+                        │     │                   address resulting in abnormal termination of the application
+                        │     │                   process.
+                        │     │                   
+                        │     │                   Impact summary: Abnormal termination of an application can a
+                        │     │                   cause a denial of
+                        │     │                   service.
+                        │     │                   
+                        │     │                   Applications performing certificate name checks (e.g., TLS
+                        │     │                   clients checking
+                        │     │                   server certificates) may attempt to read an invalid memory
+                        │     │                   address when
+                        │     │                   comparing the expected name with an `otherName` subject
+                        │     │                   alternative name of an
+                        │     │                   X.509 certificate. This may result in an exception that
+                        │     │                   terminates the
+                        │     │                   application program.
+                        │     │                   
+                        │     │                   Note that basic certificate chain validation (signatures,
+                        │     │                   dates, ...) is not
+                        │     │                   affected, the denial of service can occur only when the
+                        │     │                   application also
+                        │     │                   specifies an expected DNS name, Email address or IP address.
+                        │     │                   
+                        │     │                   TLS servers rarely solicit client certificates, and even when
+                        │     │                    they do, they
+                        │     │                   generally don't perform a name check against a reference
+                        │     │                   identifier (expected
+                        │     │                   identity), but rather extract the presented identity after
+                        │     │                   checking the
+                        │     │                   certificate chain.  So TLS servers are generally not affected
+                        │     │                    and the severity
+                        │     │                   of the issue is Moderate.
+                        │     │                   
+                        │     │                   The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by
+                        │     │                    this issue. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-843 
+                        │     ├ VendorSeverity   ╭ redhat: 2 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:H 
+                        │     │                           ╰ V3Score : 5.9 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9
+                        │     │                  │      e849a1b277db628f1f13083a7f8dd04f 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3f
+                        │     │                  │      a96a2ba5a3e22735a033012aadc9f0d6 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729
+                        │     │                  │      831b05ee828a3203eddb621d014ff2b2 
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2c
+                        │     │                  │      d2a63b2c64b9b4b0850be64cb695b0a0 
+                        │     │                  ├ [5]: https://github.com/openssl/openssl/security/adviso
+                        │     │                  │      ries/GHSA-5qrj-vq78-58fj 
+                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+                        │     │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
+                        │     │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
+                        │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+                        │     ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
+                        │     ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
+                        ├ [5] ╭ VulnerabilityID : CVE-2024-6119 
+                        │     ├ PkgID           : libssl3@3.3.1-r3 
+                        │     ├ PkgName         : libssl3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.1-r3?arch=x86_64&distr
+                        │     │                  │       o=3.20.1 
+                        │     │                  ╰ UID : 8ede7598835f9c6c 
+                        │     ├ InstalledVersion: 3.3.1-r3 
+                        │     ├ FixedVersion    : 3.3.2-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:5d70f4bd144110c76c44b1cb7b168964db86ccd7
+                        │     │                  │         587b1049e3c38ad9d8365658 
+                        │     │                  ╰ DiffID: sha256:c454498d3dced559a19d6dba72fe71b4cbccdc68
+                        │     │                            bfa186cd9c7550f7e37197f7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-6119 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: Possible denial of service in X.509 name checks 
+                        │     ├ Description     : Issue summary: Applications performing certificate name
+                        │     │                   checks (e.g., TLS
+                        │     │                   clients checking server certificates) may attempt to read an
+                        │     │                   invalid memory
+                        │     │                   address resulting in abnormal termination of the application
+                        │     │                   process.
+                        │     │                   
+                        │     │                   Impact summary: Abnormal termination of an application can a
+                        │     │                   cause a denial of
+                        │     │                   service.
+                        │     │                   
+                        │     │                   Applications performing certificate name checks (e.g., TLS
+                        │     │                   clients checking
+                        │     │                   server certificates) may attempt to read an invalid memory
+                        │     │                   address when
+                        │     │                   comparing the expected name with an `otherName` subject
+                        │     │                   alternative name of an
+                        │     │                   X.509 certificate. This may result in an exception that
+                        │     │                   terminates the
+                        │     │                   application program.
+                        │     │                   
+                        │     │                   Note that basic certificate chain validation (signatures,
+                        │     │                   dates, ...) is not
+                        │     │                   affected, the denial of service can occur only when the
+                        │     │                   application also
+                        │     │                   specifies an expected DNS name, Email address or IP address.
+                        │     │                   
+                        │     │                   TLS servers rarely solicit client certificates, and even when
+                        │     │                    they do, they
+                        │     │                   generally don't perform a name check against a reference
+                        │     │                   identifier (expected
+                        │     │                   identity), but rather extract the presented identity after
+                        │     │                   checking the
+                        │     │                   certificate chain.  So TLS servers are generally not affected
+                        │     │                    and the severity
+                        │     │                   of the issue is Moderate.
+                        │     │                   
+                        │     │                   The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by
+                        │     │                    this issue. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-843 
+                        │     ├ VendorSeverity   ╭ redhat: 2 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:H 
+                        │     │                           ╰ V3Score : 5.9 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9
+                        │     │                  │      e849a1b277db628f1f13083a7f8dd04f 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3f
+                        │     │                  │      a96a2ba5a3e22735a033012aadc9f0d6 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729
+                        │     │                  │      831b05ee828a3203eddb621d014ff2b2 
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2c
+                        │     │                  │      d2a63b2c64b9b4b0850be64cb695b0a0 
+                        │     │                  ├ [5]: https://github.com/openssl/openssl/security/adviso
+                        │     │                  │      ries/GHSA-5qrj-vq78-58fj 
+                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+                        │     │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
+                        │     │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
+                        │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+                        │     ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
+                        │     ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
+                        ├ [6] ╭ VulnerabilityID : CVE-2024-6119 
+                        │     ├ PkgID           : openssl@3.3.1-r3 
+                        │     ├ PkgName         : openssl 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.1-r3?arch=x86_64&distr
+                        │     │                  │       o=3.20.1 
+                        │     │                  ╰ UID : 11fa069d45ee03bc 
+                        │     ├ InstalledVersion: 3.3.1-r3 
+                        │     ├ FixedVersion    : 3.3.2-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:5d70f4bd144110c76c44b1cb7b168964db86ccd7
+                        │     │                  │         587b1049e3c38ad9d8365658 
+                        │     │                  ╰ DiffID: sha256:c454498d3dced559a19d6dba72fe71b4cbccdc68
+                        │     │                            bfa186cd9c7550f7e37197f7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-6119 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: Possible denial of service in X.509 name checks 
+                        │     ├ Description     : Issue summary: Applications performing certificate name
+                        │     │                   checks (e.g., TLS
+                        │     │                   clients checking server certificates) may attempt to read an
+                        │     │                   invalid memory
+                        │     │                   address resulting in abnormal termination of the application
+                        │     │                   process.
+                        │     │                   
+                        │     │                   Impact summary: Abnormal termination of an application can a
+                        │     │                   cause a denial of
+                        │     │                   service.
+                        │     │                   
+                        │     │                   Applications performing certificate name checks (e.g., TLS
+                        │     │                   clients checking
+                        │     │                   server certificates) may attempt to read an invalid memory
+                        │     │                   address when
+                        │     │                   comparing the expected name with an `otherName` subject
+                        │     │                   alternative name of an
+                        │     │                   X.509 certificate. This may result in an exception that
+                        │     │                   terminates the
+                        │     │                   application program.
+                        │     │                   
+                        │     │                   Note that basic certificate chain validation (signatures,
+                        │     │                   dates, ...) is not
+                        │     │                   affected, the denial of service can occur only when the
+                        │     │                   application also
+                        │     │                   specifies an expected DNS name, Email address or IP address.
+                        │     │                   
+                        │     │                   TLS servers rarely solicit client certificates, and even when
+                        │     │                    they do, they
+                        │     │                   generally don't perform a name check against a reference
+                        │     │                   identifier (expected
+                        │     │                   identity), but rather extract the presented identity after
+                        │     │                   checking the
+                        │     │                   certificate chain.  So TLS servers are generally not affected
+                        │     │                    and the severity
+                        │     │                   of the issue is Moderate.
+                        │     │                   
+                        │     │                   The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by
+                        │     │                    this issue. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-843 
+                        │     ├ VendorSeverity   ╭ redhat: 2 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
+                        │     │                           │           /I:N/A:H 
+                        │     │                           ╰ V3Score : 5.9 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
+                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9
+                        │     │                  │      e849a1b277db628f1f13083a7f8dd04f 
+                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3f
+                        │     │                  │      a96a2ba5a3e22735a033012aadc9f0d6 
+                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729
+                        │     │                  │      831b05ee828a3203eddb621d014ff2b2 
+                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2c
+                        │     │                  │      d2a63b2c64b9b4b0850be64cb695b0a0 
+                        │     │                  ├ [5]: https://github.com/openssl/openssl/security/adviso
+                        │     │                  │      ries/GHSA-5qrj-vq78-58fj 
+                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+                        │     │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
+                        │     │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
+                        │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+                        │     ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
+                        │     ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
+                        ├ [7] ╭ VulnerabilityID : CVE-2023-42364 
                         │     ├ PkgID           : ssl_client@1.36.1-r29 
                         │     ├ PkgName         : ssl_client 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&
@@ -231,7 +474,7 @@
                         │     │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2023-42364 
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.313Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:07:10.827Z 
-                        ╰ [5] ╭ VulnerabilityID : CVE-2023-42365 
+                        ╰ [8] ╭ VulnerabilityID : CVE-2023-42365 
                               ├ PkgID           : ssl_client@1.36.1-r29 
                               ├ PkgName         : ssl_client 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&
