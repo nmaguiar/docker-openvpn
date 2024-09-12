@@ -245,7 +245,8 @@
                         │     │                    this issue. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
-                        │     ├ VendorSeverity   ╭ redhat: 2 
+                        │     ├ VendorSeverity   ╭ photon: 3 
+                        │     │                  ├ redhat: 2 
                         │     │                  ╰ ubuntu: 2 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
@@ -326,7 +327,8 @@
                         │     │                    this issue. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
-                        │     ├ VendorSeverity   ╭ redhat: 2 
+                        │     ├ VendorSeverity   ╭ photon: 3 
+                        │     │                  ├ redhat: 2 
                         │     │                  ╰ ubuntu: 2 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
@@ -407,7 +409,8 @@
                         │     │                    this issue. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
-                        │     ├ VendorSeverity   ╭ redhat: 2 
+                        │     ├ VendorSeverity   ╭ photon: 3 
+                        │     │                  ├ redhat: 2 
                         │     │                  ╰ ubuntu: 2 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
