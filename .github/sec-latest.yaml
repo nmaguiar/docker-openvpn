@@ -229,6 +229,7 @@
     CweIDs:
     - CWE-843
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -295,6 +296,7 @@
     CweIDs:
     - CWE-843
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -361,6 +363,7 @@
     CweIDs:
     - CWE-843
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
