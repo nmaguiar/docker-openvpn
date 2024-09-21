@@ -229,6 +229,7 @@
     CweIDs:
     - CWE-843
     VendorSeverity:
+      alma: 2
       oracle-oval: 2
       photon: 3
       redhat: 2
@@ -238,7 +239,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
+    - https://access.redhat.com/errata/RHSA-2024:6783
     - https://access.redhat.com/security/cve/CVE-2024-6119
+    - https://bugzilla.redhat.com/2306158
+    - https://errata.almalinux.org/9/ALSA-2024-6783.html
     - https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f
     - https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6
     - https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2
@@ -299,6 +303,7 @@
     CweIDs:
     - CWE-843
     VendorSeverity:
+      alma: 2
       oracle-oval: 2
       photon: 3
       redhat: 2
@@ -308,7 +313,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
+    - https://access.redhat.com/errata/RHSA-2024:6783
     - https://access.redhat.com/security/cve/CVE-2024-6119
+    - https://bugzilla.redhat.com/2306158
+    - https://errata.almalinux.org/9/ALSA-2024-6783.html
     - https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f
     - https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6
     - https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2
@@ -369,6 +377,7 @@
     CweIDs:
     - CWE-843
     VendorSeverity:
+      alma: 2
       oracle-oval: 2
       photon: 3
       redhat: 2
@@ -378,7 +387,10 @@
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.9
     References:
+    - https://access.redhat.com/errata/RHSA-2024:6783
     - https://access.redhat.com/security/cve/CVE-2024-6119
+    - https://bugzilla.redhat.com/2306158
+    - https://errata.almalinux.org/9/ALSA-2024-6783.html
     - https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f
     - https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6
     - https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2
