@@ -245,27 +245,34 @@
                         │     │                    this issue. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
-                        │     ├ VendorSeverity   ╭ photon: 3 
-                        │     │                  ├ redhat: 2 
-                        │     │                  ╰ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ oracle-oval: 2 
+                        │     │                  ├ photon     : 3 
+                        │     │                  ├ redhat     : 2 
+                        │     │                  ╰ ubuntu     : 2 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
                         │     │                           ╰ V3Score : 5.9 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9
-                        │     │                  │      e849a1b277db628f1f13083a7f8dd04f 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3f
-                        │     │                  │      a96a2ba5a3e22735a033012aadc9f0d6 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729
-                        │     │                  │      831b05ee828a3203eddb621d014ff2b2 
-                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2c
-                        │     │                  │      d2a63b2c64b9b4b0850be64cb695b0a0 
-                        │     │                  ├ [5]: https://github.com/openssl/openssl/security/adviso
-                        │     │                  │      ries/GHSA-5qrj-vq78-58fj 
-                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
-                        │     │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
-                        │     │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
-                        │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6783 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-6119 
+                        │     │                  ├ [2] : https://bugzilla.redhat.com/2306158 
+                        │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2024-6783.html 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/05f360d
+                        │     │                  │       9e849a1b277db628f1f13083a7f8dd04f 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/06d1dc3
+                        │     │                  │       fa96a2ba5a3e22735a033012aadc9f0d6 
+                        │     │                  ├ [6] : https://github.com/openssl/openssl/commit/621f372
+                        │     │                  │       9831b05ee828a3203eddb621d014ff2b2 
+                        │     │                  ├ [7] : https://github.com/openssl/openssl/commit/7dfcee2
+                        │     │                  │       cd2a63b2c64b9b4b0850be64cb695b0a0 
+                        │     │                  ├ [8] : https://github.com/openssl/openssl/security/advis
+                        │     │                  │       ories/GHSA-5qrj-vq78-58fj 
+                        │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-6119.html 
+                        │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-6783.html 
+                        │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+                        │     │                  ├ [12]: https://openssl-library.org/news/secadv/20240903.txt 
+                        │     │                  ├ [13]: https://ubuntu.com/security/notices/USN-6986-1 
+                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
                         │     ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
                         │     ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2024-6119 
@@ -327,27 +334,34 @@
                         │     │                    this issue. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
-                        │     ├ VendorSeverity   ╭ photon: 3 
-                        │     │                  ├ redhat: 2 
-                        │     │                  ╰ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ oracle-oval: 2 
+                        │     │                  ├ photon     : 3 
+                        │     │                  ├ redhat     : 2 
+                        │     │                  ╰ ubuntu     : 2 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
                         │     │                           ╰ V3Score : 5.9 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9
-                        │     │                  │      e849a1b277db628f1f13083a7f8dd04f 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3f
-                        │     │                  │      a96a2ba5a3e22735a033012aadc9f0d6 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729
-                        │     │                  │      831b05ee828a3203eddb621d014ff2b2 
-                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2c
-                        │     │                  │      d2a63b2c64b9b4b0850be64cb695b0a0 
-                        │     │                  ├ [5]: https://github.com/openssl/openssl/security/adviso
-                        │     │                  │      ries/GHSA-5qrj-vq78-58fj 
-                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
-                        │     │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
-                        │     │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
-                        │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6783 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-6119 
+                        │     │                  ├ [2] : https://bugzilla.redhat.com/2306158 
+                        │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2024-6783.html 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/05f360d
+                        │     │                  │       9e849a1b277db628f1f13083a7f8dd04f 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/06d1dc3
+                        │     │                  │       fa96a2ba5a3e22735a033012aadc9f0d6 
+                        │     │                  ├ [6] : https://github.com/openssl/openssl/commit/621f372
+                        │     │                  │       9831b05ee828a3203eddb621d014ff2b2 
+                        │     │                  ├ [7] : https://github.com/openssl/openssl/commit/7dfcee2
+                        │     │                  │       cd2a63b2c64b9b4b0850be64cb695b0a0 
+                        │     │                  ├ [8] : https://github.com/openssl/openssl/security/advis
+                        │     │                  │       ories/GHSA-5qrj-vq78-58fj 
+                        │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-6119.html 
+                        │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-6783.html 
+                        │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+                        │     │                  ├ [12]: https://openssl-library.org/news/secadv/20240903.txt 
+                        │     │                  ├ [13]: https://ubuntu.com/security/notices/USN-6986-1 
+                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
                         │     ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
                         │     ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-6119 
@@ -409,27 +423,34 @@
                         │     │                    this issue. 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
-                        │     ├ VendorSeverity   ╭ photon: 3 
-                        │     │                  ├ redhat: 2 
-                        │     │                  ╰ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ oracle-oval: 2 
+                        │     │                  ├ photon     : 3 
+                        │     │                  ├ redhat     : 2 
+                        │     │                  ╰ ubuntu     : 2 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N
                         │     │                           │           /I:N/A:H 
                         │     │                           ╰ V3Score : 5.9 
-                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2024-6119 
-                        │     │                  ├ [1]: https://github.com/openssl/openssl/commit/05f360d9
-                        │     │                  │      e849a1b277db628f1f13083a7f8dd04f 
-                        │     │                  ├ [2]: https://github.com/openssl/openssl/commit/06d1dc3f
-                        │     │                  │      a96a2ba5a3e22735a033012aadc9f0d6 
-                        │     │                  ├ [3]: https://github.com/openssl/openssl/commit/621f3729
-                        │     │                  │      831b05ee828a3203eddb621d014ff2b2 
-                        │     │                  ├ [4]: https://github.com/openssl/openssl/commit/7dfcee2c
-                        │     │                  │      d2a63b2c64b9b4b0850be64cb695b0a0 
-                        │     │                  ├ [5]: https://github.com/openssl/openssl/security/adviso
-                        │     │                  │      ries/GHSA-5qrj-vq78-58fj 
-                        │     │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
-                        │     │                  ├ [7]: https://openssl-library.org/news/secadv/20240903.txt 
-                        │     │                  ├ [8]: https://ubuntu.com/security/notices/USN-6986-1 
-                        │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
+                        │     ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2024:6783 
+                        │     │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2024-6119 
+                        │     │                  ├ [2] : https://bugzilla.redhat.com/2306158 
+                        │     │                  ├ [3] : https://errata.almalinux.org/9/ALSA-2024-6783.html 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/05f360d
+                        │     │                  │       9e849a1b277db628f1f13083a7f8dd04f 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/06d1dc3
+                        │     │                  │       fa96a2ba5a3e22735a033012aadc9f0d6 
+                        │     │                  ├ [6] : https://github.com/openssl/openssl/commit/621f372
+                        │     │                  │       9831b05ee828a3203eddb621d014ff2b2 
+                        │     │                  ├ [7] : https://github.com/openssl/openssl/commit/7dfcee2
+                        │     │                  │       cd2a63b2c64b9b4b0850be64cb695b0a0 
+                        │     │                  ├ [8] : https://github.com/openssl/openssl/security/advis
+                        │     │                  │       ories/GHSA-5qrj-vq78-58fj 
+                        │     │                  ├ [9] : https://linux.oracle.com/cve/CVE-2024-6119.html 
+                        │     │                  ├ [10]: https://linux.oracle.com/errata/ELSA-2024-6783.html 
+                        │     │                  ├ [11]: https://nvd.nist.gov/vuln/detail/CVE-2024-6119 
+                        │     │                  ├ [12]: https://openssl-library.org/news/secadv/20240903.txt 
+                        │     │                  ├ [13]: https://ubuntu.com/security/notices/USN-6986-1 
+                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-6119 
                         │     ├ PublishedDate   : 2024-09-03T16:15:07.177Z 
                         │     ╰ LastModifiedDate: 2024-09-03T21:35:12.987Z 
                         ├ [7] ╭ VulnerabilityID : CVE-2023-42364 
