@@ -7,6 +7,7 @@
 │           f5a907a27a4a: Pulling fs layer
 │           f5a907a27a4a: Verifying Checksum
 │           f5a907a27a4a: Download complete
+│           22126857a555: Verifying Checksum
 │           22126857a555: Download complete
 │           1e4db3f86ba5: Verifying Checksum
 │           1e4db3f86ba5: Download complete
@@ -15,14 +16,12 @@
 │           f5a907a27a4a: Pull complete
 │           Digest: sha256:addfb8fd6b9e520c25b22c61d8aa5d58ecd7879177aa959f952bf4734f4e3f60
 │           Status: Downloaded newer image for aquasec/trivy:latest
-│           2024-09-23T07:01:14Z	INFO	[db] Need to update DB
-│           2024-09-23T07:01:14Z	INFO	[db] Downloading DB...	repository="ghcr.io/aquasecurity/trivy-db:2"
-│           2024-09-23T07:01:14Z	FATAL	Fatal error	init error: DB error: failed to download vulnerability DB:
-│           database download error: OCI repository error: 1 error occurred:
-│           	* GET https://ghcr.io/v2/aquasecurity/trivy-db/manifests/2: TOOMANYREQUESTS: retry-after:
-│           787.645µs, allowed: 44000/minute
-│           
-│           
+│           2024-09-27T07:01:10Z	INFO	[db] Need to update DB
+│           2024-09-27T07:01:10Z	INFO	[db] Downloading DB...	repository="ghcr.io/aquasecurity/trivy-db:2"
+│           2024-09-27T07:01:10Z	FATAL	Fatal error	init error: DB error: failed to download vulnerability DB:
+│           database download error: oci download error: failed to fetch the layer: GET
+│           https://ghcr.io/v2/aquasecurity/trivy-db/blobs/sha256:c0f85f1ef148db3b4dbe21d780014bf87cd1a6e1af48b
+│           a0010dd644e27fe4def: TOOMANYREQUESTS: retry-after: 436.335µs, allowed: 44000/minute
 │            
 ├ exitcode: 1 
 ╰ cmd     : docker run --pull always --rm  aquasec/trivy -f json  image nmaguiar/openvpn:latest 
