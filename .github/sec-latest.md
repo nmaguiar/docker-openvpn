@@ -246,6 +246,8 @@
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
                         │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ azure      : 3 
+                        │     │                  ├ cbl-mariner: 3 
                         │     │                  ├ oracle-oval: 2 
                         │     │                  ├ photon     : 3 
                         │     │                  ├ redhat     : 2 
@@ -335,6 +337,8 @@
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
                         │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ azure      : 3 
+                        │     │                  ├ cbl-mariner: 3 
                         │     │                  ├ oracle-oval: 2 
                         │     │                  ├ photon     : 3 
                         │     │                  ├ redhat     : 2 
@@ -424,6 +428,8 @@
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-843 
                         │     ├ VendorSeverity   ╭ alma       : 2 
+                        │     │                  ├ azure      : 3 
+                        │     │                  ├ cbl-mariner: 3 
                         │     │                  ├ oracle-oval: 2 
                         │     │                  ├ photon     : 3 
                         │     │                  ├ redhat     : 2 
