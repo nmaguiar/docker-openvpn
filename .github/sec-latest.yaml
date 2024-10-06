@@ -1,4 +1,4 @@
-- Target: nmaguiar/openvpn:latest (alpine 3.20.1)
+- Target: nmaguiar/openvpn:latest (alpine 3.20.3)
   Class: os-pkgs
   Type: alpine
   Vulnerabilities:
@@ -6,14 +6,14 @@
     PkgID: busybox@1.36.1-r29
     PkgName: busybox
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: ed1c83b0e263b415
+      PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&distro=3.20.3
+      UID: c25572ad5efbfdde
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
-      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
+      Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170
+      DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42364
     DataSource:
@@ -50,14 +50,14 @@
     PkgID: busybox@1.36.1-r29
     PkgName: busybox
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: ed1c83b0e263b415
+      PURL: pkg:apk/alpine/busybox@1.36.1-r29?arch=x86_64&distro=3.20.3
+      UID: c25572ad5efbfdde
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
-      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
+      Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170
+      DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42365
     DataSource:
@@ -96,14 +96,14 @@
     PkgID: busybox-binsh@1.36.1-r29
     PkgName: busybox-binsh
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: 799dab1027576e1f
+      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_64&distro=3.20.3
+      UID: 407e42dd99ebb133
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
-      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
+      Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170
+      DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42364
     DataSource:
@@ -140,14 +140,14 @@
     PkgID: busybox-binsh@1.36.1-r29
     PkgName: busybox-binsh
     PkgIdentifier:
-      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: 799dab1027576e1f
+      PURL: pkg:apk/alpine/busybox-binsh@1.36.1-r29?arch=x86_64&distro=3.20.3
+      UID: 407e42dd99ebb133
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
-      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
+      Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170
+      DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42365
     DataSource:
@@ -182,240 +182,18 @@
     - https://www.cve.org/CVERecord?id=CVE-2023-42365
     PublishedDate: '2023-11-27T23:15:07.373Z'
     LastModifiedDate: '2023-11-30T05:08:08.77Z'
-  - VulnerabilityID: CVE-2024-6119
-    PkgID: libcrypto3@3.3.1-r3
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.3.1-r3?arch=x86_64&distro=3.20.1
-      UID: ed0921710eb7b515
-    InstalledVersion: 3.3.1-r3
-    FixedVersion: 3.3.2-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:5d70f4bd144110c76c44b1cb7b168964db86ccd7587b1049e3c38ad9d8365658
-      DiffID: sha256:c454498d3dced559a19d6dba72fe71b4cbccdc68bfa186cd9c7550f7e37197f7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-6119
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Possible denial of service in X.509 name checks'
-    Description: |-
-      Issue summary: Applications performing certificate name checks (e.g., TLS
-      clients checking server certificates) may attempt to read an invalid memory
-      address resulting in abnormal termination of the application process.
-
-      Impact summary: Abnormal termination of an application can a cause a denial of
-      service.
-
-      Applications performing certificate name checks (e.g., TLS clients checking
-      server certificates) may attempt to read an invalid memory address when
-      comparing the expected name with an `otherName` subject alternative name of an
-      X.509 certificate. This may result in an exception that terminates the
-      application program.
-
-      Note that basic certificate chain validation (signatures, dates, ...) is not
-      affected, the denial of service can occur only when the application also
-      specifies an expected DNS name, Email address or IP address.
-
-      TLS servers rarely solicit client certificates, and even when they do, they
-      generally don't perform a name check against a reference identifier (expected
-      identity), but rather extract the presented identity after checking the
-      certificate chain.  So TLS servers are generally not affected and the severity
-      of the issue is Moderate.
-
-      The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-843
-    VendorSeverity:
-      alma: 2
-      oracle-oval: 2
-      photon: 3
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/errata/RHSA-2024:6783
-    - https://access.redhat.com/security/cve/CVE-2024-6119
-    - https://bugzilla.redhat.com/2306158
-    - https://errata.almalinux.org/9/ALSA-2024-6783.html
-    - https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f
-    - https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6
-    - https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2
-    - https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0
-    - https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj
-    - https://linux.oracle.com/cve/CVE-2024-6119.html
-    - https://linux.oracle.com/errata/ELSA-2024-6783.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2024-6119
-    - https://openssl-library.org/news/secadv/20240903.txt
-    - https://ubuntu.com/security/notices/USN-6986-1
-    - https://www.cve.org/CVERecord?id=CVE-2024-6119
-    PublishedDate: '2024-09-03T16:15:07.177Z'
-    LastModifiedDate: '2024-09-03T21:35:12.987Z'
-  - VulnerabilityID: CVE-2024-6119
-    PkgID: libssl3@3.3.1-r3
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.3.1-r3?arch=x86_64&distro=3.20.1
-      UID: 8ede7598835f9c6c
-    InstalledVersion: 3.3.1-r3
-    FixedVersion: 3.3.2-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:5d70f4bd144110c76c44b1cb7b168964db86ccd7587b1049e3c38ad9d8365658
-      DiffID: sha256:c454498d3dced559a19d6dba72fe71b4cbccdc68bfa186cd9c7550f7e37197f7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-6119
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Possible denial of service in X.509 name checks'
-    Description: |-
-      Issue summary: Applications performing certificate name checks (e.g., TLS
-      clients checking server certificates) may attempt to read an invalid memory
-      address resulting in abnormal termination of the application process.
-
-      Impact summary: Abnormal termination of an application can a cause a denial of
-      service.
-
-      Applications performing certificate name checks (e.g., TLS clients checking
-      server certificates) may attempt to read an invalid memory address when
-      comparing the expected name with an `otherName` subject alternative name of an
-      X.509 certificate. This may result in an exception that terminates the
-      application program.
-
-      Note that basic certificate chain validation (signatures, dates, ...) is not
-      affected, the denial of service can occur only when the application also
-      specifies an expected DNS name, Email address or IP address.
-
-      TLS servers rarely solicit client certificates, and even when they do, they
-      generally don't perform a name check against a reference identifier (expected
-      identity), but rather extract the presented identity after checking the
-      certificate chain.  So TLS servers are generally not affected and the severity
-      of the issue is Moderate.
-
-      The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-843
-    VendorSeverity:
-      alma: 2
-      oracle-oval: 2
-      photon: 3
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/errata/RHSA-2024:6783
-    - https://access.redhat.com/security/cve/CVE-2024-6119
-    - https://bugzilla.redhat.com/2306158
-    - https://errata.almalinux.org/9/ALSA-2024-6783.html
-    - https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f
-    - https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6
-    - https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2
-    - https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0
-    - https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj
-    - https://linux.oracle.com/cve/CVE-2024-6119.html
-    - https://linux.oracle.com/errata/ELSA-2024-6783.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2024-6119
-    - https://openssl-library.org/news/secadv/20240903.txt
-    - https://ubuntu.com/security/notices/USN-6986-1
-    - https://www.cve.org/CVERecord?id=CVE-2024-6119
-    PublishedDate: '2024-09-03T16:15:07.177Z'
-    LastModifiedDate: '2024-09-03T21:35:12.987Z'
-  - VulnerabilityID: CVE-2024-6119
-    PkgID: openssl@3.3.1-r3
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.3.1-r3?arch=x86_64&distro=3.20.1
-      UID: 11fa069d45ee03bc
-    InstalledVersion: 3.3.1-r3
-    FixedVersion: 3.3.2-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:5d70f4bd144110c76c44b1cb7b168964db86ccd7587b1049e3c38ad9d8365658
-      DiffID: sha256:c454498d3dced559a19d6dba72fe71b4cbccdc68bfa186cd9c7550f7e37197f7
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-6119
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Possible denial of service in X.509 name checks'
-    Description: |-
-      Issue summary: Applications performing certificate name checks (e.g., TLS
-      clients checking server certificates) may attempt to read an invalid memory
-      address resulting in abnormal termination of the application process.
-
-      Impact summary: Abnormal termination of an application can a cause a denial of
-      service.
-
-      Applications performing certificate name checks (e.g., TLS clients checking
-      server certificates) may attempt to read an invalid memory address when
-      comparing the expected name with an `otherName` subject alternative name of an
-      X.509 certificate. This may result in an exception that terminates the
-      application program.
-
-      Note that basic certificate chain validation (signatures, dates, ...) is not
-      affected, the denial of service can occur only when the application also
-      specifies an expected DNS name, Email address or IP address.
-
-      TLS servers rarely solicit client certificates, and even when they do, they
-      generally don't perform a name check against a reference identifier (expected
-      identity), but rather extract the presented identity after checking the
-      certificate chain.  So TLS servers are generally not affected and the severity
-      of the issue is Moderate.
-
-      The FIPS modules in 3.3, 3.2, 3.1 and 3.0 are not affected by this issue.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-843
-    VendorSeverity:
-      alma: 2
-      oracle-oval: 2
-      photon: 3
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/errata/RHSA-2024:6783
-    - https://access.redhat.com/security/cve/CVE-2024-6119
-    - https://bugzilla.redhat.com/2306158
-    - https://errata.almalinux.org/9/ALSA-2024-6783.html
-    - https://github.com/openssl/openssl/commit/05f360d9e849a1b277db628f1f13083a7f8dd04f
-    - https://github.com/openssl/openssl/commit/06d1dc3fa96a2ba5a3e22735a033012aadc9f0d6
-    - https://github.com/openssl/openssl/commit/621f3729831b05ee828a3203eddb621d014ff2b2
-    - https://github.com/openssl/openssl/commit/7dfcee2cd2a63b2c64b9b4b0850be64cb695b0a0
-    - https://github.com/openssl/openssl/security/advisories/GHSA-5qrj-vq78-58fj
-    - https://linux.oracle.com/cve/CVE-2024-6119.html
-    - https://linux.oracle.com/errata/ELSA-2024-6783.html
-    - https://nvd.nist.gov/vuln/detail/CVE-2024-6119
-    - https://openssl-library.org/news/secadv/20240903.txt
-    - https://ubuntu.com/security/notices/USN-6986-1
-    - https://www.cve.org/CVERecord?id=CVE-2024-6119
-    PublishedDate: '2024-09-03T16:15:07.177Z'
-    LastModifiedDate: '2024-09-03T21:35:12.987Z'
   - VulnerabilityID: CVE-2023-42364
     PkgID: ssl_client@1.36.1-r29
     PkgName: ssl_client
     PkgIdentifier:
-      PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: 6c556bd596ef361c
+      PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.3
+      UID: b1ab0980f54b3bb7
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
-      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
+      Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170
+      DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42364
     DataSource:
@@ -452,14 +230,14 @@
     PkgID: ssl_client@1.36.1-r29
     PkgName: ssl_client
     PkgIdentifier:
-      PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.1
-      UID: 6c556bd596ef361c
+      PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distro=3.20.3
+      UID: b1ab0980f54b3bb7
     InstalledVersion: 1.36.1-r29
     FixedVersion: 1.36.1-r30
     Status: fixed
     Layer:
-      Digest: sha256:ec99f8b99825a742d50fb3ce173d291378a46ab54b8ef7dd75e5654e2a296e99
-      DiffID: sha256:94e5f06ff8e3d4441dc3cd8b090ff38dc911bfa8ebdb0dc28395bc98f82f983f
+      Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643c5e8f0379998b44f170
+      DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366fcaa9d62435a4cced85
     SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2023-42365
     DataSource:
