@@ -45,7 +45,7 @@
     - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
-    LastModifiedDate: '2023-11-30T05:07:10.827Z'
+    LastModifiedDate: '2024-10-11T21:36:08.877Z'
   - VulnerabilityID: CVE-2023-42365
     PkgID: busybox@1.36.1-r29
     PkgName: busybox
@@ -135,7 +135,7 @@
     - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
-    LastModifiedDate: '2023-11-30T05:07:10.827Z'
+    LastModifiedDate: '2024-10-11T21:36:08.877Z'
   - VulnerabilityID: CVE-2023-42365
     PkgID: busybox-binsh@1.36.1-r29
     PkgName: busybox-binsh
@@ -225,7 +225,7 @@
     - https://ubuntu.com/security/notices/USN-6961-1
     - https://www.cve.org/CVERecord?id=CVE-2023-42364
     PublishedDate: '2023-11-27T23:15:07.313Z'
-    LastModifiedDate: '2023-11-30T05:07:10.827Z'
+    LastModifiedDate: '2024-10-11T21:36:08.877Z'
   - VulnerabilityID: CVE-2023-42365
     PkgID: ssl_client@1.36.1-r29
     PkgName: ssl_client
