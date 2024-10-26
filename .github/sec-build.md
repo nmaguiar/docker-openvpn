@@ -244,7 +244,7 @@
                         │     ├ Severity        : LOW 
                         │     ├ CweIDs           ─ [0]: CWE-787 
                         │     ├ VendorSeverity   ╭ redhat: 1 
-                        │     │                  ╰ ubuntu: 2 
+                        │     │                  ╰ ubuntu: 1 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/
                         │     │                           │           A:L 
                         │     │                           ╰ V3Score : 3.7 
@@ -328,7 +328,7 @@
                         │     ├ Severity        : LOW 
                         │     ├ CweIDs           ─ [0]: CWE-787 
                         │     ├ VendorSeverity   ╭ redhat: 1 
-                        │     │                  ╰ ubuntu: 2 
+                        │     │                  ╰ ubuntu: 1 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/
                         │     │                           │           A:L 
                         │     │                           ╰ V3Score : 3.7 
@@ -412,7 +412,7 @@
                         │     ├ Severity        : LOW 
                         │     ├ CweIDs           ─ [0]: CWE-787 
                         │     ├ VendorSeverity   ╭ redhat: 1 
-                        │     │                  ╰ ubuntu: 2 
+                        │     │                  ╰ ubuntu: 1 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/
                         │     │                           │           A:L 
                         │     │                           ╰ V3Score : 3.7 
