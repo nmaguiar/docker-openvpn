@@ -192,8 +192,8 @@
     FixedVersion: 3.3.2-r3
     Status: fixed
     Layer:
-      Digest: sha256:fde51aa4ef0ab368ffc7a331a0b26ae44d473b330904c42cdcfc4d19d360ff33
-      DiffID: sha256:9ec35f9b00c3b355f7019af88558905f2da97ab19bdd2e1b1f2daaeb37fd154f
+      Digest: sha256:b63aa996600478370c5fd4294b425d694efe6041542cdae77586f170b1c0df88
+      DiffID: sha256:860ab3a1f9324addfe589af91875dff350ef182e680805ebb27b84f2e09ac94d
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
     DataSource:
       ID: alpine
@@ -250,7 +250,7 @@
     - https://openssl-library.org/news/secadv/20241016.txt
     - https://www.cve.org/CVERecord?id=CVE-2024-9143
     PublishedDate: '2024-10-16T17:15:18.13Z'
-    LastModifiedDate: '2024-10-18T12:53:04.627Z'
+    LastModifiedDate: '2024-11-08T16:35:21.58Z'
   - VulnerabilityID: CVE-2024-9143
     PkgID: libssl3@3.3.2-r1
     PkgName: libssl3
@@ -261,8 +261,8 @@
     FixedVersion: 3.3.2-r3
     Status: fixed
     Layer:
-      Digest: sha256:fde51aa4ef0ab368ffc7a331a0b26ae44d473b330904c42cdcfc4d19d360ff33
-      DiffID: sha256:9ec35f9b00c3b355f7019af88558905f2da97ab19bdd2e1b1f2daaeb37fd154f
+      Digest: sha256:b63aa996600478370c5fd4294b425d694efe6041542cdae77586f170b1c0df88
+      DiffID: sha256:860ab3a1f9324addfe589af91875dff350ef182e680805ebb27b84f2e09ac94d
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
     DataSource:
       ID: alpine
@@ -319,7 +319,7 @@
     - https://openssl-library.org/news/secadv/20241016.txt
     - https://www.cve.org/CVERecord?id=CVE-2024-9143
     PublishedDate: '2024-10-16T17:15:18.13Z'
-    LastModifiedDate: '2024-10-18T12:53:04.627Z'
+    LastModifiedDate: '2024-11-08T16:35:21.58Z'
   - VulnerabilityID: CVE-2024-9143
     PkgID: openssl@3.3.2-r1
     PkgName: openssl
@@ -330,8 +330,8 @@
     FixedVersion: 3.3.2-r3
     Status: fixed
     Layer:
-      Digest: sha256:fde51aa4ef0ab368ffc7a331a0b26ae44d473b330904c42cdcfc4d19d360ff33
-      DiffID: sha256:9ec35f9b00c3b355f7019af88558905f2da97ab19bdd2e1b1f2daaeb37fd154f
+      Digest: sha256:b63aa996600478370c5fd4294b425d694efe6041542cdae77586f170b1c0df88
+      DiffID: sha256:860ab3a1f9324addfe589af91875dff350ef182e680805ebb27b84f2e09ac94d
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
     DataSource:
       ID: alpine
@@ -388,7 +388,7 @@
     - https://openssl-library.org/news/secadv/20241016.txt
     - https://www.cve.org/CVERecord?id=CVE-2024-9143
     PublishedDate: '2024-10-16T17:15:18.13Z'
-    LastModifiedDate: '2024-10-18T12:53:04.627Z'
+    LastModifiedDate: '2024-11-08T16:35:21.58Z'
   - VulnerabilityID: CVE-2023-42364
     PkgID: ssl_client@1.36.1-r29
     PkgName: ssl_client
