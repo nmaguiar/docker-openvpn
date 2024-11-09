@@ -265,7 +265,7 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2024-9143 
                         │     ├ PkgID           : libssl3@3.3.2-r0 
                         │     ├ PkgName         : libssl3 
@@ -349,7 +349,7 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-9143 
                         │     ├ PkgID           : openssl@3.3.2-r0 
                         │     ├ PkgName         : openssl 
@@ -433,7 +433,7 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [7] ╭ VulnerabilityID : CVE-2023-42364 
                         │     ├ PkgID           : ssl_client@1.36.1-r29 
                         │     ├ PkgName         : ssl_client 
