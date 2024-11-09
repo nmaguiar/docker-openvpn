@@ -191,10 +191,10 @@
                         │     ├ InstalledVersion: 3.3.2-r1 
                         │     ├ FixedVersion    : 3.3.2-r3 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:fde51aa4ef0ab368ffc7a331a0b26ae44d473b330904c
-                        │     │                  │         42cdcfc4d19d360ff33 
-                        │     │                  ╰ DiffID: sha256:9ec35f9b00c3b355f7019af88558905f2da97ab19bdd2
-                        │     │                            e1b1f2daaeb37fd154f 
+                        │     ├ Layer            ╭ Digest: sha256:b63aa996600478370c5fd4294b425d694efe6041542cd
+                        │     │                  │         ae77586f170b1c0df88 
+                        │     │                  ╰ DiffID: sha256:860ab3a1f9324addfe589af91875dff350ef182e68080
+                        │     │                            5ebb27b84f2e09ac94d 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -265,7 +265,7 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2024-9143 
                         │     ├ PkgID           : libssl3@3.3.2-r1 
                         │     ├ PkgName         : libssl3 
@@ -275,10 +275,10 @@
                         │     ├ InstalledVersion: 3.3.2-r1 
                         │     ├ FixedVersion    : 3.3.2-r3 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:fde51aa4ef0ab368ffc7a331a0b26ae44d473b330904c
-                        │     │                  │         42cdcfc4d19d360ff33 
-                        │     │                  ╰ DiffID: sha256:9ec35f9b00c3b355f7019af88558905f2da97ab19bdd2
-                        │     │                            e1b1f2daaeb37fd154f 
+                        │     ├ Layer            ╭ Digest: sha256:b63aa996600478370c5fd4294b425d694efe6041542cd
+                        │     │                  │         ae77586f170b1c0df88 
+                        │     │                  ╰ DiffID: sha256:860ab3a1f9324addfe589af91875dff350ef182e68080
+                        │     │                            5ebb27b84f2e09ac94d 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -349,7 +349,7 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-9143 
                         │     ├ PkgID           : openssl@3.3.2-r1 
                         │     ├ PkgName         : openssl 
@@ -359,10 +359,10 @@
                         │     ├ InstalledVersion: 3.3.2-r1 
                         │     ├ FixedVersion    : 3.3.2-r3 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:fde51aa4ef0ab368ffc7a331a0b26ae44d473b330904c
-                        │     │                  │         42cdcfc4d19d360ff33 
-                        │     │                  ╰ DiffID: sha256:9ec35f9b00c3b355f7019af88558905f2da97ab19bdd2
-                        │     │                            e1b1f2daaeb37fd154f 
+                        │     ├ Layer            ╭ Digest: sha256:b63aa996600478370c5fd4294b425d694efe6041542cd
+                        │     │                  │         ae77586f170b1c0df88 
+                        │     │                  ╰ DiffID: sha256:860ab3a1f9324addfe589af91875dff350ef182e68080
+                        │     │                            5ebb27b84f2e09ac94d 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -433,7 +433,7 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [7] ╭ VulnerabilityID : CVE-2023-42364 
                         │     ├ PkgID           : ssl_client@1.36.1-r29 
                         │     ├ PkgName         : ssl_client 
