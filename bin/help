@@ -53,4 +53,15 @@ To delete an existing user:
 
 [2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -it nmaguiar/openvpn del my-user[m
 
+
+[1m5. Server certificate management[m
+[1m--------------------------------[m
+
+To check the current server certificate:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -it nmaguiar/openvpn /bin/bash -c \". <(sed 's/declare -x/export/' /etc/openvpn/ovpn_env.sh) && easyrsa show-cert \$OVPN_CN\"[m
+
+To renew the server certificate:
+
+[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -it nmaguiar/openvpn /bin/bash -c \". <(sed 's/declare -x/export/' /etc/openvpn/ovpn_env.sh) && easyrsa build-server-full \$OVPN_CN nopass\"[m
 "
