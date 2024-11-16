@@ -11,10 +11,10 @@
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                        │     │                  │         c5e8f0379998b44f170 
-                        │     │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                        │     │                            fcaa9d62435a4cced85 
+                        │     ├ Layer            ╭ Digest: sha256:da9db072f522755cbeb85be2b3f84059b70571b229512
+                        │     │                  │         f1571d9217b77e1087f 
+                        │     │                  ╰ DiffID: sha256:75654b8eeebd3beae97271a102f57cdeb794cc91e4426
+                        │     │                            48544963a7e951e9558 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -55,10 +55,10 @@
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                        │     │                  │         c5e8f0379998b44f170 
-                        │     │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                        │     │                            fcaa9d62435a4cced85 
+                        │     ├ Layer            ╭ Digest: sha256:da9db072f522755cbeb85be2b3f84059b70571b229512
+                        │     │                  │         f1571d9217b77e1087f 
+                        │     │                  ╰ DiffID: sha256:75654b8eeebd3beae97271a102f57cdeb794cc91e4426
+                        │     │                            48544963a7e951e9558 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -101,10 +101,10 @@
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                        │     │                  │         c5e8f0379998b44f170 
-                        │     │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                        │     │                            fcaa9d62435a4cced85 
+                        │     ├ Layer            ╭ Digest: sha256:da9db072f522755cbeb85be2b3f84059b70571b229512
+                        │     │                  │         f1571d9217b77e1087f 
+                        │     │                  ╰ DiffID: sha256:75654b8eeebd3beae97271a102f57cdeb794cc91e4426
+                        │     │                            48544963a7e951e9558 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -145,10 +145,10 @@
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                        │     │                  │         c5e8f0379998b44f170 
-                        │     │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                        │     │                            fcaa9d62435a4cced85 
+                        │     ├ Layer            ╭ Digest: sha256:da9db072f522755cbeb85be2b3f84059b70571b229512
+                        │     │                  │         f1571d9217b77e1087f 
+                        │     │                  ╰ DiffID: sha256:75654b8eeebd3beae97271a102f57cdeb794cc91e4426
+                        │     │                            48544963a7e951e9558 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -183,18 +183,18 @@
                         │     ├ PublishedDate   : 2023-11-27T23:15:07.373Z 
                         │     ╰ LastModifiedDate: 2023-11-30T05:08:08.77Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2024-9143 
-                        │     ├ PkgID           : libcrypto3@3.3.2-r0 
+                        │     ├ PkgID           : libcrypto3@3.3.2-r1 
                         │     ├ PkgName         : libcrypto3 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.2-r0?arch=x86_64&distro=
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.2-r1?arch=x86_64&distro=
                         │     │                  │       3.20.3 
-                        │     │                  ╰ UID : 33eb4551a5ab015e 
-                        │     ├ InstalledVersion: 3.3.2-r0 
+                        │     │                  ╰ UID : c038de569c293aaf 
+                        │     ├ InstalledVersion: 3.3.2-r1 
                         │     ├ FixedVersion    : 3.3.2-r3 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                        │     │                  │         c5e8f0379998b44f170 
-                        │     │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                        │     │                            fcaa9d62435a4cced85 
+                        │     ├ Layer            ╭ Digest: sha256:b58e5de0df3d69f12466ac4633299fb6519fe01fd21d3
+                        │     │                  │         ef8b9202a94d4b392f5 
+                        │     │                  ╰ DiffID: sha256:8ef4ef95707f34a78fa9817c5b071c1c6e949507191a3
+                        │     │                            8d7bbb8e6f55cab8914 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -265,20 +265,20 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2024-9143 
-                        │     ├ PkgID           : libssl3@3.3.2-r0 
+                        │     ├ PkgID           : libssl3@3.3.2-r1 
                         │     ├ PkgName         : libssl3 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.2-r0?arch=x86_64&distro=3.2
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.2-r1?arch=x86_64&distro=3.2
                         │     │                  │       0.3 
-                        │     │                  ╰ UID : aa5719d6e39bba43 
-                        │     ├ InstalledVersion: 3.3.2-r0 
+                        │     │                  ╰ UID : 8b6f0b8c954b1e9c 
+                        │     ├ InstalledVersion: 3.3.2-r1 
                         │     ├ FixedVersion    : 3.3.2-r3 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                        │     │                  │         c5e8f0379998b44f170 
-                        │     │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                        │     │                            fcaa9d62435a4cced85 
+                        │     ├ Layer            ╭ Digest: sha256:b58e5de0df3d69f12466ac4633299fb6519fe01fd21d3
+                        │     │                  │         ef8b9202a94d4b392f5 
+                        │     │                  ╰ DiffID: sha256:8ef4ef95707f34a78fa9817c5b071c1c6e949507191a3
+                        │     │                            8d7bbb8e6f55cab8914 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -349,20 +349,20 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-9143 
-                        │     ├ PkgID           : openssl@3.3.2-r0 
+                        │     ├ PkgID           : openssl@3.3.2-r1 
                         │     ├ PkgName         : openssl 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.2-r0?arch=x86_64&distro=3.2
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.2-r1?arch=x86_64&distro=3.2
                         │     │                  │       0.3 
-                        │     │                  ╰ UID : aad39ba6d762dc14 
-                        │     ├ InstalledVersion: 3.3.2-r0 
+                        │     │                  ╰ UID : bb020159fa4f9bf3 
+                        │     ├ InstalledVersion: 3.3.2-r1 
                         │     ├ FixedVersion    : 3.3.2-r3 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:54573727420cb14380a3dd9523e94ed8c6fd2d1114eaa
-                        │     │                  │         a3cb8b2f5ca88c90e87 
-                        │     │                  ╰ DiffID: sha256:57400fefcd9ce726d9c19b58f9d48f5b7d5bc2c0d3989
-                        │     │                            a49a5af0a22b4056e42 
+                        │     ├ Layer            ╭ Digest: sha256:b58e5de0df3d69f12466ac4633299fb6519fe01fd21d3
+                        │     │                  │         ef8b9202a94d4b392f5 
+                        │     │                  ╰ DiffID: sha256:8ef4ef95707f34a78fa9817c5b071c1c6e949507191a3
+                        │     │                            8d7bbb8e6f55cab8914 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-9143 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
@@ -433,20 +433,20 @@
                         │     │                  ├ [8]: https://openssl-library.org/news/secadv/20241016.txt 
                         │     │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2024-9143 
                         │     ├ PublishedDate   : 2024-10-16T17:15:18.13Z 
-                        │     ╰ LastModifiedDate: 2024-10-18T12:53:04.627Z 
+                        │     ╰ LastModifiedDate: 2024-11-08T16:35:21.58Z 
                         ├ [7] ╭ VulnerabilityID : CVE-2023-42364 
                         │     ├ PkgID           : ssl_client@1.36.1-r29 
                         │     ├ PkgName         : ssl_client 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distr
                         │     │                  │       o=3.20.3 
-                        │     │                  ╰ UID : b1ab0980f54b3bb7 
+                        │     │                  ╰ UID : 6363b92e9e519b88 
                         │     ├ InstalledVersion: 1.36.1-r29 
                         │     ├ FixedVersion    : 1.36.1-r30 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                        │     │                  │         c5e8f0379998b44f170 
-                        │     │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                        │     │                            fcaa9d62435a4cced85 
+                        │     ├ Layer            ╭ Digest: sha256:da9db072f522755cbeb85be2b3f84059b70571b229512
+                        │     │                  │         f1571d9217b77e1087f 
+                        │     │                  ╰ DiffID: sha256:75654b8eeebd3beae97271a102f57cdeb794cc91e4426
+                        │     │                            48544963a7e951e9558 
                         │     ├ SeveritySource  : nvd 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42364 
                         │     ├ DataSource       ╭ ID  : alpine 
@@ -483,14 +483,14 @@
                               ├ PkgName         : ssl_client 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.36.1-r29?arch=x86_64&distr
                               │                  │       o=3.20.3 
-                              │                  ╰ UID : b1ab0980f54b3bb7 
+                              │                  ╰ UID : 6363b92e9e519b88 
                               ├ InstalledVersion: 1.36.1-r29 
                               ├ FixedVersion    : 1.36.1-r30 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:43c4264eed91be63b206e17d93e75256a6097070ce643
-                              │                  │         c5e8f0379998b44f170 
-                              │                  ╰ DiffID: sha256:63ca1fbb43ae5034640e5e6cb3e083e05c290072c5366
-                              │                            fcaa9d62435a4cced85 
+                              ├ Layer            ╭ Digest: sha256:da9db072f522755cbeb85be2b3f84059b70571b229512
+                              │                  │         f1571d9217b77e1087f 
+                              │                  ╰ DiffID: sha256:75654b8eeebd3beae97271a102f57cdeb794cc91e4426
+                              │                            48544963a7e951e9558 
                               ├ SeveritySource  : nvd 
                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2023-42365 
                               ├ DataSource       ╭ ID  : alpine 
