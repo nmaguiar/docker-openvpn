@@ -192,8 +192,8 @@
     FixedVersion: 3.3.2-r3
     Status: fixed
     Layer:
-      Digest: sha256:91d0af138b25fb1a274cdff6c9085c10548cf358c1f815f722f6316b77b1a82f
-      DiffID: sha256:b09eee9373f15531dd2c75444faf533274122363bd01a73917ed644a18f79010
+      Digest: sha256:b58e5de0df3d69f12466ac4633299fb6519fe01fd21d3ef8b9202a94d4b392f5
+      DiffID: sha256:8ef4ef95707f34a78fa9817c5b071c1c6e949507191a38d7bbb8e6f55cab8914
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
     DataSource:
       ID: alpine
@@ -261,8 +261,8 @@
     FixedVersion: 3.3.2-r3
     Status: fixed
     Layer:
-      Digest: sha256:91d0af138b25fb1a274cdff6c9085c10548cf358c1f815f722f6316b77b1a82f
-      DiffID: sha256:b09eee9373f15531dd2c75444faf533274122363bd01a73917ed644a18f79010
+      Digest: sha256:b58e5de0df3d69f12466ac4633299fb6519fe01fd21d3ef8b9202a94d4b392f5
+      DiffID: sha256:8ef4ef95707f34a78fa9817c5b071c1c6e949507191a38d7bbb8e6f55cab8914
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
     DataSource:
       ID: alpine
@@ -330,8 +330,8 @@
     FixedVersion: 3.3.2-r3
     Status: fixed
     Layer:
-      Digest: sha256:91d0af138b25fb1a274cdff6c9085c10548cf358c1f815f722f6316b77b1a82f
-      DiffID: sha256:b09eee9373f15531dd2c75444faf533274122363bd01a73917ed644a18f79010
+      Digest: sha256:b58e5de0df3d69f12466ac4633299fb6519fe01fd21d3ef8b9202a94d4b392f5
+      DiffID: sha256:8ef4ef95707f34a78fa9817c5b071c1c6e949507191a38d7bbb8e6f55cab8914
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2024-9143
     DataSource:
       ID: alpine
