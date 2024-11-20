@@ -26,6 +26,8 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      azure: 2
+      cbl-mariner: 2
       nvd: 2
       redhat: 2
       ubuntu: 2
@@ -116,6 +118,8 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      azure: 2
+      cbl-mariner: 2
       nvd: 2
       redhat: 2
       ubuntu: 2
@@ -413,6 +417,8 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      azure: 2
+      cbl-mariner: 2
       nvd: 2
       redhat: 2
       ubuntu: 2
