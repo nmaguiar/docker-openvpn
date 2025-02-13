@@ -2,7 +2,86 @@
 ─ [0] ╭ Target         : nmaguiar/openvpn:latest (alpine 3.21.0) 
       ├ Class          : os-pkgs 
       ├ Type           : alpine 
-      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-13176 
+      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2024-12797 
+                        │     ├ PkgID           : libcrypto3@3.3.2-r4 
+                        │     ├ PkgName         : libcrypto3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.2-r4?arch=x86_64&distro=
+                        │     │                  │       3.21.0 
+                        │     │                  ╰ UID : 542067a84ab82f32 
+                        │     ├ InstalledVersion: 3.3.2-r4 
+                        │     ├ FixedVersion    : 3.3.3-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9
+                        │     │                  │         f461fee6251fd936a75 
+                        │     │                  ╰ DiffID: sha256:3e01818d79cd3467f1d60e54224f3f6ce5170eceb54e2
+                        │     │                            65d96bb82344b8c24e7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+                        │     │                   don't abort as expected 
+                        │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+                        │     │                   to authenticate a
+                        │     │                   server may fail to notice that the server was not
+                        │     │                   authenticated, because
+                        │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+                        │     │                   verification mode
+                        │     │                   is set.
+                        │     │                   
+                        │     │                   Impact summary: TLS and DTLS connections using raw public
+                        │     │                   keys may be
+                        │     │                   vulnerable to man-in-middle attacks when server
+                        │     │                   authentication failure is not
+                        │     │                   detected by clients.
+                        │     │                   RPKs are disabled by default in both TLS clients and TLS
+                        │     │                   servers.  The issue
+                        │     │                   only arises when TLS clients explicitly enable RPK use by the
+                        │     │                    server, and the
+                        │     │                   server, likewise, enables sending of an RPK instead of an
+                        │     │                   X.509 certificate
+                        │     │                   chain.  The affected clients are those that then rely on the
+                        │     │                   handshake to
+                        │     │                   fail when the server's RPK fails to match one of the expected
+                        │     │                    public keys,
+                        │     │                   by setting the verification mode to SSL_VERIFY_PEER.
+                        │     │                   Clients that enable server-side raw public keys can still
+                        │     │                   find out that raw
+                        │     │                   public key verification failed by calling
+                        │     │                   SSL_get_verify_result(), and those
+                        │     │                   that do, and take appropriate action, are not affected.  This
+                        │     │                    issue was
+                        │     │                   introduced in the initial implementation of RPK support in
+                        │     │                   OpenSSL 3.2.
+                        │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+                        │     │                   affected by this issue. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ CweIDs           ─ [0]: CWE-392 
+                        │     ├ VendorSeverity   ╭ ghsa  : 1 
+                        │     │                  ├ redhat: 3 
+                        │     │                  ╰ ubuntu: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:N 
+                        │     │                           ╰ V3Score : 7.4 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+                        │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+                        │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+                        │     │                  │       d57660dcba50a619fafced3fd5e9 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+                        │     │                  │       549b611233f92652f0da5328fbe7 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+                        │     │                  │       cf92ad5889df92f90bb0ee10a699 
+                        │     │                  ├ [6] : https://github.com/pyca/cryptography 
+                        │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+                        │     │                  │       es/GHSA-79v4-65xg-pq4g 
+                        │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+                        │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+                        │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+                        │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+                        │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+                        ├ [1] ╭ VulnerabilityID : CVE-2024-13176 
                         │     ├ PkgID           : libcrypto3@3.3.2-r4 
                         │     ├ PkgName         : libcrypto3 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.2-r4?arch=x86_64&distro=
@@ -71,10 +150,90 @@
                         │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-13176 
                         │     │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
                         │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-0005/ 
-                        │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+                        │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
                         │     ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
                         │     ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
-                        ├ [1] ╭ VulnerabilityID : CVE-2024-13176 
+                        ├ [2] ╭ VulnerabilityID : CVE-2024-12797 
+                        │     ├ PkgID           : libssl3@3.3.2-r4 
+                        │     ├ PkgName         : libssl3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.2-r4?arch=x86_64&distro=3.2
+                        │     │                  │       1.0 
+                        │     │                  ╰ UID : b53306887f53ea89 
+                        │     ├ InstalledVersion: 3.3.2-r4 
+                        │     ├ FixedVersion    : 3.3.3-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9
+                        │     │                  │         f461fee6251fd936a75 
+                        │     │                  ╰ DiffID: sha256:3e01818d79cd3467f1d60e54224f3f6ce5170eceb54e2
+                        │     │                            65d96bb82344b8c24e7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+                        │     │                   don't abort as expected 
+                        │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+                        │     │                   to authenticate a
+                        │     │                   server may fail to notice that the server was not
+                        │     │                   authenticated, because
+                        │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+                        │     │                   verification mode
+                        │     │                   is set.
+                        │     │                   
+                        │     │                   Impact summary: TLS and DTLS connections using raw public
+                        │     │                   keys may be
+                        │     │                   vulnerable to man-in-middle attacks when server
+                        │     │                   authentication failure is not
+                        │     │                   detected by clients.
+                        │     │                   RPKs are disabled by default in both TLS clients and TLS
+                        │     │                   servers.  The issue
+                        │     │                   only arises when TLS clients explicitly enable RPK use by the
+                        │     │                    server, and the
+                        │     │                   server, likewise, enables sending of an RPK instead of an
+                        │     │                   X.509 certificate
+                        │     │                   chain.  The affected clients are those that then rely on the
+                        │     │                   handshake to
+                        │     │                   fail when the server's RPK fails to match one of the expected
+                        │     │                    public keys,
+                        │     │                   by setting the verification mode to SSL_VERIFY_PEER.
+                        │     │                   Clients that enable server-side raw public keys can still
+                        │     │                   find out that raw
+                        │     │                   public key verification failed by calling
+                        │     │                   SSL_get_verify_result(), and those
+                        │     │                   that do, and take appropriate action, are not affected.  This
+                        │     │                    issue was
+                        │     │                   introduced in the initial implementation of RPK support in
+                        │     │                   OpenSSL 3.2.
+                        │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+                        │     │                   affected by this issue. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ CweIDs           ─ [0]: CWE-392 
+                        │     ├ VendorSeverity   ╭ ghsa  : 1 
+                        │     │                  ├ redhat: 3 
+                        │     │                  ╰ ubuntu: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:N 
+                        │     │                           ╰ V3Score : 7.4 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+                        │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+                        │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+                        │     │                  │       d57660dcba50a619fafced3fd5e9 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+                        │     │                  │       549b611233f92652f0da5328fbe7 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+                        │     │                  │       cf92ad5889df92f90bb0ee10a699 
+                        │     │                  ├ [6] : https://github.com/pyca/cryptography 
+                        │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+                        │     │                  │       es/GHSA-79v4-65xg-pq4g 
+                        │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+                        │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+                        │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+                        │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+                        │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+                        ├ [3] ╭ VulnerabilityID : CVE-2024-13176 
                         │     ├ PkgID           : libssl3@3.3.2-r4 
                         │     ├ PkgName         : libssl3 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.2-r4?arch=x86_64&distro=3.2
@@ -143,10 +302,90 @@
                         │     │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-13176 
                         │     │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
                         │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-0005/ 
-                        │     │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+                        │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
                         │     ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
                         │     ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
-                        ╰ [2] ╭ VulnerabilityID : CVE-2024-13176 
+                        ├ [4] ╭ VulnerabilityID : CVE-2024-12797 
+                        │     ├ PkgID           : openssl@3.3.2-r4 
+                        │     ├ PkgName         : openssl 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.2-r4?arch=x86_64&distro=3.2
+                        │     │                  │       1.0 
+                        │     │                  ╰ UID : c41989a6b9105b63 
+                        │     ├ InstalledVersion: 3.3.2-r4 
+                        │     ├ FixedVersion    : 3.3.3-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:26f1ce41dbe69b42ef5b238b71cb9d051ea9fc9688469
+                        │     │                  │         8d3980dc910696d05a2 
+                        │     │                  ╰ DiffID: sha256:ac43e650616d508151d46d2f6b011d8681ae12dc39617
+                        │     │                            37d7c3f4d18fd41504d 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-12797 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : openssl: RFC7250 handshakes with unauthenticated servers
+                        │     │                   don't abort as expected 
+                        │     ├ Description     : Issue summary: Clients using RFC7250 Raw Public Keys (RPKs)
+                        │     │                   to authenticate a
+                        │     │                   server may fail to notice that the server was not
+                        │     │                   authenticated, because
+                        │     │                   handshakes don't abort as expected when the SSL_VERIFY_PEER
+                        │     │                   verification mode
+                        │     │                   is set.
+                        │     │                   
+                        │     │                   Impact summary: TLS and DTLS connections using raw public
+                        │     │                   keys may be
+                        │     │                   vulnerable to man-in-middle attacks when server
+                        │     │                   authentication failure is not
+                        │     │                   detected by clients.
+                        │     │                   RPKs are disabled by default in both TLS clients and TLS
+                        │     │                   servers.  The issue
+                        │     │                   only arises when TLS clients explicitly enable RPK use by the
+                        │     │                    server, and the
+                        │     │                   server, likewise, enables sending of an RPK instead of an
+                        │     │                   X.509 certificate
+                        │     │                   chain.  The affected clients are those that then rely on the
+                        │     │                   handshake to
+                        │     │                   fail when the server's RPK fails to match one of the expected
+                        │     │                    public keys,
+                        │     │                   by setting the verification mode to SSL_VERIFY_PEER.
+                        │     │                   Clients that enable server-side raw public keys can still
+                        │     │                   find out that raw
+                        │     │                   public key verification failed by calling
+                        │     │                   SSL_get_verify_result(), and those
+                        │     │                   that do, and take appropriate action, are not affected.  This
+                        │     │                    issue was
+                        │     │                   introduced in the initial implementation of RPK support in
+                        │     │                   OpenSSL 3.2.
+                        │     │                   The FIPS modules in 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+                        │     │                   affected by this issue. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ CweIDs           ─ [0]: CWE-392 
+                        │     ├ VendorSeverity   ╭ ghsa  : 1 
+                        │     │                  ├ redhat: 3 
+                        │     │                  ╰ ubuntu: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:N 
+                        │     │                           ╰ V3Score : 7.4 
+                        │     ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/02/11/3 
+                        │     │                  ├ [1] : http://www.openwall.com/lists/oss-security/2025/02/11/4 
+                        │     │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2024-12797 
+                        │     │                  ├ [3] : https://github.com/openssl/openssl/commit/738d4f9fdeaa
+                        │     │                  │       d57660dcba50a619fafced3fd5e9 
+                        │     │                  ├ [4] : https://github.com/openssl/openssl/commit/798779d43494
+                        │     │                  │       549b611233f92652f0da5328fbe7 
+                        │     │                  ├ [5] : https://github.com/openssl/openssl/commit/87ebd203feff
+                        │     │                  │       cf92ad5889df92f90bb0ee10a699 
+                        │     │                  ├ [6] : https://github.com/pyca/cryptography 
+                        │     │                  ├ [7] : https://github.com/pyca/cryptography/security/advisori
+                        │     │                  │       es/GHSA-79v4-65xg-pq4g 
+                        │     │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
+                        │     │                  ├ [9] : https://openssl-library.org/news/secadv/20250211.txt 
+                        │     │                  ├ [10]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+                        │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
+                        │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+                        ╰ [5] ╭ VulnerabilityID : CVE-2024-13176 
                               ├ PkgID           : openssl@3.3.2-r4 
                               ├ PkgName         : openssl 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.2-r4?arch=x86_64&distro=3.2
@@ -215,7 +454,8 @@
                               │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2024-13176 
                               │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
                               │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-0005/ 
-                              │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+                              │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
+                              │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
                               ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
                               ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
 ````
