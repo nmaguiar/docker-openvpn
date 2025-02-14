@@ -47,7 +47,9 @@
     CweIDs:
     - CWE-392
     VendorSeverity:
+      alma: 3
       ghsa: 1
+      oracle-oval: 3
       redhat: 3
       ubuntu: 3
     CVSS:
@@ -57,12 +59,17 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/02/11/3
     - http://www.openwall.com/lists/oss-security/2025/02/11/4
+    - https://access.redhat.com/errata/RHSA-2025:1330
     - https://access.redhat.com/security/cve/CVE-2024-12797
+    - https://bugzilla.redhat.com/2342757
+    - https://errata.almalinux.org/9/ALSA-2025-1330.html
     - https://github.com/openssl/openssl/commit/738d4f9fdeaad57660dcba50a619fafced3fd5e9
     - https://github.com/openssl/openssl/commit/798779d43494549b611233f92652f0da5328fbe7
     - https://github.com/openssl/openssl/commit/87ebd203feffcf92ad5889df92f90bb0ee10a699
     - https://github.com/pyca/cryptography
     - https://github.com/pyca/cryptography/security/advisories/GHSA-79v4-65xg-pq4g
+    - https://linux.oracle.com/cve/CVE-2024-12797.html
+    - https://linux.oracle.com/errata/ELSA-2025-1330.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12797
     - https://openssl-library.org/news/secadv/20250211.txt
     - https://ubuntu.com/security/notices/USN-7264-1
@@ -114,7 +121,9 @@
     CweIDs:
     - CWE-392
     VendorSeverity:
+      alma: 3
       ghsa: 1
+      oracle-oval: 3
       redhat: 3
       ubuntu: 3
     CVSS:
@@ -124,18 +133,57 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/02/11/3
     - http://www.openwall.com/lists/oss-security/2025/02/11/4
+    - https://access.redhat.com/errata/RHSA-2025:1330
     - https://access.redhat.com/security/cve/CVE-2024-12797
+    - https://bugzilla.redhat.com/2342757
+    - https://errata.almalinux.org/9/ALSA-2025-1330.html
     - https://github.com/openssl/openssl/commit/738d4f9fdeaad57660dcba50a619fafced3fd5e9
     - https://github.com/openssl/openssl/commit/798779d43494549b611233f92652f0da5328fbe7
     - https://github.com/openssl/openssl/commit/87ebd203feffcf92ad5889df92f90bb0ee10a699
     - https://github.com/pyca/cryptography
     - https://github.com/pyca/cryptography/security/advisories/GHSA-79v4-65xg-pq4g
+    - https://linux.oracle.com/cve/CVE-2024-12797.html
+    - https://linux.oracle.com/errata/ELSA-2025-1330.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12797
     - https://openssl-library.org/news/secadv/20250211.txt
     - https://ubuntu.com/security/notices/USN-7264-1
     - https://www.cve.org/CVERecord?id=CVE-2024-12797
     PublishedDate: '2025-02-11T16:15:38.827Z'
     LastModifiedDate: '2025-02-11T23:15:08.807Z'
+  - VulnerabilityID: CVE-2025-26519
+    PkgID: musl@1.2.5-r8
+    PkgName: musl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl@1.2.5-r8?arch=x86_64&distro=3.21.2
+      UID: 936f1fd92822db90
+    InstalledVersion: 1.2.5-r8
+    FixedVersion: 1.2.5-r10
+    Status: fixed
+    Layer:
+      Digest: sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0
+      DiffID: sha256:a0904247e36a7726c03c71ee48f3e64462021c88dafeb13f37fdaf613b27f11c
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2025-26519
+    PkgID: musl-utils@1.2.5-r8
+    PkgName: musl-utils
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl-utils@1.2.5-r8?arch=x86_64&distro=3.21.2
+      UID: f25fd050ed07b9ad
+    InstalledVersion: 1.2.5-r8
+    FixedVersion: 1.2.5-r10
+    Status: fixed
+    Layer:
+      Digest: sha256:1f3e46996e2966e4faa5846e56e76e3748b7315e2ded61476c24403d592134f0
+      DiffID: sha256:a0904247e36a7726c03c71ee48f3e64462021c88dafeb13f37fdaf613b27f11c
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Severity: UNKNOWN
   - VulnerabilityID: CVE-2024-12797
     PkgID: openssl@3.3.2-r5
     PkgName: openssl
@@ -181,7 +229,9 @@
     CweIDs:
     - CWE-392
     VendorSeverity:
+      alma: 3
       ghsa: 1
+      oracle-oval: 3
       redhat: 3
       ubuntu: 3
     CVSS:
@@ -191,12 +241,17 @@
     References:
     - http://www.openwall.com/lists/oss-security/2025/02/11/3
     - http://www.openwall.com/lists/oss-security/2025/02/11/4
+    - https://access.redhat.com/errata/RHSA-2025:1330
     - https://access.redhat.com/security/cve/CVE-2024-12797
+    - https://bugzilla.redhat.com/2342757
+    - https://errata.almalinux.org/9/ALSA-2025-1330.html
     - https://github.com/openssl/openssl/commit/738d4f9fdeaad57660dcba50a619fafced3fd5e9
     - https://github.com/openssl/openssl/commit/798779d43494549b611233f92652f0da5328fbe7
     - https://github.com/openssl/openssl/commit/87ebd203feffcf92ad5889df92f90bb0ee10a699
     - https://github.com/pyca/cryptography
     - https://github.com/pyca/cryptography/security/advisories/GHSA-79v4-65xg-pq4g
+    - https://linux.oracle.com/cve/CVE-2024-12797.html
+    - https://linux.oracle.com/errata/ELSA-2025-1330.html
     - https://nvd.nist.gov/vuln/detail/CVE-2024-12797
     - https://openssl-library.org/news/secadv/20250211.txt
     - https://ubuntu.com/security/notices/USN-7264-1
