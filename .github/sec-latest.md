@@ -332,10 +332,30 @@
                         │     │                  │         f461fee6251fd936a75 
                         │     │                  ╰ DiffID: sha256:3e01818d79cd3467f1d60e54224f3f6ce5170eceb54e2
                         │     │                            65d96bb82344b8c24e7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ╰ Severity        : UNKNOWN 
+                        │     ├ Title           : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
+                        │     │                   out-of-bounds write ... 
+                        │     ├ Description     : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
+                        │     │                   out-of-bounds write vulnerability when an attacker can
+                        │     │                   trigger iconv conversion of untrusted EUC-KR text to UTF-8. 
+                        │     ├ Severity        : UNKNOWN 
+                        │     ├ CweIDs           ─ [0]: CWE-787 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/13/2 
+                        │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/13/3 
+                        │     │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/02/13/4 
+                        │     │                  ├ [3]: http://www.openwall.com/lists/oss-security/2025/02/13/5 
+                        │     │                  ├ [4]: http://www.openwall.com/lists/oss-security/2025/02/14/5 
+                        │     │                  ├ [5]: http://www.openwall.com/lists/oss-security/2025/02/14/6 
+                        │     │                  ├ [6]: https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25e
+                        │     │                  │      a3b484e10326f933e927c0bc8cded3da 
+                        │     │                  ├ [7]: https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97
+                        │     │                  │      b5196e29991b524237381a0202a60659 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
+                        │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
+                        │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2025-26519 
                         │     ├ PkgID           : musl-utils@1.2.5-r8 
                         │     ├ PkgName         : musl-utils 
@@ -349,10 +369,30 @@
                         │     │                  │         f461fee6251fd936a75 
                         │     │                  ╰ DiffID: sha256:3e01818d79cd3467f1d60e54224f3f6ce5170eceb54e2
                         │     │                            65d96bb82344b8c24e7 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ╰ Severity        : UNKNOWN 
+                        │     ├ Title           : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
+                        │     │                   out-of-bounds write ... 
+                        │     ├ Description     : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
+                        │     │                   out-of-bounds write vulnerability when an attacker can
+                        │     │                   trigger iconv conversion of untrusted EUC-KR text to UTF-8. 
+                        │     ├ Severity        : UNKNOWN 
+                        │     ├ CweIDs           ─ [0]: CWE-787 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/13/2 
+                        │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/13/3 
+                        │     │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/02/13/4 
+                        │     │                  ├ [3]: http://www.openwall.com/lists/oss-security/2025/02/13/5 
+                        │     │                  ├ [4]: http://www.openwall.com/lists/oss-security/2025/02/14/5 
+                        │     │                  ├ [5]: http://www.openwall.com/lists/oss-security/2025/02/14/6 
+                        │     │                  ├ [6]: https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25e
+                        │     │                  │      a3b484e10326f933e927c0bc8cded3da 
+                        │     │                  ├ [7]: https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97
+                        │     │                  │      b5196e29991b524237381a0202a60659 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
+                        │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
+                        │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-12797 
                         │     ├ PkgID           : openssl@3.3.2-r4 
                         │     ├ PkgName         : openssl 
