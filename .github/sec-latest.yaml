@@ -286,11 +286,28 @@
     Layer:
       Digest: sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9f461fee6251fd936a75
       DiffID: sha256:3e01818d79cd3467f1d60e54224f3f6ce5170eceb54e265d96bb82344b8c24e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-26519
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Title: musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...
+    Description: musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.
     Severity: UNKNOWN
+    CweIDs:
+    - CWE-787
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/02/13/2
+    - http://www.openwall.com/lists/oss-security/2025/02/13/3
+    - http://www.openwall.com/lists/oss-security/2025/02/13/4
+    - http://www.openwall.com/lists/oss-security/2025/02/13/5
+    - http://www.openwall.com/lists/oss-security/2025/02/14/5
+    - http://www.openwall.com/lists/oss-security/2025/02/14/6
+    - https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25ea3b484e10326f933e927c0bc8cded3da
+    - https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97b5196e29991b524237381a0202a60659
+    - https://www.openwall.com/lists/oss-security/2025/02/13/2
+    PublishedDate: '2025-02-14T04:15:09.05Z'
+    LastModifiedDate: '2025-02-14T17:15:23.09Z'
   - VulnerabilityID: CVE-2025-26519
     PkgID: musl-utils@1.2.5-r8
     PkgName: musl-utils
@@ -303,11 +320,28 @@
     Layer:
       Digest: sha256:38a8310d387e375e0ec6fabe047a9149e8eb214073db9f461fee6251fd936a75
       DiffID: sha256:3e01818d79cd3467f1d60e54224f3f6ce5170eceb54e265d96bb82344b8c24e7
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-26519
     DataSource:
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
+    Title: musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write ...
+    Description: musl libc 0.9.13 through 1.2.5 before 1.2.6 has an out-of-bounds write vulnerability when an attacker can trigger iconv conversion of untrusted EUC-KR text to UTF-8.
     Severity: UNKNOWN
+    CweIDs:
+    - CWE-787
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/02/13/2
+    - http://www.openwall.com/lists/oss-security/2025/02/13/3
+    - http://www.openwall.com/lists/oss-security/2025/02/13/4
+    - http://www.openwall.com/lists/oss-security/2025/02/13/5
+    - http://www.openwall.com/lists/oss-security/2025/02/14/5
+    - http://www.openwall.com/lists/oss-security/2025/02/14/6
+    - https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25ea3b484e10326f933e927c0bc8cded3da
+    - https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97b5196e29991b524237381a0202a60659
+    - https://www.openwall.com/lists/oss-security/2025/02/13/2
+    PublishedDate: '2025-02-14T04:15:09.05Z'
+    LastModifiedDate: '2025-02-14T17:15:23.09Z'
   - VulnerabilityID: CVE-2024-12797
     PkgID: openssl@3.3.2-r4
     PkgName: openssl
