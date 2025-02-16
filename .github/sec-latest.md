@@ -84,10 +84,11 @@
                         │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
                         │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
                         │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
-                        │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
-                        │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+                        │     │                  ├ [15]: https://security.netapp.com/advisory/ntap-20250214-0001/ 
+                        │     │                  ├ [16]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
                         │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-                        │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+                        │     ╰ LastModifiedDate: 2025-02-15T01:15:10.25Z 
                         ├ [1] ╭ VulnerabilityID : CVE-2024-13176 
                         │     ├ PkgID           : libcrypto3@3.3.2-r4 
                         │     ├ PkgName         : libcrypto3 
@@ -243,10 +244,11 @@
                         │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
                         │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
                         │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
-                        │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
-                        │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+                        │     │                  ├ [15]: https://security.netapp.com/advisory/ntap-20250214-0001/ 
+                        │     │                  ├ [16]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
                         │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-                        │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+                        │     ╰ LastModifiedDate: 2025-02-15T01:15:10.25Z 
                         ├ [3] ╭ VulnerabilityID : CVE-2024-13176 
                         │     ├ PkgID           : libssl3@3.3.2-r4 
                         │     ├ PkgName         : libssl3 
@@ -475,10 +477,11 @@
                         │     │                  ├ [12]: https://linux.oracle.com/errata/ELSA-2025-1330.html 
                         │     │                  ├ [13]: https://nvd.nist.gov/vuln/detail/CVE-2024-12797 
                         │     │                  ├ [14]: https://openssl-library.org/news/secadv/20250211.txt 
-                        │     │                  ├ [15]: https://ubuntu.com/security/notices/USN-7264-1 
-                        │     │                  ╰ [16]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
+                        │     │                  ├ [15]: https://security.netapp.com/advisory/ntap-20250214-0001/ 
+                        │     │                  ├ [16]: https://ubuntu.com/security/notices/USN-7264-1 
+                        │     │                  ╰ [17]: https://www.cve.org/CVERecord?id=CVE-2024-12797 
                         │     ├ PublishedDate   : 2025-02-11T16:15:38.827Z 
-                        │     ╰ LastModifiedDate: 2025-02-11T23:15:08.807Z 
+                        │     ╰ LastModifiedDate: 2025-02-15T01:15:10.25Z 
                         ╰ [7] ╭ VulnerabilityID : CVE-2024-13176 
                               ├ PkgID           : openssl@3.3.2-r4 
                               ├ PkgName         : openssl 
