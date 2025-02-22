@@ -58,6 +58,7 @@
                         │     ├ Severity        : HIGH 
                         │     ├ CweIDs           ─ [0]: CWE-392 
                         │     ├ VendorSeverity   ╭ alma       : 3 
+                        │     │                  ├ cbl-mariner: 3 
                         │     │                  ├ ghsa       : 1 
                         │     │                  ├ oracle-oval: 3 
                         │     │                  ├ redhat     : 3 
@@ -159,7 +160,8 @@
                         │     │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
                         │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-0005/ 
                         │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
-                        │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+                        │     │                  ├ [13]: https://ubuntu.com/security/notices/USN-7278-1 
+                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
                         │     ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
                         │     ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
                         ├ [2] ╭ VulnerabilityID : CVE-2024-12797 
@@ -218,6 +220,7 @@
                         │     ├ Severity        : HIGH 
                         │     ├ CweIDs           ─ [0]: CWE-392 
                         │     ├ VendorSeverity   ╭ alma       : 3 
+                        │     │                  ├ cbl-mariner: 3 
                         │     │                  ├ ghsa       : 1 
                         │     │                  ├ oracle-oval: 3 
                         │     │                  ├ redhat     : 3 
@@ -319,7 +322,8 @@
                         │     │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
                         │     │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-0005/ 
                         │     │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
-                        │     │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+                        │     │                  ├ [13]: https://ubuntu.com/security/notices/USN-7278-1 
+                        │     │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
                         │     ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
                         │     ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2025-26519 
@@ -451,6 +455,7 @@
                         │     ├ Severity        : HIGH 
                         │     ├ CweIDs           ─ [0]: CWE-392 
                         │     ├ VendorSeverity   ╭ alma       : 3 
+                        │     │                  ├ cbl-mariner: 3 
                         │     │                  ├ ghsa       : 1 
                         │     │                  ├ oracle-oval: 3 
                         │     │                  ├ redhat     : 3 
@@ -552,7 +557,8 @@
                               │                  ├ [10]: https://openssl-library.org/news/secadv/20250120.txt 
                               │                  ├ [11]: https://security.netapp.com/advisory/ntap-20250124-0005/ 
                               │                  ├ [12]: https://ubuntu.com/security/notices/USN-7264-1 
-                              │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
+                              │                  ├ [13]: https://ubuntu.com/security/notices/USN-7278-1 
+                              │                  ╰ [14]: https://www.cve.org/CVERecord?id=CVE-2024-13176 
                               ├ PublishedDate   : 2025-01-20T14:15:26.247Z 
                               ╰ LastModifiedDate: 2025-01-27T21:15:11.907Z 
 ````
