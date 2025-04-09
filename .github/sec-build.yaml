@@ -70,3 +70,65 @@
     - https://www.openwall.com/lists/oss-security/2025/02/13/2
     PublishedDate: '2025-02-14T04:15:09.05Z'
     LastModifiedDate: '2025-02-14T17:15:23.09Z'
+  - VulnerabilityID: CVE-2025-2704
+    PkgID: openvpn@2.6.12-r1
+    PkgName: openvpn
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn@2.6.12-r1?arch=x86_64&distro=3.21.3
+      UID: bcbc0bee14316e9d
+    InstalledVersion: 2.6.12-r1
+    FixedVersion: 2.6.14-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:19d3ffb1e31ed56d404ed3195de41b99a873949266ad55953918ced2e897bddc
+      DiffID: sha256:695d07d95f7b1d7e70825f11fc9ce1ce4850a147d2963a356e618f8677909d52
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-2704
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: OpenVPN version 2.6.1 through 2.6.13 in server mode using TLS-crypt-v2 ...
+    Description: OpenVPN version 2.6.1 through 2.6.13 in server mode using TLS-crypt-v2 allows remote attackers to trigger a denial of service by corrupting and replaying network packets in the early handshake phase
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-754
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/04/02/5
+    - https://community.openvpn.net/openvpn/wiki/CVE-2025-2704
+    - https://ubuntu.com/security/notices/USN-7411-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-2704
+    PublishedDate: '2025-04-02T21:15:32.943Z'
+    LastModifiedDate: '2025-04-07T18:15:45.56Z'
+  - VulnerabilityID: CVE-2025-2704
+    PkgID: openvpn-auth-pam@2.6.12-r1
+    PkgName: openvpn-auth-pam
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.12-r1?arch=x86_64&distro=3.21.3
+      UID: 11a9a42319fe8634
+    InstalledVersion: 2.6.12-r1
+    FixedVersion: 2.6.14-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:19d3ffb1e31ed56d404ed3195de41b99a873949266ad55953918ced2e897bddc
+      DiffID: sha256:695d07d95f7b1d7e70825f11fc9ce1ce4850a147d2963a356e618f8677909d52
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-2704
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Title: OpenVPN version 2.6.1 through 2.6.13 in server mode using TLS-crypt-v2 ...
+    Description: OpenVPN version 2.6.1 through 2.6.13 in server mode using TLS-crypt-v2 allows remote attackers to trigger a denial of service by corrupting and replaying network packets in the early handshake phase
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-754
+    VendorSeverity:
+      ubuntu: 2
+    References:
+    - http://www.openwall.com/lists/oss-security/2025/04/02/5
+    - https://community.openvpn.net/openvpn/wiki/CVE-2025-2704
+    - https://ubuntu.com/security/notices/USN-7411-1
+    - https://www.cve.org/CVERecord?id=CVE-2025-2704
+    PublishedDate: '2025-04-02T21:15:32.943Z'
+    LastModifiedDate: '2025-04-07T18:15:45.56Z'
