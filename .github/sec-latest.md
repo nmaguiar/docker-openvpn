@@ -100,7 +100,8 @@
                         │     │                   early handshake phase 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-754 
-                        │     ├ VendorSeverity   ─ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ amazon: 2 
+                        │     │                  ╰ ubuntu: 2 
                         │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/02/5 
                         │     │                  ├ [1]: https://community.openvpn.net/openvpn/wiki/CVE-2025-2704 
                         │     │                  ├ [2]: https://ubuntu.com/security/notices/USN-7411-1 
@@ -132,7 +133,8 @@
                               │                   early handshake phase 
                               ├ Severity        : MEDIUM 
                               ├ CweIDs           ─ [0]: CWE-754 
-                              ├ VendorSeverity   ─ ubuntu: 2 
+                              ├ VendorSeverity   ╭ amazon: 2 
+                              │                  ╰ ubuntu: 2 
                               ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/02/5 
                               │                  ├ [1]: https://community.openvpn.net/openvpn/wiki/CVE-2025-2704 
                               │                  ├ [2]: https://ubuntu.com/security/notices/USN-7411-1 
