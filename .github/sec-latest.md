@@ -38,107 +38,41 @@
                         │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
                         │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
                         │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-                        ├ [1] ╭ VulnerabilityID : CVE-2025-26519 
-                        │     ├ PkgID           : musl-utils@1.2.5-r9 
-                        │     ├ PkgName         : musl-utils 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=
-                        │     │                  │       3.21.3 
-                        │     │                  ╰ UID : 34b1bf5f3f83c06e 
-                        │     ├ InstalledVersion: 1.2.5-r9 
-                        │     ├ FixedVersion    : 1.2.5-r10 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:f18232174bc91741fdf3da96d85011092101a032a93a3
-                        │     │                  │         88b79e99e69c2d5c870 
-                        │     │                  ╰ DiffID: sha256:08000c18d16dadf9553d747a58cf44023423a9ab010aa
-                        │     │                            b96cf263d2216b8b350 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Title           : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
-                        │     │                   out-of-bounds write ... 
-                        │     ├ Description     : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
-                        │     │                   out-of-bounds write vulnerability when an attacker can
-                        │     │                   trigger iconv conversion of untrusted EUC-KR text to UTF-8. 
-                        │     ├ Severity        : UNKNOWN 
-                        │     ├ CweIDs           ─ [0]: CWE-787 
-                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/13/2 
-                        │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/13/3 
-                        │     │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/02/13/4 
-                        │     │                  ├ [3]: http://www.openwall.com/lists/oss-security/2025/02/13/5 
-                        │     │                  ├ [4]: http://www.openwall.com/lists/oss-security/2025/02/14/5 
-                        │     │                  ├ [5]: http://www.openwall.com/lists/oss-security/2025/02/14/6 
-                        │     │                  ├ [6]: https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25e
-                        │     │                  │      a3b484e10326f933e927c0bc8cded3da 
-                        │     │                  ├ [7]: https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97
-                        │     │                  │      b5196e29991b524237381a0202a60659 
-                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
-                        │     ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
-                        │     ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-                        ├ [2] ╭ VulnerabilityID : CVE-2025-2704 
-                        │     ├ PkgID           : openvpn@2.6.12-r1 
-                        │     ├ PkgName         : openvpn 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.12-r1?arch=x86_64&distro=3.
-                        │     │                  │       21.3 
-                        │     │                  ╰ UID : bcbc0bee14316e9d 
-                        │     ├ InstalledVersion: 2.6.12-r1 
-                        │     ├ FixedVersion    : 2.6.14-r0 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:c941eef4ef205cdc8fdfc3bb346efd738af6d049a30e9
-                        │     │                  │         e0446a69efc86b50099 
-                        │     │                  ╰ DiffID: sha256:9d43e37cf182f5961cb2b6f636b85e1344cab27a93a14
-                        │     │                            3a0f4cec2d7ecff8362 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-2704 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Title           : OpenVPN version 2.6.1 through 2.6.13 in server mode using
-                        │     │                   TLS-crypt-v2 ... 
-                        │     ├ Description     : OpenVPN version 2.6.1 through 2.6.13 in server mode using
-                        │     │                   TLS-crypt-v2 allows remote attackers to trigger a denial of
-                        │     │                   service by corrupting and replaying network packets in the
-                        │     │                   early handshake phase 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ CweIDs           ─ [0]: CWE-754 
-                        │     ├ VendorSeverity   ╭ amazon: 2 
-                        │     │                  ╰ ubuntu: 2 
-                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/02/5 
-                        │     │                  ├ [1]: https://community.openvpn.net/openvpn/wiki/CVE-2025-2704 
-                        │     │                  ├ [2]: https://ubuntu.com/security/notices/USN-7411-1 
-                        │     │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-2704 
-                        │     ├ PublishedDate   : 2025-04-02T21:15:32.943Z 
-                        │     ╰ LastModifiedDate: 2025-04-07T18:15:45.56Z 
-                        ╰ [3] ╭ VulnerabilityID : CVE-2025-2704 
-                              ├ PkgID           : openvpn-auth-pam@2.6.12-r1 
-                              ├ PkgName         : openvpn-auth-pam 
-                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.12-r1?arch=x86_64&
-                              │                  │       distro=3.21.3 
-                              │                  ╰ UID : 11a9a42319fe8634 
-                              ├ InstalledVersion: 2.6.12-r1 
-                              ├ FixedVersion    : 2.6.14-r0 
+                        ╰ [1] ╭ VulnerabilityID : CVE-2025-26519 
+                              ├ PkgID           : musl-utils@1.2.5-r9 
+                              ├ PkgName         : musl-utils 
+                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=
+                              │                  │       3.21.3 
+                              │                  ╰ UID : 34b1bf5f3f83c06e 
+                              ├ InstalledVersion: 1.2.5-r9 
+                              ├ FixedVersion    : 1.2.5-r10 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:c941eef4ef205cdc8fdfc3bb346efd738af6d049a30e9
-                              │                  │         e0446a69efc86b50099 
-                              │                  ╰ DiffID: sha256:9d43e37cf182f5961cb2b6f636b85e1344cab27a93a14
-                              │                            3a0f4cec2d7ecff8362 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-2704 
+                              ├ Layer            ╭ Digest: sha256:f18232174bc91741fdf3da96d85011092101a032a93a3
+                              │                  │         88b79e99e69c2d5c870 
+                              │                  ╰ DiffID: sha256:08000c18d16dadf9553d747a58cf44023423a9ab010aa
+                              │                            b96cf263d2216b8b350 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-26519 
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Title           : OpenVPN version 2.6.1 through 2.6.13 in server mode using
-                              │                   TLS-crypt-v2 ... 
-                              ├ Description     : OpenVPN version 2.6.1 through 2.6.13 in server mode using
-                              │                   TLS-crypt-v2 allows remote attackers to trigger a denial of
-                              │                   service by corrupting and replaying network packets in the
-                              │                   early handshake phase 
-                              ├ Severity        : MEDIUM 
-                              ├ CweIDs           ─ [0]: CWE-754 
-                              ├ VendorSeverity   ╭ amazon: 2 
-                              │                  ╰ ubuntu: 2 
-                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/02/5 
-                              │                  ├ [1]: https://community.openvpn.net/openvpn/wiki/CVE-2025-2704 
-                              │                  ├ [2]: https://ubuntu.com/security/notices/USN-7411-1 
-                              │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2025-2704 
-                              ├ PublishedDate   : 2025-04-02T21:15:32.943Z 
-                              ╰ LastModifiedDate: 2025-04-07T18:15:45.56Z 
+                              ├ Title           : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
+                              │                   out-of-bounds write ... 
+                              ├ Description     : musl libc 0.9.13 through 1.2.5 before 1.2.6 has an
+                              │                   out-of-bounds write vulnerability when an attacker can
+                              │                   trigger iconv conversion of untrusted EUC-KR text to UTF-8. 
+                              ├ Severity        : UNKNOWN 
+                              ├ CweIDs           ─ [0]: CWE-787 
+                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/02/13/2 
+                              │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/02/13/3 
+                              │                  ├ [2]: http://www.openwall.com/lists/oss-security/2025/02/13/4 
+                              │                  ├ [3]: http://www.openwall.com/lists/oss-security/2025/02/13/5 
+                              │                  ├ [4]: http://www.openwall.com/lists/oss-security/2025/02/14/5 
+                              │                  ├ [5]: http://www.openwall.com/lists/oss-security/2025/02/14/6 
+                              │                  ├ [6]: https://git.musl-libc.org/cgit/musl/commit/?id=c47ad25e
+                              │                  │      a3b484e10326f933e927c0bc8cded3da 
+                              │                  ├ [7]: https://git.musl-libc.org/cgit/musl/commit/?id=e5adcd97
+                              │                  │      b5196e29991b524237381a0202a60659 
+                              │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
+                              ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
+                              ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
 ````
