@@ -7,7 +7,7 @@
     PkgName: musl
     PkgIdentifier:
       PURL: pkg:apk/alpine/musl@1.2.5-r9?arch=x86_64&distro=3.21.3
-      UID: 8f11112be3ba1292
+      UID: d304ed094a6f35fb
     InstalledVersion: 1.2.5-r9
     FixedVersion: 1.2.5-r10
     Status: fixed
@@ -41,7 +41,7 @@
     PkgName: musl-utils
     PkgIdentifier:
       PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro=3.21.3
-      UID: 34b1bf5f3f83c06e
+      UID: 3e65cfca4f8bdb20
     InstalledVersion: 1.2.5-r9
     FixedVersion: 1.2.5-r10
     Status: fixed
