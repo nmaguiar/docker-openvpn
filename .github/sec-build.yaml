@@ -155,7 +155,7 @@
     Name: apk-tools
     Identifier:
       PURL: pkg:apk/alpine/apk-tools@2.14.9-r2?arch=x86_64&distro=3.22.1
-      UID: e05ed065eef231bf
+      UID: 2c0ab4b872e493f
     Version: 2.14.9-r2
     Arch: x86_64
     SrcName: apk-tools
@@ -166,7 +166,7 @@
     DependsOn:
     - ca-certificates-bundle@20250619-r0
     - libapk2@2.14.9-r2
-    - libcrypto3@3.5.3-r1
+    - libcrypto3@3.5.4-r0
     - musl@1.2.5-r10
     - zlib@1.3.1-r2
     Layer:
@@ -192,8 +192,8 @@
     - musl@1.2.5-r10
     - readline@8.2.13-r1
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:e2e7691628b43701a0fe7228b8d986a7aeb58aa9
     InstalledFiles:
     - bin/bash
@@ -307,7 +307,7 @@
     Name: easy-rsa
     Identifier:
       PURL: pkg:apk/alpine/easy-rsa@3.2.2-r0?arch=x86_64&distro=3.22.1
-      UID: 35767af9c7093a12
+      UID: ace79749b56357f8
     Version: 3.2.2-r0
     Arch: x86_64
     SrcName: easy-rsa
@@ -316,10 +316,10 @@
     - GPL-2.0-only
     Maintainer: Natanael Copa <ncopa@alpinelinux.org>
     DependsOn:
-    - openssl@3.5.3-r1
+    - openssl@3.5.4-r0
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:807236f343b0c9f1ddb6f23880acfae7461549af
     InstalledFiles:
     - usr/share/easy-rsa/easyrsa
@@ -349,8 +349,8 @@
     - linux-pam@1.7.0-r4
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:934fe57c476b2c889f3b2f07f469b5168ede335f
     InstalledFiles:
     - etc/pam.d/google-authenticator
@@ -374,8 +374,8 @@
     - libmnl@1.0.5-r2
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:2a99a9fd74b8067e13c1198ecb57edad4d7410fe
     InstalledFiles:
     - sbin/ip
@@ -407,8 +407,8 @@
     - libxtables@1.8.11-r1
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:a3379df48598167f40faa2fa45e65a0021aa876a
     InstalledFiles:
     - etc/ethertypes
@@ -572,7 +572,7 @@
     Name: libapk2
     Identifier:
       PURL: pkg:apk/alpine/libapk2@2.14.9-r2?arch=x86_64&distro=3.22.1
-      UID: 19e7675f44273bd7
+      UID: ac9204a686d4d507
     Version: 2.14.9-r2
     Arch: x86_64
     SrcName: apk-tools
@@ -582,8 +582,8 @@
     Maintainer: Natanael Copa <ncopa@alpinelinux.org>
     DependsOn:
     - ca-certificates-bundle@20250619-r0
-    - libcrypto3@3.5.3-r1
-    - libssl3@3.5.3-r1
+    - libcrypto3@3.5.4-r0
+    - libssl3@3.5.4-r0
     - musl@1.2.5-r10
     - zlib@1.3.1-r2
     Layer:
@@ -608,8 +608,8 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:e1137c402548ed1f601dd4f506f62de4d46f03cc
     InstalledFiles:
     - usr/lib/libcap-ng.so.0
@@ -632,32 +632,32 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:10e33c980520083454e09651e0e12f43589af0d3
     InstalledFiles:
     - usr/lib/libcap.so.2
     - usr/lib/libcap.so.2.76
     - usr/lib/libpsx.so.2
     - usr/lib/libpsx.so.2.76
-  - ID: libcrypto3@3.5.3-r1
+  - ID: libcrypto3@3.5.4-r0
     Name: libcrypto3
     Identifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: a00f1de9b4c15e98
-    Version: 3.5.3-r1
+      PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro=3.22.1
+      UID: f58e56ef5c63f37f
+    Version: 3.5.4-r0
     Arch: x86_64
     SrcName: openssl
-    SrcVersion: 3.5.3-r1
+    SrcVersion: 3.5.4-r0
     Licenses:
     - Apache-2.0
     Maintainer: Natanael Copa <ncopa@alpinelinux.org>
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    Digest: sha1:f25460e7b00106ae237f8266a43d89ef1fe38203
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
+    Digest: sha1:814a132b631e919ef418475879e7bcec216a0a62
     InstalledFiles:
     - etc/ssl/ct_log_list.cnf
     - etc/ssl/ct_log_list.cnf.dist
@@ -688,8 +688,8 @@
     - zlib@1.3.1-r2
     - zstd-libs@1.5.7-r0
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:5aa751f7b67bf6e42aa3dea938bed7aa8a82645b
     InstalledFiles:
     - usr/lib/libelf-0.193.so
@@ -709,8 +709,8 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:07dea84e2e07618d40725f565801331eedbb95c6
     InstalledFiles:
     - usr/lib/libmnl.so.0
@@ -731,8 +731,8 @@
     - musl@1.2.5-r10
     - ncurses-terminfo-base@6.5_p20250503-r0
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:42901f1528399d67e07e14085ee53f1a369b240a
     InstalledFiles:
     - usr/lib/libncursesw.so.6
@@ -753,8 +753,8 @@
     - libmnl@1.0.5-r2
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:d1d853a71e821837b622f354d5d0f4e2e6d23c1c
     InstalledFiles:
     - usr/lib/libnftnl.so.11
@@ -774,31 +774,31 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:0b0fe74749dc3e0d900cff3308ba0d77dd248f10
     InstalledFiles:
     - usr/lib/libqrencode.so.4
     - usr/lib/libqrencode.so.4.1.1
-  - ID: libssl3@3.5.3-r1
+  - ID: libssl3@3.5.4-r0
     Name: libssl3
     Identifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e042506648546590
-    Version: 3.5.3-r1
+      PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.22.1
+      UID: 34d76910cb64da71
+    Version: 3.5.4-r0
     Arch: x86_64
     SrcName: openssl
-    SrcVersion: 3.5.3-r1
+    SrcVersion: 3.5.4-r0
     Licenses:
     - Apache-2.0
     Maintainer: Natanael Copa <ncopa@alpinelinux.org>
     DependsOn:
-    - libcrypto3@3.5.3-r1
+    - libcrypto3@3.5.4-r0
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    Digest: sha1:a1a819d37d5825ddd926344cc81131ff934e11e5
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
+    Digest: sha1:f8c18645483723a9416218a52eba3d34c86858cf
     InstalledFiles:
     - usr/lib/libssl.so.3
   - ID: libxtables@1.8.11-r1
@@ -816,8 +816,8 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:e8a04aaf9c4a00dcb9b851198adb8af58c68f1df
     InstalledFiles:
     - usr/lib/libxtables.so.12
@@ -838,8 +838,8 @@
     - musl@1.2.5-r10
     - utmps-libs@0.1.3.1-r0
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:4e3ff4724ba2634fa3c06937d6ce80a4777452d0
     InstalledFiles:
     - etc/environment
@@ -928,8 +928,8 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:2f771b9997d92c7d7cd863205e89c43c554c3615
     InstalledFiles:
     - usr/lib/liblz4.so.1
@@ -949,8 +949,8 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:c5a1d8a0f2781353f1f4f58eea74b09f18ef0f45
     InstalledFiles:
     - usr/lib/liblzo2.so.2
@@ -1014,8 +1014,8 @@
     - X-11
     Maintainer: Natanael Copa <ncopa@alpinelinux.org>
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:fea2cc088f02df2feb5da718e70123647f0ef8f7
     InstalledFiles:
     - etc/terminfo/a/alacritty
@@ -1059,33 +1059,33 @@
     - etc/terminfo/x/xterm-256color
     - etc/terminfo/x/xterm-color
     - etc/terminfo/x/xterm-xfree86
-  - ID: openssl@3.5.3-r1
+  - ID: openssl@3.5.4-r0
     Name: openssl
     Identifier:
-      PURL: pkg:apk/alpine/openssl@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e4b067cca45f55b1
-    Version: 3.5.3-r1
+      PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.22.1
+      UID: 7991df372c6a7d49
+    Version: 3.5.4-r0
     Arch: x86_64
     SrcName: openssl
-    SrcVersion: 3.5.3-r1
+    SrcVersion: 3.5.4-r0
     Licenses:
     - Apache-2.0
     Maintainer: Natanael Copa <ncopa@alpinelinux.org>
     DependsOn:
-    - libcrypto3@3.5.3-r1
-    - libssl3@3.5.3-r1
+    - libcrypto3@3.5.4-r0
+    - libssl3@3.5.4-r0
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    Digest: sha1:6e1247d853fece1188f47942549320cc7b9c6f22
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
+    Digest: sha1:886b38018c15a06954914c7484254a5091bc75fe
     InstalledFiles:
     - usr/bin/openssl
   - ID: openvpn@2.6.14-r0
     Name: openvpn
     Identifier:
       PURL: pkg:apk/alpine/openvpn@2.6.14-r0?arch=x86_64&distro=3.22.1
-      UID: 93803e1053041a9e
+      UID: 5e9980d390739c4d
     Version: 2.6.14-r0
     Arch: x86_64
     SrcName: openvpn
@@ -1097,14 +1097,14 @@
     - busybox-binsh@1.37.0-r18
     - iproute2-minimal@6.15.0-r0
     - libcap-ng@0.8.5-r0
-    - libcrypto3@3.5.3-r1
-    - libssl3@3.5.3-r1
+    - libcrypto3@3.5.4-r0
+    - libssl3@3.5.4-r0
     - lz4-libs@1.10.0-r0
     - lzo@2.10-r5
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:7e4e60f02ac5860ee41c437e652cb89b294e1fd9
     InstalledFiles:
     - etc/openvpn/down.sh
@@ -1128,8 +1128,8 @@
     - linux-pam@1.7.0-r4
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:b467e15b5e7fc107b1fd8c9cf29ce6035534a847
     InstalledFiles:
     - usr/lib/openvpn/plugins/openvpn-plugin-auth-pam.so
@@ -1149,8 +1149,8 @@
     - linux-pam@1.7.0-r4
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:d748997753ba530c56ce31a44dadd52855251147
     InstalledFiles:
     - usr/bin/pamtester
@@ -1170,8 +1170,8 @@
     - libncursesw@6.5_p20250503-r0
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:d305640121793fd79a7636ed10fcc6cb10155e38
     InstalledFiles:
     - etc/inputrc
@@ -1212,8 +1212,8 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:8ca4ae34fad485e55b63727912e5f8f39efb134a
     InstalledFiles:
     - usr/lib/libskarnet.so.2.14
@@ -1222,7 +1222,7 @@
     Name: ssl_client
     Identifier:
       PURL: pkg:apk/alpine/ssl_client@1.37.0-r18?arch=x86_64&distro=3.22.1
-      UID: a0267f1bb7cf9d9a
+      UID: 4915926172155ff5
     Version: 1.37.0-r18
     Arch: x86_64
     SrcName: busybox
@@ -1231,8 +1231,8 @@
     - GPL-2.0-only
     Maintainer: Sören Tempel <soeren+alpine@soeren-tempel.net>
     DependsOn:
-    - libcrypto3@3.5.3-r1
-    - libssl3@3.5.3-r1
+    - libcrypto3@3.5.4-r0
+    - libssl3@3.5.4-r0
     - musl@1.2.5-r10
     Layer:
       Digest: sha256:9824c27679d3b27c5e1cb00a73adb6f4f8d556994111c12db3c5d61a0c843df8
@@ -1256,8 +1256,8 @@
     - musl@1.2.5-r10
     - skalibs-libs@2.14.4.0-r0
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:d1b08eb3000d104b5670bf768af4384591021538
     InstalledFiles:
     - usr/lib/libutmps.so.0.1
@@ -1299,574 +1299,9 @@
     DependsOn:
     - musl@1.2.5-r10
     Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
+      Digest: sha256:bc90b94b5a50273adfc24ce055ffde2c30e7e058fe5696be199769f573eb152e
+      DiffID: sha256:9057184e19a8533b2828e87ab7edaaf9258b1a4ba5eebc7ecf4324e7825165ae
     Digest: sha1:50c83112b5619f48d36d69190a4cb7c71f15c7d2
     InstalledFiles:
     - usr/lib/libzstd.so.1
     - usr/lib/libzstd.so.1.5.7
-  Vulnerabilities:
-  - VulnerabilityID: CVE-2025-9230
-    PkgID: libcrypto3@3.5.3-r1
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: a00f1de9b4c15e98
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9230
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap'
-    Description: |-
-      Issue summary: An application trying to decrypt CMS messages encrypted using
-      password based encryption can trigger an out-of-bounds read and write.
-
-      Impact summary: This out-of-bounds read may trigger a crash which leads to
-      Denial of Service for an application. The out-of-bounds write can cause
-      a memory corruption which can have various consequences including
-      a Denial of Service or Execution of attacker-supplied code.
-
-      Although the consequences of a successful exploit of this vulnerability
-      could be severe, the probability that the attacker would be able to
-      perform it is low. Besides, password based (PWRI) encryption support in CMS
-      messages is very rarely used. For that reason the issue was assessed as
-      Moderate severity according to our Security Policy.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as the CMS implementation is outside the OpenSSL FIPS module
-      boundary.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-125
-    - CWE-787
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
-        V3Score: 5.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9230
-    - https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45
-    - https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280
-    - https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def
-    - https://github.com/openssl/openssl/commit/b5282d677551afda7d20e9c00e09561b547b2dfd
-    - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
-    - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
-    - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9230
-    PublishedDate: '2025-09-30T14:15:41.05Z'
-    LastModifiedDate: '2025-09-30T20:15:41.023Z'
-  - VulnerabilityID: CVE-2025-9231
-    PkgID: libcrypto3@3.5.3-r1
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: a00f1de9b4c15e98
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9231
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Timing side-channel in SM2 algorithm on 64 bit ARM'
-    Description: |-
-      Issue summary: A timing side-channel which could potentially allow remote
-      recovery of the private key exists in the SM2 algorithm implementation on 64 bit
-      ARM platforms.
-
-      Impact summary: A timing side-channel in SM2 signature computations on 64 bit
-      ARM platforms could allow recovering the private key by an attacker..
-
-      While remote key recovery over a network was not attempted by the reporter,
-      timing measurements revealed a timing signal which may allow such an attack.
-
-      OpenSSL does not directly support certificates with SM2 keys in TLS, and so
-      this CVE is not relevant in most TLS contexts.  However, given that it is
-      possible to add support for such certificates via a custom provider, coupled
-      with the fact that in such a custom provider context the private key may be
-      recoverable via remote timing measurements, we consider this to be a Moderate
-      severity issue.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as SM2 is not an approved algorithm.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-385
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9231
-    - https://github.com/openssl/openssl/commit/567f64386e43683888212226824b6a179885a0fe
-    - https://github.com/openssl/openssl/commit/cba616c26ac8e7b37de5e77762e505ba5ca51698
-    - https://github.com/openssl/openssl/commit/eed5adc9f969d77c94f213767acbb41ff923b6f4
-    - https://github.com/openssl/openssl/commit/fc47a2ec078912b3e914fab5734535e76c4820c2
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9231
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9231
-    PublishedDate: '2025-09-30T14:15:41.19Z'
-    LastModifiedDate: '2025-09-30T20:15:41.22Z'
-  - VulnerabilityID: CVE-2025-9232
-    PkgID: libcrypto3@3.5.3-r1
-    PkgName: libcrypto3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libcrypto3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: a00f1de9b4c15e98
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9232
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Out-of-bounds read in HTTP client no_proxy handling'
-    Description: |-
-      Issue summary: An application using the OpenSSL HTTP client API functions may
-      trigger an out-of-bounds read if the 'no_proxy' environment variable is set and
-      the host portion of the authority component of the HTTP URL is an IPv6 address.
-
-      Impact summary: An out-of-bounds read can trigger a crash which leads to
-      Denial of Service for an application.
-
-      The OpenSSL HTTP client API functions can be used directly by applications
-      but they are also used by the OCSP client functions and CMP (Certificate
-      Management Protocol) client implementation in OpenSSL. However the URLs used
-      by these implementations are unlikely to be controlled by an attacker.
-
-      In this vulnerable code the out of bounds read can only trigger a crash.
-      Furthermore the vulnerability requires an attacker-controlled URL to be
-      passed from an application to the OpenSSL function and the user has to have
-      a 'no_proxy' environment variable set. For the aforementioned reasons the
-      issue was assessed as Low severity.
-
-      The vulnerable code was introduced in the following patch releases:
-      3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as the HTTP client implementation is outside the OpenSSL FIPS module
-      boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-125
-    VendorSeverity:
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L
-        V3Score: 3.1
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9232
-    - https://github.com/openssl/openssl/commit/2b4ec20e47959170422922eaff25346d362dcb35
-    - https://github.com/openssl/openssl/commit/654dc11d23468a74fc8ea4672b702dd3feb7be4b
-    - https://github.com/openssl/openssl/commit/7cf21a30513c9e43c4bc3836c237cf086e194af3
-    - https://github.com/openssl/openssl/commit/89e790ac431125a4849992858490bed6b225eadf
-    - https://github.com/openssl/openssl/commit/bbf38c034cdabd0a13330abcc4855c866f53d2e0
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9232
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9232
-    PublishedDate: '2025-09-30T14:15:41.313Z'
-    LastModifiedDate: '2025-09-30T20:15:41.397Z'
-  - VulnerabilityID: CVE-2025-9230
-    PkgID: libssl3@3.5.3-r1
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e042506648546590
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9230
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap'
-    Description: |-
-      Issue summary: An application trying to decrypt CMS messages encrypted using
-      password based encryption can trigger an out-of-bounds read and write.
-
-      Impact summary: This out-of-bounds read may trigger a crash which leads to
-      Denial of Service for an application. The out-of-bounds write can cause
-      a memory corruption which can have various consequences including
-      a Denial of Service or Execution of attacker-supplied code.
-
-      Although the consequences of a successful exploit of this vulnerability
-      could be severe, the probability that the attacker would be able to
-      perform it is low. Besides, password based (PWRI) encryption support in CMS
-      messages is very rarely used. For that reason the issue was assessed as
-      Moderate severity according to our Security Policy.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as the CMS implementation is outside the OpenSSL FIPS module
-      boundary.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-125
-    - CWE-787
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
-        V3Score: 5.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9230
-    - https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45
-    - https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280
-    - https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def
-    - https://github.com/openssl/openssl/commit/b5282d677551afda7d20e9c00e09561b547b2dfd
-    - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
-    - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
-    - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9230
-    PublishedDate: '2025-09-30T14:15:41.05Z'
-    LastModifiedDate: '2025-09-30T20:15:41.023Z'
-  - VulnerabilityID: CVE-2025-9231
-    PkgID: libssl3@3.5.3-r1
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e042506648546590
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9231
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Timing side-channel in SM2 algorithm on 64 bit ARM'
-    Description: |-
-      Issue summary: A timing side-channel which could potentially allow remote
-      recovery of the private key exists in the SM2 algorithm implementation on 64 bit
-      ARM platforms.
-
-      Impact summary: A timing side-channel in SM2 signature computations on 64 bit
-      ARM platforms could allow recovering the private key by an attacker..
-
-      While remote key recovery over a network was not attempted by the reporter,
-      timing measurements revealed a timing signal which may allow such an attack.
-
-      OpenSSL does not directly support certificates with SM2 keys in TLS, and so
-      this CVE is not relevant in most TLS contexts.  However, given that it is
-      possible to add support for such certificates via a custom provider, coupled
-      with the fact that in such a custom provider context the private key may be
-      recoverable via remote timing measurements, we consider this to be a Moderate
-      severity issue.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as SM2 is not an approved algorithm.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-385
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9231
-    - https://github.com/openssl/openssl/commit/567f64386e43683888212226824b6a179885a0fe
-    - https://github.com/openssl/openssl/commit/cba616c26ac8e7b37de5e77762e505ba5ca51698
-    - https://github.com/openssl/openssl/commit/eed5adc9f969d77c94f213767acbb41ff923b6f4
-    - https://github.com/openssl/openssl/commit/fc47a2ec078912b3e914fab5734535e76c4820c2
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9231
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9231
-    PublishedDate: '2025-09-30T14:15:41.19Z'
-    LastModifiedDate: '2025-09-30T20:15:41.22Z'
-  - VulnerabilityID: CVE-2025-9232
-    PkgID: libssl3@3.5.3-r1
-    PkgName: libssl3
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/libssl3@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e042506648546590
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9232
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Out-of-bounds read in HTTP client no_proxy handling'
-    Description: |-
-      Issue summary: An application using the OpenSSL HTTP client API functions may
-      trigger an out-of-bounds read if the 'no_proxy' environment variable is set and
-      the host portion of the authority component of the HTTP URL is an IPv6 address.
-
-      Impact summary: An out-of-bounds read can trigger a crash which leads to
-      Denial of Service for an application.
-
-      The OpenSSL HTTP client API functions can be used directly by applications
-      but they are also used by the OCSP client functions and CMP (Certificate
-      Management Protocol) client implementation in OpenSSL. However the URLs used
-      by these implementations are unlikely to be controlled by an attacker.
-
-      In this vulnerable code the out of bounds read can only trigger a crash.
-      Furthermore the vulnerability requires an attacker-controlled URL to be
-      passed from an application to the OpenSSL function and the user has to have
-      a 'no_proxy' environment variable set. For the aforementioned reasons the
-      issue was assessed as Low severity.
-
-      The vulnerable code was introduced in the following patch releases:
-      3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as the HTTP client implementation is outside the OpenSSL FIPS module
-      boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-125
-    VendorSeverity:
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L
-        V3Score: 3.1
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9232
-    - https://github.com/openssl/openssl/commit/2b4ec20e47959170422922eaff25346d362dcb35
-    - https://github.com/openssl/openssl/commit/654dc11d23468a74fc8ea4672b702dd3feb7be4b
-    - https://github.com/openssl/openssl/commit/7cf21a30513c9e43c4bc3836c237cf086e194af3
-    - https://github.com/openssl/openssl/commit/89e790ac431125a4849992858490bed6b225eadf
-    - https://github.com/openssl/openssl/commit/bbf38c034cdabd0a13330abcc4855c866f53d2e0
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9232
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9232
-    PublishedDate: '2025-09-30T14:15:41.313Z'
-    LastModifiedDate: '2025-09-30T20:15:41.397Z'
-  - VulnerabilityID: CVE-2025-9230
-    PkgID: openssl@3.5.3-r1
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e4b067cca45f55b1
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9230
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Out-of-bounds read & write in RFC 3211 KEK Unwrap'
-    Description: |-
-      Issue summary: An application trying to decrypt CMS messages encrypted using
-      password based encryption can trigger an out-of-bounds read and write.
-
-      Impact summary: This out-of-bounds read may trigger a crash which leads to
-      Denial of Service for an application. The out-of-bounds write can cause
-      a memory corruption which can have various consequences including
-      a Denial of Service or Execution of attacker-supplied code.
-
-      Although the consequences of a successful exploit of this vulnerability
-      could be severe, the probability that the attacker would be able to
-      perform it is low. Besides, password based (PWRI) encryption support in CMS
-      messages is very rarely used. For that reason the issue was assessed as
-      Moderate severity according to our Security Policy.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as the CMS implementation is outside the OpenSSL FIPS module
-      boundary.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-125
-    - CWE-787
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L
-        V3Score: 5.6
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9230
-    - https://github.com/openssl/openssl/commit/5965ea5dd6960f36d8b7f74f8eac67a8eb8f2b45
-    - https://github.com/openssl/openssl/commit/9e91358f365dee6c446dcdcdb01c04d2743fd280
-    - https://github.com/openssl/openssl/commit/a79c4ce559c6a3a8fd4109e9f33c1185d5bf2def
-    - https://github.com/openssl/openssl/commit/b5282d677551afda7d20e9c00e09561b547b2dfd
-    - https://github.com/openssl/openssl/commit/bae259a211ada6315dc50900686daaaaaa55f482
-    - https://github.openssl.org/openssl/extended-releases/commit/c2b96348bfa662f25f4fabf81958ae822063dae3
-    - https://github.openssl.org/openssl/extended-releases/commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9230
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9230
-    PublishedDate: '2025-09-30T14:15:41.05Z'
-    LastModifiedDate: '2025-09-30T20:15:41.023Z'
-  - VulnerabilityID: CVE-2025-9231
-    PkgID: openssl@3.5.3-r1
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e4b067cca45f55b1
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9231
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Timing side-channel in SM2 algorithm on 64 bit ARM'
-    Description: |-
-      Issue summary: A timing side-channel which could potentially allow remote
-      recovery of the private key exists in the SM2 algorithm implementation on 64 bit
-      ARM platforms.
-
-      Impact summary: A timing side-channel in SM2 signature computations on 64 bit
-      ARM platforms could allow recovering the private key by an attacker..
-
-      While remote key recovery over a network was not attempted by the reporter,
-      timing measurements revealed a timing signal which may allow such an attack.
-
-      OpenSSL does not directly support certificates with SM2 keys in TLS, and so
-      this CVE is not relevant in most TLS contexts.  However, given that it is
-      possible to add support for such certificates via a custom provider, coupled
-      with the fact that in such a custom provider context the private key may be
-      recoverable via remote timing measurements, we consider this to be a Moderate
-      severity issue.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as SM2 is not an approved algorithm.
-    Severity: MEDIUM
-    CweIDs:
-    - CWE-385
-    VendorSeverity:
-      redhat: 2
-      ubuntu: 2
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
-        V3Score: 5.9
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9231
-    - https://github.com/openssl/openssl/commit/567f64386e43683888212226824b6a179885a0fe
-    - https://github.com/openssl/openssl/commit/cba616c26ac8e7b37de5e77762e505ba5ca51698
-    - https://github.com/openssl/openssl/commit/eed5adc9f969d77c94f213767acbb41ff923b6f4
-    - https://github.com/openssl/openssl/commit/fc47a2ec078912b3e914fab5734535e76c4820c2
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9231
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9231
-    PublishedDate: '2025-09-30T14:15:41.19Z'
-    LastModifiedDate: '2025-09-30T20:15:41.22Z'
-  - VulnerabilityID: CVE-2025-9232
-    PkgID: openssl@3.5.3-r1
-    PkgName: openssl
-    PkgIdentifier:
-      PURL: pkg:apk/alpine/openssl@3.5.3-r1?arch=x86_64&distro=3.22.1
-      UID: e4b067cca45f55b1
-    InstalledVersion: 3.5.3-r1
-    FixedVersion: 3.5.4-r0
-    Status: fixed
-    Layer:
-      Digest: sha256:636b5ab46ef1e3128703ee4792a814193c8316f9234230e4ba90dc38246f2db9
-      DiffID: sha256:b37e3e6bbd2f2c58e73525f862b0000363d274b47b5e3de8337492d7d3d9c553
-    PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-9232
-    DataSource:
-      ID: alpine
-      Name: Alpine Secdb
-      URL: https://secdb.alpinelinux.org/
-    Title: 'openssl: Out-of-bounds read in HTTP client no_proxy handling'
-    Description: |-
-      Issue summary: An application using the OpenSSL HTTP client API functions may
-      trigger an out-of-bounds read if the 'no_proxy' environment variable is set and
-      the host portion of the authority component of the HTTP URL is an IPv6 address.
-
-      Impact summary: An out-of-bounds read can trigger a crash which leads to
-      Denial of Service for an application.
-
-      The OpenSSL HTTP client API functions can be used directly by applications
-      but they are also used by the OCSP client functions and CMP (Certificate
-      Management Protocol) client implementation in OpenSSL. However the URLs used
-      by these implementations are unlikely to be controlled by an attacker.
-
-      In this vulnerable code the out of bounds read can only trigger a crash.
-      Furthermore the vulnerability requires an attacker-controlled URL to be
-      passed from an application to the OpenSSL function and the user has to have
-      a 'no_proxy' environment variable set. For the aforementioned reasons the
-      issue was assessed as Low severity.
-
-      The vulnerable code was introduced in the following patch releases:
-      3.0.16, 3.1.8, 3.2.4, 3.3.3, 3.4.0 and 3.5.0.
-
-      The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not affected by this
-      issue, as the HTTP client implementation is outside the OpenSSL FIPS module
-      boundary.
-    Severity: LOW
-    CweIDs:
-    - CWE-125
-    VendorSeverity:
-      redhat: 1
-      ubuntu: 1
-    CVSS:
-      redhat:
-        V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N/A:L
-        V3Score: 3.1
-    References:
-    - https://access.redhat.com/security/cve/CVE-2025-9232
-    - https://github.com/openssl/openssl/commit/2b4ec20e47959170422922eaff25346d362dcb35
-    - https://github.com/openssl/openssl/commit/654dc11d23468a74fc8ea4672b702dd3feb7be4b
-    - https://github.com/openssl/openssl/commit/7cf21a30513c9e43c4bc3836c237cf086e194af3
-    - https://github.com/openssl/openssl/commit/89e790ac431125a4849992858490bed6b225eadf
-    - https://github.com/openssl/openssl/commit/bbf38c034cdabd0a13330abcc4855c866f53d2e0
-    - https://nvd.nist.gov/vuln/detail/CVE-2025-9232
-    - https://openssl-library.org/news/secadv/20250930.txt
-    - https://ubuntu.com/security/notices/USN-7786-1
-    - https://www.cve.org/CVERecord?id=CVE-2025-9232
-    PublishedDate: '2025-09-30T14:15:41.313Z'
-    LastModifiedDate: '2025-09-30T20:15:41.397Z'
