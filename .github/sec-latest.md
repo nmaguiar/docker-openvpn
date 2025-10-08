@@ -1239,7 +1239,73 @@
       │                        ├ Digest        : sha1:974f4e438a513770c78e286dae55203fc38604db 
       │                        ╰ InstalledFiles ╭ [0]: usr/lib/libzstd.so.1 
       │                                         ╰ [1]: usr/lib/libzstd.so.1.5.6 
-      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2025-9230 
+      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2024-58251 
+                        │      ├ PkgID           : busybox@1.37.0-r12 
+                        │      ├ PkgName         : busybox 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.37.0-r12?arch=x86_64&distro=
+                        │      │                  │       3.21.3 
+                        │      │                  ╰ UID : 80bd878debc06a9a 
+                        │      ├ InstalledVersion: 1.37.0-r12 
+                        │      ├ FixedVersion    : 1.37.0-r24 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:f18232174bc91741fdf3da96d85011092101a032a93a
+                        │      │                  │         388b79e99e69c2d5c870 
+                        │      │                  ╰ DiffID: sha256:08000c18d16dadf9553d747a58cf44023423a9ab010a
+                        │      │                            ab96cf263d2216b8b350 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+                        │      │                    of networ ... 
+                        │      ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+                        │      │                    of network application with an argv[0] containing an ANSI
+                        │      │                   terminal escape sequence, leading to a denial of service
+                        │      │                   (terminal locked up) when netstat is used by a victim. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-150 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+                        │      │                  ├ [2]: https://www.busybox.net 
+                        │      │                  ├ [3]: https://www.busybox.net/downloads/ 
+                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+                        │      ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+                        │      ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+                        ├ [1]  ╭ VulnerabilityID : CVE-2024-58251 
+                        │      ├ PkgID           : busybox-binsh@1.37.0-r12 
+                        │      ├ PkgName         : busybox-binsh 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r12?arch=x86_64&d
+                        │      │                  │       istro=3.21.3 
+                        │      │                  ╰ UID : bc4ad003d7f464a3 
+                        │      ├ InstalledVersion: 1.37.0-r12 
+                        │      ├ FixedVersion    : 1.37.0-r24 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:f18232174bc91741fdf3da96d85011092101a032a93a
+                        │      │                  │         388b79e99e69c2d5c870 
+                        │      │                  ╰ DiffID: sha256:08000c18d16dadf9553d747a58cf44023423a9ab010a
+                        │      │                            ab96cf263d2216b8b350 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+                        │      │                    of networ ... 
+                        │      ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+                        │      │                    of network application with an argv[0] containing an ANSI
+                        │      │                   terminal escape sequence, leading to a denial of service
+                        │      │                   (terminal locked up) when netstat is used by a victim. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-150 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+                        │      │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+                        │      │                  ├ [2]: https://www.busybox.net 
+                        │      │                  ├ [3]: https://www.busybox.net/downloads/ 
+                        │      │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+                        │      ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+                        │      ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+                        ├ [2]  ╭ VulnerabilityID : CVE-2025-9230 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.3-r0?arch=x86_64&distro
@@ -1312,7 +1378,7 @@
                         │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [1]  ╭ VulnerabilityID : CVE-2025-9231 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.3-r0?arch=x86_64&distro
@@ -1380,7 +1446,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [2]  ╭ VulnerabilityID : CVE-2025-9232 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2025-9232 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.3-r0?arch=x86_64&distro
@@ -1457,7 +1523,7 @@
                         │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [3]  ╭ VulnerabilityID : CVE-2025-4575 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2025-4575 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.3.3-r0?arch=x86_64&distro
@@ -1516,7 +1582,7 @@
                         │      │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
                         │      ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
                         │      ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
-                        ├ [4]  ╭ VulnerabilityID : CVE-2025-9230 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2025-9230 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.3-r0?arch=x86_64&distro=3.
@@ -1589,7 +1655,7 @@
                         │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2025-9231 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.3-r0?arch=x86_64&distro=3.
@@ -1657,7 +1723,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2025-9232 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2025-9232 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.3-r0?arch=x86_64&distro=3.
@@ -1734,7 +1800,7 @@
                         │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2025-4575 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2025-4575 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.3.3-r0?arch=x86_64&distro=3.
@@ -1793,7 +1859,7 @@
                         │      │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
                         │      ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
                         │      ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2025-26519 
+                        ├ [10] ╭ VulnerabilityID : CVE-2025-26519 
                         │      ├ PkgID           : musl@1.2.5-r9 
                         │      ├ PkgName         : musl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r9?arch=x86_64&distro=3.21.3 
@@ -1829,7 +1895,7 @@
                         │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
                         │      ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
                         │      ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2025-26519 
+                        ├ [11] ╭ VulnerabilityID : CVE-2025-26519 
                         │      ├ PkgID           : musl-utils@1.2.5-r9 
                         │      ├ PkgName         : musl-utils 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r9?arch=x86_64&distro
@@ -1866,7 +1932,7 @@
                         │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/02/13/2 
                         │      ├ PublishedDate   : 2025-02-14T04:15:09.05Z 
                         │      ╰ LastModifiedDate: 2025-02-14T17:15:23.09Z 
-                        ├ [10] ╭ VulnerabilityID : CVE-2025-9230 
+                        ├ [12] ╭ VulnerabilityID : CVE-2025-9230 
                         │      ├ PkgID           : openssl@3.3.3-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.3-r0?arch=x86_64&distro=3.
@@ -1939,7 +2005,7 @@
                         │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [11] ╭ VulnerabilityID : CVE-2025-9231 
+                        ├ [13] ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : openssl@3.3.3-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.3-r0?arch=x86_64&distro=3.
@@ -2007,7 +2073,7 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ├ [12] ╭ VulnerabilityID : CVE-2025-9232 
+                        ├ [14] ╭ VulnerabilityID : CVE-2025-9232 
                         │      ├ PkgID           : openssl@3.3.3-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.3-r0?arch=x86_64&distro=3.
@@ -2084,63 +2150,96 @@
                         │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
                         │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
-                        ╰ [13] ╭ VulnerabilityID : CVE-2025-4575 
-                               ├ PkgID           : openssl@3.3.3-r0 
-                               ├ PkgName         : openssl 
-                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.3-r0?arch=x86_64&distro=3.
-                               │                  │       21.3 
-                               │                  ╰ UID : 456fe492c42d784d 
-                               ├ InstalledVersion: 3.3.3-r0 
-                               ├ FixedVersion    : 3.5.1-r0 
+                        ├ [15] ╭ VulnerabilityID : CVE-2025-4575 
+                        │      ├ PkgID           : openssl@3.3.3-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.3.3-r0?arch=x86_64&distro=3.
+                        │      │                  │       21.3 
+                        │      │                  ╰ UID : 456fe492c42d784d 
+                        │      ├ InstalledVersion: 3.3.3-r0 
+                        │      ├ FixedVersion    : 3.5.1-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:de1cb8a9df95cbb9fa78a37af78f2f47e75537af82ef
+                        │      │                  │         ae25a734edc5ec0edc05 
+                        │      │                  ╰ DiffID: sha256:ddc3036c4ee07d0fee8f01f7f120d94287f1b220634d
+                        │      │                            517a444e69883a9e1fc5 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4575 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Title           : Issue summary: Use of -addreject option with the openssl
+                        │      │                   x509 applicat ... 
+                        │      ├ Description     : Issue summary: Use of -addreject option with the openssl
+                        │      │                   x509 application adds
+                        │      │                   a trusted use instead of a rejected use for a certificate.
+                        │      │                   
+                        │      │                   Impact summary: If a user intends to make a trusted
+                        │      │                   certificate rejected for
+                        │      │                   a particular use it will be instead marked as trusted for
+                        │      │                   that use.
+                        │      │                   A copy & paste error during minor refactoring of the code
+                        │      │                   introduced this
+                        │      │                   issue in the OpenSSL 3.5 version. If, for example, a trusted
+                        │      │                    CA certificate
+                        │      │                   should be trusted only for the purpose of authenticating TLS
+                        │      │                    servers but not
+                        │      │                   for CMS signature verification and the CMS signature
+                        │      │                   verification is intended
+                        │      │                   to be marked as rejected with the -addreject option, the
+                        │      │                   resulting CA
+                        │      │                   certificate will be trusted for CMS signature verification
+                        │      │                   purpose instead.
+                        │      │                   Only users which use the trusted certificate format who use
+                        │      │                   the openssl x509
+                        │      │                   command line application to add rejected uses are affected
+                        │      │                   by this issue.
+                        │      │                   The issues affecting only the command line application are
+                        │      │                   considered to
+                        │      │                   be Low severity.
+                        │      │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue.
+                        │      │                   OpenSSL 3.4, 3.3, 3.2, 3.1, 3.0, 1.1.1 and 1.0.2 are also
+                        │      │                   not affected by this 
+                        │      ├ Severity        : UNKNOWN 
+                        │      ├ CweIDs           ─ [0]: CWE-295 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/22/1 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/e96d22446e63
+                        │      │                  │      3d117e6c9904cb15b4693e956eaa 
+                        │      │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
+                        │      ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
+                        │      ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
+                        ╰ [16] ╭ VulnerabilityID : CVE-2024-58251 
+                               ├ PkgID           : ssl_client@1.37.0-r12 
+                               ├ PkgName         : ssl_client 
+                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r12?arch=x86_64&dist
+                               │                  │       ro=3.21.3 
+                               │                  ╰ UID : 309e921ed7ee146b 
+                               ├ InstalledVersion: 1.37.0-r12 
+                               ├ FixedVersion    : 1.37.0-r24 
                                ├ Status          : fixed 
-                               ├ Layer            ╭ Digest: sha256:de1cb8a9df95cbb9fa78a37af78f2f47e75537af82ef
-                               │                  │         ae25a734edc5ec0edc05 
-                               │                  ╰ DiffID: sha256:ddc3036c4ee07d0fee8f01f7f120d94287f1b220634d
-                               │                            517a444e69883a9e1fc5 
-                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-4575 
+                               ├ Layer            ╭ Digest: sha256:f18232174bc91741fdf3da96d85011092101a032a93a
+                               │                  │         388b79e99e69c2d5c870 
+                               │                  ╰ DiffID: sha256:08000c18d16dadf9553d747a58cf44023423a9ab010a
+                               │                            ab96cf263d2216b8b350 
+                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
                                ├ DataSource       ╭ ID  : alpine 
                                │                  ├ Name: Alpine Secdb 
                                │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                               ├ Title           : Issue summary: Use of -addreject option with the openssl
-                               │                   x509 applicat ... 
-                               ├ Description     : Issue summary: Use of -addreject option with the openssl
-                               │                   x509 application adds
-                               │                   a trusted use instead of a rejected use for a certificate.
-                               │                   
-                               │                   Impact summary: If a user intends to make a trusted
-                               │                   certificate rejected for
-                               │                   a particular use it will be instead marked as trusted for
-                               │                   that use.
-                               │                   A copy & paste error during minor refactoring of the code
-                               │                   introduced this
-                               │                   issue in the OpenSSL 3.5 version. If, for example, a trusted
-                               │                    CA certificate
-                               │                   should be trusted only for the purpose of authenticating TLS
-                               │                    servers but not
-                               │                   for CMS signature verification and the CMS signature
-                               │                   verification is intended
-                               │                   to be marked as rejected with the -addreject option, the
-                               │                   resulting CA
-                               │                   certificate will be trusted for CMS signature verification
-                               │                   purpose instead.
-                               │                   Only users which use the trusted certificate format who use
-                               │                   the openssl x509
-                               │                   command line application to add rejected uses are affected
-                               │                   by this issue.
-                               │                   The issues affecting only the command line application are
-                               │                   considered to
-                               │                   be Low severity.
-                               │                   The FIPS modules in 3.5, 3.4, 3.3, 3.2, 3.1 and 3.0 are not
-                               │                   affected by this
-                               │                   issue.
-                               │                   OpenSSL 3.4, 3.3, 3.2, 3.1, 3.0, 1.1.1 and 1.0.2 are also
-                               │                   not affected by this 
-                               ├ Severity        : UNKNOWN 
-                               ├ CweIDs           ─ [0]: CWE-295 
-                               ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/05/22/1 
-                               │                  ├ [1]: https://github.com/openssl/openssl/commit/e96d22446e63
-                               │                  │      3d117e6c9904cb15b4693e956eaa 
-                               │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
-                               ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
-                               ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
+                               ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+                               │                    of networ ... 
+                               ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+                               │                    of network application with an argv[0] containing an ANSI
+                               │                   terminal escape sequence, leading to a denial of service
+                               │                   (terminal locked up) when netstat is used by a victim. 
+                               ├ Severity        : MEDIUM 
+                               ├ CweIDs           ─ [0]: CWE-150 
+                               ├ VendorSeverity   ─ ubuntu: 2 
+                               ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+                               │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+                               │                  ├ [2]: https://www.busybox.net 
+                               │                  ├ [3]: https://www.busybox.net/downloads/ 
+                               │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+                               ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+                               ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
 ````
