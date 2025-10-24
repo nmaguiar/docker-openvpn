@@ -1354,6 +1354,7 @@
                         │      │                  ╰ [1]: CWE-787 
                         │      ├ VendorSeverity   ╭ amazon: 2 
                         │      │                  ├ azure : 3 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
@@ -1505,6 +1506,7 @@
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-125 
                         │      ├ VendorSeverity   ╭ azure : 2 
+                        │      │                  ├ photon: 2 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
@@ -1585,7 +1587,7 @@
                         │      │                  │      3d117e6c9904cb15b4693e956eaa 
                         │      │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
                         │      ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
-                        │      ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
+                        │      ╰ LastModifiedDate: 2025-10-23T14:51:30.377Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2025-9230 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
@@ -1635,6 +1637,7 @@
                         │      │                  ╰ [1]: CWE-787 
                         │      ├ VendorSeverity   ╭ amazon: 2 
                         │      │                  ├ azure : 3 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
@@ -1786,6 +1789,7 @@
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-125 
                         │      ├ VendorSeverity   ╭ azure : 2 
+                        │      │                  ├ photon: 2 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
@@ -1866,7 +1870,7 @@
                         │      │                  │      3d117e6c9904cb15b4693e956eaa 
                         │      │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
                         │      ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
-                        │      ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
+                        │      ╰ LastModifiedDate: 2025-10-23T14:51:30.377Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2025-26519 
                         │      ├ PkgID           : musl@1.2.5-r9 
                         │      ├ PkgName         : musl 
@@ -1989,6 +1993,7 @@
                         │      │                  ╰ [1]: CWE-787 
                         │      ├ VendorSeverity   ╭ amazon: 2 
                         │      │                  ├ azure : 3 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
@@ -2140,6 +2145,7 @@
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-125 
                         │      ├ VendorSeverity   ╭ azure : 2 
+                        │      │                  ├ photon: 2 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
@@ -2220,7 +2226,7 @@
                         │      │                  │      3d117e6c9904cb15b4693e956eaa 
                         │      │                  ╰ [2]: https://openssl-library.org/news/secadv/20250522.txt 
                         │      ├ PublishedDate   : 2025-05-22T14:16:07.63Z 
-                        │      ╰ LastModifiedDate: 2025-05-23T15:55:02.04Z 
+                        │      ╰ LastModifiedDate: 2025-10-23T14:51:30.377Z 
                         ╰ [16] ╭ VulnerabilityID : CVE-2024-58251 
                                ├ PkgID           : ssl_client@1.37.0-r12 
                                ├ PkgName         : ssl_client 
