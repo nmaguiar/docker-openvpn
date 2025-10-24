@@ -1389,6 +1389,7 @@
     VendorSeverity:
       amazon: 2
       azure: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1519,6 +1520,7 @@
     - CWE-125
     VendorSeverity:
       azure: 2
+      photon: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -1588,7 +1590,7 @@
     - https://github.com/openssl/openssl/commit/e96d22446e633d117e6c9904cb15b4693e956eaa
     - https://openssl-library.org/news/secadv/20250522.txt
     PublishedDate: '2025-05-22T14:16:07.63Z'
-    LastModifiedDate: '2025-05-23T15:55:02.04Z'
+    LastModifiedDate: '2025-10-23T14:51:30.377Z'
   - VulnerabilityID: CVE-2025-9230
     PkgID: libssl3@3.3.3-r0
     PkgName: libssl3
@@ -1632,6 +1634,7 @@
     VendorSeverity:
       amazon: 2
       azure: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1762,6 +1765,7 @@
     - CWE-125
     VendorSeverity:
       azure: 2
+      photon: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -1831,7 +1835,7 @@
     - https://github.com/openssl/openssl/commit/e96d22446e633d117e6c9904cb15b4693e956eaa
     - https://openssl-library.org/news/secadv/20250522.txt
     PublishedDate: '2025-05-22T14:16:07.63Z'
-    LastModifiedDate: '2025-05-23T15:55:02.04Z'
+    LastModifiedDate: '2025-10-23T14:51:30.377Z'
   - VulnerabilityID: CVE-2025-26519
     PkgID: musl@1.2.5-r9
     PkgName: musl
@@ -1943,6 +1947,7 @@
     VendorSeverity:
       amazon: 2
       azure: 3
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2073,6 +2078,7 @@
     - CWE-125
     VendorSeverity:
       azure: 2
+      photon: 2
       redhat: 1
       ubuntu: 1
     CVSS:
@@ -2142,7 +2148,7 @@
     - https://github.com/openssl/openssl/commit/e96d22446e633d117e6c9904cb15b4693e956eaa
     - https://openssl-library.org/news/secadv/20250522.txt
     PublishedDate: '2025-05-22T14:16:07.63Z'
-    LastModifiedDate: '2025-05-23T15:55:02.04Z'
+    LastModifiedDate: '2025-10-23T14:51:30.377Z'
   - VulnerabilityID: CVE-2024-58251
     PkgID: ssl_client@1.37.0-r12
     PkgName: ssl_client
