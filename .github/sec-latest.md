@@ -1375,12 +1375,14 @@
                         │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
                         │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
                         │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+                        │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+                        │      │                  │       msg00001.html 
+                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -1658,12 +1660,14 @@
                         │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
                         │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
                         │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+                        │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+                        │      │                  │       msg00001.html 
+                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
@@ -2014,12 +2018,14 @@
                         │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
                         │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
                         │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [11]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+                        │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+                        │      │                  │       msg00001.html 
+                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : openssl@3.3.3-r0 
                         │      ├ PkgName         : openssl 
