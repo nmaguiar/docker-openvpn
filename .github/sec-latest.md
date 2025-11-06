@@ -1360,29 +1360,30 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 5.6 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-9230 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/5965ea5dd69
+                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9230 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/5965ea5dd69
                         │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/9e91358f365
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/9e91358f365
                         │      │                  │       dee6c446dcdcdb01c04d2743fd280 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a79c4ce559c
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a79c4ce559c
                         │      │                  │       6a3a8fd4109e9f33c1185d5bf2def 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b5282d67755
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/b5282d67755
                         │      │                  │       1afda7d20e9c00e09561b547b2dfd 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bae259a211a
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/bae259a211a
                         │      │                  │       da6315dc50900686daaaaaa55f482 
-                        │      │                  ├ [6] : https://github.openssl.org/openssl/extended-releases/
-                        │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
                         │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+                        │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
+                        │      │                  ├ [8] : https://github.openssl.org/openssl/extended-releases/
                         │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-                        │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+                        │      │                  ├ [9] : https://lists.debian.org/debian-lts-announce/2025/10/
                         │      │                  │       msg00001.html 
-                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+                        │      │                  ├ [11]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-                        │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -1437,21 +1438,22 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9231 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/567f64386e43
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-9231 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/567f64386e43
                         │      │                  │      683888212226824b6a179885a0fe 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/cba616c26ac8
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/cba616c26ac8
                         │      │                  │      e7b37de5e77762e505ba5ca51698 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/eed5adc9f969
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eed5adc9f969
                         │      │                  │      d77c94f213767acbb41ff923b6f4 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/fc47a2ec0789
+                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/fc47a2ec0789
                         │      │                  │      12b3e914fab5734535e76c4820c2 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
+                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2025-9232 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -1514,23 +1516,24 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 3.1 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9232 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/2b4ec20e4795
-                        │      │                  │      9170422922eaff25346d362dcb35 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/654dc11d2346
-                        │      │                  │      8a74fc8ea4672b702dd3feb7be4b 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7cf21a30513c
-                        │      │                  │      9e43c4bc3836c237cf086e194af3 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/89e790ac4311
-                        │      │                  │      25a4849992858490bed6b225eadf 
-                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/bbf38c034cda
-                        │      │                  │      bd0a13330abcc4855c866f53d2e0 
-                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
-                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
+                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9232 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2b4ec20e479
+                        │      │                  │       59170422922eaff25346d362dcb35 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/654dc11d234
+                        │      │                  │       68a74fc8ea4672b702dd3feb7be4b 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7cf21a30513
+                        │      │                  │       c9e43c4bc3836c237cf086e194af3 
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/89e790ac431
+                        │      │                  │       125a4849992858490bed6b225eadf 
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/bbf38c034cd
+                        │      │                  │       abd0a13330abcc4855c866f53d2e0 
+                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
+                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2025-4575 
                         │      ├ PkgID           : libcrypto3@3.3.3-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -1645,29 +1648,30 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 5.6 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-9230 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/5965ea5dd69
+                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9230 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/5965ea5dd69
                         │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/9e91358f365
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/9e91358f365
                         │      │                  │       dee6c446dcdcdb01c04d2743fd280 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a79c4ce559c
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a79c4ce559c
                         │      │                  │       6a3a8fd4109e9f33c1185d5bf2def 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b5282d67755
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/b5282d67755
                         │      │                  │       1afda7d20e9c00e09561b547b2dfd 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bae259a211a
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/bae259a211a
                         │      │                  │       da6315dc50900686daaaaaa55f482 
-                        │      │                  ├ [6] : https://github.openssl.org/openssl/extended-releases/
-                        │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
                         │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+                        │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
+                        │      │                  ├ [8] : https://github.openssl.org/openssl/extended-releases/
                         │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-                        │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+                        │      │                  ├ [9] : https://lists.debian.org/debian-lts-announce/2025/10/
                         │      │                  │       msg00001.html 
-                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+                        │      │                  ├ [11]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-                        │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
@@ -1722,21 +1726,22 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9231 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/567f64386e43
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-9231 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/567f64386e43
                         │      │                  │      683888212226824b6a179885a0fe 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/cba616c26ac8
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/cba616c26ac8
                         │      │                  │      e7b37de5e77762e505ba5ca51698 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/eed5adc9f969
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eed5adc9f969
                         │      │                  │      d77c94f213767acbb41ff923b6f4 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/fc47a2ec0789
+                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/fc47a2ec0789
                         │      │                  │      12b3e914fab5734535e76c4820c2 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
+                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2025-9232 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
@@ -1799,23 +1804,24 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 3.1 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9232 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/2b4ec20e4795
-                        │      │                  │      9170422922eaff25346d362dcb35 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/654dc11d2346
-                        │      │                  │      8a74fc8ea4672b702dd3feb7be4b 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7cf21a30513c
-                        │      │                  │      9e43c4bc3836c237cf086e194af3 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/89e790ac4311
-                        │      │                  │      25a4849992858490bed6b225eadf 
-                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/bbf38c034cda
-                        │      │                  │      bd0a13330abcc4855c866f53d2e0 
-                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
-                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
+                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9232 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2b4ec20e479
+                        │      │                  │       59170422922eaff25346d362dcb35 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/654dc11d234
+                        │      │                  │       68a74fc8ea4672b702dd3feb7be4b 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7cf21a30513
+                        │      │                  │       c9e43c4bc3836c237cf086e194af3 
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/89e790ac431
+                        │      │                  │       125a4849992858490bed6b225eadf 
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/bbf38c034cd
+                        │      │                  │       abd0a13330abcc4855c866f53d2e0 
+                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
+                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2025-4575 
                         │      ├ PkgID           : libssl3@3.3.3-r0 
                         │      ├ PkgName         : libssl3 
@@ -2003,29 +2009,30 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 5.6 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-9230 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/5965ea5dd69
+                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9230 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/5965ea5dd69
                         │      │                  │       60f36d8b7f74f8eac67a8eb8f2b45 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/9e91358f365
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/9e91358f365
                         │      │                  │       dee6c446dcdcdb01c04d2743fd280 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a79c4ce559c
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a79c4ce559c
                         │      │                  │       6a3a8fd4109e9f33c1185d5bf2def 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b5282d67755
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/b5282d67755
                         │      │                  │       1afda7d20e9c00e09561b547b2dfd 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/bae259a211a
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/bae259a211a
                         │      │                  │       da6315dc50900686daaaaaa55f482 
-                        │      │                  ├ [6] : https://github.openssl.org/openssl/extended-releases/
-                        │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
                         │      │                  ├ [7] : https://github.openssl.org/openssl/extended-releases/
+                        │      │                  │       commit/c2b96348bfa662f25f4fabf81958ae822063dae3 
+                        │      │                  ├ [8] : https://github.openssl.org/openssl/extended-releases/
                         │      │                  │       commit/dfbaf161d8dafc1132dd88cd48ad990ed9b4c8ba 
-                        │      │                  ├ [8] : https://lists.debian.org/debian-lts-announce/2025/10/
+                        │      │                  ├ [9] : https://lists.debian.org/debian-lts-announce/2025/10/
                         │      │                  │       msg00001.html 
-                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
-                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
+                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2025-9230 
+                        │      │                  ├ [11]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2025-9230 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.05Z 
-                        │      ╰ LastModifiedDate: 2025-11-03T18:17:02.893Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.36Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2025-9231 
                         │      ├ PkgID           : openssl@3.3.3-r0 
                         │      ├ PkgName         : openssl 
@@ -2080,21 +2087,22 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9231 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/567f64386e43
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2025-9231 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/567f64386e43
                         │      │                  │      683888212226824b6a179885a0fe 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/cba616c26ac8
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/cba616c26ac8
                         │      │                  │      e7b37de5e77762e505ba5ca51698 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/eed5adc9f969
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eed5adc9f969
                         │      │                  │      d77c94f213767acbb41ff923b6f4 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/fc47a2ec0789
+                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/fc47a2ec0789
                         │      │                  │      12b3e914fab5734535e76c4820c2 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9231 
+                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9231 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.19Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.49Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2025-9232 
                         │      ├ PkgID           : openssl@3.3.3-r0 
                         │      ├ PkgName         : openssl 
@@ -2157,23 +2165,24 @@
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 3.1 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-9232 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/2b4ec20e4795
-                        │      │                  │      9170422922eaff25346d362dcb35 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/654dc11d2346
-                        │      │                  │      8a74fc8ea4672b702dd3feb7be4b 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7cf21a30513c
-                        │      │                  │      9e43c4bc3836c237cf086e194af3 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/89e790ac4311
-                        │      │                  │      25a4849992858490bed6b225eadf 
-                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/bbf38c034cda
-                        │      │                  │      bd0a13330abcc4855c866f53d2e0 
-                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
-                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20250930.txt 
-                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-7786-1 
-                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
+                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2025/09/30/5 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-9232 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2b4ec20e479
+                        │      │                  │       59170422922eaff25346d362dcb35 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/654dc11d234
+                        │      │                  │       68a74fc8ea4672b702dd3feb7be4b 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7cf21a30513
+                        │      │                  │       c9e43c4bc3836c237cf086e194af3 
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/89e790ac431
+                        │      │                  │       125a4849992858490bed6b225eadf 
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/bbf38c034cd
+                        │      │                  │       abd0a13330abcc4855c866f53d2e0 
+                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-9232 
+                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20250930.txt 
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7786-1 
+                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-9232 
                         │      ├ PublishedDate   : 2025-09-30T14:15:41.313Z 
-                        │      ╰ LastModifiedDate: 2025-10-02T19:12:17.16Z 
+                        │      ╰ LastModifiedDate: 2025-11-04T22:16:45.63Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2025-4575 
                         │      ├ PkgID           : openssl@3.3.3-r0 
                         │      ├ PkgName         : openssl 
