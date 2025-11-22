@@ -1294,7 +1294,49 @@
                         │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
                         │     ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
                         │     ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
-                        ├ [1] ╭ VulnerabilityID : CVE-2024-58251 
+                        ├ [1] ╭ VulnerabilityID : CVE-2025-46394 
+                        │     ├ PkgID           : busybox@1.37.0-r19 
+                        │     ├ PkgName         : busybox 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=3
+                        │     │                  │       .22.2 
+                        │     │                  ╰ UID : 5158911d21d1c608 
+                        │     ├ InstalledVersion: 1.37.0-r19 
+                        │     ├ FixedVersion    : 1.37.0-r27 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
+                        │     │                  │         2db163c98822e5dfa1b 
+                        │     │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
+                        │     │                            bc3e313ad12f8bde9d1 
+                        │     ├ SeveritySource  : nvd 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hid ... 
+                        │     ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hidden from a listing through the use of terminal
+                        │     │                   escape sequences. 
+                        │     ├ Severity        : LOW 
+                        │     ├ CweIDs           ─ [0]: CWE-451 
+                        │     ├ VendorSeverity   ╭ nvd   : 1 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
+                        │     │                        ╰ V3Score : 3.3 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
+                        │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
+                        │     │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
+                        │     │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90806.html 
+                        │     │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90814.html 
+                        │     │                  ├ [5]: https://www.busybox.net 
+                        │     │                  ├ [6]: https://www.busybox.net/downloads/ 
+                        │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/23/1 
+                        │     ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
+                        │     ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
+                        ├ [2] ╭ VulnerabilityID : CVE-2024-58251 
                         │     ├ PkgID           : busybox-binsh@1.37.0-r19 
                         │     ├ PkgName         : busybox-binsh 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&di
@@ -1327,37 +1369,159 @@
                         │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
                         │     ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
                         │     ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
-                        ╰ [2] ╭ VulnerabilityID : CVE-2024-58251 
+                        ├ [3] ╭ VulnerabilityID : CVE-2025-46394 
+                        │     ├ PkgID           : busybox-binsh@1.37.0-r19 
+                        │     ├ PkgName         : busybox-binsh 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&di
+                        │     │                  │       stro=3.22.2 
+                        │     │                  ╰ UID : 7150d5a240bb77cc 
+                        │     ├ InstalledVersion: 1.37.0-r19 
+                        │     ├ FixedVersion    : 1.37.0-r27 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
+                        │     │                  │         2db163c98822e5dfa1b 
+                        │     │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
+                        │     │                            bc3e313ad12f8bde9d1 
+                        │     ├ SeveritySource  : nvd 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hid ... 
+                        │     ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hidden from a listing through the use of terminal
+                        │     │                   escape sequences. 
+                        │     ├ Severity        : LOW 
+                        │     ├ CweIDs           ─ [0]: CWE-451 
+                        │     ├ VendorSeverity   ╭ nvd   : 1 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
+                        │     │                        ╰ V3Score : 3.3 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
+                        │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
+                        │     │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
+                        │     │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90806.html 
+                        │     │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90814.html 
+                        │     │                  ├ [5]: https://www.busybox.net 
+                        │     │                  ├ [6]: https://www.busybox.net/downloads/ 
+                        │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/23/1 
+                        │     ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
+                        │     ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
+                        ├ [4] ╭ VulnerabilityID : CVE-2025-13086 
+                        │     ├ PkgID           : openvpn@2.6.14-r0 
+                        │     ├ PkgName         : openvpn 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.14-r0?arch=x86_64&distro=3.
+                        │     │                  │       22.2 
+                        │     │                  ╰ UID : 28993344e37c5270 
+                        │     ├ InstalledVersion: 2.6.14-r0 
+                        │     ├ FixedVersion    : 2.6.16-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e6
+                        │     │                  │         3af6c852fe13918d2af 
+                        │     │                  ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96
+                        │     │                            ec733cdbfbc364e07d4 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-13086 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : [HMAC verification check: fix incorrect memcmp() call] 
+                        │     ╰ Severity        : UNKNOWN 
+                        ├ [5] ╭ VulnerabilityID : CVE-2025-13086 
+                        │     ├ PkgID           : openvpn-auth-pam@2.6.14-r0 
+                        │     ├ PkgName         : openvpn-auth-pam 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.14-r0?arch=x86_64&
+                        │     │                  │       distro=3.22.2 
+                        │     │                  ╰ UID : 70dad9d1bd2862fb 
+                        │     ├ InstalledVersion: 2.6.14-r0 
+                        │     ├ FixedVersion    : 2.6.16-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e6
+                        │     │                  │         3af6c852fe13918d2af 
+                        │     │                  ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96
+                        │     │                            ec733cdbfbc364e07d4 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-13086 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : [HMAC verification check: fix incorrect memcmp() call] 
+                        │     ╰ Severity        : UNKNOWN 
+                        ├ [6] ╭ VulnerabilityID : CVE-2024-58251 
+                        │     ├ PkgID           : ssl_client@1.37.0-r19 
+                        │     ├ PkgName         : ssl_client 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distr
+                        │     │                  │       o=3.22.2 
+                        │     │                  ╰ UID : 691bd1fc4de953e2 
+                        │     ├ InstalledVersion: 1.37.0-r19 
+                        │     ├ FixedVersion    : 1.37.0-r24 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
+                        │     │                  │         2db163c98822e5dfa1b 
+                        │     │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
+                        │     │                            bc3e313ad12f8bde9d1 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+                        │     │                   of networ ... 
+                        │     ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+                        │     │                   of network application with an argv[0] containing an ANSI
+                        │     │                   terminal escape sequence, leading to a denial of service
+                        │     │                   (terminal locked up) when netstat is used by a victim. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-150 
+                        │     ├ VendorSeverity   ─ ubuntu: 2 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+                        │     │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+                        │     │                  ├ [2]: https://www.busybox.net 
+                        │     │                  ├ [3]: https://www.busybox.net/downloads/ 
+                        │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+                        │     ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+                        │     ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+                        ╰ [7] ╭ VulnerabilityID : CVE-2025-46394 
                               ├ PkgID           : ssl_client@1.37.0-r19 
                               ├ PkgName         : ssl_client 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distr
                               │                  │       o=3.22.2 
                               │                  ╰ UID : 691bd1fc4de953e2 
                               ├ InstalledVersion: 1.37.0-r19 
-                              ├ FixedVersion    : 1.37.0-r24 
+                              ├ FixedVersion    : 1.37.0-r27 
                               ├ Status          : fixed 
                               ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
                               │                  │         2db163c98822e5dfa1b 
                               │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
                               │                            bc3e313ad12f8bde9d1 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+                              ├ SeveritySource  : nvd 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
-                              │                   of networ ... 
-                              ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
-                              │                   of network application with an argv[0] containing an ANSI
-                              │                   terminal escape sequence, leading to a denial of service
-                              │                   (terminal locked up) when netstat is used by a victim. 
-                              ├ Severity        : MEDIUM 
-                              ├ CweIDs           ─ [0]: CWE-150 
-                              ├ VendorSeverity   ─ ubuntu: 2 
-                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
-                              │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
-                              │                  ├ [2]: https://www.busybox.net 
-                              │                  ├ [3]: https://www.busybox.net/downloads/ 
-                              │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
-                              ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
-                              ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+                              ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
+                              │                   filenames hid ... 
+                              ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
+                              │                   filenames hidden from a listing through the use of terminal
+                              │                   escape sequences. 
+                              ├ Severity        : LOW 
+                              ├ CweIDs           ─ [0]: CWE-451 
+                              ├ VendorSeverity   ╭ nvd   : 1 
+                              │                  ╰ ubuntu: 2 
+                              ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
+                              │                        ╰ V3Score : 3.3 
+                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
+                              │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
+                              │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
+                              │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                              │                  │      90806.html 
+                              │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                              │                  │      90814.html 
+                              │                  ├ [5]: https://www.busybox.net 
+                              │                  ├ [6]: https://www.busybox.net/downloads/ 
+                              │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
+                              │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/23/1 
+                              ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
+                              ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
 ````
