@@ -223,10 +223,10 @@
       │                 │      ├ DependsOn      ╭ [0]: busybox-binsh@1.37.0-r19 
       │                 │      │                ├ [1]: musl@1.2.5-r10 
       │                 │      │                ╰ [2]: readline@8.2.13-r1 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:e2e7691628b43701a0fe7228b8d986a7aeb58aa9 
       │                 │      ╰ InstalledFiles ╭ [0] : bin/bash 
       │                 │                       ├ [1] : etc/bash/bashrc 
@@ -342,10 +342,10 @@
       │                 │      ├ Licenses       ─ [0]: GPL-2.0-only 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ─ [0]: openssl@3.5.4-r0 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:807236f343b0c9f1ddb6f23880acfae7461549af 
       │                 │      ╰ InstalledFiles ╭ [0] : usr/share/easy-rsa/easyrsa 
       │                 │                       ├ [1] : usr/share/easy-rsa/openssl-easyrsa.cnf 
@@ -371,10 +371,10 @@
       │                 │      ├ Maintainer    : Fabio Napoleoni <f.napoleoni@gmail.com> 
       │                 │      ├ DependsOn      ╭ [0]: linux-pam@1.7.0-r4 
       │                 │      │                ╰ [1]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:934fe57c476b2c889f3b2f07f469b5168ede335f 
       │                 │      ╰ InstalledFiles ╭ [0]: etc/pam.d/google-authenticator 
       │                 │                       ├ [1]: usr/bin/google-authenticator 
@@ -394,10 +394,10 @@
       │                 │      │                ├ [1]: libelf@0.193-r0 
       │                 │      │                ├ [2]: libmnl@1.0.5-r2 
       │                 │      │                ╰ [3]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:2a99a9fd74b8067e13c1198ecb57edad4d7410fe 
       │                 │      ╰ InstalledFiles ╭ [0]: sbin/ip 
       │                 │                       ├ [1]: usr/share/iproute2/bpf_pinning 
@@ -425,10 +425,10 @@
       │                 │      │                ├ [2]: libnftnl@1.2.9-r0 
       │                 │      │                ├ [3]: libxtables@1.8.11-r1 
       │                 │      │                ╰ [4]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:a3379df48598167f40faa2fa45e65a0021aa876a 
       │                 │      ╰ InstalledFiles ╭ [0]  : etc/ethertypes 
       │                 │                       ├ [1]  : usr/lib/xtables/libarpt_mangle.so 
@@ -622,10 +622,10 @@
       │                 │      │                ╰ [1]: LGPL-2.1-or-later 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:e1137c402548ed1f601dd4f506f62de4d46f03cc 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libcap-ng.so.0 
       │                 │                       ├ [1]: usr/lib/libcap-ng.so.0.0.0 
@@ -643,10 +643,10 @@
       │                 │      │                ╰ [1]: GPL-2.0-only 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:10e33c980520083454e09651e0e12f43589af0d3 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libcap.so.2 
       │                 │                       ├ [1]: usr/lib/libcap.so.2.76 
@@ -694,10 +694,10 @@
       │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r10 
       │                 │      │                ├ [1]: zlib@1.3.1-r2 
       │                 │      │                ╰ [2]: zstd-libs@1.5.7-r0 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:5aa751f7b67bf6e42aa3dea938bed7aa8a82645b 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libelf-0.193.so 
       │                 │                       ╰ [1]: usr/lib/libelf.so.1 
@@ -712,10 +712,10 @@
       │                 │      ├ Licenses       ─ [0]: LGPL-2.1-or-later 
       │                 │      ├ Maintainer    : Francesco Colista <fcolista@alpinelinux.org> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:07dea84e2e07618d40725f565801331eedbb95c6 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libmnl.so.0 
       │                 │                       ╰ [1]: usr/lib/libmnl.so.0.2.0 
@@ -732,10 +732,10 @@
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r10 
       │                 │      │                ╰ [1]: ncurses-terminfo-base@6.5_p20250503-r0 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:42901f1528399d67e07e14085ee53f1a369b240a 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libncursesw.so.6 
       │                 │                       ╰ [1]: usr/lib/libncursesw.so.6.5 
@@ -752,10 +752,10 @@
       │                 │      ├ Maintainer    : Jakub Jirutka <jakub@jirutka.cz> 
       │                 │      ├ DependsOn      ╭ [0]: libmnl@1.0.5-r2 
       │                 │      │                ╰ [1]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:d1d853a71e821837b622f354d5d0f4e2e6d23c1c 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libnftnl.so.11 
       │                 │                       ╰ [1]: usr/lib/libnftnl.so.11.6.0 
@@ -771,10 +771,10 @@
       │                 │      ├ Licenses       ─ [0]: LGPL-2.1-or-later 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:0b0fe74749dc3e0d900cff3308ba0d77dd248f10 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libqrencode.so.4 
       │                 │                       ╰ [1]: usr/lib/libqrencode.so.4.1.1 
@@ -808,10 +808,10 @@
       │                 │      ├ Licenses       ─ [0]: GPL-2.0-or-later 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:e8a04aaf9c4a00dcb9b851198adb8af58c68f1df 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libxtables.so.12 
       │                 │                       ╰ [1]: usr/lib/libxtables.so.12.7.0 
@@ -828,10 +828,10 @@
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r10 
       │                 │      │                ╰ [1]: utmps-libs@0.1.3.1-r0 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:4e3ff4724ba2634fa3c06937d6ce80a4777452d0 
       │                 │      ╰ InstalledFiles ╭ [0] : etc/environment 
       │                 │                       ├ [1] : etc/security/access.conf 
@@ -916,10 +916,10 @@
       │                 │      │                ╰ [1]: GPL-2.0-or-later 
       │                 │      ├ Maintainer    : Stuart Cardall <developer@it-offshore.co.uk> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:2f771b9997d92c7d7cd863205e89c43c554c3615 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/liblz4.so.1 
       │                 │                       ╰ [1]: usr/lib/liblz4.so.1.10.0 
@@ -934,10 +934,10 @@
       │                 │      ├ Licenses       ─ [0]: GPL-2.0-or-later 
       │                 │      ├ Maintainer    : Michael Mason <ms13sp@gmail.com> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:c5a1d8a0f2781353f1f4f58eea74b09f18ef0f45 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/liblzo2.so.2 
       │                 │                       ╰ [1]: usr/lib/liblzo2.so.2.0.0 
@@ -994,10 +994,10 @@
       │                 │      ├ SrcVersion    : 6.5_p20250503-r0 
       │                 │      ├ Licenses       ─ [0]: X-11 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:fea2cc088f02df2feb5da718e70123647f0ef8f7 
       │                 │      ╰ InstalledFiles ╭ [0] : etc/terminfo/a/alacritty 
       │                 │                       ├ [1] : etc/terminfo/a/ansi 
@@ -1053,21 +1053,21 @@
       │                 │      ├ DependsOn      ╭ [0]: libcrypto3@3.5.4-r0 
       │                 │      │                ├ [1]: libssl3@3.5.4-r0 
       │                 │      │                ╰ [2]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:886b38018c15a06954914c7484254a5091bc75fe 
       │                 │      ╰ InstalledFiles ─ [0]: usr/bin/openssl 
-      │                 ├ [31] ╭ ID            : openvpn@2.6.14-r0 
+      │                 ├ [31] ╭ ID            : openvpn@2.6.16-r0 
       │                 │      ├ Name          : openvpn 
-      │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/openvpn@2.6.14-r0?arch=x86_64&distro=3.2
+      │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/openvpn@2.6.16-r0?arch=x86_64&distro=3.2
       │                 │      │                │       2.2 
-      │                 │      │                ╰ UID : 28993344e37c5270 
-      │                 │      ├ Version       : 2.6.14-r0 
+      │                 │      │                ╰ UID : 742d4d81fe4fc79e 
+      │                 │      ├ Version       : 2.6.16-r0 
       │                 │      ├ Arch          : x86_64 
       │                 │      ├ SrcName       : openvpn 
-      │                 │      ├ SrcVersion    : 2.6.14-r0 
+      │                 │      ├ SrcVersion    : 2.6.16-r0 
       │                 │      ├ Licenses       ─ [0]: GPL-2.0-only WITH openvpn-openssl-exception 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ╭ [0]: busybox-binsh@1.37.0-r19 
@@ -1078,34 +1078,34 @@
       │                 │      │                ├ [5]: lz4-libs@1.10.0-r0 
       │                 │      │                ├ [6]: lzo@2.10-r5 
       │                 │      │                ╰ [7]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
-      │                 │      ├ Digest        : sha1:7e4e60f02ac5860ee41c437e652cb89b294e1fd9 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
+      │                 │      ├ Digest        : sha1:03a16aace92661afde9c2093cb6cb60ba2b9f556 
       │                 │      ╰ InstalledFiles ╭ [0]: etc/openvpn/down.sh 
       │                 │                       ├ [1]: etc/openvpn/up.sh 
       │                 │                       ├ [2]: usr/lib/openvpn/plugins/openvpn-plugin-down-root.so 
       │                 │                       ╰ [3]: usr/sbin/openvpn 
-      │                 ├ [32] ╭ ID            : openvpn-auth-pam@2.6.14-r0 
+      │                 ├ [32] ╭ ID            : openvpn-auth-pam@2.6.16-r0 
       │                 │      ├ Name          : openvpn-auth-pam 
-      │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.14-r0?arch=x86_64&d
+      │                 │      ├ Identifier     ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.16-r0?arch=x86_64&d
       │                 │      │                │       istro=3.22.2 
-      │                 │      │                ╰ UID : 70dad9d1bd2862fb 
-      │                 │      ├ Version       : 2.6.14-r0 
+      │                 │      │                ╰ UID : 6f8d18e7147b4d80 
+      │                 │      ├ Version       : 2.6.16-r0 
       │                 │      ├ Arch          : x86_64 
       │                 │      ├ SrcName       : openvpn 
-      │                 │      ├ SrcVersion    : 2.6.14-r0 
+      │                 │      ├ SrcVersion    : 2.6.16-r0 
       │                 │      ├ Licenses       ─ [0]: GPL-2.0-only WITH openvpn-openssl-exception 
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ╭ [0]: iproute2-minimal@6.15.0-r0 
       │                 │      │                ├ [1]: linux-pam@1.7.0-r4 
       │                 │      │                ╰ [2]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
-      │                 │      ├ Digest        : sha1:b467e15b5e7fc107b1fd8c9cf29ce6035534a847 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
+      │                 │      ├ Digest        : sha1:208ef2452bd47a1c22ea8ee9b0e5bfebeae3240d 
       │                 │      ╰ InstalledFiles ─ [0]: usr/lib/openvpn/plugins/openvpn-plugin-auth-pam.so 
       │                 ├ [33] ╭ ID            : pamtester@0.1.2-r4 
       │                 │      ├ Name          : pamtester 
@@ -1120,10 +1120,10 @@
       │                 │      ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                 │      ├ DependsOn      ╭ [0]: linux-pam@1.7.0-r4 
       │                 │      │                ╰ [1]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:d748997753ba530c56ce31a44dadd52855251147 
       │                 │      ╰ InstalledFiles ─ [0]: usr/bin/pamtester 
       │                 ├ [34] ╭ ID            : readline@8.2.13-r1 
@@ -1139,10 +1139,10 @@
       │                 │      ├ Maintainer    : Celeste <cielesti@protonmail.com> 
       │                 │      ├ DependsOn      ╭ [0]: libncursesw@6.5_p20250503-r0 
       │                 │      │                ╰ [1]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:d305640121793fd79a7636ed10fcc6cb10155e38 
       │                 │      ╰ InstalledFiles ╭ [0]: etc/inputrc 
       │                 │                       ├ [1]: usr/lib/libreadline.so.8 
@@ -1176,10 +1176,10 @@
       │                 │      ├ Licenses       ─ [0]: ISC 
       │                 │      ├ Maintainer    : Laurent Bercot <ska-devel@skarnet.org> 
       │                 │      ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:8ca4ae34fad485e55b63727912e5f8f39efb134a 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libskarnet.so.2.14 
       │                 │                       ╰ [1]: usr/lib/libskarnet.so.2.14.4.0 
@@ -1216,10 +1216,10 @@
       │                 │      ├ Maintainer    : Laurent Bercot <ska-devel@skarnet.org> 
       │                 │      ├ DependsOn      ╭ [0]: musl@1.2.5-r10 
       │                 │      │                ╰ [1]: skalibs-libs@2.14.4.0-r0 
-      │                 │      ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                 │      │                │         af6c852fe13918d2af 
-      │                 │      │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                 │      │                          c733cdbfbc364e07d4 
+      │                 │      ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                 │      │                │         fbae84c3dbe3e3ee15 
+      │                 │      │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                 │      │                          48f44fd2dd22615fdc 
       │                 │      ├ Digest        : sha1:d1b08eb3000d104b5670bf768af4384591021538 
       │                 │      ╰ InstalledFiles ╭ [0]: usr/lib/libutmps.so.0.1 
       │                 │                       ╰ [1]: usr/lib/libutmps.so.0.1.3.1 
@@ -1254,10 +1254,10 @@
       │                        │                ╰ [1]: GPL-2.0-or-later 
       │                        ├ Maintainer    : Natanael Copa <ncopa@alpinelinux.org> 
       │                        ├ DependsOn      ─ [0]: musl@1.2.5-r10 
-      │                        ├ Layer          ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63
-      │                        │                │         af6c852fe13918d2af 
-      │                        │                ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96e
-      │                        │                          c733cdbfbc364e07d4 
+      │                        ├ Layer          ╭ Digest: sha256:a5a536c61e2cfb84c65cd8d32ada51f92bec71b76f960e
+      │                        │                │         fbae84c3dbe3e3ee15 
+      │                        │                ╰ DiffID: sha256:2dff188c0ba600b65028a8ffc52190e4aefce29cbfc0ae
+      │                        │                          48f44fd2dd22615fdc 
       │                        ├ Digest        : sha1:50c83112b5619f48d36d69190a4cb7c71f15c7d2 
       │                        ╰ InstalledFiles ╭ [0]: usr/lib/libzstd.so.1 
       │                                         ╰ [1]: usr/lib/libzstd.so.1.5.7 
@@ -1294,7 +1294,49 @@
                         │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
                         │     ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
                         │     ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
-                        ├ [1] ╭ VulnerabilityID : CVE-2024-58251 
+                        ├ [1] ╭ VulnerabilityID : CVE-2025-46394 
+                        │     ├ PkgID           : busybox@1.37.0-r19 
+                        │     ├ PkgName         : busybox 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox@1.37.0-r19?arch=x86_64&distro=3
+                        │     │                  │       .22.2 
+                        │     │                  ╰ UID : 5158911d21d1c608 
+                        │     ├ InstalledVersion: 1.37.0-r19 
+                        │     ├ FixedVersion    : 1.37.0-r27 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
+                        │     │                  │         2db163c98822e5dfa1b 
+                        │     │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
+                        │     │                            bc3e313ad12f8bde9d1 
+                        │     ├ SeveritySource  : nvd 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hid ... 
+                        │     ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hidden from a listing through the use of terminal
+                        │     │                   escape sequences. 
+                        │     ├ Severity        : LOW 
+                        │     ├ CweIDs           ─ [0]: CWE-451 
+                        │     ├ VendorSeverity   ╭ nvd   : 1 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
+                        │     │                        ╰ V3Score : 3.3 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
+                        │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
+                        │     │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
+                        │     │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90806.html 
+                        │     │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90814.html 
+                        │     │                  ├ [5]: https://www.busybox.net 
+                        │     │                  ├ [6]: https://www.busybox.net/downloads/ 
+                        │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/23/1 
+                        │     ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
+                        │     ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
+                        ├ [2] ╭ VulnerabilityID : CVE-2024-58251 
                         │     ├ PkgID           : busybox-binsh@1.37.0-r19 
                         │     ├ PkgName         : busybox-binsh 
                         │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&di
@@ -1327,37 +1369,121 @@
                         │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
                         │     ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
                         │     ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
-                        ╰ [2] ╭ VulnerabilityID : CVE-2024-58251 
+                        ├ [3] ╭ VulnerabilityID : CVE-2025-46394 
+                        │     ├ PkgID           : busybox-binsh@1.37.0-r19 
+                        │     ├ PkgName         : busybox-binsh 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/busybox-binsh@1.37.0-r19?arch=x86_64&di
+                        │     │                  │       stro=3.22.2 
+                        │     │                  ╰ UID : 7150d5a240bb77cc 
+                        │     ├ InstalledVersion: 1.37.0-r19 
+                        │     ├ FixedVersion    : 1.37.0-r27 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
+                        │     │                  │         2db163c98822e5dfa1b 
+                        │     │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
+                        │     │                            bc3e313ad12f8bde9d1 
+                        │     ├ SeveritySource  : nvd 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hid ... 
+                        │     ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
+                        │     │                   filenames hidden from a listing through the use of terminal
+                        │     │                   escape sequences. 
+                        │     ├ Severity        : LOW 
+                        │     ├ CweIDs           ─ [0]: CWE-451 
+                        │     ├ VendorSeverity   ╭ nvd   : 1 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
+                        │     │                        ╰ V3Score : 3.3 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
+                        │     │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
+                        │     │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
+                        │     │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90806.html 
+                        │     │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                        │     │                  │      90814.html 
+                        │     │                  ├ [5]: https://www.busybox.net 
+                        │     │                  ├ [6]: https://www.busybox.net/downloads/ 
+                        │     │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/23/1 
+                        │     ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
+                        │     ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
+                        ├ [4] ╭ VulnerabilityID : CVE-2024-58251 
+                        │     ├ PkgID           : ssl_client@1.37.0-r19 
+                        │     ├ PkgName         : ssl_client 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distr
+                        │     │                  │       o=3.22.2 
+                        │     │                  ╰ UID : 691bd1fc4de953e2 
+                        │     ├ InstalledVersion: 1.37.0-r19 
+                        │     ├ FixedVersion    : 1.37.0-r24 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
+                        │     │                  │         2db163c98822e5dfa1b 
+                        │     │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
+                        │     │                            bc3e313ad12f8bde9d1 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
+                        │     │                   of networ ... 
+                        │     ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
+                        │     │                   of network application with an argv[0] containing an ANSI
+                        │     │                   terminal escape sequence, leading to a denial of service
+                        │     │                   (terminal locked up) when netstat is used by a victim. 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-150 
+                        │     ├ VendorSeverity   ─ ubuntu: 2 
+                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
+                        │     │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
+                        │     │                  ├ [2]: https://www.busybox.net 
+                        │     │                  ├ [3]: https://www.busybox.net/downloads/ 
+                        │     │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
+                        │     ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
+                        │     ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+                        ╰ [5] ╭ VulnerabilityID : CVE-2025-46394 
                               ├ PkgID           : ssl_client@1.37.0-r19 
                               ├ PkgName         : ssl_client 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/ssl_client@1.37.0-r19?arch=x86_64&distr
                               │                  │       o=3.22.2 
                               │                  ╰ UID : 691bd1fc4de953e2 
                               ├ InstalledVersion: 1.37.0-r19 
-                              ├ FixedVersion    : 1.37.0-r24 
+                              ├ FixedVersion    : 1.37.0-r27 
                               ├ Status          : fixed 
                               ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc3
                               │                  │         2db163c98822e5dfa1b 
                               │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a2
                               │                            bc3e313ad12f8bde9d1 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2024-58251 
+                              ├ SeveritySource  : nvd 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-46394 
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
-                              │                   of networ ... 
-                              ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
-                              │                   of network application with an argv[0] containing an ANSI
-                              │                   terminal escape sequence, leading to a denial of service
-                              │                   (terminal locked up) when netstat is used by a victim. 
-                              ├ Severity        : MEDIUM 
-                              ├ CweIDs           ─ [0]: CWE-150 
-                              ├ VendorSeverity   ─ ubuntu: 2 
-                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/6 
-                              │                  ├ [1]: https://bugs.busybox.net/show_bug.cgi?id=15922 
-                              │                  ├ [2]: https://www.busybox.net 
-                              │                  ├ [3]: https://www.busybox.net/downloads/ 
-                              │                  ╰ [4]: https://www.cve.org/CVERecord?id=CVE-2024-58251 
-                              ├ PublishedDate   : 2025-04-23T18:16:03.057Z 
-                              ╰ LastModifiedDate: 2025-04-29T13:52:47.47Z 
+                              ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
+                              │                   filenames hid ... 
+                              ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
+                              │                   filenames hidden from a listing through the use of terminal
+                              │                   escape sequences. 
+                              ├ Severity        : LOW 
+                              ├ CweIDs           ─ [0]: CWE-451 
+                              ├ VendorSeverity   ╭ nvd   : 1 
+                              │                  ╰ ubuntu: 2 
+                              ├ CVSS             ─ nvd ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N 
+                              │                        ╰ V3Score : 3.3 
+                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2025/04/23/5 
+                              │                  ├ [1]: http://www.openwall.com/lists/oss-security/2025/04/24/3 
+                              │                  ├ [2]: https://bugs.busybox.net/show_bug.cgi?id=16018 
+                              │                  ├ [3]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                              │                  │      90806.html 
+                              │                  ├ [4]: https://lists.busybox.net/pipermail/busybox/2024-July/0
+                              │                  │      90814.html 
+                              │                  ├ [5]: https://www.busybox.net 
+                              │                  ├ [6]: https://www.busybox.net/downloads/ 
+                              │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2025-46394 
+                              │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2025/04/23/1 
+                              ├ PublishedDate   : 2025-04-23T16:15:48.713Z 
+                              ╰ LastModifiedDate: 2025-09-24T14:38:22.127Z 
 ````
