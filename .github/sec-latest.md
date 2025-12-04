@@ -1278,6 +1278,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:97fec20fdee61cad465fe9269e5a068050cfd9c509eae714943578
+                        │     │                   0cf4bc1728 
                         │     ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
                         │     │                   of networ ... 
                         │     ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
@@ -1312,6 +1314,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:d0f6c0264bac94c3d94eef46affe07fd5d31229372ba3468f66aea
+                        │     │                   1923682192 
                         │     ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
                         │     │                   filenames hid ... 
                         │     ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
@@ -1353,6 +1357,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:3fafaefe3ed6df59e49dc975ac49b386a7a705a0854dc97f3c2f93
+                        │     │                   089ed5c53d 
                         │     ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
                         │     │                   of networ ... 
                         │     ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
@@ -1387,6 +1393,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:c497d1b35293154f24ecdc726cd3efa6a5d59105da128fcca73eee
+                        │     │                   0d71b97001 
                         │     ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
                         │     │                   filenames hid ... 
                         │     ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
@@ -1428,8 +1436,16 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:d9a0ac835e06a594cdbb88eb6621250c10d7e0a85dd8159ae4298f
+                        │     │                   8604d0f634 
                         │     ├ Title           : [HMAC verification check: fix incorrect memcmp() call] 
-                        │     ╰ Severity        : UNKNOWN 
+                        │     ├ Description     : [HMAC verification check: fix incorrect memcmp() call] 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ─ ubuntu: 2 
+                        │     ╰ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
+                        │                        │      CVE-2025-13086 
+                        │                        ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
+                        │                        ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
                         ├ [5] ╭ VulnerabilityID : CVE-2025-13086 
                         │     ├ PkgID           : openvpn-auth-pam@2.6.14-r0 
                         │     ├ PkgName         : openvpn-auth-pam 
@@ -1447,8 +1463,16 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:fe1b09e209691c5ff6dfc884c375c34b86b5b0eed84baa2ddb18a3
+                        │     │                   aee4a9ad22 
                         │     ├ Title           : [HMAC verification check: fix incorrect memcmp() call] 
-                        │     ╰ Severity        : UNKNOWN 
+                        │     ├ Description     : [HMAC verification check: fix incorrect memcmp() call] 
+                        │     ├ Severity        : MEDIUM 
+                        │     ├ VendorSeverity   ─ ubuntu: 2 
+                        │     ╰ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
+                        │                        │      CVE-2025-13086 
+                        │                        ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
+                        │                        ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-58251 
                         │     ├ PkgID           : ssl_client@1.37.0-r19 
                         │     ├ PkgName         : ssl_client 
@@ -1466,6 +1490,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:b3d016af8df1455a2c016ea5be35ccfb380925b96ce4f089b1e89c
+                        │     │                   761621b79e 
                         │     ├ Title           : In netstat in BusyBox through 1.37.0, local users can launch
                         │     │                   of networ ... 
                         │     ├ Description     : In netstat in BusyBox through 1.37.0, local users can launch
@@ -1500,6 +1526,8 @@
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                              ├ Fingerprint     : sha256:b2ab3975cc7d8d72d5f129481017a9d28bc49b9fcf0da9ef4be77f
+                              │                   3784f0095d 
                               ├ Title           : In tar in BusyBox through 1.37.0, a TAR archive can have
                               │                   filenames hid ... 
                               ├ Description     : In tar in BusyBox through 1.37.0, a TAR archive can have
