@@ -1438,14 +1438,26 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:d9a0ac835e06a594cdbb88eb6621250c10d7e0a85dd8159ae4298f
                         │     │                   8604d0f634 
-                        │     ├ Title           : [HMAC verification check: fix incorrect memcmp() call] 
-                        │     ├ Description     : [HMAC verification check: fix incorrect memcmp() call] 
+                        │     ├ Title           : Improper validation of source IP addresses in OpenVPN version
+                        │     │                    2.6.0 th ... 
+                        │     ├ Description     : Improper validation of source IP addresses in OpenVPN version
+                        │     │                    2.6.0 through 2.7_rc1 allows an attacker to open a session
+                        │     │                   from a different IP address which did not initiate the
+                        │     │                   connection resulting in a denial of service for the
+                        │     │                   originating client 
                         │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-940 
                         │     ├ VendorSeverity   ─ ubuntu: 2 
-                        │     ╰ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
-                        │                        │      CVE-2025-13086 
-                        │                        ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
-                        │                        ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
+                        │     ├ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
+                        │     │                  │      CVE-2025-13086 
+                        │     │                  ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
+                        │     │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
+                        │     │                  ├ [3]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                  │      rceforge.net/msg00151.html 
+                        │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                         rceforge.net/msg00152.html 
+                        │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
+                        │     ╰ LastModifiedDate: 2025-12-03T20:16:24.353Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2025-13086 
                         │     ├ PkgID           : openvpn-auth-pam@2.6.14-r0 
                         │     ├ PkgName         : openvpn-auth-pam 
@@ -1465,14 +1477,26 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:fe1b09e209691c5ff6dfc884c375c34b86b5b0eed84baa2ddb18a3
                         │     │                   aee4a9ad22 
-                        │     ├ Title           : [HMAC verification check: fix incorrect memcmp() call] 
-                        │     ├ Description     : [HMAC verification check: fix incorrect memcmp() call] 
+                        │     ├ Title           : Improper validation of source IP addresses in OpenVPN version
+                        │     │                    2.6.0 th ... 
+                        │     ├ Description     : Improper validation of source IP addresses in OpenVPN version
+                        │     │                    2.6.0 through 2.7_rc1 allows an attacker to open a session
+                        │     │                   from a different IP address which did not initiate the
+                        │     │                   connection resulting in a denial of service for the
+                        │     │                   originating client 
                         │     ├ Severity        : MEDIUM 
+                        │     ├ CweIDs           ─ [0]: CWE-940 
                         │     ├ VendorSeverity   ─ ubuntu: 2 
-                        │     ╰ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
-                        │                        │      CVE-2025-13086 
-                        │                        ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
-                        │                        ╰ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
+                        │     ├ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
+                        │     │                  │      CVE-2025-13086 
+                        │     │                  ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
+                        │     │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
+                        │     │                  ├ [3]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                  │      rceforge.net/msg00151.html 
+                        │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                         rceforge.net/msg00152.html 
+                        │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
+                        │     ╰ LastModifiedDate: 2025-12-03T20:16:24.353Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-58251 
                         │     ├ PkgID           : ssl_client@1.37.0-r19 
                         │     ├ PkgName         : ssl_client 
