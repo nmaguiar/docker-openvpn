@@ -1457,7 +1457,7 @@
                         │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                         rceforge.net/msg00152.html 
                         │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
-                        │     ╰ LastModifiedDate: 2025-12-03T20:16:24.353Z 
+                        │     ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2025-13086 
                         │     ├ PkgID           : openvpn-auth-pam@2.6.14-r0 
                         │     ├ PkgName         : openvpn-auth-pam 
@@ -1496,7 +1496,7 @@
                         │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                         rceforge.net/msg00152.html 
                         │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
-                        │     ╰ LastModifiedDate: 2025-12-03T20:16:24.353Z 
+                        │     ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-58251 
                         │     ├ PkgID           : ssl_client@1.37.0-r19 
                         │     ├ PkgName         : ssl_client 
