@@ -1447,7 +1447,8 @@
                         │     │                   originating client 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-940 
-                        │     ├ VendorSeverity   ─ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ amazon: 3 
+                        │     │                  ╰ ubuntu: 2 
                         │     ├ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
                         │     │                  │      CVE-2025-13086 
                         │     │                  ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
@@ -1486,7 +1487,8 @@
                         │     │                   originating client 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-940 
-                        │     ├ VendorSeverity   ─ ubuntu: 2 
+                        │     ├ VendorSeverity   ╭ amazon: 3 
+                        │     │                  ╰ ubuntu: 2 
                         │     ├ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
                         │     │                  │      CVE-2025-13086 
                         │     │                  ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
