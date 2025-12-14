@@ -1441,10 +1441,10 @@
                         │     ├ Title           : Improper validation of source IP addresses in OpenVPN version
                         │     │                    2.6.0 th ... 
                         │     ├ Description     : Improper validation of source IP addresses in OpenVPN version
-                        │     │                    2.6.0 through 2.7_rc1 allows an attacker to open a session
-                        │     │                   from a different IP address which did not initiate the
-                        │     │                   connection resulting in a denial of service for the
-                        │     │                   originating client 
+                        │     │                    2.6.0 through 2.6.15 and 2.7_alpha1 through 2.7_rc1 allows
+                        │     │                   an attacker to open a session from a different IP address
+                        │     │                   which did not initiate the connection resulting in a denial
+                        │     │                   of service for the originating client 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-940 
                         │     ├ VendorSeverity   ╭ amazon: 3 
@@ -1458,7 +1458,7 @@
                         │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                         rceforge.net/msg00152.html 
                         │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
-                        │     ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
+                        │     ╰ LastModifiedDate: 2025-12-12T14:15:50.463Z 
                         ├ [5] ╭ VulnerabilityID : CVE-2025-13086 
                         │     ├ PkgID           : openvpn-auth-pam@2.6.14-r0 
                         │     ├ PkgName         : openvpn-auth-pam 
@@ -1481,10 +1481,10 @@
                         │     ├ Title           : Improper validation of source IP addresses in OpenVPN version
                         │     │                    2.6.0 th ... 
                         │     ├ Description     : Improper validation of source IP addresses in OpenVPN version
-                        │     │                    2.6.0 through 2.7_rc1 allows an attacker to open a session
-                        │     │                   from a different IP address which did not initiate the
-                        │     │                   connection resulting in a denial of service for the
-                        │     │                   originating client 
+                        │     │                    2.6.0 through 2.6.15 and 2.7_alpha1 through 2.7_rc1 allows
+                        │     │                   an attacker to open a session from a different IP address
+                        │     │                   which did not initiate the connection resulting in a denial
+                        │     │                   of service for the originating client 
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-940 
                         │     ├ VendorSeverity   ╭ amazon: 3 
@@ -1498,7 +1498,7 @@
                         │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                         rceforge.net/msg00152.html 
                         │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
-                        │     ╰ LastModifiedDate: 2025-12-04T17:15:08.283Z 
+                        │     ╰ LastModifiedDate: 2025-12-12T14:15:50.463Z 
                         ├ [6] ╭ VulnerabilityID : CVE-2024-58251 
                         │     ├ PkgID           : ssl_client@1.37.0-r19 
                         │     ├ PkgName         : ssl_client 
