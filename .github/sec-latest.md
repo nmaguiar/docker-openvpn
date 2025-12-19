@@ -1438,8 +1438,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:d9a0ac835e06a594cdbb88eb6621250c10d7e0a85dd8159ae4298f
                         │     │                   8604d0f634 
-                        │     ├ Title           : Improper validation of source IP addresses in OpenVPN version
-                        │     │                    2.6.0 th ... 
+                        │     ├ Title           : OpenVPN: OpenVPN: Improper validation of source IP addresses
+                        │     │                   leads to denial of service 
                         │     ├ Description     : Improper validation of source IP addresses in OpenVPN version
                         │     │                    2.6.0 through 2.6.15 and 2.7_alpha1 through 2.7_rc1 allows
                         │     │                   an attacker to open a session from a different IP address
@@ -1448,14 +1448,20 @@
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-940 
                         │     ├ VendorSeverity   ╭ amazon: 3 
+                        │     │                  ├ redhat: 2 
                         │     │                  ╰ ubuntu: 2 
-                        │     ├ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 6.5 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-13086 
+                        │     │                  ├ [1]: https://community.openvpn.net/Security%20Announcements/
                         │     │                  │      CVE-2025-13086 
-                        │     │                  ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
-                        │     │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
-                        │     │                  ├ [3]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-13086 
+                        │     │                  ├ [3]: https://ubuntu.com/security/notices/USN-7898-1 
+                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
+                        │     │                  ├ [5]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                  │      rceforge.net/msg00151.html 
-                        │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                  ╰ [6]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                         rceforge.net/msg00152.html 
                         │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
                         │     ╰ LastModifiedDate: 2025-12-12T14:15:50.463Z 
@@ -1478,8 +1484,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:fe1b09e209691c5ff6dfc884c375c34b86b5b0eed84baa2ddb18a3
                         │     │                   aee4a9ad22 
-                        │     ├ Title           : Improper validation of source IP addresses in OpenVPN version
-                        │     │                    2.6.0 th ... 
+                        │     ├ Title           : OpenVPN: OpenVPN: Improper validation of source IP addresses
+                        │     │                   leads to denial of service 
                         │     ├ Description     : Improper validation of source IP addresses in OpenVPN version
                         │     │                    2.6.0 through 2.6.15 and 2.7_alpha1 through 2.7_rc1 allows
                         │     │                   an attacker to open a session from a different IP address
@@ -1488,14 +1494,20 @@
                         │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ─ [0]: CWE-940 
                         │     ├ VendorSeverity   ╭ amazon: 3 
+                        │     │                  ├ redhat: 2 
                         │     │                  ╰ ubuntu: 2 
-                        │     ├ References       ╭ [0]: https://community.openvpn.net/Security%20Announcements/
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 6.5 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-13086 
+                        │     │                  ├ [1]: https://community.openvpn.net/Security%20Announcements/
                         │     │                  │      CVE-2025-13086 
-                        │     │                  ├ [1]: https://ubuntu.com/security/notices/USN-7898-1 
-                        │     │                  ├ [2]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
-                        │     │                  ├ [3]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2025-13086 
+                        │     │                  ├ [3]: https://ubuntu.com/security/notices/USN-7898-1 
+                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2025-13086 
+                        │     │                  ├ [5]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                  │      rceforge.net/msg00151.html 
-                        │     │                  ╰ [4]: https://www.mail-archive.com/openvpn-announce@lists.sou
+                        │     │                  ╰ [6]: https://www.mail-archive.com/openvpn-announce@lists.sou
                         │     │                         rceforge.net/msg00152.html 
                         │     ├ PublishedDate   : 2025-12-03T20:16:24.353Z 
                         │     ╰ LastModifiedDate: 2025-12-12T14:15:50.463Z 
