@@ -1320,28 +1320,46 @@
                         │      │                   OpenSSL 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : CRITICAL 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 3 
-                        │      │                  ╰ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 3 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 9.8 
                         │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2026/01/27
                         │      │                  │       /10 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15467 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2c8f0e5fa9b
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-15467 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [15]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/2c8f0e5fa9b
                         │      │                  │       6ee5508a0349e4572ddb74db5a703 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/5f26d4202f5
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/5f26d4202f5
                         │      │                  │       b89664c5c3f3c62086276026ba9a9 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/6ced0fe6b10
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/6ced0fe6b10
                         │      │                  │       faa560e410e3ee8d6c82f06c65ea3 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ce39170276d
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ce39170276d
                         │      │                  │       aec87f55c39dad1f629b56344429e 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/d0071a0799f
+                        │      │                  ├ [20]: https://github.com/openssl/openssl/commit/d0071a0799f
                         │      │                  │       20cc8101730145349ed4487c268dc 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-15467 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
+                        │      │                  ├ [21]: https://linux.oracle.com/cve/CVE-2025-15467.html 
+                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [23]: https://nvd.nist.gov/vuln/detail/CVE-2025-15467 
+                        │      │                  ├ [24]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
                         │      ╰ LastModifiedDate: 2026-01-27T22:15:51.597Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2025-69419 
@@ -1418,27 +1436,45 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 2 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 7.4 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69419 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/41be0f21640
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69419 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/41be0f21640
                         │      │                  │       4f14457bbf3b9cc488dba60b49296 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/7e9cac9832e
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/7e9cac9832e
                         │      │                  │       4705b91987c2474ed06a37a93cecb 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a26a90d38ed
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/a26a90d38ed
                         │      │                  │       ec3748566129d824e664b54bee2e2 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/cda12de3bc0
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/cda12de3bc0
                         │      │                  │       e333ea8d2c6fd15001dbdaf280015 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ff628933755
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ff628933755
                         │      │                  │       075446bca8307e8417c14d164b535 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69419 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69419.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69419 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:34.113Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2025-11187 
@@ -1508,22 +1544,40 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ╭ [0]: CWE-476 
                         │      │                  ╰ [1]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 2 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 6.1 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-11187 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/205e3a55e16e
-                        │      │                  │      4bd08c12fdbd3416ab829c0f6206 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/8caf359d6e46
-                        │      │                  │      fb413e8f5f0df765d2e8a51df4e8 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/e1079bc17ed9
-                        │      │                  │      3ff16f6b86f33a2fe3336e78817e 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-11187 
-                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-11187 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/205e3a55e16
+                        │      │                  │       e4bd08c12fdbd3416ab829c0f6206 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/8caf359d6e4
+                        │      │                  │       6fb413e8f5f0df765d2e8a51df4e8 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/e1079bc17ed
+                        │      │                  │       93ff16f6b86f33a2fe3336e78817e 
+                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2025-11187.html 
+                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2025-11187 
+                        │      │                  ├ [21]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.093Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2025-15468 
@@ -1579,24 +1633,42 @@
                         │      │                   OpenSSL 3.0, 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-15468 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/1f08e54bad32
-                        │      │                  │      843044fe8a675948d65e3b4ece65 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7c88376731c5
-                        │      │                  │      89ee5b36116c5a6e32d5ae5f7ae2 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/b25396394002
-                        │      │                  │      88a4580fe2d76247541b976bade4 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d75b30987963
-                        │      │                  │      1d45b972396ce4e5102559c64ac7 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-15468 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15468 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/1f08e54bad3
+                        │      │                  │       2843044fe8a675948d65e3b4ece65 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/7c88376731c
+                        │      │                  │       589ee5b36116c5a6e32d5ae5f7ae2 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/b2539639400
+                        │      │                  │       288a4580fe2d76247541b976bade4 
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/d75b3098796
+                        │      │                  │       31d45b972396ce4e5102559c64ac7 
+                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-15468.html 
+                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-15468 
+                        │      │                  ├ [22]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.4Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2025-15469 
@@ -1664,20 +1736,38 @@
                         │      │                   this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-347 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.5 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-15469 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/310f305eb92e
-                        │      │                  │      a8040d6b3cb75a5feeba8e6acf2f 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/a7936fa4bd23
-                        │      │                  │      c906e1955a16a0a0ab39a4953a61 
-                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-15469 
-                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15469 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/310f305eb92
+                        │      │                  │       ea8040d6b3cb75a5feeba8e6acf2f 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/a7936fa4bd2
+                        │      │                  │       3c906e1955a16a0a0ab39a4953a61 
+                        │      │                  ├ [17]: https://linux.oracle.com/cve/CVE-2025-15469.html 
+                        │      │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2025-15469 
+                        │      │                  ├ [20]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.523Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2025-66199 
@@ -1748,24 +1838,42 @@
                         │      │                   OpenSSL 3.0, 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-789 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-66199 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3ed1f7524993
-                        │      │                  │      2b155eef993a8e66a99cb98bfef4 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/6184a4fb08ee
-                        │      │                  │      6d7bca570d931a4e8bef40b64451 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/895150b5e021
-                        │      │                  │      d16b52fb32b97e1dd12f20448be5 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/966a2478046c
-                        │      │                  │      311ed7dae50c457d0db4cafbf7e4 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-66199 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-66199 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/3ed1f752499
+                        │      │                  │       32b155eef993a8e66a99cb98bfef4 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/6184a4fb08e
+                        │      │                  │       e6d7bca570d931a4e8bef40b64451 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/895150b5e02
+                        │      │                  │       1d16b52fb32b97e1dd12f20448be5 
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/966a2478046
+                        │      │                  │       c311ed7dae50c457d0db4cafbf7e4 
+                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-66199.html 
+                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-66199 
+                        │      │                  ├ [22]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:15.777Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2025-68160 
@@ -1824,27 +1932,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 4.7 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-68160 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/384011202af
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-68160 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/384011202af
                         │      │                  │       92605d926fafe4a0bcd6b65d162ad 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/475c466ef2f
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/475c466ef2f
                         │      │                  │       bd8fc1df6fae1c3eed9c813fc8ff6 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/4c96fbba618
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/4c96fbba618
                         │      │                  │       e1940f038012506ee9e21d32ee12c 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/6845c3b6460
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/6845c3b6460
                         │      │                  │       a98b1ec4e463baa2ea1a63a32d7c0 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/68a7cd2e281
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/68a7cd2e281
                         │      │                  │       6c3a02f4d45a2ce43fc04fac97096 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-68160 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-68160.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-68160 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:15.9Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2025-69418 
@@ -1903,27 +2029,45 @@
                         │      │                   affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-325 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 4 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69418 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/372fc5c7752
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69418 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/372fc5c7752
                         │      │                  │       9695b05b4f5b5187691a57ef5dffc 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/4016975d446
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/4016975d446
                         │      │                  │       9cd6b94927c607f7c511385f928d8 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/52d23c86a54
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/52d23c86a54
                         │      │                  │       adab5ee9f80e48b242b52c4cc2347 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a7589230356
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/a7589230356
                         │      │                  │       d908c0eca4b969ec4f62106f4f5ae 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ed40856d7d4
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ed40856d7d4
                         │      │                  │       ba6cb42779b6770666a65f19cb977 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69418 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69418.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69418 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
                         │      ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:33.253Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2025-69420 
@@ -1987,29 +2131,47 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69420 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/27c7012c91c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69420 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/27c7012c91c
                         │      │                  │       c986a598d7540f3079dfde2416eb9 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/4e254b48ad9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/4e254b48ad9
                         │      │                  │       3cc092be3dd62d97015f33f73133a 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/564fd9c7378
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/564fd9c7378
                         │      │                  │       7f25693bf9e75faf7bf6bb1305d4e 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/5eb0770ffcf
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/5eb0770ffcf
                         │      │                  │       11b785cf374ff3c19196245e54f1b 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a99349ebfc5
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/a99349ebfc5
                         │      │                  │       19999edc50620abe24d599b9eb085 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69420 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69420.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69420 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
-                        │      ╰ LastModifiedDate: 2026-01-27T16:16:34.317Z 
+                        │      ╰ LastModifiedDate: 2026-01-28T20:16:13.857Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2025-69421 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -2061,27 +2223,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69421 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/3524a29271f
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/3524a29271f
                         │      │                  │       8191b8fd8a5257eb05173982a097b 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/36ecb496087
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/36ecb496087
                         │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/4bbc8d41a72
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/4bbc8d41a72
                         │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/643986985cd
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/643986985cd
                         │      │                  │       1c21221f941129d76fe0c2785aeb3 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a2dbc539f0f
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/a2dbc539f0f
                         │      │                  │       9cc63832709fa5aa33ad9495eb19c 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69421.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:34.437Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-22795 
@@ -2145,27 +2325,45 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-22795 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/2502e7b7d4c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-22795 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/2502e7b7d4c
                         │      │                  │       0cf4f972a881641fe09edc67aeec4 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/572844beca9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/572844beca9
                         │      │                  │       5068394c916626a6d3a490f831a49 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7bbca05be55
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/7bbca05be55
                         │      │                  │       b129651d9df4bdb92becc45002c12 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/eeee3cbd4d6
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/eeee3cbd4d6
                         │      │                  │       82095ed431052f00403004596373e 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ef2fb66ec57
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ef2fb66ec57
                         │      │                  │       1564d64d1c74a12e388a2a54d05d2 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-22795 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2026-22795.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2026-22795 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:35.43Z 
                         ├ [11] ╭ VulnerabilityID : CVE-2026-22796 
@@ -2229,27 +2427,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-22796 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/2502e7b7d4c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-22796 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/2502e7b7d4c
                         │      │                  │       0cf4f972a881641fe09edc67aeec4 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/572844beca9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/572844beca9
                         │      │                  │       5068394c916626a6d3a490f831a49 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7bbca05be55
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/7bbca05be55
                         │      │                  │       b129651d9df4bdb92becc45002c12 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/eeee3cbd4d6
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/eeee3cbd4d6
                         │      │                  │       82095ed431052f00403004596373e 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ef2fb66ec57
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ef2fb66ec57
                         │      │                  │       1564d64d1c74a12e388a2a54d05d2 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-22796 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2026-22796.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2026-22796 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
                         │      ╰ LastModifiedDate: 2026-01-27T17:16:12.553Z 
                         ├ [12] ╭ VulnerabilityID : CVE-2025-15467 
@@ -2313,28 +2529,46 @@
                         │      │                   OpenSSL 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : CRITICAL 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 3 
-                        │      │                  ╰ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 3 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 9.8 
                         │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2026/01/27
                         │      │                  │       /10 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15467 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2c8f0e5fa9b
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-15467 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [15]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/2c8f0e5fa9b
                         │      │                  │       6ee5508a0349e4572ddb74db5a703 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/5f26d4202f5
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/5f26d4202f5
                         │      │                  │       b89664c5c3f3c62086276026ba9a9 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/6ced0fe6b10
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/6ced0fe6b10
                         │      │                  │       faa560e410e3ee8d6c82f06c65ea3 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ce39170276d
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ce39170276d
                         │      │                  │       aec87f55c39dad1f629b56344429e 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/d0071a0799f
+                        │      │                  ├ [20]: https://github.com/openssl/openssl/commit/d0071a0799f
                         │      │                  │       20cc8101730145349ed4487c268dc 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-15467 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
+                        │      │                  ├ [21]: https://linux.oracle.com/cve/CVE-2025-15467.html 
+                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [23]: https://nvd.nist.gov/vuln/detail/CVE-2025-15467 
+                        │      │                  ├ [24]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
                         │      ╰ LastModifiedDate: 2026-01-27T22:15:51.597Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2025-69419 
@@ -2411,27 +2645,45 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 2 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 7.4 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69419 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/41be0f21640
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69419 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/41be0f21640
                         │      │                  │       4f14457bbf3b9cc488dba60b49296 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/7e9cac9832e
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/7e9cac9832e
                         │      │                  │       4705b91987c2474ed06a37a93cecb 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a26a90d38ed
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/a26a90d38ed
                         │      │                  │       ec3748566129d824e664b54bee2e2 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/cda12de3bc0
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/cda12de3bc0
                         │      │                  │       e333ea8d2c6fd15001dbdaf280015 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ff628933755
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ff628933755
                         │      │                  │       075446bca8307e8417c14d164b535 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69419 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69419.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69419 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:34.113Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2025-11187 
@@ -2501,22 +2753,40 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ╭ [0]: CWE-476 
                         │      │                  ╰ [1]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 2 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 6.1 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-11187 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/205e3a55e16e
-                        │      │                  │      4bd08c12fdbd3416ab829c0f6206 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/8caf359d6e46
-                        │      │                  │      fb413e8f5f0df765d2e8a51df4e8 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/e1079bc17ed9
-                        │      │                  │      3ff16f6b86f33a2fe3336e78817e 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-11187 
-                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-11187 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/205e3a55e16
+                        │      │                  │       e4bd08c12fdbd3416ab829c0f6206 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/8caf359d6e4
+                        │      │                  │       6fb413e8f5f0df765d2e8a51df4e8 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/e1079bc17ed
+                        │      │                  │       93ff16f6b86f33a2fe3336e78817e 
+                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2025-11187.html 
+                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2025-11187 
+                        │      │                  ├ [21]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.093Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2025-15468 
@@ -2572,24 +2842,42 @@
                         │      │                   OpenSSL 3.0, 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-15468 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/1f08e54bad32
-                        │      │                  │      843044fe8a675948d65e3b4ece65 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7c88376731c5
-                        │      │                  │      89ee5b36116c5a6e32d5ae5f7ae2 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/b25396394002
-                        │      │                  │      88a4580fe2d76247541b976bade4 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d75b30987963
-                        │      │                  │      1d45b972396ce4e5102559c64ac7 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-15468 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15468 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/1f08e54bad3
+                        │      │                  │       2843044fe8a675948d65e3b4ece65 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/7c88376731c
+                        │      │                  │       589ee5b36116c5a6e32d5ae5f7ae2 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/b2539639400
+                        │      │                  │       288a4580fe2d76247541b976bade4 
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/d75b3098796
+                        │      │                  │       31d45b972396ce4e5102559c64ac7 
+                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-15468.html 
+                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-15468 
+                        │      │                  ├ [22]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.4Z 
                         ├ [16] ╭ VulnerabilityID : CVE-2025-15469 
@@ -2657,20 +2945,38 @@
                         │      │                   this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-347 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.5 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-15469 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/310f305eb92e
-                        │      │                  │      a8040d6b3cb75a5feeba8e6acf2f 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/a7936fa4bd23
-                        │      │                  │      c906e1955a16a0a0ab39a4953a61 
-                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-15469 
-                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15469 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/310f305eb92
+                        │      │                  │       ea8040d6b3cb75a5feeba8e6acf2f 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/a7936fa4bd2
+                        │      │                  │       3c906e1955a16a0a0ab39a4953a61 
+                        │      │                  ├ [17]: https://linux.oracle.com/cve/CVE-2025-15469.html 
+                        │      │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2025-15469 
+                        │      │                  ├ [20]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.523Z 
                         ├ [17] ╭ VulnerabilityID : CVE-2025-66199 
@@ -2741,24 +3047,42 @@
                         │      │                   OpenSSL 3.0, 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-789 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-66199 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3ed1f7524993
-                        │      │                  │      2b155eef993a8e66a99cb98bfef4 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/6184a4fb08ee
-                        │      │                  │      6d7bca570d931a4e8bef40b64451 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/895150b5e021
-                        │      │                  │      d16b52fb32b97e1dd12f20448be5 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/966a2478046c
-                        │      │                  │      311ed7dae50c457d0db4cafbf7e4 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-66199 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-66199 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/3ed1f752499
+                        │      │                  │       32b155eef993a8e66a99cb98bfef4 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/6184a4fb08e
+                        │      │                  │       e6d7bca570d931a4e8bef40b64451 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/895150b5e02
+                        │      │                  │       1d16b52fb32b97e1dd12f20448be5 
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/966a2478046
+                        │      │                  │       c311ed7dae50c457d0db4cafbf7e4 
+                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-66199.html 
+                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-66199 
+                        │      │                  ├ [22]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:15.777Z 
                         ├ [18] ╭ VulnerabilityID : CVE-2025-68160 
@@ -2817,27 +3141,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 4.7 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-68160 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/384011202af
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-68160 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/384011202af
                         │      │                  │       92605d926fafe4a0bcd6b65d162ad 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/475c466ef2f
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/475c466ef2f
                         │      │                  │       bd8fc1df6fae1c3eed9c813fc8ff6 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/4c96fbba618
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/4c96fbba618
                         │      │                  │       e1940f038012506ee9e21d32ee12c 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/6845c3b6460
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/6845c3b6460
                         │      │                  │       a98b1ec4e463baa2ea1a63a32d7c0 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/68a7cd2e281
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/68a7cd2e281
                         │      │                  │       6c3a02f4d45a2ce43fc04fac97096 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-68160 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-68160.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-68160 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:15.9Z 
                         ├ [19] ╭ VulnerabilityID : CVE-2025-69418 
@@ -2896,27 +3238,45 @@
                         │      │                   affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-325 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 4 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69418 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/372fc5c7752
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69418 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/372fc5c7752
                         │      │                  │       9695b05b4f5b5187691a57ef5dffc 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/4016975d446
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/4016975d446
                         │      │                  │       9cd6b94927c607f7c511385f928d8 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/52d23c86a54
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/52d23c86a54
                         │      │                  │       adab5ee9f80e48b242b52c4cc2347 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a7589230356
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/a7589230356
                         │      │                  │       d908c0eca4b969ec4f62106f4f5ae 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ed40856d7d4
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ed40856d7d4
                         │      │                  │       ba6cb42779b6770666a65f19cb977 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69418 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69418.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69418 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
                         │      ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:33.253Z 
                         ├ [20] ╭ VulnerabilityID : CVE-2025-69420 
@@ -2980,29 +3340,47 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69420 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/27c7012c91c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69420 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/27c7012c91c
                         │      │                  │       c986a598d7540f3079dfde2416eb9 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/4e254b48ad9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/4e254b48ad9
                         │      │                  │       3cc092be3dd62d97015f33f73133a 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/564fd9c7378
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/564fd9c7378
                         │      │                  │       7f25693bf9e75faf7bf6bb1305d4e 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/5eb0770ffcf
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/5eb0770ffcf
                         │      │                  │       11b785cf374ff3c19196245e54f1b 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a99349ebfc5
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/a99349ebfc5
                         │      │                  │       19999edc50620abe24d599b9eb085 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69420 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69420.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69420 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
-                        │      ╰ LastModifiedDate: 2026-01-27T16:16:34.317Z 
+                        │      ╰ LastModifiedDate: 2026-01-28T20:16:13.857Z 
                         ├ [21] ╭ VulnerabilityID : CVE-2025-69421 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
@@ -3054,27 +3432,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69421 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/3524a29271f
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/3524a29271f
                         │      │                  │       8191b8fd8a5257eb05173982a097b 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/36ecb496087
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/36ecb496087
                         │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/4bbc8d41a72
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/4bbc8d41a72
                         │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/643986985cd
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/643986985cd
                         │      │                  │       1c21221f941129d76fe0c2785aeb3 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a2dbc539f0f
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/a2dbc539f0f
                         │      │                  │       9cc63832709fa5aa33ad9495eb19c 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69421.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:34.437Z 
                         ├ [22] ╭ VulnerabilityID : CVE-2026-22795 
@@ -3138,27 +3534,45 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-22795 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/2502e7b7d4c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-22795 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/2502e7b7d4c
                         │      │                  │       0cf4f972a881641fe09edc67aeec4 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/572844beca9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/572844beca9
                         │      │                  │       5068394c916626a6d3a490f831a49 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7bbca05be55
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/7bbca05be55
                         │      │                  │       b129651d9df4bdb92becc45002c12 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/eeee3cbd4d6
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/eeee3cbd4d6
                         │      │                  │       82095ed431052f00403004596373e 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ef2fb66ec57
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ef2fb66ec57
                         │      │                  │       1564d64d1c74a12e388a2a54d05d2 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-22795 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2026-22795.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2026-22795 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:35.43Z 
                         ├ [23] ╭ VulnerabilityID : CVE-2026-22796 
@@ -3222,27 +3636,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-22796 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/2502e7b7d4c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-22796 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/2502e7b7d4c
                         │      │                  │       0cf4f972a881641fe09edc67aeec4 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/572844beca9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/572844beca9
                         │      │                  │       5068394c916626a6d3a490f831a49 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7bbca05be55
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/7bbca05be55
                         │      │                  │       b129651d9df4bdb92becc45002c12 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/eeee3cbd4d6
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/eeee3cbd4d6
                         │      │                  │       82095ed431052f00403004596373e 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ef2fb66ec57
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ef2fb66ec57
                         │      │                  │       1564d64d1c74a12e388a2a54d05d2 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-22796 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2026-22796.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2026-22796 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
                         │      ╰ LastModifiedDate: 2026-01-27T17:16:12.553Z 
                         ├ [24] ╭ VulnerabilityID : CVE-2025-15467 
@@ -3306,28 +3738,46 @@
                         │      │                   OpenSSL 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : CRITICAL 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 3 
-                        │      │                  ╰ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 3 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 9.8 
                         │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2026/01/27
                         │      │                  │       /10 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15467 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2c8f0e5fa9b
+                        │      │                  ├ [1] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [2] : https://access.redhat.com/security/cve/CVE-2025-15467 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [15]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/2c8f0e5fa9b
                         │      │                  │       6ee5508a0349e4572ddb74db5a703 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/5f26d4202f5
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/5f26d4202f5
                         │      │                  │       b89664c5c3f3c62086276026ba9a9 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/6ced0fe6b10
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/6ced0fe6b10
                         │      │                  │       faa560e410e3ee8d6c82f06c65ea3 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ce39170276d
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ce39170276d
                         │      │                  │       aec87f55c39dad1f629b56344429e 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/d0071a0799f
+                        │      │                  ├ [20]: https://github.com/openssl/openssl/commit/d0071a0799f
                         │      │                  │       20cc8101730145349ed4487c268dc 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2025-15467 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
+                        │      │                  ├ [21]: https://linux.oracle.com/cve/CVE-2025-15467.html 
+                        │      │                  ├ [22]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [23]: https://nvd.nist.gov/vuln/detail/CVE-2025-15467 
+                        │      │                  ├ [24]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
                         │      ╰ LastModifiedDate: 2026-01-27T22:15:51.597Z 
                         ├ [25] ╭ VulnerabilityID : CVE-2025-69419 
@@ -3404,27 +3854,45 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 2 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 7.4 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69419 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/41be0f21640
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69419 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/41be0f21640
                         │      │                  │       4f14457bbf3b9cc488dba60b49296 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/7e9cac9832e
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/7e9cac9832e
                         │      │                  │       4705b91987c2474ed06a37a93cecb 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/a26a90d38ed
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/a26a90d38ed
                         │      │                  │       ec3748566129d824e664b54bee2e2 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/cda12de3bc0
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/cda12de3bc0
                         │      │                  │       e333ea8d2c6fd15001dbdaf280015 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ff628933755
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ff628933755
                         │      │                  │       075446bca8307e8417c14d164b535 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69419 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69419.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69419 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:34.113Z 
                         ├ [26] ╭ VulnerabilityID : CVE-2025-11187 
@@ -3494,22 +3962,40 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ╭ [0]: CWE-476 
                         │      │                  ╰ [1]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 2 
+                        │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:L/I:L
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 6.1 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-11187 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/205e3a55e16e
-                        │      │                  │      4bd08c12fdbd3416ab829c0f6206 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/8caf359d6e46
-                        │      │                  │      fb413e8f5f0df765d2e8a51df4e8 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/e1079bc17ed9
-                        │      │                  │      3ff16f6b86f33a2fe3336e78817e 
-                        │      │                  ├ [4]: https://nvd.nist.gov/vuln/detail/CVE-2025-11187 
-                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-11187 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/205e3a55e16
+                        │      │                  │       e4bd08c12fdbd3416ab829c0f6206 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/8caf359d6e4
+                        │      │                  │       6fb413e8f5f0df765d2e8a51df4e8 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/e1079bc17ed
+                        │      │                  │       93ff16f6b86f33a2fe3336e78817e 
+                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2025-11187.html 
+                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2025-11187 
+                        │      │                  ├ [21]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.093Z 
                         ├ [27] ╭ VulnerabilityID : CVE-2025-15468 
@@ -3565,24 +4051,42 @@
                         │      │                   OpenSSL 3.0, 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-15468 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/1f08e54bad32
-                        │      │                  │      843044fe8a675948d65e3b4ece65 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7c88376731c5
-                        │      │                  │      89ee5b36116c5a6e32d5ae5f7ae2 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/b25396394002
-                        │      │                  │      88a4580fe2d76247541b976bade4 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d75b30987963
-                        │      │                  │      1d45b972396ce4e5102559c64ac7 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-15468 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15468 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/1f08e54bad3
+                        │      │                  │       2843044fe8a675948d65e3b4ece65 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/7c88376731c
+                        │      │                  │       589ee5b36116c5a6e32d5ae5f7ae2 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/b2539639400
+                        │      │                  │       288a4580fe2d76247541b976bade4 
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/d75b3098796
+                        │      │                  │       31d45b972396ce4e5102559c64ac7 
+                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-15468.html 
+                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-15468 
+                        │      │                  ├ [22]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.4Z 
                         ├ [28] ╭ VulnerabilityID : CVE-2025-15469 
@@ -3650,20 +4154,38 @@
                         │      │                   this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-347 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.5 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-15469 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/310f305eb92e
-                        │      │                  │      a8040d6b3cb75a5feeba8e6acf2f 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/a7936fa4bd23
-                        │      │                  │      c906e1955a16a0a0ab39a4953a61 
-                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2025-15469 
-                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-15469 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/310f305eb92
+                        │      │                  │       ea8040d6b3cb75a5feeba8e6acf2f 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/a7936fa4bd2
+                        │      │                  │       3c906e1955a16a0a0ab39a4953a61 
+                        │      │                  ├ [17]: https://linux.oracle.com/cve/CVE-2025-15469.html 
+                        │      │                  ├ [18]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [19]: https://nvd.nist.gov/vuln/detail/CVE-2025-15469 
+                        │      │                  ├ [20]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [21]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [22]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:14.523Z 
                         ├ [29] ╭ VulnerabilityID : CVE-2025-66199 
@@ -3734,24 +4256,42 @@
                         │      │                   OpenSSL 3.0, 1.1.1 and 1.0.2 are not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-789 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2025-66199 
-                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3ed1f7524993
-                        │      │                  │      2b155eef993a8e66a99cb98bfef4 
-                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/6184a4fb08ee
-                        │      │                  │      6d7bca570d931a4e8bef40b64451 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/895150b5e021
-                        │      │                  │      d16b52fb32b97e1dd12f20448be5 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/966a2478046c
-                        │      │                  │      311ed7dae50c457d0db4cafbf7e4 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2025-66199 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-66199 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/3ed1f752499
+                        │      │                  │       32b155eef993a8e66a99cb98bfef4 
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/6184a4fb08e
+                        │      │                  │       e6d7bca570d931a4e8bef40b64451 
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/895150b5e02
+                        │      │                  │       1d16b52fb32b97e1dd12f20448be5 
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/966a2478046
+                        │      │                  │       c311ed7dae50c457d0db4cafbf7e4 
+                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2025-66199.html 
+                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2025-66199 
+                        │      │                  ├ [22]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:15.777Z 
                         ├ [30] ╭ VulnerabilityID : CVE-2025-68160 
@@ -3810,27 +4350,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 4.7 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-68160 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/384011202af
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-68160 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/384011202af
                         │      │                  │       92605d926fafe4a0bcd6b65d162ad 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/475c466ef2f
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/475c466ef2f
                         │      │                  │       bd8fc1df6fae1c3eed9c813fc8ff6 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/4c96fbba618
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/4c96fbba618
                         │      │                  │       e1940f038012506ee9e21d32ee12c 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/6845c3b6460
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/6845c3b6460
                         │      │                  │       a98b1ec4e463baa2ea1a63a32d7c0 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/68a7cd2e281
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/68a7cd2e281
                         │      │                  │       6c3a02f4d45a2ce43fc04fac97096 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-68160 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-68160.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-68160 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:15.9Z 
                         ├ [31] ╭ VulnerabilityID : CVE-2025-69418 
@@ -3889,27 +4447,45 @@
                         │      │                   affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-325 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:L/I:L
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 4 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69418 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/372fc5c7752
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69418 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/372fc5c7752
                         │      │                  │       9695b05b4f5b5187691a57ef5dffc 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/4016975d446
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/4016975d446
                         │      │                  │       9cd6b94927c607f7c511385f928d8 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/52d23c86a54
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/52d23c86a54
                         │      │                  │       adab5ee9f80e48b242b52c4cc2347 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a7589230356
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/a7589230356
                         │      │                  │       d908c0eca4b969ec4f62106f4f5ae 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ed40856d7d4
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ed40856d7d4
                         │      │                  │       ba6cb42779b6770666a65f19cb977 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69418 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69418.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69418 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
                         │      ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:33.253Z 
                         ├ [32] ╭ VulnerabilityID : CVE-2025-69420 
@@ -3973,29 +4549,47 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69420 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/27c7012c91c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69420 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/27c7012c91c
                         │      │                  │       c986a598d7540f3079dfde2416eb9 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/4e254b48ad9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/4e254b48ad9
                         │      │                  │       3cc092be3dd62d97015f33f73133a 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/564fd9c7378
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/564fd9c7378
                         │      │                  │       7f25693bf9e75faf7bf6bb1305d4e 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/5eb0770ffcf
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/5eb0770ffcf
                         │      │                  │       11b785cf374ff3c19196245e54f1b 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a99349ebfc5
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/a99349ebfc5
                         │      │                  │       19999edc50620abe24d599b9eb085 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69420 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69420.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69420 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
-                        │      ╰ LastModifiedDate: 2026-01-27T16:16:34.317Z 
+                        │      ╰ LastModifiedDate: 2026-01-28T20:16:13.857Z 
                         ├ [33] ╭ VulnerabilityID : CVE-2025-69421 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
@@ -4047,27 +4641,45 @@
                         │      │                   vulnerable to this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2025-69421 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/3524a29271f
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/3524a29271f
                         │      │                  │       8191b8fd8a5257eb05173982a097b 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/36ecb496087
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/36ecb496087
                         │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/4bbc8d41a72
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/4bbc8d41a72
                         │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/643986985cd
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/643986985cd
                         │      │                  │       1c21221f941129d76fe0c2785aeb3 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a2dbc539f0f
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/a2dbc539f0f
                         │      │                  │       9cc63832709fa5aa33ad9495eb19c 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2025-69421.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:34.437Z 
                         ├ [34] ╭ VulnerabilityID : CVE-2026-22795 
@@ -4131,27 +4743,45 @@
                         │      │                   OpenSSL 1.0.2 is not affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 1 
-                        │      │                  ╰ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ╰ ubuntu     : 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:N/I:N
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-22795 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/2502e7b7d4c
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-22795 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [15]: https://github.com/openssl/openssl/commit/2502e7b7d4c
                         │      │                  │       0cf4f972a881641fe09edc67aeec4 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/572844beca9
+                        │      │                  ├ [16]: https://github.com/openssl/openssl/commit/572844beca9
                         │      │                  │       5068394c916626a6d3a490f831a49 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7bbca05be55
+                        │      │                  ├ [17]: https://github.com/openssl/openssl/commit/7bbca05be55
                         │      │                  │       b129651d9df4bdb92becc45002c12 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/eeee3cbd4d6
+                        │      │                  ├ [18]: https://github.com/openssl/openssl/commit/eeee3cbd4d6
                         │      │                  │       82095ed431052f00403004596373e 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ef2fb66ec57
+                        │      │                  ├ [19]: https://github.com/openssl/openssl/commit/ef2fb66ec57
                         │      │                  │       1564d64d1c74a12e388a2a54d05d2 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-22795 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
+                        │      │                  ├ [20]: https://linux.oracle.com/cve/CVE-2026-22795.html 
+                        │      │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                        │      │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2026-22795 
+                        │      │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
                         │      ╰ LastModifiedDate: 2026-01-27T16:16:35.43Z 
                         ╰ [35] ╭ VulnerabilityID : CVE-2026-22796 
@@ -4215,27 +4845,45 @@
                                │                   vulnerable to this issue. 
                                ├ Severity        : MEDIUM 
                                ├ CweIDs           ─ [0]: CWE-754 
-                               ├ VendorSeverity   ╭ redhat: 1 
-                               │                  ╰ ubuntu: 1 
+                               ├ VendorSeverity   ╭ alma       : 3 
+                               │                  ├ oracle-oval: 3 
+                               │                  ├ redhat     : 1 
+                               │                  ╰ ubuntu     : 1 
                                ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
                                │                           │           /A:H 
                                │                           ╰ V3Score : 5.9 
-                               ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-22796 
-                               │                  ├ [1] : https://github.com/openssl/openssl/commit/2502e7b7d4c
+                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                               │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-22796 
+                               │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                               │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                               │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                               │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                               │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                               │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                               │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                               │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                               │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                               │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                               │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                               │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                               │                  ├ [14]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                               │                  ├ [15]: https://github.com/openssl/openssl/commit/2502e7b7d4c
                                │                  │       0cf4f972a881641fe09edc67aeec4 
-                               │                  ├ [2] : https://github.com/openssl/openssl/commit/572844beca9
+                               │                  ├ [16]: https://github.com/openssl/openssl/commit/572844beca9
                                │                  │       5068394c916626a6d3a490f831a49 
-                               │                  ├ [3] : https://github.com/openssl/openssl/commit/7bbca05be55
+                               │                  ├ [17]: https://github.com/openssl/openssl/commit/7bbca05be55
                                │                  │       b129651d9df4bdb92becc45002c12 
-                               │                  ├ [4] : https://github.com/openssl/openssl/commit/eeee3cbd4d6
+                               │                  ├ [18]: https://github.com/openssl/openssl/commit/eeee3cbd4d6
                                │                  │       82095ed431052f00403004596373e 
-                               │                  ├ [5] : https://github.com/openssl/openssl/commit/ef2fb66ec57
+                               │                  ├ [19]: https://github.com/openssl/openssl/commit/ef2fb66ec57
                                │                  │       1564d64d1c74a12e388a2a54d05d2 
-                               │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-22796 
-                               │                  ├ [7] : https://openssl-library.org/news/secadv/20260127.txt 
-                               │                  ├ [8] : https://ubuntu.com/security/notices/USN-7980-1 
-                               │                  ├ [9] : https://ubuntu.com/security/notices/USN-7980-2 
-                               │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
+                               │                  ├ [20]: https://linux.oracle.com/cve/CVE-2026-22796.html 
+                               │                  ├ [21]: https://linux.oracle.com/errata/ELSA-2026-1473.html 
+                               │                  ├ [22]: https://nvd.nist.gov/vuln/detail/CVE-2026-22796 
+                               │                  ├ [23]: https://openssl-library.org/news/secadv/20260127.txt 
+                               │                  ├ [24]: https://ubuntu.com/security/notices/USN-7980-1 
+                               │                  ├ [25]: https://ubuntu.com/security/notices/USN-7980-2 
+                               │                  ╰ [26]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
                                ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
                                ╰ LastModifiedDate: 2026-01-27T17:16:12.553Z 
 ````
