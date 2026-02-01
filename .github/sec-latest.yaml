@@ -1581,7 +1581,7 @@
     - https://github.com/openssl/openssl/commit/ce39170276daec87f55c39dad1f629b56344429e
     - https://github.com/openssl/openssl/commit/d0071a0799f20cc8101730145349ed4487c268dc
     - https://linux.oracle.com/cve/CVE-2025-15467.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15467
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -1675,7 +1675,7 @@
     - https://github.com/openssl/openssl/commit/cda12de3bc0e333ea8d2c6fd15001dbdaf280015
     - https://github.com/openssl/openssl/commit/ff628933755075446bca8307e8417c14d164b535
     - https://linux.oracle.com/cve/CVE-2025-69419.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69419
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -1766,7 +1766,7 @@
     - https://github.com/openssl/openssl/commit/8caf359d6e46fb413e8f5f0df765d2e8a51df4e8
     - https://github.com/openssl/openssl/commit/e1079bc17ed93ff16f6b86f33a2fe3336e78817e
     - https://linux.oracle.com/cve/CVE-2025-11187.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-11187
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -1851,7 +1851,7 @@
     - https://github.com/openssl/openssl/commit/b2539639400288a4580fe2d76247541b976bade4
     - https://github.com/openssl/openssl/commit/d75b309879631d45b972396ce4e5102559c64ac7
     - https://linux.oracle.com/cve/CVE-2025-15468.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15468
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -1937,7 +1937,7 @@
     - https://github.com/openssl/openssl/commit/310f305eb92ea8040d6b3cb75a5feeba8e6acf2f
     - https://github.com/openssl/openssl/commit/a7936fa4bd23c906e1955a16a0a0ab39a4953a61
     - https://linux.oracle.com/cve/CVE-2025-15469.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15469
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2029,7 +2029,7 @@
     - https://github.com/openssl/openssl/commit/895150b5e021d16b52fb32b97e1dd12f20448be5
     - https://github.com/openssl/openssl/commit/966a2478046c311ed7dae50c457d0db4cafbf7e4
     - https://linux.oracle.com/cve/CVE-2025-66199.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-66199
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2111,7 +2111,7 @@
     - https://github.com/openssl/openssl/commit/6845c3b6460a98b1ec4e463baa2ea1a63a32d7c0
     - https://github.com/openssl/openssl/commit/68a7cd2e2816c3a02f4d45a2ce43fc04fac97096
     - https://linux.oracle.com/cve/CVE-2025-68160.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68160
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2173,7 +2173,7 @@
     - https://github.com/openssl/openssl/commit/a7589230356d908c0eca4b969ec4f62106f4f5ae
     - https://github.com/openssl/openssl/commit/ed40856d7d4ba6cb42779b6770666a65f19cb977
     - https://linux.oracle.com/cve/CVE-2025-69418.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69418
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2262,7 +2262,7 @@
     - https://github.com/openssl/openssl/commit/5eb0770ffcf11b785cf374ff3c19196245e54f1b
     - https://github.com/openssl/openssl/commit/a99349ebfc519999edc50620abe24d599b9eb085
     - https://linux.oracle.com/cve/CVE-2025-69420.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69420
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2344,7 +2344,7 @@
     - https://github.com/openssl/openssl/commit/643986985cd1c21221f941129d76fe0c2785aeb3
     - https://github.com/openssl/openssl/commit/a2dbc539f0f9cc63832709fa5aa33ad9495eb19c
     - https://linux.oracle.com/cve/CVE-2025-69421.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69421
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2433,7 +2433,7 @@
     - https://github.com/openssl/openssl/commit/eeee3cbd4d682095ed431052f00403004596373e
     - https://github.com/openssl/openssl/commit/ef2fb66ec571564d64d1c74a12e388a2a54d05d2
     - https://linux.oracle.com/cve/CVE-2026-22795.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22795
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2521,7 +2521,7 @@
     - https://github.com/openssl/openssl/commit/eeee3cbd4d682095ed431052f00403004596373e
     - https://github.com/openssl/openssl/commit/ef2fb66ec571564d64d1c74a12e388a2a54d05d2
     - https://linux.oracle.com/cve/CVE-2026-22796.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22796
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2611,7 +2611,7 @@
     - https://github.com/openssl/openssl/commit/ce39170276daec87f55c39dad1f629b56344429e
     - https://github.com/openssl/openssl/commit/d0071a0799f20cc8101730145349ed4487c268dc
     - https://linux.oracle.com/cve/CVE-2025-15467.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15467
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2705,7 +2705,7 @@
     - https://github.com/openssl/openssl/commit/cda12de3bc0e333ea8d2c6fd15001dbdaf280015
     - https://github.com/openssl/openssl/commit/ff628933755075446bca8307e8417c14d164b535
     - https://linux.oracle.com/cve/CVE-2025-69419.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69419
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2796,7 +2796,7 @@
     - https://github.com/openssl/openssl/commit/8caf359d6e46fb413e8f5f0df765d2e8a51df4e8
     - https://github.com/openssl/openssl/commit/e1079bc17ed93ff16f6b86f33a2fe3336e78817e
     - https://linux.oracle.com/cve/CVE-2025-11187.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-11187
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2881,7 +2881,7 @@
     - https://github.com/openssl/openssl/commit/b2539639400288a4580fe2d76247541b976bade4
     - https://github.com/openssl/openssl/commit/d75b309879631d45b972396ce4e5102559c64ac7
     - https://linux.oracle.com/cve/CVE-2025-15468.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15468
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -2967,7 +2967,7 @@
     - https://github.com/openssl/openssl/commit/310f305eb92ea8040d6b3cb75a5feeba8e6acf2f
     - https://github.com/openssl/openssl/commit/a7936fa4bd23c906e1955a16a0a0ab39a4953a61
     - https://linux.oracle.com/cve/CVE-2025-15469.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15469
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3059,7 +3059,7 @@
     - https://github.com/openssl/openssl/commit/895150b5e021d16b52fb32b97e1dd12f20448be5
     - https://github.com/openssl/openssl/commit/966a2478046c311ed7dae50c457d0db4cafbf7e4
     - https://linux.oracle.com/cve/CVE-2025-66199.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-66199
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3141,7 +3141,7 @@
     - https://github.com/openssl/openssl/commit/6845c3b6460a98b1ec4e463baa2ea1a63a32d7c0
     - https://github.com/openssl/openssl/commit/68a7cd2e2816c3a02f4d45a2ce43fc04fac97096
     - https://linux.oracle.com/cve/CVE-2025-68160.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68160
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3203,7 +3203,7 @@
     - https://github.com/openssl/openssl/commit/a7589230356d908c0eca4b969ec4f62106f4f5ae
     - https://github.com/openssl/openssl/commit/ed40856d7d4ba6cb42779b6770666a65f19cb977
     - https://linux.oracle.com/cve/CVE-2025-69418.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69418
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3292,7 +3292,7 @@
     - https://github.com/openssl/openssl/commit/5eb0770ffcf11b785cf374ff3c19196245e54f1b
     - https://github.com/openssl/openssl/commit/a99349ebfc519999edc50620abe24d599b9eb085
     - https://linux.oracle.com/cve/CVE-2025-69420.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69420
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3374,7 +3374,7 @@
     - https://github.com/openssl/openssl/commit/643986985cd1c21221f941129d76fe0c2785aeb3
     - https://github.com/openssl/openssl/commit/a2dbc539f0f9cc63832709fa5aa33ad9495eb19c
     - https://linux.oracle.com/cve/CVE-2025-69421.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69421
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3463,7 +3463,7 @@
     - https://github.com/openssl/openssl/commit/eeee3cbd4d682095ed431052f00403004596373e
     - https://github.com/openssl/openssl/commit/ef2fb66ec571564d64d1c74a12e388a2a54d05d2
     - https://linux.oracle.com/cve/CVE-2026-22795.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22795
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3551,7 +3551,7 @@
     - https://github.com/openssl/openssl/commit/eeee3cbd4d682095ed431052f00403004596373e
     - https://github.com/openssl/openssl/commit/ef2fb66ec571564d64d1c74a12e388a2a54d05d2
     - https://linux.oracle.com/cve/CVE-2026-22796.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22796
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3641,7 +3641,7 @@
     - https://github.com/openssl/openssl/commit/ce39170276daec87f55c39dad1f629b56344429e
     - https://github.com/openssl/openssl/commit/d0071a0799f20cc8101730145349ed4487c268dc
     - https://linux.oracle.com/cve/CVE-2025-15467.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15467
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3735,7 +3735,7 @@
     - https://github.com/openssl/openssl/commit/cda12de3bc0e333ea8d2c6fd15001dbdaf280015
     - https://github.com/openssl/openssl/commit/ff628933755075446bca8307e8417c14d164b535
     - https://linux.oracle.com/cve/CVE-2025-69419.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69419
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3826,7 +3826,7 @@
     - https://github.com/openssl/openssl/commit/8caf359d6e46fb413e8f5f0df765d2e8a51df4e8
     - https://github.com/openssl/openssl/commit/e1079bc17ed93ff16f6b86f33a2fe3336e78817e
     - https://linux.oracle.com/cve/CVE-2025-11187.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-11187
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3911,7 +3911,7 @@
     - https://github.com/openssl/openssl/commit/b2539639400288a4580fe2d76247541b976bade4
     - https://github.com/openssl/openssl/commit/d75b309879631d45b972396ce4e5102559c64ac7
     - https://linux.oracle.com/cve/CVE-2025-15468.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15468
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -3997,7 +3997,7 @@
     - https://github.com/openssl/openssl/commit/310f305eb92ea8040d6b3cb75a5feeba8e6acf2f
     - https://github.com/openssl/openssl/commit/a7936fa4bd23c906e1955a16a0a0ab39a4953a61
     - https://linux.oracle.com/cve/CVE-2025-15469.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-15469
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4089,7 +4089,7 @@
     - https://github.com/openssl/openssl/commit/895150b5e021d16b52fb32b97e1dd12f20448be5
     - https://github.com/openssl/openssl/commit/966a2478046c311ed7dae50c457d0db4cafbf7e4
     - https://linux.oracle.com/cve/CVE-2025-66199.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-66199
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4171,7 +4171,7 @@
     - https://github.com/openssl/openssl/commit/6845c3b6460a98b1ec4e463baa2ea1a63a32d7c0
     - https://github.com/openssl/openssl/commit/68a7cd2e2816c3a02f4d45a2ce43fc04fac97096
     - https://linux.oracle.com/cve/CVE-2025-68160.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-68160
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4233,7 +4233,7 @@
     - https://github.com/openssl/openssl/commit/a7589230356d908c0eca4b969ec4f62106f4f5ae
     - https://github.com/openssl/openssl/commit/ed40856d7d4ba6cb42779b6770666a65f19cb977
     - https://linux.oracle.com/cve/CVE-2025-69418.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69418
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4322,7 +4322,7 @@
     - https://github.com/openssl/openssl/commit/5eb0770ffcf11b785cf374ff3c19196245e54f1b
     - https://github.com/openssl/openssl/commit/a99349ebfc519999edc50620abe24d599b9eb085
     - https://linux.oracle.com/cve/CVE-2025-69420.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69420
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4404,7 +4404,7 @@
     - https://github.com/openssl/openssl/commit/643986985cd1c21221f941129d76fe0c2785aeb3
     - https://github.com/openssl/openssl/commit/a2dbc539f0f9cc63832709fa5aa33ad9495eb19c
     - https://linux.oracle.com/cve/CVE-2025-69421.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2025-69421
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4493,7 +4493,7 @@
     - https://github.com/openssl/openssl/commit/eeee3cbd4d682095ed431052f00403004596373e
     - https://github.com/openssl/openssl/commit/ef2fb66ec571564d64d1c74a12e388a2a54d05d2
     - https://linux.oracle.com/cve/CVE-2026-22795.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22795
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4581,7 +4581,7 @@
     - https://github.com/openssl/openssl/commit/eeee3cbd4d682095ed431052f00403004596373e
     - https://github.com/openssl/openssl/commit/ef2fb66ec571564d64d1c74a12e388a2a54d05d2
     - https://linux.oracle.com/cve/CVE-2026-22796.html
-    - https://linux.oracle.com/errata/ELSA-2026-50075.html
+    - https://linux.oracle.com/errata/ELSA-2026-50081.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-22796
     - https://openssl-library.org/news/secadv/20260127.txt
     - https://ubuntu.com/security/notices/USN-7980-1
@@ -4601,6 +4601,7 @@
     Layer:
       Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63af6c852fe13918d2af
       DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96ec733cdbfbc364e07d4
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-13086
     DataSource:
       ID: alpine
@@ -4609,14 +4610,18 @@
     Fingerprint: sha256:d9a0ac835e06a594cdbb88eb6621250c10d7e0a85dd8159ae4298f8604d0f634
     Title: 'OpenVPN: OpenVPN: Improper validation of source IP addresses leads to denial of service'
     Description: Improper validation of source IP addresses in OpenVPN version 2.6.0 through 2.6.15 and 2.7_alpha1 through 2.7_rc1 allows an attacker to open a session from a different IP address which did not initiate the connection resulting in a denial of service for the originating client
-    Severity: MEDIUM
+    Severity: HIGH
     CweIDs:
     - CWE-940
     VendorSeverity:
       amazon: 3
+      nvd: 3
       redhat: 2
       ubuntu: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
         V3Score: 6.5
@@ -4629,7 +4634,7 @@
     - https://www.mail-archive.com/openvpn-announce@lists.sourceforge.net/msg00151.html
     - https://www.mail-archive.com/openvpn-announce@lists.sourceforge.net/msg00152.html
     PublishedDate: '2025-12-03T20:16:24.353Z'
-    LastModifiedDate: '2025-12-12T14:15:50.463Z'
+    LastModifiedDate: '2026-01-30T18:38:13.833Z'
   - VulnerabilityID: CVE-2025-13086
     PkgID: openvpn-auth-pam@2.6.14-r0
     PkgName: openvpn-auth-pam
@@ -4642,6 +4647,7 @@
     Layer:
       Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e63af6c852fe13918d2af
       DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c96ec733cdbfbc364e07d4
+    SeveritySource: nvd
     PrimaryURL: https://avd.aquasec.com/nvd/cve-2025-13086
     DataSource:
       ID: alpine
@@ -4650,14 +4656,18 @@
     Fingerprint: sha256:fe1b09e209691c5ff6dfc884c375c34b86b5b0eed84baa2ddb18a3aee4a9ad22
     Title: 'OpenVPN: OpenVPN: Improper validation of source IP addresses leads to denial of service'
     Description: Improper validation of source IP addresses in OpenVPN version 2.6.0 through 2.6.15 and 2.7_alpha1 through 2.7_rc1 allows an attacker to open a session from a different IP address which did not initiate the connection resulting in a denial of service for the originating client
-    Severity: MEDIUM
+    Severity: HIGH
     CweIDs:
     - CWE-940
     VendorSeverity:
       amazon: 3
+      nvd: 3
       redhat: 2
       ubuntu: 2
     CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N/A:H
         V3Score: 6.5
@@ -4670,7 +4680,7 @@
     - https://www.mail-archive.com/openvpn-announce@lists.sourceforge.net/msg00151.html
     - https://www.mail-archive.com/openvpn-announce@lists.sourceforge.net/msg00152.html
     PublishedDate: '2025-12-03T20:16:24.353Z'
-    LastModifiedDate: '2025-12-12T14:15:50.463Z'
+    LastModifiedDate: '2026-01-30T18:38:13.833Z'
   - VulnerabilityID: CVE-2024-58251
     PkgID: ssl_client@1.37.0-r19
     PkgName: ssl_client
