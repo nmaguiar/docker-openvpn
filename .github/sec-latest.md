@@ -1523,6 +1523,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 3 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 2 
@@ -1600,7 +1601,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:38:55.073Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2025-69419 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -1677,6 +1678,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -1753,8 +1755,144 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2025-11187 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:35:02.177Z 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2025-69421 
+                        │      ├ PkgID           : libcrypto3@3.5.4-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
+                        │      │                  │       =3.22.2 
+                        │      │                  ╰ UID : 840982ac37c554b0 
+                        │      ├ InstalledVersion: 3.5.4-r0 
+                        │      ├ FixedVersion    : 3.5.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc
+                        │      │                  │         32db163c98822e5dfa1b 
+                        │      │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a
+                        │      │                            2bc3e313ad12f8bde9d1 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-69421 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:34b47c9dade67b18c0eb61a4d8e05c8c44f7b2d4532583992e5bd
+                        │      │                   6e9edb18e08 
+                        │      ├ Title           : openssl: OpenSSL: Denial of Service via malformed PKCS#12
+                        │      │                   file processing 
+                        │      ├ Description     : Issue summary: Processing a malformed PKCS#12 file can
+                        │      │                   trigger a NULL pointer
+                        │      │                   dereference in the PKCS12_item_decrypt_d2i_ex() function.
+                        │      │                   
+                        │      │                   Impact summary: A NULL pointer dereference can trigger a
+                        │      │                   crash which leads to
+                        │      │                   Denial of Service for an application processing PKCS#12
+                        │      │                   files.
+                        │      │                   The PKCS12_item_decrypt_d2i_ex() function does not check
+                        │      │                   whether the oct
+                        │      │                   parameter is NULL before dereferencing it. When called from
+                        │      │                   PKCS12_unpack_p7encdata() with a malformed PKCS#12 file,
+                        │      │                   this parameter can
+                        │      │                   be NULL, causing a crash. The vulnerability is limited to
+                        │      │                   Denial of Service
+                        │      │                   and cannot be escalated to achieve code execution or memory
+                        │      │                   disclosure.
+                        │      │                   Exploiting this issue requires an attacker to provide a
+                        │      │                   malformed PKCS#12 file
+                        │      │                   to an application that processes it. For that reason the
+                        │      │                   issue was assessed as
+                        │      │                   Low severity according to our Security Policy.
+                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
+                        │      │                   affected by this issue,
+                        │      │                   as the PKCS#12 implementation is outside the OpenSSL FIPS
+                        │      │                   module boundary.
+                        │      │                   OpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are
+                        │      │                   vulnerable to this issue. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ nvd        : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ├ rocky      : 3 
+                        │      │                  ╰ ubuntu     : 1 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 6.5 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2430375 
+                        │      │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2430376 
+                        │      │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2430377 
+                        │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2430378 
+                        │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2430379 
+                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2430380 
+                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2430381 
+                        │      │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2430386 
+                        │      │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2430387 
+                        │      │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2430388 
+                        │      │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2430389 
+                        │      │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2430390 
+                        │      │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-11187 
+                        │      │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15467 
+                        │      │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15468 
+                        │      │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15469 
+                        │      │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-66199 
+                        │      │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-68160 
+                        │      │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69418 
+                        │      │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69419 
+                        │      │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69420 
+                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69421 
+                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-22795 
+                        │      │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-22796 
+                        │      │                  ├ [38]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+                        │      │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271f
+                        │      │                  │       8191b8fd8a5257eb05173982a097b 
+                        │      │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb496087
+                        │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
+                        │      │                  ├ [42]: https://github.com/openssl/openssl/commit/4bbc8d41a72
+                        │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
+                        │      │                  ├ [43]: https://github.com/openssl/openssl/commit/643986985cd
+                        │      │                  │       1c21221f941129d76fe0c2785aeb3 
+                        │      │                  ├ [44]: https://github.com/openssl/openssl/commit/a2dbc539f0f
+                        │      │                  │       9cc63832709fa5aa33ad9495eb19c 
+                        │      │                  ├ [45]: https://linux.oracle.com/cve/CVE-2025-69421.html 
+                        │      │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-50081.html 
+                        │      │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
+                        │      │                  ├ [48]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [49]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
+                        │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:29:59.693Z 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2025-11187 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
@@ -1894,8 +2032,8 @@
                         │      │                  ├ [47]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [48]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2025-15468 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:39:21.74Z 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2025-15468 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
@@ -1950,6 +2088,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -2023,8 +2162,8 @@
                         │      │                  ├ [48]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2025-15469 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:38:00.947Z 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2025-15469 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
@@ -2091,6 +2230,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-347 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -2160,8 +2300,8 @@
                         │      │                  ├ [46]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [47]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2025-66199 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:37:39.313Z 
+                        ├ [10] ╭ VulnerabilityID : CVE-2025-66199 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
@@ -2231,6 +2371,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-789 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -2304,8 +2445,8 @@
                         │      │                  ├ [48]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [10] ╭ VulnerabilityID : CVE-2025-68160 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:37:19.613Z 
+                        ├ [11] ╭ VulnerabilityID : CVE-2025-68160 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
@@ -2363,6 +2504,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -2439,8 +2581,8 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [11] ╭ VulnerabilityID : CVE-2025-69418 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:36:57.727Z 
+                        ├ [12] ╭ VulnerabilityID : CVE-2025-69418 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
@@ -2498,6 +2640,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -2574,8 +2717,8 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
                         │      ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [12] ╭ VulnerabilityID : CVE-2025-69420 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:36:03.557Z 
+                        ├ [13] ╭ VulnerabilityID : CVE-2025-69420 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
@@ -2638,6 +2781,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -2714,137 +2858,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [13] ╭ VulnerabilityID : CVE-2025-69421 
-                        │      ├ PkgID           : libcrypto3@3.5.4-r0 
-                        │      ├ PkgName         : libcrypto3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.4-r0?arch=x86_64&distro
-                        │      │                  │       =3.22.2 
-                        │      │                  ╰ UID : 840982ac37c554b0 
-                        │      ├ InstalledVersion: 3.5.4-r0 
-                        │      ├ FixedVersion    : 3.5.5-r0 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc
-                        │      │                  │         32db163c98822e5dfa1b 
-                        │      │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a
-                        │      │                            2bc3e313ad12f8bde9d1 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-69421 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:34b47c9dade67b18c0eb61a4d8e05c8c44f7b2d4532583992e5bd
-                        │      │                   6e9edb18e08 
-                        │      ├ Title           : openssl: OpenSSL: Denial of Service via malformed PKCS#12
-                        │      │                   file processing 
-                        │      ├ Description     : Issue summary: Processing a malformed PKCS#12 file can
-                        │      │                   trigger a NULL pointer
-                        │      │                   dereference in the PKCS12_item_decrypt_d2i_ex() function.
-                        │      │                   
-                        │      │                   Impact summary: A NULL pointer dereference can trigger a
-                        │      │                   crash which leads to
-                        │      │                   Denial of Service for an application processing PKCS#12
-                        │      │                   files.
-                        │      │                   The PKCS12_item_decrypt_d2i_ex() function does not check
-                        │      │                   whether the oct
-                        │      │                   parameter is NULL before dereferencing it. When called from
-                        │      │                   PKCS12_unpack_p7encdata() with a malformed PKCS#12 file,
-                        │      │                   this parameter can
-                        │      │                   be NULL, causing a crash. The vulnerability is limited to
-                        │      │                   Denial of Service
-                        │      │                   and cannot be escalated to achieve code execution or memory
-                        │      │                   disclosure.
-                        │      │                   Exploiting this issue requires an attacker to provide a
-                        │      │                   malformed PKCS#12 file
-                        │      │                   to an application that processes it. For that reason the
-                        │      │                   issue was assessed as
-                        │      │                   Low severity according to our Security Policy.
-                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-                        │      │                   affected by this issue,
-                        │      │                   as the PKCS#12 implementation is outside the OpenSSL FIPS
-                        │      │                   module boundary.
-                        │      │                   OpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are
-                        │      │                   vulnerable to this issue. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ alma       : 3 
-                        │      │                  ├ oracle-oval: 3 
-                        │      │                  ├ redhat     : 1 
-                        │      │                  ├ rocky      : 3 
-                        │      │                  ╰ ubuntu     : 1 
-                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
-                        │      │                           │           /A:H 
-                        │      │                           ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
-                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
-                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
-                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
-                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
-                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
-                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
-                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
-                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
-                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
-                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
-                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2430375 
-                        │      │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2430376 
-                        │      │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2430377 
-                        │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2430378 
-                        │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2430379 
-                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2430380 
-                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2430381 
-                        │      │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2430386 
-                        │      │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2430387 
-                        │      │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2430388 
-                        │      │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2430389 
-                        │      │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2430390 
-                        │      │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-11187 
-                        │      │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15467 
-                        │      │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15468 
-                        │      │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15469 
-                        │      │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-66199 
-                        │      │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-68160 
-                        │      │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69418 
-                        │      │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69419 
-                        │      │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69420 
-                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69421 
-                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-22795 
-                        │      │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-22796 
-                        │      │                  ├ [38]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
-                        │      │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
-                        │      │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271f
-                        │      │                  │       8191b8fd8a5257eb05173982a097b 
-                        │      │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb496087
-                        │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
-                        │      │                  ├ [42]: https://github.com/openssl/openssl/commit/4bbc8d41a72
-                        │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
-                        │      │                  ├ [43]: https://github.com/openssl/openssl/commit/643986985cd
-                        │      │                  │       1c21221f941129d76fe0c2785aeb3 
-                        │      │                  ├ [44]: https://github.com/openssl/openssl/commit/a2dbc539f0f
-                        │      │                  │       9cc63832709fa5aa33ad9495eb19c 
-                        │      │                  ├ [45]: https://linux.oracle.com/cve/CVE-2025-69421.html 
-                        │      │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-50081.html 
-                        │      │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
-                        │      │                  ├ [48]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [49]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
-                        │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:33:30.557Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2026-22795 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -2908,6 +2922,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -2984,7 +2999,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T19:16:19.67Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:41:14.917Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-22796 
                         │      ├ PkgID           : libcrypto3@3.5.4-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -3048,6 +3063,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -3124,7 +3140,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:40:27.467Z 
                         ├ [16] ╭ VulnerabilityID : CVE-2025-15467 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
@@ -3188,6 +3204,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 3 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 2 
@@ -3265,7 +3282,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:38:55.073Z 
                         ├ [17] ╭ VulnerabilityID : CVE-2025-69419 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
@@ -3342,6 +3359,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -3418,8 +3436,144 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [18] ╭ VulnerabilityID : CVE-2025-11187 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:35:02.177Z 
+                        ├ [18] ╭ VulnerabilityID : CVE-2025-69421 
+                        │      ├ PkgID           : libssl3@3.5.4-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
+                        │      │                  │       22.2 
+                        │      │                  ╰ UID : 1f3c38893849c206 
+                        │      ├ InstalledVersion: 3.5.4-r0 
+                        │      ├ FixedVersion    : 3.5.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc
+                        │      │                  │         32db163c98822e5dfa1b 
+                        │      │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a
+                        │      │                            2bc3e313ad12f8bde9d1 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-69421 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:e755607d94a5f5ad10b41239712488c75da5d5f89aa7cfbd9898d
+                        │      │                   907c331c45f 
+                        │      ├ Title           : openssl: OpenSSL: Denial of Service via malformed PKCS#12
+                        │      │                   file processing 
+                        │      ├ Description     : Issue summary: Processing a malformed PKCS#12 file can
+                        │      │                   trigger a NULL pointer
+                        │      │                   dereference in the PKCS12_item_decrypt_d2i_ex() function.
+                        │      │                   
+                        │      │                   Impact summary: A NULL pointer dereference can trigger a
+                        │      │                   crash which leads to
+                        │      │                   Denial of Service for an application processing PKCS#12
+                        │      │                   files.
+                        │      │                   The PKCS12_item_decrypt_d2i_ex() function does not check
+                        │      │                   whether the oct
+                        │      │                   parameter is NULL before dereferencing it. When called from
+                        │      │                   PKCS12_unpack_p7encdata() with a malformed PKCS#12 file,
+                        │      │                   this parameter can
+                        │      │                   be NULL, causing a crash. The vulnerability is limited to
+                        │      │                   Denial of Service
+                        │      │                   and cannot be escalated to achieve code execution or memory
+                        │      │                   disclosure.
+                        │      │                   Exploiting this issue requires an attacker to provide a
+                        │      │                   malformed PKCS#12 file
+                        │      │                   to an application that processes it. For that reason the
+                        │      │                   issue was assessed as
+                        │      │                   Low severity according to our Security Policy.
+                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
+                        │      │                   affected by this issue,
+                        │      │                   as the PKCS#12 implementation is outside the OpenSSL FIPS
+                        │      │                   module boundary.
+                        │      │                   OpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are
+                        │      │                   vulnerable to this issue. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ nvd        : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ├ rocky      : 3 
+                        │      │                  ╰ ubuntu     : 1 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 6.5 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2430375 
+                        │      │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2430376 
+                        │      │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2430377 
+                        │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2430378 
+                        │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2430379 
+                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2430380 
+                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2430381 
+                        │      │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2430386 
+                        │      │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2430387 
+                        │      │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2430388 
+                        │      │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2430389 
+                        │      │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2430390 
+                        │      │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-11187 
+                        │      │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15467 
+                        │      │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15468 
+                        │      │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15469 
+                        │      │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-66199 
+                        │      │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-68160 
+                        │      │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69418 
+                        │      │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69419 
+                        │      │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69420 
+                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69421 
+                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-22795 
+                        │      │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-22796 
+                        │      │                  ├ [38]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+                        │      │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271f
+                        │      │                  │       8191b8fd8a5257eb05173982a097b 
+                        │      │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb496087
+                        │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
+                        │      │                  ├ [42]: https://github.com/openssl/openssl/commit/4bbc8d41a72
+                        │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
+                        │      │                  ├ [43]: https://github.com/openssl/openssl/commit/643986985cd
+                        │      │                  │       1c21221f941129d76fe0c2785aeb3 
+                        │      │                  ├ [44]: https://github.com/openssl/openssl/commit/a2dbc539f0f
+                        │      │                  │       9cc63832709fa5aa33ad9495eb19c 
+                        │      │                  ├ [45]: https://linux.oracle.com/cve/CVE-2025-69421.html 
+                        │      │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-50081.html 
+                        │      │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
+                        │      │                  ├ [48]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [49]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
+                        │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:29:59.693Z 
+                        ├ [19] ╭ VulnerabilityID : CVE-2025-11187 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
@@ -3559,8 +3713,8 @@
                         │      │                  ├ [47]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [48]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [19] ╭ VulnerabilityID : CVE-2025-15468 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:39:21.74Z 
+                        ├ [20] ╭ VulnerabilityID : CVE-2025-15468 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
@@ -3615,6 +3769,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -3688,8 +3843,8 @@
                         │      │                  ├ [48]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [20] ╭ VulnerabilityID : CVE-2025-15469 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:38:00.947Z 
+                        ├ [21] ╭ VulnerabilityID : CVE-2025-15469 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
@@ -3756,6 +3911,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-347 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -3825,8 +3981,8 @@
                         │      │                  ├ [46]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [47]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [21] ╭ VulnerabilityID : CVE-2025-66199 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:37:39.313Z 
+                        ├ [22] ╭ VulnerabilityID : CVE-2025-66199 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
@@ -3896,6 +4052,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-789 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -3969,8 +4126,8 @@
                         │      │                  ├ [48]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [22] ╭ VulnerabilityID : CVE-2025-68160 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:37:19.613Z 
+                        ├ [23] ╭ VulnerabilityID : CVE-2025-68160 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
@@ -4028,6 +4185,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -4104,8 +4262,8 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [23] ╭ VulnerabilityID : CVE-2025-69418 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:36:57.727Z 
+                        ├ [24] ╭ VulnerabilityID : CVE-2025-69418 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
@@ -4163,6 +4321,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -4239,8 +4398,8 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
                         │      ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [24] ╭ VulnerabilityID : CVE-2025-69420 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:36:03.557Z 
+                        ├ [25] ╭ VulnerabilityID : CVE-2025-69420 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
@@ -4303,6 +4462,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -4379,137 +4539,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [25] ╭ VulnerabilityID : CVE-2025-69421 
-                        │      ├ PkgID           : libssl3@3.5.4-r0 
-                        │      ├ PkgName         : libssl3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.4-r0?arch=x86_64&distro=3.
-                        │      │                  │       22.2 
-                        │      │                  ╰ UID : 1f3c38893849c206 
-                        │      ├ InstalledVersion: 3.5.4-r0 
-                        │      ├ FixedVersion    : 3.5.5-r0 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:2d35ebdb57d9971fea0cac1582aa78935adf8058b2cc
-                        │      │                  │         32db163c98822e5dfa1b 
-                        │      │                  ╰ DiffID: sha256:256f393e029fa2063d8c93720da36a74a032bed3355a
-                        │      │                            2bc3e313ad12f8bde9d1 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-69421 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:e755607d94a5f5ad10b41239712488c75da5d5f89aa7cfbd9898d
-                        │      │                   907c331c45f 
-                        │      ├ Title           : openssl: OpenSSL: Denial of Service via malformed PKCS#12
-                        │      │                   file processing 
-                        │      ├ Description     : Issue summary: Processing a malformed PKCS#12 file can
-                        │      │                   trigger a NULL pointer
-                        │      │                   dereference in the PKCS12_item_decrypt_d2i_ex() function.
-                        │      │                   
-                        │      │                   Impact summary: A NULL pointer dereference can trigger a
-                        │      │                   crash which leads to
-                        │      │                   Denial of Service for an application processing PKCS#12
-                        │      │                   files.
-                        │      │                   The PKCS12_item_decrypt_d2i_ex() function does not check
-                        │      │                   whether the oct
-                        │      │                   parameter is NULL before dereferencing it. When called from
-                        │      │                   PKCS12_unpack_p7encdata() with a malformed PKCS#12 file,
-                        │      │                   this parameter can
-                        │      │                   be NULL, causing a crash. The vulnerability is limited to
-                        │      │                   Denial of Service
-                        │      │                   and cannot be escalated to achieve code execution or memory
-                        │      │                   disclosure.
-                        │      │                   Exploiting this issue requires an attacker to provide a
-                        │      │                   malformed PKCS#12 file
-                        │      │                   to an application that processes it. For that reason the
-                        │      │                   issue was assessed as
-                        │      │                   Low severity according to our Security Policy.
-                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-                        │      │                   affected by this issue,
-                        │      │                   as the PKCS#12 implementation is outside the OpenSSL FIPS
-                        │      │                   module boundary.
-                        │      │                   OpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are
-                        │      │                   vulnerable to this issue. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ alma       : 3 
-                        │      │                  ├ oracle-oval: 3 
-                        │      │                  ├ redhat     : 1 
-                        │      │                  ├ rocky      : 3 
-                        │      │                  ╰ ubuntu     : 1 
-                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
-                        │      │                           │           /A:H 
-                        │      │                           ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
-                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
-                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
-                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
-                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
-                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
-                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
-                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
-                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
-                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
-                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
-                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2430375 
-                        │      │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2430376 
-                        │      │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2430377 
-                        │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2430378 
-                        │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2430379 
-                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2430380 
-                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2430381 
-                        │      │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2430386 
-                        │      │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2430387 
-                        │      │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2430388 
-                        │      │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2430389 
-                        │      │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2430390 
-                        │      │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-11187 
-                        │      │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15467 
-                        │      │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15468 
-                        │      │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15469 
-                        │      │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-66199 
-                        │      │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-68160 
-                        │      │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69418 
-                        │      │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69419 
-                        │      │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69420 
-                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69421 
-                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-22795 
-                        │      │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-22796 
-                        │      │                  ├ [38]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
-                        │      │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
-                        │      │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271f
-                        │      │                  │       8191b8fd8a5257eb05173982a097b 
-                        │      │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb496087
-                        │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
-                        │      │                  ├ [42]: https://github.com/openssl/openssl/commit/4bbc8d41a72
-                        │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
-                        │      │                  ├ [43]: https://github.com/openssl/openssl/commit/643986985cd
-                        │      │                  │       1c21221f941129d76fe0c2785aeb3 
-                        │      │                  ├ [44]: https://github.com/openssl/openssl/commit/a2dbc539f0f
-                        │      │                  │       9cc63832709fa5aa33ad9495eb19c 
-                        │      │                  ├ [45]: https://linux.oracle.com/cve/CVE-2025-69421.html 
-                        │      │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-50081.html 
-                        │      │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
-                        │      │                  ├ [48]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [49]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
-                        │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:33:30.557Z 
                         ├ [26] ╭ VulnerabilityID : CVE-2026-22795 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
@@ -4573,6 +4603,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -4649,7 +4680,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T19:16:19.67Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:41:14.917Z 
                         ├ [27] ╭ VulnerabilityID : CVE-2026-22796 
                         │      ├ PkgID           : libssl3@3.5.4-r0 
                         │      ├ PkgName         : libssl3 
@@ -4713,6 +4744,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -4789,7 +4821,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:40:27.467Z 
                         ├ [28] ╭ VulnerabilityID : CVE-2025-15467 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
@@ -4853,6 +4885,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 3 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 2 
@@ -4930,7 +4963,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-15467 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.257Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:38:55.073Z 
                         ├ [29] ╭ VulnerabilityID : CVE-2025-69419 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
@@ -5007,6 +5040,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -5083,8 +5117,144 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69419 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.113Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [30] ╭ VulnerabilityID : CVE-2025-11187 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:35:02.177Z 
+                        ├ [30] ╭ VulnerabilityID : CVE-2025-69421 
+                        │      ├ PkgID           : openssl@3.5.4-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
+                        │      │                  │       22.2 
+                        │      │                  ╰ UID : e49c95ed08651ccb 
+                        │      ├ InstalledVersion: 3.5.4-r0 
+                        │      ├ FixedVersion    : 3.5.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e
+                        │      │                  │         63af6c852fe13918d2af 
+                        │      │                  ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c9
+                        │      │                            6ec733cdbfbc364e07d4 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-69421 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:3b4a3d2a9dc9a91f75c327dbd704781cb5d7a70cbd6f7ef306c7e
+                        │      │                   9d3fe11d3dc 
+                        │      ├ Title           : openssl: OpenSSL: Denial of Service via malformed PKCS#12
+                        │      │                   file processing 
+                        │      ├ Description     : Issue summary: Processing a malformed PKCS#12 file can
+                        │      │                   trigger a NULL pointer
+                        │      │                   dereference in the PKCS12_item_decrypt_d2i_ex() function.
+                        │      │                   
+                        │      │                   Impact summary: A NULL pointer dereference can trigger a
+                        │      │                   crash which leads to
+                        │      │                   Denial of Service for an application processing PKCS#12
+                        │      │                   files.
+                        │      │                   The PKCS12_item_decrypt_d2i_ex() function does not check
+                        │      │                   whether the oct
+                        │      │                   parameter is NULL before dereferencing it. When called from
+                        │      │                   PKCS12_unpack_p7encdata() with a malformed PKCS#12 file,
+                        │      │                   this parameter can
+                        │      │                   be NULL, causing a crash. The vulnerability is limited to
+                        │      │                   Denial of Service
+                        │      │                   and cannot be escalated to achieve code execution or memory
+                        │      │                   disclosure.
+                        │      │                   Exploiting this issue requires an attacker to provide a
+                        │      │                   malformed PKCS#12 file
+                        │      │                   to an application that processes it. For that reason the
+                        │      │                   issue was assessed as
+                        │      │                   Low severity according to our Security Policy.
+                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
+                        │      │                   affected by this issue,
+                        │      │                   as the PKCS#12 implementation is outside the OpenSSL FIPS
+                        │      │                   module boundary.
+                        │      │                   OpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are
+                        │      │                   vulnerable to this issue. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ nvd        : 3 
+                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ├ rocky      : 3 
+                        │      │                  ╰ ubuntu     : 1 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 6.5 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2430375 
+                        │      │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2430376 
+                        │      │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2430377 
+                        │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2430378 
+                        │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2430379 
+                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2430380 
+                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2430381 
+                        │      │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2430386 
+                        │      │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2430387 
+                        │      │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2430388 
+                        │      │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2430389 
+                        │      │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2430390 
+                        │      │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-11187 
+                        │      │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15467 
+                        │      │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15468 
+                        │      │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-15469 
+                        │      │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-66199 
+                        │      │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-68160 
+                        │      │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69418 
+                        │      │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69419 
+                        │      │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69420 
+                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       25-69421 
+                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-22795 
+                        │      │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-22796 
+                        │      │                  ├ [38]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
+                        │      │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
+                        │      │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271f
+                        │      │                  │       8191b8fd8a5257eb05173982a097b 
+                        │      │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb496087
+                        │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
+                        │      │                  ├ [42]: https://github.com/openssl/openssl/commit/4bbc8d41a72
+                        │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
+                        │      │                  ├ [43]: https://github.com/openssl/openssl/commit/643986985cd
+                        │      │                  │       1c21221f941129d76fe0c2785aeb3 
+                        │      │                  ├ [44]: https://github.com/openssl/openssl/commit/a2dbc539f0f
+                        │      │                  │       9cc63832709fa5aa33ad9495eb19c 
+                        │      │                  ├ [45]: https://linux.oracle.com/cve/CVE-2025-69421.html 
+                        │      │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-50081.html 
+                        │      │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
+                        │      │                  ├ [48]: https://openssl-library.org/news/secadv/20260127.txt 
+                        │      │                  ├ [49]: https://ubuntu.com/security/notices/USN-7980-1 
+                        │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
+                        │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
+                        │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:29:59.693Z 
+                        ├ [31] ╭ VulnerabilityID : CVE-2025-11187 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
@@ -5224,8 +5394,8 @@
                         │      │                  ├ [47]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [48]: https://www.cve.org/CVERecord?id=CVE-2025-11187 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.093Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [31] ╭ VulnerabilityID : CVE-2025-15468 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:39:21.74Z 
+                        ├ [32] ╭ VulnerabilityID : CVE-2025-15468 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
@@ -5280,6 +5450,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -5353,8 +5524,8 @@
                         │      │                  ├ [48]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2025-15468 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.4Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [32] ╭ VulnerabilityID : CVE-2025-15469 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:38:00.947Z 
+                        ├ [33] ╭ VulnerabilityID : CVE-2025-15469 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
@@ -5421,6 +5592,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-347 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -5490,8 +5662,8 @@
                         │      │                  ├ [46]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [47]: https://www.cve.org/CVERecord?id=CVE-2025-15469 
                         │      ├ PublishedDate   : 2026-01-27T16:16:14.523Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [33] ╭ VulnerabilityID : CVE-2025-66199 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:37:39.313Z 
+                        ├ [34] ╭ VulnerabilityID : CVE-2025-66199 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
@@ -5561,6 +5733,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-789 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -5634,8 +5807,8 @@
                         │      │                  ├ [48]: https://ubuntu.com/security/notices/USN-7980-1 
                         │      │                  ╰ [49]: https://www.cve.org/CVERecord?id=CVE-2025-66199 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.777Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [34] ╭ VulnerabilityID : CVE-2025-68160 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:37:19.613Z 
+                        ├ [35] ╭ VulnerabilityID : CVE-2025-68160 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
@@ -5693,6 +5866,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -5769,8 +5943,8 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-68160 
                         │      ├ PublishedDate   : 2026-01-27T16:16:15.9Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [35] ╭ VulnerabilityID : CVE-2025-69418 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:36:57.727Z 
+                        ├ [36] ╭ VulnerabilityID : CVE-2025-69418 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
@@ -5828,6 +6002,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -5904,8 +6079,8 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69418 
                         │      ├ PublishedDate   : 2026-01-27T16:16:33.253Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [36] ╭ VulnerabilityID : CVE-2025-69420 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:36:03.557Z 
+                        ├ [37] ╭ VulnerabilityID : CVE-2025-69420 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
@@ -5968,6 +6143,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -6044,137 +6220,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69420 
                         │      ├ PublishedDate   : 2026-01-27T16:16:34.317Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
-                        ├ [37] ╭ VulnerabilityID : CVE-2025-69421 
-                        │      ├ PkgID           : openssl@3.5.4-r0 
-                        │      ├ PkgName         : openssl 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.4-r0?arch=x86_64&distro=3.
-                        │      │                  │       22.2 
-                        │      │                  ╰ UID : e49c95ed08651ccb 
-                        │      ├ InstalledVersion: 3.5.4-r0 
-                        │      ├ FixedVersion    : 3.5.5-r0 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:dea41b5d1c3990155ea2d1114414742fa6cf608dd26e
-                        │      │                  │         63af6c852fe13918d2af 
-                        │      │                  ╰ DiffID: sha256:f52cb3010b8da7d508ae45d3da7d3c0ac8a88d7044c9
-                        │      │                            6ec733cdbfbc364e07d4 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2025-69421 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:3b4a3d2a9dc9a91f75c327dbd704781cb5d7a70cbd6f7ef306c7e
-                        │      │                   9d3fe11d3dc 
-                        │      ├ Title           : openssl: OpenSSL: Denial of Service via malformed PKCS#12
-                        │      │                   file processing 
-                        │      ├ Description     : Issue summary: Processing a malformed PKCS#12 file can
-                        │      │                   trigger a NULL pointer
-                        │      │                   dereference in the PKCS12_item_decrypt_d2i_ex() function.
-                        │      │                   
-                        │      │                   Impact summary: A NULL pointer dereference can trigger a
-                        │      │                   crash which leads to
-                        │      │                   Denial of Service for an application processing PKCS#12
-                        │      │                   files.
-                        │      │                   The PKCS12_item_decrypt_d2i_ex() function does not check
-                        │      │                   whether the oct
-                        │      │                   parameter is NULL before dereferencing it. When called from
-                        │      │                   PKCS12_unpack_p7encdata() with a malformed PKCS#12 file,
-                        │      │                   this parameter can
-                        │      │                   be NULL, causing a crash. The vulnerability is limited to
-                        │      │                   Denial of Service
-                        │      │                   and cannot be escalated to achieve code execution or memory
-                        │      │                   disclosure.
-                        │      │                   Exploiting this issue requires an attacker to provide a
-                        │      │                   malformed PKCS#12 file
-                        │      │                   to an application that processes it. For that reason the
-                        │      │                   issue was assessed as
-                        │      │                   Low severity according to our Security Policy.
-                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3 and 3.0 are not
-                        │      │                   affected by this issue,
-                        │      │                   as the PKCS#12 implementation is outside the OpenSSL FIPS
-                        │      │                   module boundary.
-                        │      │                   OpenSSL 3.6, 3.5, 3.4, 3.3, 3.0, 1.1.1 and 1.0.2 are
-                        │      │                   vulnerable to this issue. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ alma       : 3 
-                        │      │                  ├ oracle-oval: 3 
-                        │      │                  ├ redhat     : 1 
-                        │      │                  ├ rocky      : 3 
-                        │      │                  ╰ ubuntu     : 1 
-                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:N
-                        │      │                           │           /A:H 
-                        │      │                           ╰ V3Score : 6.5 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:1472 
-                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2025-69421 
-                        │      │                  ├ [2] : https://bugzilla.redhat.com/2430375 
-                        │      │                  ├ [3] : https://bugzilla.redhat.com/2430376 
-                        │      │                  ├ [4] : https://bugzilla.redhat.com/2430377 
-                        │      │                  ├ [5] : https://bugzilla.redhat.com/2430378 
-                        │      │                  ├ [6] : https://bugzilla.redhat.com/2430379 
-                        │      │                  ├ [7] : https://bugzilla.redhat.com/2430380 
-                        │      │                  ├ [8] : https://bugzilla.redhat.com/2430381 
-                        │      │                  ├ [9] : https://bugzilla.redhat.com/2430386 
-                        │      │                  ├ [10]: https://bugzilla.redhat.com/2430387 
-                        │      │                  ├ [11]: https://bugzilla.redhat.com/2430388 
-                        │      │                  ├ [12]: https://bugzilla.redhat.com/2430389 
-                        │      │                  ├ [13]: https://bugzilla.redhat.com/2430390 
-                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2430375 
-                        │      │                  ├ [15]: https://bugzilla.redhat.com/show_bug.cgi?id=2430376 
-                        │      │                  ├ [16]: https://bugzilla.redhat.com/show_bug.cgi?id=2430377 
-                        │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2430378 
-                        │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2430379 
-                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2430380 
-                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2430381 
-                        │      │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2430386 
-                        │      │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2430387 
-                        │      │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2430388 
-                        │      │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2430389 
-                        │      │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2430390 
-                        │      │                  ├ [26]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-11187 
-                        │      │                  ├ [27]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15467 
-                        │      │                  ├ [28]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15468 
-                        │      │                  ├ [29]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-15469 
-                        │      │                  ├ [30]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-66199 
-                        │      │                  ├ [31]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-68160 
-                        │      │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69418 
-                        │      │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69419 
-                        │      │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69420 
-                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       25-69421 
-                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-22795 
-                        │      │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                        │      │                  │       26-22796 
-                        │      │                  ├ [38]: https://errata.almalinux.org/10/ALSA-2026-1472.html 
-                        │      │                  ├ [39]: https://errata.rockylinux.org/RLSA-2026:1472 
-                        │      │                  ├ [40]: https://github.com/openssl/openssl/commit/3524a29271f
-                        │      │                  │       8191b8fd8a5257eb05173982a097b 
-                        │      │                  ├ [41]: https://github.com/openssl/openssl/commit/36ecb496087
-                        │      │                  │       2a4ce04bf6f1e1f4e78d75ec0c0c7 
-                        │      │                  ├ [42]: https://github.com/openssl/openssl/commit/4bbc8d41a72
-                        │      │                  │       c842ce4077a8a3eccd1109aaf74bd 
-                        │      │                  ├ [43]: https://github.com/openssl/openssl/commit/643986985cd
-                        │      │                  │       1c21221f941129d76fe0c2785aeb3 
-                        │      │                  ├ [44]: https://github.com/openssl/openssl/commit/a2dbc539f0f
-                        │      │                  │       9cc63832709fa5aa33ad9495eb19c 
-                        │      │                  ├ [45]: https://linux.oracle.com/cve/CVE-2025-69421.html 
-                        │      │                  ├ [46]: https://linux.oracle.com/errata/ELSA-2026-50081.html 
-                        │      │                  ├ [47]: https://nvd.nist.gov/vuln/detail/CVE-2025-69421 
-                        │      │                  ├ [48]: https://openssl-library.org/news/secadv/20260127.txt 
-                        │      │                  ├ [49]: https://ubuntu.com/security/notices/USN-7980-1 
-                        │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
-                        │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2025-69421 
-                        │      ├ PublishedDate   : 2026-01-27T16:16:34.437Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:33:30.557Z 
                         ├ [38] ╭ VulnerabilityID : CVE-2026-22795 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
@@ -6238,6 +6284,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -6314,7 +6361,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2026-22795 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.43Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T19:16:19.67Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:41:14.917Z 
                         ├ [39] ╭ VulnerabilityID : CVE-2026-22796 
                         │      ├ PkgID           : openssl@3.5.4-r0 
                         │      ├ PkgName         : openssl 
@@ -6378,6 +6425,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 1 
@@ -6454,7 +6502,7 @@
                         │      │                  ├ [50]: https://ubuntu.com/security/notices/USN-7980-2 
                         │      │                  ╰ [51]: https://www.cve.org/CVERecord?id=CVE-2026-22796 
                         │      ├ PublishedDate   : 2026-01-27T16:16:35.543Z 
-                        │      ╰ LastModifiedDate: 2026-01-29T16:31:35.7Z 
+                        │      ╰ LastModifiedDate: 2026-02-02T18:40:27.467Z 
                         ├ [40] ╭ VulnerabilityID : CVE-2025-13086 
                         │      ├ PkgID           : openvpn@2.6.14-r0 
                         │      ├ PkgName         : openvpn 
