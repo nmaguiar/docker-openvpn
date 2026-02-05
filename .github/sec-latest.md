@@ -1522,6 +1522,7 @@
                         │      ├ Severity        : CRITICAL 
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 4 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 3 
@@ -1809,6 +1810,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ nvd        : 3 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 3 
@@ -2087,6 +2089,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -2370,6 +2373,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-789 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -2503,6 +2507,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -2639,6 +2644,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -2780,6 +2786,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
@@ -3203,6 +3210,7 @@
                         │      ├ Severity        : CRITICAL 
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 4 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 3 
@@ -3490,6 +3498,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ nvd        : 3 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 3 
@@ -3768,6 +3777,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -4051,6 +4061,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-789 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -4184,6 +4195,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -4320,6 +4332,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -4461,6 +4474,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
@@ -4884,6 +4898,7 @@
                         │      ├ Severity        : CRITICAL 
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 4 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 3 
@@ -5171,6 +5186,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ nvd        : 3 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 3 
@@ -5449,6 +5465,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -5732,6 +5749,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-789 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -5865,6 +5883,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -6001,6 +6020,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
@@ -6142,6 +6162,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ azure      : 2 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
