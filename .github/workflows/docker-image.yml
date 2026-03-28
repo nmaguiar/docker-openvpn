@@ -53,7 +53,7 @@ jobs:
         key : oaf-t8
         path: /tmp/oaf
 
-    - uses: openaf/ojob-action@v4
+    - uses: openaf/ojob-action@v7
       name: Check latest
       with:
         ojob: 'ojob.io/sec/genSecBadge'
@@ -61,12 +61,12 @@ jobs:
         dist: 't8'
 
     - name: Generate sec-latest.md
-      uses: openaf/ojob-action@v4
+      uses: openaf/ojob-action@v7
       with:
         ojob: 'ojob.io/util/toMDTree'
         args: 'inputFile=.github/sec-latest.yaml file=.github/sec-latest.md'
 
-    - uses: openaf/ojob-action@v4
+    - uses: openaf/ojob-action@v7
       name: Check build
       with:
         ojob: 'ojob.io/sec/genSecBadge'
@@ -74,12 +74,12 @@ jobs:
         dist: 't8'
 
     - name: Generate sec-build.md
-      uses: openaf/ojob-action@v4
+      uses: openaf/ojob-action@v7
       with:
         ojob: 'ojob.io/util/toMDTree'
         args: 'inputFile=.github/sec-build.yaml file=.github/sec-build.md'
 
-    - uses: openaf/ojob-action@v4
+    - uses: openaf/ojob-action@v7
       name: Update badges
       env :
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
