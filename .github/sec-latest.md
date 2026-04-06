@@ -1333,9 +1333,9 @@
                               ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
                               │                  │        │           A:H 
                               │                  │        ╰ V3Score : 5.5 
-                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/
+                              │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
                               │                           │           A:L 
-                              │                           ╰ V3Score : 2.9 
+                              │                           ╰ V3Score : 3.3 
                               ├ References       ╭ [0]: https://7asecurity.com/blog/2026/02/zlib-7asecurity-aud
                               │                  │      it/ 
                               │                  ├ [1]: https://7asecurity.com/reports/pentest-report-zlib-RC1.
@@ -1347,5 +1347,5 @@
                               │                  ├ [6]: https://ostif.org/zlib-audit-complete/ 
                               │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
                               ├ PublishedDate   : 2026-02-18T04:16:01.263Z 
-                              ╰ LastModifiedDate: 2026-02-20T16:45:28.827Z 
+                              ╰ LastModifiedDate: 2026-03-25T21:27:04.603Z 
 ````
