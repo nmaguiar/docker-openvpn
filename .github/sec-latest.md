@@ -1300,7 +1300,47 @@
       │                        ├ InstalledFiles ╭ [0]: usr/lib/libzstd.so.1 
       │                        │                ╰ [1]: usr/lib/libzstd.so.1.5.7 
       │                        ╰ AnalyzedBy    : apk 
-      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2026-28390 
+      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2026-4878 
+                        │      ├ PkgID           : libcap2@2.77-r0 
+                        │      ├ PkgName         : libcap2 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcap2@2.77-r0?arch=x86_64&distro=3.2
+                        │      │                  │       3.3 
+                        │      │                  ╰ UID : a83352b5f8defe80 
+                        │      ├ InstalledVersion: 2.77-r0 
+                        │      ├ FixedVersion    : 2.78-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:3e70edfa70f6e71828d3d7048e91fe97ece30dd1f9db
+                        │      │                  │         1acfec6f8b37a0206990 
+                        │      │                  ╰ DiffID: sha256:573f90d23984797cb82c14519a0e475b6581e47bab1d
+                        │      │                            d7d7cd955551fd40eb0d 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-4878 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:860a63a3b60e53fd2fbff1b2559592e7355e24ba9c384b72c01bd
+                        │      │                   1f48ef2be86 
+                        │      ├ Title           : A flaw was found in libcap. A local unprivileged user can
+                        │      │                   exploit a Ti ... 
+                        │      ├ Description     : A flaw was found in libcap. A local unprivileged user can
+                        │      │                   exploit a Time-of-check-to-time-of-use (TOCTOU) race
+                        │      │                   condition in the `cap_set_file()` function. This allows an
+                        │      │                   attacker with write access to a parent directory to redirect
+                        │      │                    file capability updates to an attacker-controlled file. By
+                        │      │                   doing so, capabilities can be injected into or stripped from
+                        │      │                    unintended executables, leading to privilege escalation. 
+                        │      ├ Severity        : UNKNOWN 
+                        │      ├ CweIDs           ─ [0]: CWE-367 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/07/14 
+                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2026/04/07/4 
+                        │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2026/04/08/9 
+                        │      │                  ├ [3]: http://www.openwall.com/lists/oss-security/2026/04/09/5 
+                        │      │                  ├ [4]: http://www.openwall.com/lists/oss-security/2026/04/09/6 
+                        │      │                  ├ [5]: https://access.redhat.com/security/cve/CVE-2026-4878 
+                        │      │                  ├ [6]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
+                        │      │                  ╰ [7]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
+                        │      ├ PublishedDate   : 2026-04-09T16:16:31.987Z 
+                        │      ╰ LastModifiedDate: 2026-04-09T16:16:31.987Z 
+                        ├ [1]  ╭ VulnerabilityID : CVE-2026-28390 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -1369,12 +1409,13 @@
                         │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
                         │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-28390 
-                        │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
+                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [1]  ╭ VulnerabilityID : CVE-2026-31790 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.67Z 
+                        ├ [2]  ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -1457,7 +1498,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [2]  ╭ VulnerabilityID : CVE-2026-2673 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -1574,7 +1615,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-                        ├ [3]  ╭ VulnerabilityID : CVE-2026-28387 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2026-28387 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -1641,12 +1682,13 @@
                         │      │                  │      46997ed9c5fef3d0e16ad7db8177 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [4]  ╭ VulnerabilityID : CVE-2026-28388 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2026-28388 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -1717,12 +1759,13 @@
                         │      │                  │      21f3e67d6cfbc12e768129862726 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [5]  ╭ VulnerabilityID : CVE-2026-28389 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.157Z 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2026-28389 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -1783,12 +1826,13 @@
                         │      │                  │      36bc47d773e8b15a001e2b4ce686 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2026-31789 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.41Z 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -1863,7 +1907,7 @@
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2026-28390 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2026-28390 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -1932,12 +1976,13 @@
                         │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
                         │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-28390 
-                        │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
+                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2026-31790 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.67Z 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -2020,7 +2065,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2026-2673 
+                        ├ [10] ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -2137,7 +2182,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-                        ├ [10] ╭ VulnerabilityID : CVE-2026-28387 
+                        ├ [11] ╭ VulnerabilityID : CVE-2026-28387 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -2204,12 +2249,13 @@
                         │      │                  │      46997ed9c5fef3d0e16ad7db8177 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [11] ╭ VulnerabilityID : CVE-2026-28388 
+                        ├ [12] ╭ VulnerabilityID : CVE-2026-28388 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -2280,12 +2326,13 @@
                         │      │                  │      21f3e67d6cfbc12e768129862726 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [12] ╭ VulnerabilityID : CVE-2026-28389 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.157Z 
+                        ├ [13] ╭ VulnerabilityID : CVE-2026-28389 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -2346,12 +2393,13 @@
                         │      │                  │      36bc47d773e8b15a001e2b4ce686 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [13] ╭ VulnerabilityID : CVE-2026-31789 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.41Z 
+                        ├ [14] ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -2426,7 +2474,78 @@
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [14] ╭ VulnerabilityID : CVE-2026-28390 
+                        ├ [15] ╭ VulnerabilityID : CVE-2026-40200 
+                        │      ├ PkgID           : musl@1.2.5-r21 
+                        │      ├ PkgName         : musl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64&distro=3.23.3 
+                        │      │                  ╰ UID : 750ab06f52f2bfe9 
+                        │      ├ InstalledVersion: 1.2.5-r21 
+                        │      ├ FixedVersion    : 1.2.6-r2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:3a114f984651e6bc4c0be7c8adf0c5163ad9657fdc591b0c9d937
+                        │      │                   35057856dfe 
+                        │      ├ Title           : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+                        │      │                   Stack-based ... 
+                        │      ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+                        │      │                   Stack-based memory corruption can occur during qsort of very
+                        │      │                    large arrays, due to incorrectly implemented double-word
+                        │      │                   primitives. The number of elements must exceed about seven
+                        │      │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
+                        │      │                   (or the 64th Leonardo number on 64-bit platforms, which is
+                        │      │                   not practical). 
+                        │      ├ Severity        : UNKNOWN 
+                        │      ├ CweIDs           ─ [0]: CWE-670 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
+                        │      │                  ├ [1]: https://musl.libc.org/releases.html 
+                        │      │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10
+                        │      │                         /13 
+                        │      ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
+                        │      ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
+                        ├ [16] ╭ VulnerabilityID : CVE-2026-40200 
+                        │      ├ PkgID           : musl-utils@1.2.5-r21 
+                        │      ├ PkgName         : musl-utils 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distr
+                        │      │                  │       o=3.23.3 
+                        │      │                  ╰ UID : 9dadd6d4093981ad 
+                        │      ├ InstalledVersion: 1.2.5-r21 
+                        │      ├ FixedVersion    : 1.2.6-r2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:09f0a9e821eb780ca856b0b75e5a6fae0f36b684c481216cdac44
+                        │      │                   4938d8ca24f 
+                        │      ├ Title           : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+                        │      │                   Stack-based ... 
+                        │      ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+                        │      │                   Stack-based memory corruption can occur during qsort of very
+                        │      │                    large arrays, due to incorrectly implemented double-word
+                        │      │                   primitives. The number of elements must exceed about seven
+                        │      │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
+                        │      │                   (or the 64th Leonardo number on 64-bit platforms, which is
+                        │      │                   not practical). 
+                        │      ├ Severity        : UNKNOWN 
+                        │      ├ CweIDs           ─ [0]: CWE-670 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
+                        │      │                  ├ [1]: https://musl.libc.org/releases.html 
+                        │      │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10
+                        │      │                         /13 
+                        │      ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
+                        │      ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
+                        ├ [17] ╭ VulnerabilityID : CVE-2026-28390 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2495,12 +2614,13 @@
                         │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
                         │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://www.cve.org/CVERecord?id=CVE-2026-28390 
-                        │      │                  ╰ [10]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
+                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [15] ╭ VulnerabilityID : CVE-2026-31790 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.67Z 
+                        ├ [18] ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2583,7 +2703,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [16] ╭ VulnerabilityID : CVE-2026-2673 
+                        ├ [19] ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2700,7 +2820,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-                        ├ [17] ╭ VulnerabilityID : CVE-2026-28387 
+                        ├ [20] ╭ VulnerabilityID : CVE-2026-28387 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2767,12 +2887,13 @@
                         │      │                  │      46997ed9c5fef3d0e16ad7db8177 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [18] ╭ VulnerabilityID : CVE-2026-28388 
+                        ├ [21] ╭ VulnerabilityID : CVE-2026-28388 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2843,12 +2964,13 @@
                         │      │                  │      21f3e67d6cfbc12e768129862726 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [19] ╭ VulnerabilityID : CVE-2026-28389 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.157Z 
+                        ├ [22] ╭ VulnerabilityID : CVE-2026-28389 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2909,12 +3031,13 @@
                         │      │                  │      36bc47d773e8b15a001e2b4ce686 
                         │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260407.txt 
                         │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [7]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [8]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
+                        │      │                  ╰ [9]: https://www.openwall.com/lists/oss-security/2026/04/07
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-                        │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [20] ╭ VulnerabilityID : CVE-2026-31789 
+                        │      ╰ LastModifiedDate: 2026-04-10T21:16:23.41Z 
+                        ├ [23] ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2989,7 +3112,7 @@
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ╰ [21] ╭ VulnerabilityID : CVE-2026-27171 
+                        ╰ [24] ╭ VulnerabilityID : CVE-2026-27171 
                                ├ PkgID           : zlib@1.3.1-r2 
                                ├ PkgName         : zlib 
                                ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
