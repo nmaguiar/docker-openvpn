@@ -1390,7 +1390,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
@@ -1474,7 +1475,8 @@
                         │      │                   affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
                         │      │                           │           /A:N 
@@ -1669,7 +1671,8 @@
                         │      │                   FIPS module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/07e727d30474
                         │      │                  │      6edb49a98ee8f6ab00256e1f012b 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/258a8f63b269
@@ -1746,7 +1749,8 @@
                         │      │                   boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/59c3b3158553
                         │      │                  │      ab53275bbbccca5cb305d591cf2e 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/5a0b4930779c
@@ -1813,7 +1817,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/16cea4188e0e
                         │      │                  │      a567deb4f93f85902247e67384f5 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/785cbf7ea3b5
@@ -1889,7 +1894,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/364f095b8060
                         │      │                  │      1db632b0def6a33316967f863bde 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7a9087efd769
@@ -1957,7 +1963,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
@@ -2041,7 +2048,8 @@
                         │      │                   affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
                         │      │                           │           /A:N 
@@ -2236,7 +2244,8 @@
                         │      │                   FIPS module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/07e727d30474
                         │      │                  │      6edb49a98ee8f6ab00256e1f012b 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/258a8f63b269
@@ -2313,7 +2322,8 @@
                         │      │                   boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/59c3b3158553
                         │      │                  │      ab53275bbbccca5cb305d591cf2e 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/5a0b4930779c
@@ -2380,7 +2390,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/16cea4188e0e
                         │      │                  │      a567deb4f93f85902247e67384f5 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/785cbf7ea3b5
@@ -2456,7 +2467,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/364f095b8060
                         │      │                  │      1db632b0def6a33316967f863bde 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7a9087efd769
@@ -2509,7 +2521,46 @@
                         │      │                         /13 
                         │      ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
                         │      ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
-                        ├ [16] ╭ VulnerabilityID : CVE-2026-40200 
+                        ├ [16] ╭ VulnerabilityID : CVE-2026-6042 
+                        │      ├ PkgID           : musl@1.2.5-r21 
+                        │      ├ PkgName         : musl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64&distro=3.23.3 
+                        │      │                  ╰ UID : 750ab06f52f2bfe9 
+                        │      ├ InstalledVersion: 1.2.5-r21 
+                        │      ├ FixedVersion    : 1.2.6-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:e96b5e3b7932b2848c1b833847eee2e030d967e2b55c11a4c637c
+                        │      │                   e6d5f131041 
+                        │      ├ Title           : A security flaw has been discovered in musl libc up to
+                        │      │                   1.2.6. Affected ... 
+                        │      ├ Description     : A security flaw has been discovered in musl libc up to
+                        │      │                   1.2.6. Affected is the function iconv of the file
+                        │      │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
+                        │      │                   Performing a manipulation results in inefficient algorithmic
+                        │      │                    complexity. The attack must be initiated from a local
+                        │      │                   position. To fix this issue, it is recommended to deploy a
+                        │      │                   patch. 
+                        │      ├ Severity        : UNKNOWN 
+                        │      ├ CweIDs           ╭ [0]: CWE-404 
+                        │      │                  ╰ [1]: CWE-407 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
+                        │      │                  ├ [1]: https://vuldb.com/submit/796352 
+                        │      │                  ├ [2]: https://vuldb.com/vuln/356620 
+                        │      │                  ├ [3]: https://vuldb.com/vuln/356620/cti 
+                        │      │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02
+                        │      │                  │      /10 
+                        │      │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+                        │      ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
+                        │      ╰ LastModifiedDate: 2026-04-10T10:16:04.277Z 
+                        ├ [17] ╭ VulnerabilityID : CVE-2026-40200 
                         │      ├ PkgID           : musl-utils@1.2.5-r21 
                         │      ├ PkgName         : musl-utils 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distr
@@ -2545,7 +2596,47 @@
                         │      │                         /13 
                         │      ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
                         │      ╰ LastModifiedDate: 2026-04-10T18:16:46.38Z 
-                        ├ [17] ╭ VulnerabilityID : CVE-2026-28390 
+                        ├ [18] ╭ VulnerabilityID : CVE-2026-6042 
+                        │      ├ PkgID           : musl-utils@1.2.5-r21 
+                        │      ├ PkgName         : musl-utils 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distr
+                        │      │                  │       o=3.23.3 
+                        │      │                  ╰ UID : 9dadd6d4093981ad 
+                        │      ├ InstalledVersion: 1.2.5-r21 
+                        │      ├ FixedVersion    : 1.2.6-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:50bcd3c7a656418d7e7c03a636ad761d544eb5a0ffa0b70872f45
+                        │      │                   da2b282c1ed 
+                        │      ├ Title           : A security flaw has been discovered in musl libc up to
+                        │      │                   1.2.6. Affected ... 
+                        │      ├ Description     : A security flaw has been discovered in musl libc up to
+                        │      │                   1.2.6. Affected is the function iconv of the file
+                        │      │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
+                        │      │                   Performing a manipulation results in inefficient algorithmic
+                        │      │                    complexity. The attack must be initiated from a local
+                        │      │                   position. To fix this issue, it is recommended to deploy a
+                        │      │                   patch. 
+                        │      ├ Severity        : UNKNOWN 
+                        │      ├ CweIDs           ╭ [0]: CWE-404 
+                        │      │                  ╰ [1]: CWE-407 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
+                        │      │                  ├ [1]: https://vuldb.com/submit/796352 
+                        │      │                  ├ [2]: https://vuldb.com/vuln/356620 
+                        │      │                  ├ [3]: https://vuldb.com/vuln/356620/cti 
+                        │      │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02
+                        │      │                  │      /10 
+                        │      │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+                        │      ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
+                        │      ╰ LastModifiedDate: 2026-04-10T10:16:04.277Z 
+                        ├ [19] ╭ VulnerabilityID : CVE-2026-28390 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2595,7 +2686,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
                         │      │                           │           /A:H 
@@ -2620,7 +2712,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
                         │      ╰ LastModifiedDate: 2026-04-10T21:16:23.67Z 
-                        ├ [18] ╭ VulnerabilityID : CVE-2026-31790 
+                        ├ [20] ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2679,7 +2771,8 @@
                         │      │                   affected by this issue. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
                         │      │                           │           /A:N 
@@ -2703,7 +2796,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [19] ╭ VulnerabilityID : CVE-2026-2673 
+                        ├ [21] ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2820,7 +2913,7 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-                        ├ [20] ╭ VulnerabilityID : CVE-2026-28387 
+                        ├ [22] ╭ VulnerabilityID : CVE-2026-28387 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2874,7 +2967,8 @@
                         │      │                   FIPS module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-416 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/07e727d30474
                         │      │                  │      6edb49a98ee8f6ab00256e1f012b 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/258a8f63b269
@@ -2893,7 +2987,7 @@
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ├ [21] ╭ VulnerabilityID : CVE-2026-28388 
+                        ├ [23] ╭ VulnerabilityID : CVE-2026-28388 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -2951,7 +3045,8 @@
                         │      │                   boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/59c3b3158553
                         │      │                  │      ab53275bbbccca5cb305d591cf2e 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/5a0b4930779c
@@ -2970,7 +3065,7 @@
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
                         │      ╰ LastModifiedDate: 2026-04-10T21:16:23.157Z 
-                        ├ [22] ╭ VulnerabilityID : CVE-2026-28389 
+                        ├ [24] ╭ VulnerabilityID : CVE-2026-28389 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -3018,7 +3113,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-476 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/16cea4188e0e
                         │      │                  │      a567deb4f93f85902247e67384f5 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/785cbf7ea3b5
@@ -3037,7 +3133,7 @@
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
                         │      ╰ LastModifiedDate: 2026-04-10T21:16:23.41Z 
-                        ├ [23] ╭ VulnerabilityID : CVE-2026-31789 
+                        ├ [25] ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -3094,7 +3190,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : LOW 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      │                  ╰ ubuntu: 1 
                         │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/364f095b8060
                         │      │                  │      1db632b0def6a33316967f863bde 
                         │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7a9087efd769
@@ -3112,7 +3209,57 @@
                         │      │                         /11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
                         │      ╰ LastModifiedDate: 2026-04-08T21:27:00.663Z 
-                        ╰ [24] ╭ VulnerabilityID : CVE-2026-27171 
+                        ├ [26] ╭ VulnerabilityID : CVE-2026-22184 
+                        │      ├ PkgID           : zlib@1.3.1-r2 
+                        │      ├ PkgName         : zlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
+                        │      │                  ╰ UID : 792cdc69bc59d880 
+                        │      ├ InstalledVersion: 1.3.1-r2 
+                        │      ├ FixedVersion    : 1.3.2-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:e3035c9fb3afb4837f00adcfe8f5b9f738f76bc205a45d4291dfe
+                        │      │                   9e2aefbef9b 
+                        │      ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
+                        │      │                   untgz utility 
+                        │      ├ Description     : zlib versions up to and including 1.3.1.2 include a global
+                        │      │                   buffer overflow in the untgz utility located under
+                        │      │                   contrib/untgz. The vulnerability is limited to the
+                        │      │                   standalone demonstration utility and does not affect the
+                        │      │                   core zlib compression library. The flaw occurs when a user
+                        │      │                   executes the untgz command with an excessively long archive
+                        │      │                   name supplied via the command line, leading to an
+                        │      │                   out-of-bounds write in a fixed-size global buffer. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-787 
+                        │      ├ VendorSeverity   ╭ nvd   : 3 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.8 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 8.6 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
+                        │      │                  ├ [1]: https://github.com/madler/zlib 
+                        │      │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
+                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
+                        │      │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
+                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
+                        │      │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-global
+                        │      │                  │      -buffer-overflow-in-tgzfname 
+                        │      │                  ╰ [7]: https://zlib.net/ 
+                        │      ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
+                        │      ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
+                        ╰ [27] ╭ VulnerabilityID : CVE-2026-27171 
                                ├ PkgID           : zlib@1.3.1-r2 
                                ├ PkgName         : zlib 
                                ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
