@@ -1424,6 +1424,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -1494,6 +1495,7 @@
     CweIDs:
     - CWE-754
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -1654,6 +1656,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/07e727d304746edb49a98ee8f6ab00256e1f012b
@@ -1716,6 +1719,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
@@ -1771,6 +1775,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
@@ -1830,6 +1835,7 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
@@ -1885,6 +1891,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -1955,6 +1962,7 @@
     CweIDs:
     - CWE-754
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2115,6 +2123,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/07e727d304746edb49a98ee8f6ab00256e1f012b
@@ -2177,6 +2186,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
@@ -2232,6 +2242,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
@@ -2291,6 +2302,7 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
@@ -2333,6 +2345,39 @@
     - https://www.openwall.com/lists/oss-security/2026/04/10/13
     PublishedDate: '2026-04-10T17:17:14.107Z'
     LastModifiedDate: '2026-04-10T18:16:46.38Z'
+  - VulnerabilityID: CVE-2026-6042
+    PkgID: musl@1.2.5-r21
+    PkgName: musl
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl@1.2.5-r21?arch=x86_64&distro=3.23.3
+      UID: 750ab06f52f2bfe9
+    InstalledVersion: 1.2.5-r21
+    FixedVersion: 1.2.6-r1
+    Status: fixed
+    Layer:
+      Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153
+      DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6042
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e96b5e3b7932b2848c1b833847eee2e030d967e2b55c11a4c637ce6d5f131041
+    Title: A security flaw has been discovered in musl libc up to 1.2.6. Affected ...
+    Description: A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/iconv.c of the component GB18030 4-byte Decoder. Performing a manipulation results in inefficient algorithmic complexity. The attack must be initiated from a local position. To fix this issue, it is recommended to deploy a patch.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-404
+    - CWE-407
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/09/19
+    - https://vuldb.com/submit/796352
+    - https://vuldb.com/vuln/356620
+    - https://vuldb.com/vuln/356620/cti
+    - https://www.openwall.com/lists/oss-security/2026/04/02/10
+    - https://www.openwall.com/lists/oss-security/2026/04/03/2
+    PublishedDate: '2026-04-10T09:16:25.45Z'
+    LastModifiedDate: '2026-04-10T10:16:04.277Z'
   - VulnerabilityID: CVE-2026-40200
     PkgID: musl-utils@1.2.5-r21
     PkgName: musl-utils
@@ -2362,6 +2407,39 @@
     - https://www.openwall.com/lists/oss-security/2026/04/10/13
     PublishedDate: '2026-04-10T17:17:14.107Z'
     LastModifiedDate: '2026-04-10T18:16:46.38Z'
+  - VulnerabilityID: CVE-2026-6042
+    PkgID: musl-utils@1.2.5-r21
+    PkgName: musl-utils
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/musl-utils@1.2.5-r21?arch=x86_64&distro=3.23.3
+      UID: 9dadd6d4093981ad
+    InstalledVersion: 1.2.5-r21
+    FixedVersion: 1.2.6-r1
+    Status: fixed
+    Layer:
+      Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153
+      DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-6042
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:50bcd3c7a656418d7e7c03a636ad761d544eb5a0ffa0b70872f45da2b282c1ed
+    Title: A security flaw has been discovered in musl libc up to 1.2.6. Affected ...
+    Description: A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/iconv.c of the component GB18030 4-byte Decoder. Performing a manipulation results in inefficient algorithmic complexity. The attack must be initiated from a local position. To fix this issue, it is recommended to deploy a patch.
+    Severity: UNKNOWN
+    CweIDs:
+    - CWE-404
+    - CWE-407
+    References:
+    - http://www.openwall.com/lists/oss-security/2026/04/09/19
+    - https://vuldb.com/submit/796352
+    - https://vuldb.com/vuln/356620
+    - https://vuldb.com/vuln/356620/cti
+    - https://www.openwall.com/lists/oss-security/2026/04/02/10
+    - https://www.openwall.com/lists/oss-security/2026/04/03/2
+    PublishedDate: '2026-04-10T09:16:25.45Z'
+    LastModifiedDate: '2026-04-10T10:16:04.277Z'
   - VulnerabilityID: CVE-2026-28390
     PkgID: openssl@3.5.5-r0
     PkgName: openssl
@@ -2404,6 +2482,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
@@ -2474,6 +2553,7 @@
     CweIDs:
     - CWE-754
     VendorSeverity:
+      photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
@@ -2634,6 +2714,7 @@
     CweIDs:
     - CWE-416
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/07e727d304746edb49a98ee8f6ab00256e1f012b
@@ -2696,6 +2777,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/59c3b3158553ab53275bbbccca5cb305d591cf2e
@@ -2751,6 +2833,7 @@
     CweIDs:
     - CWE-476
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
@@ -2810,6 +2893,7 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      photon: 3
       ubuntu: 1
     References:
     - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
@@ -2823,6 +2907,51 @@
     - https://www.openwall.com/lists/oss-security/2026/04/07/11
     PublishedDate: '2026-04-07T22:16:21.617Z'
     LastModifiedDate: '2026-04-08T21:27:00.663Z'
+  - VulnerabilityID: CVE-2026-22184
+    PkgID: zlib@1.3.1-r2
+    PkgName: zlib
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3
+      UID: 792cdc69bc59d880
+    InstalledVersion: 1.3.1-r2
+    FixedVersion: 1.3.2-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee0f8eaa0285cc21ac153
+      DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f26e707861a5f52bf64e
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-22184
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:e3035c9fb3afb4837f00adcfe8f5b9f738f76bc205a45d4291dfe9e2aefbef9b
+    Title: 'zlib: zlib: Arbitrary code execution via buffer overflow in untgz utility'
+    Description: zlib versions up to and including 1.3.1.2 include a global buffer overflow in the untgz utility located under contrib/untgz. The vulnerability is limited to the standalone demonstration utility and does not affect the core zlib compression library. The flaw occurs when a user executes the untgz command with an excessively long archive name supplied via the command line, leading to an out-of-bounds write in a fixed-size global buffer.
+    Severity: HIGH
+    CweIDs:
+    - CWE-787
+    VendorSeverity:
+      nvd: 3
+      redhat: 3
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H
+        V3Score: 7.8
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:H
+        V3Score: 8.6
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-22184
+    - https://github.com/madler/zlib
+    - https://github.com/madler/zlib/issues/1142
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-22184
+    - https://seclists.org/fulldisclosure/2026/Jan/3
+    - https://www.cve.org/CVERecord?id=CVE-2026-22184
+    - https://www.vulncheck.com/advisories/zlib-untgz-global-buffer-overflow-in-tgzfname
+    - https://zlib.net/
+    PublishedDate: '2026-01-07T21:16:01.563Z'
+    LastModifiedDate: '2026-03-18T16:26:31.14Z'
   - VulnerabilityID: CVE-2026-27171
     PkgID: zlib@1.3.1-r2
     PkgName: zlib
