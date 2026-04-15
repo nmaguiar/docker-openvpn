@@ -1363,8 +1363,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:26bfd5a12397f1aedd974b4e6ea808cb104fa81d8cad15d0b71225
                         │     │                   4627e96207 
-                        │     ├ Title           : An issue was discovered in musl libc 0.7.10 through 1.2.6.
-                        │     │                   Stack-based ... 
+                        │     ├ Title           : musl: musl libc: Arbitrary code execution and denial of
+                        │     │                   service via stack-based memory corruption in qsort 
                         │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
                         │     │                   Stack-based memory corruption can occur during qsort of very
                         │     │                   large arrays, due to incorrectly implemented double-word
@@ -1372,11 +1372,18 @@
                         │     │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
                         │     │                   (or the 64th Leonardo number on 64-bit platforms, which is
                         │     │                   not practical). 
-                        │     ├ Severity        : UNKNOWN 
+                        │     ├ Severity        : HIGH 
                         │     ├ CweIDs           ─ [0]: CWE-670 
+                        │     ├ VendorSeverity   ─ redhat: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 7.8 
                         │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
-                        │     │                  ├ [1]: https://musl.libc.org/releases.html 
-                        │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
+                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-40200 
+                        │     │                  ├ [2]: https://musl.libc.org/releases.html 
+                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-40200 
+                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-40200 
+                        │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
                         │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
                         │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
                         ├ [2] ╭ VulnerabilityID : CVE-2026-6042 
@@ -1397,8 +1404,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:6576b033ef1c0ec328d5407333062a3c15b60ee0a05a92b9424c7e
                         │     │                   84382becfb 
-                        │     ├ Title           : A security flaw has been discovered in musl libc up to 1.2.6.
-                        │     │                    Affected ... 
+                        │     ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
+                        │     │                   Service via inefficient algorithmic complexity in iconv 
                         │     ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
                         │     │                    Affected is the function iconv of the file
                         │     │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
@@ -1406,15 +1413,22 @@
                         │     │                   complexity. The attack must be initiated from a local
                         │     │                   position. To fix this issue, it is recommended to deploy a
                         │     │                   patch. 
-                        │     ├ Severity        : UNKNOWN 
+                        │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ╭ [0]: CWE-404 
                         │     │                  ╰ [1]: CWE-407 
+                        │     ├ VendorSeverity   ─ redhat: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 5.5 
                         │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
-                        │     │                  ├ [1]: https://vuldb.com/submit/796352 
-                        │     │                  ├ [2]: https://vuldb.com/vuln/356620 
-                        │     │                  ├ [3]: https://vuldb.com/vuln/356620/cti 
-                        │     │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
-                        │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6042 
+                        │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-6042 
+                        │     │                  ├ [3]: https://vuldb.com/submit/796352 
+                        │     │                  ├ [4]: https://vuldb.com/vuln/356620 
+                        │     │                  ├ [5]: https://vuldb.com/vuln/356620/cti 
+                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6042 
+                        │     │                  ├ [7]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
                         │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
                         │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
                         ├ [3] ╭ VulnerabilityID : CVE-2026-40200 
@@ -1436,8 +1450,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:4e32be1a5323a0ced8bbb5b08a4ead710182c73f45e43487501bb6
                         │     │                   70986a991b 
-                        │     ├ Title           : An issue was discovered in musl libc 0.7.10 through 1.2.6.
-                        │     │                   Stack-based ... 
+                        │     ├ Title           : musl: musl libc: Arbitrary code execution and denial of
+                        │     │                   service via stack-based memory corruption in qsort 
                         │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
                         │     │                   Stack-based memory corruption can occur during qsort of very
                         │     │                   large arrays, due to incorrectly implemented double-word
@@ -1445,11 +1459,18 @@
                         │     │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
                         │     │                   (or the 64th Leonardo number on 64-bit platforms, which is
                         │     │                   not practical). 
-                        │     ├ Severity        : UNKNOWN 
+                        │     ├ Severity        : HIGH 
                         │     ├ CweIDs           ─ [0]: CWE-670 
+                        │     ├ VendorSeverity   ─ redhat: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 7.8 
                         │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
-                        │     │                  ├ [1]: https://musl.libc.org/releases.html 
-                        │     │                  ╰ [2]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
+                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-40200 
+                        │     │                  ├ [2]: https://musl.libc.org/releases.html 
+                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-40200 
+                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-40200 
+                        │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
                         │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
                         │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
                         ├ [4] ╭ VulnerabilityID : CVE-2026-6042 
@@ -1471,8 +1492,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:85bbdbdec61f76c7294116b55fee925df5719429c9c4ef26258c63
                         │     │                   064d5f6f32 
-                        │     ├ Title           : A security flaw has been discovered in musl libc up to 1.2.6.
-                        │     │                    Affected ... 
+                        │     ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
+                        │     │                   Service via inefficient algorithmic complexity in iconv 
                         │     ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
                         │     │                    Affected is the function iconv of the file
                         │     │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
@@ -1480,18 +1501,75 @@
                         │     │                   complexity. The attack must be initiated from a local
                         │     │                   position. To fix this issue, it is recommended to deploy a
                         │     │                   patch. 
-                        │     ├ Severity        : UNKNOWN 
+                        │     ├ Severity        : MEDIUM 
                         │     ├ CweIDs           ╭ [0]: CWE-404 
                         │     │                  ╰ [1]: CWE-407 
+                        │     ├ VendorSeverity   ─ redhat: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 5.5 
                         │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
-                        │     │                  ├ [1]: https://vuldb.com/submit/796352 
-                        │     │                  ├ [2]: https://vuldb.com/vuln/356620 
-                        │     │                  ├ [3]: https://vuldb.com/vuln/356620/cti 
-                        │     │                  ├ [4]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
-                        │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6042 
+                        │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-6042 
+                        │     │                  ├ [3]: https://vuldb.com/submit/796352 
+                        │     │                  ├ [4]: https://vuldb.com/vuln/356620 
+                        │     │                  ├ [5]: https://vuldb.com/vuln/356620/cti 
+                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6042 
+                        │     │                  ├ [7]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
+                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
                         │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
                         │     ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
-                        ╰ [5] ╭ VulnerabilityID : CVE-2026-27171 
+                        ├ [5] ╭ VulnerabilityID : CVE-2026-22184 
+                        │     ├ PkgID           : zlib@1.3.1-r2 
+                        │     ├ PkgName         : zlib 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
+                        │     │                  ╰ UID : 792cdc69bc59d880 
+                        │     ├ InstalledVersion: 1.3.1-r2 
+                        │     ├ FixedVersion    : 1.3.2-r0 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6ee
+                        │     │                  │         0f8eaa0285cc21ac153 
+                        │     │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990f
+                        │     │                            26e707861a5f52bf64e 
+                        │     ├ SeveritySource  : nvd 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:e67682a49112b01ff6a981a765fcef2a904a98d78d64d1c02b83ac
+                        │     │                   1c5e26607a 
+                        │     ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
+                        │     │                   untgz utility 
+                        │     ├ Description     : zlib versions up to and including 1.3.1.2 include a global
+                        │     │                   buffer overflow in the untgz utility located under
+                        │     │                   contrib/untgz. The vulnerability is limited to the standalone
+                        │     │                    demonstration utility and does not affect the core zlib
+                        │     │                   compression library. The flaw occurs when a user executes the
+                        │     │                    untgz command with an excessively long archive name supplied
+                        │     │                    via the command line, leading to an out-of-bounds write in a
+                        │     │                    fixed-size global buffer. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ CweIDs           ─ [0]: CWE-787 
+                        │     ├ VendorSeverity   ╭ nvd   : 3 
+                        │     │                  ╰ redhat: 3 
+                        │     ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/
+                        │     │                  │        │           A:H 
+                        │     │                  │        ╰ V3Score : 7.8 
+                        │     │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 8.6 
+                        │     ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
+                        │     │                  ├ [1]: https://github.com/madler/zlib 
+                        │     │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
+                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
+                        │     │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
+                        │     │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
+                        │     │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-global-
+                        │     │                  │      buffer-overflow-in-tgzfname 
+                        │     │                  ╰ [7]: https://zlib.net/ 
+                        │     ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
+                        │     ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
+                        ╰ [6] ╭ VulnerabilityID : CVE-2026-27171 
                               ├ PkgID           : zlib@1.3.1-r2 
                               ├ PkgName         : zlib 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
