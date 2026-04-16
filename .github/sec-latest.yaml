@@ -1433,6 +1433,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 2
       ubuntu: 1
@@ -1504,6 +1505,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -1568,6 +1570,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -1635,6 +1638,7 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -1706,6 +1710,7 @@
     - CWE-754
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 2
       ubuntu: 2
@@ -1933,6 +1938,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 2
       ubuntu: 1
@@ -2004,6 +2010,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -2068,6 +2075,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -2135,6 +2143,7 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -2206,6 +2215,7 @@
     - CWE-754
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 2
       ubuntu: 2
@@ -2593,6 +2603,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 2
       ubuntu: 1
@@ -2664,6 +2675,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -2728,6 +2740,7 @@
     - CWE-476
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -2795,6 +2808,7 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      azure: 2
       photon: 3
       redhat: 1
       ubuntu: 1
@@ -2866,6 +2880,7 @@
     - CWE-754
     VendorSeverity:
       amazon: 3
+      azure: 2
       photon: 3
       redhat: 2
       ubuntu: 2
