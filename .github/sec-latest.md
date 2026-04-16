@@ -1397,6 +1397,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
@@ -1482,6 +1483,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
@@ -1557,6 +1559,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
@@ -1640,7 +1643,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      ├ VendorSeverity   ╭ azure : 2 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L
@@ -1725,6 +1729,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
@@ -1999,6 +2004,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
@@ -2084,6 +2090,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
@@ -2159,6 +2166,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
@@ -2242,7 +2250,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      ├ VendorSeverity   ╭ azure : 2 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L
@@ -2327,6 +2336,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
@@ -2779,6 +2789,7 @@
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
@@ -2864,6 +2875,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
@@ -2939,6 +2951,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
@@ -3022,7 +3035,8 @@
                         │      │                   module boundary. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      ├ VendorSeverity   ╭ azure : 2 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:L/I:L
@@ -3107,6 +3121,7 @@
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-754 
                         │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
                         │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 2 
