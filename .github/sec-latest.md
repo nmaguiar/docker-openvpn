@@ -1,4 +1,4 @@
-````yaml
+```yaml
 ─ [0] ╭ Target         : nmaguiar/openvpn:latest (alpine 3.23.3) 
       ├ Class          : os-pkgs 
       ├ Type           : alpine 
@@ -3443,4 +3443,4 @@
                                │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
                                ├ PublishedDate   : 2026-02-18T04:16:01.263Z 
                                ╰ LastModifiedDate: 2026-03-25T21:27:04.603Z 
-````
+```
