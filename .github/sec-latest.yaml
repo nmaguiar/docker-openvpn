@@ -1373,6 +1373,7 @@
     - CWE-367
     VendorSeverity:
       redhat: 3
+      ubuntu: 2
     CVSS:
       redhat:
         V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H
@@ -1386,7 +1387,10 @@
     - https://access.redhat.com/security/cve/CVE-2026-4878
     - https://bugzilla.redhat.com/show_bug.cgi?id=2447554
     - https://bugzilla.redhat.com/show_bug.cgi?id=2451615
+    - https://github.com/AndrewGMorgan/libcap_mirror/security/advisories/GHSA-f78v-p5hx-m7hh
     - https://nvd.nist.gov/vuln/detail/CVE-2026-4878
+    - https://sites.google.com/site/fullycapable/release-notes-for-libcap#h.x4zn8j3lss6r
+    - https://ubuntu.com/security/notices/USN-8193-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4878
     PublishedDate: '2026-04-09T16:16:31.987Z'
     LastModifiedDate: '2026-04-13T15:02:47.353Z'
