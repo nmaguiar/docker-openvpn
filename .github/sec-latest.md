@@ -1330,20 +1330,27 @@
                         │      │                    unintended executables, leading to privilege escalation. 
                         │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-367 
-                        │      ├ VendorSeverity   ─ redhat: 3 
+                        │      ├ VendorSeverity   ╭ redhat: 3 
+                        │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 6.7 
-                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/07/14 
-                        │      │                  ├ [1]: http://www.openwall.com/lists/oss-security/2026/04/07/4 
-                        │      │                  ├ [2]: http://www.openwall.com/lists/oss-security/2026/04/08/9 
-                        │      │                  ├ [3]: http://www.openwall.com/lists/oss-security/2026/04/09/5 
-                        │      │                  ├ [4]: http://www.openwall.com/lists/oss-security/2026/04/09/6 
-                        │      │                  ├ [5]: https://access.redhat.com/security/cve/CVE-2026-4878 
-                        │      │                  ├ [6]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
-                        │      │                  ├ [7]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
-                        │      │                  ├ [8]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
-                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
+                        │      ├ References       ╭ [0] : http://www.openwall.com/lists/oss-security/2026/04/07
+                        │      │                  │       /14 
+                        │      │                  ├ [1] : http://www.openwall.com/lists/oss-security/2026/04/07/4 
+                        │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2026/04/08/9 
+                        │      │                  ├ [3] : http://www.openwall.com/lists/oss-security/2026/04/09/5 
+                        │      │                  ├ [4] : http://www.openwall.com/lists/oss-security/2026/04/09/6 
+                        │      │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2026-4878 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
+                        │      │                  ├ [8] : https://github.com/AndrewGMorgan/libcap_mirror/securi
+                        │      │                  │       ty/advisories/GHSA-f78v-p5hx-m7hh 
+                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
+                        │      │                  ├ [10]: https://sites.google.com/site/fullycapable/release-no
+                        │      │                  │       tes-for-libcap#h.x4zn8j3lss6r 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8193-1 
+                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
                         │      ├ PublishedDate   : 2026-04-09T16:16:31.987Z 
                         │      ╰ LastModifiedDate: 2026-04-13T15:02:47.353Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-28390 
