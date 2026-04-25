@@ -2704,7 +2704,7 @@
                         │      │                  │      /10 
                         │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
                         │      ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
-                        │      ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
+                        │      ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
                         ├ [17] ╭ VulnerabilityID : CVE-2026-40200 
                         │      ├ PkgID           : musl-utils@1.2.5-r21 
                         │      ├ PkgName         : musl-utils 
@@ -2794,7 +2794,7 @@
                         │      │                  │      /10 
                         │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
                         │      ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
-                        │      ╰ LastModifiedDate: 2026-04-13T15:02:06.187Z 
+                        │      ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
                         ├ [19] ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
