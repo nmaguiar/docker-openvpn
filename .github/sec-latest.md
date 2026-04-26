@@ -1341,18 +1341,19 @@
                         │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2026/04/08/9 
                         │      │                  ├ [3] : http://www.openwall.com/lists/oss-security/2026/04/09/5 
                         │      │                  ├ [4] : http://www.openwall.com/lists/oss-security/2026/04/09/6 
-                        │      │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2026-4878 
-                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
-                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
-                        │      │                  ├ [8] : https://github.com/AndrewGMorgan/libcap_mirror/securi
+                        │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:7473 
+                        │      │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2026-4878 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
+                        │      │                  ├ [9] : https://github.com/AndrewGMorgan/libcap_mirror/securi
                         │      │                  │       ty/advisories/GHSA-f78v-p5hx-m7hh 
-                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
-                        │      │                  ├ [10]: https://sites.google.com/site/fullycapable/release-no
+                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
+                        │      │                  ├ [11]: https://sites.google.com/site/fullycapable/release-no
                         │      │                  │       tes-for-libcap#h.x4zn8j3lss6r 
-                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8193-1 
-                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-8193-1 
+                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
                         │      ├ PublishedDate   : 2026-04-09T16:16:31.987Z 
-                        │      ╰ LastModifiedDate: 2026-04-13T15:02:47.353Z 
+                        │      ╰ LastModifiedDate: 2026-04-25T02:16:03.29Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
