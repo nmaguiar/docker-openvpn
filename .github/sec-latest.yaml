@@ -1384,6 +1384,7 @@
     - http://www.openwall.com/lists/oss-security/2026/04/08/9
     - http://www.openwall.com/lists/oss-security/2026/04/09/5
     - http://www.openwall.com/lists/oss-security/2026/04/09/6
+    - https://access.redhat.com/errata/RHSA-2026:7473
     - https://access.redhat.com/security/cve/CVE-2026-4878
     - https://bugzilla.redhat.com/show_bug.cgi?id=2447554
     - https://bugzilla.redhat.com/show_bug.cgi?id=2451615
@@ -1393,7 +1394,7 @@
     - https://ubuntu.com/security/notices/USN-8193-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4878
     PublishedDate: '2026-04-09T16:16:31.987Z'
-    LastModifiedDate: '2026-04-13T15:02:47.353Z'
+    LastModifiedDate: '2026-04-25T02:16:03.29Z'
   - VulnerabilityID: CVE-2026-31789
     PkgID: libcrypto3@3.5.5-r0
     PkgName: libcrypto3
