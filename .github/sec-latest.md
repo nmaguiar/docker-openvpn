@@ -1341,18 +1341,19 @@
                         │      │                  ├ [2] : http://www.openwall.com/lists/oss-security/2026/04/08/9 
                         │      │                  ├ [3] : http://www.openwall.com/lists/oss-security/2026/04/09/5 
                         │      │                  ├ [4] : http://www.openwall.com/lists/oss-security/2026/04/09/6 
-                        │      │                  ├ [5] : https://access.redhat.com/security/cve/CVE-2026-4878 
-                        │      │                  ├ [6] : https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
-                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
-                        │      │                  ├ [8] : https://github.com/AndrewGMorgan/libcap_mirror/securi
+                        │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:7473 
+                        │      │                  ├ [6] : https://access.redhat.com/security/cve/CVE-2026-4878 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
+                        │      │                  ├ [9] : https://github.com/AndrewGMorgan/libcap_mirror/securi
                         │      │                  │       ty/advisories/GHSA-f78v-p5hx-m7hh 
-                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
-                        │      │                  ├ [10]: https://sites.google.com/site/fullycapable/release-no
+                        │      │                  ├ [10]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
+                        │      │                  ├ [11]: https://sites.google.com/site/fullycapable/release-no
                         │      │                  │       tes-for-libcap#h.x4zn8j3lss6r 
-                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8193-1 
-                        │      │                  ╰ [12]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-8193-1 
+                        │      │                  ╰ [13]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
                         │      ├ PublishedDate   : 2026-04-09T16:16:31.987Z 
-                        │      ╰ LastModifiedDate: 2026-04-13T15:02:47.353Z 
+                        │      ╰ LastModifiedDate: 2026-04-25T02:16:03.29Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -3427,7 +3428,57 @@
                         │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
-                        ╰ [26] ╭ VulnerabilityID : CVE-2026-27171 
+                        ├ [26] ╭ VulnerabilityID : CVE-2026-22184 
+                        │      ├ PkgID           : zlib@1.3.1-r2 
+                        │      ├ PkgName         : zlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
+                        │      │                  ╰ UID : 792cdc69bc59d880 
+                        │      ├ InstalledVersion: 1.3.1-r2 
+                        │      ├ FixedVersion    : 1.3.2-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:e3035c9fb3afb4837f00adcfe8f5b9f738f76bc205a45d4291dfe
+                        │      │                   9e2aefbef9b 
+                        │      ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
+                        │      │                   untgz utility 
+                        │      ├ Description     : zlib versions up to and including 1.3.1.2 include a global
+                        │      │                   buffer overflow in the untgz utility located under
+                        │      │                   contrib/untgz. The vulnerability is limited to the
+                        │      │                   standalone demonstration utility and does not affect the
+                        │      │                   core zlib compression library. The flaw occurs when a user
+                        │      │                   executes the untgz command with an excessively long archive
+                        │      │                   name supplied via the command line, leading to an
+                        │      │                   out-of-bounds write in a fixed-size global buffer. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-787 
+                        │      ├ VendorSeverity   ╭ nvd   : 3 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.8 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 8.6 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
+                        │      │                  ├ [1]: https://github.com/madler/zlib 
+                        │      │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
+                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
+                        │      │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
+                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
+                        │      │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-global
+                        │      │                  │      -buffer-overflow-in-tgzfname 
+                        │      │                  ╰ [7]: https://zlib.net/ 
+                        │      ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
+                        │      ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
+                        ╰ [27] ╭ VulnerabilityID : CVE-2026-27171 
                                ├ PkgID           : zlib@1.3.1-r2 
                                ├ PkgName         : zlib 
                                ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
