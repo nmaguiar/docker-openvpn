@@ -1455,6 +1455,7 @@
         V3Score: 5.8
     References:
     - https://access.redhat.com/security/cve/CVE-2026-31789
+    - https://github.com/advisories/GHSA-j79m-9jxq-788r
     - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
     - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
     - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
@@ -1592,11 +1593,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -1662,11 +1667,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -1675,6 +1684,7 @@
         V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2026-28389
+    - https://github.com/advisories/GHSA-7x88-9hgc-69gf
     - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
     - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
     - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
@@ -1733,11 +1743,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -1810,15 +1824,20 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2026-31790
+    - https://github.com/advisories/GHSA-vgxx-5xj5-q97x
     - https://github.com/openssl/openssl/commit/001e01db3e996e13ffc72386fe79d03a6683b5ac
     - https://github.com/openssl/openssl/commit/abd8b2eec7e3f3fda60ecfb68498b246b52af482
     - https://github.com/openssl/openssl/commit/b922e24e5b23ffb9cb9e14cadff23d91e9f7e406
@@ -1908,15 +1927,20 @@
     - CWE-757
     VendorSeverity:
       amazon: 1
+      julia: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N
         V3Score: 3.1
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/13/3
     - https://access.redhat.com/security/cve/CVE-2026-2673
+    - https://github.com/advisories/GHSA-wj64-gh9j-xm82
     - https://github.com/openssl/openssl/commit/2157c9d81f7b0bd7dfa25b960e928ec28e8dd63f
     - https://github.com/openssl/openssl/commit/85977e013f32ceb96aa034c0e741adddc1a05e34
     - https://nvd.nist.gov/vuln/detail/CVE-2026-2673
@@ -1985,6 +2009,7 @@
         V3Score: 5.8
     References:
     - https://access.redhat.com/security/cve/CVE-2026-31789
+    - https://github.com/advisories/GHSA-j79m-9jxq-788r
     - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
     - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
     - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
@@ -2122,11 +2147,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -2192,11 +2221,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -2205,6 +2238,7 @@
         V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2026-28389
+    - https://github.com/advisories/GHSA-7x88-9hgc-69gf
     - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
     - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
     - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
@@ -2263,11 +2297,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -2340,15 +2378,20 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2026-31790
+    - https://github.com/advisories/GHSA-vgxx-5xj5-q97x
     - https://github.com/openssl/openssl/commit/001e01db3e996e13ffc72386fe79d03a6683b5ac
     - https://github.com/openssl/openssl/commit/abd8b2eec7e3f3fda60ecfb68498b246b52af482
     - https://github.com/openssl/openssl/commit/b922e24e5b23ffb9cb9e14cadff23d91e9f7e406
@@ -2438,15 +2481,20 @@
     - CWE-757
     VendorSeverity:
       amazon: 1
+      julia: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N
         V3Score: 3.1
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/13/3
     - https://access.redhat.com/security/cve/CVE-2026-2673
+    - https://github.com/advisories/GHSA-wj64-gh9j-xm82
     - https://github.com/openssl/openssl/commit/2157c9d81f7b0bd7dfa25b960e928ec28e8dd63f
     - https://github.com/openssl/openssl/commit/85977e013f32ceb96aa034c0e741adddc1a05e34
     - https://nvd.nist.gov/vuln/detail/CVE-2026-2673
@@ -2675,6 +2723,7 @@
         V3Score: 5.8
     References:
     - https://access.redhat.com/security/cve/CVE-2026-31789
+    - https://github.com/advisories/GHSA-j79m-9jxq-788r
     - https://github.com/openssl/openssl/commit/364f095b80601db632b0def6a33316967f863bde
     - https://github.com/openssl/openssl/commit/7a9087efd769f362ad9c0e30c7baaa6bbfa65ecf
     - https://github.com/openssl/openssl/commit/945b935ac66cc7f1a41f1b849c7c25adb5351f49
@@ -2812,11 +2861,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -2882,11 +2935,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -2895,6 +2952,7 @@
         V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2026-28389
+    - https://github.com/advisories/GHSA-7x88-9hgc-69gf
     - https://github.com/openssl/openssl/commit/16cea4188e0ea567deb4f93f85902247e67384f5
     - https://github.com/openssl/openssl/commit/785cbf7ea3b5a6f5adf0c1ccb92b79d89c35c616
     - https://github.com/openssl/openssl/commit/7b5274e812400cacb6f3be4c2df5340923fa807f
@@ -2953,11 +3011,15 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       nvd: 3
       photon: 3
       redhat: 2
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
       nvd:
         V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
         V3Score: 7.5
@@ -3030,15 +3092,20 @@
     VendorSeverity:
       amazon: 3
       azure: 2
+      julia: 3
       photon: 3
       redhat: 2
       ubuntu: 2
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N
         V3Score: 5.9
     References:
     - https://access.redhat.com/security/cve/CVE-2026-31790
+    - https://github.com/advisories/GHSA-vgxx-5xj5-q97x
     - https://github.com/openssl/openssl/commit/001e01db3e996e13ffc72386fe79d03a6683b5ac
     - https://github.com/openssl/openssl/commit/abd8b2eec7e3f3fda60ecfb68498b246b52af482
     - https://github.com/openssl/openssl/commit/b922e24e5b23ffb9cb9e14cadff23d91e9f7e406
@@ -3128,15 +3195,20 @@
     - CWE-757
     VendorSeverity:
       amazon: 1
+      julia: 3
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
+        V3Score: 7.5
       redhat:
         V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N
         V3Score: 3.1
     References:
     - http://www.openwall.com/lists/oss-security/2026/03/13/3
     - https://access.redhat.com/security/cve/CVE-2026-2673
+    - https://github.com/advisories/GHSA-wj64-gh9j-xm82
     - https://github.com/openssl/openssl/commit/2157c9d81f7b0bd7dfa25b960e928ec28e8dd63f
     - https://github.com/openssl/openssl/commit/85977e013f32ceb96aa034c0e741adddc1a05e34
     - https://nvd.nist.gov/vuln/detail/CVE-2026-2673
