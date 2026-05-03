@@ -1355,7 +1355,7 @@
                         │      │                  ├ [9] : https://bugzilla.redhat.com/2451615 
                         │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
                         │      │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
-                        │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-12441.html 
+                        │      │                  ├ [12]: https://errata.almalinux.org/10/ALSA-2026-12423.html 
                         │      │                  ├ [13]: https://github.com/AndrewGMorgan/libcap_mirror/securi
                         │      │                  │       ty/advisories/GHSA-f78v-p5hx-m7hh 
                         │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4878.html 
