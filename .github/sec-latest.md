@@ -1350,23 +1350,24 @@
                         │      │                  ├ [4] : http://www.openwall.com/lists/oss-security/2026/04/09/6 
                         │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:12423 
                         │      │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:12441 
-                        │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:7473 
-                        │      │                  ├ [8] : https://access.redhat.com/security/cve/CVE-2026-4878 
-                        │      │                  ├ [9] : https://bugzilla.redhat.com/2451615 
-                        │      │                  ├ [10]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
-                        │      │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
-                        │      │                  ├ [12]: https://errata.almalinux.org/9/ALSA-2026-12441.html 
-                        │      │                  ├ [13]: https://github.com/AndrewGMorgan/libcap_mirror/securi
+                        │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:13285 
+                        │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:7473 
+                        │      │                  ├ [9] : https://access.redhat.com/security/cve/CVE-2026-4878 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2451615 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
+                        │      │                  ├ [13]: https://errata.almalinux.org/9/ALSA-2026-12441.html 
+                        │      │                  ├ [14]: https://github.com/AndrewGMorgan/libcap_mirror/securi
                         │      │                  │       ty/advisories/GHSA-f78v-p5hx-m7hh 
-                        │      │                  ├ [14]: https://linux.oracle.com/cve/CVE-2026-4878.html 
-                        │      │                  ├ [15]: https://linux.oracle.com/errata/ELSA-2026-12441.html 
-                        │      │                  ├ [16]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
-                        │      │                  ├ [17]: https://sites.google.com/site/fullycapable/release-no
+                        │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2026-4878.html 
+                        │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2026-12441.html 
+                        │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
+                        │      │                  ├ [18]: https://sites.google.com/site/fullycapable/release-no
                         │      │                  │       tes-for-libcap#h.x4zn8j3lss6r 
-                        │      │                  ├ [18]: https://ubuntu.com/security/notices/USN-8193-1 
-                        │      │                  ╰ [19]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
+                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-8193-1 
+                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
                         │      ├ PublishedDate   : 2026-04-09T16:16:31.987Z 
-                        │      ╰ LastModifiedDate: 2026-04-30T20:16:24.837Z 
+                        │      ╰ LastModifiedDate: 2026-05-04T02:15:58.233Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
