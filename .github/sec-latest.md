@@ -1335,6 +1335,7 @@
                         │      │                  ├ nvd        : 3 
                         │      │                  ├ oracle-oval: 3 
                         │      │                  ├ redhat     : 3 
+                        │      │                  ├ rocky      : 3 
                         │      │                  ╰ ubuntu     : 2 
                         │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H
                         │      │                  │        │           /A:H 
@@ -1351,23 +1352,27 @@
                         │      │                  ├ [5] : https://access.redhat.com/errata/RHSA-2026:12423 
                         │      │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:12441 
                         │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:13285 
-                        │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:7473 
-                        │      │                  ├ [9] : https://access.redhat.com/security/cve/CVE-2026-4878 
-                        │      │                  ├ [10]: https://bugzilla.redhat.com/2451615 
-                        │      │                  ├ [11]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
-                        │      │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
-                        │      │                  ├ [13]: https://errata.almalinux.org/9/ALSA-2026-12441.html 
-                        │      │                  ├ [14]: https://github.com/AndrewGMorgan/libcap_mirror/securi
+                        │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:14162 
+                        │      │                  ├ [9] : https://access.redhat.com/errata/RHSA-2026:7473 
+                        │      │                  ├ [10]: https://access.redhat.com/security/cve/CVE-2026-4878 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2451615 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
+                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-4878 
+                        │      │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2026-12441.html 
+                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2026:12423 
+                        │      │                  ├ [17]: https://github.com/AndrewGMorgan/libcap_mirror/securi
                         │      │                  │       ty/advisories/GHSA-f78v-p5hx-m7hh 
-                        │      │                  ├ [15]: https://linux.oracle.com/cve/CVE-2026-4878.html 
-                        │      │                  ├ [16]: https://linux.oracle.com/errata/ELSA-2026-12441.html 
-                        │      │                  ├ [17]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
-                        │      │                  ├ [18]: https://sites.google.com/site/fullycapable/release-no
+                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-4878.html 
+                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-13285.html 
+                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
+                        │      │                  ├ [21]: https://sites.google.com/site/fullycapable/release-no
                         │      │                  │       tes-for-libcap#h.x4zn8j3lss6r 
-                        │      │                  ├ [19]: https://ubuntu.com/security/notices/USN-8193-1 
-                        │      │                  ╰ [20]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
+                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-8193-1 
+                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
                         │      ├ PublishedDate   : 2026-04-09T16:16:31.987Z 
-                        │      ╰ LastModifiedDate: 2026-05-04T02:15:58.233Z 
+                        │      ╰ LastModifiedDate: 2026-05-06T16:16:10.867Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
