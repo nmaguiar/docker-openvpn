@@ -1353,26 +1353,27 @@
                         │      │                  ├ [6] : https://access.redhat.com/errata/RHSA-2026:12441 
                         │      │                  ├ [7] : https://access.redhat.com/errata/RHSA-2026:13285 
                         │      │                  ├ [8] : https://access.redhat.com/errata/RHSA-2026:14162 
-                        │      │                  ├ [9] : https://access.redhat.com/errata/RHSA-2026:7473 
-                        │      │                  ├ [10]: https://access.redhat.com/security/cve/CVE-2026-4878 
-                        │      │                  ├ [11]: https://bugzilla.redhat.com/2451615 
-                        │      │                  ├ [12]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
-                        │      │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
-                        │      │                  ├ [14]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  ├ [9] : https://access.redhat.com/errata/RHSA-2026:14937 
+                        │      │                  ├ [10]: https://access.redhat.com/errata/RHSA-2026:7473 
+                        │      │                  ├ [11]: https://access.redhat.com/security/cve/CVE-2026-4878 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2451615 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/show_bug.cgi?id=2447554 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/show_bug.cgi?id=2451615 
+                        │      │                  ├ [15]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
                         │      │                  │       26-4878 
-                        │      │                  ├ [15]: https://errata.almalinux.org/9/ALSA-2026-12441.html 
-                        │      │                  ├ [16]: https://errata.rockylinux.org/RLSA-2026:12423 
-                        │      │                  ├ [17]: https://github.com/AndrewGMorgan/libcap_mirror/securi
+                        │      │                  ├ [16]: https://errata.almalinux.org/9/ALSA-2026-12441.html 
+                        │      │                  ├ [17]: https://errata.rockylinux.org/RLSA-2026:12441 
+                        │      │                  ├ [18]: https://github.com/AndrewGMorgan/libcap_mirror/securi
                         │      │                  │       ty/advisories/GHSA-f78v-p5hx-m7hh 
-                        │      │                  ├ [18]: https://linux.oracle.com/cve/CVE-2026-4878.html 
-                        │      │                  ├ [19]: https://linux.oracle.com/errata/ELSA-2026-13285.html 
-                        │      │                  ├ [20]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
-                        │      │                  ├ [21]: https://sites.google.com/site/fullycapable/release-no
+                        │      │                  ├ [19]: https://linux.oracle.com/cve/CVE-2026-4878.html 
+                        │      │                  ├ [20]: https://linux.oracle.com/errata/ELSA-2026-13285.html 
+                        │      │                  ├ [21]: https://nvd.nist.gov/vuln/detail/CVE-2026-4878 
+                        │      │                  ├ [22]: https://sites.google.com/site/fullycapable/release-no
                         │      │                  │       tes-for-libcap#h.x4zn8j3lss6r 
-                        │      │                  ├ [22]: https://ubuntu.com/security/notices/USN-8193-1 
-                        │      │                  ╰ [23]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
+                        │      │                  ├ [23]: https://ubuntu.com/security/notices/USN-8193-1 
+                        │      │                  ╰ [24]: https://www.cve.org/CVERecord?id=CVE-2026-4878 
                         │      ├ PublishedDate   : 2026-04-09T16:16:31.987Z 
-                        │      ╰ LastModifiedDate: 2026-05-06T16:16:10.867Z 
+                        │      ╰ LastModifiedDate: 2026-05-07T22:16:36.237Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -3678,25 +3679,33 @@
                                ├ VendorSeverity   ╭ amazon     : 1 
                                │                  ├ azure      : 1 
                                │                  ├ cbl-mariner: 1 
+                               │                  ├ julia      : 1 
                                │                  ├ nvd        : 2 
                                │                  ├ redhat     : 1 
                                │                  ╰ ubuntu     : 1 
-                               ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+                               ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N
+                               │                  │        │           /A:L 
+                               │                  │        ╰ V3Score : 2.9 
+                               │                  ├ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
                                │                  │        │           /A:H 
                                │                  │        ╰ V3Score : 5.5 
                                │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
                                │                           │           /A:L 
                                │                           ╰ V3Score : 3.3 
-                               ├ References       ╭ [0]: https://7asecurity.com/blog/2026/02/zlib-7asecurity-au
-                               │                  │      dit/ 
-                               │                  ├ [1]: https://7asecurity.com/reports/pentest-report-zlib-RC1
-                               │                  │      .1.pdf 
-                               │                  ├ [2]: https://access.redhat.com/security/cve/CVE-2026-27171 
-                               │                  ├ [3]: https://github.com/madler/zlib/issues/904 
-                               │                  ├ [4]: https://github.com/madler/zlib/releases/tag/v1.3.2 
-                               │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-27171 
-                               │                  ├ [6]: https://ostif.org/zlib-audit-complete/ 
-                               │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
+                               ├ References       ╭ [0] : https://7asecurity.com/blog/2026/02/zlib-7asecurity-a
+                               │                  │       udit 
+                               │                  ├ [1] : https://7asecurity.com/blog/2026/02/zlib-7asecurity-a
+                               │                  │       udit/ 
+                               │                  ├ [2] : https://7asecurity.com/reports/pentest-report-zlib-RC
+                               │                  │       1.1.pdf 
+                               │                  ├ [3] : https://access.redhat.com/security/cve/CVE-2026-27171 
+                               │                  ├ [4] : https://github.com/advisories/GHSA-h858-mf2m-8jf4 
+                               │                  ├ [5] : https://github.com/madler/zlib/issues/904 
+                               │                  ├ [6] : https://github.com/madler/zlib/releases/tag/v1.3.2 
+                               │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-27171 
+                               │                  ├ [8] : https://ostif.org/zlib-audit-complete 
+                               │                  ├ [9] : https://ostif.org/zlib-audit-complete/ 
+                               │                  ╰ [10]: https://www.cve.org/CVERecord?id=CVE-2026-27171 
                                ├ PublishedDate   : 2026-02-18T04:16:01.263Z 
                                ╰ LastModifiedDate: 2026-03-25T21:27:04.603Z 
 ```
