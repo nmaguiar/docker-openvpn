@@ -1396,6 +1396,7 @@
     - https://access.redhat.com/errata/RHSA-2026:12441
     - https://access.redhat.com/errata/RHSA-2026:13285
     - https://access.redhat.com/errata/RHSA-2026:14162
+    - https://access.redhat.com/errata/RHSA-2026:14937
     - https://access.redhat.com/errata/RHSA-2026:7473
     - https://access.redhat.com/security/cve/CVE-2026-4878
     - https://bugzilla.redhat.com/2451615
@@ -1403,7 +1404,7 @@
     - https://bugzilla.redhat.com/show_bug.cgi?id=2451615
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-4878
     - https://errata.almalinux.org/9/ALSA-2026-12441.html
-    - https://errata.rockylinux.org/RLSA-2026:12423
+    - https://errata.rockylinux.org/RLSA-2026:12441
     - https://github.com/AndrewGMorgan/libcap_mirror/security/advisories/GHSA-f78v-p5hx-m7hh
     - https://linux.oracle.com/cve/CVE-2026-4878.html
     - https://linux.oracle.com/errata/ELSA-2026-13285.html
@@ -1412,7 +1413,7 @@
     - https://ubuntu.com/security/notices/USN-8193-1
     - https://www.cve.org/CVERecord?id=CVE-2026-4878
     PublishedDate: '2026-04-09T16:16:31.987Z'
-    LastModifiedDate: '2026-05-06T16:16:10.867Z'
+    LastModifiedDate: '2026-05-07T22:16:36.237Z'
   - VulnerabilityID: CVE-2026-31789
     PkgID: libcrypto3@3.5.5-r0
     PkgName: libcrypto3
@@ -3384,10 +3385,14 @@
       amazon: 1
       azure: 1
       cbl-mariner: 1
+      julia: 1
       nvd: 2
       redhat: 1
       ubuntu: 1
     CVSS:
+      julia:
+        V3Vector: CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L
+        V3Score: 2.9
       nvd:
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H
         V3Score: 5.5
@@ -3395,12 +3400,15 @@
         V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L
         V3Score: 3.3
     References:
+    - https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit
     - https://7asecurity.com/blog/2026/02/zlib-7asecurity-audit/
     - https://7asecurity.com/reports/pentest-report-zlib-RC1.1.pdf
     - https://access.redhat.com/security/cve/CVE-2026-27171
+    - https://github.com/advisories/GHSA-h858-mf2m-8jf4
     - https://github.com/madler/zlib/issues/904
     - https://github.com/madler/zlib/releases/tag/v1.3.2
     - https://nvd.nist.gov/vuln/detail/CVE-2026-27171
+    - https://ostif.org/zlib-audit-complete
     - https://ostif.org/zlib-audit-complete/
     - https://www.cve.org/CVERecord?id=CVE-2026-27171
     PublishedDate: '2026-02-18T04:16:01.263Z'
