@@ -1817,98 +1817,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
                         │      ╰ LastModifiedDate: 2026-04-23T15:39:52.52Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2026-31790 
-                        │      ├ PkgID           : libcrypto3@3.5.5-r0 
-                        │      ├ PkgName         : libcrypto3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
-                        │      │                  │       =3.23.3 
-                        │      │                  ╰ UID : 6778a588f2cebd48 
-                        │      ├ InstalledVersion: 3.5.5-r0 
-                        │      ├ FixedVersion    : 3.5.6-r0 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
-                        │      │                  │         e0f8eaa0285cc21ac153 
-                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
-                        │      │                            f26e707861a5f52bf64e 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:8c0b2b90ab15a225a79f032a723a33e44c11f3f052ccb771b2537
-                        │      │                   c3e12a55ab3 
-                        │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
-                        │      │                   Memory via Invalid RSA Public Key 
-                        │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
-                        │      │                   to establish
-                        │      │                   a secret encryption key can send contents of an
-                        │      │                   uninitialized memory buffer to
-                        │      │                   a malicious peer.
-                        │      │                   
-                        │      │                   Impact summary: The uninitialized buffer might contain
-                        │      │                   sensitive data from the
-                        │      │                   previous execution of the application process which leads to
-                        │      │                    sensitive data
-                        │      │                   leakage to an attacker.
-                        │      │                   RSA_public_encrypt() returns the number of bytes written on
-                        │      │                   success and -1
-                        │      │                   on error. The affected code tests only whether the return
-                        │      │                   value is non-zero.
-                        │      │                   As a result, if RSA encryption fails, encapsulation can
-                        │      │                   still return success to
-                        │      │                   the caller, set the output lengths, and leave the caller to
-                        │      │                   use the contents of
-                        │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
-                        │      │                   produced.
-                        │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
-                        │      │                   on an
-                        │      │                   attacker-supplied invalid RSA public key without first
-                        │      │                   validating that key,
-                        │      │                   then this may cause stale or uninitialized contents of the
-                        │      │                   caller-provided
-                        │      │                   ciphertext buffer to be disclosed to the attacker in place
-                        │      │                   of the KEM
-                        │      │                   ciphertext.
-                        │      │                   As a workaround calling EVP_PKEY_public_check() or
-                        │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
-                        │      │                   will mitigate
-                        │      │                   the issue.
-                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
-                        │      │                   affected by this issue. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ amazon: 3 
-                        │      │                  ├ azure : 2 
-                        │      │                  ├ julia : 3 
-                        │      │                  ├ photon: 3 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
-                        │      │                  │        │           /A:N 
-                        │      │                  │        ╰ V3Score : 7.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-                        │      │                           │           /A:N 
-                        │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
-                        │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
-                        │      │                  │       3f3fda60ecfb68498b246b52af482 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
-                        │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
-                        │      │                  │       54e961d0c3b174348f8308486f790 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
-                        │      │                  │       8645ed77e46b7e9f764e284df379e 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
-                        │      │                          7/11 
-                        │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2026-2673 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
@@ -2005,18 +1914,18 @@
                         │      │                   OpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is
                         │      │                   OpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by
                         │      │                   this issue. 
-                        │      ├ Severity        : LOW 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-757 
                         │      ├ VendorSeverity   ╭ amazon: 1 
                         │      │                  ├ julia : 3 
-                        │      │                  ├ redhat: 1 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
                         │      │                  │        │           /A:N 
                         │      │                  │        ╰ V3Score : 7.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
-                        │      │                           │           /A:N 
-                        │      │                           ╰ V3Score : 3.1 
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 4.2 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
                         │      │                  ├ [2]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
@@ -2030,6 +1939,97 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2026-31790 
+                        │      ├ PkgID           : libcrypto3@3.5.5-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.5-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.3 
+                        │      │                  ╰ UID : 6778a588f2cebd48 
+                        │      ├ InstalledVersion: 3.5.5-r0 
+                        │      ├ FixedVersion    : 3.5.6-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:8c0b2b90ab15a225a79f032a723a33e44c11f3f052ccb771b2537
+                        │      │                   c3e12a55ab3 
+                        │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
+                        │      │                   Memory via Invalid RSA Public Key 
+                        │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
+                        │      │                   to establish
+                        │      │                   a secret encryption key can send contents of an
+                        │      │                   uninitialized memory buffer to
+                        │      │                   a malicious peer.
+                        │      │                   
+                        │      │                   Impact summary: The uninitialized buffer might contain
+                        │      │                   sensitive data from the
+                        │      │                   previous execution of the application process which leads to
+                        │      │                    sensitive data
+                        │      │                   leakage to an attacker.
+                        │      │                   RSA_public_encrypt() returns the number of bytes written on
+                        │      │                   success and -1
+                        │      │                   on error. The affected code tests only whether the return
+                        │      │                   value is non-zero.
+                        │      │                   As a result, if RSA encryption fails, encapsulation can
+                        │      │                   still return success to
+                        │      │                   the caller, set the output lengths, and leave the caller to
+                        │      │                   use the contents of
+                        │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
+                        │      │                   produced.
+                        │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
+                        │      │                   on an
+                        │      │                   attacker-supplied invalid RSA public key without first
+                        │      │                   validating that key,
+                        │      │                   then this may cause stale or uninitialized contents of the
+                        │      │                   caller-provided
+                        │      │                   ciphertext buffer to be disclosed to the attacker in place
+                        │      │                   of the KEM
+                        │      │                   ciphertext.
+                        │      │                   As a workaround calling EVP_PKEY_public_check() or
+                        │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
+                        │      │                   will mitigate
+                        │      │                   the issue.
+                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
+                        │      │                   affected by this issue. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-754 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
+                        │      │                  ├ julia : 3 
+                        │      │                  ├ photon: 3 
+                        │      │                  ├ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
+                        │      │                  │        │           /A:N 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 5.9 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
+                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
+                        │      │                  │       96e13ffc72386fe79d03a6683b5ac 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
+                        │      │                  │       3f3fda60ecfb68498b246b52af482 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
+                        │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
+                        │      │                  │       54e961d0c3b174348f8308486f790 
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
+                        │      │                  │       8645ed77e46b7e9f764e284df379e 
+                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
+                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
+                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                          7/11 
+                        │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
+                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -2473,98 +2473,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
                         │      ╰ LastModifiedDate: 2026-04-23T15:39:52.52Z 
-                        ├ [13] ╭ VulnerabilityID : CVE-2026-31790 
-                        │      ├ PkgID           : libssl3@3.5.5-r0 
-                        │      ├ PkgName         : libssl3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
-                        │      │                  │       23.3 
-                        │      │                  ╰ UID : bca2260902e2ef48 
-                        │      ├ InstalledVersion: 3.5.5-r0 
-                        │      ├ FixedVersion    : 3.5.6-r0 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
-                        │      │                  │         e0f8eaa0285cc21ac153 
-                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
-                        │      │                            f26e707861a5f52bf64e 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:b18204f75d009ecf490d7cef47115f766527a6c7cfd08acdd28e3
-                        │      │                   4cb8573f9f4 
-                        │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
-                        │      │                   Memory via Invalid RSA Public Key 
-                        │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
-                        │      │                   to establish
-                        │      │                   a secret encryption key can send contents of an
-                        │      │                   uninitialized memory buffer to
-                        │      │                   a malicious peer.
-                        │      │                   
-                        │      │                   Impact summary: The uninitialized buffer might contain
-                        │      │                   sensitive data from the
-                        │      │                   previous execution of the application process which leads to
-                        │      │                    sensitive data
-                        │      │                   leakage to an attacker.
-                        │      │                   RSA_public_encrypt() returns the number of bytes written on
-                        │      │                   success and -1
-                        │      │                   on error. The affected code tests only whether the return
-                        │      │                   value is non-zero.
-                        │      │                   As a result, if RSA encryption fails, encapsulation can
-                        │      │                   still return success to
-                        │      │                   the caller, set the output lengths, and leave the caller to
-                        │      │                   use the contents of
-                        │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
-                        │      │                   produced.
-                        │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
-                        │      │                   on an
-                        │      │                   attacker-supplied invalid RSA public key without first
-                        │      │                   validating that key,
-                        │      │                   then this may cause stale or uninitialized contents of the
-                        │      │                   caller-provided
-                        │      │                   ciphertext buffer to be disclosed to the attacker in place
-                        │      │                   of the KEM
-                        │      │                   ciphertext.
-                        │      │                   As a workaround calling EVP_PKEY_public_check() or
-                        │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
-                        │      │                   will mitigate
-                        │      │                   the issue.
-                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
-                        │      │                   affected by this issue. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ amazon: 3 
-                        │      │                  ├ azure : 2 
-                        │      │                  ├ julia : 3 
-                        │      │                  ├ photon: 3 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
-                        │      │                  │        │           /A:N 
-                        │      │                  │        ╰ V3Score : 7.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-                        │      │                           │           /A:N 
-                        │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
-                        │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
-                        │      │                  │       3f3fda60ecfb68498b246b52af482 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
-                        │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
-                        │      │                  │       54e961d0c3b174348f8308486f790 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
-                        │      │                  │       8645ed77e46b7e9f764e284df379e 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
-                        │      │                          7/11 
-                        │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
-                        ├ [14] ╭ VulnerabilityID : CVE-2026-2673 
+                        ├ [13] ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
@@ -2661,18 +2570,18 @@
                         │      │                   OpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is
                         │      │                   OpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by
                         │      │                   this issue. 
-                        │      ├ Severity        : LOW 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-757 
                         │      ├ VendorSeverity   ╭ amazon: 1 
                         │      │                  ├ julia : 3 
-                        │      │                  ├ redhat: 1 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
                         │      │                  │        │           /A:N 
                         │      │                  │        ╰ V3Score : 7.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
-                        │      │                           │           /A:N 
-                        │      │                           ╰ V3Score : 3.1 
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 4.2 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
                         │      │                  ├ [2]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
@@ -2686,6 +2595,97 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
+                        ├ [14] ╭ VulnerabilityID : CVE-2026-31790 
+                        │      ├ PkgID           : libssl3@3.5.5-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.5-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.3 
+                        │      │                  ╰ UID : bca2260902e2ef48 
+                        │      ├ InstalledVersion: 3.5.5-r0 
+                        │      ├ FixedVersion    : 3.5.6-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:b18204f75d009ecf490d7cef47115f766527a6c7cfd08acdd28e3
+                        │      │                   4cb8573f9f4 
+                        │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
+                        │      │                   Memory via Invalid RSA Public Key 
+                        │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
+                        │      │                   to establish
+                        │      │                   a secret encryption key can send contents of an
+                        │      │                   uninitialized memory buffer to
+                        │      │                   a malicious peer.
+                        │      │                   
+                        │      │                   Impact summary: The uninitialized buffer might contain
+                        │      │                   sensitive data from the
+                        │      │                   previous execution of the application process which leads to
+                        │      │                    sensitive data
+                        │      │                   leakage to an attacker.
+                        │      │                   RSA_public_encrypt() returns the number of bytes written on
+                        │      │                   success and -1
+                        │      │                   on error. The affected code tests only whether the return
+                        │      │                   value is non-zero.
+                        │      │                   As a result, if RSA encryption fails, encapsulation can
+                        │      │                   still return success to
+                        │      │                   the caller, set the output lengths, and leave the caller to
+                        │      │                   use the contents of
+                        │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
+                        │      │                   produced.
+                        │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
+                        │      │                   on an
+                        │      │                   attacker-supplied invalid RSA public key without first
+                        │      │                   validating that key,
+                        │      │                   then this may cause stale or uninitialized contents of the
+                        │      │                   caller-provided
+                        │      │                   ciphertext buffer to be disclosed to the attacker in place
+                        │      │                   of the KEM
+                        │      │                   ciphertext.
+                        │      │                   As a workaround calling EVP_PKEY_public_check() or
+                        │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
+                        │      │                   will mitigate
+                        │      │                   the issue.
+                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
+                        │      │                   affected by this issue. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-754 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
+                        │      │                  ├ julia : 3 
+                        │      │                  ├ photon: 3 
+                        │      │                  ├ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
+                        │      │                  │        │           /A:N 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 5.9 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
+                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
+                        │      │                  │       96e13ffc72386fe79d03a6683b5ac 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
+                        │      │                  │       3f3fda60ecfb68498b246b52af482 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
+                        │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
+                        │      │                  │       54e961d0c3b174348f8308486f790 
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
+                        │      │                  │       8645ed77e46b7e9f764e284df379e 
+                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
+                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
+                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                          7/11 
+                        │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
+                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-40200 
                         │      ├ PkgID           : musl@1.2.5-r21 
                         │      ├ PkgName         : musl 
@@ -3307,98 +3307,7 @@
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
                         │      ╰ LastModifiedDate: 2026-04-23T15:39:52.52Z 
-                        ├ [24] ╭ VulnerabilityID : CVE-2026-31790 
-                        │      ├ PkgID           : openssl@3.5.5-r0 
-                        │      ├ PkgName         : openssl 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
-                        │      │                  │       23.3 
-                        │      │                  ╰ UID : 8f92f564083cfc68 
-                        │      ├ InstalledVersion: 3.5.5-r0 
-                        │      ├ FixedVersion    : 3.5.6-r0 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:3e70edfa70f6e71828d3d7048e91fe97ece30dd1f9db
-                        │      │                  │         1acfec6f8b37a0206990 
-                        │      │                  ╰ DiffID: sha256:573f90d23984797cb82c14519a0e475b6581e47bab1d
-                        │      │                            d7d7cd955551fd40eb0d 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:1976118f6b6a7346bb90b3fa8ddccb4ebd1b97d691665fe426a02
-                        │      │                   36364902dba 
-                        │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
-                        │      │                   Memory via Invalid RSA Public Key 
-                        │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
-                        │      │                   to establish
-                        │      │                   a secret encryption key can send contents of an
-                        │      │                   uninitialized memory buffer to
-                        │      │                   a malicious peer.
-                        │      │                   
-                        │      │                   Impact summary: The uninitialized buffer might contain
-                        │      │                   sensitive data from the
-                        │      │                   previous execution of the application process which leads to
-                        │      │                    sensitive data
-                        │      │                   leakage to an attacker.
-                        │      │                   RSA_public_encrypt() returns the number of bytes written on
-                        │      │                   success and -1
-                        │      │                   on error. The affected code tests only whether the return
-                        │      │                   value is non-zero.
-                        │      │                   As a result, if RSA encryption fails, encapsulation can
-                        │      │                   still return success to
-                        │      │                   the caller, set the output lengths, and leave the caller to
-                        │      │                   use the contents of
-                        │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
-                        │      │                   produced.
-                        │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
-                        │      │                   on an
-                        │      │                   attacker-supplied invalid RSA public key without first
-                        │      │                   validating that key,
-                        │      │                   then this may cause stale or uninitialized contents of the
-                        │      │                   caller-provided
-                        │      │                   ciphertext buffer to be disclosed to the attacker in place
-                        │      │                   of the KEM
-                        │      │                   ciphertext.
-                        │      │                   As a workaround calling EVP_PKEY_public_check() or
-                        │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
-                        │      │                   will mitigate
-                        │      │                   the issue.
-                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
-                        │      │                   affected by this issue. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs           ─ [0]: CWE-754 
-                        │      ├ VendorSeverity   ╭ amazon: 3 
-                        │      │                  ├ azure : 2 
-                        │      │                  ├ julia : 3 
-                        │      │                  ├ photon: 3 
-                        │      │                  ├ redhat: 2 
-                        │      │                  ╰ ubuntu: 2 
-                        │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
-                        │      │                  │        │           /A:N 
-                        │      │                  │        ╰ V3Score : 7.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
-                        │      │                           │           /A:N 
-                        │      │                           ╰ V3Score : 5.9 
-                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
-                        │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
-                        │      │                  │       3f3fda60ecfb68498b246b52af482 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
-                        │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
-                        │      │                  │       54e961d0c3b174348f8308486f790 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
-                        │      │                  │       8645ed77e46b7e9f764e284df379e 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
-                        │      │                          7/11 
-                        │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
-                        ├ [25] ╭ VulnerabilityID : CVE-2026-2673 
+                        ├ [24] ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
@@ -3495,18 +3404,18 @@
                         │      │                   OpenSSL 3.5 users should upgrade to OpenSSL 3.5.6 once it is
                         │      │                   OpenSSL 3.4, 3.3, 3.0, 1.0.2 and 1.1.1 are not affected by
                         │      │                   this issue. 
-                        │      ├ Severity        : LOW 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs           ─ [0]: CWE-757 
                         │      ├ VendorSeverity   ╭ amazon: 1 
                         │      │                  ├ julia : 3 
-                        │      │                  ├ redhat: 1 
+                        │      │                  ├ redhat: 2 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
                         │      │                  │        │           /A:N 
                         │      │                  │        ╰ V3Score : 7.5 
                         │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
-                        │      │                           │           /A:N 
-                        │      │                           ╰ V3Score : 3.1 
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 4.2 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
                         │      │                  ├ [2]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
@@ -3520,6 +3429,97 @@
                         │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
                         │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
+                        ├ [25] ╭ VulnerabilityID : CVE-2026-31790 
+                        │      ├ PkgID           : openssl@3.5.5-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.5-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.3 
+                        │      │                  ╰ UID : 8f92f564083cfc68 
+                        │      ├ InstalledVersion: 3.5.5-r0 
+                        │      ├ FixedVersion    : 3.5.6-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:3e70edfa70f6e71828d3d7048e91fe97ece30dd1f9db
+                        │      │                  │         1acfec6f8b37a0206990 
+                        │      │                  ╰ DiffID: sha256:573f90d23984797cb82c14519a0e475b6581e47bab1d
+                        │      │                            d7d7cd955551fd40eb0d 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-31790 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:1976118f6b6a7346bb90b3fa8ddccb4ebd1b97d691665fe426a02
+                        │      │                   36364902dba 
+                        │      ├ Title           : openssl: openssl: Information Disclosure from Uninitialized
+                        │      │                   Memory via Invalid RSA Public Key 
+                        │      ├ Description     : Issue summary: Applications using RSASVE key encapsulation
+                        │      │                   to establish
+                        │      │                   a secret encryption key can send contents of an
+                        │      │                   uninitialized memory buffer to
+                        │      │                   a malicious peer.
+                        │      │                   
+                        │      │                   Impact summary: The uninitialized buffer might contain
+                        │      │                   sensitive data from the
+                        │      │                   previous execution of the application process which leads to
+                        │      │                    sensitive data
+                        │      │                   leakage to an attacker.
+                        │      │                   RSA_public_encrypt() returns the number of bytes written on
+                        │      │                   success and -1
+                        │      │                   on error. The affected code tests only whether the return
+                        │      │                   value is non-zero.
+                        │      │                   As a result, if RSA encryption fails, encapsulation can
+                        │      │                   still return success to
+                        │      │                   the caller, set the output lengths, and leave the caller to
+                        │      │                   use the contents of
+                        │      │                   the ciphertext buffer as if a valid KEM ciphertext had been
+                        │      │                   produced.
+                        │      │                   If applications use EVP_PKEY_encapsulate() with RSA/RSASVE
+                        │      │                   on an
+                        │      │                   attacker-supplied invalid RSA public key without first
+                        │      │                   validating that key,
+                        │      │                   then this may cause stale or uninitialized contents of the
+                        │      │                   caller-provided
+                        │      │                   ciphertext buffer to be disclosed to the attacker in place
+                        │      │                   of the KEM
+                        │      │                   ciphertext.
+                        │      │                   As a workaround calling EVP_PKEY_public_check() or
+                        │      │                   EVP_PKEY_public_check_quick() before EVP_PKEY_encapsulate()
+                        │      │                   will mitigate
+                        │      │                   the issue.
+                        │      │                   The FIPS modules in 3.6, 3.5, 3.4, 3.3, 3.1 and 3.0 are
+                        │      │                   affected by this issue. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-754 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ azure : 2 
+                        │      │                  ├ julia : 3 
+                        │      │                  ├ photon: 3 
+                        │      │                  ├ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
+                        │      │                  │        │           /A:N 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 5.9 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
+                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
+                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
+                        │      │                  │       96e13ffc72386fe79d03a6683b5ac 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
+                        │      │                  │       3f3fda60ecfb68498b246b52af482 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
+                        │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
+                        │      │                  │       54e961d0c3b174348f8308486f790 
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
+                        │      │                  │       8645ed77e46b7e9f764e284df379e 
+                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
+                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
+                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                          7/11 
+                        │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
+                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
                         ├ [26] ╭ VulnerabilityID : CVE-2026-35058 
                         │      ├ PkgID           : openvpn@2.6.16-r0 
                         │      ├ PkgName         : openvpn 
