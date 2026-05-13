@@ -148,25 +148,27 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.8 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31789 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-j79m-9jxq-788r 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/364f095b806
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://github.com/advisories/GHSA-j79m-9jxq-788r 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/364f095b806
                         │      │                  │       01db632b0def6a33316967f863bde 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7a9087efd76
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7a9087efd76
                         │      │                  │       9f362ad9c0e30c7baaa6bbfa65ecf 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/945b935ac66
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/945b935ac66
                         │      │                  │       cc7f1a41f1b849c7c25adb5351f49 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a24216018e1
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a24216018e1
                         │      │                  │       ede8ff01a4ff5afff7dfbd443e2f9 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a91e537d16d
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/a91e537d16d
                         │      │                  │       74050dbde50bb0dfb1fe9930f0521 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31789 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-31789 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
+                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
-                        │      ╰ LastModifiedDate: 2026-05-10T21:16:28.84Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.57Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2026-28387 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -234,25 +236,29 @@
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 3.7 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28387 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/07e727d3047
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/07e727d3047
                         │      │                  │       46edb49a98ee8f6ab00256e1f012b 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/258a8f63b26
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/258a8f63b26
                         │      │                  │       995ba357f4326da00e19e29c6acbe 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/444958deaf4
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/444958deaf4
                         │      │                  │       50aea819171f97ae69eaedede42c3 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7a4e08cee62
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/7a4e08cee62
                         │      │                  │       a728d32e60b0de89e6764339df0a7 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ec03fa050b3
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/ec03fa050b3
                         │      │                  │       346997ed9c5fef3d0e16ad7db8177 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28387 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28387 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
-                        │      ╰ LastModifiedDate: 2026-05-10T21:16:28.503Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.27Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2026-28388 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -329,25 +335,29 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28388 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/59c3b315855
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/59c3b315855
                         │      │                  │       3ab53275bbbccca5cb305d591cf2e 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/5a0b4930779
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/5a0b4930779
                         │      │                  │       cd2408880979db765db919da55139 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/602542f2c0c
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/602542f2c0c
                         │      │                  │       2d5edb47128f93eac10b62aeeefb3 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a9d187dd100
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a9d187dd100
                         │      │                  │       0130100fa7ab915f8513532cb3bb8 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d3a901e8d9f
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/d3a901e8d9f
                         │      │                  │       021f3e67d6cfbc12e768129862726 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28388 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28388 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:40:08.41Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.453Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2026-28389 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -414,26 +424,30 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28389 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-7x88-9hgc-69gf 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/16cea4188e0
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/advisories/GHSA-7x88-9hgc-69gf 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/16cea4188e0
                         │      │                  │       ea567deb4f93f85902247e67384f5 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/785cbf7ea3b
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/785cbf7ea3b
                         │      │                  │       5a6f5adf0c1ccb92b79d89c35c616 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7b5274e8124
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/7b5274e8124
                         │      │                  │       00cacb6f3be4c2df5340923fa807f 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/c6725634e08
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/c6725634e08
                         │      │                  │       9eb2b634b10ede33944be7248172a 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/f80f83bc5fd
+                        │      │                  ├ [8] : https://github.com/openssl/openssl/commit/f80f83bc5fd
                         │      │                  │       036bc47d773e8b15a001e2b4ce686 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-28389 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2026-28389 
+                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
+                        │      │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:40:00.107Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.637Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2026-28390 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -502,25 +516,29 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28390 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/01194a8f194
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/01194a8f194
                         │      │                  │       1115cd0383bfa91c736dd3993c8bc 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2e39b7a6993
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/2e39b7a6993
                         │      │                  │       be445fddb9fbce316fa756e0397b6 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/af2a5fecd3e
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/af2a5fecd3e
                         │      │                  │       71a29e7568f9c1453dec5cebbaff4 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
                         │      │                  │       853521ba34830cbcadc970d2e0788 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
                         │      │                  │       b9ceeca723a001aa4b825d7c7ee75 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:52.52Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.81Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -632,17 +650,19 @@
                         │      │                           ╰ V3Score : 4.2 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
-                        │      │                  ├ [2]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/2157c9d81f7b
+                        │      │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-0
+                        │      │                  │      32379.html 
+                        │      │                  ├ [3]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/2157c9d81f7b
                         │      │                  │      0bd7dfa25b960e928ec28e8dd63f 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/85977e013f32
+                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/85977e013f32
                         │      │                  │      ceb96aa034c0e741adddc1a05e34 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260313.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
+                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20260313.txt 
+                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-                        │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.043Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -715,25 +735,27 @@
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/001e01db3e9
                         │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/abd8b2eec7e
                         │      │                  │       3f3fda60ecfb68498b246b52af482 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/b922e24e5b2
                         │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
                         │      │                  │       54e961d0c3b174348f8308486f790 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/eed200f58cd
                         │      │                  │       8645ed77e46b7e9f764e284df379e 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
+                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.75Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-31789 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -804,25 +826,27 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.8 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31789 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-j79m-9jxq-788r 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/364f095b806
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://github.com/advisories/GHSA-j79m-9jxq-788r 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/364f095b806
                         │      │                  │       01db632b0def6a33316967f863bde 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7a9087efd76
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7a9087efd76
                         │      │                  │       9f362ad9c0e30c7baaa6bbfa65ecf 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/945b935ac66
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/945b935ac66
                         │      │                  │       cc7f1a41f1b849c7c25adb5351f49 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a24216018e1
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a24216018e1
                         │      │                  │       ede8ff01a4ff5afff7dfbd443e2f9 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a91e537d16d
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/a91e537d16d
                         │      │                  │       74050dbde50bb0dfb1fe9930f0521 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31789 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-31789 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
+                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
-                        │      ╰ LastModifiedDate: 2026-05-10T21:16:28.84Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.57Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-28387 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -890,25 +914,29 @@
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 3.7 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28387 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/07e727d3047
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/07e727d3047
                         │      │                  │       46edb49a98ee8f6ab00256e1f012b 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/258a8f63b26
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/258a8f63b26
                         │      │                  │       995ba357f4326da00e19e29c6acbe 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/444958deaf4
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/444958deaf4
                         │      │                  │       50aea819171f97ae69eaedede42c3 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7a4e08cee62
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/7a4e08cee62
                         │      │                  │       a728d32e60b0de89e6764339df0a7 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ec03fa050b3
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/ec03fa050b3
                         │      │                  │       346997ed9c5fef3d0e16ad7db8177 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28387 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28387 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
-                        │      ╰ LastModifiedDate: 2026-05-10T21:16:28.503Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.27Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-28388 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -985,25 +1013,29 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28388 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/59c3b315855
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/59c3b315855
                         │      │                  │       3ab53275bbbccca5cb305d591cf2e 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/5a0b4930779
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/5a0b4930779
                         │      │                  │       cd2408880979db765db919da55139 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/602542f2c0c
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/602542f2c0c
                         │      │                  │       2d5edb47128f93eac10b62aeeefb3 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a9d187dd100
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a9d187dd100
                         │      │                  │       0130100fa7ab915f8513532cb3bb8 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d3a901e8d9f
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/d3a901e8d9f
                         │      │                  │       021f3e67d6cfbc12e768129862726 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28388 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28388 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:40:08.41Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.453Z 
                         ├ [11] ╭ VulnerabilityID : CVE-2026-28389 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -1070,26 +1102,30 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28389 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-7x88-9hgc-69gf 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/16cea4188e0
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/advisories/GHSA-7x88-9hgc-69gf 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/16cea4188e0
                         │      │                  │       ea567deb4f93f85902247e67384f5 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/785cbf7ea3b
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/785cbf7ea3b
                         │      │                  │       5a6f5adf0c1ccb92b79d89c35c616 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7b5274e8124
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/7b5274e8124
                         │      │                  │       00cacb6f3be4c2df5340923fa807f 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/c6725634e08
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/c6725634e08
                         │      │                  │       9eb2b634b10ede33944be7248172a 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/f80f83bc5fd
+                        │      │                  ├ [8] : https://github.com/openssl/openssl/commit/f80f83bc5fd
                         │      │                  │       036bc47d773e8b15a001e2b4ce686 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-28389 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2026-28389 
+                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
+                        │      │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:40:00.107Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.637Z 
                         ├ [12] ╭ VulnerabilityID : CVE-2026-28390 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -1158,25 +1194,29 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28390 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/01194a8f194
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/01194a8f194
                         │      │                  │       1115cd0383bfa91c736dd3993c8bc 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2e39b7a6993
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/2e39b7a6993
                         │      │                  │       be445fddb9fbce316fa756e0397b6 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/af2a5fecd3e
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/af2a5fecd3e
                         │      │                  │       71a29e7568f9c1453dec5cebbaff4 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
                         │      │                  │       853521ba34830cbcadc970d2e0788 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
                         │      │                  │       b9ceeca723a001aa4b825d7c7ee75 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:52.52Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.81Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -1288,17 +1328,19 @@
                         │      │                           ╰ V3Score : 4.2 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
-                        │      │                  ├ [2]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/2157c9d81f7b
+                        │      │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-0
+                        │      │                  │      32379.html 
+                        │      │                  ├ [3]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/2157c9d81f7b
                         │      │                  │      0bd7dfa25b960e928ec28e8dd63f 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/85977e013f32
+                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/85977e013f32
                         │      │                  │      ceb96aa034c0e741adddc1a05e34 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260313.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
+                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20260313.txt 
+                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-                        │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.043Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -1371,25 +1413,27 @@
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/001e01db3e9
                         │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/abd8b2eec7e
                         │      │                  │       3f3fda60ecfb68498b246b52af482 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/b922e24e5b2
                         │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
                         │      │                  │       54e961d0c3b174348f8308486f790 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/eed200f58cd
                         │      │                  │       8645ed77e46b7e9f764e284df379e 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
+                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.75Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-40200 
                         │      ├ PkgID           : musl@1.2.5-r21 
                         │      ├ PkgName         : musl 
@@ -1638,25 +1682,27 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.8 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31789 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-j79m-9jxq-788r 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/364f095b806
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://github.com/advisories/GHSA-j79m-9jxq-788r 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/364f095b806
                         │      │                  │       01db632b0def6a33316967f863bde 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/7a9087efd76
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7a9087efd76
                         │      │                  │       9f362ad9c0e30c7baaa6bbfa65ecf 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/945b935ac66
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/945b935ac66
                         │      │                  │       cc7f1a41f1b849c7c25adb5351f49 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/a24216018e1
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a24216018e1
                         │      │                  │       ede8ff01a4ff5afff7dfbd443e2f9 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a91e537d16d
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/a91e537d16d
                         │      │                  │       74050dbde50bb0dfb1fe9930f0521 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31789 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-31789 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-31789 
+                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.617Z 
-                        │      ╰ LastModifiedDate: 2026-05-10T21:16:28.84Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.57Z 
                         ├ [20] ╭ VulnerabilityID : CVE-2026-28387 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
@@ -1724,25 +1770,29 @@
                         │      │                           │           /A:L 
                         │      │                           ╰ V3Score : 3.7 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28387 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/07e727d3047
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/07e727d3047
                         │      │                  │       46edb49a98ee8f6ab00256e1f012b 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/258a8f63b26
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/258a8f63b26
                         │      │                  │       995ba357f4326da00e19e29c6acbe 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/444958deaf4
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/444958deaf4
                         │      │                  │       50aea819171f97ae69eaedede42c3 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7a4e08cee62
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/7a4e08cee62
                         │      │                  │       a728d32e60b0de89e6764339df0a7 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/ec03fa050b3
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/ec03fa050b3
                         │      │                  │       346997ed9c5fef3d0e16ad7db8177 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28387 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28387 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28387 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.7Z 
-                        │      ╰ LastModifiedDate: 2026-05-10T21:16:28.503Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.27Z 
                         ├ [21] ╭ VulnerabilityID : CVE-2026-28388 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
@@ -1819,25 +1869,29 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28388 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/59c3b315855
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/59c3b315855
                         │      │                  │       3ab53275bbbccca5cb305d591cf2e 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/5a0b4930779
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/5a0b4930779
                         │      │                  │       cd2408880979db765db919da55139 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/602542f2c0c
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/602542f2c0c
                         │      │                  │       2d5edb47128f93eac10b62aeeefb3 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/a9d187dd100
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/a9d187dd100
                         │      │                  │       0130100fa7ab915f8513532cb3bb8 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d3a901e8d9f
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/d3a901e8d9f
                         │      │                  │       021f3e67d6cfbc12e768129862726 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28388 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28388 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28388 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:20.863Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:40:08.41Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.453Z 
                         ├ [22] ╭ VulnerabilityID : CVE-2026-28389 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
@@ -1904,26 +1958,30 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28389 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-7x88-9hgc-69gf 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/16cea4188e0
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/advisories/GHSA-7x88-9hgc-69gf 
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/16cea4188e0
                         │      │                  │       ea567deb4f93f85902247e67384f5 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/785cbf7ea3b
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/785cbf7ea3b
                         │      │                  │       5a6f5adf0c1ccb92b79d89c35c616 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/7b5274e8124
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/7b5274e8124
                         │      │                  │       00cacb6f3be4c2df5340923fa807f 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/c6725634e08
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/c6725634e08
                         │      │                  │       9eb2b634b10ede33944be7248172a 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/f80f83bc5fd
+                        │      │                  ├ [8] : https://github.com/openssl/openssl/commit/f80f83bc5fd
                         │      │                  │       036bc47d773e8b15a001e2b4ce686 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-28389 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
-                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [9] : https://nvd.nist.gov/vuln/detail/CVE-2026-28389 
+                        │      │                  ├ [10]: https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [12]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [13]: https://www.cve.org/CVERecord?id=CVE-2026-28389 
+                        │      │                  ╰ [14]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.03Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:40:00.107Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.637Z 
                         ├ [23] ╭ VulnerabilityID : CVE-2026-28390 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
@@ -1992,25 +2050,29 @@
                         │      │                           │           /A:H 
                         │      │                           ╰ V3Score : 7.5 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-28390 
-                        │      │                  ├ [1] : https://github.com/openssl/openssl/commit/01194a8f194
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       265688.html 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/01194a8f194
                         │      │                  │       1115cd0383bfa91c736dd3993c8bc 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/2e39b7a6993
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/2e39b7a6993
                         │      │                  │       be445fddb9fbce316fa756e0397b6 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/af2a5fecd3e
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/af2a5fecd3e
                         │      │                  │       71a29e7568f9c1453dec5cebbaff4 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/ea7b4ea4f9f
                         │      │                  │       853521ba34830cbcadc970d2e0788 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/fd2f1a6cf53
                         │      │                  │       b9ceeca723a001aa4b825d7c7ee75 
-                        │      │                  ├ [6] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
-                        │      │                  ├ [7] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [8] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-2 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-28390 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://ubuntu.com/security/notices/USN-8155-2 
+                        │      │                  ├ [12]: https://www.cve.org/CVERecord?id=CVE-2026-28390 
+                        │      │                  ╰ [13]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.19Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:52.52Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:33.81Z 
                         ├ [24] ╭ VulnerabilityID : CVE-2026-2673 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
@@ -2122,17 +2184,19 @@
                         │      │                           ╰ V3Score : 4.2 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
-                        │      │                  ├ [2]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
-                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/2157c9d81f7b
+                        │      │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-0
+                        │      │                  │      32379.html 
+                        │      │                  ├ [3]: https://github.com/advisories/GHSA-wj64-gh9j-xm82 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/2157c9d81f7b
                         │      │                  │      0bd7dfa25b960e928ec28e8dd63f 
-                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/85977e013f32
+                        │      │                  ├ [5]: https://github.com/openssl/openssl/commit/85977e013f32
                         │      │                  │      ceb96aa034c0e741adddc1a05e34 
-                        │      │                  ├ [5]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
-                        │      │                  ├ [6]: https://openssl-library.org/news/secadv/20260313.txt 
-                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
+                        │      │                  ├ [6]: https://nvd.nist.gov/vuln/detail/CVE-2026-2673 
+                        │      │                  ├ [7]: https://openssl-library.org/news/secadv/20260313.txt 
+                        │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-                        │      ╰ LastModifiedDate: 2026-03-17T18:16:15.6Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.043Z 
                         ├ [25] ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
@@ -2205,25 +2269,27 @@
                         │      │                           │           /A:N 
                         │      │                           ╰ V3Score : 5.9 
                         │      ├ References       ╭ [0] : https://access.redhat.com/security/cve/CVE-2026-31790 
-                        │      │                  ├ [1] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
-                        │      │                  ├ [2] : https://github.com/openssl/openssl/commit/001e01db3e9
+                        │      │                  ├ [1] : https://cert-portal.siemens.com/productcert/html/ssa-
+                        │      │                  │       032379.html 
+                        │      │                  ├ [2] : https://github.com/advisories/GHSA-vgxx-5xj5-q97x 
+                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/001e01db3e9
                         │      │                  │       96e13ffc72386fe79d03a6683b5ac 
-                        │      │                  ├ [3] : https://github.com/openssl/openssl/commit/abd8b2eec7e
+                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/abd8b2eec7e
                         │      │                  │       3f3fda60ecfb68498b246b52af482 
-                        │      │                  ├ [4] : https://github.com/openssl/openssl/commit/b922e24e5b2
+                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/b922e24e5b2
                         │      │                  │       3ffb9cb9e14cadff23d91e9f7e406 
-                        │      │                  ├ [5] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
+                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/d5f8e71cd0a
                         │      │                  │       54e961d0c3b174348f8308486f790 
-                        │      │                  ├ [6] : https://github.com/openssl/openssl/commit/eed200f58cd
+                        │      │                  ├ [7] : https://github.com/openssl/openssl/commit/eed200f58cd
                         │      │                  │       8645ed77e46b7e9f764e284df379e 
-                        │      │                  ├ [7] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
-                        │      │                  ├ [8] : https://openssl-library.org/news/secadv/20260407.txt 
-                        │      │                  ├ [9] : https://ubuntu.com/security/notices/USN-8155-1 
-                        │      │                  ├ [10]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
-                        │      │                  ╰ [11]: https://www.openwall.com/lists/oss-security/2026/04/0
+                        │      │                  ├ [8] : https://nvd.nist.gov/vuln/detail/CVE-2026-31790 
+                        │      │                  ├ [9] : https://openssl-library.org/news/secadv/20260407.txt 
+                        │      │                  ├ [10]: https://ubuntu.com/security/notices/USN-8155-1 
+                        │      │                  ├ [11]: https://www.cve.org/CVERecord?id=CVE-2026-31790 
+                        │      │                  ╰ [12]: https://www.openwall.com/lists/oss-security/2026/04/0
                         │      │                          7/11 
                         │      ├ PublishedDate   : 2026-04-07T22:16:21.77Z 
-                        │      ╰ LastModifiedDate: 2026-04-23T15:39:44.033Z 
+                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.75Z 
                         ├ [26] ╭ VulnerabilityID : CVE-2026-35058 
                         │      ├ PkgID           : openvpn@2.6.16-r0 
                         │      ├ PkgName         : openvpn 
@@ -2304,7 +2370,57 @@
                         │      ├ Fingerprint     : sha256:e04b5f1cbd1d2e772feb3bbff1b1e80076e65a480d785602ad0e4
                         │      │                   8bdff23b3ba 
                         │      ╰ Severity        : UNKNOWN 
-                        ╰ [30] ╭ VulnerabilityID : CVE-2026-27171 
+                        ├ [30] ╭ VulnerabilityID : CVE-2026-22184 
+                        │      ├ PkgID           : zlib@1.3.1-r2 
+                        │      ├ PkgName         : zlib 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
+                        │      │                  ╰ UID : 792cdc69bc59d880 
+                        │      ├ InstalledVersion: 1.3.1-r2 
+                        │      ├ FixedVersion    : 1.3.2-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
+                        │      │                  │         e0f8eaa0285cc21ac153 
+                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
+                        │      │                            f26e707861a5f52bf64e 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:e3035c9fb3afb4837f00adcfe8f5b9f738f76bc205a45d4291dfe
+                        │      │                   9e2aefbef9b 
+                        │      ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
+                        │      │                   untgz utility 
+                        │      ├ Description     : zlib versions up to and including 1.3.1.2 include a global
+                        │      │                   buffer overflow in the untgz utility located under
+                        │      │                   contrib/untgz. The vulnerability is limited to the
+                        │      │                   standalone demonstration utility and does not affect the
+                        │      │                   core zlib compression library. The flaw occurs when a user
+                        │      │                   executes the untgz command with an excessively long archive
+                        │      │                   name supplied via the command line, leading to an
+                        │      │                   out-of-bounds write in a fixed-size global buffer. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-787 
+                        │      ├ VendorSeverity   ╭ nvd   : 3 
+                        │      │                  ╰ redhat: 3 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.8 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 8.6 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
+                        │      │                  ├ [1]: https://github.com/madler/zlib 
+                        │      │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
+                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
+                        │      │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
+                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
+                        │      │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-global
+                        │      │                  │      -buffer-overflow-in-tgzfname 
+                        │      │                  ╰ [7]: https://zlib.net/ 
+                        │      ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
+                        │      ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
+                        ╰ [31] ╭ VulnerabilityID : CVE-2026-27171 
                                ├ PkgID           : zlib@1.3.1-r2 
                                ├ PkgName         : zlib 
                                ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
