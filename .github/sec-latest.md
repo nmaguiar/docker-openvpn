@@ -662,7 +662,7 @@
                         │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-8155-1 
                         │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.043Z 
+                        │      ╰ LastModifiedDate: 2026-05-13T19:17:04.947Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : libcrypto3@3.5.5-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -1340,7 +1340,7 @@
                         │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-8155-1 
                         │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.043Z 
+                        │      ╰ LastModifiedDate: 2026-05-13T19:17:04.947Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : libssl3@3.5.5-r0 
                         │      ├ PkgName         : libssl3 
@@ -2196,7 +2196,7 @@
                         │      │                  ├ [8]: https://ubuntu.com/security/notices/USN-8155-1 
                         │      │                  ╰ [9]: https://www.cve.org/CVERecord?id=CVE-2026-2673 
                         │      ├ PublishedDate   : 2026-03-13T19:54:34.033Z 
-                        │      ╰ LastModifiedDate: 2026-05-12T13:17:34.043Z 
+                        │      ╰ LastModifiedDate: 2026-05-13T19:17:04.947Z 
                         ├ [25] ╭ VulnerabilityID : CVE-2026-31790 
                         │      ├ PkgID           : openssl@3.5.5-r0 
                         │      ├ PkgName         : openssl 
