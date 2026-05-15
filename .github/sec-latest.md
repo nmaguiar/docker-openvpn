@@ -138,7 +138,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ azure : 2 
                         │      │                  ├ nvd   : 4 
-                        │      │                  ├ photon: 3 
+                        │      │                  ├ photon: 4 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
@@ -645,9 +645,9 @@
                         │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
                         │      │                  │        │           /A:N 
                         │      │                  │        ╰ V3Score : 7.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
                         │      │                           │           /A:L 
-                        │      │                           ╰ V3Score : 4.2 
+                        │      │                           ╰ V3Score : 6.5 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
                         │      │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-0
@@ -816,7 +816,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ azure : 2 
                         │      │                  ├ nvd   : 4 
-                        │      │                  ├ photon: 3 
+                        │      │                  ├ photon: 4 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
@@ -1323,9 +1323,9 @@
                         │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
                         │      │                  │        │           /A:N 
                         │      │                  │        ╰ V3Score : 7.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
                         │      │                           │           /A:L 
-                        │      │                           ╰ V3Score : 4.2 
+                        │      │                           ╰ V3Score : 6.5 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
                         │      │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-0
@@ -1672,7 +1672,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-787 
                         │      ├ VendorSeverity   ╭ azure : 2 
                         │      │                  ├ nvd   : 4 
-                        │      │                  ├ photon: 3 
+                        │      │                  ├ photon: 4 
                         │      │                  ├ redhat: 1 
                         │      │                  ╰ ubuntu: 1 
                         │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H
@@ -2179,9 +2179,9 @@
                         │      ├ CVSS             ╭ julia  ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N
                         │      │                  │        │           /A:N 
                         │      │                  │        ╰ V3Score : 7.5 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:L
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N
                         │      │                           │           /A:L 
-                        │      │                           ╰ V3Score : 4.2 
+                        │      │                           ╰ V3Score : 6.5 
                         │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/03/13/3 
                         │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-2673 
                         │      │                  ├ [2]: https://cert-portal.siemens.com/productcert/html/ssa-0
@@ -2309,7 +2309,26 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:c3aefec62efbb3738e9bd16e892990b3fb1e7a3a60d3e4db7b02d
                         │      │                   d1cd5da7a78 
-                        │      ╰ Severity        : UNKNOWN 
+                        │      ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+                        │      │                    the following vulnerabilities:
+                        │      │                   CVE-2026-40215:
+                        │      │                   	In a race condition an old TLS session could still try to
+                        │      │                   send a packet but also get replaced by a new session. In
+                        │      │                   this case, the buffer of the new session is still
+                        │      │                   referenced. Add the check_session_buf_not_used function to
+                        │      │                   mitigate this problem.
+                        │      │                   
+                        │      │                   CVE-2026-35058:
+                        │      │                   	According to upstream advisory
+                        │      │                   (https://community.openvpn.net/Security%20Announcements/CVE-
+                        │      │                   2026-35058):
+                        │      │                   OpenVPN server crash via ASSERT triggered by malformed
+                        │      │                   tls-crypt-v2 packet; attacker with a valid tls-crypt-v2
+                        │      │                   client key can send a crafted control channel packet to
+                        │      │                   crash the server (DoS). Fixed in 2.6.20 and 2.7.2.
+                        │      │                    
+                        │      ├ Severity        : MEDIUM 
+                        │      ╰ VendorSeverity   ─ amazon: 2 
                         ├ [27] ╭ VulnerabilityID : CVE-2026-40215 
                         │      ├ PkgID           : openvpn@2.6.16-r0 
                         │      ├ PkgName         : openvpn 
@@ -2329,7 +2348,26 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:1569aeb848c6a60fd54c1428a8dbf302619930613afa8410be917
                         │      │                   fdbc6d66462 
-                        │      ╰ Severity        : UNKNOWN 
+                        │      ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+                        │      │                    the following vulnerabilities:
+                        │      │                   CVE-2026-40215:
+                        │      │                   	In a race condition an old TLS session could still try to
+                        │      │                   send a packet but also get replaced by a new session. In
+                        │      │                   this case, the buffer of the new session is still
+                        │      │                   referenced. Add the check_session_buf_not_used function to
+                        │      │                   mitigate this problem.
+                        │      │                   
+                        │      │                   CVE-2026-35058:
+                        │      │                   	According to upstream advisory
+                        │      │                   (https://community.openvpn.net/Security%20Announcements/CVE-
+                        │      │                   2026-35058):
+                        │      │                   OpenVPN server crash via ASSERT triggered by malformed
+                        │      │                   tls-crypt-v2 packet; attacker with a valid tls-crypt-v2
+                        │      │                   client key can send a crafted control channel packet to
+                        │      │                   crash the server (DoS). Fixed in 2.6.20 and 2.7.2.
+                        │      │                    
+                        │      ├ Severity        : MEDIUM 
+                        │      ╰ VendorSeverity   ─ amazon: 2 
                         ├ [28] ╭ VulnerabilityID : CVE-2026-35058 
                         │      ├ PkgID           : openvpn-auth-pam@2.6.16-r0 
                         │      ├ PkgName         : openvpn-auth-pam 
@@ -2349,7 +2387,26 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:70ac869d8040324c4dbed81f1d1247fe74c35cafa1131994c910b
                         │      │                   5171d4e3e91 
-                        │      ╰ Severity        : UNKNOWN 
+                        │      ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+                        │      │                    the following vulnerabilities:
+                        │      │                   CVE-2026-40215:
+                        │      │                   	In a race condition an old TLS session could still try to
+                        │      │                   send a packet but also get replaced by a new session. In
+                        │      │                   this case, the buffer of the new session is still
+                        │      │                   referenced. Add the check_session_buf_not_used function to
+                        │      │                   mitigate this problem.
+                        │      │                   
+                        │      │                   CVE-2026-35058:
+                        │      │                   	According to upstream advisory
+                        │      │                   (https://community.openvpn.net/Security%20Announcements/CVE-
+                        │      │                   2026-35058):
+                        │      │                   OpenVPN server crash via ASSERT triggered by malformed
+                        │      │                   tls-crypt-v2 packet; attacker with a valid tls-crypt-v2
+                        │      │                   client key can send a crafted control channel packet to
+                        │      │                   crash the server (DoS). Fixed in 2.6.20 and 2.7.2.
+                        │      │                    
+                        │      ├ Severity        : MEDIUM 
+                        │      ╰ VendorSeverity   ─ amazon: 2 
                         ├ [29] ╭ VulnerabilityID : CVE-2026-40215 
                         │      ├ PkgID           : openvpn-auth-pam@2.6.16-r0 
                         │      ├ PkgName         : openvpn-auth-pam 
@@ -2369,58 +2426,27 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:e04b5f1cbd1d2e772feb3bbff1b1e80076e65a480d785602ad0e4
                         │      │                   8bdff23b3ba 
-                        │      ╰ Severity        : UNKNOWN 
-                        ├ [30] ╭ VulnerabilityID : CVE-2026-22184 
-                        │      ├ PkgID           : zlib@1.3.1-r2 
-                        │      ├ PkgName         : zlib 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
-                        │      │                  ╰ UID : 792cdc69bc59d880 
-                        │      ├ InstalledVersion: 1.3.1-r2 
-                        │      ├ FixedVersion    : 1.3.2-r0 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:589002ba0eaed121a1dbf42f6648f29e5be55d5c8a6e
-                        │      │                  │         e0f8eaa0285cc21ac153 
-                        │      │                  ╰ DiffID: sha256:989e799e634906e94dc9a5ee2ee26fc92ad260522990
-                        │      │                            f26e707861a5f52bf64e 
-                        │      ├ SeveritySource  : nvd 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-22184 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:e3035c9fb3afb4837f00adcfe8f5b9f738f76bc205a45d4291dfe
-                        │      │                   9e2aefbef9b 
-                        │      ├ Title           : zlib: zlib: Arbitrary code execution via buffer overflow in
-                        │      │                   untgz utility 
-                        │      ├ Description     : zlib versions up to and including 1.3.1.2 include a global
-                        │      │                   buffer overflow in the untgz utility located under
-                        │      │                   contrib/untgz. The vulnerability is limited to the
-                        │      │                   standalone demonstration utility and does not affect the
-                        │      │                   core zlib compression library. The flaw occurs when a user
-                        │      │                   executes the untgz command with an excessively long archive
-                        │      │                   name supplied via the command line, leading to an
-                        │      │                   out-of-bounds write in a fixed-size global buffer. 
-                        │      ├ Severity        : HIGH 
-                        │      ├ CweIDs           ─ [0]: CWE-787 
-                        │      ├ VendorSeverity   ╭ nvd   : 3 
-                        │      │                  ╰ redhat: 3 
-                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H
-                        │      │                  │        │           /A:H 
-                        │      │                  │        ╰ V3Score : 7.8 
-                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L
-                        │      │                           │           /A:H 
-                        │      │                           ╰ V3Score : 8.6 
-                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-22184 
-                        │      │                  ├ [1]: https://github.com/madler/zlib 
-                        │      │                  ├ [2]: https://github.com/madler/zlib/issues/1142 
-                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-22184 
-                        │      │                  ├ [4]: https://seclists.org/fulldisclosure/2026/Jan/3 
-                        │      │                  ├ [5]: https://www.cve.org/CVERecord?id=CVE-2026-22184 
-                        │      │                  ├ [6]: https://www.vulncheck.com/advisories/zlib-untgz-global
-                        │      │                  │      -buffer-overflow-in-tgzfname 
-                        │      │                  ╰ [7]: https://zlib.net/ 
-                        │      ├ PublishedDate   : 2026-01-07T21:16:01.563Z 
-                        │      ╰ LastModifiedDate: 2026-03-18T16:26:31.14Z 
-                        ╰ [31] ╭ VulnerabilityID : CVE-2026-27171 
+                        │      ├ Description     : Package updates are available for Amazon Linux 2023 that fix
+                        │      │                    the following vulnerabilities:
+                        │      │                   CVE-2026-40215:
+                        │      │                   	In a race condition an old TLS session could still try to
+                        │      │                   send a packet but also get replaced by a new session. In
+                        │      │                   this case, the buffer of the new session is still
+                        │      │                   referenced. Add the check_session_buf_not_used function to
+                        │      │                   mitigate this problem.
+                        │      │                   
+                        │      │                   CVE-2026-35058:
+                        │      │                   	According to upstream advisory
+                        │      │                   (https://community.openvpn.net/Security%20Announcements/CVE-
+                        │      │                   2026-35058):
+                        │      │                   OpenVPN server crash via ASSERT triggered by malformed
+                        │      │                   tls-crypt-v2 packet; attacker with a valid tls-crypt-v2
+                        │      │                   client key can send a crafted control channel packet to
+                        │      │                   crash the server (DoS). Fixed in 2.6.20 and 2.7.2.
+                        │      │                    
+                        │      ├ Severity        : MEDIUM 
+                        │      ╰ VendorSeverity   ─ amazon: 2 
+                        ╰ [30] ╭ VulnerabilityID : CVE-2026-27171 
                                ├ PkgID           : zlib@1.3.1-r2 
                                ├ PkgName         : zlib 
                                ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.1-r2?arch=x86_64&distro=3.23.3 
