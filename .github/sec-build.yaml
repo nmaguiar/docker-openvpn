@@ -20,7 +20,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:49815b52a32425dfebd5c029a9783b37bdd423e4cfbf8068abf7ca38a99eb570
+    Fingerprint: sha256:8e29a82fe80a75a0c7f3fe238eb45ebfac699102cb2b36205d7e8a4deafc449e
     Title: 'musl: musl libc: Arbitrary code execution and denial of service via stack-based memory corruption in qsort'
     Description: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based memory corruption can occur during qsort of very large arrays, due to incorrectly implemented double-word primitives. The number of elements must exceed about seven million, i.e., the 32nd Leonardo number on 32-bit platforms (or the 64th Leonardo number on 64-bit platforms, which is not practical).
     Severity: HIGH
@@ -58,7 +58,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:5557035f08aaf02297b609b5852882a32cd7fddba8d202a20cd781c073881e2e
+    Fingerprint: sha256:0318dc3ae21adf8293439b883bb795c4e7b178f72d1674620d0736c65a6410a4
     Title: 'musl libc: GB18030 4-byte Decoder: musl libc: Denial of Service via inefficient algorithmic complexity in iconv'
     Description: A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/iconv.c of the component GB18030 4-byte Decoder. Performing a manipulation results in inefficient algorithmic complexity. The attack must be initiated from a local position. To fix this issue, it is recommended to deploy a patch.
     Severity: MEDIUM
@@ -100,7 +100,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:a58f1102028135b8ac917ef26bfd23f43b15076bf6d15d370646d3bdae68801a
+    Fingerprint: sha256:6ff6a283fbd73a50168ffaa38dabebd8e940e13c8b16cfa62724126a74fa04dd
     Title: 'musl: musl libc: Arbitrary code execution and denial of service via stack-based memory corruption in qsort'
     Description: An issue was discovered in musl libc 0.7.10 through 1.2.6. Stack-based memory corruption can occur during qsort of very large arrays, due to incorrectly implemented double-word primitives. The number of elements must exceed about seven million, i.e., the 32nd Leonardo number on 32-bit platforms (or the 64th Leonardo number on 64-bit platforms, which is not practical).
     Severity: HIGH
@@ -138,7 +138,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:48d7c8c7633d4ee7b09fa75fdacf70ccbb65ad77189d0ac317289b0ca30b16e5
+    Fingerprint: sha256:ec7113d58342140eddda2935c7df9eb8df1f0a668f2560995f90f4342e900c77
     Title: 'musl libc: GB18030 4-byte Decoder: musl libc: Denial of Service via inefficient algorithmic complexity in iconv'
     Description: A security flaw has been discovered in musl libc up to 1.2.6. Affected is the function iconv of the file src/locale/iconv.c of the component GB18030 4-byte Decoder. Performing a manipulation results in inefficient algorithmic complexity. The attack must be initiated from a local position. To fix this issue, it is recommended to deploy a patch.
     Severity: MEDIUM
