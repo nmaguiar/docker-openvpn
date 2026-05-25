@@ -54,6 +54,10 @@ addArg "--config" "$OPENVPN/openvpn.conf"
 
 source "$OPENVPN/ovpn_env.sh"
 
+if [ "${OVPN_LOG_APPEND:-0}" == "1" ]; then
+    echo "Log append enabled: OpenVPN logs will be written to /etc/openvpn/openvpn.log"
+fi
+
 mkdir -p /dev/net
 if [ ! -c /dev/net/tun ]; then
     mknod /dev/net/tun c 10 200
