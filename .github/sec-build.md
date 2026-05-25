@@ -19,8 +19,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:0c1f44ea9e7de1f008947ceb6368df2812c0df24fa8f79a15a9fff
-                        │     │                   69f895b5bb 
+                        │     ├ Fingerprint     : sha256:b4e4955cc7132e2e9c6010819df0ef998cd5fd70a1aa2921c245da
+                        │     │                   bfb8164dde 
                         │     ├ Title           : musl: musl libc: Arbitrary code execution and denial of
                         │     │                   service via stack-based memory corruption in qsort 
                         │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
@@ -60,8 +60,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:d32e966b574a52778c9261dd379186ae7d52856a38e2259050ee96
-                        │     │                   5060dc971b 
+                        │     ├ Fingerprint     : sha256:e7832af1b614f631229f1e4254dd3c94f5002635bfa65d77f051f8
+                        │     │                   01d4914321 
                         │     ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
                         │     │                   Service via inefficient algorithmic complexity in iconv 
                         │     ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
@@ -106,8 +106,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:7bc7ef97ca1fc61bf56c5220fd79fcbb291fcc7dcffc0055ad28c6
-                        │     │                   b3f0445b4f 
+                        │     ├ Fingerprint     : sha256:d324110be06784f87eb001b13ff2e127b27d498d1fe84c37f3e5df
+                        │     │                   0ef69515fd 
                         │     ├ Title           : musl: musl libc: Arbitrary code execution and denial of
                         │     │                   service via stack-based memory corruption in qsort 
                         │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
@@ -148,8 +148,8 @@
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Fingerprint     : sha256:dfd1223027e0691a2b8e98ef6c1fd74845096e831298ac3237e23d
-                              │                   1b3b3ff9ee 
+                              ├ Fingerprint     : sha256:df006833f8bc98788aaac81e1dcb4eed564edbf6d10f17c1a3c5d5
+                              │                   5a62ef2bef 
                               ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
                               │                   Service via inefficient algorithmic complexity in iconv 
                               ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
