@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 #
 # Get OpenVPN server status
@@ -9,4 +9,14 @@ fi
 
 set -e
 
-tail -F /tmp/openvpn-status.log
+if [ -z "${OPENVPN:-}" ]; then
+  OPENVPN="$PWD"
+fi
+
+[ -r "$OPENVPN/ovpn_env.sh" ] && . "$OPENVPN/ovpn_env.sh"
+
+if [ "${OVPN_LOG_APPEND:-0}" == "1" ]; then
+  exec tail -F /tmp/openvpn-status.log /etc/openvpn/openvpn.log
+else
+  exec tail -F /tmp/openvpn-status.log
+fi
