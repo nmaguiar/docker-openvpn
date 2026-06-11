@@ -3,178 +3,3833 @@
       ├ Class          : os-pkgs 
       ├ Type           : alpine 
       ├ Packages        
-      ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-40200 
-                        │     ├ PkgID           : musl@1.2.5-r23 
-                        │     ├ PkgName         : musl 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r23?arch=x86_64&distro=3.23.4 
-                        │     │                  ╰ UID : dca30b3fd6708a32 
-                        │     ├ InstalledVersion: 1.2.5-r23 
-                        │     ├ FixedVersion    : 1.2.6-r2 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763
-                        │     │                  │         195a70a4a5adda577bb 
-                        │     │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8cc
-                        │     │                            e4ee82194da255f61e1 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:0922d0ef0dfd86d95be0afbe60b3101f190c4e12aea58204ead47a
-                        │     │                   1cfef163ba 
-                        │     ├ Title           : musl: musl libc: Arbitrary code execution and denial of
-                        │     │                   service via stack-based memory corruption in qsort 
-                        │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
-                        │     │                   Stack-based memory corruption can occur during qsort of very
-                        │     │                   large arrays, due to incorrectly implemented double-word
-                        │     │                   primitives. The number of elements must exceed about seven
-                        │     │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
-                        │     │                   (or the 64th Leonardo number on 64-bit platforms, which is
-                        │     │                   not practical). 
-                        │     ├ Severity        : HIGH 
-                        │     ├ CweIDs           ─ [0]: CWE-670 
-                        │     ├ VendorSeverity   ─ redhat: 3 
-                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/
-                        │     │                           │           A:H 
-                        │     │                           ╰ V3Score : 7.8 
-                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
-                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-40200 
-                        │     │                  ├ [2]: https://musl.libc.org/releases.html 
-                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-40200 
-                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-40200 
-                        │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
-                        │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
-                        │     ╰ LastModifiedDate: 2026-04-27T19:18:46.69Z 
-                        ├ [1] ╭ VulnerabilityID : CVE-2026-6042 
-                        │     ├ PkgID           : musl@1.2.5-r23 
-                        │     ├ PkgName         : musl 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r23?arch=x86_64&distro=3.23.4 
-                        │     │                  ╰ UID : dca30b3fd6708a32 
-                        │     ├ InstalledVersion: 1.2.5-r23 
-                        │     ├ FixedVersion    : 1.2.6-r1 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763
-                        │     │                  │         195a70a4a5adda577bb 
-                        │     │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8cc
-                        │     │                            e4ee82194da255f61e1 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:bff6d69e85f30963a26e54c207a67c0f9bda8bc3d26c49ee08b306
-                        │     │                   5410e5a7c5 
-                        │     ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
-                        │     │                   Service via inefficient algorithmic complexity in iconv 
-                        │     ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
-                        │     │                    Affected is the function iconv of the file
-                        │     │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
-                        │     │                   Performing a manipulation results in inefficient algorithmic
-                        │     │                   complexity. The attack must be initiated from a local
-                        │     │                   position. To fix this issue, it is recommended to deploy a
-                        │     │                   patch. 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ CweIDs           ╭ [0]: CWE-404 
-                        │     │                  ╰ [1]: CWE-407 
-                        │     ├ VendorSeverity   ─ redhat: 2 
-                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
-                        │     │                           │           A:H 
-                        │     │                           ╰ V3Score : 5.5 
-                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
-                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6042 
-                        │     │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-6042 
-                        │     │                  ├ [3]: https://vuldb.com/submit/796352 
-                        │     │                  ├ [4]: https://vuldb.com/vuln/356620 
-                        │     │                  ├ [5]: https://vuldb.com/vuln/356620/cti 
-                        │     │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6042 
-                        │     │                  ├ [7]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
-                        │     │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
-                        │     ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
-                        │     ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
-                        ├ [2] ╭ VulnerabilityID : CVE-2026-40200 
-                        │     ├ PkgID           : musl-utils@1.2.5-r23 
-                        │     ├ PkgName         : musl-utils 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r23?arch=x86_64&distro
-                        │     │                  │       =3.23.4 
-                        │     │                  ╰ UID : ffcf7198a9776c5f 
-                        │     ├ InstalledVersion: 1.2.5-r23 
-                        │     ├ FixedVersion    : 1.2.6-r2 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763
-                        │     │                  │         195a70a4a5adda577bb 
-                        │     │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8cc
-                        │     │                            e4ee82194da255f61e1 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:ccbb3a5baf3409cc5007a3a910a58b66ad5e0ce9193363d33acf88
-                        │     │                   f4fd876fac 
-                        │     ├ Title           : musl: musl libc: Arbitrary code execution and denial of
-                        │     │                   service via stack-based memory corruption in qsort 
-                        │     ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
-                        │     │                   Stack-based memory corruption can occur during qsort of very
-                        │     │                   large arrays, due to incorrectly implemented double-word
-                        │     │                   primitives. The number of elements must exceed about seven
-                        │     │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
-                        │     │                   (or the 64th Leonardo number on 64-bit platforms, which is
-                        │     │                   not practical). 
-                        │     ├ Severity        : HIGH 
-                        │     ├ CweIDs           ─ [0]: CWE-670 
-                        │     ├ VendorSeverity   ─ redhat: 3 
-                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/
-                        │     │                           │           A:H 
-                        │     │                           ╰ V3Score : 7.8 
-                        │     ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
-                        │     │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-40200 
-                        │     │                  ├ [2]: https://musl.libc.org/releases.html 
-                        │     │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-40200 
-                        │     │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-40200 
-                        │     │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/10/13 
-                        │     ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
-                        │     ╰ LastModifiedDate: 2026-04-27T19:18:46.69Z 
-                        ╰ [3] ╭ VulnerabilityID : CVE-2026-6042 
-                              ├ PkgID           : musl-utils@1.2.5-r23 
-                              ├ PkgName         : musl-utils 
-                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r23?arch=x86_64&distro
-                              │                  │       =3.23.4 
-                              │                  ╰ UID : ffcf7198a9776c5f 
-                              ├ InstalledVersion: 1.2.5-r23 
-                              ├ FixedVersion    : 1.2.6-r1 
-                              ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff08763
-                              │                  │         195a70a4a5adda577bb 
-                              │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8cc
-                              │                            e4ee82194da255f61e1 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
-                              ├ DataSource       ╭ ID  : alpine 
-                              │                  ├ Name: Alpine Secdb 
-                              │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Fingerprint     : sha256:aebecde433543a45d78cf994353025d6689c1f71fa91f8bee084ad
-                              │                   b707409fbb 
-                              ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
-                              │                   Service via inefficient algorithmic complexity in iconv 
-                              ├ Description     : A security flaw has been discovered in musl libc up to 1.2.6.
-                              │                    Affected is the function iconv of the file
-                              │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
-                              │                   Performing a manipulation results in inefficient algorithmic
-                              │                   complexity. The attack must be initiated from a local
-                              │                   position. To fix this issue, it is recommended to deploy a
-                              │                   patch. 
-                              ├ Severity        : MEDIUM 
-                              ├ CweIDs           ╭ [0]: CWE-404 
-                              │                  ╰ [1]: CWE-407 
-                              ├ VendorSeverity   ─ redhat: 2 
-                              ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/
-                              │                           │           A:H 
-                              │                           ╰ V3Score : 5.5 
-                              ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
-                              │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6042 
-                              │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-6042 
-                              │                  ├ [3]: https://vuldb.com/submit/796352 
-                              │                  ├ [4]: https://vuldb.com/vuln/356620 
-                              │                  ├ [5]: https://vuldb.com/vuln/356620/cti 
-                              │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6042 
-                              │                  ├ [7]: https://www.openwall.com/lists/oss-security/2026/04/02/10 
-                              │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
-                              ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
-                              ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
+      ╰ Vulnerabilities ╭ [0]  ╭ VulnerabilityID : CVE-2026-45447 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45447 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:b0ae97810e7b9d77e17789130282957e9386f7eceaefb833c2540
+                        │      │                   98b027fab73 
+                        │      ├ Title           : Issue summary: A specially crafted PKCS#7 or S/MIME signed
+                        │      │                   message cou ... 
+                        │      ├ Description     : Issue summary: A specially crafted PKCS#7 or S/MIME signed
+                        │      │                   message could
+                        │      │                   trigger a use-after-free during PKCS#7 signature
+                        │      │                   verification.
+                        │      │                   
+                        │      │                   Impact summary: A use-after-free may result in process
+                        │      │                   crashes, heap
+                        │      │                   corruption, or potentially remote code execution.
+                        │      │                   When processing a PKCS#7 or S/MIME signed message, if the
+                        │      │                   SignedData
+                        │      │                   digestAlgorithms field is present as an empty ASN.1 SET,
+                        │      │                   OpenSSL may
+                        │      │                   incorrectly free a caller-owned BIO during PKCS7_verify(). A
+                        │      │                    subsequent
+                        │      │                   use of the BIO by the calling application results in a
+                        │      │                   use-after-free
+                        │      │                   condition.
+                        │      │                   In the common case this occurs when the application later
+                        │      │                   calls
+                        │      │                   BIO_free() on the BIO originally passed to PKCS7_verify().
+                        │      │                   Depending
+                        │      │                   on allocator behavior and application-specific BIO usage
+                        │      │                   patterns, this
+                        │      │                   may result in a crash or other memory corruption. In some
+                        │      │                   application
+                        │      │                   contexts this may potentially be exploitable for remote code
+                        │      │                    execution.
+                        │      │                   Applications that process PKCS#7 or S/MIME signed messages
+                        │      │                   using OpenSSL
+                        │      │                   PKCS#7 APIs may be affected. Applications using the CMS APIs
+                        │      │                    for this
+                        │      │                   processing are not affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-416 
+                        │      ├ VendorSeverity   ─ ubuntu: 3 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3aad5eb7af4d
+                        │      │                  │      e4ee0633c30a8541a54d9bbde63c 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7d4a980c6225
+                        │      │                  │      8c5910cc883936e0c8dbab4d75a8 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/9dfd688ad229
+                        │      │                  │      0fc5075cacbc9bf0c9a93eefed54 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a541ae8bfe84
+                        │      │                  │      9a30cc885e8780715c0f488e496c 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/c505d7559da5
+                        │      │                  │      d5f9f2c3913c6883a5562ce7273e 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-45447 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:19.277Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T15:16:35.16Z 
+                        ├ [1]  ╭ VulnerabilityID : CVE-2026-34182 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34182 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:41aa45a1bf6e6b0d8f84d66d06b518a7633c7d2d8c042bd78d928
+                        │      │                   1afe548c92c 
+                        │      ├ Title           : Issue Summary: Cryptographic Message Services (CMS)
+                        │      │                   processing fails t ... 
+                        │      ├ Description     : Issue Summary: Cryptographic Message Services (CMS)
+                        │      │                   processing fails to perform
+                        │      │                   sufficient input validation on the cipher and tag length
+                        │      │                   fields of
+                        │      │                   AuthEnvelopedData containers, leading to various potential
+                        │      │                   compromises.
+                        │      │                   
+                        │      │                   Impact Summary: Attackers making use of these
+                        │      │                   vulnerabilities may achieve
+                        │      │                   key-equivalent functionality for a given CMS recipient
+                        │      │                   and/or bypass integrity
+                        │      │                   validation for a given message.
+                        │      │                   In one use case, an attacker may send a CMS message
+                        │      │                   containing
+                        │      │                   AuthEnvelopedData with the cipher specified as a non-AEAD
+                        │      │                   cipher.  OpenSSL
+                        │      │                   erroneously allows this selection, and attempts to decrypt
+                        │      │                   and validate the
+                        │      │                   message.
+                        │      │                   An on-path attacker who captures one legitimate AES-GCM
+                        │      │                   AuthEnvelopedData
+                        │      │                   addressed to the victim can re-emit it with the
+                        │      │                   recipientInfos set left
+                        │      │                   byte-for-byte intact, so the victim's private key still
+                        │      │                   unwraps the genuine CEK
+                        │      │                   (the content-encryption key), but with the inner OID
+                        │      │                   rewritten to AES-256-OFB
+                        │      │                   (Output Feedback Mode, an unauthenticated keystream mode)
+                        │      │                   and with an
+                        │      │                   attacker-chosen IV and ciphertext. The victim initializes
+                        │      │                   AES-256-OFB under the
+                        │      │                   real CEK, never consults the MAC field, and CMS_decrypt()
+                        │      │                   returns success.
+                        │      │                   If the application under attack responds to the attacker
+                        │      │                   with any indicator
+                        │      │                   showing success or failure of the decryption effort, it is
+                        │      │                   possible for the
+                        │      │                   attacker to use this as an oracle to obtain key equivalent
+                        │      │                   functionality for the
+                        │      │                   CEK used for the chosen recipient of the message.
+                        │      │                   In another use case, an attacker can reduce the tag length
+                        │      │                   of the chosen AEAD
+                        │      │                   cipher for a given AuthEnvelopedData container to be a
+                        │      │                   single byte long,
+                        │      │                   allowing an attacker to brute force CMS decryption,
+                        │      │                   producing an integrity
+                        │      │                   bypass for applications that trust CMS_decrypt() to reject
+                        │      │                   modified content.
+                        │      │                   The FIPS modules are not affected by this issue. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-354 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/03c1f4d45fb9
+                        │      │                  │      63aee7d5833390c507cd290182bc 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/439ed7d2c096
+                        │      │                  │      2ce964482727264668bf277c333f 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7947e6a81eb8
+                        │      │                  │      776802f159fb6762cb7fcf7e34c7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/9fd97f8cfdc2
+                        │      │                  │      c0be214998de3b2b55c8edf6c7ac 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d2ca86bcd43e
+                        │      │                  │      4f17d899f347101766b6107676e0 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-34182 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.857Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T17:16:32.48Z 
+                        ├ [2]  ╭ VulnerabilityID : CVE-2026-34183 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34183 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:770aa1bac259777ddedb442f3edd67fc12ceff61e7180ebe09a5a
+                        │      │                   98b4e712c70 
+                        │      ├ Title           : Issue summary: Remote peer may exhaust heap memory of the
+                        │      │                   QUIC server  ... 
+                        │      ├ Description     : Issue summary: Remote peer may exhaust heap memory of the
+                        │      │                   QUIC
+                        │      │                   server or client by flooding it with packets containing
+                        │      │                   PATH_CHALLENGE
+                        │      │                   frames.
+                        │      │                   
+                        │      │                   Impact summary: A malicious remote peer can cause an
+                        │      │                   unbounded
+                        │      │                   memory allocation which can lead to an abnormal termination
+                        │      │                   of the
+                        │      │                   application acting as a QUIC client or server and a Denial
+                        │      │                   of Service.
+                        │      │                   A remote peer may exhaust heap memory by flooding the local
+                        │      │                   QUIC stack with PATH_CHALLENGE frames. The local QUIC stack
+                        │      │                   allocates a PATH_RESPONSE frame for every PATH_CHALLENGE it
+                        │      │                   receives.
+                        │      │                   The allocated PATH_RESPONSE frame gets freed only when the
+                        │      │                   remote
+                        │      │                   peer acknowledges reception of the PATH_RESPONSE frame which
+                        │      │                    will
+                        │      │                   not be done by a malicious peer.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue. The QUIC stack is outside of OpenSSL FIPS
+                        │      │                   module
+                        │      │                   boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-1325 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/5b306efb0b37
+                        │      │                  │      79dfdd0803b4afc9d08c91f11517 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7d06955ebe0e
+                        │      │                  │      cf8adfd4c1e92018586da47ef9ac 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d2e9efbe4900
+                        │      │                  │      a373227deb136e8665401404ffac 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/fbaa83859c01
+                        │      │                  │      ad64f497b757aaf51be7d05ed9eb 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34183 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:05Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T16:17:01.217Z 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2026-42764 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42764 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:8c8d19b839310779e6da349b5523e354d237bbeeda00719a3c5ef
+                        │      │                   35e1b927c6c 
+                        │      ├ Title           : Issue summary: Receiving a QUIC initial packet with an
+                        │      │                   invalid token m ... 
+                        │      ├ Description     : Issue summary: Receiving a QUIC initial packet with an
+                        │      │                   invalid token may
+                        │      │                   trigger a NULL pointer dereference in the OpenSSL QUIC
+                        │      │                   server with
+                        │      │                   address validation disabled.
+                        │      │                   
+                        │      │                   Impact summary: NULL pointer dereference typically causes
+                        │      │                   abnormal termination
+                        │      │                   of the affected QUIC server process and a Denial of
+                        │      │                   Service.
+                        │      │                   If the address validation is disabled in the OpenSSL QUIC
+                        │      │                   server
+                        │      │                   implementation, an attacker can crash the server by sending
+                        │      │                   an initial
+                        │      │                   packet with an invalid or expired token.
+                        │      │                   By default, the client address validation is enabled in the
+                        │      │                   OpenSSL QUIC server
+                        │      │                   implementation, which makes the default configuration not
+                        │      │                   vulnerable
+                        │      │                   to this issue. However if the SSL_LISTENER_FLAG_NO_VALIDATE
+                        │      │                   is used with
+                        │      │                   the SSL_new_listener() call, the address validation is
+                        │      │                   disabled making the
+                        │      │                   vulnerable code reachable.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/5e3ed291b8af
+                        │      │                  │      0b03d5d3b9e56a1da69a187e9729 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/a45a0aba8095
+                        │      │                  │      682c88ff4fc4a784892b8c6f0677 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/bf29a458c1a2
+                        │      │                  │      31eca87e384c62b9c2553fa57a91 
+                        │      │                  ├ [3]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-42764 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:07.693Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.23Z 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2026-45445 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45445 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:8190fc2adf2e0e5fe0a831287684876ba187186d87c14beadfdd0
+                        │      │                   5f024726390 
+                        │      ├ Title           : Issue summary: When an application drives an AES-OCB context
+                        │      │                    through t ... 
+                        │      ├ Description     : Issue summary: When an application drives an AES-OCB context
+                        │      │                    through the
+                        │      │                   public EVP_Cipher() one-shot interface, the
+                        │      │                   application-supplied
+                        │      │                   initialisation vector (IV) is silently discarded.
+                        │      │                   
+                        │      │                   Impact summary: Every message encrypted under the same key
+                        │      │                   uses the
+                        │      │                   same effective nonce regardless of the IV supplied by the
+                        │      │                   caller,
+                        │      │                   resulting in (key, nonce) reuse and loss of confidentiality.
+                        │      │                     If the
+                        │      │                   same code path is used to compute the authentication tag,
+                        │      │                   the tag
+                        │      │                   depends only on the (key, IV) pair and not on the plaintext
+                        │      │                   or
+                        │      │                   ciphertext, allowing universal forgery of arbitrary
+                        │      │                   ciphertext from a
+                        │      │                   single captured message.
+                        │      │                   OpenSSL provides two ways to drive a cipher: the documented
+                        │      │                   streaming
+                        │      │                   interface (EVP_CipherUpdate / EVP_CipherFinal_ex) and a
+                        │      │                   lower-level
+                        │      │                   one-shot, EVP_Cipher(), whose documentation explicitly
+                        │      │                   recommends
+                        │      │                   against use by applications in favour of EVP_CipherUpdate()
+                        │      │                   and
+                        │      │                   EVP_CipherFinal_ex().  The OCB provider's streaming handler
+                        │      │                   flushes
+                        │      │                   the application-supplied IV into the OCB context before
+                        │      │                   processing
+                        │      │                   data; the one-shot handler did not.  Every call to
+                        │      │                   EVP_Cipher() on an
+                        │      │                   AES-OCB context therefore ran with the all-zero key-derived
+                        │      │                   offset
+                        │      │                   state left by cipher initialisation, regardless of the
+                        │      │                   caller's IV.
+                        │      │                   If EVP_EncryptFinal_ex() is subsequently used to obtain the
+                        │      │                   authentication tag, the deferred IV setup runs at that point
+                        │      │                    and
+                        │      │                   clears the running checksum that should have been
+                        │      │                   accumulated over the
+                        │      │                   plaintext.  The resulting tag is a function of (key, IV)
+                        │      │                   only and
+                        │      │                   verifies against any ciphertext produced under the same
+                        │      │                   (key, IV)
+                        │      │                   pair.
+                        │      │                   The OpenSSL SSL/TLS implementation is not affected: AES-OCB
+                        │      │                   is not a
+                        │      │                   TLS cipher suite, and libssl does not call EVP_Cipher() in
+                        │      │                   any case.
+                        │      │                   Applications that drive AES-OCB through the documented
+                        │      │                   streaming AEAD
+                        │      │                   API (EVP_CipherUpdate / EVP_CipherFinal_ex) are not
+                        │      │                   affected.  Only
+                        │      │                   applications that combine the AES-OCB cipher with the
+                        │      │                   EVP_Cipher()
+                        │      │                   one-shot API are vulnerable.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue, as AES-OCB is outside the OpenSSL FIPS module
+                        │      │                   boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/323f0b6e7d53
+                        │      │                  │      0a4cb4336d50c88cb70f3ac2a451 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/787a6dfba81b
+                        │      │                  │      7b09c1e05ab31396c0cd7c36b3f7 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7ac4715234ee
+                        │      │                  │      72d9f3c93426a2c08554b5b771af 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/843c9b94ca9c
+                        │      │                  │      2ed248bb30127bb4f3d7af0d607c 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/983d54b5cce8
+                        │      │                  │      d16147548ed1a37892d1720bbab6 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-45445 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:18.993Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.507Z 
+                        ├ [5]  ╭ VulnerabilityID : CVE-2026-34180 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34180 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:c1fc7ad4731758a8e257c2bdd0c6eaeec5e2f713935f55d3957d8
+                        │      │                   c00416e5914 
+                        │      ├ Title           : Issue summary: Parsing a crafted DER-encoded ASN.1 structure
+                        │      │                    with a pr ... 
+                        │      ├ Description     : Issue summary: Parsing a crafted DER-encoded ASN.1 structure
+                        │      │                    with a primitive
+                        │      │                   element whose content exceeds 2 gigabytes in length may
+                        │      │                   cause a heap buffer
+                        │      │                   over-read on 64-bit Unix and Unix-like platforms.
+                        │      │                   
+                        │      │                   Impact summary: The heap buffer over-read may crash the
+                        │      │                   application (Denial of
+                        │      │                   Service) or to load into the decoded ASN.1 object contents
+                        │      │                   of memory beyond the
+                        │      │                   end of the input buffer.  More typically such ASN.1 elements
+                        │      │                    would instead be
+                        │      │                   truncated.
+                        │      │                   An integer truncation in OpenSSL's ASN.1 decoder causes the
+                        │      │                   content length of
+                        │      │                   an ASN.1 primitive element to be mishandled when it exceeds
+                        │      │                   2 gigabytes. In the
+                        │      │                   worst case the truncated length is treated as a request to
+                        │      │                   scan the binary
+                        │      │                   content for a terminating zero byte, possibly causing
+                        │      │                   OpenSSL to read either
+                        │      │                   less than or beyond the end of the allocated buffer.
+                        │      │                   Applications that pass attacker-supplied data to d2i_X509(),
+                        │      │                    d2i_PKCS7(), or
+                        │      │                   any other d2i_* decoding function are affected. OpenSSL's
+                        │      │                   own command-line
+                        │      │                   tools are not vulnerable, as data read through the BIO layer
+                        │      │                    is checked before
+                        │      │                   it reaches the affected code. The issue only affects 64-bit
+                        │      │                   Unix and Unix-like
+                        │      │                   platforms; 32-bit platforms and 64-bit Windows are not
+                        │      │                   affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by this issue,
+                        │      │                   as the affected code is outside the OpenSSL FIPS module
+                        │      │                   boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-125 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/1c6908e4fa5f
+                        │      │                  │      a568752221d8eaf561a809751e5d 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/cbe418ae9785
+                        │      │                  │      39cf14a398a207dba834c0e93e83 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d93853c42110
+                        │      │                  │      d6319e3df07842b488cb9f7ac5ff 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/da5d62af75f6
+                        │      │                  │      9d6fbf7803743d7c56ac75461e43 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/f696c73c3e61
+                        │      │                  │      b8c502d040af62e690c060908a16 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-34180 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.6Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:22.627Z 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2026-34181 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34181 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:a5ef3ed372528c469cdcd14545c225f83fb204c8dc99b6267aa32
+                        │      │                   9c81db76fec 
+                        │      ├ Title           : Issue Summary: The PKCS#12 file processing fails to perform
+                        │      │                   sufficient ... 
+                        │      ├ Description     : Issue Summary: The PKCS#12 file processing fails to perform
+                        │      │                   sufficient input
+                        │      │                   validation for files that use Password-Based Message
+                        │      │                   Authentication Code 1
+                        │      │                   (PBMAC1) integrity mechanism allowing a certificate and
+                        │      │                   private key forgery.
+                        │      │                   
+                        │      │                   Impact Summary: An attacker impersonating a user can cause a
+                        │      │                    service reading
+                        │      │                   PKCS#12 files to accept forged certificates and private keys
+                        │      │                    with a 1 in 256
+                        │      │                   probability.
+                        │      │                   If a service accepting PKCS#12 files is using passwords for
+                        │      │                   authenticating
+                        │      │                   the received files, the attacker can create unencrypted
+                        │      │                   PKCS#12 files that
+                        │      │                   use PBMAC1 authentication that specifies an HMAC key of only
+                        │      │                    one byte, allowing
+                        │      │                   them to craft a file that will be accepted with a 1 in 256
+                        │      │                   That would then cause the service to accept a certificate
+                        │      │                   and private key
+                        │      │                   controlled by the attacker.
+                        │      │                   The FIPS modules are not affected by this issue, as the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-354 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/0300eb9ddce7
+                        │      │                  │      a0895bf301a4b0c03a9da2313a0f 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/79eb76a937e4
+                        │      │                  │      74bb7610a0a3dc57131dc8dc6610 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/85dcbb3abaa4
+                        │      │                  │      878af5c8fbbe11bce708fcf984a7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/ec36f2417c4d
+                        │      │                  │      dd8cabce4b4a60a3d7a7365f2d81 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34181 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.74Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T17:16:32.29Z 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2026-42766 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42766 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:8e9cb83100e31665cdce6c7152d66a67081865756d6381907b8f8
+                        │      │                   5b2bfb4c53e 
+                        │      ├ Title           : Issue summary: A specially crafted password-encrypted CMS
+                        │      │                   message can  ... 
+                        │      ├ Description     : Issue summary: A specially crafted password-encrypted CMS
+                        │      │                   message
+                        │      │                   can trigger a NULL pointer dereference during CMS
+                        │      │                   decryption.
+                        │      │                   
+                        │      │                   Impact summary: This NULL pointer dereference leads to an
+                        │      │                   application crash
+                        │      │                   and a Denial of Service.
+                        │      │                   The CMS PasswordRecipientInfo.keyDerivationAlgorithm field
+                        │      │                   is defined as
+                        │      │                   OPTIONAL in the ASN.1 specification and may therefore be
+                        │      │                   absent in specially
+                        │      │                   crafted inputs. During the password-based CMS decryption the
+                        │      │                    OpenSSL
+                        │      │                   CMS implementation dereferences this field without first
+                        │      │                   checking whether it
+                        │      │                   was present.
+                        │      │                   An attacker who supplies such a CMS message to an
+                        │      │                   application performing
+                        │      │                   password-based CMS decryption can trigger an application
+                        │      │                   crash, leading to
+                        │      │                   a Denial of Service.
+                        │      │                   Applications that process password-encrypted CMS messages
+                        │      │                   may be affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/056d06c1918f
+                        │      │                  │      afbb98c1c85a02e4c47cc4e199ce 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/12bc26ffb3a2
+                        │      │                  │      be728c9b86e1cae277de5b33dfa4 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/3ff64913615d
+                        │      │                  │      648cfbb6a6f1cf5529ae7ea829d7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/ab52d88cb537
+                        │      │                  │      4876d59aee3c91f9e4ccce2b7ce4 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/da26f368732b
+                        │      │                  │      83e40e9d356fe61c3d3aaab6d2e8 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-42766 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:07.97Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.52Z 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2026-42767 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42767 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:9f9f651811c51b5aa3d3a22c38593f2287b8c509c748014f693fb
+                        │      │                   7140db7097e 
+                        │      ├ Title           : Issue summary: An attacker-controlled CMP (Certificate
+                        │      │                   Management Prot ... 
+                        │      ├ Description     : Issue summary: An attacker-controlled CMP (Certificate
+                        │      │                   Management Protocol)
+                        │      │                   server could trigger a NULL pointer dereference in a CMP
+                        │      │                   client application.
+                        │      │                   
+                        │      │                   Impact summary: A NULL pointer dereference causes a crash of
+                        │      │                    the
+                        │      │                   application and a Denial of Service.
+                        │      │                   An attacker controlling a CMP server (or acting as a
+                        │      │                   man-in-the-middle) could
+                        │      │                   craft a CMP response containing a CRMF (Certificate Request
+                        │      │                   Message Format)
+                        │      │                   CertRepMessage with an EncryptedValue structure where the
+                        │      │                   symmAlg field
+                        │      │                   has an algorithm OID but no parameters field. When the
+                        │      │                   OpenSSL CMP client
+                        │      │                   processes this response, the NULL dereference occurs,
+                        │      │                   causing a crash of
+                        │      │                   the CMP client.
+                        │      │                   Applications that process untrusted CMP/CRMF messages may be
+                        │      │                    affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/61a86a8cd735
+                        │      │                  │      46c9fea916f3d304c1293e05c046 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/665d5254083a
+                        │      │                  │      ffde9982efca7c41dd01cacc8774 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/810b722f7726
+                        │      │                  │      52ad48042bcc7ab07e3414b11d0f 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/b90ff3b1bd33
+                        │      │                  │      b1c18e6a09936d097c2eddef8873 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/e6f912907fc2
+                        │      │                  │      ec82a0fd07aae55172c5e5e3d90d 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42767 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.093Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.683Z 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2026-42768 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42768 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:d1f852e5cfd5468171d523f8cf20f4e21e402dc2828bd1f8272af
+                        │      │                   46ca27c86ad 
+                        │      ├ Title           : Issue summary: The CMS_decrypt and PKCS7_decrypt functions
+                        │      │                   are vulnera ... 
+                        │      ├ Description     : Issue summary: The CMS_decrypt and PKCS7_decrypt functions
+                        │      │                   are vulnerable to
+                        │      │                   Bleichenbacher-style attack when an attacker is able to
+                        │      │                   provide the CMS or
+                        │      │                   S/MIME messages and observe the error code and/or decryption
+                        │      │                    output.
+                        │      │                   
+                        │      │                   Impact summary: The Bleichenbacher-style attack allows an
+                        │      │                   attacker to use the
+                        │      │                   victim's vulnerable application as a way to decrypt or sign
+                        │      │                   messages with the
+                        │      │                   victim's private RSA key.
+                        │      │                   The attack is possible in 2 variants.
+                        │      │                   1. The decryption API (CMS_decrypt(), PKCS7_decrypt()) is
+                        │      │                   used without
+                        │      │                   providing the recipient certificate. In this case OpenSSL
+                        │      │                   iterates over every
+                        │      │                   KeyTransRecipientInfo (KTRI) without stopping at the first
+                        │      │                   success.
+                        │      │                   An attacker who authors a message with two KTRI entries —
+                        │      │                   the first one
+                        │      │                   wrapping a real CEK under the victim's public key, the
+                        │      │                   second with an
+                        │      │                   arbitrary probe ciphertext — obtains opportunity to iterate
+                        │      │                   the 2nd KTRI to
+                        │      │                   get a valid PKCS#1 v1.5 padding if the error code of the
+                        │      │                   application is
+                        │      │                   available.
+                        │      │                   That is a Bleichenbacher oracle (Bleichenbacher, CRYPTO
+                        │      │                   '98): an
+                        │      │                   adaptive-chosen-ciphertext side channel from which the
+                        │      │                   attacker decrypts any
+                        │      │                   RSA ciphertext to the victim's key or forges any PKCS#1 v1.5
+                        │      │                    signature under
+                        │      │                   it.
+                        │      │                   2. When the decryption API (CMS_decrypt(), PKCS7_decrypt())
+                        │      │                   is provided with
+                        │      │                   the recipient certificate, and the recipient is not found, a
+                        │      │                    random
+                        │      │                   key is substituted.
+                        │      │                   An attacker who authors a message and is able to compare
+                        │      │                   both error code and
+                        │      │                   the result of the decryption, can mount a Bleichenbacher
+                        │      │                   oracle.
+                        │      │                   We are not aware of any applications that provide a remote
+                        │      │                   attacker
+                        │      │                   an opportunity to mount an attack described in these
+                        │      │                   scenarios. We consider
+                        │      │                   the existence of such application very unlikely, and for
+                        │      │                   this reason this
+                        │      │                   CVE has been evaluated as Low severity.
+                        │      │                   To avoid these attacks, when RSA PKCS#1 v1.5 Key Transport
+                        │      │                   is in use, the
+                        │      │                   invoked EVP_PKEY_decrypt() will use the implicit rejection
+                        │      │                   mechanism described
+                        │      │                   in draft-irtf-cfrg-rsa-guidance. In previous OpenSSL
+                        │      │                   releases the implicit
+                        │      │                   rejection was explicitly disabled.
+                        │      │                   The implicit rejection mechanism always returns a plaintext
+                        │      │                   value,
+                        │      │                   the symmetric key. This result is deterministic for the
+                        │      │                   ciphertext and the
+                        │      │                   private key.  The length of the decryption result can happen
+                        │      │                    to match the
+                        │      │                   length of the key of the symmetric cipher that was used for
+                        │      │                   the content
+                        │      │                   encryption. When a certificate is not provided, the last
+                        │      │                   RecipientInfo
+                        │      │                   producing a key that looks valid will be used. It may cause
+                        │      │                   getting garbage
+                        │      │                   content on decryption. As a proper way to deal with this a
+                        │      │                   recipient
+                        │      │                   certificate has to be provided to identify the particular
+                        │      │                   RecipientInfo for
+                        │      │                   decryption.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, and 3.4 are not affected
+                        │      │                   by this issue, as
+                        │      │                   CMS and S/MIME processing happens outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-514 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/a2ca7b2d73e0
+                        │      │                  │      ffc1eae183fe6e1741dac767cb4f 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/bbb151a83041
+                        │      │                  │      705d9d001ed2f9c12f5523e1b54d 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/dd68364107a5
+                        │      │                  │      8841c0a2546812518b65d3a23abd 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/f04b377be3d8
+                        │      │                  │      21741c86d1f4bf84dee09f3d5c3e 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42768 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.223Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.84Z 
+                        ├ [10] ╭ VulnerabilityID : CVE-2026-42769 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42769 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:c3ff8f24c00d0c73aa20660d7fba017827fa48a1e8a208c723844
+                        │      │                   085c59e8270 
+                        │      ├ Title           : Issue Summary: An error in the callback used to verify the
+                        │      │                   certificate ... 
+                        │      ├ Description     : Issue Summary: An error in the callback used to verify the
+                        │      │                   certificate
+                        │      │                   provided in a Root CA key update Certificate Management
+                        │      │                   Protocol (CMP)
+                        │      │                   message response rendered the certificate validation
+                        │      │                   ineffectual, which
+                        │      │                   could lead to escalation of credentials from the
+                        │      │                   Registration Authority (RA)
+                        │      │                   level to the root Certification Authority (root CA) level.
+                        │      │                   
+                        │      │                   Impact Summary: The Registration Autority could replace the
+                        │      │                   root CA
+                        │      │                   certificate for the CMP clients with an arbitrary root CA
+                        │      │                   certificate.
+                        │      │                   One of the parts of the Certificate Management Protocol
+                        │      │                   (CMP), specified in
+                        │      │                   RFC 9810, is Root Certification Authority (root CA) key
+                        │      │                   Rollover,
+                        │      │                   which is sent by the server in a message with type
+                        │      │                   'id-it-rootCaKeyUpdate'.
+                        │      │                   As part of these messages, 'newWithOld' certificate, the new
+                        │      │                    root CA
+                        │      │                   certificate signed with the old root CA key, is provided,
+                        │      │                   and verifying its
+                        │      │                   signature is crucial for transferring the trust from the old
+                        │      │                    CA key to the
+                        │      │                   new one.
+                        │      │                   The 'id-it-rootCaKeyUpdate' messages are expected to be
+                        │      │                   processed with
+                        │      │                   OSSL_CMP_get1_rootCaKeyUpdate(), that is expected to verify
+                        │      │                   the 'newWithOld'
+                        │      │                   certificate.  A typo in the certificate chain building code
+                        │      │                   led to adding
+                        │      │                   an incorrect certificate ('newWithOld' instead of 'oldRoot')
+                        │      │                    to the
+                        │      │                   certificate chain, rendering the certificate verification
+                        │      │                   process ineffectual
+                        │      │                   (only the issuer name and the algorithm OIDs were verified
+                        │      │                   by other parts
+                        │      │                   of the verification code).
+                        │      │                   An attacker who already has credentials that satisfy the CMP
+                        │      │                    message
+                        │      │                   protection checks can generate a new key pair and use a
+                        │      │                   crafted self-signed
+                        │      │                   certificate in its 'id-it-rootCaKeyUpdate' CMP messages
+                        │      │                   which affected CMP
+                        │      │                   clients would accept as a new trust anchor.
+                        │      │                   Significant preconditions for the attack (having valid
+                        │      │                   RA-level credentials)
+                        │      │                   are the reason the issue was assigned Low severity.
+                        │      │                   The FIPS modules are not affected by this issue, as the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-295 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/54d0989997e5
+                        │      │                  │      fc26057009a9782c3441ce3842fb 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/777b363b16fc
+                        │      │                  │      f2153bb3ded39dc3838713667c44 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d35cd473a271
+                        │      │                  │      bf3ce7bf3d32af53217fb83ae92c 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/d531f21c0fe9
+                        │      │                  │      9067a66fc0ff1161ef127f9cd70b 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42769 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.377Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.027Z 
+                        ├ [11] ╭ VulnerabilityID : CVE-2026-42770 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42770 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:a6d4ba49ceacf18c30f654371072d2e6f47dabf1592c7958327a1
+                        │      │                   03672d6202d 
+                        │      ├ Title           : Issue summary: When EVP_PKEY_derive_set_peer() is called
+                        │      │                   with a DHX (X ... 
+                        │      ├ Description     : Issue summary: When EVP_PKEY_derive_set_peer() is called
+                        │      │                   with a DHX (X9.42)
+                        │      │                   peer key, the peer key is not properly checked for the
+                        │      │                   subgroup membership.
+                        │      │                   
+                        │      │                   Impact summary: A malicious peer which presents an X9.42 key
+                        │      │                    carrying the
+                        │      │                   victim's p and g parameters, a forged q = r (a small prime
+                        │      │                   factor of the
+                        │      │                   cofactor (p−1)/q_local), and a public value Y of order r can
+                        │      │                    recover the
+                        │      │                   victim's private key after a small number of key exchange
+                        │      │                   attempts.
+                        │      │                   When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42)
+                        │      │                    peer key, the
+                        │      │                   subgroup membership check Y^q ≡ 1 (mod p) is performed using
+                        │      │                    the peer's
+                        │      │                   own q parameter, not the local key's q. The peer's domain
+                        │      │                   parameters are
+                        │      │                   then matched against the domain parameters of the private
+                        │      │                   key, but the value
+                        │      │                   of q is not compared.
+                        │      │                   A malicious peer who presents an X9.42 key carrying the
+                        │      │                   victim's p, g,
+                        │      │                   a forged q = r (a small prime factor of the cofactor), and a
+                        │      │                    public
+                        │      │                   value Y of order r passes all checks. The shared secret then
+                        │      │                    takes only
+                        │      │                   r distinct values, leaking priv mod r. Repeating for each
+                        │      │                   small-prime
+                        │      │                   factor of the cofactor and combining via CRT recovers the
+                        │      │                   full private
+                        │      │                   key (Lim–Lee / small-subgroup-confinement attack).
+                        │      │                   The realistic attack surface is narrow: principally CMP
+                        │      │                   deployments with
+                        │      │                   long-lived RA/CA DHX keys and bespoke enterprise or
+                        │      │                   government applications
+                        │      │                   using X9.42 DHX static keys with interactive protocols and
+                        │      │                   therefore this
+                        │      │                   issue was assigned Low severity.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are affected
+                        │      │                    by this
+                        │      │                   issue. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3da5a516cd26
+                        │      │                  │      35a320ff748503db2cef7c4b0f02 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3ddbb7ab50bd
+                        │      │                  │      93dfc59cbe08e269a67605aeebdb 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/5f452bba2c68
+                        │      │                  │      1423d8fcffd120a19b757ee42e3c 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7fbfde7677ed
+                        │      │                  │      8808828bf00ff01c937ca04bdda2 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/ca2237ab5615
+                        │      │                  │      641b662183b077f62c08d75e8070 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42770 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.523Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.197Z 
+                        ├ [12] ╭ VulnerabilityID : CVE-2026-45446 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45446 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:db7f53a83fae8c9d40b599e4fe21f6835281535a94e72e153c6db
+                        │      │                   dbb3e5978ca 
+                        │      ├ Title           : Issue summary: The implementations of AES-SIV (RFC 5297) and
+                        │      │                    AES-GCM-S ... 
+                        │      ├ Description     : Issue summary: The implementations of AES-SIV (RFC 5297) and
+                        │      │                    AES-GCM-SIV
+                        │      │                   (RFC 8452) mishandle the authentication of AAD (Additional
+                        │      │                   Authenticated
+                        │      │                   Data) with an empty ciphertext allowing a forgery of such
+                        │      │                   messages.
+                        │      │                   
+                        │      │                   Impact summary: An attacker can forge empty messages with
+                        │      │                   arbitrary AAD
+                        │      │                   to the victim's application using these ciphers.
+                        │      │                   AES-SIV (RFC 5297) and AES-GCM-SIV (RFC 8452) are
+                        │      │                   nonce-misuse-resistant AEAD
+                        │      │                   modes: they accept a key, nonce, optional AAD (bytes that
+                        │      │                   are authenticated
+                        │      │                   but not encrypted), and plaintext, and produces ciphertext
+                        │      │                   plus a 16-byte
+                        │      │                   tag. On decrypt, `EVP_DecryptFinal_ex()` is documented to
+                        │      │                   return success only
+                        │      │                   if the tag is verified succesfully.
+                        │      │                   In OpenSSL's provider implementation of these ciphers, the
+                        │      │                   expected tag is
+                        │      │                   computed only when decryption function is invoked with
+                        │      │                   non-empty data.
+                        │      │                   If the caller supplies AAD and then calls
+                        │      │                   `EVP_DecryptFinal_ex()` without
+                        │      │                   invocation of the ciphertext update, which can happen when
+                        │      │                   the received
+                        │      │                   ciphertext length is zero, the tag is never recalculated and
+                        │      │                    still holds its
+                        │      │                   all-zeros value.
+                        │      │                   When AES-GCM-SIV is used, an attacker who sends arbitrary
+                        │      │                   AAD, empty
+                        │      │                   ciphertext, and all-zeros tag passes authentication under
+                        │      │                   any key they do not
+                        │      │                   know, single-shot. When AES-SIV is used, for mounting the
+                        │      │                   attack it's
+                        │      │                   necessary for the application to reuse the decryption
+                        │      │                   context without
+                        │      │                   resetting the key.
+                        │      │                   AES-SIV is implemented since OpenSSL 3.0. AES-GCM-SIV is
+                        │      │                   implemented since
+                        │      │                   OpenSSL 3.2.
+                        │      │                   No protocols implemented in OpenSSL itself
+                        │      │                   (TLS/CMS/PKCS7/HPKE/QUIC) support
+                        │      │                   either AES-GCM-SIV or AES-SIV. To mount an attack, the
+                        │      │                   applications must
+                        │      │                   implement their own protocol and use the EVP interface. Also
+                        │      │                    they must skip the
+                        │      │                   ciphertext update when a message with an empty ciphertext
+                        │      │                   arrives.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as these algorithms are not FIPS approved and the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/25b32cd9d41d
+                        │      │                  │      2bc01b6abc425bb4baf2c2236fdc 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/71e2a5d26351
+                        │      │                  │      8cf5866043bd60ee4994d59e53a3 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7fe3f33a3b3a
+                        │      │                  │      4c487aa4dcdbc87057f66ffd2b85 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/daca0f48e4a6
+                        │      │                  │      9a2892a62262bad59e62a8a76598 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eec5e9bf0d86
+                        │      │                  │      7333b8495e456f5235d225798a68 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-45446 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:19.137Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.733Z 
+                        ├ [13] ╭ VulnerabilityID : CVE-2026-7383 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7383 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:7676bbaba2e10d58d0fd97f5828a60bbf5c600d0712d618a3ce1c
+                        │      │                   d4b3f54502e 
+                        │      ├ Title           : Issue summary: A signed integer overflow when sizing the
+                        │      │                   destination b ... 
+                        │      ├ Description     : Issue summary: A signed integer overflow when sizing the
+                        │      │                   destination
+                        │      │                   buffer for Unicode output in ASN1_mbstring_ncopy() can lead
+                        │      │                   to a heap
+                        │      │                   buffer overflow.
+                        │      │                   
+                        │      │                   Impact summary: A heap buffer overflow may lead to a crash
+                        │      │                   or possibly
+                        │      │                   attacker controlled code execution or other undefined
+                        │      │                   behaviour.
+                        │      │                   In ASN1_mbstring_copy() and ASN1_mbstring_ncopy() the
+                        │      │                   size for Unicode output is computed in a signed int: by left
+                        │      │                    shift
+                        │      │                   of the input character count for BMPSTRING (UTF-16) and
+                        │      │                   UNIVERSALSTRING (UTF-32), and by summing per-character byte
+                        │      │                   counts
+                        │      │                   for UTF8STRING. The calculation overflows when the input
+                        │      │                   reaches
+                        │      │                   around 2^30 characters. In the worst case (UNIVERSALSTRING
+                        │      │                   at 2^30
+                        │      │                   characters) the size wraps to zero, OPENSSL_malloc(1) is
+                        │      │                   called, and
+                        │      │                   the subsequent character copy writes several gigabytes past
+                        │      │                   the
+                        │      │                   one-byte allocation.
+                        │      │                   X.509 certificate processing routes through
+                        │      │                   ASN1_STRING_set_by_NID(),
+                        │      │                   whose DIRSTRING_TYPE mask excludes UNIVERSALSTRING and whose
+                        │      │                    per-NID
+                        │      │                   size limits cap the input length; no network protocol or
+                        │      │                   certificate-handling path in OpenSSL exercises the
+                        │      │                   overflow.
+                        │      │                   Triggering the bug requires an application that calls
+                        │      │                   ASN1_mbstring_copy() or ASN1_mbstring_ncopy() directly, or
+                        │      │                   registers
+                        │      │                   a custom string type via ASN1_STRING_TABLE_add(), with
+                        │      │                   attacker-controlled input on the order of half a gigabyte or
+                        │      │                    more.
+                        │      │                   For these reasons this issue was assigned Low severity.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                    module
+                        │      │                   boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-787 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/4f8d2bddaa2c
+                        │      │                  │      8e06f9c33390ee1717059a6e4be6 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/80c15faaf780
+                        │      │                  │      42bbb8654a0e234c50c381732f74 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/bd17511070fb
+                        │      │                  │      39a67bfa19682affb765e706a974 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/c332adaced43
+                        │      │                  │      bcbb85f97410597e951c11ec3083 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d32350ae8ef7
+                        │      │                  │      426718f5aa9e383d4b51398ee255 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-7383 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:50.337Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:25.463Z 
+                        ├ [14] ╭ VulnerabilityID : CVE-2026-9076 
+                        │      ├ PkgID           : libcrypto3@3.5.6-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.6-r0?arch=x86_64&distro
+                        │      │                  │       =3.23.4 
+                        │      │                  ╰ UID : 975680d851f10fda 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-9076 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:503d7c27d723fb7b8883b15873ac0f41b11e628a555d96da6a891
+                        │      │                   909f7e4df7a 
+                        │      ├ Title           : Issue summary: When CMS password-based decryption (RFC 3211
+                        │      │                   / PWRI key ... 
+                        │      ├ Description     : Issue summary: When CMS password-based decryption (RFC 3211
+                        │      │                   / PWRI key unwrap)
+                        │      │                   processes attacker-supplied CMS data, an attacker-chosen
+                        │      │                   stream-mode KEK
+                        │      │                   cipher can trigger a heap out-of-bounds read in
+                        │      │                   kek_unwrap_key().
+                        │      │                   
+                        │      │                   Impact summary: A heap buffer over-read may trigger a crash
+                        │      │                   which leads to
+                        │      │                   Denial of Service for an application if the input buffer
+                        │      │                   ends at a memory
+                        │      │                   page boundary and the following page is unmapped. There is
+                        │      │                   no information
+                        │      │                   disclosure as the over-read bytes are not revealed to the
+                        │      │                   attacker.
+                        │      │                   The key unwrapping function performs a check-byte test as
+                        │      │                   specified in the
+                        │      │                   RFC that reads 7 bytes from a heap allocation that is based
+                        │      │                   on the wrapped
+                        │      │                   key length from the message. There is a minimum length check
+                        │      │                    based on the
+                        │      │                   block length of the wrapping cipher. However the cipher is
+                        │      │                   selected from
+                        │      │                   an OID carried in the attacker's PWRI keyEncryptionAlgorithm
+                        │      │                    with no
+                        │      │                   requirement that the cipher be a block cipher. When an
+                        │      │                   attacker selects
+                        │      │                   a stream-mode cipher the guard will be ineffective and the
+                        │      │                   allocated buffer
+                        │      │                   containing the unwrapped key can be too small to fit the
+                        │      │                   check-bytes
+                        │      │                   specified in the RFC and a buffer over-read can happen.
+                        │      │                   Applications calling CMS_decrypt() or
+                        │      │                   CMS_decrypt_set1_password()
+                        │      │                   (equivalently openssl cms -decrypt -pwri_password ...) on
+                        │      │                   untrusted CMS
+                        │      │                   data are vulnerable to this issue. No password knowledge is
+                        │      │                   required: the
+                        │      │                   over-read happens during the unwrap attempt before any
+                        │      │                   authentication
+                        │      │                   succeeds.
+                        │      │                   The over-read is limited to a few bytes and is not written
+                        │      │                   to output, so
+                        │      │                   there is no information disclosure. Triggering a crash
+                        │      │                   requires the
+                        │      │                   allocation to border unmapped memory, which is unlikely with
+                        │      │                    the normal
+                        │      │                   allocator.
+                        │      │                   The FIPS modules are not affected by this issue. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-125 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/05b066366842
+                        │      │                  │      f930fadd9a6e94df98030af431bb 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3d8d5bc1056b
+                        │      │                  │      2f62da9fede23fedbf47e85187b0 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/715349a1d7c6
+                        │      │                  │      db970e6815dafb90915f07307f98 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/77bf00ab13f6
+                        │      │                  │      ff5e516535432f0328ed70ec0c26 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eecbe330977e
+                        │      │                  │      8d023aae1ca2d9bdbe983ef3fdc6 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-9076 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:50.997Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:26.063Z 
+                        ├ [15] ╭ VulnerabilityID : CVE-2026-45447 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45447 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:eb2ec43da6092334c81b87553d945e416f97916eb378c80881487
+                        │      │                   4501da61569 
+                        │      ├ Title           : Issue summary: A specially crafted PKCS#7 or S/MIME signed
+                        │      │                   message cou ... 
+                        │      ├ Description     : Issue summary: A specially crafted PKCS#7 or S/MIME signed
+                        │      │                   message could
+                        │      │                   trigger a use-after-free during PKCS#7 signature
+                        │      │                   verification.
+                        │      │                   
+                        │      │                   Impact summary: A use-after-free may result in process
+                        │      │                   crashes, heap
+                        │      │                   corruption, or potentially remote code execution.
+                        │      │                   When processing a PKCS#7 or S/MIME signed message, if the
+                        │      │                   SignedData
+                        │      │                   digestAlgorithms field is present as an empty ASN.1 SET,
+                        │      │                   OpenSSL may
+                        │      │                   incorrectly free a caller-owned BIO during PKCS7_verify(). A
+                        │      │                    subsequent
+                        │      │                   use of the BIO by the calling application results in a
+                        │      │                   use-after-free
+                        │      │                   condition.
+                        │      │                   In the common case this occurs when the application later
+                        │      │                   calls
+                        │      │                   BIO_free() on the BIO originally passed to PKCS7_verify().
+                        │      │                   Depending
+                        │      │                   on allocator behavior and application-specific BIO usage
+                        │      │                   patterns, this
+                        │      │                   may result in a crash or other memory corruption. In some
+                        │      │                   application
+                        │      │                   contexts this may potentially be exploitable for remote code
+                        │      │                    execution.
+                        │      │                   Applications that process PKCS#7 or S/MIME signed messages
+                        │      │                   using OpenSSL
+                        │      │                   PKCS#7 APIs may be affected. Applications using the CMS APIs
+                        │      │                    for this
+                        │      │                   processing are not affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-416 
+                        │      ├ VendorSeverity   ─ ubuntu: 3 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3aad5eb7af4d
+                        │      │                  │      e4ee0633c30a8541a54d9bbde63c 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7d4a980c6225
+                        │      │                  │      8c5910cc883936e0c8dbab4d75a8 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/9dfd688ad229
+                        │      │                  │      0fc5075cacbc9bf0c9a93eefed54 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a541ae8bfe84
+                        │      │                  │      9a30cc885e8780715c0f488e496c 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/c505d7559da5
+                        │      │                  │      d5f9f2c3913c6883a5562ce7273e 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-45447 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:19.277Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T15:16:35.16Z 
+                        ├ [16] ╭ VulnerabilityID : CVE-2026-34182 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34182 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:a3634028760c5dad43457a01049d63fa7bee322d7d8b5628be512
+                        │      │                   b9fffcd55f5 
+                        │      ├ Title           : Issue Summary: Cryptographic Message Services (CMS)
+                        │      │                   processing fails t ... 
+                        │      ├ Description     : Issue Summary: Cryptographic Message Services (CMS)
+                        │      │                   processing fails to perform
+                        │      │                   sufficient input validation on the cipher and tag length
+                        │      │                   fields of
+                        │      │                   AuthEnvelopedData containers, leading to various potential
+                        │      │                   compromises.
+                        │      │                   
+                        │      │                   Impact Summary: Attackers making use of these
+                        │      │                   vulnerabilities may achieve
+                        │      │                   key-equivalent functionality for a given CMS recipient
+                        │      │                   and/or bypass integrity
+                        │      │                   validation for a given message.
+                        │      │                   In one use case, an attacker may send a CMS message
+                        │      │                   containing
+                        │      │                   AuthEnvelopedData with the cipher specified as a non-AEAD
+                        │      │                   cipher.  OpenSSL
+                        │      │                   erroneously allows this selection, and attempts to decrypt
+                        │      │                   and validate the
+                        │      │                   message.
+                        │      │                   An on-path attacker who captures one legitimate AES-GCM
+                        │      │                   AuthEnvelopedData
+                        │      │                   addressed to the victim can re-emit it with the
+                        │      │                   recipientInfos set left
+                        │      │                   byte-for-byte intact, so the victim's private key still
+                        │      │                   unwraps the genuine CEK
+                        │      │                   (the content-encryption key), but with the inner OID
+                        │      │                   rewritten to AES-256-OFB
+                        │      │                   (Output Feedback Mode, an unauthenticated keystream mode)
+                        │      │                   and with an
+                        │      │                   attacker-chosen IV and ciphertext. The victim initializes
+                        │      │                   AES-256-OFB under the
+                        │      │                   real CEK, never consults the MAC field, and CMS_decrypt()
+                        │      │                   returns success.
+                        │      │                   If the application under attack responds to the attacker
+                        │      │                   with any indicator
+                        │      │                   showing success or failure of the decryption effort, it is
+                        │      │                   possible for the
+                        │      │                   attacker to use this as an oracle to obtain key equivalent
+                        │      │                   functionality for the
+                        │      │                   CEK used for the chosen recipient of the message.
+                        │      │                   In another use case, an attacker can reduce the tag length
+                        │      │                   of the chosen AEAD
+                        │      │                   cipher for a given AuthEnvelopedData container to be a
+                        │      │                   single byte long,
+                        │      │                   allowing an attacker to brute force CMS decryption,
+                        │      │                   producing an integrity
+                        │      │                   bypass for applications that trust CMS_decrypt() to reject
+                        │      │                   modified content.
+                        │      │                   The FIPS modules are not affected by this issue. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-354 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/03c1f4d45fb9
+                        │      │                  │      63aee7d5833390c507cd290182bc 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/439ed7d2c096
+                        │      │                  │      2ce964482727264668bf277c333f 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7947e6a81eb8
+                        │      │                  │      776802f159fb6762cb7fcf7e34c7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/9fd97f8cfdc2
+                        │      │                  │      c0be214998de3b2b55c8edf6c7ac 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d2ca86bcd43e
+                        │      │                  │      4f17d899f347101766b6107676e0 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-34182 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.857Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T17:16:32.48Z 
+                        ├ [17] ╭ VulnerabilityID : CVE-2026-34183 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34183 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:499e77136b6e26937bc82d21eb10587f5862c0a686768a3a1890e
+                        │      │                   06991491e91 
+                        │      ├ Title           : Issue summary: Remote peer may exhaust heap memory of the
+                        │      │                   QUIC server  ... 
+                        │      ├ Description     : Issue summary: Remote peer may exhaust heap memory of the
+                        │      │                   QUIC
+                        │      │                   server or client by flooding it with packets containing
+                        │      │                   PATH_CHALLENGE
+                        │      │                   frames.
+                        │      │                   
+                        │      │                   Impact summary: A malicious remote peer can cause an
+                        │      │                   unbounded
+                        │      │                   memory allocation which can lead to an abnormal termination
+                        │      │                   of the
+                        │      │                   application acting as a QUIC client or server and a Denial
+                        │      │                   of Service.
+                        │      │                   A remote peer may exhaust heap memory by flooding the local
+                        │      │                   QUIC stack with PATH_CHALLENGE frames. The local QUIC stack
+                        │      │                   allocates a PATH_RESPONSE frame for every PATH_CHALLENGE it
+                        │      │                   receives.
+                        │      │                   The allocated PATH_RESPONSE frame gets freed only when the
+                        │      │                   remote
+                        │      │                   peer acknowledges reception of the PATH_RESPONSE frame which
+                        │      │                    will
+                        │      │                   not be done by a malicious peer.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue. The QUIC stack is outside of OpenSSL FIPS
+                        │      │                   module
+                        │      │                   boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-1325 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/5b306efb0b37
+                        │      │                  │      79dfdd0803b4afc9d08c91f11517 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7d06955ebe0e
+                        │      │                  │      cf8adfd4c1e92018586da47ef9ac 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d2e9efbe4900
+                        │      │                  │      a373227deb136e8665401404ffac 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/fbaa83859c01
+                        │      │                  │      ad64f497b757aaf51be7d05ed9eb 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34183 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:05Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T16:17:01.217Z 
+                        ├ [18] ╭ VulnerabilityID : CVE-2026-42764 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42764 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:c840f597bc1276f477483abd95b23f84854dc8342a1aa76bdc6ec
+                        │      │                   f47a1e3dbce 
+                        │      ├ Title           : Issue summary: Receiving a QUIC initial packet with an
+                        │      │                   invalid token m ... 
+                        │      ├ Description     : Issue summary: Receiving a QUIC initial packet with an
+                        │      │                   invalid token may
+                        │      │                   trigger a NULL pointer dereference in the OpenSSL QUIC
+                        │      │                   server with
+                        │      │                   address validation disabled.
+                        │      │                   
+                        │      │                   Impact summary: NULL pointer dereference typically causes
+                        │      │                   abnormal termination
+                        │      │                   of the affected QUIC server process and a Denial of
+                        │      │                   Service.
+                        │      │                   If the address validation is disabled in the OpenSSL QUIC
+                        │      │                   server
+                        │      │                   implementation, an attacker can crash the server by sending
+                        │      │                   an initial
+                        │      │                   packet with an invalid or expired token.
+                        │      │                   By default, the client address validation is enabled in the
+                        │      │                   OpenSSL QUIC server
+                        │      │                   implementation, which makes the default configuration not
+                        │      │                   vulnerable
+                        │      │                   to this issue. However if the SSL_LISTENER_FLAG_NO_VALIDATE
+                        │      │                   is used with
+                        │      │                   the SSL_new_listener() call, the address validation is
+                        │      │                   disabled making the
+                        │      │                   vulnerable code reachable.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/5e3ed291b8af
+                        │      │                  │      0b03d5d3b9e56a1da69a187e9729 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/a45a0aba8095
+                        │      │                  │      682c88ff4fc4a784892b8c6f0677 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/bf29a458c1a2
+                        │      │                  │      31eca87e384c62b9c2553fa57a91 
+                        │      │                  ├ [3]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-42764 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:07.693Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.23Z 
+                        ├ [19] ╭ VulnerabilityID : CVE-2026-45445 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45445 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:e0f7c8e5b5b50b02ee80a9bbf7fefb2a2ae6f97a2f8fae70e1c3a
+                        │      │                   a41231da123 
+                        │      ├ Title           : Issue summary: When an application drives an AES-OCB context
+                        │      │                    through t ... 
+                        │      ├ Description     : Issue summary: When an application drives an AES-OCB context
+                        │      │                    through the
+                        │      │                   public EVP_Cipher() one-shot interface, the
+                        │      │                   application-supplied
+                        │      │                   initialisation vector (IV) is silently discarded.
+                        │      │                   
+                        │      │                   Impact summary: Every message encrypted under the same key
+                        │      │                   uses the
+                        │      │                   same effective nonce regardless of the IV supplied by the
+                        │      │                   caller,
+                        │      │                   resulting in (key, nonce) reuse and loss of confidentiality.
+                        │      │                     If the
+                        │      │                   same code path is used to compute the authentication tag,
+                        │      │                   the tag
+                        │      │                   depends only on the (key, IV) pair and not on the plaintext
+                        │      │                   or
+                        │      │                   ciphertext, allowing universal forgery of arbitrary
+                        │      │                   ciphertext from a
+                        │      │                   single captured message.
+                        │      │                   OpenSSL provides two ways to drive a cipher: the documented
+                        │      │                   streaming
+                        │      │                   interface (EVP_CipherUpdate / EVP_CipherFinal_ex) and a
+                        │      │                   lower-level
+                        │      │                   one-shot, EVP_Cipher(), whose documentation explicitly
+                        │      │                   recommends
+                        │      │                   against use by applications in favour of EVP_CipherUpdate()
+                        │      │                   and
+                        │      │                   EVP_CipherFinal_ex().  The OCB provider's streaming handler
+                        │      │                   flushes
+                        │      │                   the application-supplied IV into the OCB context before
+                        │      │                   processing
+                        │      │                   data; the one-shot handler did not.  Every call to
+                        │      │                   EVP_Cipher() on an
+                        │      │                   AES-OCB context therefore ran with the all-zero key-derived
+                        │      │                   offset
+                        │      │                   state left by cipher initialisation, regardless of the
+                        │      │                   caller's IV.
+                        │      │                   If EVP_EncryptFinal_ex() is subsequently used to obtain the
+                        │      │                   authentication tag, the deferred IV setup runs at that point
+                        │      │                    and
+                        │      │                   clears the running checksum that should have been
+                        │      │                   accumulated over the
+                        │      │                   plaintext.  The resulting tag is a function of (key, IV)
+                        │      │                   only and
+                        │      │                   verifies against any ciphertext produced under the same
+                        │      │                   (key, IV)
+                        │      │                   pair.
+                        │      │                   The OpenSSL SSL/TLS implementation is not affected: AES-OCB
+                        │      │                   is not a
+                        │      │                   TLS cipher suite, and libssl does not call EVP_Cipher() in
+                        │      │                   any case.
+                        │      │                   Applications that drive AES-OCB through the documented
+                        │      │                   streaming AEAD
+                        │      │                   API (EVP_CipherUpdate / EVP_CipherFinal_ex) are not
+                        │      │                   affected.  Only
+                        │      │                   applications that combine the AES-OCB cipher with the
+                        │      │                   EVP_Cipher()
+                        │      │                   one-shot API are vulnerable.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue, as AES-OCB is outside the OpenSSL FIPS module
+                        │      │                   boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/323f0b6e7d53
+                        │      │                  │      0a4cb4336d50c88cb70f3ac2a451 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/787a6dfba81b
+                        │      │                  │      7b09c1e05ab31396c0cd7c36b3f7 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7ac4715234ee
+                        │      │                  │      72d9f3c93426a2c08554b5b771af 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/843c9b94ca9c
+                        │      │                  │      2ed248bb30127bb4f3d7af0d607c 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/983d54b5cce8
+                        │      │                  │      d16147548ed1a37892d1720bbab6 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-45445 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:18.993Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.507Z 
+                        ├ [20] ╭ VulnerabilityID : CVE-2026-34180 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34180 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:b490378b5ee96cdc7ca92fb0b829453da904809efa0a5161d7d1f
+                        │      │                   04e7948e15c 
+                        │      ├ Title           : Issue summary: Parsing a crafted DER-encoded ASN.1 structure
+                        │      │                    with a pr ... 
+                        │      ├ Description     : Issue summary: Parsing a crafted DER-encoded ASN.1 structure
+                        │      │                    with a primitive
+                        │      │                   element whose content exceeds 2 gigabytes in length may
+                        │      │                   cause a heap buffer
+                        │      │                   over-read on 64-bit Unix and Unix-like platforms.
+                        │      │                   
+                        │      │                   Impact summary: The heap buffer over-read may crash the
+                        │      │                   application (Denial of
+                        │      │                   Service) or to load into the decoded ASN.1 object contents
+                        │      │                   of memory beyond the
+                        │      │                   end of the input buffer.  More typically such ASN.1 elements
+                        │      │                    would instead be
+                        │      │                   truncated.
+                        │      │                   An integer truncation in OpenSSL's ASN.1 decoder causes the
+                        │      │                   content length of
+                        │      │                   an ASN.1 primitive element to be mishandled when it exceeds
+                        │      │                   2 gigabytes. In the
+                        │      │                   worst case the truncated length is treated as a request to
+                        │      │                   scan the binary
+                        │      │                   content for a terminating zero byte, possibly causing
+                        │      │                   OpenSSL to read either
+                        │      │                   less than or beyond the end of the allocated buffer.
+                        │      │                   Applications that pass attacker-supplied data to d2i_X509(),
+                        │      │                    d2i_PKCS7(), or
+                        │      │                   any other d2i_* decoding function are affected. OpenSSL's
+                        │      │                   own command-line
+                        │      │                   tools are not vulnerable, as data read through the BIO layer
+                        │      │                    is checked before
+                        │      │                   it reaches the affected code. The issue only affects 64-bit
+                        │      │                   Unix and Unix-like
+                        │      │                   platforms; 32-bit platforms and 64-bit Windows are not
+                        │      │                   affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by this issue,
+                        │      │                   as the affected code is outside the OpenSSL FIPS module
+                        │      │                   boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-125 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/1c6908e4fa5f
+                        │      │                  │      a568752221d8eaf561a809751e5d 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/cbe418ae9785
+                        │      │                  │      39cf14a398a207dba834c0e93e83 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d93853c42110
+                        │      │                  │      d6319e3df07842b488cb9f7ac5ff 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/da5d62af75f6
+                        │      │                  │      9d6fbf7803743d7c56ac75461e43 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/f696c73c3e61
+                        │      │                  │      b8c502d040af62e690c060908a16 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-34180 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.6Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:22.627Z 
+                        ├ [21] ╭ VulnerabilityID : CVE-2026-34181 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34181 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:fc79a1b0fb4ac6c2be4a78e25ba33360106fa4a56ca049534eed9
+                        │      │                   9c3559ec6e9 
+                        │      ├ Title           : Issue Summary: The PKCS#12 file processing fails to perform
+                        │      │                   sufficient ... 
+                        │      ├ Description     : Issue Summary: The PKCS#12 file processing fails to perform
+                        │      │                   sufficient input
+                        │      │                   validation for files that use Password-Based Message
+                        │      │                   Authentication Code 1
+                        │      │                   (PBMAC1) integrity mechanism allowing a certificate and
+                        │      │                   private key forgery.
+                        │      │                   
+                        │      │                   Impact Summary: An attacker impersonating a user can cause a
+                        │      │                    service reading
+                        │      │                   PKCS#12 files to accept forged certificates and private keys
+                        │      │                    with a 1 in 256
+                        │      │                   probability.
+                        │      │                   If a service accepting PKCS#12 files is using passwords for
+                        │      │                   authenticating
+                        │      │                   the received files, the attacker can create unencrypted
+                        │      │                   PKCS#12 files that
+                        │      │                   use PBMAC1 authentication that specifies an HMAC key of only
+                        │      │                    one byte, allowing
+                        │      │                   them to craft a file that will be accepted with a 1 in 256
+                        │      │                   That would then cause the service to accept a certificate
+                        │      │                   and private key
+                        │      │                   controlled by the attacker.
+                        │      │                   The FIPS modules are not affected by this issue, as the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-354 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/0300eb9ddce7
+                        │      │                  │      a0895bf301a4b0c03a9da2313a0f 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/79eb76a937e4
+                        │      │                  │      74bb7610a0a3dc57131dc8dc6610 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/85dcbb3abaa4
+                        │      │                  │      878af5c8fbbe11bce708fcf984a7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/ec36f2417c4d
+                        │      │                  │      dd8cabce4b4a60a3d7a7365f2d81 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34181 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.74Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T17:16:32.29Z 
+                        ├ [22] ╭ VulnerabilityID : CVE-2026-42766 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42766 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:5ba79096aba9f7d62f886e7fc647aceade3bdbb448834e39c9a36
+                        │      │                   d510012e31b 
+                        │      ├ Title           : Issue summary: A specially crafted password-encrypted CMS
+                        │      │                   message can  ... 
+                        │      ├ Description     : Issue summary: A specially crafted password-encrypted CMS
+                        │      │                   message
+                        │      │                   can trigger a NULL pointer dereference during CMS
+                        │      │                   decryption.
+                        │      │                   
+                        │      │                   Impact summary: This NULL pointer dereference leads to an
+                        │      │                   application crash
+                        │      │                   and a Denial of Service.
+                        │      │                   The CMS PasswordRecipientInfo.keyDerivationAlgorithm field
+                        │      │                   is defined as
+                        │      │                   OPTIONAL in the ASN.1 specification and may therefore be
+                        │      │                   absent in specially
+                        │      │                   crafted inputs. During the password-based CMS decryption the
+                        │      │                    OpenSSL
+                        │      │                   CMS implementation dereferences this field without first
+                        │      │                   checking whether it
+                        │      │                   was present.
+                        │      │                   An attacker who supplies such a CMS message to an
+                        │      │                   application performing
+                        │      │                   password-based CMS decryption can trigger an application
+                        │      │                   crash, leading to
+                        │      │                   a Denial of Service.
+                        │      │                   Applications that process password-encrypted CMS messages
+                        │      │                   may be affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/056d06c1918f
+                        │      │                  │      afbb98c1c85a02e4c47cc4e199ce 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/12bc26ffb3a2
+                        │      │                  │      be728c9b86e1cae277de5b33dfa4 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/3ff64913615d
+                        │      │                  │      648cfbb6a6f1cf5529ae7ea829d7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/ab52d88cb537
+                        │      │                  │      4876d59aee3c91f9e4ccce2b7ce4 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/da26f368732b
+                        │      │                  │      83e40e9d356fe61c3d3aaab6d2e8 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-42766 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:07.97Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.52Z 
+                        ├ [23] ╭ VulnerabilityID : CVE-2026-42767 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42767 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:44a59647f443a2e68e22659e68df72c8d2450d99d7262ba6f637e
+                        │      │                   09854bd244c 
+                        │      ├ Title           : Issue summary: An attacker-controlled CMP (Certificate
+                        │      │                   Management Prot ... 
+                        │      ├ Description     : Issue summary: An attacker-controlled CMP (Certificate
+                        │      │                   Management Protocol)
+                        │      │                   server could trigger a NULL pointer dereference in a CMP
+                        │      │                   client application.
+                        │      │                   
+                        │      │                   Impact summary: A NULL pointer dereference causes a crash of
+                        │      │                    the
+                        │      │                   application and a Denial of Service.
+                        │      │                   An attacker controlling a CMP server (or acting as a
+                        │      │                   man-in-the-middle) could
+                        │      │                   craft a CMP response containing a CRMF (Certificate Request
+                        │      │                   Message Format)
+                        │      │                   CertRepMessage with an EncryptedValue structure where the
+                        │      │                   symmAlg field
+                        │      │                   has an algorithm OID but no parameters field. When the
+                        │      │                   OpenSSL CMP client
+                        │      │                   processes this response, the NULL dereference occurs,
+                        │      │                   causing a crash of
+                        │      │                   the CMP client.
+                        │      │                   Applications that process untrusted CMP/CRMF messages may be
+                        │      │                    affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/61a86a8cd735
+                        │      │                  │      46c9fea916f3d304c1293e05c046 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/665d5254083a
+                        │      │                  │      ffde9982efca7c41dd01cacc8774 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/810b722f7726
+                        │      │                  │      52ad48042bcc7ab07e3414b11d0f 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/b90ff3b1bd33
+                        │      │                  │      b1c18e6a09936d097c2eddef8873 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/e6f912907fc2
+                        │      │                  │      ec82a0fd07aae55172c5e5e3d90d 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42767 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.093Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.683Z 
+                        ├ [24] ╭ VulnerabilityID : CVE-2026-42768 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42768 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:5114f43389211977007b084688c69c152e21b012f11b739009a74
+                        │      │                   e939ba2dd0b 
+                        │      ├ Title           : Issue summary: The CMS_decrypt and PKCS7_decrypt functions
+                        │      │                   are vulnera ... 
+                        │      ├ Description     : Issue summary: The CMS_decrypt and PKCS7_decrypt functions
+                        │      │                   are vulnerable to
+                        │      │                   Bleichenbacher-style attack when an attacker is able to
+                        │      │                   provide the CMS or
+                        │      │                   S/MIME messages and observe the error code and/or decryption
+                        │      │                    output.
+                        │      │                   
+                        │      │                   Impact summary: The Bleichenbacher-style attack allows an
+                        │      │                   attacker to use the
+                        │      │                   victim's vulnerable application as a way to decrypt or sign
+                        │      │                   messages with the
+                        │      │                   victim's private RSA key.
+                        │      │                   The attack is possible in 2 variants.
+                        │      │                   1. The decryption API (CMS_decrypt(), PKCS7_decrypt()) is
+                        │      │                   used without
+                        │      │                   providing the recipient certificate. In this case OpenSSL
+                        │      │                   iterates over every
+                        │      │                   KeyTransRecipientInfo (KTRI) without stopping at the first
+                        │      │                   success.
+                        │      │                   An attacker who authors a message with two KTRI entries —
+                        │      │                   the first one
+                        │      │                   wrapping a real CEK under the victim's public key, the
+                        │      │                   second with an
+                        │      │                   arbitrary probe ciphertext — obtains opportunity to iterate
+                        │      │                   the 2nd KTRI to
+                        │      │                   get a valid PKCS#1 v1.5 padding if the error code of the
+                        │      │                   application is
+                        │      │                   available.
+                        │      │                   That is a Bleichenbacher oracle (Bleichenbacher, CRYPTO
+                        │      │                   '98): an
+                        │      │                   adaptive-chosen-ciphertext side channel from which the
+                        │      │                   attacker decrypts any
+                        │      │                   RSA ciphertext to the victim's key or forges any PKCS#1 v1.5
+                        │      │                    signature under
+                        │      │                   it.
+                        │      │                   2. When the decryption API (CMS_decrypt(), PKCS7_decrypt())
+                        │      │                   is provided with
+                        │      │                   the recipient certificate, and the recipient is not found, a
+                        │      │                    random
+                        │      │                   key is substituted.
+                        │      │                   An attacker who authors a message and is able to compare
+                        │      │                   both error code and
+                        │      │                   the result of the decryption, can mount a Bleichenbacher
+                        │      │                   oracle.
+                        │      │                   We are not aware of any applications that provide a remote
+                        │      │                   attacker
+                        │      │                   an opportunity to mount an attack described in these
+                        │      │                   scenarios. We consider
+                        │      │                   the existence of such application very unlikely, and for
+                        │      │                   this reason this
+                        │      │                   CVE has been evaluated as Low severity.
+                        │      │                   To avoid these attacks, when RSA PKCS#1 v1.5 Key Transport
+                        │      │                   is in use, the
+                        │      │                   invoked EVP_PKEY_decrypt() will use the implicit rejection
+                        │      │                   mechanism described
+                        │      │                   in draft-irtf-cfrg-rsa-guidance. In previous OpenSSL
+                        │      │                   releases the implicit
+                        │      │                   rejection was explicitly disabled.
+                        │      │                   The implicit rejection mechanism always returns a plaintext
+                        │      │                   value,
+                        │      │                   the symmetric key. This result is deterministic for the
+                        │      │                   ciphertext and the
+                        │      │                   private key.  The length of the decryption result can happen
+                        │      │                    to match the
+                        │      │                   length of the key of the symmetric cipher that was used for
+                        │      │                   the content
+                        │      │                   encryption. When a certificate is not provided, the last
+                        │      │                   RecipientInfo
+                        │      │                   producing a key that looks valid will be used. It may cause
+                        │      │                   getting garbage
+                        │      │                   content on decryption. As a proper way to deal with this a
+                        │      │                   recipient
+                        │      │                   certificate has to be provided to identify the particular
+                        │      │                   RecipientInfo for
+                        │      │                   decryption.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, and 3.4 are not affected
+                        │      │                   by this issue, as
+                        │      │                   CMS and S/MIME processing happens outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-514 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/a2ca7b2d73e0
+                        │      │                  │      ffc1eae183fe6e1741dac767cb4f 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/bbb151a83041
+                        │      │                  │      705d9d001ed2f9c12f5523e1b54d 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/dd68364107a5
+                        │      │                  │      8841c0a2546812518b65d3a23abd 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/f04b377be3d8
+                        │      │                  │      21741c86d1f4bf84dee09f3d5c3e 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42768 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.223Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.84Z 
+                        ├ [25] ╭ VulnerabilityID : CVE-2026-42769 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42769 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:04b5bc4f823119b975a384e2ed15ead10c3e037b27a17076492a9
+                        │      │                   88255e1e088 
+                        │      ├ Title           : Issue Summary: An error in the callback used to verify the
+                        │      │                   certificate ... 
+                        │      ├ Description     : Issue Summary: An error in the callback used to verify the
+                        │      │                   certificate
+                        │      │                   provided in a Root CA key update Certificate Management
+                        │      │                   Protocol (CMP)
+                        │      │                   message response rendered the certificate validation
+                        │      │                   ineffectual, which
+                        │      │                   could lead to escalation of credentials from the
+                        │      │                   Registration Authority (RA)
+                        │      │                   level to the root Certification Authority (root CA) level.
+                        │      │                   
+                        │      │                   Impact Summary: The Registration Autority could replace the
+                        │      │                   root CA
+                        │      │                   certificate for the CMP clients with an arbitrary root CA
+                        │      │                   certificate.
+                        │      │                   One of the parts of the Certificate Management Protocol
+                        │      │                   (CMP), specified in
+                        │      │                   RFC 9810, is Root Certification Authority (root CA) key
+                        │      │                   Rollover,
+                        │      │                   which is sent by the server in a message with type
+                        │      │                   'id-it-rootCaKeyUpdate'.
+                        │      │                   As part of these messages, 'newWithOld' certificate, the new
+                        │      │                    root CA
+                        │      │                   certificate signed with the old root CA key, is provided,
+                        │      │                   and verifying its
+                        │      │                   signature is crucial for transferring the trust from the old
+                        │      │                    CA key to the
+                        │      │                   new one.
+                        │      │                   The 'id-it-rootCaKeyUpdate' messages are expected to be
+                        │      │                   processed with
+                        │      │                   OSSL_CMP_get1_rootCaKeyUpdate(), that is expected to verify
+                        │      │                   the 'newWithOld'
+                        │      │                   certificate.  A typo in the certificate chain building code
+                        │      │                   led to adding
+                        │      │                   an incorrect certificate ('newWithOld' instead of 'oldRoot')
+                        │      │                    to the
+                        │      │                   certificate chain, rendering the certificate verification
+                        │      │                   process ineffectual
+                        │      │                   (only the issuer name and the algorithm OIDs were verified
+                        │      │                   by other parts
+                        │      │                   of the verification code).
+                        │      │                   An attacker who already has credentials that satisfy the CMP
+                        │      │                    message
+                        │      │                   protection checks can generate a new key pair and use a
+                        │      │                   crafted self-signed
+                        │      │                   certificate in its 'id-it-rootCaKeyUpdate' CMP messages
+                        │      │                   which affected CMP
+                        │      │                   clients would accept as a new trust anchor.
+                        │      │                   Significant preconditions for the attack (having valid
+                        │      │                   RA-level credentials)
+                        │      │                   are the reason the issue was assigned Low severity.
+                        │      │                   The FIPS modules are not affected by this issue, as the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-295 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/54d0989997e5
+                        │      │                  │      fc26057009a9782c3441ce3842fb 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/777b363b16fc
+                        │      │                  │      f2153bb3ded39dc3838713667c44 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d35cd473a271
+                        │      │                  │      bf3ce7bf3d32af53217fb83ae92c 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/d531f21c0fe9
+                        │      │                  │      9067a66fc0ff1161ef127f9cd70b 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42769 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.377Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.027Z 
+                        ├ [26] ╭ VulnerabilityID : CVE-2026-42770 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42770 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:57c87ac77854b83732ae3e1083fb989b37229115579cb63d4adba
+                        │      │                   ddce8d45a75 
+                        │      ├ Title           : Issue summary: When EVP_PKEY_derive_set_peer() is called
+                        │      │                   with a DHX (X ... 
+                        │      ├ Description     : Issue summary: When EVP_PKEY_derive_set_peer() is called
+                        │      │                   with a DHX (X9.42)
+                        │      │                   peer key, the peer key is not properly checked for the
+                        │      │                   subgroup membership.
+                        │      │                   
+                        │      │                   Impact summary: A malicious peer which presents an X9.42 key
+                        │      │                    carrying the
+                        │      │                   victim's p and g parameters, a forged q = r (a small prime
+                        │      │                   factor of the
+                        │      │                   cofactor (p−1)/q_local), and a public value Y of order r can
+                        │      │                    recover the
+                        │      │                   victim's private key after a small number of key exchange
+                        │      │                   attempts.
+                        │      │                   When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42)
+                        │      │                    peer key, the
+                        │      │                   subgroup membership check Y^q ≡ 1 (mod p) is performed using
+                        │      │                    the peer's
+                        │      │                   own q parameter, not the local key's q. The peer's domain
+                        │      │                   parameters are
+                        │      │                   then matched against the domain parameters of the private
+                        │      │                   key, but the value
+                        │      │                   of q is not compared.
+                        │      │                   A malicious peer who presents an X9.42 key carrying the
+                        │      │                   victim's p, g,
+                        │      │                   a forged q = r (a small prime factor of the cofactor), and a
+                        │      │                    public
+                        │      │                   value Y of order r passes all checks. The shared secret then
+                        │      │                    takes only
+                        │      │                   r distinct values, leaking priv mod r. Repeating for each
+                        │      │                   small-prime
+                        │      │                   factor of the cofactor and combining via CRT recovers the
+                        │      │                   full private
+                        │      │                   key (Lim–Lee / small-subgroup-confinement attack).
+                        │      │                   The realistic attack surface is narrow: principally CMP
+                        │      │                   deployments with
+                        │      │                   long-lived RA/CA DHX keys and bespoke enterprise or
+                        │      │                   government applications
+                        │      │                   using X9.42 DHX static keys with interactive protocols and
+                        │      │                   therefore this
+                        │      │                   issue was assigned Low severity.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are affected
+                        │      │                    by this
+                        │      │                   issue. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3da5a516cd26
+                        │      │                  │      35a320ff748503db2cef7c4b0f02 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3ddbb7ab50bd
+                        │      │                  │      93dfc59cbe08e269a67605aeebdb 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/5f452bba2c68
+                        │      │                  │      1423d8fcffd120a19b757ee42e3c 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7fbfde7677ed
+                        │      │                  │      8808828bf00ff01c937ca04bdda2 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/ca2237ab5615
+                        │      │                  │      641b662183b077f62c08d75e8070 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42770 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.523Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.197Z 
+                        ├ [27] ╭ VulnerabilityID : CVE-2026-45446 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45446 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:ad1261cdbdc30a9b60b46c966a45dc2c4435f72e9e0ce376d1310
+                        │      │                   0ad4270a6b6 
+                        │      ├ Title           : Issue summary: The implementations of AES-SIV (RFC 5297) and
+                        │      │                    AES-GCM-S ... 
+                        │      ├ Description     : Issue summary: The implementations of AES-SIV (RFC 5297) and
+                        │      │                    AES-GCM-SIV
+                        │      │                   (RFC 8452) mishandle the authentication of AAD (Additional
+                        │      │                   Authenticated
+                        │      │                   Data) with an empty ciphertext allowing a forgery of such
+                        │      │                   messages.
+                        │      │                   
+                        │      │                   Impact summary: An attacker can forge empty messages with
+                        │      │                   arbitrary AAD
+                        │      │                   to the victim's application using these ciphers.
+                        │      │                   AES-SIV (RFC 5297) and AES-GCM-SIV (RFC 8452) are
+                        │      │                   nonce-misuse-resistant AEAD
+                        │      │                   modes: they accept a key, nonce, optional AAD (bytes that
+                        │      │                   are authenticated
+                        │      │                   but not encrypted), and plaintext, and produces ciphertext
+                        │      │                   plus a 16-byte
+                        │      │                   tag. On decrypt, `EVP_DecryptFinal_ex()` is documented to
+                        │      │                   return success only
+                        │      │                   if the tag is verified succesfully.
+                        │      │                   In OpenSSL's provider implementation of these ciphers, the
+                        │      │                   expected tag is
+                        │      │                   computed only when decryption function is invoked with
+                        │      │                   non-empty data.
+                        │      │                   If the caller supplies AAD and then calls
+                        │      │                   `EVP_DecryptFinal_ex()` without
+                        │      │                   invocation of the ciphertext update, which can happen when
+                        │      │                   the received
+                        │      │                   ciphertext length is zero, the tag is never recalculated and
+                        │      │                    still holds its
+                        │      │                   all-zeros value.
+                        │      │                   When AES-GCM-SIV is used, an attacker who sends arbitrary
+                        │      │                   AAD, empty
+                        │      │                   ciphertext, and all-zeros tag passes authentication under
+                        │      │                   any key they do not
+                        │      │                   know, single-shot. When AES-SIV is used, for mounting the
+                        │      │                   attack it's
+                        │      │                   necessary for the application to reuse the decryption
+                        │      │                   context without
+                        │      │                   resetting the key.
+                        │      │                   AES-SIV is implemented since OpenSSL 3.0. AES-GCM-SIV is
+                        │      │                   implemented since
+                        │      │                   OpenSSL 3.2.
+                        │      │                   No protocols implemented in OpenSSL itself
+                        │      │                   (TLS/CMS/PKCS7/HPKE/QUIC) support
+                        │      │                   either AES-GCM-SIV or AES-SIV. To mount an attack, the
+                        │      │                   applications must
+                        │      │                   implement their own protocol and use the EVP interface. Also
+                        │      │                    they must skip the
+                        │      │                   ciphertext update when a message with an empty ciphertext
+                        │      │                   arrives.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as these algorithms are not FIPS approved and the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/25b32cd9d41d
+                        │      │                  │      2bc01b6abc425bb4baf2c2236fdc 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/71e2a5d26351
+                        │      │                  │      8cf5866043bd60ee4994d59e53a3 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7fe3f33a3b3a
+                        │      │                  │      4c487aa4dcdbc87057f66ffd2b85 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/daca0f48e4a6
+                        │      │                  │      9a2892a62262bad59e62a8a76598 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eec5e9bf0d86
+                        │      │                  │      7333b8495e456f5235d225798a68 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-45446 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:19.137Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.733Z 
+                        ├ [28] ╭ VulnerabilityID : CVE-2026-7383 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7383 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:7818c6b7ec74112aefb80aba1be315fa7a443c8f167379838ceb2
+                        │      │                   a3d8dbb8d69 
+                        │      ├ Title           : Issue summary: A signed integer overflow when sizing the
+                        │      │                   destination b ... 
+                        │      ├ Description     : Issue summary: A signed integer overflow when sizing the
+                        │      │                   destination
+                        │      │                   buffer for Unicode output in ASN1_mbstring_ncopy() can lead
+                        │      │                   to a heap
+                        │      │                   buffer overflow.
+                        │      │                   
+                        │      │                   Impact summary: A heap buffer overflow may lead to a crash
+                        │      │                   or possibly
+                        │      │                   attacker controlled code execution or other undefined
+                        │      │                   behaviour.
+                        │      │                   In ASN1_mbstring_copy() and ASN1_mbstring_ncopy() the
+                        │      │                   size for Unicode output is computed in a signed int: by left
+                        │      │                    shift
+                        │      │                   of the input character count for BMPSTRING (UTF-16) and
+                        │      │                   UNIVERSALSTRING (UTF-32), and by summing per-character byte
+                        │      │                   counts
+                        │      │                   for UTF8STRING. The calculation overflows when the input
+                        │      │                   reaches
+                        │      │                   around 2^30 characters. In the worst case (UNIVERSALSTRING
+                        │      │                   at 2^30
+                        │      │                   characters) the size wraps to zero, OPENSSL_malloc(1) is
+                        │      │                   called, and
+                        │      │                   the subsequent character copy writes several gigabytes past
+                        │      │                   the
+                        │      │                   one-byte allocation.
+                        │      │                   X.509 certificate processing routes through
+                        │      │                   ASN1_STRING_set_by_NID(),
+                        │      │                   whose DIRSTRING_TYPE mask excludes UNIVERSALSTRING and whose
+                        │      │                    per-NID
+                        │      │                   size limits cap the input length; no network protocol or
+                        │      │                   certificate-handling path in OpenSSL exercises the
+                        │      │                   overflow.
+                        │      │                   Triggering the bug requires an application that calls
+                        │      │                   ASN1_mbstring_copy() or ASN1_mbstring_ncopy() directly, or
+                        │      │                   registers
+                        │      │                   a custom string type via ASN1_STRING_TABLE_add(), with
+                        │      │                   attacker-controlled input on the order of half a gigabyte or
+                        │      │                    more.
+                        │      │                   For these reasons this issue was assigned Low severity.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                    module
+                        │      │                   boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-787 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/4f8d2bddaa2c
+                        │      │                  │      8e06f9c33390ee1717059a6e4be6 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/80c15faaf780
+                        │      │                  │      42bbb8654a0e234c50c381732f74 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/bd17511070fb
+                        │      │                  │      39a67bfa19682affb765e706a974 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/c332adaced43
+                        │      │                  │      bcbb85f97410597e951c11ec3083 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d32350ae8ef7
+                        │      │                  │      426718f5aa9e383d4b51398ee255 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-7383 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:50.337Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:25.463Z 
+                        ├ [29] ╭ VulnerabilityID : CVE-2026-9076 
+                        │      ├ PkgID           : libssl3@3.5.6-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : aece396067dff154 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-9076 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:2e0e4621bdb9d217f20e64fe88a8986c150de3b84829dbdbda149
+                        │      │                   c16c540e612 
+                        │      ├ Title           : Issue summary: When CMS password-based decryption (RFC 3211
+                        │      │                   / PWRI key ... 
+                        │      ├ Description     : Issue summary: When CMS password-based decryption (RFC 3211
+                        │      │                   / PWRI key unwrap)
+                        │      │                   processes attacker-supplied CMS data, an attacker-chosen
+                        │      │                   stream-mode KEK
+                        │      │                   cipher can trigger a heap out-of-bounds read in
+                        │      │                   kek_unwrap_key().
+                        │      │                   
+                        │      │                   Impact summary: A heap buffer over-read may trigger a crash
+                        │      │                   which leads to
+                        │      │                   Denial of Service for an application if the input buffer
+                        │      │                   ends at a memory
+                        │      │                   page boundary and the following page is unmapped. There is
+                        │      │                   no information
+                        │      │                   disclosure as the over-read bytes are not revealed to the
+                        │      │                   attacker.
+                        │      │                   The key unwrapping function performs a check-byte test as
+                        │      │                   specified in the
+                        │      │                   RFC that reads 7 bytes from a heap allocation that is based
+                        │      │                   on the wrapped
+                        │      │                   key length from the message. There is a minimum length check
+                        │      │                    based on the
+                        │      │                   block length of the wrapping cipher. However the cipher is
+                        │      │                   selected from
+                        │      │                   an OID carried in the attacker's PWRI keyEncryptionAlgorithm
+                        │      │                    with no
+                        │      │                   requirement that the cipher be a block cipher. When an
+                        │      │                   attacker selects
+                        │      │                   a stream-mode cipher the guard will be ineffective and the
+                        │      │                   allocated buffer
+                        │      │                   containing the unwrapped key can be too small to fit the
+                        │      │                   check-bytes
+                        │      │                   specified in the RFC and a buffer over-read can happen.
+                        │      │                   Applications calling CMS_decrypt() or
+                        │      │                   CMS_decrypt_set1_password()
+                        │      │                   (equivalently openssl cms -decrypt -pwri_password ...) on
+                        │      │                   untrusted CMS
+                        │      │                   data are vulnerable to this issue. No password knowledge is
+                        │      │                   required: the
+                        │      │                   over-read happens during the unwrap attempt before any
+                        │      │                   authentication
+                        │      │                   succeeds.
+                        │      │                   The over-read is limited to a few bytes and is not written
+                        │      │                   to output, so
+                        │      │                   there is no information disclosure. Triggering a crash
+                        │      │                   requires the
+                        │      │                   allocation to border unmapped memory, which is unlikely with
+                        │      │                    the normal
+                        │      │                   allocator.
+                        │      │                   The FIPS modules are not affected by this issue. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-125 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/05b066366842
+                        │      │                  │      f930fadd9a6e94df98030af431bb 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3d8d5bc1056b
+                        │      │                  │      2f62da9fede23fedbf47e85187b0 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/715349a1d7c6
+                        │      │                  │      db970e6815dafb90915f07307f98 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/77bf00ab13f6
+                        │      │                  │      ff5e516535432f0328ed70ec0c26 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eecbe330977e
+                        │      │                  │      8d023aae1ca2d9bdbe983ef3fdc6 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-9076 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:50.997Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:26.063Z 
+                        ├ [30] ╭ VulnerabilityID : CVE-2026-40200 
+                        │      ├ PkgID           : musl@1.2.5-r23 
+                        │      ├ PkgName         : musl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r23?arch=x86_64&distro=3.23.4 
+                        │      │                  ╰ UID : dca30b3fd6708a32 
+                        │      ├ InstalledVersion: 1.2.5-r23 
+                        │      ├ FixedVersion    : 1.2.6-r2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:0922d0ef0dfd86d95be0afbe60b3101f190c4e12aea58204ead47
+                        │      │                   a1cfef163ba 
+                        │      ├ Title           : musl: musl libc: Arbitrary code execution and denial of
+                        │      │                   service via stack-based memory corruption in qsort 
+                        │      ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+                        │      │                   Stack-based memory corruption can occur during qsort of very
+                        │      │                    large arrays, due to incorrectly implemented double-word
+                        │      │                   primitives. The number of elements must exceed about seven
+                        │      │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
+                        │      │                   (or the 64th Leonardo number on 64-bit platforms, which is
+                        │      │                   not practical). 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-670 
+                        │      ├ VendorSeverity   ─ redhat: 3 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 7.8 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-40200 
+                        │      │                  ├ [2]: https://musl.libc.org/releases.html 
+                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-40200 
+                        │      │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-40200 
+                        │      │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/10
+                        │      │                         /13 
+                        │      ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
+                        │      ╰ LastModifiedDate: 2026-04-27T19:18:46.69Z 
+                        ├ [31] ╭ VulnerabilityID : CVE-2026-6042 
+                        │      ├ PkgID           : musl@1.2.5-r23 
+                        │      ├ PkgName         : musl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.5-r23?arch=x86_64&distro=3.23.4 
+                        │      │                  ╰ UID : dca30b3fd6708a32 
+                        │      ├ InstalledVersion: 1.2.5-r23 
+                        │      ├ FixedVersion    : 1.2.6-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:bff6d69e85f30963a26e54c207a67c0f9bda8bc3d26c49ee08b30
+                        │      │                   65410e5a7c5 
+                        │      ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
+                        │      │                   Service via inefficient algorithmic complexity in iconv 
+                        │      ├ Description     : A security flaw has been discovered in musl libc up to
+                        │      │                   1.2.6. Affected is the function iconv of the file
+                        │      │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
+                        │      │                   Performing a manipulation results in inefficient algorithmic
+                        │      │                    complexity. The attack must be initiated from a local
+                        │      │                   position. To fix this issue, it is recommended to deploy a
+                        │      │                   patch. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ╭ [0]: CWE-404 
+                        │      │                  ╰ [1]: CWE-407 
+                        │      ├ VendorSeverity   ─ redhat: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.5 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6042 
+                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-6042 
+                        │      │                  ├ [3]: https://vuldb.com/submit/796352 
+                        │      │                  ├ [4]: https://vuldb.com/vuln/356620 
+                        │      │                  ├ [5]: https://vuldb.com/vuln/356620/cti 
+                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6042 
+                        │      │                  ├ [7]: https://www.openwall.com/lists/oss-security/2026/04/02
+                        │      │                  │      /10 
+                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+                        │      ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
+                        │      ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
+                        ├ [32] ╭ VulnerabilityID : CVE-2026-40200 
+                        │      ├ PkgID           : musl-utils@1.2.5-r23 
+                        │      ├ PkgName         : musl-utils 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r23?arch=x86_64&distr
+                        │      │                  │       o=3.23.4 
+                        │      │                  ╰ UID : ffcf7198a9776c5f 
+                        │      ├ InstalledVersion: 1.2.5-r23 
+                        │      ├ FixedVersion    : 1.2.6-r2 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-40200 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:ccbb3a5baf3409cc5007a3a910a58b66ad5e0ce9193363d33acf8
+                        │      │                   8f4fd876fac 
+                        │      ├ Title           : musl: musl libc: Arbitrary code execution and denial of
+                        │      │                   service via stack-based memory corruption in qsort 
+                        │      ├ Description     : An issue was discovered in musl libc 0.7.10 through 1.2.6.
+                        │      │                   Stack-based memory corruption can occur during qsort of very
+                        │      │                    large arrays, due to incorrectly implemented double-word
+                        │      │                   primitives. The number of elements must exceed about seven
+                        │      │                   million, i.e., the 32nd Leonardo number on 32-bit platforms
+                        │      │                   (or the 64th Leonardo number on 64-bit platforms, which is
+                        │      │                   not practical). 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-670 
+                        │      ├ VendorSeverity   ─ redhat: 3 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 7.8 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/10/13 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-40200 
+                        │      │                  ├ [2]: https://musl.libc.org/releases.html 
+                        │      │                  ├ [3]: https://nvd.nist.gov/vuln/detail/CVE-2026-40200 
+                        │      │                  ├ [4]: https://www.cve.org/CVERecord?id=CVE-2026-40200 
+                        │      │                  ╰ [5]: https://www.openwall.com/lists/oss-security/2026/04/10
+                        │      │                         /13 
+                        │      ├ PublishedDate   : 2026-04-10T17:17:14.107Z 
+                        │      ╰ LastModifiedDate: 2026-04-27T19:18:46.69Z 
+                        ├ [33] ╭ VulnerabilityID : CVE-2026-6042 
+                        │      ├ PkgID           : musl-utils@1.2.5-r23 
+                        │      ├ PkgName         : musl-utils 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.5-r23?arch=x86_64&distr
+                        │      │                  │       o=3.23.4 
+                        │      │                  ╰ UID : ffcf7198a9776c5f 
+                        │      ├ InstalledVersion: 1.2.5-r23 
+                        │      ├ FixedVersion    : 1.2.6-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:6a0ac1617861a677b045b7ff88545213ec31c0ff0876
+                        │      │                  │         3195a70a4a5adda577bb 
+                        │      │                  ╰ DiffID: sha256:29df493baa13de438d6d2ece3a8333032e0b7b9b9d8c
+                        │      │                            ce4ee82194da255f61e1 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-6042 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:aebecde433543a45d78cf994353025d6689c1f71fa91f8bee084a
+                        │      │                   db707409fbb 
+                        │      ├ Title           : musl libc: GB18030 4-byte Decoder: musl libc: Denial of
+                        │      │                   Service via inefficient algorithmic complexity in iconv 
+                        │      ├ Description     : A security flaw has been discovered in musl libc up to
+                        │      │                   1.2.6. Affected is the function iconv of the file
+                        │      │                   src/locale/iconv.c of the component GB18030 4-byte Decoder.
+                        │      │                   Performing a manipulation results in inefficient algorithmic
+                        │      │                    complexity. The attack must be initiated from a local
+                        │      │                   position. To fix this issue, it is recommended to deploy a
+                        │      │                   patch. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ╭ [0]: CWE-404 
+                        │      │                  ╰ [1]: CWE-407 
+                        │      ├ VendorSeverity   ─ redhat: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.5 
+                        │      ├ References       ╭ [0]: http://www.openwall.com/lists/oss-security/2026/04/09/19 
+                        │      │                  ├ [1]: https://access.redhat.com/security/cve/CVE-2026-6042 
+                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-6042 
+                        │      │                  ├ [3]: https://vuldb.com/submit/796352 
+                        │      │                  ├ [4]: https://vuldb.com/vuln/356620 
+                        │      │                  ├ [5]: https://vuldb.com/vuln/356620/cti 
+                        │      │                  ├ [6]: https://www.cve.org/CVERecord?id=CVE-2026-6042 
+                        │      │                  ├ [7]: https://www.openwall.com/lists/oss-security/2026/04/02
+                        │      │                  │      /10 
+                        │      │                  ╰ [8]: https://www.openwall.com/lists/oss-security/2026/04/03/2 
+                        │      ├ PublishedDate   : 2026-04-10T09:16:25.45Z 
+                        │      ╰ LastModifiedDate: 2026-04-24T18:01:13.913Z 
+                        ├ [34] ╭ VulnerabilityID : CVE-2026-45447 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45447 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:7f37abeb634527d6516b7a8fe7165320d76a0aea2df61b1377a86
+                        │      │                   351841e2092 
+                        │      ├ Title           : Issue summary: A specially crafted PKCS#7 or S/MIME signed
+                        │      │                   message cou ... 
+                        │      ├ Description     : Issue summary: A specially crafted PKCS#7 or S/MIME signed
+                        │      │                   message could
+                        │      │                   trigger a use-after-free during PKCS#7 signature
+                        │      │                   verification.
+                        │      │                   
+                        │      │                   Impact summary: A use-after-free may result in process
+                        │      │                   crashes, heap
+                        │      │                   corruption, or potentially remote code execution.
+                        │      │                   When processing a PKCS#7 or S/MIME signed message, if the
+                        │      │                   SignedData
+                        │      │                   digestAlgorithms field is present as an empty ASN.1 SET,
+                        │      │                   OpenSSL may
+                        │      │                   incorrectly free a caller-owned BIO during PKCS7_verify(). A
+                        │      │                    subsequent
+                        │      │                   use of the BIO by the calling application results in a
+                        │      │                   use-after-free
+                        │      │                   condition.
+                        │      │                   In the common case this occurs when the application later
+                        │      │                   calls
+                        │      │                   BIO_free() on the BIO originally passed to PKCS7_verify().
+                        │      │                   Depending
+                        │      │                   on allocator behavior and application-specific BIO usage
+                        │      │                   patterns, this
+                        │      │                   may result in a crash or other memory corruption. In some
+                        │      │                   application
+                        │      │                   contexts this may potentially be exploitable for remote code
+                        │      │                    execution.
+                        │      │                   Applications that process PKCS#7 or S/MIME signed messages
+                        │      │                   using OpenSSL
+                        │      │                   PKCS#7 APIs may be affected. Applications using the CMS APIs
+                        │      │                    for this
+                        │      │                   processing are not affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ─ [0]: CWE-416 
+                        │      ├ VendorSeverity   ─ ubuntu: 3 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3aad5eb7af4d
+                        │      │                  │      e4ee0633c30a8541a54d9bbde63c 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7d4a980c6225
+                        │      │                  │      8c5910cc883936e0c8dbab4d75a8 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/9dfd688ad229
+                        │      │                  │      0fc5075cacbc9bf0c9a93eefed54 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/a541ae8bfe84
+                        │      │                  │      9a30cc885e8780715c0f488e496c 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/c505d7559da5
+                        │      │                  │      d5f9f2c3913c6883a5562ce7273e 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-45447 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:19.277Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T15:16:35.16Z 
+                        ├ [35] ╭ VulnerabilityID : CVE-2026-34182 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34182 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:2868b249db0e603fb10e863ed6ec23fdd067a14059fc6dce94826
+                        │      │                   2422bfe2f64 
+                        │      ├ Title           : Issue Summary: Cryptographic Message Services (CMS)
+                        │      │                   processing fails t ... 
+                        │      ├ Description     : Issue Summary: Cryptographic Message Services (CMS)
+                        │      │                   processing fails to perform
+                        │      │                   sufficient input validation on the cipher and tag length
+                        │      │                   fields of
+                        │      │                   AuthEnvelopedData containers, leading to various potential
+                        │      │                   compromises.
+                        │      │                   
+                        │      │                   Impact Summary: Attackers making use of these
+                        │      │                   vulnerabilities may achieve
+                        │      │                   key-equivalent functionality for a given CMS recipient
+                        │      │                   and/or bypass integrity
+                        │      │                   validation for a given message.
+                        │      │                   In one use case, an attacker may send a CMS message
+                        │      │                   containing
+                        │      │                   AuthEnvelopedData with the cipher specified as a non-AEAD
+                        │      │                   cipher.  OpenSSL
+                        │      │                   erroneously allows this selection, and attempts to decrypt
+                        │      │                   and validate the
+                        │      │                   message.
+                        │      │                   An on-path attacker who captures one legitimate AES-GCM
+                        │      │                   AuthEnvelopedData
+                        │      │                   addressed to the victim can re-emit it with the
+                        │      │                   recipientInfos set left
+                        │      │                   byte-for-byte intact, so the victim's private key still
+                        │      │                   unwraps the genuine CEK
+                        │      │                   (the content-encryption key), but with the inner OID
+                        │      │                   rewritten to AES-256-OFB
+                        │      │                   (Output Feedback Mode, an unauthenticated keystream mode)
+                        │      │                   and with an
+                        │      │                   attacker-chosen IV and ciphertext. The victim initializes
+                        │      │                   AES-256-OFB under the
+                        │      │                   real CEK, never consults the MAC field, and CMS_decrypt()
+                        │      │                   returns success.
+                        │      │                   If the application under attack responds to the attacker
+                        │      │                   with any indicator
+                        │      │                   showing success or failure of the decryption effort, it is
+                        │      │                   possible for the
+                        │      │                   attacker to use this as an oracle to obtain key equivalent
+                        │      │                   functionality for the
+                        │      │                   CEK used for the chosen recipient of the message.
+                        │      │                   In another use case, an attacker can reduce the tag length
+                        │      │                   of the chosen AEAD
+                        │      │                   cipher for a given AuthEnvelopedData container to be a
+                        │      │                   single byte long,
+                        │      │                   allowing an attacker to brute force CMS decryption,
+                        │      │                   producing an integrity
+                        │      │                   bypass for applications that trust CMS_decrypt() to reject
+                        │      │                   modified content.
+                        │      │                   The FIPS modules are not affected by this issue. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-354 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/03c1f4d45fb9
+                        │      │                  │      63aee7d5833390c507cd290182bc 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/439ed7d2c096
+                        │      │                  │      2ce964482727264668bf277c333f 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7947e6a81eb8
+                        │      │                  │      776802f159fb6762cb7fcf7e34c7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/9fd97f8cfdc2
+                        │      │                  │      c0be214998de3b2b55c8edf6c7ac 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d2ca86bcd43e
+                        │      │                  │      4f17d899f347101766b6107676e0 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-34182 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.857Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T17:16:32.48Z 
+                        ├ [36] ╭ VulnerabilityID : CVE-2026-34183 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34183 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:eaeafbf323c7eaf90623e09954fef63c92bbacc64c45589869a9e
+                        │      │                   bee8694e947 
+                        │      ├ Title           : Issue summary: Remote peer may exhaust heap memory of the
+                        │      │                   QUIC server  ... 
+                        │      ├ Description     : Issue summary: Remote peer may exhaust heap memory of the
+                        │      │                   QUIC
+                        │      │                   server or client by flooding it with packets containing
+                        │      │                   PATH_CHALLENGE
+                        │      │                   frames.
+                        │      │                   
+                        │      │                   Impact summary: A malicious remote peer can cause an
+                        │      │                   unbounded
+                        │      │                   memory allocation which can lead to an abnormal termination
+                        │      │                   of the
+                        │      │                   application acting as a QUIC client or server and a Denial
+                        │      │                   of Service.
+                        │      │                   A remote peer may exhaust heap memory by flooding the local
+                        │      │                   QUIC stack with PATH_CHALLENGE frames. The local QUIC stack
+                        │      │                   allocates a PATH_RESPONSE frame for every PATH_CHALLENGE it
+                        │      │                   receives.
+                        │      │                   The allocated PATH_RESPONSE frame gets freed only when the
+                        │      │                   remote
+                        │      │                   peer acknowledges reception of the PATH_RESPONSE frame which
+                        │      │                    will
+                        │      │                   not be done by a malicious peer.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue. The QUIC stack is outside of OpenSSL FIPS
+                        │      │                   module
+                        │      │                   boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-1325 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/5b306efb0b37
+                        │      │                  │      79dfdd0803b4afc9d08c91f11517 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/7d06955ebe0e
+                        │      │                  │      cf8adfd4c1e92018586da47ef9ac 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d2e9efbe4900
+                        │      │                  │      a373227deb136e8665401404ffac 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/fbaa83859c01
+                        │      │                  │      ad64f497b757aaf51be7d05ed9eb 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34183 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:05Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T16:17:01.217Z 
+                        ├ [37] ╭ VulnerabilityID : CVE-2026-42764 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42764 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:a848cb4ca8cb9ec28c81f30e337651c2cdab1ebc55cef9133bb5c
+                        │      │                   17b049dce2f 
+                        │      ├ Title           : Issue summary: Receiving a QUIC initial packet with an
+                        │      │                   invalid token m ... 
+                        │      ├ Description     : Issue summary: Receiving a QUIC initial packet with an
+                        │      │                   invalid token may
+                        │      │                   trigger a NULL pointer dereference in the OpenSSL QUIC
+                        │      │                   server with
+                        │      │                   address validation disabled.
+                        │      │                   
+                        │      │                   Impact summary: NULL pointer dereference typically causes
+                        │      │                   abnormal termination
+                        │      │                   of the affected QUIC server process and a Denial of
+                        │      │                   Service.
+                        │      │                   If the address validation is disabled in the OpenSSL QUIC
+                        │      │                   server
+                        │      │                   implementation, an attacker can crash the server by sending
+                        │      │                   an initial
+                        │      │                   packet with an invalid or expired token.
+                        │      │                   By default, the client address validation is enabled in the
+                        │      │                   OpenSSL QUIC server
+                        │      │                   implementation, which makes the default configuration not
+                        │      │                   vulnerable
+                        │      │                   to this issue. However if the SSL_LISTENER_FLAG_NO_VALIDATE
+                        │      │                   is used with
+                        │      │                   the SSL_new_listener() call, the address validation is
+                        │      │                   disabled making the
+                        │      │                   vulnerable code reachable.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/5e3ed291b8af
+                        │      │                  │      0b03d5d3b9e56a1da69a187e9729 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/a45a0aba8095
+                        │      │                  │      682c88ff4fc4a784892b8c6f0677 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/bf29a458c1a2
+                        │      │                  │      31eca87e384c62b9c2553fa57a91 
+                        │      │                  ├ [3]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [4]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [5]: https://www.cve.org/CVERecord?id=CVE-2026-42764 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:07.693Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.23Z 
+                        ├ [38] ╭ VulnerabilityID : CVE-2026-45445 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45445 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:1bfd6c5fe7817dd5619c58b8ae5a08c467a12489ecbc8b3ad3485
+                        │      │                   f8633647879 
+                        │      ├ Title           : Issue summary: When an application drives an AES-OCB context
+                        │      │                    through t ... 
+                        │      ├ Description     : Issue summary: When an application drives an AES-OCB context
+                        │      │                    through the
+                        │      │                   public EVP_Cipher() one-shot interface, the
+                        │      │                   application-supplied
+                        │      │                   initialisation vector (IV) is silently discarded.
+                        │      │                   
+                        │      │                   Impact summary: Every message encrypted under the same key
+                        │      │                   uses the
+                        │      │                   same effective nonce regardless of the IV supplied by the
+                        │      │                   caller,
+                        │      │                   resulting in (key, nonce) reuse and loss of confidentiality.
+                        │      │                     If the
+                        │      │                   same code path is used to compute the authentication tag,
+                        │      │                   the tag
+                        │      │                   depends only on the (key, IV) pair and not on the plaintext
+                        │      │                   or
+                        │      │                   ciphertext, allowing universal forgery of arbitrary
+                        │      │                   ciphertext from a
+                        │      │                   single captured message.
+                        │      │                   OpenSSL provides two ways to drive a cipher: the documented
+                        │      │                   streaming
+                        │      │                   interface (EVP_CipherUpdate / EVP_CipherFinal_ex) and a
+                        │      │                   lower-level
+                        │      │                   one-shot, EVP_Cipher(), whose documentation explicitly
+                        │      │                   recommends
+                        │      │                   against use by applications in favour of EVP_CipherUpdate()
+                        │      │                   and
+                        │      │                   EVP_CipherFinal_ex().  The OCB provider's streaming handler
+                        │      │                   flushes
+                        │      │                   the application-supplied IV into the OCB context before
+                        │      │                   processing
+                        │      │                   data; the one-shot handler did not.  Every call to
+                        │      │                   EVP_Cipher() on an
+                        │      │                   AES-OCB context therefore ran with the all-zero key-derived
+                        │      │                   offset
+                        │      │                   state left by cipher initialisation, regardless of the
+                        │      │                   caller's IV.
+                        │      │                   If EVP_EncryptFinal_ex() is subsequently used to obtain the
+                        │      │                   authentication tag, the deferred IV setup runs at that point
+                        │      │                    and
+                        │      │                   clears the running checksum that should have been
+                        │      │                   accumulated over the
+                        │      │                   plaintext.  The resulting tag is a function of (key, IV)
+                        │      │                   only and
+                        │      │                   verifies against any ciphertext produced under the same
+                        │      │                   (key, IV)
+                        │      │                   pair.
+                        │      │                   The OpenSSL SSL/TLS implementation is not affected: AES-OCB
+                        │      │                   is not a
+                        │      │                   TLS cipher suite, and libssl does not call EVP_Cipher() in
+                        │      │                   any case.
+                        │      │                   Applications that drive AES-OCB through the documented
+                        │      │                   streaming AEAD
+                        │      │                   API (EVP_CipherUpdate / EVP_CipherFinal_ex) are not
+                        │      │                   affected.  Only
+                        │      │                   applications that combine the AES-OCB cipher with the
+                        │      │                   EVP_Cipher()
+                        │      │                   one-shot API are vulnerable.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue, as AES-OCB is outside the OpenSSL FIPS module
+                        │      │                   boundary. 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/323f0b6e7d53
+                        │      │                  │      0a4cb4336d50c88cb70f3ac2a451 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/787a6dfba81b
+                        │      │                  │      7b09c1e05ab31396c0cd7c36b3f7 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7ac4715234ee
+                        │      │                  │      72d9f3c93426a2c08554b5b771af 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/843c9b94ca9c
+                        │      │                  │      2ed248bb30127bb4f3d7af0d607c 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/983d54b5cce8
+                        │      │                  │      d16147548ed1a37892d1720bbab6 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-45445 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:18.993Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.507Z 
+                        ├ [39] ╭ VulnerabilityID : CVE-2026-34180 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34180 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:fcf71d4d26aafa5aa876355d15f6570fe5491ae18066a9c34c5b5
+                        │      │                   6be882df46f 
+                        │      ├ Title           : Issue summary: Parsing a crafted DER-encoded ASN.1 structure
+                        │      │                    with a pr ... 
+                        │      ├ Description     : Issue summary: Parsing a crafted DER-encoded ASN.1 structure
+                        │      │                    with a primitive
+                        │      │                   element whose content exceeds 2 gigabytes in length may
+                        │      │                   cause a heap buffer
+                        │      │                   over-read on 64-bit Unix and Unix-like platforms.
+                        │      │                   
+                        │      │                   Impact summary: The heap buffer over-read may crash the
+                        │      │                   application (Denial of
+                        │      │                   Service) or to load into the decoded ASN.1 object contents
+                        │      │                   of memory beyond the
+                        │      │                   end of the input buffer.  More typically such ASN.1 elements
+                        │      │                    would instead be
+                        │      │                   truncated.
+                        │      │                   An integer truncation in OpenSSL's ASN.1 decoder causes the
+                        │      │                   content length of
+                        │      │                   an ASN.1 primitive element to be mishandled when it exceeds
+                        │      │                   2 gigabytes. In the
+                        │      │                   worst case the truncated length is treated as a request to
+                        │      │                   scan the binary
+                        │      │                   content for a terminating zero byte, possibly causing
+                        │      │                   OpenSSL to read either
+                        │      │                   less than or beyond the end of the allocated buffer.
+                        │      │                   Applications that pass attacker-supplied data to d2i_X509(),
+                        │      │                    d2i_PKCS7(), or
+                        │      │                   any other d2i_* decoding function are affected. OpenSSL's
+                        │      │                   own command-line
+                        │      │                   tools are not vulnerable, as data read through the BIO layer
+                        │      │                    is checked before
+                        │      │                   it reaches the affected code. The issue only affects 64-bit
+                        │      │                   Unix and Unix-like
+                        │      │                   platforms; 32-bit platforms and 64-bit Windows are not
+                        │      │                   affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by this issue,
+                        │      │                   as the affected code is outside the OpenSSL FIPS module
+                        │      │                   boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-125 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/1c6908e4fa5f
+                        │      │                  │      a568752221d8eaf561a809751e5d 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/cbe418ae9785
+                        │      │                  │      39cf14a398a207dba834c0e93e83 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d93853c42110
+                        │      │                  │      d6319e3df07842b488cb9f7ac5ff 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/da5d62af75f6
+                        │      │                  │      9d6fbf7803743d7c56ac75461e43 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/f696c73c3e61
+                        │      │                  │      b8c502d040af62e690c060908a16 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-34180 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.6Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:22.627Z 
+                        ├ [40] ╭ VulnerabilityID : CVE-2026-34181 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-34181 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:dd561b8a2357e19dca89ac6852fc90f6d940abb9ed5f716997ead
+                        │      │                   c21e1a43282 
+                        │      ├ Title           : Issue Summary: The PKCS#12 file processing fails to perform
+                        │      │                   sufficient ... 
+                        │      ├ Description     : Issue Summary: The PKCS#12 file processing fails to perform
+                        │      │                   sufficient input
+                        │      │                   validation for files that use Password-Based Message
+                        │      │                   Authentication Code 1
+                        │      │                   (PBMAC1) integrity mechanism allowing a certificate and
+                        │      │                   private key forgery.
+                        │      │                   
+                        │      │                   Impact Summary: An attacker impersonating a user can cause a
+                        │      │                    service reading
+                        │      │                   PKCS#12 files to accept forged certificates and private keys
+                        │      │                    with a 1 in 256
+                        │      │                   probability.
+                        │      │                   If a service accepting PKCS#12 files is using passwords for
+                        │      │                   authenticating
+                        │      │                   the received files, the attacker can create unencrypted
+                        │      │                   PKCS#12 files that
+                        │      │                   use PBMAC1 authentication that specifies an HMAC key of only
+                        │      │                    one byte, allowing
+                        │      │                   them to craft a file that will be accepted with a 1 in 256
+                        │      │                   That would then cause the service to accept a certificate
+                        │      │                   and private key
+                        │      │                   controlled by the attacker.
+                        │      │                   The FIPS modules are not affected by this issue, as the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-354 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/0300eb9ddce7
+                        │      │                  │      a0895bf301a4b0c03a9da2313a0f 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/79eb76a937e4
+                        │      │                  │      74bb7610a0a3dc57131dc8dc6610 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/85dcbb3abaa4
+                        │      │                  │      878af5c8fbbe11bce708fcf984a7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/ec36f2417c4d
+                        │      │                  │      dd8cabce4b4a60a3d7a7365f2d81 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-34181 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:04.74Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T17:16:32.29Z 
+                        ├ [41] ╭ VulnerabilityID : CVE-2026-42766 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42766 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:79472d7cc000904ff74718f9f1d20e2f9cc1a806ebb5872e27a89
+                        │      │                   db885f214b3 
+                        │      ├ Title           : Issue summary: A specially crafted password-encrypted CMS
+                        │      │                   message can  ... 
+                        │      ├ Description     : Issue summary: A specially crafted password-encrypted CMS
+                        │      │                   message
+                        │      │                   can trigger a NULL pointer dereference during CMS
+                        │      │                   decryption.
+                        │      │                   
+                        │      │                   Impact summary: This NULL pointer dereference leads to an
+                        │      │                   application crash
+                        │      │                   and a Denial of Service.
+                        │      │                   The CMS PasswordRecipientInfo.keyDerivationAlgorithm field
+                        │      │                   is defined as
+                        │      │                   OPTIONAL in the ASN.1 specification and may therefore be
+                        │      │                   absent in specially
+                        │      │                   crafted inputs. During the password-based CMS decryption the
+                        │      │                    OpenSSL
+                        │      │                   CMS implementation dereferences this field without first
+                        │      │                   checking whether it
+                        │      │                   was present.
+                        │      │                   An attacker who supplies such a CMS message to an
+                        │      │                   application performing
+                        │      │                   password-based CMS decryption can trigger an application
+                        │      │                   crash, leading to
+                        │      │                   a Denial of Service.
+                        │      │                   Applications that process password-encrypted CMS messages
+                        │      │                   may be affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/056d06c1918f
+                        │      │                  │      afbb98c1c85a02e4c47cc4e199ce 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/12bc26ffb3a2
+                        │      │                  │      be728c9b86e1cae277de5b33dfa4 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/3ff64913615d
+                        │      │                  │      648cfbb6a6f1cf5529ae7ea829d7 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/ab52d88cb537
+                        │      │                  │      4876d59aee3c91f9e4ccce2b7ce4 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/da26f368732b
+                        │      │                  │      83e40e9d356fe61c3d3aaab6d2e8 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-42766 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:07.97Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.52Z 
+                        ├ [42] ╭ VulnerabilityID : CVE-2026-42767 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42767 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:4f5dae2e3230b2acbbcb9afabbd969ae41a3608d2883e2031a9f1
+                        │      │                   0720119cb71 
+                        │      ├ Title           : Issue summary: An attacker-controlled CMP (Certificate
+                        │      │                   Management Prot ... 
+                        │      ├ Description     : Issue summary: An attacker-controlled CMP (Certificate
+                        │      │                   Management Protocol)
+                        │      │                   server could trigger a NULL pointer dereference in a CMP
+                        │      │                   client application.
+                        │      │                   
+                        │      │                   Impact summary: A NULL pointer dereference causes a crash of
+                        │      │                    the
+                        │      │                   application and a Denial of Service.
+                        │      │                   An attacker controlling a CMP server (or acting as a
+                        │      │                   man-in-the-middle) could
+                        │      │                   craft a CMP response containing a CRMF (Certificate Request
+                        │      │                   Message Format)
+                        │      │                   CertRepMessage with an EncryptedValue structure where the
+                        │      │                   symmAlg field
+                        │      │                   has an algorithm OID but no parameters field. When the
+                        │      │                   OpenSSL CMP client
+                        │      │                   processes this response, the NULL dereference occurs,
+                        │      │                   causing a crash of
+                        │      │                   the CMP client.
+                        │      │                   Applications that process untrusted CMP/CRMF messages may be
+                        │      │                    affected.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-476 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/61a86a8cd735
+                        │      │                  │      46c9fea916f3d304c1293e05c046 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/665d5254083a
+                        │      │                  │      ffde9982efca7c41dd01cacc8774 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/810b722f7726
+                        │      │                  │      52ad48042bcc7ab07e3414b11d0f 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/b90ff3b1bd33
+                        │      │                  │      b1c18e6a09936d097c2eddef8873 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/e6f912907fc2
+                        │      │                  │      ec82a0fd07aae55172c5e5e3d90d 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42767 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.093Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.683Z 
+                        ├ [43] ╭ VulnerabilityID : CVE-2026-42768 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42768 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:7faac4b6677469dd49204d0ebefcaab99cf25bc4eb41046e0ecb9
+                        │      │                   8c844998cdd 
+                        │      ├ Title           : Issue summary: The CMS_decrypt and PKCS7_decrypt functions
+                        │      │                   are vulnera ... 
+                        │      ├ Description     : Issue summary: The CMS_decrypt and PKCS7_decrypt functions
+                        │      │                   are vulnerable to
+                        │      │                   Bleichenbacher-style attack when an attacker is able to
+                        │      │                   provide the CMS or
+                        │      │                   S/MIME messages and observe the error code and/or decryption
+                        │      │                    output.
+                        │      │                   
+                        │      │                   Impact summary: The Bleichenbacher-style attack allows an
+                        │      │                   attacker to use the
+                        │      │                   victim's vulnerable application as a way to decrypt or sign
+                        │      │                   messages with the
+                        │      │                   victim's private RSA key.
+                        │      │                   The attack is possible in 2 variants.
+                        │      │                   1. The decryption API (CMS_decrypt(), PKCS7_decrypt()) is
+                        │      │                   used without
+                        │      │                   providing the recipient certificate. In this case OpenSSL
+                        │      │                   iterates over every
+                        │      │                   KeyTransRecipientInfo (KTRI) without stopping at the first
+                        │      │                   success.
+                        │      │                   An attacker who authors a message with two KTRI entries —
+                        │      │                   the first one
+                        │      │                   wrapping a real CEK under the victim's public key, the
+                        │      │                   second with an
+                        │      │                   arbitrary probe ciphertext — obtains opportunity to iterate
+                        │      │                   the 2nd KTRI to
+                        │      │                   get a valid PKCS#1 v1.5 padding if the error code of the
+                        │      │                   application is
+                        │      │                   available.
+                        │      │                   That is a Bleichenbacher oracle (Bleichenbacher, CRYPTO
+                        │      │                   '98): an
+                        │      │                   adaptive-chosen-ciphertext side channel from which the
+                        │      │                   attacker decrypts any
+                        │      │                   RSA ciphertext to the victim's key or forges any PKCS#1 v1.5
+                        │      │                    signature under
+                        │      │                   it.
+                        │      │                   2. When the decryption API (CMS_decrypt(), PKCS7_decrypt())
+                        │      │                   is provided with
+                        │      │                   the recipient certificate, and the recipient is not found, a
+                        │      │                    random
+                        │      │                   key is substituted.
+                        │      │                   An attacker who authors a message and is able to compare
+                        │      │                   both error code and
+                        │      │                   the result of the decryption, can mount a Bleichenbacher
+                        │      │                   oracle.
+                        │      │                   We are not aware of any applications that provide a remote
+                        │      │                   attacker
+                        │      │                   an opportunity to mount an attack described in these
+                        │      │                   scenarios. We consider
+                        │      │                   the existence of such application very unlikely, and for
+                        │      │                   this reason this
+                        │      │                   CVE has been evaluated as Low severity.
+                        │      │                   To avoid these attacks, when RSA PKCS#1 v1.5 Key Transport
+                        │      │                   is in use, the
+                        │      │                   invoked EVP_PKEY_decrypt() will use the implicit rejection
+                        │      │                   mechanism described
+                        │      │                   in draft-irtf-cfrg-rsa-guidance. In previous OpenSSL
+                        │      │                   releases the implicit
+                        │      │                   rejection was explicitly disabled.
+                        │      │                   The implicit rejection mechanism always returns a plaintext
+                        │      │                   value,
+                        │      │                   the symmetric key. This result is deterministic for the
+                        │      │                   ciphertext and the
+                        │      │                   private key.  The length of the decryption result can happen
+                        │      │                    to match the
+                        │      │                   length of the key of the symmetric cipher that was used for
+                        │      │                   the content
+                        │      │                   encryption. When a certificate is not provided, the last
+                        │      │                   RecipientInfo
+                        │      │                   producing a key that looks valid will be used. It may cause
+                        │      │                   getting garbage
+                        │      │                   content on decryption. As a proper way to deal with this a
+                        │      │                   recipient
+                        │      │                   certificate has to be provided to identify the particular
+                        │      │                   RecipientInfo for
+                        │      │                   decryption.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, and 3.4 are not affected
+                        │      │                   by this issue, as
+                        │      │                   CMS and S/MIME processing happens outside the OpenSSL FIPS
+                        │      │                   module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-514 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/a2ca7b2d73e0
+                        │      │                  │      ffc1eae183fe6e1741dac767cb4f 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/bbb151a83041
+                        │      │                  │      705d9d001ed2f9c12f5523e1b54d 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/dd68364107a5
+                        │      │                  │      8841c0a2546812518b65d3a23abd 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/f04b377be3d8
+                        │      │                  │      21741c86d1f4bf84dee09f3d5c3e 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42768 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.223Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:23.84Z 
+                        ├ [44] ╭ VulnerabilityID : CVE-2026-42769 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42769 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:b1b33826327729448e3b49727871b583efa7579baea409d4cdcbd
+                        │      │                   25fd42358af 
+                        │      ├ Title           : Issue Summary: An error in the callback used to verify the
+                        │      │                   certificate ... 
+                        │      ├ Description     : Issue Summary: An error in the callback used to verify the
+                        │      │                   certificate
+                        │      │                   provided in a Root CA key update Certificate Management
+                        │      │                   Protocol (CMP)
+                        │      │                   message response rendered the certificate validation
+                        │      │                   ineffectual, which
+                        │      │                   could lead to escalation of credentials from the
+                        │      │                   Registration Authority (RA)
+                        │      │                   level to the root Certification Authority (root CA) level.
+                        │      │                   
+                        │      │                   Impact Summary: The Registration Autority could replace the
+                        │      │                   root CA
+                        │      │                   certificate for the CMP clients with an arbitrary root CA
+                        │      │                   certificate.
+                        │      │                   One of the parts of the Certificate Management Protocol
+                        │      │                   (CMP), specified in
+                        │      │                   RFC 9810, is Root Certification Authority (root CA) key
+                        │      │                   Rollover,
+                        │      │                   which is sent by the server in a message with type
+                        │      │                   'id-it-rootCaKeyUpdate'.
+                        │      │                   As part of these messages, 'newWithOld' certificate, the new
+                        │      │                    root CA
+                        │      │                   certificate signed with the old root CA key, is provided,
+                        │      │                   and verifying its
+                        │      │                   signature is crucial for transferring the trust from the old
+                        │      │                    CA key to the
+                        │      │                   new one.
+                        │      │                   The 'id-it-rootCaKeyUpdate' messages are expected to be
+                        │      │                   processed with
+                        │      │                   OSSL_CMP_get1_rootCaKeyUpdate(), that is expected to verify
+                        │      │                   the 'newWithOld'
+                        │      │                   certificate.  A typo in the certificate chain building code
+                        │      │                   led to adding
+                        │      │                   an incorrect certificate ('newWithOld' instead of 'oldRoot')
+                        │      │                    to the
+                        │      │                   certificate chain, rendering the certificate verification
+                        │      │                   process ineffectual
+                        │      │                   (only the issuer name and the algorithm OIDs were verified
+                        │      │                   by other parts
+                        │      │                   of the verification code).
+                        │      │                   An attacker who already has credentials that satisfy the CMP
+                        │      │                    message
+                        │      │                   protection checks can generate a new key pair and use a
+                        │      │                   crafted self-signed
+                        │      │                   certificate in its 'id-it-rootCaKeyUpdate' CMP messages
+                        │      │                   which affected CMP
+                        │      │                   clients would accept as a new trust anchor.
+                        │      │                   Significant preconditions for the attack (having valid
+                        │      │                   RA-level credentials)
+                        │      │                   are the reason the issue was assigned Low severity.
+                        │      │                   The FIPS modules are not affected by this issue, as the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-295 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/54d0989997e5
+                        │      │                  │      fc26057009a9782c3441ce3842fb 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/777b363b16fc
+                        │      │                  │      f2153bb3ded39dc3838713667c44 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/d35cd473a271
+                        │      │                  │      bf3ce7bf3d32af53217fb83ae92c 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/d531f21c0fe9
+                        │      │                  │      9067a66fc0ff1161ef127f9cd70b 
+                        │      │                  ├ [4]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [5]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [6]: https://www.cve.org/CVERecord?id=CVE-2026-42769 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.377Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.027Z 
+                        ├ [45] ╭ VulnerabilityID : CVE-2026-42770 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-42770 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:8e759119e168b73a5500f166924d8c2cae16d49fb7446bd7740d3
+                        │      │                   8ec27ad8623 
+                        │      ├ Title           : Issue summary: When EVP_PKEY_derive_set_peer() is called
+                        │      │                   with a DHX (X ... 
+                        │      ├ Description     : Issue summary: When EVP_PKEY_derive_set_peer() is called
+                        │      │                   with a DHX (X9.42)
+                        │      │                   peer key, the peer key is not properly checked for the
+                        │      │                   subgroup membership.
+                        │      │                   
+                        │      │                   Impact summary: A malicious peer which presents an X9.42 key
+                        │      │                    carrying the
+                        │      │                   victim's p and g parameters, a forged q = r (a small prime
+                        │      │                   factor of the
+                        │      │                   cofactor (p−1)/q_local), and a public value Y of order r can
+                        │      │                    recover the
+                        │      │                   victim's private key after a small number of key exchange
+                        │      │                   attempts.
+                        │      │                   When EVP_PKEY_derive_set_peer() is called with a DHX (X9.42)
+                        │      │                    peer key, the
+                        │      │                   subgroup membership check Y^q ≡ 1 (mod p) is performed using
+                        │      │                    the peer's
+                        │      │                   own q parameter, not the local key's q. The peer's domain
+                        │      │                   parameters are
+                        │      │                   then matched against the domain parameters of the private
+                        │      │                   key, but the value
+                        │      │                   of q is not compared.
+                        │      │                   A malicious peer who presents an X9.42 key carrying the
+                        │      │                   victim's p, g,
+                        │      │                   a forged q = r (a small prime factor of the cofactor), and a
+                        │      │                    public
+                        │      │                   value Y of order r passes all checks. The shared secret then
+                        │      │                    takes only
+                        │      │                   r distinct values, leaking priv mod r. Repeating for each
+                        │      │                   small-prime
+                        │      │                   factor of the cofactor and combining via CRT recovers the
+                        │      │                   full private
+                        │      │                   key (Lim–Lee / small-subgroup-confinement attack).
+                        │      │                   The realistic attack surface is narrow: principally CMP
+                        │      │                   deployments with
+                        │      │                   long-lived RA/CA DHX keys and bespoke enterprise or
+                        │      │                   government applications
+                        │      │                   using X9.42 DHX static keys with interactive protocols and
+                        │      │                   therefore this
+                        │      │                   issue was assigned Low severity.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are affected
+                        │      │                    by this
+                        │      │                   issue. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/3da5a516cd26
+                        │      │                  │      35a320ff748503db2cef7c4b0f02 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/3ddbb7ab50bd
+                        │      │                  │      93dfc59cbe08e269a67605aeebdb 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/5f452bba2c68
+                        │      │                  │      1423d8fcffd120a19b757ee42e3c 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/7fbfde7677ed
+                        │      │                  │      8808828bf00ff01c937ca04bdda2 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/ca2237ab5615
+                        │      │                  │      641b662183b077f62c08d75e8070 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-42770 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:08.523Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.197Z 
+                        ├ [46] ╭ VulnerabilityID : CVE-2026-45446 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-45446 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:8dc6266bedbe813787ba8929aa8a2943a5a9905a3067eb2e5a753
+                        │      │                   e0f94a7f554 
+                        │      ├ Title           : Issue summary: The implementations of AES-SIV (RFC 5297) and
+                        │      │                    AES-GCM-S ... 
+                        │      ├ Description     : Issue summary: The implementations of AES-SIV (RFC 5297) and
+                        │      │                    AES-GCM-SIV
+                        │      │                   (RFC 8452) mishandle the authentication of AAD (Additional
+                        │      │                   Authenticated
+                        │      │                   Data) with an empty ciphertext allowing a forgery of such
+                        │      │                   messages.
+                        │      │                   
+                        │      │                   Impact summary: An attacker can forge empty messages with
+                        │      │                   arbitrary AAD
+                        │      │                   to the victim's application using these ciphers.
+                        │      │                   AES-SIV (RFC 5297) and AES-GCM-SIV (RFC 8452) are
+                        │      │                   nonce-misuse-resistant AEAD
+                        │      │                   modes: they accept a key, nonce, optional AAD (bytes that
+                        │      │                   are authenticated
+                        │      │                   but not encrypted), and plaintext, and produces ciphertext
+                        │      │                   plus a 16-byte
+                        │      │                   tag. On decrypt, `EVP_DecryptFinal_ex()` is documented to
+                        │      │                   return success only
+                        │      │                   if the tag is verified succesfully.
+                        │      │                   In OpenSSL's provider implementation of these ciphers, the
+                        │      │                   expected tag is
+                        │      │                   computed only when decryption function is invoked with
+                        │      │                   non-empty data.
+                        │      │                   If the caller supplies AAD and then calls
+                        │      │                   `EVP_DecryptFinal_ex()` without
+                        │      │                   invocation of the ciphertext update, which can happen when
+                        │      │                   the received
+                        │      │                   ciphertext length is zero, the tag is never recalculated and
+                        │      │                    still holds its
+                        │      │                   all-zeros value.
+                        │      │                   When AES-GCM-SIV is used, an attacker who sends arbitrary
+                        │      │                   AAD, empty
+                        │      │                   ciphertext, and all-zeros tag passes authentication under
+                        │      │                   any key they do not
+                        │      │                   know, single-shot. When AES-SIV is used, for mounting the
+                        │      │                   attack it's
+                        │      │                   necessary for the application to reuse the decryption
+                        │      │                   context without
+                        │      │                   resetting the key.
+                        │      │                   AES-SIV is implemented since OpenSSL 3.0. AES-GCM-SIV is
+                        │      │                   implemented since
+                        │      │                   OpenSSL 3.2.
+                        │      │                   No protocols implemented in OpenSSL itself
+                        │      │                   (TLS/CMS/PKCS7/HPKE/QUIC) support
+                        │      │                   either AES-GCM-SIV or AES-SIV. To mount an attack, the
+                        │      │                   applications must
+                        │      │                   implement their own protocol and use the EVP interface. Also
+                        │      │                    they must skip the
+                        │      │                   ciphertext update when a message with an empty ciphertext
+                        │      │                   arrives.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this
+                        │      │                   issue, as these algorithms are not FIPS approved and the
+                        │      │                   affected code is
+                        │      │                   outside the OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-325 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/25b32cd9d41d
+                        │      │                  │      2bc01b6abc425bb4baf2c2236fdc 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/71e2a5d26351
+                        │      │                  │      8cf5866043bd60ee4994d59e53a3 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/7fe3f33a3b3a
+                        │      │                  │      4c487aa4dcdbc87057f66ffd2b85 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/daca0f48e4a6
+                        │      │                  │      9a2892a62262bad59e62a8a76598 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/eec5e9bf0d86
+                        │      │                  │      7333b8495e456f5235d225798a68 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ╰ [7]: https://www.cve.org/CVERecord?id=CVE-2026-45446 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:19.137Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:24.733Z 
+                        ├ [47] ╭ VulnerabilityID : CVE-2026-7383 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-7383 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:c7aaf8335597ad65cf95ad665a589b7794c258232d0c91bb03ac8
+                        │      │                   5d85e545b34 
+                        │      ├ Title           : Issue summary: A signed integer overflow when sizing the
+                        │      │                   destination b ... 
+                        │      ├ Description     : Issue summary: A signed integer overflow when sizing the
+                        │      │                   destination
+                        │      │                   buffer for Unicode output in ASN1_mbstring_ncopy() can lead
+                        │      │                   to a heap
+                        │      │                   buffer overflow.
+                        │      │                   
+                        │      │                   Impact summary: A heap buffer overflow may lead to a crash
+                        │      │                   or possibly
+                        │      │                   attacker controlled code execution or other undefined
+                        │      │                   behaviour.
+                        │      │                   In ASN1_mbstring_copy() and ASN1_mbstring_ncopy() the
+                        │      │                   size for Unicode output is computed in a signed int: by left
+                        │      │                    shift
+                        │      │                   of the input character count for BMPSTRING (UTF-16) and
+                        │      │                   UNIVERSALSTRING (UTF-32), and by summing per-character byte
+                        │      │                   counts
+                        │      │                   for UTF8STRING. The calculation overflows when the input
+                        │      │                   reaches
+                        │      │                   around 2^30 characters. In the worst case (UNIVERSALSTRING
+                        │      │                   at 2^30
+                        │      │                   characters) the size wraps to zero, OPENSSL_malloc(1) is
+                        │      │                   called, and
+                        │      │                   the subsequent character copy writes several gigabytes past
+                        │      │                   the
+                        │      │                   one-byte allocation.
+                        │      │                   X.509 certificate processing routes through
+                        │      │                   ASN1_STRING_set_by_NID(),
+                        │      │                   whose DIRSTRING_TYPE mask excludes UNIVERSALSTRING and whose
+                        │      │                    per-NID
+                        │      │                   size limits cap the input length; no network protocol or
+                        │      │                   certificate-handling path in OpenSSL exercises the
+                        │      │                   overflow.
+                        │      │                   Triggering the bug requires an application that calls
+                        │      │                   ASN1_mbstring_copy() or ASN1_mbstring_ncopy() directly, or
+                        │      │                   registers
+                        │      │                   a custom string type via ASN1_STRING_TABLE_add(), with
+                        │      │                   attacker-controlled input on the order of half a gigabyte or
+                        │      │                    more.
+                        │      │                   For these reasons this issue was assigned Low severity.
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4 and 3.0 are not
+                        │      │                   affected by
+                        │      │                   this issue, as the affected code is outside the OpenSSL FIPS
+                        │      │                    module
+                        │      │                   boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-787 
+                        │      ├ VendorSeverity   ─ ubuntu: 1 
+                        │      ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/4f8d2bddaa2c
+                        │      │                  │      8e06f9c33390ee1717059a6e4be6 
+                        │      │                  ├ [1]: https://github.com/openssl/openssl/commit/80c15faaf780
+                        │      │                  │      42bbb8654a0e234c50c381732f74 
+                        │      │                  ├ [2]: https://github.com/openssl/openssl/commit/bd17511070fb
+                        │      │                  │      39a67bfa19682affb765e706a974 
+                        │      │                  ├ [3]: https://github.com/openssl/openssl/commit/c332adaced43
+                        │      │                  │      bcbb85f97410597e951c11ec3083 
+                        │      │                  ├ [4]: https://github.com/openssl/openssl/commit/d32350ae8ef7
+                        │      │                  │      426718f5aa9e383d4b51398ee255 
+                        │      │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-7383 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:50.337Z 
+                        │      ╰ LastModifiedDate: 2026-06-10T08:16:25.463Z 
+                        ╰ [48] ╭ VulnerabilityID : CVE-2026-9076 
+                               ├ PkgID           : openssl@3.5.6-r0 
+                               ├ PkgName         : openssl 
+                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                               │                  │       23.4 
+                               │                  ╰ UID : 17c38318269cb829 
+                               ├ InstalledVersion: 3.5.6-r0 
+                               ├ FixedVersion    : 3.5.7-r0 
+                               ├ Status          : fixed 
+                               ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                               │                  │         5ca5527575a11aa7237a 
+                               │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                               │                            2aba251d0bd7a2dd6e02 
+                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-9076 
+                               ├ DataSource       ╭ ID  : alpine 
+                               │                  ├ Name: Alpine Secdb 
+                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                               ├ Fingerprint     : sha256:ccac43e6dcc9be2b56bb3f14d0b21b434fbef05bbbeaa1323fb17
+                               │                   9a15be7e845 
+                               ├ Title           : Issue summary: When CMS password-based decryption (RFC 3211
+                               │                   / PWRI key ... 
+                               ├ Description     : Issue summary: When CMS password-based decryption (RFC 3211
+                               │                   / PWRI key unwrap)
+                               │                   processes attacker-supplied CMS data, an attacker-chosen
+                               │                   stream-mode KEK
+                               │                   cipher can trigger a heap out-of-bounds read in
+                               │                   kek_unwrap_key().
+                               │                   
+                               │                   Impact summary: A heap buffer over-read may trigger a crash
+                               │                   which leads to
+                               │                   Denial of Service for an application if the input buffer
+                               │                   ends at a memory
+                               │                   page boundary and the following page is unmapped. There is
+                               │                   no information
+                               │                   disclosure as the over-read bytes are not revealed to the
+                               │                   attacker.
+                               │                   The key unwrapping function performs a check-byte test as
+                               │                   specified in the
+                               │                   RFC that reads 7 bytes from a heap allocation that is based
+                               │                   on the wrapped
+                               │                   key length from the message. There is a minimum length check
+                               │                    based on the
+                               │                   block length of the wrapping cipher. However the cipher is
+                               │                   selected from
+                               │                   an OID carried in the attacker's PWRI keyEncryptionAlgorithm
+                               │                    with no
+                               │                   requirement that the cipher be a block cipher. When an
+                               │                   attacker selects
+                               │                   a stream-mode cipher the guard will be ineffective and the
+                               │                   allocated buffer
+                               │                   containing the unwrapped key can be too small to fit the
+                               │                   check-bytes
+                               │                   specified in the RFC and a buffer over-read can happen.
+                               │                   Applications calling CMS_decrypt() or
+                               │                   CMS_decrypt_set1_password()
+                               │                   (equivalently openssl cms -decrypt -pwri_password ...) on
+                               │                   untrusted CMS
+                               │                   data are vulnerable to this issue. No password knowledge is
+                               │                   required: the
+                               │                   over-read happens during the unwrap attempt before any
+                               │                   authentication
+                               │                   succeeds.
+                               │                   The over-read is limited to a few bytes and is not written
+                               │                   to output, so
+                               │                   there is no information disclosure. Triggering a crash
+                               │                   requires the
+                               │                   allocation to border unmapped memory, which is unlikely with
+                               │                    the normal
+                               │                   allocator.
+                               │                   The FIPS modules are not affected by this issue. 
+                               ├ Severity        : LOW 
+                               ├ CweIDs           ─ [0]: CWE-125 
+                               ├ VendorSeverity   ─ ubuntu: 1 
+                               ├ References       ╭ [0]: https://github.com/openssl/openssl/commit/05b066366842
+                               │                  │      f930fadd9a6e94df98030af431bb 
+                               │                  ├ [1]: https://github.com/openssl/openssl/commit/3d8d5bc1056b
+                               │                  │      2f62da9fede23fedbf47e85187b0 
+                               │                  ├ [2]: https://github.com/openssl/openssl/commit/715349a1d7c6
+                               │                  │      db970e6815dafb90915f07307f98 
+                               │                  ├ [3]: https://github.com/openssl/openssl/commit/77bf00ab13f6
+                               │                  │      ff5e516535432f0328ed70ec0c26 
+                               │                  ├ [4]: https://github.com/openssl/openssl/commit/eecbe330977e
+                               │                  │      8d023aae1ca2d9bdbe983ef3fdc6 
+                               │                  ├ [5]: https://openssl-library.org/news/secadv/20260609.txt 
+                               │                  ├ [6]: https://ubuntu.com/security/notices/USN-8414-1 
+                               │                  ├ [7]: https://ubuntu.com/security/notices/USN-8414-2 
+                               │                  ╰ [8]: https://www.cve.org/CVERecord?id=CVE-2026-9076 
+                               ├ PublishedDate   : 2026-06-09T17:17:50.997Z 
+                               ╰ LastModifiedDate: 2026-06-10T08:16:26.063Z 
 ```
