@@ -52,6 +52,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -79,45 +80,19 @@
     - https://bugzilla.redhat.com/2481896
     - https://bugzilla.redhat.com/2481897
     - https://bugzilla.redhat.com/2481898
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481879
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481880
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481881
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481882
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481884
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481885
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481887
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481890
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481892
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481893
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481894
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481896
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481897
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2283757
     - https://bugzilla.redhat.com/show_bug.cgi?id=2481898
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34180
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34181
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34182
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34183
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42764
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42766
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42767
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42768
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42769
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42770
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45445
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45446
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4741
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45447
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-7383
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-9076
     - https://errata.almalinux.org/9/ALSA-2026-25239.html
-    - https://errata.rockylinux.org/RLSA-2026:25237
+    - https://errata.rockylinux.org/RLSA-2026:26275
     - https://github.com/openssl/openssl/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
     - https://github.com/openssl/openssl/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
     - https://github.com/openssl/openssl/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
     - https://github.com/openssl/openssl/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
     - https://github.com/openssl/openssl/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
     - https://linux.oracle.com/cve/CVE-2026-45447.html
-    - https://linux.oracle.com/errata/ELSA-2026-26275.html
+    - https://linux.oracle.com/errata/ELSA-2026-50323.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-45447
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
@@ -182,6 +157,7 @@
     - CWE-354
     VendorSeverity:
       alma: 3
+      azure: 4
       photon: 4
       redhat: 2
       rocky: 3
@@ -537,6 +513,7 @@
     - CWE-325
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 3
       redhat: 2
       rocky: 3
@@ -654,6 +631,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -879,6 +857,7 @@
     - CWE-476
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 2
       redhat: 1
       rocky: 3
@@ -991,6 +970,7 @@
     - CWE-476
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 2
       redhat: 1
       rocky: 3
@@ -1643,6 +1623,7 @@
     - CWE-787
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -1769,6 +1750,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -1888,6 +1870,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -1915,45 +1898,19 @@
     - https://bugzilla.redhat.com/2481896
     - https://bugzilla.redhat.com/2481897
     - https://bugzilla.redhat.com/2481898
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481879
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481880
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481881
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481882
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481884
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481885
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481887
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481890
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481892
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481893
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481894
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481896
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481897
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2283757
     - https://bugzilla.redhat.com/show_bug.cgi?id=2481898
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34180
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34181
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34182
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34183
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42764
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42766
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42767
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42768
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42769
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42770
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45445
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45446
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4741
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45447
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-7383
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-9076
     - https://errata.almalinux.org/9/ALSA-2026-25239.html
-    - https://errata.rockylinux.org/RLSA-2026:25237
+    - https://errata.rockylinux.org/RLSA-2026:26275
     - https://github.com/openssl/openssl/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
     - https://github.com/openssl/openssl/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
     - https://github.com/openssl/openssl/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
     - https://github.com/openssl/openssl/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
     - https://github.com/openssl/openssl/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
     - https://linux.oracle.com/cve/CVE-2026-45447.html
-    - https://linux.oracle.com/errata/ELSA-2026-26275.html
+    - https://linux.oracle.com/errata/ELSA-2026-50323.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-45447
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
@@ -2018,6 +1975,7 @@
     - CWE-354
     VendorSeverity:
       alma: 3
+      azure: 4
       photon: 4
       redhat: 2
       rocky: 3
@@ -2373,6 +2331,7 @@
     - CWE-325
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 3
       redhat: 2
       rocky: 3
@@ -2490,6 +2449,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -2715,6 +2675,7 @@
     - CWE-476
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 2
       redhat: 1
       rocky: 3
@@ -2827,6 +2788,7 @@
     - CWE-476
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 2
       redhat: 1
       rocky: 3
@@ -3479,6 +3441,7 @@
     - CWE-787
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -3605,6 +3568,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -3884,6 +3848,7 @@
     - CWE-416
     VendorSeverity:
       alma: 3
+      azure: 3
       oracle-oval: 3
       photon: 3
       redhat: 3
@@ -3911,45 +3876,19 @@
     - https://bugzilla.redhat.com/2481896
     - https://bugzilla.redhat.com/2481897
     - https://bugzilla.redhat.com/2481898
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481879
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481880
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481881
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481882
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481884
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481885
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481887
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481890
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481891
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481892
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481893
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481894
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481896
-    - https://bugzilla.redhat.com/show_bug.cgi?id=2481897
+    - https://bugzilla.redhat.com/show_bug.cgi?id=2283757
     - https://bugzilla.redhat.com/show_bug.cgi?id=2481898
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34180
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34181
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34182
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-34183
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42764
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42766
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42767
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42768
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42769
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-42770
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45445
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45446
+    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4741
     - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-45447
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-7383
-    - https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2026-9076
     - https://errata.almalinux.org/9/ALSA-2026-25239.html
-    - https://errata.rockylinux.org/RLSA-2026:25237
+    - https://errata.rockylinux.org/RLSA-2026:26275
     - https://github.com/openssl/openssl/commit/3aad5eb7af4de4ee0633c30a8541a54d9bbde63c
     - https://github.com/openssl/openssl/commit/7d4a980c62258c5910cc883936e0c8dbab4d75a8
     - https://github.com/openssl/openssl/commit/9dfd688ad2290fc5075cacbc9bf0c9a93eefed54
     - https://github.com/openssl/openssl/commit/a541ae8bfe849a30cc885e8780715c0f488e496c
     - https://github.com/openssl/openssl/commit/c505d7559da5d5f9f2c3913c6883a5562ce7273e
     - https://linux.oracle.com/cve/CVE-2026-45447.html
-    - https://linux.oracle.com/errata/ELSA-2026-26275.html
+    - https://linux.oracle.com/errata/ELSA-2026-50323.html
     - https://nvd.nist.gov/vuln/detail/CVE-2026-45447
     - https://openssl-library.org/news/secadv/20260609.txt
     - https://ubuntu.com/security/notices/USN-8414-1
@@ -4014,6 +3953,7 @@
     - CWE-354
     VendorSeverity:
       alma: 3
+      azure: 4
       photon: 4
       redhat: 2
       rocky: 3
@@ -4369,6 +4309,7 @@
     - CWE-325
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 3
       redhat: 2
       rocky: 3
@@ -4486,6 +4427,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -4711,6 +4653,7 @@
     - CWE-476
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 2
       redhat: 1
       rocky: 3
@@ -4823,6 +4766,7 @@
     - CWE-476
     VendorSeverity:
       alma: 3
+      azure: 2
       photon: 2
       redhat: 1
       rocky: 3
@@ -5475,6 +5419,7 @@
     - CWE-787
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
@@ -5601,6 +5546,7 @@
     - CWE-125
     VendorSeverity:
       alma: 3
+      azure: 3
       photon: 3
       redhat: 1
       rocky: 3
