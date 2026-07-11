@@ -65,7 +65,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 3 
                         │      │                  ├ rocky      : 3 
@@ -156,7 +156,7 @@
                         │      │                  ├ [61]: https://github.com/openssl/openssl/commit/c505d7559da
                         │      │                  │       5d5f9f2c3913c6883a5562ce7273e 
                         │      │                  ├ [62]: https://linux.oracle.com/cve/CVE-2026-45447.html 
-                        │      │                  ├ [63]: https://linux.oracle.com/errata/ELSA-2026-50323.html 
+                        │      │                  ├ [63]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [64]: https://nvd.nist.gov/vuln/detail/CVE-2026-45447 
                         │      │                  ├ [65]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [66]: https://security.access.redhat.com/data/csaf/v2/vex/2
@@ -241,7 +241,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 4 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -324,7 +324,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/d2ca86bcd43
                         │      │                  │       e4f17d899f347101766b6107676e0 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-34182.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-34182 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -384,7 +384,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -465,7 +465,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/fbaa83859c0
                         │      │                  │       1ad64f497b757aaf51be7d05ed9eb 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-34183.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-34183 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -525,7 +525,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -604,7 +604,7 @@
                         │      │                  ├ [51]: https://github.com/openssl/openssl/commit/bf29a458c1a
                         │      │                  │       231eca87e384c62b9c2553fa57a91 
                         │      │                  ├ [52]: https://linux.oracle.com/cve/CVE-2026-42764.html 
-                        │      │                  ├ [53]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [53]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [54]: https://nvd.nist.gov/vuln/detail/CVE-2026-42764 
                         │      │                  ├ [55]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [56]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -698,7 +698,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -781,7 +781,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/983d54b5cce
                         │      │                  │       8d16147548ed1a37892d1720bbab6 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-45445.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-45445 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -850,7 +850,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -933,7 +933,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/f696c73c3e6
                         │      │                  │       1b8c502d040af62e690c060908a16 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-34180.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-34180 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -991,7 +991,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-354 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -1072,7 +1072,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/ec36f2417c4
                         │      │                  │       ddd8cabce4b4a60a3d7a7365f2d81 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-34181.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-34181 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -1133,7 +1133,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -1216,7 +1216,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/da26f368732
                         │      │                  │       b83e40e9d356fe61c3d3aaab6d2e8 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42766.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42766 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -1275,7 +1275,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -1358,7 +1358,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/e6f912907fc
                         │      │                  │       2ec82a0fd07aae55172c5e5e3d90d 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42767.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42767 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -1470,7 +1470,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 1 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 1 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -1551,7 +1551,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/f04b377be3d
                         │      │                  │       821741c86d1f4bf84dee09f3d5c3e 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-42768.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-42768 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -1636,7 +1636,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-295 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -1717,7 +1717,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/d531f21c0fe
                         │      │                  │       99067a66fc0ff1161ef127f9cd70b 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-42769.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-42769 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -1791,7 +1791,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 1 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -1874,7 +1874,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/ca2237ab561
                         │      │                  │       5641b662183b077f62c08d75e8070 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42770.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42770 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -1962,7 +1962,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -2045,7 +2045,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/eec5e9bf0d8
                         │      │                  │       67333b8495e456f5235d225798a68 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-45446.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-45446 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -2122,7 +2122,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -2205,7 +2205,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/d32350ae8ef
                         │      │                  │       7426718f5aa9e383d4b51398ee255 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-7383.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-7383 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -2288,7 +2288,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -2371,7 +2371,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/eecbe330977
                         │      │                  │       e8d023aae1ca2d9bdbe983ef3fdc6 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-9076.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-9076 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -2441,7 +2441,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 3 
                         │      │                  ├ rocky      : 3 
@@ -2532,7 +2532,7 @@
                         │      │                  ├ [61]: https://github.com/openssl/openssl/commit/c505d7559da
                         │      │                  │       5d5f9f2c3913c6883a5562ce7273e 
                         │      │                  ├ [62]: https://linux.oracle.com/cve/CVE-2026-45447.html 
-                        │      │                  ├ [63]: https://linux.oracle.com/errata/ELSA-2026-50323.html 
+                        │      │                  ├ [63]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [64]: https://nvd.nist.gov/vuln/detail/CVE-2026-45447 
                         │      │                  ├ [65]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [66]: https://security.access.redhat.com/data/csaf/v2/vex/2
@@ -2617,7 +2617,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 4 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -2700,7 +2700,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/d2ca86bcd43
                         │      │                  │       e4f17d899f347101766b6107676e0 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-34182.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-34182 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -2760,7 +2760,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -2841,7 +2841,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/fbaa83859c0
                         │      │                  │       1ad64f497b757aaf51be7d05ed9eb 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-34183.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-34183 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -2901,7 +2901,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -2980,7 +2980,7 @@
                         │      │                  ├ [51]: https://github.com/openssl/openssl/commit/bf29a458c1a
                         │      │                  │       231eca87e384c62b9c2553fa57a91 
                         │      │                  ├ [52]: https://linux.oracle.com/cve/CVE-2026-42764.html 
-                        │      │                  ├ [53]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [53]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [54]: https://nvd.nist.gov/vuln/detail/CVE-2026-42764 
                         │      │                  ├ [55]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [56]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -3074,7 +3074,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -3157,7 +3157,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/983d54b5cce
                         │      │                  │       8d16147548ed1a37892d1720bbab6 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-45445.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-45445 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -3226,7 +3226,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -3309,7 +3309,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/f696c73c3e6
                         │      │                  │       1b8c502d040af62e690c060908a16 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-34180.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-34180 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -3367,7 +3367,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-354 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -3448,7 +3448,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/ec36f2417c4
                         │      │                  │       ddd8cabce4b4a60a3d7a7365f2d81 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-34181.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-34181 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -3509,7 +3509,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -3592,7 +3592,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/da26f368732
                         │      │                  │       b83e40e9d356fe61c3d3aaab6d2e8 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42766.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42766 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -3651,7 +3651,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -3734,7 +3734,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/e6f912907fc
                         │      │                  │       2ec82a0fd07aae55172c5e5e3d90d 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42767.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42767 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -3846,7 +3846,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 1 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 1 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -3927,7 +3927,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/f04b377be3d
                         │      │                  │       821741c86d1f4bf84dee09f3d5c3e 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-42768.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-42768 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -4012,7 +4012,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-295 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -4093,7 +4093,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/d531f21c0fe
                         │      │                  │       99067a66fc0ff1161ef127f9cd70b 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-42769.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-42769 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -4167,7 +4167,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 1 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -4250,7 +4250,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/ca2237ab561
                         │      │                  │       5641b662183b077f62c08d75e8070 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42770.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42770 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -4338,7 +4338,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -4421,7 +4421,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/eec5e9bf0d8
                         │      │                  │       67333b8495e456f5235d225798a68 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-45446.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-45446 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -4498,7 +4498,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -4581,7 +4581,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/d32350ae8ef
                         │      │                  │       7426718f5aa9e383d4b51398ee255 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-7383.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-7383 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -4664,7 +4664,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -4747,7 +4747,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/eecbe330977
                         │      │                  │       e8d023aae1ca2d9bdbe983ef3fdc6 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-9076.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-9076 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -4995,7 +4995,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 3 
                         │      │                  ├ rocky      : 3 
@@ -5086,7 +5086,7 @@
                         │      │                  ├ [61]: https://github.com/openssl/openssl/commit/c505d7559da
                         │      │                  │       5d5f9f2c3913c6883a5562ce7273e 
                         │      │                  ├ [62]: https://linux.oracle.com/cve/CVE-2026-45447.html 
-                        │      │                  ├ [63]: https://linux.oracle.com/errata/ELSA-2026-50323.html 
+                        │      │                  ├ [63]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [64]: https://nvd.nist.gov/vuln/detail/CVE-2026-45447 
                         │      │                  ├ [65]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [66]: https://security.access.redhat.com/data/csaf/v2/vex/2
@@ -5171,7 +5171,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 4 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 4 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -5254,7 +5254,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/d2ca86bcd43
                         │      │                  │       e4f17d899f347101766b6107676e0 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-34182.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-34182 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -5314,7 +5314,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -5395,7 +5395,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/fbaa83859c0
                         │      │                  │       1ad64f497b757aaf51be7d05ed9eb 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-34183.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-34183 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -5455,7 +5455,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-476 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -5534,7 +5534,7 @@
                         │      │                  ├ [51]: https://github.com/openssl/openssl/commit/bf29a458c1a
                         │      │                  │       231eca87e384c62b9c2553fa57a91 
                         │      │                  ├ [52]: https://linux.oracle.com/cve/CVE-2026-42764.html 
-                        │      │                  ├ [53]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [53]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [54]: https://nvd.nist.gov/vuln/detail/CVE-2026-42764 
                         │      │                  ├ [55]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [56]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -5628,7 +5628,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 2 
                         │      │                  ├ rocky      : 3 
@@ -5711,7 +5711,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/983d54b5cce
                         │      │                  │       8d16147548ed1a37892d1720bbab6 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-45445.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-45445 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -5780,7 +5780,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -5863,7 +5863,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/f696c73c3e6
                         │      │                  │       1b8c502d040af62e690c060908a16 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-34180.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-34180 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -5921,7 +5921,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-354 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -6002,7 +6002,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/ec36f2417c4
                         │      │                  │       ddd8cabce4b4a60a3d7a7365f2d81 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-34181.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-34181 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -6063,7 +6063,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -6146,7 +6146,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/da26f368732
                         │      │                  │       b83e40e9d356fe61c3d3aaab6d2e8 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42766.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42766 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -6205,7 +6205,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -6288,7 +6288,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/e6f912907fc
                         │      │                  │       2ec82a0fd07aae55172c5e5e3d90d 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42767.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42767 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -6400,7 +6400,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 1 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 1 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -6481,7 +6481,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/f04b377be3d
                         │      │                  │       821741c86d1f4bf84dee09f3d5c3e 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-42768.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-42768 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -6566,7 +6566,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-295 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -6647,7 +6647,7 @@
                         │      │                  ├ [52]: https://github.com/openssl/openssl/commit/d531f21c0fe
                         │      │                  │       99067a66fc0ff1161ef127f9cd70b 
                         │      │                  ├ [53]: https://linux.oracle.com/cve/CVE-2026-42769.html 
-                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [54]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [55]: https://nvd.nist.gov/vuln/detail/CVE-2026-42769 
                         │      │                  ├ [56]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [57]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -6721,7 +6721,7 @@
                         │      ├ CweIDs           ─ [0]: CWE-325 
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 1 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -6804,7 +6804,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/ca2237ab561
                         │      │                  │       5641b662183b077f62c08d75e8070 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-42770.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-42770 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -6892,7 +6892,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 2 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 2 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -6975,7 +6975,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/eec5e9bf0d8
                         │      │                  │       67333b8495e456f5235d225798a68 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-45446.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-45446 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -7052,7 +7052,7 @@
                         │      ├ VendorSeverity   ╭ alma       : 3 
                         │      │                  ├ amazon     : 3 
                         │      │                  ├ azure      : 3 
-                        │      │                  ├ oracle-oval: 3 
+                        │      │                  ├ oracle-oval: 2 
                         │      │                  ├ photon     : 3 
                         │      │                  ├ redhat     : 1 
                         │      │                  ├ rocky      : 3 
@@ -7135,7 +7135,7 @@
                         │      │                  ├ [53]: https://github.com/openssl/openssl/commit/d32350ae8ef
                         │      │                  │       7426718f5aa9e383d4b51398ee255 
                         │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-7383.html 
-                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                         │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-7383 
                         │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                         │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
@@ -7218,7 +7218,7 @@
                                ├ VendorSeverity   ╭ alma       : 3 
                                │                  ├ amazon     : 3 
                                │                  ├ azure      : 3 
-                               │                  ├ oracle-oval: 3 
+                               │                  ├ oracle-oval: 2 
                                │                  ├ photon     : 3 
                                │                  ├ redhat     : 1 
                                │                  ├ rocky      : 3 
@@ -7301,7 +7301,7 @@
                                │                  ├ [53]: https://github.com/openssl/openssl/commit/eecbe330977
                                │                  │       e8d023aae1ca2d9bdbe983ef3fdc6 
                                │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-9076.html 
-                               │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-25239.html 
+                               │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
                                │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-9076 
                                │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
                                │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
