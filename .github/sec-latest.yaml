@@ -5905,3 +5905,321 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-9076
     PublishedDate: '2026-06-09T17:17:50.997Z'
     LastModifiedDate: '2026-06-17T11:04:47.973Z'
+  - VulnerabilityID: CVE-2026-13698
+    PkgID: openvpn@2.6.20-r0
+    PkgName: openvpn
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: df9613f20b1f8d5a
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13698
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:5b4e750a65355d16173870e75f3b009e27f50600b8cd5dca21b0223032245584
+    Title: 'openvpn: From CVEorg collector'
+    Description: A memory leak in OpenVPN version 2.5.0 through 2.5.11, 2.6.0 through 2.6.20 and 2.7_alpha1 through 2.7.4 allows remote attackers with a valid tls-crypt-v2 client key to potentially cause a denial of service
+    Severity: HIGH
+    CweIDs:
+    - CWE-401
+    - CWE-770
+    VendorSeverity:
+      nvd: 3
+      redhat: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 4.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-13698
+    - https://community.openvpn.net/Security%20Announcements/CVE-2026-13698
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-13698
+    - https://www.cve.org/CVERecord?id=CVE-2026-13698
+    PublishedDate: '2026-07-06T15:16:35.14Z'
+    LastModifiedDate: '2026-07-09T13:05:30.767Z'
+  - VulnerabilityID: CVE-2026-13122
+    PkgID: openvpn@2.6.20-r0
+    PkgName: openvpn
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: df9613f20b1f8d5a
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13122
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:d57652c77f3109566c44a9cee85e8a9f0218ff4fdad8e8248b88e5c30e2534a0
+    Title: 'openvpn: From CVEorg collector'
+    Description: OpenVPN version 2.6.0 through 2.6.20 and 2.7_alpha1 through 2.7.4 allows remote attackers to cause a denial of service via a malformed authentication token that triggers a reachable assertion when external-auth is enabled
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-617
+    VendorSeverity:
+      nvd: 2
+      redhat: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-13122
+    - https://community.openvpn.net/Security%20Announcements/CVE-2026-13122
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-13122
+    - https://www.cve.org/CVERecord?id=CVE-2026-13122
+    PublishedDate: '2026-07-06T16:16:28.677Z'
+    LastModifiedDate: '2026-07-09T13:06:19.04Z'
+  - VulnerabilityID: CVE-2026-11771
+    PkgID: openvpn@2.6.20-r0
+    PkgName: openvpn
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: df9613f20b1f8d5a
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-11771
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:11b9789894938f8e692575fb3b8a67be1233bb2b6b80973951b5e4beaab1a27d
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-12932
+    PkgID: openvpn@2.6.20-r0
+    PkgName: openvpn
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: df9613f20b1f8d5a
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-12932
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:0182016094889bd7ff2a4541470d52e942914de4e4aaab6e037ac1c2ba725d5b
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-12996
+    PkgID: openvpn@2.6.20-r0
+    PkgName: openvpn
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: df9613f20b1f8d5a
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-12996
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:8549834e1ce8fb294fb8bc8774314ab5cd28587f88651446645eb6830e564559
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-13117
+    PkgID: openvpn@2.6.20-r0
+    PkgName: openvpn
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: df9613f20b1f8d5a
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13117
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:04d6bfcf2c549365cfaf5d9e7e3e80b66be9f1e25219dc2547d2118d11670f2a
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-13698
+    PkgID: openvpn-auth-pam@2.6.20-r0
+    PkgName: openvpn-auth-pam
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: b8ff610cdfdc67c5
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13698
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:80beebc10750d805648ce60a9965015162da3e9b6601022c5c3c77e0c3c1f9d4
+    Title: 'openvpn: From CVEorg collector'
+    Description: A memory leak in OpenVPN version 2.5.0 through 2.5.11, 2.6.0 through 2.6.20 and 2.7_alpha1 through 2.7.4 allows remote attackers with a valid tls-crypt-v2 client key to potentially cause a denial of service
+    Severity: HIGH
+    CweIDs:
+    - CWE-401
+    - CWE-770
+    VendorSeverity:
+      nvd: 3
+      redhat: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 7.5
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 4.9
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-13698
+    - https://community.openvpn.net/Security%20Announcements/CVE-2026-13698
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-13698
+    - https://www.cve.org/CVERecord?id=CVE-2026-13698
+    PublishedDate: '2026-07-06T15:16:35.14Z'
+    LastModifiedDate: '2026-07-09T13:05:30.767Z'
+  - VulnerabilityID: CVE-2026-13122
+    PkgID: openvpn-auth-pam@2.6.20-r0
+    PkgName: openvpn-auth-pam
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: b8ff610cdfdc67c5
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    SeveritySource: nvd
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13122
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:06929be989994b807105b2504539bd2517bc89fdf6cae9f57def174cf107f299
+    Title: 'openvpn: From CVEorg collector'
+    Description: OpenVPN version 2.6.0 through 2.6.20 and 2.7_alpha1 through 2.7.4 allows remote attackers to cause a denial of service via a malformed authentication token that triggers a reachable assertion when external-auth is enabled
+    Severity: MEDIUM
+    CweIDs:
+    - CWE-617
+    VendorSeverity:
+      nvd: 2
+      redhat: 2
+    CVSS:
+      nvd:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
+      redhat:
+        V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N/A:H
+        V3Score: 5.3
+    References:
+    - https://access.redhat.com/security/cve/CVE-2026-13122
+    - https://community.openvpn.net/Security%20Announcements/CVE-2026-13122
+    - https://nvd.nist.gov/vuln/detail/CVE-2026-13122
+    - https://www.cve.org/CVERecord?id=CVE-2026-13122
+    PublishedDate: '2026-07-06T16:16:28.677Z'
+    LastModifiedDate: '2026-07-09T13:06:19.04Z'
+  - VulnerabilityID: CVE-2026-11771
+    PkgID: openvpn-auth-pam@2.6.20-r0
+    PkgName: openvpn-auth-pam
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: b8ff610cdfdc67c5
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-11771
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:563c787b8f4807ed5ea072694b380e28630dc9395e7b57313013ec10c1b5f29c
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-12932
+    PkgID: openvpn-auth-pam@2.6.20-r0
+    PkgName: openvpn-auth-pam
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: b8ff610cdfdc67c5
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-12932
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:531bb31d02c229fb3844d22f39e5bf76bc85fc47977949a340498a2aa9cd4ca6
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-12996
+    PkgID: openvpn-auth-pam@2.6.20-r0
+    PkgName: openvpn-auth-pam
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: b8ff610cdfdc67c5
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-12996
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:0c745dcced39b7dab5c03ca4d8555c75d225eace1037de5ec1f7f672054aef49
+    Severity: UNKNOWN
+  - VulnerabilityID: CVE-2026-13117
+    PkgID: openvpn-auth-pam@2.6.20-r0
+    PkgName: openvpn-auth-pam
+    PkgIdentifier:
+      PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64&distro=3.23.4
+      UID: b8ff610cdfdc67c5
+    InstalledVersion: 2.6.20-r0
+    FixedVersion: 2.7.5-r0
+    Status: fixed
+    Layer:
+      Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a5ca5527575a11aa7237a
+      DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab2aba251d0bd7a2dd6e02
+    PrimaryURL: https://avd.aquasec.com/nvd/cve-2026-13117
+    DataSource:
+      ID: alpine
+      Name: Alpine Secdb
+      URL: https://secdb.alpinelinux.org/
+    Fingerprint: sha256:18917c48f00a53ccc865a8b344e3925095f219741b14d9cfa1f790a429e64d35
+    Severity: UNKNOWN
