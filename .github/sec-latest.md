@@ -7143,170 +7143,500 @@
                         │      │                  ╰ [60]: https://www.cve.org/CVERecord?id=CVE-2026-7383 
                         │      ├ PublishedDate   : 2026-06-09T17:17:50.337Z 
                         │      ╰ LastModifiedDate: 2026-06-17T11:02:19.433Z 
-                        ╰ [48] ╭ VulnerabilityID : CVE-2026-9076 
-                               ├ PkgID           : openssl@3.5.6-r0 
-                               ├ PkgName         : openssl 
-                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
-                               │                  │       23.4 
-                               │                  ╰ UID : 17c38318269cb829 
-                               ├ InstalledVersion: 3.5.6-r0 
-                               ├ FixedVersion    : 3.5.7-r0 
+                        ├ [48] ╭ VulnerabilityID : CVE-2026-9076 
+                        │      ├ PkgID           : openssl@3.5.6-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.6-r0?arch=x86_64&distro=3.
+                        │      │                  │       23.4 
+                        │      │                  ╰ UID : 17c38318269cb829 
+                        │      ├ InstalledVersion: 3.5.6-r0 
+                        │      ├ FixedVersion    : 3.5.7-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-9076 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:ccac43e6dcc9be2b56bb3f14d0b21b434fbef05bbbeaa1323fb17
+                        │      │                   9a15be7e845 
+                        │      ├ Title           : openssl: OpenSSL: Denial of Service due to heap
+                        │      │                   out-of-bounds read in CMS password-based decryption 
+                        │      ├ Description     : Issue summary: When CMS password-based decryption (RFC 3211
+                        │      │                   / PWRI key unwrap)
+                        │      │                   processes attacker-supplied CMS data, an attacker-chosen
+                        │      │                   stream-mode KEK
+                        │      │                   cipher can trigger a heap out-of-bounds read in
+                        │      │                   kek_unwrap_key().
+                        │      │                   
+                        │      │                   Impact summary: A heap buffer over-read may trigger a crash
+                        │      │                   which leads to
+                        │      │                   Denial of Service for an application if the input buffer
+                        │      │                   ends at a memory
+                        │      │                   page boundary and the following page is unmapped. There is
+                        │      │                   no information
+                        │      │                   disclosure as the over-read bytes are not revealed to the
+                        │      │                   attacker.
+                        │      │                   The key unwrapping function performs a check-byte test as
+                        │      │                   specified in the
+                        │      │                   RFC that reads 7 bytes from a heap allocation that is based
+                        │      │                   on the wrapped
+                        │      │                   key length from the message. There is a minimum length check
+                        │      │                    based on the
+                        │      │                   block length of the wrapping cipher. However the cipher is
+                        │      │                   selected from
+                        │      │                   an OID carried in the attacker's PWRI keyEncryptionAlgorithm
+                        │      │                    with no
+                        │      │                   requirement that the cipher be a block cipher. When an
+                        │      │                   attacker selects
+                        │      │                   a stream-mode cipher the guard will be ineffective and the
+                        │      │                   allocated buffer
+                        │      │                   containing the unwrapped key can be too small to fit the
+                        │      │                   check-bytes
+                        │      │                   specified in the RFC and a buffer over-read can happen.
+                        │      │                   Applications calling CMS_decrypt() or
+                        │      │                   CMS_decrypt_set1_password()
+                        │      │                   (equivalently openssl cms -decrypt -pwri_password ...) on
+                        │      │                   untrusted CMS
+                        │      │                   data are vulnerable to this issue. No password knowledge is
+                        │      │                   required: the
+                        │      │                   over-read happens during the unwrap attempt before any
+                        │      │                   authentication
+                        │      │                   succeeds.
+                        │      │                   The over-read is limited to a few bytes and is not written
+                        │      │                   to output, so
+                        │      │                   there is no information disclosure. Triggering a crash
+                        │      │                   requires the
+                        │      │                   allocation to border unmapped memory, which is unlikely with
+                        │      │                    the normal
+                        │      │                   allocator.
+                        │      │                   The FIPS modules are not affected by this issue. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs           ─ [0]: CWE-125 
+                        │      ├ VendorSeverity   ╭ alma       : 3 
+                        │      │                  ├ amazon     : 3 
+                        │      │                  ├ azure      : 3 
+                        │      │                  ├ oracle-oval: 2 
+                        │      │                  ├ photon     : 3 
+                        │      │                  ├ redhat     : 1 
+                        │      │                  ├ rocky      : 3 
+                        │      │                  ╰ ubuntu     : 1 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.9 
+                        │      ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
+                        │      │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-9076 
+                        │      │                  ├ [2] : https://bugzilla.redhat.com/2481879 
+                        │      │                  ├ [3] : https://bugzilla.redhat.com/2481880 
+                        │      │                  ├ [4] : https://bugzilla.redhat.com/2481881 
+                        │      │                  ├ [5] : https://bugzilla.redhat.com/2481882 
+                        │      │                  ├ [6] : https://bugzilla.redhat.com/2481884 
+                        │      │                  ├ [7] : https://bugzilla.redhat.com/2481885 
+                        │      │                  ├ [8] : https://bugzilla.redhat.com/2481887 
+                        │      │                  ├ [9] : https://bugzilla.redhat.com/2481890 
+                        │      │                  ├ [10]: https://bugzilla.redhat.com/2481891 
+                        │      │                  ├ [11]: https://bugzilla.redhat.com/2481892 
+                        │      │                  ├ [12]: https://bugzilla.redhat.com/2481893 
+                        │      │                  ├ [13]: https://bugzilla.redhat.com/2481894 
+                        │      │                  ├ [14]: https://bugzilla.redhat.com/2481896 
+                        │      │                  ├ [15]: https://bugzilla.redhat.com/2481897 
+                        │      │                  ├ [16]: https://bugzilla.redhat.com/2481898 
+                        │      │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2481879 
+                        │      │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2481880 
+                        │      │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2481881 
+                        │      │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2481882 
+                        │      │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2481884 
+                        │      │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2481885 
+                        │      │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2481887 
+                        │      │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2481890 
+                        │      │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2481891 
+                        │      │                  ├ [26]: https://bugzilla.redhat.com/show_bug.cgi?id=2481892 
+                        │      │                  ├ [27]: https://bugzilla.redhat.com/show_bug.cgi?id=2481893 
+                        │      │                  ├ [28]: https://bugzilla.redhat.com/show_bug.cgi?id=2481894 
+                        │      │                  ├ [29]: https://bugzilla.redhat.com/show_bug.cgi?id=2481896 
+                        │      │                  ├ [30]: https://bugzilla.redhat.com/show_bug.cgi?id=2481897 
+                        │      │                  ├ [31]: https://bugzilla.redhat.com/show_bug.cgi?id=2481898 
+                        │      │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-34180 
+                        │      │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-34181 
+                        │      │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-34182 
+                        │      │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-34183 
+                        │      │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-42764 
+                        │      │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-42766 
+                        │      │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-42767 
+                        │      │                  ├ [39]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-42768 
+                        │      │                  ├ [40]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-42769 
+                        │      │                  ├ [41]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-42770 
+                        │      │                  ├ [42]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-45445 
+                        │      │                  ├ [43]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-45446 
+                        │      │                  ├ [44]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-45447 
+                        │      │                  ├ [45]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-7383 
+                        │      │                  ├ [46]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
+                        │      │                  │       26-9076 
+                        │      │                  ├ [47]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
+                        │      │                  ├ [48]: https://errata.rockylinux.org/RLSA-2026:25239 
+                        │      │                  ├ [49]: https://github.com/openssl/openssl/commit/05b06636684
+                        │      │                  │       2f930fadd9a6e94df98030af431bb 
+                        │      │                  ├ [50]: https://github.com/openssl/openssl/commit/3d8d5bc1056
+                        │      │                  │       b2f62da9fede23fedbf47e85187b0 
+                        │      │                  ├ [51]: https://github.com/openssl/openssl/commit/715349a1d7c
+                        │      │                  │       6db970e6815dafb90915f07307f98 
+                        │      │                  ├ [52]: https://github.com/openssl/openssl/commit/77bf00ab13f
+                        │      │                  │       6ff5e516535432f0328ed70ec0c26 
+                        │      │                  ├ [53]: https://github.com/openssl/openssl/commit/eecbe330977
+                        │      │                  │       e8d023aae1ca2d9bdbe983ef3fdc6 
+                        │      │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-9076.html 
+                        │      │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
+                        │      │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-9076 
+                        │      │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
+                        │      │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
+                        │      │                  ├ [59]: https://ubuntu.com/security/notices/USN-8414-2 
+                        │      │                  ╰ [60]: https://www.cve.org/CVERecord?id=CVE-2026-9076 
+                        │      ├ PublishedDate   : 2026-06-09T17:17:50.997Z 
+                        │      ╰ LastModifiedDate: 2026-06-17T11:04:47.973Z 
+                        ├ [49] ╭ VulnerabilityID : CVE-2026-13698 
+                        │      ├ PkgID           : openvpn@2.6.20-r0 
+                        │      ├ PkgName         : openvpn 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3
+                        │      │                  │       .23.4 
+                        │      │                  ╰ UID : df9613f20b1f8d5a 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13698 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:5b4e750a65355d16173870e75f3b009e27f50600b8cd5dca21b02
+                        │      │                   23032245584 
+                        │      ├ Title           : openvpn: From CVEorg collector 
+                        │      ├ Description     : A memory leak in OpenVPN version 2.5.0 through 2.5.11, 2.6.0
+                        │      │                    through 2.6.20 and 2.7_alpha1 through 2.7.4 allows remote
+                        │      │                   attackers with a valid tls-crypt-v2 client key to
+                        │      │                   potentially cause a denial of service 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ╭ [0]: CWE-401 
+                        │      │                  ╰ [1]: CWE-770 
+                        │      ├ VendorSeverity   ╭ nvd   : 3 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 4.9 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-13698 
+                        │      │                  ├ [1]: https://community.openvpn.net/Security%20Announcements
+                        │      │                  │      /CVE-2026-13698 
+                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-13698 
+                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-13698 
+                        │      ├ PublishedDate   : 2026-07-06T15:16:35.14Z 
+                        │      ╰ LastModifiedDate: 2026-07-09T13:05:30.767Z 
+                        ├ [50] ╭ VulnerabilityID : CVE-2026-13122 
+                        │      ├ PkgID           : openvpn@2.6.20-r0 
+                        │      ├ PkgName         : openvpn 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3
+                        │      │                  │       .23.4 
+                        │      │                  ╰ UID : df9613f20b1f8d5a 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13122 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:d57652c77f3109566c44a9cee85e8a9f0218ff4fdad8e8248b88e
+                        │      │                   5c30e2534a0 
+                        │      ├ Title           : openvpn: From CVEorg collector 
+                        │      ├ Description     : OpenVPN version 2.6.0 through 2.6.20 and 2.7_alpha1 through
+                        │      │                   2.7.4 allows remote attackers to cause a denial of service
+                        │      │                   via a malformed authentication token that triggers a
+                        │      │                   reachable assertion when external-auth is enabled 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-617 
+                        │      ├ VendorSeverity   ╭ nvd   : 2 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 5.3 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-13122 
+                        │      │                  ├ [1]: https://community.openvpn.net/Security%20Announcements
+                        │      │                  │      /CVE-2026-13122 
+                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-13122 
+                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-13122 
+                        │      ├ PublishedDate   : 2026-07-06T16:16:28.677Z 
+                        │      ╰ LastModifiedDate: 2026-07-09T13:06:19.04Z 
+                        ├ [51] ╭ VulnerabilityID : CVE-2026-11771 
+                        │      ├ PkgID           : openvpn@2.6.20-r0 
+                        │      ├ PkgName         : openvpn 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3
+                        │      │                  │       .23.4 
+                        │      │                  ╰ UID : df9613f20b1f8d5a 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-11771 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:11b9789894938f8e692575fb3b8a67be1233bb2b6b80973951b5e
+                        │      │                   4beaab1a27d 
+                        │      ╰ Severity        : UNKNOWN 
+                        ├ [52] ╭ VulnerabilityID : CVE-2026-12932 
+                        │      ├ PkgID           : openvpn@2.6.20-r0 
+                        │      ├ PkgName         : openvpn 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3
+                        │      │                  │       .23.4 
+                        │      │                  ╰ UID : df9613f20b1f8d5a 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-12932 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:0182016094889bd7ff2a4541470d52e942914de4e4aaab6e037ac
+                        │      │                   1c2ba725d5b 
+                        │      ╰ Severity        : UNKNOWN 
+                        ├ [53] ╭ VulnerabilityID : CVE-2026-12996 
+                        │      ├ PkgID           : openvpn@2.6.20-r0 
+                        │      ├ PkgName         : openvpn 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3
+                        │      │                  │       .23.4 
+                        │      │                  ╰ UID : df9613f20b1f8d5a 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-12996 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:8549834e1ce8fb294fb8bc8774314ab5cd28587f88651446645eb
+                        │      │                   6830e564559 
+                        │      ╰ Severity        : UNKNOWN 
+                        ├ [54] ╭ VulnerabilityID : CVE-2026-13117 
+                        │      ├ PkgID           : openvpn@2.6.20-r0 
+                        │      ├ PkgName         : openvpn 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.6.20-r0?arch=x86_64&distro=3
+                        │      │                  │       .23.4 
+                        │      │                  ╰ UID : df9613f20b1f8d5a 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13117 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:04d6bfcf2c549365cfaf5d9e7e3e80b66be9f1e25219dc2547d21
+                        │      │                   18d11670f2a 
+                        │      ╰ Severity        : UNKNOWN 
+                        ├ [55] ╭ VulnerabilityID : CVE-2026-13698 
+                        │      ├ PkgID           : openvpn-auth-pam@2.6.20-r0 
+                        │      ├ PkgName         : openvpn-auth-pam 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64
+                        │      │                  │       &distro=3.23.4 
+                        │      │                  ╰ UID : b8ff610cdfdc67c5 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13698 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:80beebc10750d805648ce60a9965015162da3e9b6601022c5c3c7
+                        │      │                   7e0c3c1f9d4 
+                        │      ├ Title           : openvpn: From CVEorg collector 
+                        │      ├ Description     : A memory leak in OpenVPN version 2.5.0 through 2.5.11, 2.6.0
+                        │      │                    through 2.6.20 and 2.7_alpha1 through 2.7.4 allows remote
+                        │      │                   attackers with a valid tls-crypt-v2 client key to
+                        │      │                   potentially cause a denial of service 
+                        │      ├ Severity        : HIGH 
+                        │      ├ CweIDs           ╭ [0]: CWE-401 
+                        │      │                  ╰ [1]: CWE-770 
+                        │      ├ VendorSeverity   ╭ nvd   : 3 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 7.5 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 4.9 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-13698 
+                        │      │                  ├ [1]: https://community.openvpn.net/Security%20Announcements
+                        │      │                  │      /CVE-2026-13698 
+                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-13698 
+                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-13698 
+                        │      ├ PublishedDate   : 2026-07-06T15:16:35.14Z 
+                        │      ╰ LastModifiedDate: 2026-07-09T13:05:30.767Z 
+                        ├ [56] ╭ VulnerabilityID : CVE-2026-13122 
+                        │      ├ PkgID           : openvpn-auth-pam@2.6.20-r0 
+                        │      ├ PkgName         : openvpn-auth-pam 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64
+                        │      │                  │       &distro=3.23.4 
+                        │      │                  ╰ UID : b8ff610cdfdc67c5 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ SeveritySource  : nvd 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13122 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:06929be989994b807105b2504539bd2517bc89fdf6cae9f57def1
+                        │      │                   74cf107f299 
+                        │      ├ Title           : openvpn: From CVEorg collector 
+                        │      ├ Description     : OpenVPN version 2.6.0 through 2.6.20 and 2.7_alpha1 through
+                        │      │                   2.7.4 allows remote attackers to cause a denial of service
+                        │      │                   via a malformed authentication token that triggers a
+                        │      │                   reachable assertion when external-auth is enabled 
+                        │      ├ Severity        : MEDIUM 
+                        │      ├ CweIDs           ─ [0]: CWE-617 
+                        │      ├ VendorSeverity   ╭ nvd   : 2 
+                        │      │                  ╰ redhat: 2 
+                        │      ├ CVSS             ╭ nvd    ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N
+                        │      │                  │        │           /A:H 
+                        │      │                  │        ╰ V3Score : 5.3 
+                        │      │                  ╰ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.3 
+                        │      ├ References       ╭ [0]: https://access.redhat.com/security/cve/CVE-2026-13122 
+                        │      │                  ├ [1]: https://community.openvpn.net/Security%20Announcements
+                        │      │                  │      /CVE-2026-13122 
+                        │      │                  ├ [2]: https://nvd.nist.gov/vuln/detail/CVE-2026-13122 
+                        │      │                  ╰ [3]: https://www.cve.org/CVERecord?id=CVE-2026-13122 
+                        │      ├ PublishedDate   : 2026-07-06T16:16:28.677Z 
+                        │      ╰ LastModifiedDate: 2026-07-09T13:06:19.04Z 
+                        ├ [57] ╭ VulnerabilityID : CVE-2026-11771 
+                        │      ├ PkgID           : openvpn-auth-pam@2.6.20-r0 
+                        │      ├ PkgName         : openvpn-auth-pam 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64
+                        │      │                  │       &distro=3.23.4 
+                        │      │                  ╰ UID : b8ff610cdfdc67c5 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-11771 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:563c787b8f4807ed5ea072694b380e28630dc9395e7b57313013e
+                        │      │                   c10c1b5f29c 
+                        │      ╰ Severity        : UNKNOWN 
+                        ├ [58] ╭ VulnerabilityID : CVE-2026-12932 
+                        │      ├ PkgID           : openvpn-auth-pam@2.6.20-r0 
+                        │      ├ PkgName         : openvpn-auth-pam 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64
+                        │      │                  │       &distro=3.23.4 
+                        │      │                  ╰ UID : b8ff610cdfdc67c5 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-12932 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:531bb31d02c229fb3844d22f39e5bf76bc85fc47977949a340498
+                        │      │                   a2aa9cd4ca6 
+                        │      ╰ Severity        : UNKNOWN 
+                        ├ [59] ╭ VulnerabilityID : CVE-2026-12996 
+                        │      ├ PkgID           : openvpn-auth-pam@2.6.20-r0 
+                        │      ├ PkgName         : openvpn-auth-pam 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64
+                        │      │                  │       &distro=3.23.4 
+                        │      │                  ╰ UID : b8ff610cdfdc67c5 
+                        │      ├ InstalledVersion: 2.6.20-r0 
+                        │      ├ FixedVersion    : 2.7.5-r0 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
+                        │      │                  │         5ca5527575a11aa7237a 
+                        │      │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
+                        │      │                            2aba251d0bd7a2dd6e02 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-12996 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:0c745dcced39b7dab5c03ca4d8555c75d225eace1037de5ec1f7f
+                        │      │                   672054aef49 
+                        │      ╰ Severity        : UNKNOWN 
+                        ╰ [60] ╭ VulnerabilityID : CVE-2026-13117 
+                               ├ PkgID           : openvpn-auth-pam@2.6.20-r0 
+                               ├ PkgName         : openvpn-auth-pam 
+                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.6.20-r0?arch=x86_64
+                               │                  │       &distro=3.23.4 
+                               │                  ╰ UID : b8ff610cdfdc67c5 
+                               ├ InstalledVersion: 2.6.20-r0 
+                               ├ FixedVersion    : 2.7.5-r0 
                                ├ Status          : fixed 
                                ├ Layer            ╭ Digest: sha256:fa6b1ec71bb26b37852b3315d5753eda99764e918c8a
                                │                  │         5ca5527575a11aa7237a 
                                │                  ╰ DiffID: sha256:0e0ce42c9be7b61718468852022e87122ef3b59cefab
                                │                            2aba251d0bd7a2dd6e02 
-                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-9076 
+                               ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-13117 
                                ├ DataSource       ╭ ID  : alpine 
                                │                  ├ Name: Alpine Secdb 
                                │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                               ├ Fingerprint     : sha256:ccac43e6dcc9be2b56bb3f14d0b21b434fbef05bbbeaa1323fb17
-                               │                   9a15be7e845 
-                               ├ Title           : openssl: OpenSSL: Denial of Service due to heap
-                               │                   out-of-bounds read in CMS password-based decryption 
-                               ├ Description     : Issue summary: When CMS password-based decryption (RFC 3211
-                               │                   / PWRI key unwrap)
-                               │                   processes attacker-supplied CMS data, an attacker-chosen
-                               │                   stream-mode KEK
-                               │                   cipher can trigger a heap out-of-bounds read in
-                               │                   kek_unwrap_key().
-                               │                   
-                               │                   Impact summary: A heap buffer over-read may trigger a crash
-                               │                   which leads to
-                               │                   Denial of Service for an application if the input buffer
-                               │                   ends at a memory
-                               │                   page boundary and the following page is unmapped. There is
-                               │                   no information
-                               │                   disclosure as the over-read bytes are not revealed to the
-                               │                   attacker.
-                               │                   The key unwrapping function performs a check-byte test as
-                               │                   specified in the
-                               │                   RFC that reads 7 bytes from a heap allocation that is based
-                               │                   on the wrapped
-                               │                   key length from the message. There is a minimum length check
-                               │                    based on the
-                               │                   block length of the wrapping cipher. However the cipher is
-                               │                   selected from
-                               │                   an OID carried in the attacker's PWRI keyEncryptionAlgorithm
-                               │                    with no
-                               │                   requirement that the cipher be a block cipher. When an
-                               │                   attacker selects
-                               │                   a stream-mode cipher the guard will be ineffective and the
-                               │                   allocated buffer
-                               │                   containing the unwrapped key can be too small to fit the
-                               │                   check-bytes
-                               │                   specified in the RFC and a buffer over-read can happen.
-                               │                   Applications calling CMS_decrypt() or
-                               │                   CMS_decrypt_set1_password()
-                               │                   (equivalently openssl cms -decrypt -pwri_password ...) on
-                               │                   untrusted CMS
-                               │                   data are vulnerable to this issue. No password knowledge is
-                               │                   required: the
-                               │                   over-read happens during the unwrap attempt before any
-                               │                   authentication
-                               │                   succeeds.
-                               │                   The over-read is limited to a few bytes and is not written
-                               │                   to output, so
-                               │                   there is no information disclosure. Triggering a crash
-                               │                   requires the
-                               │                   allocation to border unmapped memory, which is unlikely with
-                               │                    the normal
-                               │                   allocator.
-                               │                   The FIPS modules are not affected by this issue. 
-                               ├ Severity        : LOW 
-                               ├ CweIDs           ─ [0]: CWE-125 
-                               ├ VendorSeverity   ╭ alma       : 3 
-                               │                  ├ amazon     : 3 
-                               │                  ├ azure      : 3 
-                               │                  ├ oracle-oval: 2 
-                               │                  ├ photon     : 3 
-                               │                  ├ redhat     : 1 
-                               │                  ├ rocky      : 3 
-                               │                  ╰ ubuntu     : 1 
-                               ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
-                               │                           │           /A:H 
-                               │                           ╰ V3Score : 5.9 
-                               ├ References       ╭ [0] : https://access.redhat.com/errata/RHSA-2026:25239 
-                               │                  ├ [1] : https://access.redhat.com/security/cve/CVE-2026-9076 
-                               │                  ├ [2] : https://bugzilla.redhat.com/2481879 
-                               │                  ├ [3] : https://bugzilla.redhat.com/2481880 
-                               │                  ├ [4] : https://bugzilla.redhat.com/2481881 
-                               │                  ├ [5] : https://bugzilla.redhat.com/2481882 
-                               │                  ├ [6] : https://bugzilla.redhat.com/2481884 
-                               │                  ├ [7] : https://bugzilla.redhat.com/2481885 
-                               │                  ├ [8] : https://bugzilla.redhat.com/2481887 
-                               │                  ├ [9] : https://bugzilla.redhat.com/2481890 
-                               │                  ├ [10]: https://bugzilla.redhat.com/2481891 
-                               │                  ├ [11]: https://bugzilla.redhat.com/2481892 
-                               │                  ├ [12]: https://bugzilla.redhat.com/2481893 
-                               │                  ├ [13]: https://bugzilla.redhat.com/2481894 
-                               │                  ├ [14]: https://bugzilla.redhat.com/2481896 
-                               │                  ├ [15]: https://bugzilla.redhat.com/2481897 
-                               │                  ├ [16]: https://bugzilla.redhat.com/2481898 
-                               │                  ├ [17]: https://bugzilla.redhat.com/show_bug.cgi?id=2481879 
-                               │                  ├ [18]: https://bugzilla.redhat.com/show_bug.cgi?id=2481880 
-                               │                  ├ [19]: https://bugzilla.redhat.com/show_bug.cgi?id=2481881 
-                               │                  ├ [20]: https://bugzilla.redhat.com/show_bug.cgi?id=2481882 
-                               │                  ├ [21]: https://bugzilla.redhat.com/show_bug.cgi?id=2481884 
-                               │                  ├ [22]: https://bugzilla.redhat.com/show_bug.cgi?id=2481885 
-                               │                  ├ [23]: https://bugzilla.redhat.com/show_bug.cgi?id=2481887 
-                               │                  ├ [24]: https://bugzilla.redhat.com/show_bug.cgi?id=2481890 
-                               │                  ├ [25]: https://bugzilla.redhat.com/show_bug.cgi?id=2481891 
-                               │                  ├ [26]: https://bugzilla.redhat.com/show_bug.cgi?id=2481892 
-                               │                  ├ [27]: https://bugzilla.redhat.com/show_bug.cgi?id=2481893 
-                               │                  ├ [28]: https://bugzilla.redhat.com/show_bug.cgi?id=2481894 
-                               │                  ├ [29]: https://bugzilla.redhat.com/show_bug.cgi?id=2481896 
-                               │                  ├ [30]: https://bugzilla.redhat.com/show_bug.cgi?id=2481897 
-                               │                  ├ [31]: https://bugzilla.redhat.com/show_bug.cgi?id=2481898 
-                               │                  ├ [32]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-34180 
-                               │                  ├ [33]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-34181 
-                               │                  ├ [34]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-34182 
-                               │                  ├ [35]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-34183 
-                               │                  ├ [36]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-42764 
-                               │                  ├ [37]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-42766 
-                               │                  ├ [38]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-42767 
-                               │                  ├ [39]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-42768 
-                               │                  ├ [40]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-42769 
-                               │                  ├ [41]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-42770 
-                               │                  ├ [42]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-45445 
-                               │                  ├ [43]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-45446 
-                               │                  ├ [44]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-45447 
-                               │                  ├ [45]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-7383 
-                               │                  ├ [46]: https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-20
-                               │                  │       26-9076 
-                               │                  ├ [47]: https://errata.almalinux.org/9/ALSA-2026-25239.html 
-                               │                  ├ [48]: https://errata.rockylinux.org/RLSA-2026:25239 
-                               │                  ├ [49]: https://github.com/openssl/openssl/commit/05b06636684
-                               │                  │       2f930fadd9a6e94df98030af431bb 
-                               │                  ├ [50]: https://github.com/openssl/openssl/commit/3d8d5bc1056
-                               │                  │       b2f62da9fede23fedbf47e85187b0 
-                               │                  ├ [51]: https://github.com/openssl/openssl/commit/715349a1d7c
-                               │                  │       6db970e6815dafb90915f07307f98 
-                               │                  ├ [52]: https://github.com/openssl/openssl/commit/77bf00ab13f
-                               │                  │       6ff5e516535432f0328ed70ec0c26 
-                               │                  ├ [53]: https://github.com/openssl/openssl/commit/eecbe330977
-                               │                  │       e8d023aae1ca2d9bdbe983ef3fdc6 
-                               │                  ├ [54]: https://linux.oracle.com/cve/CVE-2026-9076.html 
-                               │                  ├ [55]: https://linux.oracle.com/errata/ELSA-2026-50379.html 
-                               │                  ├ [56]: https://nvd.nist.gov/vuln/detail/CVE-2026-9076 
-                               │                  ├ [57]: https://openssl-library.org/news/secadv/20260609.txt 
-                               │                  ├ [58]: https://ubuntu.com/security/notices/USN-8414-1 
-                               │                  ├ [59]: https://ubuntu.com/security/notices/USN-8414-2 
-                               │                  ╰ [60]: https://www.cve.org/CVERecord?id=CVE-2026-9076 
-                               ├ PublishedDate   : 2026-06-09T17:17:50.997Z 
-                               ╰ LastModifiedDate: 2026-06-17T11:04:47.973Z 
+                               ├ Fingerprint     : sha256:18917c48f00a53ccc865a8b344e3925095f219741b14d9cfa1f79
+                               │                   0a429e64d35 
+                               ╰ Severity        : UNKNOWN 
 ```
