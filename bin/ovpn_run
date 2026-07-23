@@ -54,7 +54,7 @@ addArg "--config" "$OPENVPN/openvpn.conf"
 
 source "$OPENVPN/ovpn_env.sh"
 
-if [ "${OVPN_LOG_APPEND:-0}" == "1" ] && grep -Eq '^[[:space:]]*log-append[[:space:]]+/etc/openvpn/openvpn\.log([[:space:]]|$)' "$OPENVPN/openvpn.conf"; then
+if [ "${OVPN_LOG_APPEND:-0}" == "1" ] || grep -Eq '^[[:space:]]*log-append[[:space:]]+/etc/openvpn/openvpn\.log([[:space:]]|$)' "$OPENVPN/openvpn.conf"; then
     echo "Log append enabled: OpenVPN logs will be written to /etc/openvpn/openvpn.log"
 fi
 
