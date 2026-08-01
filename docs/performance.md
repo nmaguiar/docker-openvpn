@@ -41,6 +41,30 @@ These can all be combined, along with the rest of `ovpn_genconfig`'s options:
 
     docker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn config -u udp://VPN.SERVERNAME.COM -B 393216 -R 393216 -F -M 1400
 
+## Changing these on an existing configuration
+
+The `config`/`ovpn_genconfig` command only writes these settings when it (re)generates `/etc/openvpn/openvpn.conf`. If you already have a working setup and don't want to regenerate it, you can edit the directives directly instead:
+
+| Flag | Config directive |
+| ---- | ----------------- |
+| `-B <bytes>` | `sndbuf <bytes>` |
+| `-R <bytes>` | `rcvbuf <bytes>` |
+| `-F` | `fast-io` |
+| `-M <bytes>` | `mssfix <bytes>` |
+
+Edit the running container's config in place (add missing lines, or change the value if the directive is already there):
+
+    docker exec -it openvpn sed -i '/^sndbuf /d;/^rcvbuf /d' /etc/openvpn/openvpn.conf
+    docker exec -it openvpn sh -c 'echo "sndbuf 393216" >> /etc/openvpn/openvpn.conf; echo "rcvbuf 393216" >> /etc/openvpn/openvpn.conf'
+
+Or, if the volume is a host directory (e.g. `-v /etc/openvpn:/etc/openvpn`), just edit `/etc/openvpn/openvpn.conf` on the host with any text editor and add/change the same directives.
+
+These directives are only read at OpenVPN startup, so restart the container for the change to take effect:
+
+    docker restart openvpn
+
+`sndbuf`/`rcvbuf` are best matched on both ends of the tunnel, so if you change them on the server, also add the same `sndbuf`/`rcvbuf` lines to already-issued client `.ovpn` files (or regenerate them with `ovpn_getclient` after updating the server config).
+
 ## What's *not* covered here
 
 * **Cipher choice** — the default (`AES-256-GCM:CHACHA20-POLY1305:AES-256-CBC`) already uses modern AEAD ciphers that are typically hardware-accelerated (AES-NI). There's little to gain from changing it for performance reasons.
