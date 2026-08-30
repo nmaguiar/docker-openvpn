@@ -103,7 +103,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-13T15:19:31.82Z 
-                        │      ╰ LastModifiedDate: 2026-08-13T18:17:18.367Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-18798 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -196,7 +196,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:17:49.813Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:31.207Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2026-63072 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -296,7 +296,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.01Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.06Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2026-63076 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -405,7 +405,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.543Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.593Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2026-14457 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -495,7 +495,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:17:49.533Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T14:16:49.727Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2026-54874 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -625,7 +625,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:24.033Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:33.097Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-63073 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -720,7 +720,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.147Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T13:19:26.147Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-63074 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -817,7 +817,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.283Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.243Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-63075 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -915,7 +915,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.413Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.417Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-75803 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -994,7 +994,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:29.57Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T13:19:29.57Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-14456 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1095,7 +1095,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-13T15:19:31.82Z 
-                        │      ╰ LastModifiedDate: 2026-08-13T18:17:18.367Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [11] ╭ VulnerabilityID : CVE-2026-18798 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1188,7 +1188,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:17:49.813Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:31.207Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [12] ╭ VulnerabilityID : CVE-2026-63072 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1288,7 +1288,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.01Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.06Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2026-63076 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1397,7 +1397,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.543Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.593Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2026-14457 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1487,7 +1487,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:17:49.533Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T14:16:49.727Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-54874 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1617,7 +1617,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:24.033Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:33.097Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [16] ╭ VulnerabilityID : CVE-2026-63073 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1712,7 +1712,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.147Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T13:19:26.147Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [17] ╭ VulnerabilityID : CVE-2026-63074 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1809,7 +1809,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.283Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.243Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [18] ╭ VulnerabilityID : CVE-2026-63075 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1907,7 +1907,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.413Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.417Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [19] ╭ VulnerabilityID : CVE-2026-75803 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1986,7 +1986,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:29.57Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T13:19:29.57Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [20] ╭ VulnerabilityID : CVE-2026-14456 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2087,7 +2087,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-13T15:19:31.82Z 
-                        │      ╰ LastModifiedDate: 2026-08-13T18:17:18.367Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [21] ╭ VulnerabilityID : CVE-2026-18798 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2180,7 +2180,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:17:49.813Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:31.207Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [22] ╭ VulnerabilityID : CVE-2026-63072 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2280,7 +2280,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.01Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.06Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [23] ╭ VulnerabilityID : CVE-2026-63076 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2389,7 +2389,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.543Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.593Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [24] ╭ VulnerabilityID : CVE-2026-14457 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2479,7 +2479,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:17:49.533Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T14:16:49.727Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [25] ╭ VulnerabilityID : CVE-2026-54874 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2609,7 +2609,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:24.033Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:33.097Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [26] ╭ VulnerabilityID : CVE-2026-63073 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2704,7 +2704,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.147Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T13:19:26.147Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [27] ╭ VulnerabilityID : CVE-2026-63074 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2801,7 +2801,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.283Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.243Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ├ [28] ╭ VulnerabilityID : CVE-2026-63075 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2899,7 +2899,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.413Z 
-                        │      ╰ LastModifiedDate: 2026-08-25T15:16:36.417Z 
+                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
                         ╰ [29] ╭ VulnerabilityID : CVE-2026-75803 
                                ├ PkgID           : openssl@3.5.7-r0 
                                ├ PkgName         : openssl 
@@ -2978,5 +2978,5 @@
                                │                                                                               
                                │                  
                                ├ PublishedDate   : 2026-08-25T13:19:29.57Z 
-                               ╰ LastModifiedDate: 2026-08-25T13:19:29.57Z 
+                               ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
 ```
