@@ -77,7 +77,8 @@
                         │      │                  ───────
                         │      │                  CWE-770
                         │      │                  
-                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 3 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -720,7 +721,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.147Z 
-                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
+                        │      ╰ LastModifiedDate: 2026-08-31T20:17:07.54Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-63074 
                         │      ├ PkgID           : libcrypto3@3.5.7-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -990,11 +991,13 @@
                         │      │                                                                               
                         │      │                  https://ubuntu.com/security/notices/USN-8678-1               
                         │      │                                                                               
+                        │      │                  https://ubuntu.com/security/notices/USN-8678-3               
+                        │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-75803              
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:29.57Z 
-                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
+                        │      ╰ LastModifiedDate: 2026-09-01T19:17:27.543Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-14456 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1069,7 +1072,8 @@
                         │      │                  ───────
                         │      │                  CWE-770
                         │      │                  
-                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 3 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -1712,7 +1716,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.147Z 
-                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
+                        │      ╰ LastModifiedDate: 2026-08-31T20:17:07.54Z 
                         ├ [17] ╭ VulnerabilityID : CVE-2026-63074 
                         │      ├ PkgID           : libssl3@3.5.7-r0 
                         │      ├ PkgName         : libssl3 
@@ -1982,11 +1986,13 @@
                         │      │                                                                               
                         │      │                  https://ubuntu.com/security/notices/USN-8678-1               
                         │      │                                                                               
+                        │      │                  https://ubuntu.com/security/notices/USN-8678-3               
+                        │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-75803              
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:29.57Z 
-                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
+                        │      ╰ LastModifiedDate: 2026-09-01T19:17:27.543Z 
                         ├ [20] ╭ VulnerabilityID : CVE-2026-14456 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2061,7 +2067,8 @@
                         │      │                  ───────
                         │      │                  CWE-770
                         │      │                  
-                        │      ├ VendorSeverity   ╭ photon: 3 
+                        │      ├ VendorSeverity   ╭ amazon: 3 
+                        │      │                  ├ photon: 3 
                         │      │                  ├ redhat: 3 
                         │      │                  ╰ ubuntu: 2 
                         │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N
@@ -2704,7 +2711,7 @@
                         │      │                                                                               
                         │      │                  
                         │      ├ PublishedDate   : 2026-08-25T13:19:26.147Z 
-                        │      ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
+                        │      ╰ LastModifiedDate: 2026-08-31T20:17:07.54Z 
                         ├ [27] ╭ VulnerabilityID : CVE-2026-63074 
                         │      ├ PkgID           : openssl@3.5.7-r0 
                         │      ├ PkgName         : openssl 
@@ -2974,9 +2981,11 @@
                                │                                                                               
                                │                  https://ubuntu.com/security/notices/USN-8678-1               
                                │                                                                               
+                               │                  https://ubuntu.com/security/notices/USN-8678-3               
+                               │                                                                               
                                │                  https://www.cve.org/CVERecord?id=CVE-2026-75803              
                                │                                                                               
                                │                  
                                ├ PublishedDate   : 2026-08-25T13:19:29.57Z 
-                               ╰ LastModifiedDate: 2026-08-28T19:46:29.323Z 
+                               ╰ LastModifiedDate: 2026-09-01T19:17:27.543Z 
 ```
