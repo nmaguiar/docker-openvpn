@@ -142,6 +142,10 @@ Please refer to the [systemd documentation](docs/systemd.md) to learn more.
 
 If you prefer to use `docker-compose` please refer to the [documentation](docs/docker-compose.md).
 
+### Performance Tuning
+
+If you need more throughput or are seeing MTU/fragmentation related issues, see the [performance tuning documentation](docs/performance.md) (also available via `docker run --rm nmaguiar/openvpn help-more`).
+
 ## Debugging Tips
 
 * Create an environment variable with the name DEBUG and value of 1 to enable debug output (using "docker -e").

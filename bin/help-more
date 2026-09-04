@@ -1,0 +1,68 @@
+#!/bin/bash
+
+echo $'\033[1mnmaguiar/openvpn - Performance tuning\033[m'
+echo $'\033[1m======================================\033[m'
+echo ""
+echo "These are extra options for the 'config' command (see: \"docker run --rm nmaguiar/openvpn help\") that can help squeeze more throughput out of the VPN, or fix throughput issues caused by MTU/fragmentation. None of these are needed for a typical setup - the defaults are fine unless you're chasing a specific throughput problem."
+echo ""
+
+echo $'\033[1m1. Socket buffers: -B (sndbuf) / -R (rcvbuf)\033[m'
+echo $'\033[1m---------------------------------------------\033[m'
+echo ""
+echo "When it helps: high-bandwidth or higher-latency links (e.g. WAN links, links above ~50-100Mbps) where throughput doesn't scale with faster networking hardware. OpenVPN's default socket buffer sizes can become the bottleneck on these links."
+echo ""
+echo "Sample values (bytes): 393216 (384KiB) is a reasonable starting point, 1048576 (1MiB) for very high bandwidth (1Gbps+) links. Set the same value on both -B and -R unless you have a specific reason not to."
+echo ""
+echo $'\033[2mdocker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn config -u udp://my.vpn.com:1194 -B 393216 -R 393216\033[m'
+echo ""
+echo "Note: the Docker host's kernel also caps socket buffers via the net.core.rmem_max / net.core.wmem_max sysctls. If those are lower than the value you set here, raise them on the host too, otherwise OpenVPN's requested buffer size gets silently capped."
+echo ""
+
+echo $'\033[1m2. Fast I/O: -F (fast-io)\033[m'
+echo $'\033[1m--------------------------\033[m'
+echo ""
+echo "When it helps: UDP-based VPNs (it does not work with -u tcp://...) under sustained traffic. It avoids an extra syscall per packet read/write, giving a small but 'free' CPU/latency improvement. Safe to enable on any UDP deployment."
+echo ""
+echo $'\033[2mdocker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn config -u udp://my.vpn.com:1194 -F\033[m'
+echo ""
+
+echo $'\033[1m3. MTU clamping: -M (mssfix)\033[m'
+echo $'\033[1m-----------------------------\033[m'
+echo ""
+echo "When it helps: connections that establish fine but stall or crawl on bulk transfers, typically because a client is behind a path with a smaller MTU than usual (mobile/cellular networks, PPPoE, VPN-over-VPN). mssfix clamps the TCP MSS seen inside the tunnel so packets don't need to be fragmented in the first place, which is usually a better fix than -f (fragment), which only handles fragmentation after the fact."
+echo ""
+echo "Sample values (bytes): 1400 is a safe starting point (just under the default 1500 MTU minus tunnel overhead). Drop to 1350 or even 1200 if problems persist over more constrained paths."
+echo ""
+echo $'\033[2mdocker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn config -u udp://my.vpn.com:1194 -M 1400\033[m'
+echo ""
+
+echo $'\033[1m4. Combining all of the above\033[m'
+echo $'\033[1m------------------------------\033[m'
+echo ""
+echo $'\033[2mdocker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn config -u udp://my.vpn.com:1194 -B 393216 -R 393216 -F -M 1400\033[m'
+echo ""
+
+echo $'\033[1m5. Changing these on an existing configuration\033[m'
+echo $'\033[1m------------------------------------------------\033[m'
+echo ""
+echo "The 'config'/'ovpn_genconfig' command only writes these settings when it (re)generates /etc/openvpn/openvpn.conf. If you already have a working setup and don't want to regenerate it, you can edit the directives directly instead. They map like this:"
+echo ""
+echo "  -B <bytes>  ->  sndbuf <bytes>"
+echo "  -R <bytes>  ->  rcvbuf <bytes>"
+echo "  -F          ->  fast-io"
+echo "  -M <bytes>  ->  mssfix <bytes>"
+echo ""
+echo "Edit the running container's config in place (add missing lines, or change the value if the directive is already there):"
+echo ""
+echo $'\033[2mdocker exec -it openvpn sed -i \'/^sndbuf /d;/^rcvbuf /d\' /etc/openvpn/openvpn.conf\033[m'
+echo $'\033[2mdocker exec -it openvpn sh -c \'echo "sndbuf 393216" >> /etc/openvpn/openvpn.conf; echo "rcvbuf 393216" >> /etc/openvpn/openvpn.conf\'\033[m'
+echo ""
+echo "Or, if the volume is a host directory (e.g. -v /etc/openvpn:/etc/openvpn), just edit /etc/openvpn/openvpn.conf on the host with any text editor and add/change the same directives."
+echo ""
+echo "These directives are only read at OpenVPN startup, so restart the container for the change to take effect:"
+echo ""
+echo $'\033[2mdocker restart openvpn\033[m'
+echo ""
+echo "sndbuf/rcvbuf are best matched on both ends of the tunnel, so if you change them on the server, also add the same 'sndbuf'/'rcvbuf' lines to already-issued client .ovpn files (or regenerate them with 'ovpn_getclient' after updating the server config)."
+echo ""
+echo "For more background, including the host-level sysctl tuning mentioned above, see docs/performance.md in the repository."
