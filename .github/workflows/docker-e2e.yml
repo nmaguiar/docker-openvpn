@@ -2,9 +2,9 @@ name: Docker E2E
 
 on:
   push:
-    branches: [master, performance]
+    branches: [master]
   pull_request:
-    branches: [master, performance]
+    branches: [master]
   schedule:
     - cron: '30 0 * * 6'
   workflow_dispatch:
