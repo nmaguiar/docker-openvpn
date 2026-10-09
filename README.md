@@ -12,6 +12,29 @@ There are three main tag types:
 | latest | The latest humanly tested build that can be considered stable. |
 | [yyyyMMdd] | A previous latest if there is ever a need to rollback to a previously stable build. |
 
+To publish a test image, open **Actions → Docker Image CI → Run workflow**, select
+the branch containing your changes (for example `performance`), and set
+**image_tag** to a tag such as `performance-test`. The workflow builds both
+`linux/amd64` and `linux/arm64` and publishes `nmaguiar/openvpn:performance-test`.
+The selected branch must contain the workflow with this input, and the changes
+must already be pushed to GitHub.
+
+You can also dispatch the selected branch directly with the GitHub CLI:
+
+```sh
+gh workflow run docker-image.yml --ref performance -f image_tag=performance-test
+```
+
+The input defaults to `build`; automatic runs also continue to use `build`.
+Custom-tag runs scan the published tag and attach its reports as an
+`image-scan-<tag>` workflow artifact, leaving the regular repository badges alone.
+Use a distinct test tag to avoid replacing an existing published image. For example:
+
+```sh
+docker pull nmaguiar/openvpn:performance-test
+docker run --rm nmaguiar/openvpn:performance-test help
+```
+
 Status of the latest build: 
 
 [![Docker Image CI](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/nmaguiar/docker-openvpn/actions/workflows/docker-image.yml)
@@ -145,6 +168,12 @@ If you prefer to use `docker-compose` please refer to the [documentation](docs/d
 ### Performance Tuning
 
 If you need more throughput or are seeing MTU/fragmentation related issues, see the [performance tuning documentation](docs/performance.md) (also available via `docker run --rm nmaguiar/openvpn help-more`).
+
+The opt-in `ovpn_genconfig -O dco` profile prepares subnet topology, AEAD-only
+ciphers, and clients without compression framing for kernel data-channel offload.
+It requires compatible host kernel support; startup diagnostics explain common
+fallback causes. The guide covers migration, native Linux host networking, and
+the throughput benchmark. Existing configurations retain legacy defaults.
 
 ## Debugging Tips
 

@@ -12,29 +12,49 @@ on:
   schedule:
     - cron: '30 0 * * 6'
   workflow_dispatch:
+    inputs:
+      image_tag:
+        description: 'Docker Hub tag to publish from the selected branch/ref'
+        required: true
+        default: build
+        type: string
 
 jobs:
 
   build:
 
     runs-on: ubuntu-latest
+    outputs:
+      image_tag: ${{ steps.image.outputs.tag }}
 
     steps:
+    - name: Select and validate image tag
+      id: image
+      env:
+        IMAGE_TAG: ${{ inputs.image_tag || 'build' }}
+        LC_ALL: C
+      shell: bash
+      run: |
+        if [[ ! "$IMAGE_TAG" =~ ^[a-zA-Z0-9_][a-zA-Z0-9_.-]{0,127}$ ]]; then
+          echo '::error::Invalid Docker tag. Use 1-128 letters, digits, underscores, dots or hyphens; start with a letter, digit or underscore.'
+          exit 1
+        fi
+        printf 'tag=%s\n' "$IMAGE_TAG" >> "$GITHUB_OUTPUT"
     - name: Set up QEMU
-      uses: docker/setup-qemu-action@v2
+      uses: docker/setup-qemu-action@v4
     - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
+      uses: docker/setup-buildx-action@v4
     - name: Login to DockerHub
-      uses: docker/login-action@v2
+      uses: docker/login-action@v4
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
-    - uses: docker/build-push-action@v3
+    - uses: docker/build-push-action@v7
       name: Build and push
       with:
         platforms: linux/amd64,linux/arm64
         push: true
-        tags: nmaguiar/openvpn:build
+        tags: nmaguiar/openvpn:${{ steps.image.outputs.tag }}
 
   Scan-Images:
     needs      : build
@@ -44,43 +64,57 @@ jobs:
       pull-requests: write
     name       : Scan images
     steps      :
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v6
       name: Checkoout
 
     - name: Cache OpenAF runtime
-      uses: actions/cache@v3
+      uses: actions/cache@v5
       with:
         key : oaf-t8
         path: /tmp/oaf
 
     - uses: openaf/ojob-action@v7
       name: Check latest
+      if: needs.build.outputs.image_tag == 'build'
       with:
         ojob: 'ojob.io/sec/genSecBadge'
         args: 'image=nmaguiar/openvpn:latest file=.github/sec-latest.svg reportFile=.github/sec-latest.yaml'
         dist: 't8'
 
     - name: Generate sec-latest.md
+      if: needs.build.outputs.image_tag == 'build'
       uses: openaf/ojob-action@v7
       with:
         ojob: 'ojob.io/util/toMDTree'
         args: 'inputFile=.github/sec-latest.yaml file=.github/sec-latest.md'
 
     - uses: openaf/ojob-action@v7
-      name: Check build
+      name: Check published image
       with:
         ojob: 'ojob.io/sec/genSecBadge'
-        args: 'image=nmaguiar/openvpn:build file=.github/sec-build.svg reportFile=.github/sec-build.yaml'
+        args: 'image=nmaguiar/openvpn:${{ needs.build.outputs.image_tag }} file=.github/sec-${{ needs.build.outputs.image_tag }}.svg reportFile=.github/sec-${{ needs.build.outputs.image_tag }}.yaml'
         dist: 't8'
 
-    - name: Generate sec-build.md
+    - name: Generate published image report
       uses: openaf/ojob-action@v7
       with:
         ojob: 'ojob.io/util/toMDTree'
-        args: 'inputFile=.github/sec-build.yaml file=.github/sec-build.md'
+        args: 'inputFile=.github/sec-${{ needs.build.outputs.image_tag }}.yaml file=.github/sec-${{ needs.build.outputs.image_tag }}.md'
+
+    - name: Upload custom image scan reports
+      if: needs.build.outputs.image_tag != 'build'
+      uses: actions/upload-artifact@v4
+      with:
+        name: image-scan-${{ needs.build.outputs.image_tag }}
+        include-hidden-files: true
+        path: |
+          .github/sec-${{ needs.build.outputs.image_tag }}.svg
+          .github/sec-${{ needs.build.outputs.image_tag }}.yaml
+          .github/sec-${{ needs.build.outputs.image_tag }}.md
 
     - uses: openaf/ojob-action@v7
       name: Update badges
+      if: needs.build.outputs.image_tag == 'build'
       env :
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:

@@ -9,7 +9,7 @@ echo ""
 echo $'\033[1m1. Socket buffers: -B (sndbuf) / -R (rcvbuf)\033[m'
 echo $'\033[1m---------------------------------------------\033[m'
 echo ""
-echo "When it helps: high-bandwidth or higher-latency links (e.g. WAN links, links above ~50-100Mbps) where throughput doesn't scale with faster networking hardware. OpenVPN's default socket buffer sizes can become the bottleneck on these links."
+echo "When it helps: high-bandwidth or higher-latency links (e.g. WAN links, links with measured UDP receive drops) where throughput doesn't scale with faster networking hardware. OpenVPN's default socket buffer sizes can become the bottleneck on these links."
 echo ""
 echo "Sample values (bytes): 393216 (384KiB) is a reasonable starting point, 1048576 (1MiB) for very high bandwidth (1Gbps+) links. Set the same value on both -B and -R unless you have a specific reason not to."
 echo ""
@@ -21,7 +21,7 @@ echo ""
 echo $'\033[1m2. Fast I/O: -F (fast-io)\033[m'
 echo $'\033[1m--------------------------\033[m'
 echo ""
-echo "When it helps: UDP-based VPNs (it does not work with -u tcp://...) under sustained traffic. It avoids an extra syscall per packet read/write, giving a small but 'free' CPU/latency improvement. Safe to enable on any UDP deployment."
+echo "When it helps: UDP-based VPNs (it does not work with -u tcp://...) under sustained traffic. It avoids an extra syscall per packet read/write, giving a small but 'free' CPU/latency improvement. Use for supported non-Windows clients without shaper; DCO bypasses this userspace path."
 echo ""
 echo $'\033[2mdocker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn config -u udp://my.vpn.com:1194 -F\033[m'
 echo ""
@@ -31,7 +31,7 @@ echo $'\033[1m-----------------------------\033[m'
 echo ""
 echo "When it helps: connections that establish fine but stall or crawl on bulk transfers, typically because a client is behind a path with a smaller MTU than usual (mobile/cellular networks, PPPoE, VPN-over-VPN). mssfix clamps the TCP MSS seen inside the tunnel so packets don't need to be fragmented in the first place, which is usually a better fix than -f (fragment), which only handles fragmentation after the fact."
 echo ""
-echo "Sample values (bytes): 1400 is a safe starting point (just under the default 1500 MTU minus tunnel overhead). Drop to 1350 or even 1200 if problems persist over more constrained paths."
+echo "Sample values (bytes): Measure path MTU first; 1400 is an experiment, not a universally safe setting. The size semantics depend on OpenVPN version. This affects inner TCP, not arbitrary UDP traffic."
 echo ""
 echo $'\033[2mdocker run -v /etc/openvpn:/etc/openvpn --rm --log-driver=none nmaguiar/openvpn config -u udp://my.vpn.com:1194 -M 1400\033[m'
 echo ""
@@ -66,3 +66,13 @@ echo ""
 echo "sndbuf/rcvbuf are best matched on both ends of the tunnel, so if you change them on the server, also add the same 'sndbuf'/'rcvbuf' lines to already-issued client .ovpn files (or regenerate them with 'ovpn_getclient' after updating the server config)."
 echo ""
 echo "For more background, including the host-level sysctl tuning mentioned above, see docs/performance.md in the repository."
+
+echo ""
+echo "6. Kernel data-channel offload: -O dco"
+echo "Use ovpn_genconfig -u udp://my.vpn.com:1194 -O dco for subnet topology, AEAD-only ciphers, and no compression framing."
+echo "This profile persists. -O legacy restores the legacy profile; switching resets the cipher list unless -C is also supplied."
+echo "DCO requires a compatible host module and OpenVPN build. OpenVPN 2.6 uses ovpn-dco; 2.7+ uses ovpn (upstream Linux 6.16+ or a backport)."
+echo "Startup preflight reports prerequisites; only the actual tunnel driver and OpenVPN logs confirm offload. Fallback remains allowed."
+echo "Back up existing configuration, review CCD/static addresses, and re-export clients before migrating. See docs/performance.md."
+echo ""
+bash "$(dirname "$0")/help-linux"

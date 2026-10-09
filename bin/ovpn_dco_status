@@ -1,0 +1,25 @@
+#!/bin/bash
+# Read-only preflight; never load host modules or claim that DCO is active.
+set -eu
+version=$(openvpn --version)
+printf '%s\n' "$version" | head -n 1
+echo "DCO preflight: kernel $(uname -r); activation is reported by OpenVPN below."
+if ! printf '%s\n' "$version" | grep -q '\[DCO\]'; then
+    echo "DCO unavailable in this OpenVPN build; using userspace packet processing."
+else
+    case "$version" in
+        'OpenVPN 2.6.'*) module=ovpn_dco_v2 ;;
+        *) module=ovpn ;;
+    esac
+    if [ -d "/sys/module/$module" ]; then
+        echo "DCO preflight: host module $module is visible (not proof of activation)."
+    else
+        echo "DCO preflight: host module $module is not visible; check host support if OpenVPN reports fallback."
+    fi
+fi
+if [ -r "${1:-}" ]; then
+    if grep -Eq '^[[:space:]]*(comp-lzo|compress|fragment|disable-dco)([[:space:]]|$)|^[[:space:]]*data-ciphers[[:space:]].*CBC|^[[:space:]]*push[[:space:]]+"comp' "$1"; then
+        echo "DCO preflight: configuration contains legacy/offload-incompatible options; see OpenVPN's fallback reason."
+    fi
+fi
+echo "DCO preflight does not inspect included files or command-line overrides."

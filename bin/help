@@ -73,3 +73,5 @@ For extra options that can help with VPN throughput (socket buffers, fast-io, ms
 
 [2mdocker run --rm --log-driver=none nmaguiar/openvpn help-more[m
 "
+
+bash "$(dirname "$0")/help-linux"

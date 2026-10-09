@@ -54,6 +54,9 @@ addArg "--config" "$OPENVPN/openvpn.conf"
 
 source "$OPENVPN/ovpn_env.sh"
 
+# Informational only: OpenVPN's own startup/peer logs determine actual DCO use.
+ovpn_dco_status "$OPENVPN/openvpn.conf"
+
 if [ "${OVPN_LOG_APPEND:-0}" == "1" ] || grep -Eq '^[[:space:]]*log-append[[:space:]]+/etc/openvpn/openvpn\.log([[:space:]]|$)' "$OPENVPN/openvpn.conf"; then
     echo "Log append enabled: OpenVPN logs will be written to /etc/openvpn/openvpn.log"
 fi

@@ -105,6 +105,7 @@ usage() {
     echo " -m    Set client MTU"
     echo " -M    Set mssfix in bytes, for performance tuning (avoids fragmentation-related retransmits)."
     echo " -N    Configure NAT to access external server network"
+    echo " -O    Performance profile: legacy (default) or dco (requires compatible host kernel and clients)."
     echo " -R    Set the socket receive buffer size in bytes (rcvbuf), for performance tuning on high-bandwidth links."
     echo " -t    Use TAP device (instead of TUN device)"
     echo " -T    Encrypt packets with the given cipher algorithm instead of the default one (tls-cipher)."
@@ -170,6 +171,7 @@ OVPN_MTU=''
 OVPN_NAT=0
 OVPN_PORT=''
 OVPN_PROTO=''
+OVPN_PROFILE=legacy
 OVPN_PUSH=()
 OVPN_RCVBUF=''
 OVPN_ROUTES=()
@@ -180,9 +182,11 @@ OVPN_TLS_CIPHER=''
 
 # Import existing configuration if present
 [ -r "$OVPN_ENV" ] && source "$OVPN_ENV"
+previous_profile=$OVPN_PROFILE
+cipher_explicit=0
 
 # Parse arguments
-while getopts ":a:e:E:C:T:r:s:du:bcp:n:k:DNm:f:tz2LB:FM:R:" opt; do
+while getopts ":a:e:E:C:T:r:s:du:bcp:n:k:DNm:f:tz2LB:FM:R:O:" opt; do
     case $opt in
         a)
             OVPN_AUTH="$OPTARG"
@@ -201,6 +205,10 @@ while getopts ":a:e:E:C:T:r:s:du:bcp:n:k:DNm:f:tz2LB:FM:R:" opt; do
             ;;
         C)
             OVPN_CIPHER="$OPTARG"
+            cipher_explicit=1
+            ;;
+        O)
+            OVPN_PROFILE="$OPTARG"
             ;;
         T)
             OVPN_TLS_CIPHER="$OPTARG"
@@ -293,6 +301,40 @@ while getopts ":a:e:E:C:T:r:s:du:bcp:n:k:DNm:f:tz2LB:FM:R:" opt; do
     esac
 done
 
+# Validate before replacing any persisted configuration. Profile selection is
+# independent of option order; an explicit -C always takes precedence.
+case "$OVPN_PROFILE" in
+    legacy|dco) ;;
+    *) echo "Invalid profile: $OVPN_PROFILE (use legacy or dco)" >&2; exit 1 ;;
+esac
+if [ "$previous_profile" != "$OVPN_PROFILE" ] && [ "$cipher_explicit" == 0 ]; then
+    if [ "$OVPN_PROFILE" == dco ]; then
+        OVPN_CIPHER='AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305'
+    else
+        OVPN_CIPHER='AES-256-GCM:CHACHA20-POLY1305:AES-256-CBC'
+    fi
+fi
+if [ "$OVPN_PROFILE" == dco ]; then
+    if [ "$OVPN_DEVICE" != tun ] || [ "$OVPN_COMP_LZO" != 0 ] || [ -n "$OVPN_FRAGMENT" ]; then
+        echo "DCO requires TUN without compression or fragment; remove incompatible saved settings or use a fresh volume." >&2
+        exit 1
+    fi
+    if [[ ! "$OVPN_CIPHER" =~ ^(AES-(128|192|256)-GCM|CHACHA20-POLY1305)(:(AES-(128|192|256)-GCM|CHACHA20-POLY1305))*$ ]]; then
+        echo "DCO requires an AEAD-only data-ciphers list (-C)." >&2
+        exit 1
+    fi
+    # Raw overrides could silently undo the profile, including through includes.
+    # Reject conflicting directives in server, client, and pushed extras.
+    for extra in "${OVPN_EXTRA_SERVER_CONFIG[@]}" "${OVPN_EXTRA_CLIENT_CONFIG[@]}" "${OVPN_PUSH[@]}"; do
+        if printf '%s\n' "$extra" | grep -Eq '^[[:space:]]*(--)?(comp-lzo|compress|allow-compression|fragment|disable-dco|topology|dev|dev-type|data-ciphers|data-ciphers-fallback|cipher|compat-mode|shaper|config|push|push-remove|push-reset)([[:space:]]|$)'; then
+            echo "DCO profile conflicts with an extra directive: $extra" >&2
+            exit 1
+        fi
+    done
+    echo "DCO profile selected: subnet topology, AEAD-only ciphers, no compression framing."
+    echo "Review existing CCD/static addresses and re-export client profiles when migrating."
+fi
+
 # Create ccd directory for static routes
 [ ! -d "${OPENVPN:-}/ccd" ] && mkdir -p ${OPENVPN:-}/ccd
 
@@ -378,8 +420,12 @@ fi
 [ -n "$OVPN_AUTH" ] && echo "auth $OVPN_AUTH" >> "$conf"
 
 [ -n "${OVPN_CLIENT_TO_CLIENT:-}" ] && echo "client-to-client" >> "$conf"
-[ "$OVPN_COMP_LZO" == "1" ] && echo "comp-lzo" >> "$conf"
-[ "$OVPN_COMP_LZO" == "0" ] && echo "comp-lzo no" >> "$conf"
+if [ "$OVPN_PROFILE" == dco ]; then
+    printf '%s\n' 'topology subnet' 'allow-compression no' >> "$conf"
+else
+    [ "$OVPN_COMP_LZO" == "1" ] && echo "comp-lzo" >> "$conf"
+    [ "$OVPN_COMP_LZO" == "0" ] && echo "comp-lzo no" >> "$conf"
+fi
 
 [ -n "${OVPN_FRAGMENT:-}" ] && echo "fragment $OVPN_FRAGMENT" >> "$conf"
 [ -n "${OVPN_MSSFIX:-}" ] && echo "mssfix $OVPN_MSSFIX" >> "$conf"
@@ -408,7 +454,7 @@ fi
   process_push_config "dhcp-option DNS $i"
 done
 
-if [ "$OVPN_COMP_LZO" == "0" ]; then
+if [ "$OVPN_COMP_LZO" == "0" ] && [ "$OVPN_PROFILE" != dco ]; then
     process_push_config "comp-lzo no"
 fi
 
