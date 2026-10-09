@@ -80,6 +80,18 @@ tls-auth ta.key 1
         echo "tun-mtu $OVPN_MTU"
     fi
 
+    if [ -n "$OVPN_SNDBUF" ]; then
+        echo "sndbuf $OVPN_SNDBUF"
+    fi
+
+    if [ -n "$OVPN_RCVBUF" ]; then
+        echo "rcvbuf $OVPN_RCVBUF"
+    fi
+
+    if [ "$OVPN_FAST_IO" == "1" ] && [[ "$OVPN_PROTO" == udp* ]]; then
+        echo "fast-io"
+    fi
+
     if [ -n "$OVPN_TLS_CIPHER" ]; then
         echo "tls-cipher $OVPN_TLS_CIPHER"
     fi
@@ -98,7 +110,9 @@ tls-auth ta.key 1
         echo "auth-nocache"
     fi
 
-    if [ "$OVPN_COMP_LZO" == "1" ]; then
+    if [ "${OVPN_PROFILE:-legacy}" == dco ]; then
+        echo "allow-compression no"
+    elif [ "$OVPN_COMP_LZO" == "1" ]; then
         echo "comp-lzo"
     fi
 

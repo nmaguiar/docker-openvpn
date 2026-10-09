@@ -1,0 +1,168 @@
+#!/bin/bash
+# Shared, literal help text. Printing help must never change the host.
+cat <<'HELP'
+7. Linux server setup for DCO and higher throughput
+-------------------------------------------------
+
+Run the following commands on the native Linux Docker HOST. They are instructions,
+not actions performed by this help command. Use an image built with the -O profile
+support; replace nmaguiar/openvpn with your own image tag when testing a local build.
+
+A. Check the host kernel and the container's OpenVPN version
+
+    uname -r
+    docker run --rm nmaguiar/openvpn openvpn --version
+
+The OpenVPN build must list [DCO]. Match its version to the HOST kernel module:
+  OpenVPN 2.6.x: ovpn-dco, loaded as ovpn_dco_v2.
+  OpenVPN 2.7+:  ovpn, available upstream from Linux 6.16 or via ovpn-backports.
+A recent kernel version alone does not guarantee your distribution enabled it.
+
+B. Install/check and load the matching module ON THE HOST
+
+For OpenVPN 2.7+:
+    modinfo ovpn
+    sudo modprobe ovpn
+
+For OpenVPN 2.6.x instead:
+    modinfo ovpn_dco_v2
+    sudo modprobe ovpn_dco_v2
+
+If missing, install your distribution's matching kernel/module package, or use
+the appropriate OpenVPN backport. Package names vary by distribution and release;
+building a module requires headers matching the running host kernel. Reboot if
+switching kernels. After successful loading, configure that module to load at boot
+using your distribution's modules-load mechanism (for example /etc/modules-load.d).
+Do not install a kernel module inside the container or add SYS_MODULE/--privileged.
+References:
+  https://github.com/OpenVPN/openvpn/blob/master/README.dco.md
+  https://github.com/OpenVPN/ovpn-dco
+  https://github.com/OpenVPN/ovpn-backports
+
+C. Prepare the configuration and clients
+
+For a fresh configuration:
+    docker run --rm -v /etc/openvpn:/etc/openvpn nmaguiar/openvpn ovpn_genconfig -u udp://my.vpn.com:1194 -O dco
+
+For a fresh deployment only, initialize PKI and add/export users as described in
+the main help. Existing servers and profiles should follow this migration:
+
+  1. Prepare the host module first. Record the current deployment/image and keep
+     original client profiles. In a reconnect window, stop and back up the server:
+       OVPN_DATA=/etc/openvpn
+       OVPN_IMAGE=nmaguiar/openvpn:performance-test
+       umask 077
+       docker stop openvpn
+       OVPN_BACKUP="openvpn-before-dco-$(date +%Y%m%d-%H%M%S).tgz"
+       docker run --rm -v "$OVPN_DATA:/etc/openvpn:ro" --entrypoint tar "$OVPN_IMAGE" -C /etc/openvpn -czf - . > "$OVPN_BACKUP"
+       tar -tzf "$OVPN_BACKUP" >/dev/null
+     Set OVPN_DATA to your actual bind mount or named volume and OVPN_IMAGE to your
+     tested image with -O support. Check backup success before proceeding. Keep
+     the archive private: it contains keys. Back up separately mounted CCDs too.
+
+  2. Review the volume's ovpn_env.sh, saved extras, and manual openvpn.conf edits.
+     Regeneration uses ovpn_env.sh. If needed, edit its saved OVPN_COMP_LZO=0 and
+     OVPN_FRAGMENT='' declarations; DCO requires OVPN_DEVICE=tun. TAP migrations
+     need a routed network redesign. Remove incompatible entries from the saved
+     OVPN_EXTRA_SERVER_CONFIG, OVPN_EXTRA_CLIENT_CONFIG, and OVPN_PUSH arrays
+     (compression, disable-dco, topology/cipher overrides); retain unrelated
+     settings and preserve compatible manual config edits through generator extras.
+
+  3. Opt in using the saved endpoint/protocol; do NOT initialize PKI again:
+       docker run --rm -v "$OVPN_DATA:/etc/openvpn" "$OVPN_IMAGE" ovpn_genconfig -O dco
+     This reuses existing keys/certificates and selects the AEAD-only cipher list.
+     Review ccd/* ifconfig-push entries: subnet topology uses a netmask as the
+     second argument instead of a net30 peer address. Check address-pool conflicts,
+     peer firewall policy, and site routes/iroutes. These are not auto-converted.
+
+  4. Re-export each EXISTING certificate name (do not recreate the user):
+       docker run --rm -v "$OVPN_DATA:/etc/openvpn" "$OVPN_IMAGE" ovpn_getclient my-user > my-user-dco.ovpn
+     Check export success, then distribute and import the replacement profile.
+     Preserve application-specific preferences and use a compatible modern client.
+     If editing a COPY of an existing .ovpn instead, replace its directives with:
+       dev tun
+       data-ciphers AES-256-GCM:AES-128-GCM:CHACHA20-POLY1305
+       allow-compression no
+     Match any custom server cipher list. Remove comp-lzo (even 'comp-lzo no'),
+     compress/stub modes, fragment, legacy cipher/data-ciphers-fallback overrides,
+     and conflicting compat-mode settings. Remove hard-coded net30/static tunnel
+     ifconfig settings so normal client/pull profiles accept the server's topology.
+     Keep the remote endpoint, client directive, certificate verification, auth,
+     and all inline CA/certificate/key/tls-auth/tls-crypt blocks unchanged. Review
+     includes/pull filters; this recipe is not for static point-to-point profiles.
+     Remove client disable-dco only to opt into local client offload. Server DCO
+     also works with compatible userspace clients; client offload is independent.
+
+  5. Start the existing container if it already uses the intended image, or recreate
+     it with the new image and the SAME volume/deployment settings. Restart alone
+     does not update an old container's image. Reconnect an updated client, check
+     section F, and verify routes, DNS, static addresses, and peer isolation.
+
+  6. Rollback: stop the server and restore the backup, original client profiles,
+     and old image/deployment. Prefer restoring into an empty replacement volume
+     so new files do not survive. -O legacy alone does not restore exact old
+     ciphers, manual edits, CCD addresses, or clients. Never delete your PKI volume.
+
+See docs/performance.md, "Updating an existing server and issued client profiles",
+for the full walkthrough. DCO can work with bridge networking; host networking
+is an optional, separate experiment.
+
+D. Start with UDP bridge networking
+
+    docker run -d --name openvpn --restart=always -p 1194:1194/udp --cap-add NET_ADMIN --device /dev/net/tun -v /etc/openvpn:/etc/openvpn nmaguiar/openvpn
+
+Ensure host forwarding and firewall policy permit Docker/VPN traffic, and allow
+UDP 1194 through any external firewall. Reuse an existing server name only after
+stopping/removing that container while retaining its configuration volume.
+
+E. Optional: compare native Linux host networking
+
+Check the egress interface and enable host IPv4 forwarding:
+    ip -4 route show default
+    sudo sysctl -w net.ipv4.ip_forward=1
+
+Persist net.ipv4.ip_forward=1 in a host /etc/sysctl.d/*.conf file if required across
+reboots. Configure host INPUT to allow UDP 1194 and FORWARD for the intended VPN
+subnet/destinations and return traffic. Preserve your firewall's existing policy;
+IPv6 forwarding/firewall configuration is separate if IPv6 is used.
+
+Replace ens3 below with the actual egress interface. Check that ovpn_env.sh does
+not override OVPN_NATDEVICE. After replacing the bridge container, run:
+    docker run -d --name openvpn --restart=always --network host --cap-add NET_ADMIN --device /dev/net/tun -e OVPN_NATDEVICE=ens3 -v /etc/openvpn:/etc/openvpn nmaguiar/openvpn ovpn_run --port 1194
+
+Do not use -p or Docker network --sysctl flags with host networking. A different
+advertised port needs the matching --port override. Avoid host port, tunnel name,
+and VPN subnet collisions. This image's NAT/routing rules now affect the HOST;
+removing the container does not remove its host iptables rules. Docker Desktop
+host networking is not equivalent to this native Linux TUN deployment.
+
+F. Verify actual offload after a client connects
+
+    docker exec openvpn ovpn_dco_status /etc/openvpn/openvpn.conf
+    docker logs --tail 100 openvpn
+
+If log-append is enabled, also inspect /etc/openvpn/openvpn.log in the volume.
+Check for OpenVPN's DCO activation/fallback messages. [DCO] in the version and a
+loaded module show prerequisites only, not active offload. With recent iproute2
+and nsenter installed ON THE HOST, inspect the actual container tunnel:
+    VPN_PID=$(docker inspect --format '{{.State.Pid}}' openvpn)
+    sudo nsenter -t "$VPN_PID" -n ip -d link show tun0
+
+The driver should be ovpn or ovpn-dco; a tun driver means userspace processing.
+Change tun0 if you configured another device. The profile permits fallback, so
+resolve the logged cause before recording a DCO-enabled benchmark result.
+
+G. Measure before tuning further
+
+Compare the same client/path/cipher with bridge/host networking and DCO off/on.
+Use ovpn_run --disable-dco for the off comparison while retaining the DCO profile.
+In a repository checkout, test/benchmark.sh records throughput in both directions,
+one/four streams, CPU samples, and counters; see test/README.md. Use a remote
+physical client for WAN/NIC measurements and measure a direct-path baseline.
+Watch host per-core CPU/softirq load (mpstat -P ALL 1), CPU quotas, and packet drops.
+Only raise socket buffers when measurements justify it; check host limits with:
+    sysctl net.core.rmem_max net.core.wmem_max
+
+For migration details and buffer/MTU tuning, see docs/performance.md or run:
+    docker run --rm nmaguiar/openvpn help-more
+HELP

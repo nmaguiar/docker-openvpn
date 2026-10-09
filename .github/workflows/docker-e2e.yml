@@ -20,6 +20,10 @@ jobs:
       fail-fast: false
       matrix:
         protocol: [udp, tcp]
+        profile: [legacy]
+        include:
+          - protocol: udp
+            profile: dco
     steps:
       - uses: actions/checkout@v6
         with:
@@ -29,13 +33,18 @@ jobs:
       - name: Test VPN connection and tunnel traffic
         env:
           PROTOCOL: ${{ matrix.protocol }}
+          PROFILE: ${{ matrix.profile }}
           E2E_LOG_DIR: ${{ runner.temp }}/openvpn-e2e-logs
-        run: bash test/e2e.sh openvpn:e2e "$PROTOCOL"
+        run: bash test/e2e.sh openvpn:e2e "$PROTOCOL" "$PROFILE"
+      - name: Test configuration profiles
+        run: docker run --rm -v "$PWD/test:/tests:ro" openvpn:e2e bash /tests/config-profiles.sh
+      - name: Reject mislabeled benchmark results
+        run: bash test/benchmark-labels.sh
       - name: Upload diagnostic logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: openvpn-e2e-${{ matrix.protocol }}
+          name: openvpn-e2e-${{ matrix.protocol }}-${{ matrix.profile }}
           path: ${{ runner.temp }}/openvpn-e2e-logs
           if-no-files-found: ignore
           retention-days: 7

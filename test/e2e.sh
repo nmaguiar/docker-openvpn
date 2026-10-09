@@ -1,8 +1,13 @@
 #!/usr/bin/env bash
 set -Eeuo pipefail
 
-image=${1:?Usage: bash test/e2e.sh IMAGE [udp|tcp]}
+image=${1:?Usage: bash test/e2e.sh IMAGE [udp|tcp] [legacy|dco]}
 protocol=${2:-udp}
+profile=${3:-legacy}
+case "$profile" in
+    legacy|dco) ;;
+    *) echo "Unsupported profile: $profile" >&2; exit 2 ;;
+esac
 case "$protocol" in
     udp|tcp) ;;
     *) echo "Unsupported protocol: $protocol" >&2; exit 2 ;;
@@ -62,7 +67,7 @@ docker volume create "$volume" >/dev/null
 
 echo "Generating $protocol server configuration and temporary test certificates"
 docker run --rm -v "$volume:/etc/openvpn" "$image" \
-    ovpn_genconfig -u "$protocol://vpn-server:1194" -s 192.168.255.0/24
+    ovpn_genconfig -u "$protocol://vpn-server:1194" -s 192.168.255.0/24 -O "$profile"
 docker run --rm -v "$volume:/etc/openvpn" \
     -e EASYRSA_BATCH=1 -e EASYRSA_REQ_CN="OpenVPN E2E CA" "$image" \
     ovpn_initpki nopass
@@ -88,4 +93,8 @@ wait_for_vpn "$client"
 
 echo "Checking bidirectional traffic to the server through tun0"
 docker exec "$client" ping -I tun0 -c 3 -W 5 192.168.255.1
+if [ -n "${E2E_BENCHMARK_OUTPUT:-}" ]; then
+    bash "$(dirname "$0")/benchmark.sh" "$server" "$client" bridge \
+        "${E2E_BENCHMARK_DCO:-off}" "$E2E_BENCHMARK_OUTPUT"
+fi
 echo "OpenVPN $protocol end-to-end test passed"
