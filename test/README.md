@@ -1,9 +1,21 @@
-# Docker end-to-end tests
+# Tests
+
+Philosophy is to not re-invent the wheel while allowing users to quickly test repository specific tests.
+
+Example invocation from top-level of repository:
+
+    docker build -t kylemanna/openvpn .
+    test/run.sh kylemanna/openvpn
+    # Be sure to pull kylemanna/openvpn:latest after you're done testing
+
+More details: https://github.com/docker-library/official-images/tree/master/test
+
+## Continuous Integration
 
 The `Docker E2E` GitHub Actions workflow builds the repository's `Dockerfile`
 and tests the resulting Linux amd64 image on pull requests and pushes to
-`master` and `performance`, weekly on the default branch, and on manual
-dispatch. Separate UDP and TCP jobs generate a temporary CA and client certificate, export a client profile, start the
+`master`, weekly, and on manual dispatch. Separate UDP and TCP jobs generate
+a temporary CA and client certificate, export a client profile, start the
 server with its default command, connect a separate client container, and
 ping the server's VPN address through `tun0`. Both VPN startup waits are
 bounded, and the workflow has a 20-minute job timeout.
@@ -94,3 +106,8 @@ end-to-end measurements use a second physical machine, run `iperf3 -s` bound to
 the server's VPN address and `iperf3 -c VPN_IP -t 20 -P 1` (then `-P 4`, and each
 with `-R`) from the remote client. Keep the direct-path baseline and host CPU
 measurements with the results. Do not infer throughput from the ping E2E test.
+The older `test/run.sh` suite remains available separately.
+
+## Maintenance
+
+Periodically these scripts may need to be synchronized with their upstream source. It would be useful to use them directly from upstream if that becomes possible, rather than copying them into this repository.
