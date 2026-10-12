@@ -34,7 +34,6 @@
                               ├ CweIDs                  
                               │                  ───────
                               │                  CWE-787
-                              │                  
                               ├ VendorSeverity   ─ ubuntu: 2 
                               ├ References                                                                     
                               │                  ──────────────────────────────────────────────────────────────
@@ -48,7 +47,6 @@
                               │                                                                                
                               │                  https://www.vulncheck.com/advisories/zlib-1.3.1.2-through-1.3.
                               │                  2-heap-buffer-overflow-via-gz-vacate                          
-                              │                  
                               ├ PublishedDate   : 2026-09-03T13:06:20.573Z 
                               ╰ LastModifiedDate: 2026-09-09T20:41:07.123Z 
 ```
