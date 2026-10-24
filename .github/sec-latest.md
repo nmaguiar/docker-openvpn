@@ -80,6 +80,8 @@
                               │                                                                                
                               │                  https://github.com/madler/zlib/blob/v1.3.2/gzwrite.c#L393     
                               │                                                                                
+                              │                  https://ubuntu.com/security/notices/USN-8954-1                
+                              │                                                                                
                               │                  https://www.cve.org/CVERecord?id=CVE-2026-85091               
                               │                                                                                
                               │                  https://www.vulncheck.com/advisories/zlib-1.3.1.2-through-1.3.
