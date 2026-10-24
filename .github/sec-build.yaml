@@ -19,7 +19,7 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:fdb1cccd3cf50db91c55f06b605d787ffddcfba4d864b14674b9d294fbed3e83
+    Fingerprint: sha256:574a62e6e5387de5992022ab04ee5d46bf7473304053be8ff06c85c05e975846
     Severity: UNKNOWN
   - VulnerabilityID: CVE-2026-107891
     PkgID: musl-utils@1.2.6-r3
@@ -37,5 +37,5 @@
       ID: alpine
       Name: Alpine Secdb
       URL: https://secdb.alpinelinux.org/
-    Fingerprint: sha256:08c608208c25a809d5c38a0e2a1ad075e47aa80b001c5dd9034a5374ce1ba168
+    Fingerprint: sha256:6ae9081d23595892a4c08cf9442a9aaa439d9d3e28ff906676660281c15f2564
     Severity: UNKNOWN
