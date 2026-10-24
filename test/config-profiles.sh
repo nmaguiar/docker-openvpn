@@ -55,6 +55,9 @@ ovpn_getclient test separated
 grep -Fxq 'allow-compression no' "$OPENVPN/clients/test/test.ovpn"
 grep -Fxq 'data-ciphers AES-128-GCM' "$OPENVPN/clients/test/test.ovpn"
 absent grep -q comp-lzo "$OPENVPN/clients/test/test.ovpn"
+grep -Fxq 'block-ipv6' "$OPENVPN/clients/test/test.ovpn"
+grep -Fxq 'disable-dco' "$OPENVPN/clients/test/test.ovpn"
+absent has 'disable-dco'
 generate -O legacy
 has 'comp-lzo no'
 has 'data-ciphers AES-256-GCM:CHACHA20-POLY1305:AES-256-CBC'
@@ -65,7 +68,13 @@ ovpn_getclient test separated
 absent grep -q allow-compression "$OPENVPN/clients/test/test.ovpn"
 generate
 has 'comp-lzo no'
-generate -z
+generate -O dco -I route
+ovpn_getclient test separated
+absent grep -Eq '^(block-ipv6|disable-dco)$' "$OPENVPN/clients/test/test.ovpn"
+generate -I block -d
+ovpn_getclient test separated
+absent grep -Eq '^(block-ipv6|disable-dco)$' "$OPENVPN/clients/test/test.ovpn"
+generate -O legacy -z
 has 'comp-lzo'
 reject -O dco
 echo 'Configuration profile regressions passed'

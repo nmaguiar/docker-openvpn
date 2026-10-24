@@ -70,21 +70,23 @@ reject ovpn_getclient alice combined-save
 chown "$(id -u)" "$dir"
 
 grep -Fxq 'block-ipv6' "$work/stdout.ovpn"
+grep -Fxq 'disable-dco' "$work/stdout.ovpn"
 grep -Fxq 'redirect-gateway def1 ipv6' "$work/stdout.ovpn"
 grep -Fxq 'ifconfig-ipv6 fd15:53b6:dead::2/64 fd15:53b6:dead::1' "$work/stdout.ovpn"
 generate -I route
 ovpn_getclient alice combined > "$work/route.ovpn"
-reject grep -q 'block-ipv6\|^ifconfig-ipv6 ' "$work/route.ovpn"
+reject grep -q 'block-ipv6\|^disable-dco$\|^ifconfig-ipv6 ' "$work/route.ovpn"
 grep -Fxq 'redirect-gateway def1 ipv6' "$work/route.ovpn"
 generate
 grep -q 'OVPN_IPV6=route' "$OPENVPN/ovpn_env.sh"
 generate -I block -d
 ovpn_getclient alice combined > "$work/split.ovpn"
-reject grep -Eq 'block-ipv6|^ifconfig-ipv6 |^redirect-gateway ' "$work/split.ovpn"
+reject grep -Eq 'block-ipv6|^disable-dco$|^ifconfig-ipv6 |^redirect-gateway ' "$work/split.ovpn"
 # Older persisted environments get the secure default on their next export.
 sed -i '/^declare -x OVPN_IPV6=/d;s/OVPN_DEFROUTE=0/OVPN_DEFROUTE=1/' "$OPENVPN/ovpn_env.sh"
 ovpn_getclient alice combined > "$work/old-env.ovpn"
 grep -Fxq 'block-ipv6' "$work/old-env.ovpn"
+grep -Fxq 'disable-dco' "$work/old-env.ovpn"
 
 env -i PATH="$PATH" X509_0_CN=alice username=alice ovpn_otp_verify
 env -i PATH="$PATH" 'X509_0_CN=a*' 'username=a*' ovpn_otp_verify

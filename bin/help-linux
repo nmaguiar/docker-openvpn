@@ -90,7 +90,8 @@ the main help. Existing servers and profiles should follow this migration:
      Keep the remote endpoint, client directive, certificate verification, auth,
      and all inline CA/certificate/key/tls-auth/tls-crypt blocks unchanged. Review
      includes/pull filters; this recipe is not for static point-to-point profiles.
-     Remove client disable-dco only to opt into local client offload. Server DCO
+     Keep client disable-dco when block-ipv6 is present: rejection needs userspace.
+     Otherwise remove it only to opt into local client offload. Server DCO
      also works with compatible userspace clients; client offload is independent.
 
   5. Start the existing container if it already uses the intended image, or recreate

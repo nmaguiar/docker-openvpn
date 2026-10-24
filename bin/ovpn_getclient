@@ -88,6 +88,9 @@ tls-auth ta.key 1
             # does not stop native IPv6 traffic bypassing an IPv4-only tunnel.
             echo "ifconfig-ipv6 fd15:53b6:dead::2/64 fd15:53b6:dead::1"
             echo "block-ipv6"
+            # DCO bypasses the userspace handler that sends IPv6 rejections.
+            # Client-side fallback does not disable server-side offload.
+            echo "disable-dco"
         fi
     fi
 

@@ -85,8 +85,8 @@ The profile selects `topology subnet`,
 Exported clients also receive `allow-compression no`. Use modern clients that
 support these directives. Client-side DCO is independent of server-side DCO.
 Full-tunnel exports also block IPv6 by default using OpenVPN's userspace
-`block-ipv6` handling, which can disable client-side offload. Server offload is
-independent. If your server has working IPv6 tunnel routing, select `-I route`
+`block-ipv6` handling and explicitly emit `disable-dco` on the client. Server
+offload is independent. If your server has working IPv6 tunnel routing, select `-I route`
 to carry IPv6 instead; do not remove blocking merely to enable client DCO.
 
 The profile persists in `ovpn_env.sh`. `-O legacy` explicitly returns to the
@@ -203,8 +203,9 @@ or recreate users as part of this migration**.
    addressed point-to-point configurations.
 
    Remove client-side `disable-dco` only if you also want local client offload and
-   that client supports it. A compatible client can continue using userspace
-   processing while the server uses DCO; the client does not need the Linux
+   that client supports it. Keep it when the profile uses `block-ipv6`, which
+   requires userspace packet handling. A compatible client can continue using
+   userspace processing while the server uses DCO; the client does not need the Linux
    server's kernel module.
 
 5. If the existing container already uses the intended image, start it again

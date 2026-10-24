@@ -4,6 +4,8 @@ This is a work in progress, more polish to follow.
 
 Full-tunnel exports now default to `-I block`: they configure a local IPv6 tunnel
 address, redirect Internet IPv6 into OpenVPN, and reject it with `block-ipv6`.
+They also emit `disable-dco` so the client uses the userspace IPv6 rejection
+handler. Server-side DCO remains available.
 This prevents native IPv6 from bypassing an IPv4-only VPN. Clients must support
 these directives; do not remove or ignore them to make an unsupported client
 connect. This is a connected-tunnel policy, not a kill switch for disconnects.
