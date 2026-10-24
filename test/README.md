@@ -27,12 +27,21 @@ Server and client logs are uploaded for diagnosis; private keys and client
 profiles are excluded. Containers, volumes, networks, and temporary profiles
 are removed when the script exits.
 
+The test network provides native IPv6. Each full-tunnel client must route an
+IPv6 probe through `tun0` and receive an ICMPv6 rejection, while IPv4 VPN traffic
+still succeeds. An additional UDP/legacy/OTP job verifies real PAM/TOTP
+authentication: a certificate paired with another account's valid OTP is
+rejected by the identity hook, and the matching account connects. The OTP test
+uses public dummy seeds in a disposable volume and requires Python 3 on the
+test host to compute the codes.
+
 To run the same test locally with a Linux Docker daemon and `/dev/net/tun`:
 
 ```sh
 docker build -t openvpn:e2e .
 bash test/e2e.sh openvpn:e2e udp
 bash test/e2e.sh openvpn:e2e tcp
+bash test/e2e.sh openvpn:e2e udp legacy otp
 ```
 
 Logs default to `e2e-logs/<unique-test-id>/`; set `E2E_LOG_DIR` to override the
@@ -48,7 +57,13 @@ configuration:
 docker run --rm -v "$PWD/test:/tests:ro" openvpn:e2e bash /tests/config-profiles.sh
 bash test/e2e.sh openvpn:e2e udp dco
 bash test/benchmark-labels.sh
+docker run --rm --network none --log-driver=none -v "$PWD/test:/tests:ro" openvpn:e2e bash /tests/security.sh
 ```
+
+`security.sh` checks fresh/existing export permissions under umask 022,
+symlink/hard-link destinations, combined/separated/batch exports, tracing
+suppression, IPv6 defaults and opt-ins, and OTP identity checks including the
+daemon user and configuration overrides rejected before replacing saved files.
 
 ## Throughput benchmark
 

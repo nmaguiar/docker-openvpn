@@ -1,0 +1,8 @@
+#!/bin/sh
+# Run after PAM authentication, before admitting the client. Use the verified
+# certificate attribute, not common_name (username-as-common-name can replace it).
+set -eu
+if [ -z "${X509_0_CN:-}" ] || [ -z "${username:-}" ] || [ "$X509_0_CN" != "$username" ]; then
+    echo "OTP username must match the verified client certificate CN" >&2
+    exit 1
+fi

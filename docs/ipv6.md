@@ -2,6 +2,21 @@
 
 This is a work in progress, more polish to follow.
 
+Full-tunnel exports now default to `-I block`: they configure a local IPv6 tunnel
+address, redirect Internet IPv6 into OpenVPN, and reject it with `block-ipv6`.
+This prevents native IPv6 from bypassing an IPv4-only VPN. Clients must support
+these directives; do not remove or ignore them to make an unsupported client
+connect. This is a connected-tunnel policy, not a kill switch for disconnects.
+
+For a working dual-stack tunnel, explicitly select `ovpn_genconfig -I route`
+and provide the server IPv6 addressing, routes and firewall policy described
+below. Re-export existing client profiles after changing the policy. `udp6` and
+`tcp6` select server transport and do not opt clients into IPv6 payload routing.
+Split-tunnel (`-d`) exports do not install IPv6 blocking or default routes.
+The blocking recipe follows the [OpenVPN manual](https://build.openvpn.net/man/openvpn-2.6/openvpn.8.html).
+`-I route` emits IPv6 default redirection without the dummy blocking address;
+it requires the server to supply actual IPv6 tunnel addresses.
+
 ## Tunnel IPv6 Address To OpenVPN Clients
 
 This feature is advanced and recommended only for those who already have a functioning IPv4 tunnel and know how IPv6 works.
@@ -77,6 +92,10 @@ Verify logs if needed:
     docker logs ovpn-test0
 
 ### Step 4 — Modify Client Config for IPv6 Default Route
+
+Regenerate with `ovpn_genconfig -I route` and re-export the client first, so it
+does not retain the default blocking address and `block-ipv6` directive. Ensure
+the server supplies actual IPv6 tunnel addresses before adding the route.
 
 Append the default route for the public Internet:
 

@@ -84,6 +84,10 @@ The profile selects `topology subnet`,
 `allow-compression no`. It omits both server and pushed `comp-lzo no` framing.
 Exported clients also receive `allow-compression no`. Use modern clients that
 support these directives. Client-side DCO is independent of server-side DCO.
+Full-tunnel exports also block IPv6 by default using OpenVPN's userspace
+`block-ipv6` handling, which can disable client-side offload. Server offload is
+independent. If your server has working IPv6 tunnel routing, select `-I route`
+to carry IPv6 instead; do not remove blocking merely to enable client DCO.
 
 The profile persists in `ovpn_env.sh`. `-O legacy` explicitly returns to the
 previous generator behavior. Switching profiles resets the cipher list to that
@@ -123,8 +127,8 @@ or recreate users as part of this migration**.
    umask 077
    docker stop openvpn
    OVPN_BACKUP="openvpn-before-dco-$(date +%Y%m%d-%H%M%S).tgz"
-   docker run --rm -v "$OVPN_DATA:/etc/openvpn:ro" \
-     --entrypoint tar "$OVPN_IMAGE" -C /etc/openvpn -czf - . > "$OVPN_BACKUP"
+   (set -C; docker run --log-driver=none --rm -v "$OVPN_DATA:/etc/openvpn:ro" \
+     --entrypoint tar "$OVPN_IMAGE" -C /etc/openvpn -czf - . > "$OVPN_BACKUP")
    tar -tzf "$OVPN_BACKUP" >/dev/null
    ```
 
@@ -165,8 +169,9 @@ or recreate users as part of this migration**.
 4. Export a replacement profile for each **existing certificate name**:
 
    ```sh
-   docker run --rm -v "$OVPN_DATA:/etc/openvpn" "$OVPN_IMAGE" \
-     ovpn_getclient my-user > my-user-dco.ovpn
+   (umask 077; set -C
+    docker run --log-driver=none --rm -v "$OVPN_DATA:/etc/openvpn" "$OVPN_IMAGE" \
+      ovpn_getclient my-user > my-user-dco.ovpn)
    ```
 
    Check export success and the generated file before distributing it. Replace

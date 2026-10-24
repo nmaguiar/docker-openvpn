@@ -43,7 +43,7 @@ Start OpenVPN with:
 To add a new user:
 
 [2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm -it nmaguiar/openvpn add my-user[m
-[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn get my-user > my-user.ovpn[m
+[2m(umask 077; set -C; docker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn get my-user > my-user.ovpn)[m
 
 To list users (in CSV):
 

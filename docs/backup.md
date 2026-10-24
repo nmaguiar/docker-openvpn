@@ -11,7 +11,7 @@ I'd recommend encrypting the archive with something strong (e.g. gpg or openssl 
 
 ## Backup to Archive
 
-    docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn tar -cvf - -C /etc openvpn | xz > openvpn-backup.tar.xz
+    (umask 077; set -C; docker run --log-driver=none -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn tar -cvf - -C /etc openvpn | xz > openvpn-backup.tar.xz)
 
 ## Restore to New Data Volume
 

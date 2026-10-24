@@ -11,6 +11,19 @@ and use this image to generate user configuration.
 
 In order to enable two factor authentication the following steps are required.
 
+The OTP username must exactly match the client certificate's CN. The generated
+server uses `ovpn_otp_verify` as a client-connect hook to compare the submitted
+username with the verified certificate attribute `X509_0_CN`; missing or mixed
+identities are rejected even with `username-as-common-name`. The hook runs as
+the daemon user and does not read private keys, OTP seeds, or passwords.
+
+Existing servers must regenerate with `ovpn_genconfig -2` and restart using an
+image containing the hook. Review manual config edits before regeneration.
+Custom `client-connect`, `script-security`, configuration includes and client
+certificate verification overrides conflict with the managed OTP check and are
+rejected before saved configuration is replaced. Such custom integrations need
+an explicitly reviewed composition that preserves identity checking.
+
 * Choose a more secure [cipher](https://community.openvpn.net/openvpn/wiki/SWEET32) to use because since [OpenVPN 2.3.13](https://community.openvpn.net/openvpn/wiki/ChangesInOpenvpn23#OpenVPN2.3.13) the default openvpn cipher BF-CBC will cause a renegotiated connection every 64 MB of data
 
 * Generate server configuration with `-2` and `-C $CIPHER` options
@@ -23,7 +36,7 @@ In order to enable two factor authentication the following steps are required.
 
 * Generate authentication configuration for your client. -t is needed to show QR code, -i is optional for interactive usage
 
-        docker run -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn ovpn_otp_user <user>
+        docker run --log-driver=none -v $OVPN_DATA:/etc/openvpn --rm -it kylemanna/openvpn ovpn_otp_user <user>
 
 The last step will generate OTP configuration for the provided user with the following options
 
@@ -52,7 +65,7 @@ that relies on the awesome [Google Authenticator PAM module](https://github.com/
 In this configuration the `auth` part of PAM flow is managed by OTP codes and the `account` part is not enforced
  because you're likely dealing with virtual users and you do not want to create a system account for every VPN user.
 
-`ovpn_otp_user` script will store OTP credentials under `/etc/openvpn/otp/<user>.google_authentication`. In this
+`ovpn_otp_user` script will store OTP credentials under `/etc/openvpn/otp/<user>.google_authenticator`. In this
  way when you take a backup OTP users are included as well.
 
 Finally it will enable the openvpn plugin `openvpn-plugin-auth-pam.so` in server configuration and append the

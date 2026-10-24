@@ -42,7 +42,7 @@ Because you are running within Docker, remember that any command that generates 
 
 A simple way to avoid having Docker log output for a given command is to run with `--log-driver=none`, e.g
 
-    docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm kylemanna/openvpn ovpn_getclient USER > USER.ovpn
+    (umask 077; set -C; docker run -v $OVPN_DATA:/etc/openvpn --log-driver=none --rm kylemanna/openvpn ovpn_getclient USER > USER.ovpn)
 
 ## Additional Resources
 

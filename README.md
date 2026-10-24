@@ -144,7 +144,11 @@ a corresponding [Digital Ocean Community Tutorial](http://bit.ly/1AGUZkq).
 
 * Retrieve the client configuration with embedded certificates
 
-      docker run -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient CLIENTNAME > CLIENTNAME.ovpn
+      (umask 077; set -C; docker run --log-driver=none -v $OVPN_DATA:/etc/openvpn --rm kylemanna/openvpn ovpn_getclient CLIENTNAME > CLIENTNAME.ovpn)
+
+  Run exports in a private directory. The subshell refuses an existing output
+  file or symlink; choose a new filename for re-exports, or use the protected
+  saved-export modes in [client management](docs/clients.md).
 
 ## Next Steps
 
@@ -234,8 +238,13 @@ The topology used is `net30`, because it works on the widest range of OS.
 
 The UDP server uses`192.168.255.0/24` for dynamic clients by default.
 
-The client profile specifies `redirect-gateway def1`, meaning that after
-establishing the VPN connection, all traffic will go through the VPN.
+Full-tunnel client profiles redirect IPv4 through the VPN and block Internet
+IPv6 traffic by routing it into OpenVPN for rejection. This requires a client
+supporting `ifconfig-ipv6`, `redirect-gateway ipv6`, and `block-ipv6`; unsupported
+clients must fail configuration rather than ignore these directives. To carry
+IPv6 through a configured IPv6 tunnel instead, generate with `ovpn_genconfig -I route`
+and follow [the IPv6 guide](docs/ipv6.md). `-d` retains split-tunnel behavior.
+Existing client profiles must be re-exported to receive this policy.
 This might cause problems if you use local DNS recursors which are not
 directly reachable, since you will try to reach them through the VPN
 and they might not answer to you. If that happens, use public DNS

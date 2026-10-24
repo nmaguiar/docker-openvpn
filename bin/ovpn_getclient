@@ -4,11 +4,11 @@
 # Get an OpenVPN client configuration file
 #
 
-if [ "$DEBUG" == "1" ]; then
-    set -x
-fi
+# Never trace commands that expand private keys into the exported profile.
+set +x
 
 set -e
+umask 077
 
 if [ -z "$OPENVPN" ]; then
     export OPENVPN="$PWD"
@@ -23,6 +23,15 @@ fi
 
 cn="$1"
 parm="$2"
+
+case "${OVPN_IPV6:-block}" in
+    block|route) ;;
+    *) echo "Invalid saved IPv6 policy" >&2; exit 1 ;;
+esac
+
+case "$cn" in
+    ''|.|..|*/*) echo "Invalid client name" >&2; exit 1 ;;
+esac
 
 if [ ! -f "$EASYRSA_PKI/private/${cn}.key" ]; then
     echo "Unable to find \"${cn}\", please try again or generate the key first" >&2
@@ -50,17 +59,17 @@ remote $OVPN_CN $OVPN_PORT $OVPN_PROTO"
     if [ "$mode" == "combined" ]; then
         echo "
 <key>
-$(cat $EASYRSA_PKI/private/${cn}.key)
+$(cat "$EASYRSA_PKI/private/${cn}.key")
 </key>
 <cert>
-$(openssl x509 -in $EASYRSA_PKI/issued/${cn}.crt)
+$(openssl x509 -in "$EASYRSA_PKI/issued/${cn}.crt")
 </cert>
 <ca>
-$(cat $EASYRSA_PKI/ca.crt)
+$(cat "$EASYRSA_PKI/ca.crt")
 </ca>
 key-direction 1
 <tls-auth>
-$(cat $EASYRSA_PKI/ta.key)
+$(cat "$EASYRSA_PKI/ta.key")
 </tls-auth>
 "
     elif [ "$mode" == "separated" ]; then
@@ -73,7 +82,13 @@ tls-auth ta.key 1
     fi
 
     if [ "$OVPN_DEFROUTE" != "0" ];then
-        echo "redirect-gateway def1"
+        echo "redirect-gateway def1 ipv6"
+        if [ "${OVPN_IPV6:-block}" == block ]; then
+            # Route IPv6 into OpenVPN before rejecting it; block-ipv6 alone
+            # does not stop native IPv6 traffic bypassing an IPv4-only tunnel.
+            echo "ifconfig-ipv6 fd15:53b6:dead::2/64 fd15:53b6:dead::1"
+            echo "block-ipv6"
+        fi
     fi
 
     if [ -n "$OVPN_MTU" ]; then
@@ -122,21 +137,53 @@ tls-auth ta.key 1
 }
 
 dir="$OPENVPN/clients/$cn"
+tmp_export=''
+trap 'rm -f -- "${tmp_export:-}"' EXIT
+
+prepare_export_dir() {
+    local path
+    for path in "$OPENVPN/clients" "$dir"; do
+        if [ -L "$path" ]; then
+            echo "Refusing symlink export directory: $path" >&2; exit 1
+        fi
+        mkdir -p "$path"
+        if [ ! -O "$path" ]; then
+            echo "Export directory must be owned by the exporting user: $path" >&2; exit 1
+        fi
+        chmod 700 "$path"
+    done
+}
+
+# Replace existing files atomically instead of following symlinks or changing
+# the modes of hard-linked keys. The parent directory is private and owned.
+save_export() {
+    local target="$1"
+    shift
+    if [ -L "$target" ] || { [ -e "$target" ] && [ ! -f "$target" ]; }; then
+        echo "Refusing non-regular export target: $target" >&2; exit 1
+    fi
+    tmp_export=$(mktemp "$dir/.export.XXXXXX")
+    "$@" > "$tmp_export"
+    chmod 600 "$tmp_export"
+    mv -f "$tmp_export" "$target"
+    tmp_export=''
+}
+
 case "$parm" in
     "separated")
-        mkdir -p "$dir"
-        get_client_config "$parm" > "$dir/${cn}.ovpn"
-        cp "$EASYRSA_PKI/private/${cn}.key" "$dir/${cn}.key"
-        cp "$EASYRSA_PKI/ca.crt" "$dir/ca.crt"
-        cp "$EASYRSA_PKI/issued/${cn}.crt" "$dir/${cn}.crt"
-        cp "$EASYRSA_PKI/ta.key" "$dir/ta.key"
+        prepare_export_dir
+        save_export "$dir/${cn}.ovpn" get_client_config "$parm"
+        save_export "$dir/${cn}.key" cat "$EASYRSA_PKI/private/${cn}.key"
+        save_export "$dir/ca.crt" cat "$EASYRSA_PKI/ca.crt"
+        save_export "$dir/${cn}.crt" cat "$EASYRSA_PKI/issued/${cn}.crt"
+        save_export "$dir/ta.key" cat "$EASYRSA_PKI/ta.key"
         ;;
     "" | "combined")
         get_client_config "combined"
         ;;
     "combined-save")
-        mkdir -p "$dir"
-        get_client_config "combined" > "$dir/${cn}-combined.ovpn"
+        prepare_export_dir
+        save_export "$dir/${cn}-combined.ovpn" get_client_config combined
         ;;
     *)
         echo "This script can produce the client configuration in two formats:" >&2

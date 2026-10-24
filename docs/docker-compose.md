@@ -15,6 +15,13 @@ services:
     restart: always
     volumes:
      - ./openvpn-data/conf:/etc/openvpn
+  openvpn-export:
+    image: kylemanna/openvpn
+    command: ["true"]
+    logging:
+      driver: "none"
+    volumes:
+     - ./openvpn-data/conf:/etc/openvpn
 ```
 
 
@@ -39,6 +46,10 @@ docker-compose up -d openvpn
 
 * You can access the container logs with
 
+The separate `openvpn-export` helper disables Docker logging for credential
+tasks, while the main server retains its normal logs. Use this helper for
+private-key exports and OTP enrollment output.
+
 ```bash
 docker-compose logs -f
 ```
@@ -56,7 +67,8 @@ docker-compose run --rm openvpn easyrsa build-client-full $CLIENTNAME nopass
 * Retrieve the client configuration with embedded certificates
 
 ```bash
-docker-compose run --rm openvpn ovpn_getclient $CLIENTNAME > $CLIENTNAME.ovpn
+(umask 077; set -C
+ docker-compose run --rm openvpn-export ovpn_getclient "$CLIENTNAME" > "$CLIENTNAME.ovpn")
 ```
 
 * Revoke a client certificate

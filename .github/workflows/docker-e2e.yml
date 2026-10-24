@@ -21,9 +21,14 @@ jobs:
       matrix:
         protocol: [udp, tcp]
         profile: [legacy]
+        auth: [certificate]
         include:
           - protocol: udp
             profile: dco
+            auth: certificate
+          - protocol: udp
+            profile: legacy
+            auth: otp
     steps:
       - uses: actions/checkout@v6
         with:
@@ -34,17 +39,20 @@ jobs:
         env:
           PROTOCOL: ${{ matrix.protocol }}
           PROFILE: ${{ matrix.profile }}
+          AUTH: ${{ matrix.auth }}
           E2E_LOG_DIR: ${{ runner.temp }}/openvpn-e2e-logs
-        run: bash test/e2e.sh openvpn:e2e "$PROTOCOL" "$PROFILE"
+        run: bash test/e2e.sh openvpn:e2e "$PROTOCOL" "$PROFILE" "$AUTH"
       - name: Test configuration profiles
         run: docker run --rm -v "$PWD/test:/tests:ro" openvpn:e2e bash /tests/config-profiles.sh
+      - name: Test security boundaries
+        run: docker run --rm --network none --log-driver=none -v "$PWD/test:/tests:ro" openvpn:e2e bash /tests/security.sh
       - name: Reject mislabeled benchmark results
         run: bash test/benchmark-labels.sh
       - name: Upload diagnostic logs
         if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: openvpn-e2e-${{ matrix.protocol }}-${{ matrix.profile }}
+          name: openvpn-e2e-${{ matrix.protocol }}-${{ matrix.profile }}-${{ matrix.auth }}
           path: ${{ runner.temp }}/openvpn-e2e-logs
           if-no-files-found: ignore
           retention-days: 7

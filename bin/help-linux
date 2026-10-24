@@ -54,7 +54,7 @@ the main help. Existing servers and profiles should follow this migration:
        umask 077
        docker stop openvpn
        OVPN_BACKUP="openvpn-before-dco-$(date +%Y%m%d-%H%M%S).tgz"
-       docker run --rm -v "$OVPN_DATA:/etc/openvpn:ro" --entrypoint tar "$OVPN_IMAGE" -C /etc/openvpn -czf - . > "$OVPN_BACKUP"
+       (umask 077; set -C; docker run --log-driver=none --rm -v "$OVPN_DATA:/etc/openvpn:ro" --entrypoint tar "$OVPN_IMAGE" -C /etc/openvpn -czf - . > "$OVPN_BACKUP")
        tar -tzf "$OVPN_BACKUP" >/dev/null
      Set OVPN_DATA to your actual bind mount or named volume and OVPN_IMAGE to your
      tested image with -O support. Check backup success before proceeding. Keep
@@ -76,7 +76,7 @@ the main help. Existing servers and profiles should follow this migration:
      peer firewall policy, and site routes/iroutes. These are not auto-converted.
 
   4. Re-export each EXISTING certificate name (do not recreate the user):
-       docker run --rm -v "$OVPN_DATA:/etc/openvpn" "$OVPN_IMAGE" ovpn_getclient my-user > my-user-dco.ovpn
+       (umask 077; set -C; docker run --log-driver=none --rm -v "$OVPN_DATA:/etc/openvpn" "$OVPN_IMAGE" ovpn_getclient my-user > my-user-dco.ovpn)
      Check export success, then distribute and import the replacement profile.
      Preserve application-specific preferences and use a compatible modern client.
      If editing a COPY of an existing .ovpn instead, replace its directives with:

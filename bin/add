@@ -8,7 +8,7 @@ echo "[1m---[m"
 echo ""
 echo "You can now retrieve the generated client configuration by executing:
 
-[2mdocker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn get $1 > $1.ovpn[m
+[2m(umask 077; set -C; docker run -v /etc/openvpn:/etc/openvpn --log-driver=none --rm nmaguiar/openvpn get $1 > $1.ovpn)[m
 
 You can also list by executing:
 

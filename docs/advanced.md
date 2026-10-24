@@ -13,7 +13,7 @@ The [`ovpn_genconfig`](/bin/ovpn_genconfig) script is intended for simple config
         docker run --rm -v $PWD:/etc/openvpn -it kylemanna/openvpn ovpn_initpki
         vim openvpn.conf
         docker run --rm -v $PWD:/etc/openvpn -it kylemanna/openvpn easyrsa build-client-full CLIENTNAME nopass
-        docker run --rm -v $PWD:/etc/openvpn kylemanna/openvpn ovpn_getclient CLIENTNAME > CLIENTNAME.ovpn
+        (umask 077; set -C; docker run --log-driver=none --rm -v $PWD:/etc/openvpn kylemanna/openvpn ovpn_getclient CLIENTNAME > CLIENTNAME.ovpn)
 
 * Start the server with:
 

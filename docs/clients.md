@@ -23,7 +23,20 @@ If you have more than a few clients, you will want to generate and update your c
 
 Execute the following to generate the configuration for all clients:
 
-    docker run --rm -it -v $OVPN_DATA:/etc/openvpn --volume /tmp/openvpn_clients:/etc/openvpn/clients kylemanna/openvpn ovpn_getclient_all
+    docker run --log-driver=none --rm -it -v $OVPN_DATA:/etc/openvpn --volume "$PWD/openvpn_clients:/etc/openvpn/clients" kylemanna/openvpn ovpn_getclient_all
+
+Prefer a private export directory instead of a shared `/tmp` location. The
+exporter requires its `clients` directory and client subdirectories to be owned
+by the user running the export in the container (normally root), rejects
+symlink destinations, and enforces directories `0700` and files `0600`, including
+existing outputs. A fresh Docker-created bind directory has the expected owner.
+Transfer each profile securely to its intended recipient; it contains a private
+key. Stdout examples use `umask 077` and shell noclobber (`set -C`) in a subshell:
+an existing profile or symlink is rejected rather than retaining permissive
+permissions or overwriting another file. Export to a new filename when updating
+a client, or use `combined-save` to replace an existing saved profile securely.
+Run exports in a private directory and use `--log-driver=none`. `DEBUG` tracing
+is disabled during key export.
 
 After doing so, you will find the following files in each of the `$cn` directories:
 

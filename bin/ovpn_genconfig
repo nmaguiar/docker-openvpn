@@ -100,6 +100,7 @@ usage() {
     echo " -d    Disable default route"
     echo " -D    Do not push dns servers"
     echo " -F    Enable fast-io, for performance tuning (UDP only)."
+    echo " -I    IPv6 policy for full-tunnel clients: block (default) or route (requires configured IPv6 tunnel)."
     echo " -L    Enable log-append to /etc/openvpn/openvpn.log"
     echo " -k    Set keepalive. Default: '10 60'"
     echo " -m    Set client MTU"
@@ -165,6 +166,7 @@ OVPN_EXTRA_SERVER_CONFIG=()
 OVPN_FAST_IO=0
 OVPN_FRAGMENT=''
 OVPN_KEEPALIVE="10 60"
+OVPN_IPV6=block
 OVPN_LOG_APPEND=0
 OVPN_MSSFIX=''
 OVPN_MTU=''
@@ -186,7 +188,7 @@ previous_profile=$OVPN_PROFILE
 cipher_explicit=0
 
 # Parse arguments
-while getopts ":a:e:E:C:T:r:s:du:bcp:n:k:DNm:f:tz2LB:FM:R:O:" opt; do
+while getopts ":a:e:E:C:T:r:s:du:bcp:n:k:DNm:f:tz2LB:FM:R:O:I:" opt; do
     case $opt in
         a)
             OVPN_AUTH="$OPTARG"
@@ -209,6 +211,9 @@ while getopts ":a:e:E:C:T:r:s:du:bcp:n:k:DNm:f:tz2LB:FM:R:O:" opt; do
             ;;
         O)
             OVPN_PROFILE="$OPTARG"
+            ;;
+        I)
+            OVPN_IPV6="$OPTARG"
             ;;
         T)
             OVPN_TLS_CIPHER="$OPTARG"
@@ -303,6 +308,20 @@ done
 
 # Validate before replacing any persisted configuration. Profile selection is
 # independent of option order; an explicit -C always takes precedence.
+case "$OVPN_IPV6" in
+    block|route) ;;
+    *) echo "Invalid IPv6 policy: $OVPN_IPV6 (use block or route)" >&2; exit 1 ;;
+esac
+if [ -n "${OVPN_OTP_AUTH:-}" ]; then
+    # The managed hook must not be silently replaced by raw configuration.
+    for extra in "${OVPN_EXTRA_SERVER_CONFIG[@]}"; do
+        if printf '%s\n' "$extra" | grep -Eq "^[[:space:]]*['\"]?(--)?(client-connect|script-security|config|verify-client-cert|client-cert-not-required)([[:space:]'\"]|$)|^[[:space:]]*['\"]?(--)?setenv(-safe)?['\"]?[[:space:]]+['\"]?(X509_0_CN|username)([[:space:]'\"]|$)"; then
+            echo "OTP identity binding conflicts with an extra directive: $extra" >&2
+            echo "Remove the override before regenerating; OTP requires the managed client-connect check and client certificates." >&2
+            exit 1
+        fi
+    done
+fi
 case "$OVPN_PROFILE" in
     legacy|dco) ;;
     *) echo "Invalid profile: $OVPN_PROFILE (use legacy or dco)" >&2; exit 1 ;;
@@ -469,6 +488,10 @@ cat $TMP_PUSH_CONFIGFILE >> "$conf"
 if [ -n "${OVPN_OTP_AUTH:-}" ]; then
     echo -e "\n\n# Enable OTP+PAM for user authentication" >> "$conf"
     echo "plugin /usr/lib/openvpn/plugins/openvpn-plugin-auth-pam.so openvpn" >> "$conf"
+    echo "verify-client-cert require" >> "$conf"
+    echo "script-security 2" >> "$conf"
+    echo "x509-track CN" >> "$conf"
+    echo "client-connect /usr/local/bin/ovpn_otp_verify" >> "$conf"
     echo "reneg-sec 0" >> "$conf"
 fi
 

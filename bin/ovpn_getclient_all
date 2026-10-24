@@ -2,6 +2,9 @@
 ## @licence MIT <http://opensource.org/licenses/MIT>
 ## @author Copyright (C) 2015 Robin Schneider <ypid@riseup.net>
 
+set -e
+umask 077
+
 if [ -z "$OPENVPN" ]; then
     export OPENVPN="$PWD"
 fi
