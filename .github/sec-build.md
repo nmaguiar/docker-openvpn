@@ -15,11 +15,14 @@
                         │     │                  │         88eeb1de2e963a2c788 
                         │     │                  ╰ DiffID: sha256:75c137aedfb2760f88629236cb7b797630aed0c3d91d6
                         │     │                            26d1d1bb694878fc2ba 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107891 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:60978a49987cb27631f13547c6de4b8cfc55048fa21c765e0295f3
                         │     │                   c0f4f5f7f8 
+                        │     ├ Title           : Title Not Available 
+                        │     ├ Description     : Description Not Available 
                         │     ╰ Severity        : UNKNOWN 
                         ╰ [1] ╭ VulnerabilityID : CVE-2026-107891 
                               ├ PkgID           : musl-utils@1.2.6-r3 
@@ -34,10 +37,13 @@
                               │                  │         88eeb1de2e963a2c788 
                               │                  ╰ DiffID: sha256:75c137aedfb2760f88629236cb7b797630aed0c3d91d6
                               │                            26d1d1bb694878fc2ba 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107891 
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
                               ├ Fingerprint     : sha256:fb25e0039cc5a526f0d1bcacce76a765179b943d21ff65b503cd38
                               │                   cdd4bb6cca 
+                              ├ Title           : Title Not Available 
+                              ├ Description     : Description Not Available 
                               ╰ Severity        : UNKNOWN 
 ```
