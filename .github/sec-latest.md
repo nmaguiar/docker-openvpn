@@ -15,11 +15,14 @@
                         │     │                  │         4c4b714dcfde2a102b5 
                         │     │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc3032
                         │     │                            3ce36760701b0b7f711 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107891 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:94c12f375f89d88ffa1f0c6ca1e99023243aebeb3ebb88380cd1d9
                         │     │                   55a681a489 
+                        │     ├ Title           : Title Not Available 
+                        │     ├ Description     : Description Not Available 
                         │     ╰ Severity        : UNKNOWN 
                         ├ [1] ╭ VulnerabilityID : CVE-2026-107891 
                         │     ├ PkgID           : musl-utils@1.2.6-r2 
@@ -34,11 +37,14 @@
                         │     │                  │         4c4b714dcfde2a102b5 
                         │     │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc3032
                         │     │                            3ce36760701b0b7f711 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107891 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:cc9e8a17a9e8240296d62a6717a4d681512caf4fc2d56b140a501b
                         │     │                   7d4311dbca 
+                        │     ├ Title           : Title Not Available 
+                        │     ├ Description     : Description Not Available 
                         │     ╰ Severity        : UNKNOWN 
                         ╰ [2] ╭ VulnerabilityID : CVE-2026-85091 
                               ├ PkgID           : zlib@1.3.2-r0 
