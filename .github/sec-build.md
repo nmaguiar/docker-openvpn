@@ -19,8 +19,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:60978a49987cb27631f13547c6de4b8cfc55048fa21c765e0295f3
-                        │     │                   c0f4f5f7f8 
+                        │     ├ Fingerprint     : sha256:5e7869681b022deddea17720deaf3287aa601abeb3d9f4b29e194a
+                        │     │                   d93ea631b5 
                         │     ├ Title           : Title Not Available 
                         │     ├ Description     : Description Not Available 
                         │     ╰ Severity        : UNKNOWN 
@@ -41,8 +41,8 @@
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Fingerprint     : sha256:fb25e0039cc5a526f0d1bcacce76a765179b943d21ff65b503cd38
-                              │                   cdd4bb6cca 
+                              ├ Fingerprint     : sha256:4cefaa06d609259f07772704d14a457435dc5bcab600bf233d1234
+                              │                   9cb3edff3c 
                               ├ Title           : Title Not Available 
                               ├ Description     : Description Not Available 
                               ╰ Severity        : UNKNOWN 
