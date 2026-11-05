@@ -21,8 +21,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:94c12f375f89d88ffa1f0c6ca1e99023243aebeb3ebb88380cd1d9
                         │     │                   55a681a489 
-                        │     ├ Title           : [Unknown description] 
-                        │     ├ Description     : [Unknown description] 
+                        │     ├ Title           : Title Not Available 
+                        │     ├ Description     : Description Not Available 
                         │     ╰ Severity        : UNKNOWN 
                         ├ [1] ╭ VulnerabilityID : CVE-2026-107891 
                         │     ├ PkgID           : musl-utils@1.2.6-r2 
@@ -43,8 +43,8 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:cc9e8a17a9e8240296d62a6717a4d681512caf4fc2d56b140a501b
                         │     │                   7d4311dbca 
-                        │     ├ Title           : [Unknown description] 
-                        │     ├ Description     : [Unknown description] 
+                        │     ├ Title           : Title Not Available 
+                        │     ├ Description     : Description Not Available 
                         │     ╰ Severity        : UNKNOWN 
                         ╰ [2] ╭ VulnerabilityID : CVE-2026-85091 
                               ├ PkgID           : zlib@1.3.2-r0 
