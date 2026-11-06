@@ -22,8 +22,24 @@
                         │     ├ Fingerprint     : sha256:94c12f375f89d88ffa1f0c6ca1e99023243aebeb3ebb88380cd1d9
                         │     │                   55a681a489 
                         │     ├ Title           : Title Not Available 
-                        │     ├ Description     : Description Not Available 
-                        │     ╰ Severity        : UNKNOWN 
+                        │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
+                        │     │                   is used with regcomp, has multiple integer overflows,
+                        │     │                   possibly leading to incorrect allocation sizes and
+                        │     │                   out-of-bounds heap writes. 
+                        │     ├ Severity        : UNKNOWN 
+                        │     ├ CweIDs                  
+                        │     │                  ───────
+                        │     │                  CWE-190
+                        │     ├ References                                                                     
+                        │     │                  ──────────────────────────────────────────────────────────────
+                        │     │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                        │     │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
+                        │     │                  81b6750b8a033a0490bca0941                                     
+                        │     │                  https://musl.libc.org                                         
+                        │     │                                                                                
+                        │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
+                        │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
+                        │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
                         ├ [1] ╭ VulnerabilityID : CVE-2026-107891 
                         │     ├ PkgID           : musl-utils@1.2.6-r2 
                         │     ├ PkgName         : musl-utils 
@@ -44,8 +60,24 @@
                         │     ├ Fingerprint     : sha256:cc9e8a17a9e8240296d62a6717a4d681512caf4fc2d56b140a501b
                         │     │                   7d4311dbca 
                         │     ├ Title           : Title Not Available 
-                        │     ├ Description     : Description Not Available 
-                        │     ╰ Severity        : UNKNOWN 
+                        │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
+                        │     │                   is used with regcomp, has multiple integer overflows,
+                        │     │                   possibly leading to incorrect allocation sizes and
+                        │     │                   out-of-bounds heap writes. 
+                        │     ├ Severity        : UNKNOWN 
+                        │     ├ CweIDs                  
+                        │     │                  ───────
+                        │     │                  CWE-190
+                        │     ├ References                                                                     
+                        │     │                  ──────────────────────────────────────────────────────────────
+                        │     │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                        │     │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
+                        │     │                  81b6750b8a033a0490bca0941                                     
+                        │     │                  https://musl.libc.org                                         
+                        │     │                                                                                
+                        │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
+                        │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
+                        │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
                         ╰ [2] ╭ VulnerabilityID : CVE-2026-85091 
                               ├ PkgID           : zlib@1.3.2-r0 
                               ├ PkgName         : zlib 
