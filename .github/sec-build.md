@@ -22,8 +22,24 @@
                         │     ├ Fingerprint     : sha256:5e7869681b022deddea17720deaf3287aa601abeb3d9f4b29e194a
                         │     │                   d93ea631b5 
                         │     ├ Title           : Title Not Available 
-                        │     ├ Description     : Description Not Available 
-                        │     ╰ Severity        : UNKNOWN 
+                        │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
+                        │     │                   is used with regcomp, has multiple integer overflows,
+                        │     │                   possibly leading to incorrect allocation sizes and
+                        │     │                   out-of-bounds heap writes. 
+                        │     ├ Severity        : UNKNOWN 
+                        │     ├ CweIDs                  
+                        │     │                  ───────
+                        │     │                  CWE-190
+                        │     ├ References                                                                     
+                        │     │                  ──────────────────────────────────────────────────────────────
+                        │     │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                        │     │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
+                        │     │                  81b6750b8a033a0490bca0941                                     
+                        │     │                  https://musl.libc.org                                         
+                        │     │                                                                                
+                        │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
+                        │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
+                        │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
                         ╰ [1] ╭ VulnerabilityID : CVE-2026-107891 
                               ├ PkgID           : musl-utils@1.2.6-r3 
                               ├ PkgName         : musl-utils 
@@ -44,6 +60,22 @@
                               ├ Fingerprint     : sha256:4cefaa06d609259f07772704d14a457435dc5bcab600bf233d1234
                               │                   9cb3edff3c 
                               ├ Title           : Title Not Available 
-                              ├ Description     : Description Not Available 
-                              ╰ Severity        : UNKNOWN 
+                              ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
+                              │                   is used with regcomp, has multiple integer overflows,
+                              │                   possibly leading to incorrect allocation sizes and
+                              │                   out-of-bounds heap writes. 
+                              ├ Severity        : UNKNOWN 
+                              ├ CweIDs                  
+                              │                  ───────
+                              │                  CWE-190
+                              ├ References                                                                     
+                              │                  ──────────────────────────────────────────────────────────────
+                              │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                              │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
+                              │                  81b6750b8a033a0490bca0941                                     
+                              │                  https://musl.libc.org                                         
+                              │                                                                                
+                              │                  https://www.openwall.com/lists/musl/2026/10/21/1              
+                              ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
+                              ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
 ```
