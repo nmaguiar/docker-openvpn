@@ -1,81 +1,150 @@
 ```yaml
-─ [0] ╭ Target         : nmaguiar/openvpn:build (alpine 3.24.3) 
+─ [0] ╭ Target         : nmaguiar/openvpn:build (alpine 3.24.4) 
       ├ Class          : os-pkgs 
       ├ Type           : alpine 
       ├ Packages        
       ╰ Vulnerabilities ╭ [0] ╭ VulnerabilityID : CVE-2026-107891 
                         │     ├ PkgID           : musl@1.2.6-r3 
                         │     ├ PkgName         : musl 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.6-r3?arch=x86_64&distro=3.24.3 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl@1.2.6-r3?arch=x86_64&distro=3.24.4 
                         │     │                  ╰ UID : 43d4b05c5472a58c 
                         │     ├ InstalledVersion: 1.2.6-r3 
                         │     ├ FixedVersion    : 1.2.6-r6 
                         │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:7b229517ed222597277036d94892173207d01a731ab3a
-                        │     │                  │         88eeb1de2e963a2c788 
-                        │     │                  ╰ DiffID: sha256:75c137aedfb2760f88629236cb7b797630aed0c3d91d6
-                        │     │                            26d1d1bb694878fc2ba 
+                        │     ├ Layer            ╭ Digest: sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa
+                        │     │                  │         4995428afb1e80ede17 
+                        │     │                  ╰ DiffID: sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26
+                        │     │                            f97af196845307e3064 
                         │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107891 
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:5e7869681b022deddea17720deaf3287aa601abeb3d9f4b29e194a
-                        │     │                   d93ea631b5 
-                        │     ├ Title           : Title Not Available 
+                        │     ├ Fingerprint     : sha256:e231c027eda9c825e35f11e609c3b3b1c620ec0aa06dce915256f7
+                        │     │                   56edac376c 
+                        │     ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
+                        │     │                   regcomp 
                         │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
                         │     │                   is used with regcomp, has multiple integer overflows,
                         │     │                   possibly leading to incorrect allocation sizes and
                         │     │                   out-of-bounds heap writes. 
-                        │     ├ Severity        : UNKNOWN 
+                        │     ├ Severity        : HIGH 
                         │     ├ CweIDs                  
                         │     │                  ───────
                         │     │                  CWE-190
+                        │     ├ VendorSeverity   ─ redhat: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 8.1 
                         │     ├ References                                                                     
                         │     │                  ──────────────────────────────────────────────────────────────
                         │     │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                        │     │                  https://access.redhat.com/security/cve/CVE-2026-107891        
                         │     │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
                         │     │                  81b6750b8a033a0490bca0941                                     
                         │     │                  https://musl.libc.org                                         
                         │     │                                                                                
+                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-107891              
+                        │     │                                                                                
+                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-107891              
+                        │     │                                                                                
                         │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
                         │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
                         │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
-                        ╰ [1] ╭ VulnerabilityID : CVE-2026-107891 
-                              ├ PkgID           : musl-utils@1.2.6-r3 
-                              ├ PkgName         : musl-utils 
-                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.6-r3?arch=x86_64&distro=
-                              │                  │       3.24.3 
-                              │                  ╰ UID : 1bd73db44d355699 
-                              ├ InstalledVersion: 1.2.6-r3 
-                              ├ FixedVersion    : 1.2.6-r6 
+                        ├ [1] ╭ VulnerabilityID : CVE-2026-107891 
+                        │     ├ PkgID           : musl-utils@1.2.6-r3 
+                        │     ├ PkgName         : musl-utils 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/musl-utils@1.2.6-r3?arch=x86_64&distro=
+                        │     │                  │       3.24.4 
+                        │     │                  ╰ UID : 1bd73db44d355699 
+                        │     ├ InstalledVersion: 1.2.6-r3 
+                        │     ├ FixedVersion    : 1.2.6-r6 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa
+                        │     │                  │         4995428afb1e80ede17 
+                        │     │                  ╰ DiffID: sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26
+                        │     │                            f97af196845307e3064 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107891 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:1b3306578420fe6b18dbbc8b2cc61ccac2b31cb8ad6ceaf9abeb65
+                        │     │                   3092f43d4f 
+                        │     ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
+                        │     │                   regcomp 
+                        │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
+                        │     │                   is used with regcomp, has multiple integer overflows,
+                        │     │                   possibly leading to incorrect allocation sizes and
+                        │     │                   out-of-bounds heap writes. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ CweIDs                  
+                        │     │                  ───────
+                        │     │                  CWE-190
+                        │     ├ VendorSeverity   ─ redhat: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 8.1 
+                        │     ├ References                                                                     
+                        │     │                  ──────────────────────────────────────────────────────────────
+                        │     │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                        │     │                  https://access.redhat.com/security/cve/CVE-2026-107891        
+                        │     │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
+                        │     │                  81b6750b8a033a0490bca0941                                     
+                        │     │                  https://musl.libc.org                                         
+                        │     │                                                                                
+                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-107891              
+                        │     │                                                                                
+                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-107891              
+                        │     │                                                                                
+                        │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
+                        │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
+                        │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
+                        ╰ [2] ╭ VulnerabilityID : CVE-2026-4738 
+                              ├ PkgID           : zlib@1.3.2-r1 
+                              ├ PkgName         : zlib 
+                              ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.2-r1?arch=x86_64&distro=3.24.4 
+                              │                  ╰ UID : 926381dc853769fb 
+                              ├ InstalledVersion: 1.3.2-r1 
+                              ├ FixedVersion    : 1.4-r0 
                               ├ Status          : fixed 
-                              ├ Layer            ╭ Digest: sha256:7b229517ed222597277036d94892173207d01a731ab3a
-                              │                  │         88eeb1de2e963a2c788 
-                              │                  ╰ DiffID: sha256:75c137aedfb2760f88629236cb7b797630aed0c3d91d6
-                              │                            26d1d1bb694878fc2ba 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107891 
+                              ├ Layer            ╭ Digest: sha256:881fc932939efef04ca120ad44bbd2c0917851eb247aa
+                              │                  │         4995428afb1e80ede17 
+                              │                  ╰ DiffID: sha256:75f1d9657d880da5f75298e8f40e9928bb6e260c50d26
+                              │                            f97af196845307e3064 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-4738 
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Fingerprint     : sha256:4cefaa06d609259f07772704d14a457435dc5bcab600bf233d1234
-                              │                   9cb3edff3c 
-                              ├ Title           : Title Not Available 
-                              ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
-                              │                   is used with regcomp, has multiple integer overflows,
-                              │                   possibly leading to incorrect allocation sizes and
-                              │                   out-of-bounds heap writes. 
-                              ├ Severity        : UNKNOWN 
+                              ├ Fingerprint     : sha256:f0bafbdda251008b60162fa7b11c38ceb5bc34e53e55e3c7bcd876
+                              │                   bd2b63faab 
+                              ├ Title           : Improper Restriction of Operations within the Bounds of a
+                              │                   Memory Buffe ... 
+                              ├ Description     : Improper Restriction of Operations within the Bounds of a
+                              │                   Memory Buffer vulnerability in OSGeo gdal
+                              │                   (frmts/zlib/contrib/infback9 modules). This vulnerability is
+                              │                   associated with program files inftree9.C‎.
+                              │                   
+                              │                   This issue affects gdal: before 3.11.0. 
+                              ├ Severity        : MEDIUM 
                               ├ CweIDs                  
                               │                  ───────
-                              │                  CWE-190
-                              ├ References                                                                     
-                              │                  ──────────────────────────────────────────────────────────────
-                              │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
-                              │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
-                              │                  81b6750b8a033a0490bca0941                                     
-                              │                  https://musl.libc.org                                         
-                              │                                                                                
-                              │                  https://www.openwall.com/lists/musl/2026/10/21/1              
-                              ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
-                              ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
+                              │                  CWE-119
+                              ├ VendorSeverity   ╭ bitnami: 4 
+                              │                  ├ julia  : 4 
+                              │                  ╰ ubuntu : 2 
+                              ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/
+                              │                  │         │            VI:H/VA:H/SC:H/SI:H/SA:H/E:A/S:P/AU:Y/R
+                              │                  │         │            :U/V:C/RE:L/U:Amber 
+                              │                  │         ╰ V40Score : 9.4 
+                              │                  ╰ julia   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/
+                              │                            │            VI:H/VA:H/SC:H/SI:H/SA:H/E:A/S:P/AU:Y/R
+                              │                            │            :U/V:C/RE:L/U:Amber 
+                              │                            ╰ V40Score : 9.4 
+                              ├ References                                                        
+                              │                  ─────────────────────────────────────────────────
+                              │                  https://github.com/OSGeo/gdal/pull/12244         
+                              │                  https://github.com/advisories/GHSA-hp6p-5qh5-w9fj
+                              │                  https://nvd.nist.gov/vuln/detail/CVE-2026-4738   
+                              │                  https://www.cve.org/CVERecord?id=CVE-2026-4738   
+                              ├ PublishedDate   : 2026-03-24T04:17:29Z 
+                              ╰ LastModifiedDate: 2026-06-17T10:57:09.03Z 
 ```
