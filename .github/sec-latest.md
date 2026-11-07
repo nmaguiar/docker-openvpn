@@ -21,21 +21,31 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:94c12f375f89d88ffa1f0c6ca1e99023243aebeb3ebb88380cd1d9
                         │     │                   55a681a489 
-                        │     ├ Title           : Title Not Available 
+                        │     ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
+                        │     │                   regcomp 
                         │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
                         │     │                   is used with regcomp, has multiple integer overflows,
                         │     │                   possibly leading to incorrect allocation sizes and
                         │     │                   out-of-bounds heap writes. 
-                        │     ├ Severity        : UNKNOWN 
+                        │     ├ Severity        : HIGH 
                         │     ├ CweIDs                  
                         │     │                  ───────
                         │     │                  CWE-190
+                        │     ├ VendorSeverity   ─ redhat: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 8.1 
                         │     ├ References                                                                     
                         │     │                  ──────────────────────────────────────────────────────────────
                         │     │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                        │     │                  https://access.redhat.com/security/cve/CVE-2026-107891        
                         │     │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
                         │     │                  81b6750b8a033a0490bca0941                                     
                         │     │                  https://musl.libc.org                                         
+                        │     │                                                                                
+                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-107891              
+                        │     │                                                                                
+                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-107891              
                         │     │                                                                                
                         │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
                         │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
@@ -59,71 +69,137 @@
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │     ├ Fingerprint     : sha256:cc9e8a17a9e8240296d62a6717a4d681512caf4fc2d56b140a501b
                         │     │                   7d4311dbca 
-                        │     ├ Title           : Title Not Available 
+                        │     ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
+                        │     │                   regcomp 
                         │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
                         │     │                   is used with regcomp, has multiple integer overflows,
                         │     │                   possibly leading to incorrect allocation sizes and
                         │     │                   out-of-bounds heap writes. 
-                        │     ├ Severity        : UNKNOWN 
+                        │     ├ Severity        : HIGH 
                         │     ├ CweIDs                  
                         │     │                  ───────
                         │     │                  CWE-190
+                        │     ├ VendorSeverity   ─ redhat: 3 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 8.1 
                         │     ├ References                                                                     
                         │     │                  ──────────────────────────────────────────────────────────────
                         │     │                  http://www.openwall.com/lists/oss-security/2026/10/21/18      
+                        │     │                  https://access.redhat.com/security/cve/CVE-2026-107891        
                         │     │                  https://git.musl-libc.org/cgit/musl/commit/?id=7813e9119eb5fe6
                         │     │                  81b6750b8a033a0490bca0941                                     
                         │     │                  https://musl.libc.org                                         
                         │     │                                                                                
+                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-107891              
+                        │     │                                                                                
+                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-107891              
+                        │     │                                                                                
                         │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
                         │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
                         │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
-                        ╰ [2] ╭ VulnerabilityID : CVE-2026-85091 
+                        ├ [2] ╭ VulnerabilityID : CVE-2026-85091 
+                        │     ├ PkgID           : zlib@1.3.2-r0 
+                        │     ├ PkgName         : zlib 
+                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&distro=3.24.2 
+                        │     │                  ╰ UID : e37054a2982d6c16 
+                        │     ├ InstalledVersion: 1.3.2-r0 
+                        │     ├ FixedVersion    : 1.3.2-r1 
+                        │     ├ Status          : fixed 
+                        │     ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e
+                        │     │                  │         4c4b714dcfde2a102b5 
+                        │     │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc3032
+                        │     │                            3ce36760701b0b7f711 
+                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-85091 
+                        │     ├ DataSource       ╭ ID  : alpine 
+                        │     │                  ├ Name: Alpine Secdb 
+                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │     ├ Fingerprint     : sha256:84d146f566b9c4d85720ecf52869a0ec2b8eea2f49b3d600dba108
+                        │     │                   9e6adfb22e 
+                        │     ├ Title           : zlib: zlib: Heap buffer overflow in gz_vacate() allows
+                        │     │                   arbitrary code execution 
+                        │     ├ Description     : zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer
+                        │     │                   overflow vulnerability in the gz_vacate() function when
+                        │     │                   processing non-blocking gzwrite() operations with stale
+                        │     │                   external buffer pointers. Attackers can trigger the overflow
+                        │     │                   by calling gzprintf() or gzvprintf() after a write stall,
+                        │     │                   causing an unchecked memmove() to write beyond the internal
+                        │     │                   input buffer boundary. 
+                        │     ├ Severity        : HIGH 
+                        │     ├ CweIDs                  
+                        │     │                  ───────
+                        │     │                  CWE-787
+                        │     ├ VendorSeverity   ╭ redhat: 3 
+                        │     │                  ╰ ubuntu: 2 
+                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
+                        │     │                           │           A:H 
+                        │     │                           ╰ V3Score : 8.1 
+                        │     ├ References                                                                     
+                        │     │                  ──────────────────────────────────────────────────────────────
+                        │     │                  https://access.redhat.com/security/cve/CVE-2026-85091         
+                        │     │                  https://gist.github.com/thesmartshadow/e0b9481792afb7c31e86fee
+                        │     │                  1ff084490                                                     
+                        │     │                  https://github.com/madler/zlib                                
+                        │     │                                                                                
+                        │     │                  https://github.com/madler/zlib/blob/v1.3.2/gzwrite.c#L393     
+                        │     │                                                                                
+                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-85091               
+                        │     │                                                                                
+                        │     │                  https://ubuntu.com/security/notices/USN-8954-1                
+                        │     │                                                                                
+                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-85091               
+                        │     │                                                                                
+                        │     │                  https://www.vulncheck.com/advisories/zlib-1.3.1.2-through-1.3.
+                        │     │                  2-heap-buffer-overflow-via-gz-vacate                          
+                        │     ├ PublishedDate   : 2026-09-03T13:06:20.573Z 
+                        │     ╰ LastModifiedDate: 2026-09-09T20:41:07.123Z 
+                        ╰ [3] ╭ VulnerabilityID : CVE-2026-4738 
                               ├ PkgID           : zlib@1.3.2-r0 
                               ├ PkgName         : zlib 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.2-r0?arch=x86_64&distro=3.24.2 
                               │                  ╰ UID : e37054a2982d6c16 
                               ├ InstalledVersion: 1.3.2-r0 
-                              ├ FixedVersion    : 1.3.2-r1 
+                              ├ FixedVersion    : 1.4-r0 
                               ├ Status          : fixed 
                               ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3e
                               │                  │         4c4b714dcfde2a102b5 
                               │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc3032
                               │                            3ce36760701b0b7f711 
-                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-85091 
+                              ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-4738 
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Fingerprint     : sha256:84d146f566b9c4d85720ecf52869a0ec2b8eea2f49b3d600dba108
-                              │                   9e6adfb22e 
-                              ├ Title           : zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer
-                              │                   overflow vul ... 
-                              ├ Description     : zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer
-                              │                   overflow vulnerability in the gz_vacate() function when
-                              │                   processing non-blocking gzwrite() operations with stale
-                              │                   external buffer pointers. Attackers can trigger the overflow
-                              │                   by calling gzprintf() or gzvprintf() after a write stall,
-                              │                   causing an unchecked memmove() to write beyond the internal
-                              │                   input buffer boundary. 
+                              ├ Fingerprint     : sha256:6b2bb750d62a51af8311a825b7ed55d17346c4a557a1765552aa3c
+                              │                   4af8237239 
+                              ├ Title           : Improper Restriction of Operations within the Bounds of a
+                              │                   Memory Buffe ... 
+                              ├ Description     : Improper Restriction of Operations within the Bounds of a
+                              │                   Memory Buffer vulnerability in OSGeo gdal
+                              │                   (frmts/zlib/contrib/infback9 modules). This vulnerability is
+                              │                   associated with program files inftree9.C‎.
+                              │                   
+                              │                   This issue affects gdal: before 3.11.0. 
                               ├ Severity        : MEDIUM 
                               ├ CweIDs                  
                               │                  ───────
-                              │                  CWE-787
-                              ├ VendorSeverity   ─ ubuntu: 2 
-                              ├ References                                                                     
-                              │                  ──────────────────────────────────────────────────────────────
-                              │                  https://gist.github.com/thesmartshadow/e0b9481792afb7c31e86fee
-                              │                  1ff084490                                                     
-                              │                  https://github.com/madler/zlib                                
-                              │                                                                                
-                              │                  https://github.com/madler/zlib/blob/v1.3.2/gzwrite.c#L393     
-                              │                                                                                
-                              │                  https://ubuntu.com/security/notices/USN-8954-1                
-                              │                                                                                
-                              │                  https://www.cve.org/CVERecord?id=CVE-2026-85091               
-                              │                                                                                
-                              │                  https://www.vulncheck.com/advisories/zlib-1.3.1.2-through-1.3.
-                              │                  2-heap-buffer-overflow-via-gz-vacate                          
-                              ├ PublishedDate   : 2026-09-03T13:06:20.573Z 
-                              ╰ LastModifiedDate: 2026-09-09T20:41:07.123Z 
+                              │                  CWE-119
+                              ├ VendorSeverity   ╭ bitnami: 4 
+                              │                  ├ julia  : 4 
+                              │                  ╰ ubuntu : 2 
+                              ├ CVSS             ╭ bitnami ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/
+                              │                  │         │            VI:H/VA:H/SC:H/SI:H/SA:H/E:A/S:P/AU:Y/R
+                              │                  │         │            :U/V:C/RE:L/U:Amber 
+                              │                  │         ╰ V40Score : 9.4 
+                              │                  ╰ julia   ╭ V40Vector: CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:P/VC:H/
+                              │                            │            VI:H/VA:H/SC:H/SI:H/SA:H/E:A/S:P/AU:Y/R
+                              │                            │            :U/V:C/RE:L/U:Amber 
+                              │                            ╰ V40Score : 9.4 
+                              ├ References                                                        
+                              │                  ─────────────────────────────────────────────────
+                              │                  https://github.com/OSGeo/gdal/pull/12244         
+                              │                  https://github.com/advisories/GHSA-hp6p-5qh5-w9fj
+                              │                  https://nvd.nist.gov/vuln/detail/CVE-2026-4738   
+                              │                  https://www.cve.org/CVERecord?id=CVE-2026-4738   
+                              ├ PublishedDate   : 2026-03-24T04:17:29Z 
+                              ╰ LastModifiedDate: 2026-06-17T10:57:09.03Z 
 ```
