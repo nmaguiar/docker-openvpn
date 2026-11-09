@@ -105,6 +105,7 @@
     CweIDs:
     - CWE-787
     VendorSeverity:
+      azure: 3
       redhat: 3
       ubuntu: 2
     CVSS:
