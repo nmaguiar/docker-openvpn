@@ -129,7 +129,8 @@
                         │     ├ CweIDs                  
                         │     │                  ───────
                         │     │                  CWE-787
-                        │     ├ VendorSeverity   ╭ redhat: 3 
+                        │     ├ VendorSeverity   ╭ azure : 3 
+                        │     │                  ├ redhat: 3 
                         │     │                  ╰ ubuntu: 2 
                         │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/
                         │     │                           │           A:H 
