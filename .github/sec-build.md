@@ -49,7 +49,7 @@
                         │     │                                                                                
                         │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
                         │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
-                        │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
+                        │     ╰ LastModifiedDate: 2026-11-09T22:18:22.6Z 
                         ├ [1] ╭ VulnerabilityID : CVE-2026-107891 
                         │     ├ PkgID           : musl-utils@1.2.6-r3 
                         │     ├ PkgName         : musl-utils 
@@ -97,7 +97,7 @@
                         │     │                                                                                
                         │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
                         │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
-                        │     ╰ LastModifiedDate: 2026-11-05T17:17:35.287Z 
+                        │     ╰ LastModifiedDate: 2026-11-09T22:18:22.6Z 
                         ╰ [2] ╭ VulnerabilityID : CVE-2026-4738 
                               ├ PkgID           : zlib@1.3.2-r1 
                               ├ PkgName         : zlib 
