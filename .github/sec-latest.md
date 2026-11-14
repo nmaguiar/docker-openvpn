@@ -78,10 +78,11 @@
                         │      │                   is rejected during key import before the vulnerable key
                         │      │                   generation path is
                         │      │                   reached. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
@@ -91,6 +92,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-88822 
@@ -153,10 +156,11 @@
                         │      │                   affected by this CVE as
                         │      │                   the affected protocol is not implemented in the FIPS
                         │      │                   module. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-457
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
@@ -166,6 +170,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
                         │      │                  6f1ad8cbdb986098982f3                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2026-88823 
@@ -228,10 +234,11 @@
                         │      │                   algorithm and is implemented only in the default provider,
                         │      │                   outside the
                         │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-325
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
@@ -241,6 +248,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
                         │      │                  6438040a70b0b5e5e0a90                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2026-95691 
@@ -298,10 +307,11 @@
                         │      │                   The FIPS module is not affected as the QUIC implementation
                         │      │                   is outside of
                         │      │                   the OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
@@ -311,6 +321,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2026-95692 
@@ -388,10 +400,11 @@
                         │      │                   The FIPS modules are not affected by this issue, as
                         │      │                   AES-GCM-SIV is not an
                         │      │                   approved algorithm. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
@@ -401,6 +414,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2026-107496 
@@ -478,10 +493,11 @@
                         │      │                   is rejected during key import before the vulnerable key
                         │      │                   generation path is
                         │      │                   reached. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
@@ -491,6 +507,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-88822 
@@ -553,10 +571,11 @@
                         │      │                   affected by this CVE as
                         │      │                   the affected protocol is not implemented in the FIPS
                         │      │                   module. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-457
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
@@ -566,6 +585,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
                         │      │                  6f1ad8cbdb986098982f3                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-88823 
@@ -628,10 +649,11 @@
                         │      │                   algorithm and is implemented only in the default provider,
                         │      │                   outside the
                         │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-325
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
@@ -641,6 +663,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
                         │      │                  6438040a70b0b5e5e0a90                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-95691 
@@ -698,10 +722,11 @@
                         │      │                   The FIPS module is not affected as the QUIC implementation
                         │      │                   is outside of
                         │      │                   the OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
@@ -711,6 +736,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-95692 
@@ -788,10 +815,11 @@
                         │      │                   The FIPS modules are not affected by this issue, as
                         │      │                   AES-GCM-SIV is not an
                         │      │                   approved algorithm. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
@@ -801,6 +829,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-107891 
@@ -849,7 +879,7 @@
                         │      │                                                                               
                         │      │                  https://www.openwall.com/lists/musl/2026/10/21/1             
                         │      ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
-                        │      ╰ LastModifiedDate: 2026-11-09T22:18:22.6Z 
+                        │      ╰ LastModifiedDate: 2026-11-12T22:09:39.233Z 
                         ├ [11] ╭ VulnerabilityID : CVE-2026-107891 
                         │      ├ PkgID           : musl-utils@1.2.6-r2 
                         │      ├ PkgName         : musl-utils 
@@ -897,7 +927,7 @@
                         │      │                                                                               
                         │      │                  https://www.openwall.com/lists/musl/2026/10/21/1             
                         │      ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
-                        │      ╰ LastModifiedDate: 2026-11-09T22:18:22.6Z 
+                        │      ╰ LastModifiedDate: 2026-11-12T22:09:39.233Z 
                         ├ [12] ╭ VulnerabilityID : CVE-2026-107496 
                         │      ├ PkgID           : openssl@3.5.8-r0 
                         │      ├ PkgName         : openssl 
@@ -973,10 +1003,11 @@
                         │      │                   is rejected during key import before the vulnerable key
                         │      │                   generation path is
                         │      │                   reached. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
@@ -986,6 +1017,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2026-88822 
@@ -1048,10 +1081,11 @@
                         │      │                   affected by this CVE as
                         │      │                   the affected protocol is not implemented in the FIPS
                         │      │                   module. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-457
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
@@ -1061,6 +1095,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
                         │      │                  6f1ad8cbdb986098982f3                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2026-88823 
@@ -1123,10 +1159,11 @@
                         │      │                   algorithm and is implemented only in the default provider,
                         │      │                   outside the
                         │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-325
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
@@ -1136,6 +1173,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
                         │      │                  6438040a70b0b5e5e0a90                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-95691 
@@ -1193,10 +1232,11 @@
                         │      │                   The FIPS module is not affected as the QUIC implementation
                         │      │                   is outside of
                         │      │                   the OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
@@ -1206,6 +1246,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [16] ╭ VulnerabilityID : CVE-2026-95692 
@@ -1283,10 +1325,11 @@
                         │      │                   The FIPS modules are not affected by this issue, as
                         │      │                   AES-GCM-SIV is not an
                         │      │                   approved algorithm. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
@@ -1296,6 +1339,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [17] ╭ VulnerabilityID : CVE-2026-85091 
@@ -1318,13 +1363,14 @@
                         │      │                   89e6adfb22e 
                         │      ├ Title           : zlib: zlib: Heap buffer overflow in gz_vacate() allows
                         │      │                   arbitrary code execution 
-                        │      ├ Description     : zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer
-                        │      │                   overflow vulnerability in the gz_vacate() function when
-                        │      │                   processing non-blocking gzwrite() operations with stale
-                        │      │                   external buffer pointers. Attackers can trigger the overflow
-                        │      │                    by calling gzprintf() or gzvprintf() after a write stall,
-                        │      │                   causing an unchecked memmove() to write beyond the internal
-                        │      │                   input buffer boundary. 
+                        │      ├ Description     : zlib 1.2.11 through 1.3.2 contains a heap buffer overflow:
+                        │      │                   after an underlying write() fails, gz_write() returns
+                        │      │                   without resetting strm.next_in, leaving it pointed at the
+                        │      │                   caller's buffer. A later gz* write call then derives a
+                        │      │                   position from the stale pointer and writes past a heap
+                        │      │                   allocation; any write() failure reaches it, including EPIPE
+                        │      │                   on a blocking descriptor, and in versions before 1.3.1.2 the
+                        │      │                    failed write must be followed by a gzclearerr() call. 
                         │      ├ Severity        : HIGH 
                         │      ├ CweIDs                  
                         │      │                  ───────
@@ -1344,6 +1390,8 @@
                         │      │                                                                               
                         │      │                  https://github.com/madler/zlib/blob/v1.3.2/gzwrite.c#L393    
                         │      │                                                                               
+                        │      │                  https://github.com/madler/zlib/commit/df84af25dc1942490e1d1c8
+                        │      │                  99a07619152a46148                                            
                         │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-85091              
                         │      │                                                                               
                         │      │                  https://ubuntu.com/security/notices/USN-8954-1               
@@ -1353,7 +1401,7 @@
                         │      │                  https://www.vulncheck.com/advisories/zlib-1.3.1.2-through-1.3
                         │      │                  .2-heap-buffer-overflow-via-gz-vacate                        
                         │      ├ PublishedDate   : 2026-09-03T13:06:20.573Z 
-                        │      ╰ LastModifiedDate: 2026-09-09T20:41:07.123Z 
+                        │      ╰ LastModifiedDate: 2026-11-13T15:17:56.49Z 
                         ╰ [18] ╭ VulnerabilityID : CVE-2026-4738 
                                ├ PkgID           : zlib@1.3.2-r0 
                                ├ PkgName         : zlib 
