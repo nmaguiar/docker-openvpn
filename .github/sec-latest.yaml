@@ -61,14 +61,17 @@
       does not support arbitrary explicit EC domain parameters, so an order-1 group
       is rejected during key import before the vulnerable key generation path is
       reached.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-835
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/36e15b618decdff1b116eead6747718e6e729ad2
     - https://github.com/openssl/openssl/commit/a0051cfe699bf5a047bc1c4faef65f80f7987366
     - https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2782a8b693926bb67b59e7
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-107496
     PublishedDate: '2026-11-10T19:18:02.583Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-88822
@@ -116,14 +119,17 @@
       FIPS impact: no
       The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this CVE as
       the affected protocol is not implemented in the FIPS module.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-457
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0329ea4779eadaa8d8fd75
     - https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b777640050b5257ed2a70e88
     - https://github.com/openssl/openssl/commit/911eee8eb7550b95a206f1ad8cbdb986098982f3
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-88822
     PublishedDate: '2026-11-10T19:21:34.623Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-88823
@@ -173,14 +179,17 @@
       The FIPS modules are not affected, as AES-GCM-SIV is not a FIPS approved
       algorithm and is implemented only in the default provider, outside the
       OpenSSL FIPS module boundary.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-325
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09ad768c8e141def4aa1eb4
     - https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b32f8b5c74f73c5773c682
     - https://github.com/openssl/openssl/commit/6747b1a278816dd7db46438040a70b0b5e5e0a90
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-88823
     PublishedDate: '2026-11-10T19:21:34.847Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-95691
@@ -228,14 +237,17 @@
       FIPS impact: no
       The FIPS module is not affected as the QUIC implementation is outside of
       the OpenSSL FIPS module boundary.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-416
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba336bb4a00be9ebabd84c2a1
     - https://github.com/openssl/openssl/commit/ec9d4de9d03989b29db5a3d7efdb4c285deaf386
     - https://github.com/openssl/openssl/commit/f6244675833e097c2429a40d1b206d95385bd42f
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-95691
     PublishedDate: '2026-11-10T19:21:39.377Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-95692
@@ -294,14 +306,17 @@
       FIPS impact: no
       The FIPS modules are not affected by this issue, as AES-GCM-SIV is not an
       approved algorithm.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-125
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2ef5b3e2d1c021a221b116
     - https://github.com/openssl/openssl/commit/510872388f5d145cf870868b3d288a23822cb776
     - https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22fb1551bd0bfcff4f29613
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-95692
     PublishedDate: '2026-11-10T19:21:39.53Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-107496
@@ -362,14 +377,17 @@
       does not support arbitrary explicit EC domain parameters, so an order-1 group
       is rejected during key import before the vulnerable key generation path is
       reached.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-835
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/36e15b618decdff1b116eead6747718e6e729ad2
     - https://github.com/openssl/openssl/commit/a0051cfe699bf5a047bc1c4faef65f80f7987366
     - https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2782a8b693926bb67b59e7
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-107496
     PublishedDate: '2026-11-10T19:18:02.583Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-88822
@@ -417,14 +435,17 @@
       FIPS impact: no
       The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this CVE as
       the affected protocol is not implemented in the FIPS module.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-457
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0329ea4779eadaa8d8fd75
     - https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b777640050b5257ed2a70e88
     - https://github.com/openssl/openssl/commit/911eee8eb7550b95a206f1ad8cbdb986098982f3
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-88822
     PublishedDate: '2026-11-10T19:21:34.623Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-88823
@@ -474,14 +495,17 @@
       The FIPS modules are not affected, as AES-GCM-SIV is not a FIPS approved
       algorithm and is implemented only in the default provider, outside the
       OpenSSL FIPS module boundary.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-325
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09ad768c8e141def4aa1eb4
     - https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b32f8b5c74f73c5773c682
     - https://github.com/openssl/openssl/commit/6747b1a278816dd7db46438040a70b0b5e5e0a90
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-88823
     PublishedDate: '2026-11-10T19:21:34.847Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-95691
@@ -529,14 +553,17 @@
       FIPS impact: no
       The FIPS module is not affected as the QUIC implementation is outside of
       the OpenSSL FIPS module boundary.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-416
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba336bb4a00be9ebabd84c2a1
     - https://github.com/openssl/openssl/commit/ec9d4de9d03989b29db5a3d7efdb4c285deaf386
     - https://github.com/openssl/openssl/commit/f6244675833e097c2429a40d1b206d95385bd42f
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-95691
     PublishedDate: '2026-11-10T19:21:39.377Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-95692
@@ -595,14 +622,17 @@
       FIPS impact: no
       The FIPS modules are not affected by this issue, as AES-GCM-SIV is not an
       approved algorithm.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-125
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2ef5b3e2d1c021a221b116
     - https://github.com/openssl/openssl/commit/510872388f5d145cf870868b3d288a23822cb776
     - https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22fb1551bd0bfcff4f29613
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-95692
     PublishedDate: '2026-11-10T19:21:39.53Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-107891
@@ -643,7 +673,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-107891
     - https://www.openwall.com/lists/musl/2026/10/21/1
     PublishedDate: '2026-11-05T16:17:32.15Z'
-    LastModifiedDate: '2026-11-09T22:18:22.6Z'
+    LastModifiedDate: '2026-11-12T22:09:39.233Z'
   - VulnerabilityID: CVE-2026-107891
     PkgID: musl-utils@1.2.6-r2
     PkgName: musl-utils
@@ -682,7 +712,7 @@
     - https://www.cve.org/CVERecord?id=CVE-2026-107891
     - https://www.openwall.com/lists/musl/2026/10/21/1
     PublishedDate: '2026-11-05T16:17:32.15Z'
-    LastModifiedDate: '2026-11-09T22:18:22.6Z'
+    LastModifiedDate: '2026-11-12T22:09:39.233Z'
   - VulnerabilityID: CVE-2026-107496
     PkgID: openssl@3.5.8-r0
     PkgName: openssl
@@ -741,14 +771,17 @@
       does not support arbitrary explicit EC domain parameters, so an order-1 group
       is rejected during key import before the vulnerable key generation path is
       reached.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-835
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/36e15b618decdff1b116eead6747718e6e729ad2
     - https://github.com/openssl/openssl/commit/a0051cfe699bf5a047bc1c4faef65f80f7987366
     - https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2782a8b693926bb67b59e7
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-107496
     PublishedDate: '2026-11-10T19:18:02.583Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-88822
@@ -796,14 +829,17 @@
       FIPS impact: no
       The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not affected by this CVE as
       the affected protocol is not implemented in the FIPS module.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-457
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0329ea4779eadaa8d8fd75
     - https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b777640050b5257ed2a70e88
     - https://github.com/openssl/openssl/commit/911eee8eb7550b95a206f1ad8cbdb986098982f3
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-88822
     PublishedDate: '2026-11-10T19:21:34.623Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-88823
@@ -853,14 +889,17 @@
       The FIPS modules are not affected, as AES-GCM-SIV is not a FIPS approved
       algorithm and is implemented only in the default provider, outside the
       OpenSSL FIPS module boundary.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-325
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09ad768c8e141def4aa1eb4
     - https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b32f8b5c74f73c5773c682
     - https://github.com/openssl/openssl/commit/6747b1a278816dd7db46438040a70b0b5e5e0a90
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-88823
     PublishedDate: '2026-11-10T19:21:34.847Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-95691
@@ -908,14 +947,17 @@
       FIPS impact: no
       The FIPS module is not affected as the QUIC implementation is outside of
       the OpenSSL FIPS module boundary.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-416
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba336bb4a00be9ebabd84c2a1
     - https://github.com/openssl/openssl/commit/ec9d4de9d03989b29db5a3d7efdb4c285deaf386
     - https://github.com/openssl/openssl/commit/f6244675833e097c2429a40d1b206d95385bd42f
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-95691
     PublishedDate: '2026-11-10T19:21:39.377Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-95692
@@ -974,14 +1016,17 @@
       FIPS impact: no
       The FIPS modules are not affected by this issue, as AES-GCM-SIV is not an
       approved algorithm.
-    Severity: UNKNOWN
+    Severity: MEDIUM
     CweIDs:
     - CWE-125
+    VendorSeverity:
+      ubuntu: 2
     References:
     - https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2ef5b3e2d1c021a221b116
     - https://github.com/openssl/openssl/commit/510872388f5d145cf870868b3d288a23822cb776
     - https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22fb1551bd0bfcff4f29613
     - https://openssl-library.org/news/secadv/20261110.txt
+    - https://www.cve.org/CVERecord?id=CVE-2026-95692
     PublishedDate: '2026-11-10T19:21:39.53Z'
     LastModifiedDate: '2026-11-10T22:10:04.727Z'
   - VulnerabilityID: CVE-2026-85091
@@ -1003,7 +1048,7 @@
       URL: https://secdb.alpinelinux.org/
     Fingerprint: sha256:84d146f566b9c4d85720ecf52869a0ec2b8eea2f49b3d600dba1089e6adfb22e
     Title: 'zlib: zlib: Heap buffer overflow in gz_vacate() allows arbitrary code execution'
-    Description: zlib versions 1.3.1.2 through 1.3.2 contain a heap buffer overflow vulnerability in the gz_vacate() function when processing non-blocking gzwrite() operations with stale external buffer pointers. Attackers can trigger the overflow by calling gzprintf() or gzvprintf() after a write stall, causing an unchecked memmove() to write beyond the internal input buffer boundary.
+    Description: 'zlib 1.2.11 through 1.3.2 contains a heap buffer overflow: after an underlying write() fails, gz_write() returns without resetting strm.next_in, leaving it pointed at the caller''s buffer. A later gz* write call then derives a position from the stale pointer and writes past a heap allocation; any write() failure reaches it, including EPIPE on a blocking descriptor, and in versions before 1.3.1.2 the failed write must be followed by a gzclearerr() call.'
     Severity: HIGH
     CweIDs:
     - CWE-787
@@ -1020,12 +1065,13 @@
     - https://gist.github.com/thesmartshadow/e0b9481792afb7c31e86fee1ff084490
     - https://github.com/madler/zlib
     - https://github.com/madler/zlib/blob/v1.3.2/gzwrite.c#L393
+    - https://github.com/madler/zlib/commit/df84af25dc1942490e1d1c899a07619152a46148
     - https://nvd.nist.gov/vuln/detail/CVE-2026-85091
     - https://ubuntu.com/security/notices/USN-8954-1
     - https://www.cve.org/CVERecord?id=CVE-2026-85091
     - https://www.vulncheck.com/advisories/zlib-1.3.1.2-through-1.3.2-heap-buffer-overflow-via-gz-vacate
     PublishedDate: '2026-09-03T13:06:20.573Z'
-    LastModifiedDate: '2026-09-09T20:41:07.123Z'
+    LastModifiedDate: '2026-11-13T15:17:56.49Z'
   - VulnerabilityID: CVE-2026-4738
     PkgID: zlib@1.3.2-r0
     PkgName: zlib
