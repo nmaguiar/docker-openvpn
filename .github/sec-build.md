@@ -20,8 +20,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:1b5267b5f8b2f1a77dd9333df8a113410bdacc0621f4c57219156
-                        │      │                   ee32549fc59 
+                        │      ├ Fingerprint     : sha256:d1bf06399c14d0b29bbcf1ae5983768a028b17fb90b85b50aa10e
+                        │      │                   166c1c37d64 
                         │      ├ Title           : Issue summary: Encrypting a CMS message to an EC certificate
                         │      │                    whose gro ... 
                         │      ├ Description     : Issue summary: Encrypting a CMS message to an EC certificate
@@ -78,10 +78,11 @@
                         │      │                   is rejected during key import before the vulnerable key
                         │      │                   generation path is
                         │      │                   reached. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
@@ -91,6 +92,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-88822 
@@ -110,8 +113,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:e87b69f62c383c04c0cf6b471f24ae25963fd6cc4c76576c4fc48
-                        │      │                   1d9ea618449 
+                        │      ├ Fingerprint     : sha256:1da8e44490e5ede6230ee9d36cdb69a1e87d665aa5739b7e4b77f
+                        │      │                   ebaf35a2d33 
                         │      ├ Title           : Issue summary: QUIC, when performing automated peer
                         │      │                   detection, may all ... 
                         │      ├ Description     : Issue summary: QUIC, when performing automated peer
@@ -153,10 +156,11 @@
                         │      │                   affected by this CVE as
                         │      │                   the affected protocol is not implemented in the FIPS
                         │      │                   module. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-457
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
@@ -166,6 +170,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
                         │      │                  6f1ad8cbdb986098982f3                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2026-88823 
@@ -185,8 +191,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:02e8d4d63fe8f87b11de43818ffbc04b6109bb834397e867ce9d6
-                        │      │                   c281a4a7916 
+                        │      ├ Fingerprint     : sha256:30f4a8092a7b92dd2412b635c7decc933428a77a2e798f485010a
+                        │      │                   0c97c4551e6 
                         │      ├ Title           : Issue summary: The AES-GCM-SIV implementation treats a
                         │      │                   zero-length Add ... 
                         │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
@@ -228,10 +234,11 @@
                         │      │                   algorithm and is implemented only in the default provider,
                         │      │                   outside the
                         │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-325
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
@@ -241,6 +248,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
                         │      │                  6438040a70b0b5e5e0a90                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2026-95691 
@@ -260,8 +269,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:c1084cd64da1d226791e2af974b4502f14da22d77934fb87f201b
-                        │      │                   c72f24290bd 
+                        │      ├ Fingerprint     : sha256:37643f10fd8f9ed13fe9c558011b287c59f7248c805e9d7493605
+                        │      │                   9a68059c8b8 
                         │      ├ Title           : Issue summary: A retransmitted QUIC CRYPTO frame can release
                         │      │                    packet st ... 
                         │      ├ Description     : Issue summary: A retransmitted QUIC CRYPTO frame can release
@@ -298,10 +307,11 @@
                         │      │                   The FIPS module is not affected as the QUIC implementation
                         │      │                   is outside of
                         │      │                   the OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
@@ -311,6 +321,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2026-95692 
@@ -330,8 +342,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:88cc2254cfadf0dfc66c8a847b680bd35f409dc02b1c2b7cff00f
-                        │      │                   0c9a9f26197 
+                        │      ├ Fingerprint     : sha256:1fd984be343df1c09f10bfd4d114995ebd351881f810ebb807a65
+                        │      │                   e61c2e4f22d 
                         │      ├ Title           : Issue summary: Setting an AES-GCM-SIV IV shorter than the
                         │      │                   expected non ... 
                         │      ├ Description     : Issue summary: Setting an AES-GCM-SIV IV shorter than the
@@ -388,10 +400,11 @@
                         │      │                   The FIPS modules are not affected by this issue, as
                         │      │                   AES-GCM-SIV is not an
                         │      │                   approved algorithm. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
@@ -401,6 +414,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2026-107496 
@@ -420,8 +435,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:6dd1d3e9a71a7833dc182f63951395a201f36460a7c6c77be79f3
-                        │      │                   774a266cf05 
+                        │      ├ Fingerprint     : sha256:de880fb60b2c67600e2b373e950c1d9f09551c9195d453b376b7d
+                        │      │                   97902bf63f7 
                         │      ├ Title           : Issue summary: Encrypting a CMS message to an EC certificate
                         │      │                    whose gro ... 
                         │      ├ Description     : Issue summary: Encrypting a CMS message to an EC certificate
@@ -478,10 +493,11 @@
                         │      │                   is rejected during key import before the vulnerable key
                         │      │                   generation path is
                         │      │                   reached. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
@@ -491,6 +507,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-88822 
@@ -510,8 +528,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:c4ff3e9d892c341e8a4d694d6bf4eaa8023a648174711f0cc0da9
-                        │      │                   4ff0c885e1a 
+                        │      ├ Fingerprint     : sha256:223013dbeb2cfc2384088bc76205f153805fe71ab512157bfdbcd
+                        │      │                   11692953f00 
                         │      ├ Title           : Issue summary: QUIC, when performing automated peer
                         │      │                   detection, may all ... 
                         │      ├ Description     : Issue summary: QUIC, when performing automated peer
@@ -553,10 +571,11 @@
                         │      │                   affected by this CVE as
                         │      │                   the affected protocol is not implemented in the FIPS
                         │      │                   module. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-457
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
@@ -566,6 +585,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
                         │      │                  6f1ad8cbdb986098982f3                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-88823 
@@ -585,8 +606,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:fbf0df5ac7223dc907ff7b336b0c7e82cddd2a926e628b7d36141
-                        │      │                   0fe34a07e45 
+                        │      ├ Fingerprint     : sha256:2c661d5d5aafbc5d9a0c45409a36bf5fe63826d42177712545d6c
+                        │      │                   9494d944777 
                         │      ├ Title           : Issue summary: The AES-GCM-SIV implementation treats a
                         │      │                   zero-length Add ... 
                         │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
@@ -628,10 +649,11 @@
                         │      │                   algorithm and is implemented only in the default provider,
                         │      │                   outside the
                         │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-325
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
@@ -641,6 +663,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
                         │      │                  6438040a70b0b5e5e0a90                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-95691 
@@ -660,8 +684,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:4643e19d2fdeb632fd19e084f2ca8f2317f9b516e4bf6868e3879
-                        │      │                   960381e6de9 
+                        │      ├ Fingerprint     : sha256:2e88453113866647b3133c80349044a7a20c37ae26937fe13f9d5
+                        │      │                   8e7f67d64ce 
                         │      ├ Title           : Issue summary: A retransmitted QUIC CRYPTO frame can release
                         │      │                    packet st ... 
                         │      ├ Description     : Issue summary: A retransmitted QUIC CRYPTO frame can release
@@ -698,10 +722,11 @@
                         │      │                   The FIPS module is not affected as the QUIC implementation
                         │      │                   is outside of
                         │      │                   the OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
@@ -711,6 +736,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-95692 
@@ -730,8 +757,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:4f84310010a690115f2e4f965b4469033dd0abd223f8af38dc275
-                        │      │                   b752617fe44 
+                        │      ├ Fingerprint     : sha256:eb8fbf40b166ae89b3dde729309b684c5deea2313e92d665edfe2
+                        │      │                   670349ef43f 
                         │      ├ Title           : Issue summary: Setting an AES-GCM-SIV IV shorter than the
                         │      │                   expected non ... 
                         │      ├ Description     : Issue summary: Setting an AES-GCM-SIV IV shorter than the
@@ -788,10 +815,11 @@
                         │      │                   The FIPS modules are not affected by this issue, as
                         │      │                   AES-GCM-SIV is not an
                         │      │                   approved algorithm. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
@@ -801,6 +829,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-107891 
@@ -819,8 +849,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:e231c027eda9c825e35f11e609c3b3b1c620ec0aa06dce915256f
-                        │      │                   756edac376c 
+                        │      ├ Fingerprint     : sha256:29c0566cd6478139c3bc404559a0ed8d4c50971e36c20f333a670
+                        │      │                   35bc89b10e9 
                         │      ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
                         │      │                    regcomp 
                         │      ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
@@ -849,7 +879,7 @@
                         │      │                                                                               
                         │      │                  https://www.openwall.com/lists/musl/2026/10/21/1             
                         │      ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
-                        │      ╰ LastModifiedDate: 2026-11-09T22:18:22.6Z 
+                        │      ╰ LastModifiedDate: 2026-11-12T22:09:39.233Z 
                         ├ [11] ╭ VulnerabilityID : CVE-2026-107891 
                         │      ├ PkgID           : musl-utils@1.2.6-r3 
                         │      ├ PkgName         : musl-utils 
@@ -867,8 +897,8 @@
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:1b3306578420fe6b18dbbc8b2cc61ccac2b31cb8ad6ceaf9abeb6
-                        │      │                   53092f43d4f 
+                        │      ├ Fingerprint     : sha256:0c81e7ed697a070180a26c06f25c96bdb295d551e534c214c552c
+                        │      │                   8dbf0e05982 
                         │      ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
                         │      │                    regcomp 
                         │      ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
@@ -897,7 +927,7 @@
                         │      │                                                                               
                         │      │                  https://www.openwall.com/lists/musl/2026/10/21/1             
                         │      ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
-                        │      ╰ LastModifiedDate: 2026-11-09T22:18:22.6Z 
+                        │      ╰ LastModifiedDate: 2026-11-12T22:09:39.233Z 
                         ├ [12] ╭ VulnerabilityID : CVE-2026-107496 
                         │      ├ PkgID           : openssl@3.5.9-r0 
                         │      ├ PkgName         : openssl 
@@ -907,16 +937,16 @@
                         │      ├ InstalledVersion: 3.5.9-r0 
                         │      ├ FixedVersion    : 3.5.9-r1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4a15c2d93ea196ba856215d283e08d93c612c8489807
-                        │      │                  │         dc53779c76cea85ec956 
-                        │      │                  ╰ DiffID: sha256:790983144bdfee9d440af929f8f1b8b07f58d315e6b4
-                        │      │                            a5a9b12dff961f843190 
+                        │      ├ Layer            ╭ Digest: sha256:1c905502ed518dd17cc6a7e3c4490e6e1929bbcd9738
+                        │      │                  │         b7901b6b0eb942762247 
+                        │      │                  ╰ DiffID: sha256:5139648971f787fdf5b128d60ae32c9129470dec8c31
+                        │      │                            1e8d7f869e8b9281ad70 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-107496 
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:caa24dba9bb211da46d23dc40a1ffc2195de23fbe62d6faf91a48
-                        │      │                   b3f3eeddb6c 
+                        │      ├ Fingerprint     : sha256:5cd4cc8247bef7f52eb1a6ce1bb8d03bd7068b7858c88d4f994a1
+                        │      │                   ea78af8a5ce 
                         │      ├ Title           : Issue summary: Encrypting a CMS message to an EC certificate
                         │      │                    whose gro ... 
                         │      ├ Description     : Issue summary: Encrypting a CMS message to an EC certificate
@@ -973,10 +1003,11 @@
                         │      │                   is rejected during key import before the vulnerable key
                         │      │                   generation path is
                         │      │                   reached. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
@@ -986,6 +1017,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2026-88822 
@@ -997,16 +1030,16 @@
                         │      ├ InstalledVersion: 3.5.9-r0 
                         │      ├ FixedVersion    : 3.5.9-r1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4a15c2d93ea196ba856215d283e08d93c612c8489807
-                        │      │                  │         dc53779c76cea85ec956 
-                        │      │                  ╰ DiffID: sha256:790983144bdfee9d440af929f8f1b8b07f58d315e6b4
-                        │      │                            a5a9b12dff961f843190 
+                        │      ├ Layer            ╭ Digest: sha256:1c905502ed518dd17cc6a7e3c4490e6e1929bbcd9738
+                        │      │                  │         b7901b6b0eb942762247 
+                        │      │                  ╰ DiffID: sha256:5139648971f787fdf5b128d60ae32c9129470dec8c31
+                        │      │                            1e8d7f869e8b9281ad70 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88822 
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:2947fa574de1a8155d7f165bcaf8dc0cb94901286ce68db2d9cda
-                        │      │                   210585b872f 
+                        │      ├ Fingerprint     : sha256:73e3c43423e8d1e63b80209bb4b50eeee1bd87cbee486b4a3e673
+                        │      │                   aa307fc563b 
                         │      ├ Title           : Issue summary: QUIC, when performing automated peer
                         │      │                   detection, may all ... 
                         │      ├ Description     : Issue summary: QUIC, when performing automated peer
@@ -1048,10 +1081,11 @@
                         │      │                   affected by this CVE as
                         │      │                   the affected protocol is not implemented in the FIPS
                         │      │                   module. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-457
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
@@ -1061,6 +1095,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
                         │      │                  6f1ad8cbdb986098982f3                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2026-88823 
@@ -1072,16 +1108,16 @@
                         │      ├ InstalledVersion: 3.5.9-r0 
                         │      ├ FixedVersion    : 3.5.9-r1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4a15c2d93ea196ba856215d283e08d93c612c8489807
-                        │      │                  │         dc53779c76cea85ec956 
-                        │      │                  ╰ DiffID: sha256:790983144bdfee9d440af929f8f1b8b07f58d315e6b4
-                        │      │                            a5a9b12dff961f843190 
+                        │      ├ Layer            ╭ Digest: sha256:1c905502ed518dd17cc6a7e3c4490e6e1929bbcd9738
+                        │      │                  │         b7901b6b0eb942762247 
+                        │      │                  ╰ DiffID: sha256:5139648971f787fdf5b128d60ae32c9129470dec8c31
+                        │      │                            1e8d7f869e8b9281ad70 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88823 
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:17ef98d8beb0a6558fd26d2df701dd080e09c1cbc71164116c335
-                        │      │                   34031fc1125 
+                        │      ├ Fingerprint     : sha256:7285610890d9a236f93f4feec1c563465907fb7681d2a3275c5fc
+                        │      │                   f9686abaac3 
                         │      ├ Title           : Issue summary: The AES-GCM-SIV implementation treats a
                         │      │                   zero-length Add ... 
                         │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
@@ -1123,10 +1159,11 @@
                         │      │                   algorithm and is implemented only in the default provider,
                         │      │                   outside the
                         │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-325
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
@@ -1136,6 +1173,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
                         │      │                  6438040a70b0b5e5e0a90                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-95691 
@@ -1147,16 +1186,16 @@
                         │      ├ InstalledVersion: 3.5.9-r0 
                         │      ├ FixedVersion    : 3.5.9-r1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4a15c2d93ea196ba856215d283e08d93c612c8489807
-                        │      │                  │         dc53779c76cea85ec956 
-                        │      │                  ╰ DiffID: sha256:790983144bdfee9d440af929f8f1b8b07f58d315e6b4
-                        │      │                            a5a9b12dff961f843190 
+                        │      ├ Layer            ╭ Digest: sha256:1c905502ed518dd17cc6a7e3c4490e6e1929bbcd9738
+                        │      │                  │         b7901b6b0eb942762247 
+                        │      │                  ╰ DiffID: sha256:5139648971f787fdf5b128d60ae32c9129470dec8c31
+                        │      │                            1e8d7f869e8b9281ad70 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-95691 
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:a9d20df47a6bf98a747d00c6f19f0f26bdf15888775e627204eac
-                        │      │                   40c4e10ffe5 
+                        │      ├ Fingerprint     : sha256:75dc977905302a8e1979c0aac4686fa279c1e095dc3f0d834af1e
+                        │      │                   65887dfd804 
                         │      ├ Title           : Issue summary: A retransmitted QUIC CRYPTO frame can release
                         │      │                    packet st ... 
                         │      ├ Description     : Issue summary: A retransmitted QUIC CRYPTO frame can release
@@ -1193,10 +1232,11 @@
                         │      │                   The FIPS module is not affected as the QUIC implementation
                         │      │                   is outside of
                         │      │                   the OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
@@ -1206,6 +1246,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ├ [16] ╭ VulnerabilityID : CVE-2026-95692 
@@ -1217,16 +1259,16 @@
                         │      ├ InstalledVersion: 3.5.9-r0 
                         │      ├ FixedVersion    : 3.5.9-r1 
                         │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:4a15c2d93ea196ba856215d283e08d93c612c8489807
-                        │      │                  │         dc53779c76cea85ec956 
-                        │      │                  ╰ DiffID: sha256:790983144bdfee9d440af929f8f1b8b07f58d315e6b4
-                        │      │                            a5a9b12dff961f843190 
+                        │      ├ Layer            ╭ Digest: sha256:1c905502ed518dd17cc6a7e3c4490e6e1929bbcd9738
+                        │      │                  │         b7901b6b0eb942762247 
+                        │      │                  ╰ DiffID: sha256:5139648971f787fdf5b128d60ae32c9129470dec8c31
+                        │      │                            1e8d7f869e8b9281ad70 
                         │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-95692 
                         │      ├ DataSource       ╭ ID  : alpine 
                         │      │                  ├ Name: Alpine Secdb 
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:645ee1607a7a11e2379a64790131039801c003e66b5e7724824dd
-                        │      │                   beb523f972a 
+                        │      ├ Fingerprint     : sha256:996e22843d44dd0902deaefd5ccfeb0dd51ce7bebcc324dd9356f
+                        │      │                   0d00c4ea833 
                         │      ├ Title           : Issue summary: Setting an AES-GCM-SIV IV shorter than the
                         │      │                   expected non ... 
                         │      ├ Description     : Issue summary: Setting an AES-GCM-SIV IV shorter than the
@@ -1283,10 +1325,11 @@
                         │      │                   The FIPS modules are not affected by this issue, as
                         │      │                   AES-GCM-SIV is not an
                         │      │                   approved algorithm. 
-                        │      ├ Severity        : UNKNOWN 
+                        │      ├ Severity        : MEDIUM 
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
+                        │      ├ VendorSeverity   ─ ubuntu: 2 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
@@ -1296,6 +1339,8 @@
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
                         ╰ [17] ╭ VulnerabilityID : CVE-2026-4738 
@@ -1314,8 +1359,8 @@
                                ├ DataSource       ╭ ID  : alpine 
                                │                  ├ Name: Alpine Secdb 
                                │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                               ├ Fingerprint     : sha256:f0bafbdda251008b60162fa7b11c38ceb5bc34e53e55e3c7bcd87
-                               │                   6bd2b63faab 
+                               ├ Fingerprint     : sha256:de06654fbd03b5015011000b896607de03d7af5759c0849aa6a20
+                               │                   6f580604e00 
                                ├ Title           : Improper Restriction of Operations within the Bounds of a
                                │                   Memory Buffe ... 
                                ├ Description     : Improper Restriction of Operations within the Bounds of a
