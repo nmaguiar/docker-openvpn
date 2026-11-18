@@ -95,7 +95,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T19:17:24.6Z 
                         ├ [1]  ╭ VulnerabilityID : CVE-2026-88822 
                         │      ├ PkgID           : libcrypto3@3.5.9-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -173,7 +173,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
                         ├ [2]  ╭ VulnerabilityID : CVE-2026-88823 
                         │      ├ PkgID           : libcrypto3@3.5.9-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -251,7 +251,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
                         ├ [3]  ╭ VulnerabilityID : CVE-2026-95691 
                         │      ├ PkgID           : libcrypto3@3.5.9-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -324,7 +324,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:19.43Z 
                         ├ [4]  ╭ VulnerabilityID : CVE-2026-95692 
                         │      ├ PkgID           : libcrypto3@3.5.9-r0 
                         │      ├ PkgName         : libcrypto3 
@@ -417,7 +417,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T19:17:54.88Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2026-107496 
                         │      ├ PkgID           : libssl3@3.5.9-r0 
                         │      ├ PkgName         : libssl3 
@@ -510,7 +510,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T19:17:24.6Z 
                         ├ [6]  ╭ VulnerabilityID : CVE-2026-88822 
                         │      ├ PkgID           : libssl3@3.5.9-r0 
                         │      ├ PkgName         : libssl3 
@@ -588,7 +588,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
                         ├ [7]  ╭ VulnerabilityID : CVE-2026-88823 
                         │      ├ PkgID           : libssl3@3.5.9-r0 
                         │      ├ PkgName         : libssl3 
@@ -666,7 +666,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
                         ├ [8]  ╭ VulnerabilityID : CVE-2026-95691 
                         │      ├ PkgID           : libssl3@3.5.9-r0 
                         │      ├ PkgName         : libssl3 
@@ -739,7 +739,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:19.43Z 
                         ├ [9]  ╭ VulnerabilityID : CVE-2026-95692 
                         │      ├ PkgID           : libssl3@3.5.9-r0 
                         │      ├ PkgName         : libssl3 
@@ -832,7 +832,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T19:17:54.88Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-107891 
                         │      ├ PkgID           : musl@1.2.6-r3 
                         │      ├ PkgName         : musl 
@@ -1020,7 +1020,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T19:17:24.6Z 
                         ├ [13] ╭ VulnerabilityID : CVE-2026-88822 
                         │      ├ PkgID           : openssl@3.5.9-r0 
                         │      ├ PkgName         : openssl 
@@ -1098,7 +1098,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
                         ├ [14] ╭ VulnerabilityID : CVE-2026-88823 
                         │      ├ PkgID           : openssl@3.5.9-r0 
                         │      ├ PkgName         : openssl 
@@ -1176,7 +1176,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
                         │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
                         ├ [15] ╭ VulnerabilityID : CVE-2026-95691 
                         │      ├ PkgID           : openssl@3.5.9-r0 
                         │      ├ PkgName         : openssl 
@@ -1249,7 +1249,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:19.43Z 
                         ├ [16] ╭ VulnerabilityID : CVE-2026-95692 
                         │      ├ PkgID           : openssl@3.5.9-r0 
                         │      ├ PkgName         : openssl 
@@ -1342,7 +1342,7 @@
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
-                        │      ╰ LastModifiedDate: 2026-11-10T22:10:04.727Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T19:17:54.88Z 
                         ╰ [17] ╭ VulnerabilityID : CVE-2026-4738 
                                ├ PkgID           : zlib@1.3.2-r1 
                                ├ PkgName         : zlib 
