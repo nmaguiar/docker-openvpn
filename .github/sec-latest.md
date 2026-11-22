@@ -22,8 +22,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:5a199530455afd58ffb6cb376350ba1de80bb321e1f810a941492
                         │      │                   4072381387a 
-                        │      ├ Title           : Issue summary: Encrypting a CMS message to an EC certificate
-                        │      │                    whose gro ... 
+                        │      ├ Title           : openssl: openssl: Denial of Service via crafted EC
+                        │      │                   certificate in CMS encryption 
                         │      ├ Description     : Issue summary: Encrypting a CMS message to an EC certificate
                         │      │                    whose group order
                         │      │                   is 1 may cause CMS_encrypt() or CMS_encrypt_ex() to loop
@@ -82,177 +82,28 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.9 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-107496       
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
                         │      │                  6eead6747718e6e729ad2                                        
                         │      │                  https://github.com/openssl/openssl/commit/a0051cfe699bf5a047b
                         │      │                  c1c4faef65f80f7987366                                        
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-107496             
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-16T19:17:24.6Z 
-                        ├ [1]  ╭ VulnerabilityID : CVE-2026-88822 
-                        │      ├ PkgID           : libcrypto3@3.5.8-r0 
-                        │      ├ PkgName         : libcrypto3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.8-r0?arch=x86_64&distro
-                        │      │                  │       =3.24.2 
-                        │      │                  ╰ UID : 4299bba2ba9c96aa 
-                        │      ├ InstalledVersion: 3.5.8-r0 
-                        │      ├ FixedVersion    : 3.5.9-r1 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
-                        │      │                  │         e4c4b714dcfde2a102b5 
-                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
-                        │      │                            23ce36760701b0b7f711 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88822 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:814f162b621052865f9e746c6b7bbc3e06fcdec52fa5b8326dc5d
-                        │      │                   a0e4ed45512 
-                        │      ├ Title           : Issue summary: QUIC, when performing automated peer
-                        │      │                   detection, may all ... 
-                        │      ├ Description     : Issue summary: QUIC, when performing automated peer
-                        │      │                   detection, may allow
-                        │      │                   uninitialized stack data to leak into the received address
-                        │      │                   which is then used
-                        │      │                   as the destination for outgoing packets.
-                        │      │                   
-                        │      │                   Impact summary: Applications using QUIC's automated peer
-                        │      │                   detection mechanism
-                        │      │                   may receive an invalid address, leading to connection loss
-                        │      │                   and disclosure of
-                        │      │                   uninitialized stack data to an attacker observing the
-                        │      │                   outgoing network traffic.
-                        │      │                   CWE: CWE-457 (Use of Uninitialized Variable)
-                        │      │                   Description: The OpenSSL QUIC stack contains a feature in
-                        │      │                   which, when using an
-                        │      │                   already connected socket, it will auto-detect the peer
-                        │      │                   address during the SSL
-                        │      │                   handshake.  This feature uses the getpeername() function,
-                        │      │                   passing a buffer of
-                        │      │                   sufficient length to hold any supported address family, but
-                        │      │                   passes a buffer
-                        │      │                   length that is only sized such that larger addresses, such
-                        │      │                   as IPv6, cannot be
-                        │      │                   retrieved. The getpeername() function however, still returns
-                        │      │                    the full address
-                        │      │                   length, which is accepted as the valid input buffer length,
-                        │      │                   leading to the
-                        │      │                   address buffer containing uninitialized stack data instead
-                        │      │                   of the actual peer
-                        │      │                   address. The invalid peer address is then used as
-                        │      │                   destination for the outgoing
-                        │      │                   packets which leads to a connectivity breakage and a leakage
-                        │      │                    of the
-                        │      │                   uninitialized stack data to passive network observers.
-                        │      │                   FIPS impact: no
-                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
-                        │      │                   affected by this CVE as
-                        │      │                   the affected protocol is not implemented in the FIPS
-                        │      │                   module. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs                  
-                        │      │                  ───────
-                        │      │                  CWE-457
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ├ References                                                                    
-                        │      │                  ─────────────────────────────────────────────────────────────
-                        │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
-                        │      │                  329ea4779eadaa8d8fd75                                        
-                        │      │                  https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b77
-                        │      │                  7640050b5257ed2a70e88                                        
-                        │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
-                        │      │                  6f1ad8cbdb986098982f3                                        
-                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
-                        │      │                                                                               
-                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
-                        │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
-                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
-                        ├ [2]  ╭ VulnerabilityID : CVE-2026-88823 
-                        │      ├ PkgID           : libcrypto3@3.5.8-r0 
-                        │      ├ PkgName         : libcrypto3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.8-r0?arch=x86_64&distro
-                        │      │                  │       =3.24.2 
-                        │      │                  ╰ UID : 4299bba2ba9c96aa 
-                        │      ├ InstalledVersion: 3.5.8-r0 
-                        │      ├ FixedVersion    : 3.5.9-r1 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
-                        │      │                  │         e4c4b714dcfde2a102b5 
-                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
-                        │      │                            23ce36760701b0b7f711 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88823 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:0b9290e36dd54fa792fee9cc58cbfbc45ed6181456a9f9361df4e
-                        │      │                   cc1bda3f1ae 
-                        │      ├ Title           : Issue summary: The AES-GCM-SIV implementation treats a
-                        │      │                   zero-length Add ... 
-                        │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
-                        │      │                   zero-length Additional
-                        │      │                   Authenticated Data (AAD) update as a reset of all the AAD
-                        │      │                   supplied so far,
-                        │      │                   instead of leaving the AAD unchanged. An application that
-                        │      │                   supplies its AAD in
-                        │      │                   several fragments, one of which is empty, therefore produces
-                        │      │                    or verifies
-                        │      │                   messages whose authentication tag does not cover the AAD
-                        │      │                   supplied before
-                        │      │                   the empty fragment.
-                        │      │                   
-                        │      │                   Impact summary: Data an application intended to authenticate
-                        │      │                    alongside a
-                        │      │                   message is silently left unauthenticated. An attacker can
-                        │      │                   forge the AAD of such
-                        │      │                   a message.
-                        │      │                   CWE: CWE-325: Missing Cryptographic Step
-                        │      │                   Description: An application passing AAD in multiple chunks
-                        │      │                   of which some have
-                        │      │                   zero length will have the previous AAD chunks effectively
-                        │      │                   unauthenticated. Also,
-                        │      │                   on context re-initialisation, the AAD was not reset, which
-                        │      │                   meant that any AAD
-                        │      │                   accumulated from the previous context usage were also
-                        │      │                   included in the AAD of the
-                        │      │                   new message.
-                        │      │                   The fix makes a zero-length AAD update a no-op and clears
-                        │      │                   any accumulated AAD
-                        │      │                   whenever the context is re-initialised with a key or a
-                        │      │                   nonce.
-                        │      │                   A re-initialisation that only changes parameters keeps the
-                        │      │                   AAD.
-                        │      │                   FIPS impact: no
-                        │      │                   The FIPS modules are not affected, as AES-GCM-SIV is not a
-                        │      │                   FIPS approved
-                        │      │                   algorithm and is implemented only in the default provider,
-                        │      │                   outside the
-                        │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs                  
-                        │      │                  ───────
-                        │      │                  CWE-325
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ├ References                                                                    
-                        │      │                  ─────────────────────────────────────────────────────────────
-                        │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
-                        │      │                  ad768c8e141def4aa1eb4                                        
-                        │      │                  https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b
-                        │      │                  32f8b5c74f73c5773c682                                        
-                        │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
-                        │      │                  6438040a70b0b5e5e0a90                                        
-                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
-                        │      │                                                                               
-                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
-                        │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
-                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
-                        ├ [3]  ╭ VulnerabilityID : CVE-2026-95691 
+                        ├ [1]  ╭ VulnerabilityID : CVE-2026-95691 
                         │      ├ PkgID           : libcrypto3@3.5.8-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.8-r0?arch=x86_64&distro
@@ -271,8 +122,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:7e64668c74071ce0a23e424014b3d1d6c620dde5ecad94550df5f
                         │      │                   33042daa558 
-                        │      ├ Title           : Issue summary: A retransmitted QUIC CRYPTO frame can release
-                        │      │                    packet st ... 
+                        │      ├ Title           : openssl: openssl: Denial of Service via overlapping QUIC
+                        │      │                   CRYPTO frame processing 
                         │      ├ Description     : Issue summary: A retransmitted QUIC CRYPTO frame can release
                         │      │                    packet storage
                         │      │                   while the TLS record layer retains a direct pointer into
@@ -311,21 +162,28 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 5.4 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-95691        
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
                         │      │                  6bb4a00be9ebabd84c2a1                                        
                         │      │                  https://github.com/openssl/openssl/commit/ec9d4de9d03989b29db
                         │      │                  5a3d7efdb4c285deaf386                                        
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-95691              
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-16T20:19:19.43Z 
-                        ├ [4]  ╭ VulnerabilityID : CVE-2026-95692 
+                        ├ [2]  ╭ VulnerabilityID : CVE-2026-95692 
                         │      ├ PkgID           : libcrypto3@3.5.8-r0 
                         │      ├ PkgName         : libcrypto3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.8-r0?arch=x86_64&distro
@@ -344,8 +202,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:34309043e0ca6f69c70b61ac0e6bfacfb1e4704ad2820e09f3192
                         │      │                   b0faa5abdfa 
-                        │      ├ Title           : Issue summary: Setting an AES-GCM-SIV IV shorter than the
-                        │      │                   expected non ... 
+                        │      ├ Title           : openssl: OpenSSL: Denial of Service via out-of-bounds read
+                        │      │                   in AES-GCM-SIV 
                         │      ├ Description     : Issue summary: Setting an AES-GCM-SIV IV shorter than the
                         │      │                   expected nonce
                         │      │                   length via EVP_CipherInit_ex() may trigger a heap
@@ -404,20 +262,197 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 4.8 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-95692        
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
                         │      │                  ef5b3e2d1c021a221b116                                        
                         │      │                  https://github.com/openssl/openssl/commit/510872388f5d145cf87
                         │      │                  0868b3d288a23822cb776                                        
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-95692              
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-16T19:17:54.88Z 
+                        ├ [3]  ╭ VulnerabilityID : CVE-2026-88822 
+                        │      ├ PkgID           : libcrypto3@3.5.8-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.8-r0?arch=x86_64&distro
+                        │      │                  │       =3.24.2 
+                        │      │                  ╰ UID : 4299bba2ba9c96aa 
+                        │      ├ InstalledVersion: 3.5.8-r0 
+                        │      ├ FixedVersion    : 3.5.9-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
+                        │      │                  │         e4c4b714dcfde2a102b5 
+                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
+                        │      │                            23ce36760701b0b7f711 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88822 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:814f162b621052865f9e746c6b7bbc3e06fcdec52fa5b8326dc5d
+                        │      │                   a0e4ed45512 
+                        │      ├ Title           : openssl: openssl: Information disclosure via uninitialized
+                        │      │                   memory in QUIC peer detection 
+                        │      ├ Description     : Issue summary: QUIC, when performing automated peer
+                        │      │                   detection, may allow
+                        │      │                   uninitialized stack data to leak into the received address
+                        │      │                   which is then used
+                        │      │                   as the destination for outgoing packets.
+                        │      │                   
+                        │      │                   Impact summary: Applications using QUIC's automated peer
+                        │      │                   detection mechanism
+                        │      │                   may receive an invalid address, leading to connection loss
+                        │      │                   and disclosure of
+                        │      │                   uninitialized stack data to an attacker observing the
+                        │      │                   outgoing network traffic.
+                        │      │                   CWE: CWE-457 (Use of Uninitialized Variable)
+                        │      │                   Description: The OpenSSL QUIC stack contains a feature in
+                        │      │                   which, when using an
+                        │      │                   already connected socket, it will auto-detect the peer
+                        │      │                   address during the SSL
+                        │      │                   handshake.  This feature uses the getpeername() function,
+                        │      │                   passing a buffer of
+                        │      │                   sufficient length to hold any supported address family, but
+                        │      │                   passes a buffer
+                        │      │                   length that is only sized such that larger addresses, such
+                        │      │                   as IPv6, cannot be
+                        │      │                   retrieved. The getpeername() function however, still returns
+                        │      │                    the full address
+                        │      │                   length, which is accepted as the valid input buffer length,
+                        │      │                   leading to the
+                        │      │                   address buffer containing uninitialized stack data instead
+                        │      │                   of the actual peer
+                        │      │                   address. The invalid peer address is then used as
+                        │      │                   destination for the outgoing
+                        │      │                   packets which leads to a connectivity breakage and a leakage
+                        │      │                    of the
+                        │      │                   uninitialized stack data to passive network observers.
+                        │      │                   FIPS impact: no
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this CVE as
+                        │      │                   the affected protocol is not implemented in the FIPS
+                        │      │                   module. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs                  
+                        │      │                  ───────
+                        │      │                  CWE-457
+                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 3.7 
+                        │      ├ References                                                                    
+                        │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-88822        
+                        │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
+                        │      │                  329ea4779eadaa8d8fd75                                        
+                        │      │                  https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b77
+                        │      │                  7640050b5257ed2a70e88                                        
+                        │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
+                        │      │                  6f1ad8cbdb986098982f3                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88822              
+                        │      │                                                                               
+                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
+                        │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
+                        ├ [4]  ╭ VulnerabilityID : CVE-2026-88823 
+                        │      ├ PkgID           : libcrypto3@3.5.8-r0 
+                        │      ├ PkgName         : libcrypto3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libcrypto3@3.5.8-r0?arch=x86_64&distro
+                        │      │                  │       =3.24.2 
+                        │      │                  ╰ UID : 4299bba2ba9c96aa 
+                        │      ├ InstalledVersion: 3.5.8-r0 
+                        │      ├ FixedVersion    : 3.5.9-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
+                        │      │                  │         e4c4b714dcfde2a102b5 
+                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
+                        │      │                            23ce36760701b0b7f711 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88823 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:0b9290e36dd54fa792fee9cc58cbfbc45ed6181456a9f9361df4e
+                        │      │                   cc1bda3f1ae 
+                        │      ├ Title           : openssl: OpenSSL: Message authentication bypass via
+                        │      │                   zero-length AAD update 
+                        │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
+                        │      │                   zero-length Additional
+                        │      │                   Authenticated Data (AAD) update as a reset of all the AAD
+                        │      │                   supplied so far,
+                        │      │                   instead of leaving the AAD unchanged. An application that
+                        │      │                   supplies its AAD in
+                        │      │                   several fragments, one of which is empty, therefore produces
+                        │      │                    or verifies
+                        │      │                   messages whose authentication tag does not cover the AAD
+                        │      │                   supplied before
+                        │      │                   the empty fragment.
+                        │      │                   
+                        │      │                   Impact summary: Data an application intended to authenticate
+                        │      │                    alongside a
+                        │      │                   message is silently left unauthenticated. An attacker can
+                        │      │                   forge the AAD of such
+                        │      │                   a message.
+                        │      │                   CWE: CWE-325: Missing Cryptographic Step
+                        │      │                   Description: An application passing AAD in multiple chunks
+                        │      │                   of which some have
+                        │      │                   zero length will have the previous AAD chunks effectively
+                        │      │                   unauthenticated. Also,
+                        │      │                   on context re-initialisation, the AAD was not reset, which
+                        │      │                   meant that any AAD
+                        │      │                   accumulated from the previous context usage were also
+                        │      │                   included in the AAD of the
+                        │      │                   new message.
+                        │      │                   The fix makes a zero-length AAD update a no-op and clears
+                        │      │                   any accumulated AAD
+                        │      │                   whenever the context is re-initialised with a key or a
+                        │      │                   nonce.
+                        │      │                   A re-initialisation that only changes parameters keeps the
+                        │      │                   AAD.
+                        │      │                   FIPS impact: no
+                        │      │                   The FIPS modules are not affected, as AES-GCM-SIV is not a
+                        │      │                   FIPS approved
+                        │      │                   algorithm and is implemented only in the default provider,
+                        │      │                   outside the
+                        │      │                   OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs                  
+                        │      │                  ───────
+                        │      │                  CWE-325
+                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 3.7 
+                        │      ├ References                                                                    
+                        │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-88823        
+                        │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
+                        │      │                  ad768c8e141def4aa1eb4                                        
+                        │      │                  https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b
+                        │      │                  32f8b5c74f73c5773c682                                        
+                        │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
+                        │      │                  6438040a70b0b5e5e0a90                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88823              
+                        │      │                                                                               
+                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
+                        │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
                         ├ [5]  ╭ VulnerabilityID : CVE-2026-107496 
                         │      ├ PkgID           : libssl3@3.5.8-r0 
                         │      ├ PkgName         : libssl3 
@@ -437,8 +472,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:3f2a5467f797c0a6183be67cf86a1c8e5714d1126fde36773a12a
                         │      │                   81980b2e3e6 
-                        │      ├ Title           : Issue summary: Encrypting a CMS message to an EC certificate
-                        │      │                    whose gro ... 
+                        │      ├ Title           : openssl: openssl: Denial of Service via crafted EC
+                        │      │                   certificate in CMS encryption 
                         │      ├ Description     : Issue summary: Encrypting a CMS message to an EC certificate
                         │      │                    whose group order
                         │      │                   is 1 may cause CMS_encrypt() or CMS_encrypt_ex() to loop
@@ -497,177 +532,28 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.9 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-107496       
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
                         │      │                  6eead6747718e6e729ad2                                        
                         │      │                  https://github.com/openssl/openssl/commit/a0051cfe699bf5a047b
                         │      │                  c1c4faef65f80f7987366                                        
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-107496             
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-16T19:17:24.6Z 
-                        ├ [6]  ╭ VulnerabilityID : CVE-2026-88822 
-                        │      ├ PkgID           : libssl3@3.5.8-r0 
-                        │      ├ PkgName         : libssl3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.8-r0?arch=x86_64&distro=3.
-                        │      │                  │       24.2 
-                        │      │                  ╰ UID : f290ab59b88b1c4a 
-                        │      ├ InstalledVersion: 3.5.8-r0 
-                        │      ├ FixedVersion    : 3.5.9-r1 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
-                        │      │                  │         e4c4b714dcfde2a102b5 
-                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
-                        │      │                            23ce36760701b0b7f711 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88822 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:e8eebe6194231a34cec9e7861fc01770df036a819a7e7f9dbf048
-                        │      │                   240ccab4438 
-                        │      ├ Title           : Issue summary: QUIC, when performing automated peer
-                        │      │                   detection, may all ... 
-                        │      ├ Description     : Issue summary: QUIC, when performing automated peer
-                        │      │                   detection, may allow
-                        │      │                   uninitialized stack data to leak into the received address
-                        │      │                   which is then used
-                        │      │                   as the destination for outgoing packets.
-                        │      │                   
-                        │      │                   Impact summary: Applications using QUIC's automated peer
-                        │      │                   detection mechanism
-                        │      │                   may receive an invalid address, leading to connection loss
-                        │      │                   and disclosure of
-                        │      │                   uninitialized stack data to an attacker observing the
-                        │      │                   outgoing network traffic.
-                        │      │                   CWE: CWE-457 (Use of Uninitialized Variable)
-                        │      │                   Description: The OpenSSL QUIC stack contains a feature in
-                        │      │                   which, when using an
-                        │      │                   already connected socket, it will auto-detect the peer
-                        │      │                   address during the SSL
-                        │      │                   handshake.  This feature uses the getpeername() function,
-                        │      │                   passing a buffer of
-                        │      │                   sufficient length to hold any supported address family, but
-                        │      │                   passes a buffer
-                        │      │                   length that is only sized such that larger addresses, such
-                        │      │                   as IPv6, cannot be
-                        │      │                   retrieved. The getpeername() function however, still returns
-                        │      │                    the full address
-                        │      │                   length, which is accepted as the valid input buffer length,
-                        │      │                   leading to the
-                        │      │                   address buffer containing uninitialized stack data instead
-                        │      │                   of the actual peer
-                        │      │                   address. The invalid peer address is then used as
-                        │      │                   destination for the outgoing
-                        │      │                   packets which leads to a connectivity breakage and a leakage
-                        │      │                    of the
-                        │      │                   uninitialized stack data to passive network observers.
-                        │      │                   FIPS impact: no
-                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
-                        │      │                   affected by this CVE as
-                        │      │                   the affected protocol is not implemented in the FIPS
-                        │      │                   module. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs                  
-                        │      │                  ───────
-                        │      │                  CWE-457
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ├ References                                                                    
-                        │      │                  ─────────────────────────────────────────────────────────────
-                        │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
-                        │      │                  329ea4779eadaa8d8fd75                                        
-                        │      │                  https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b77
-                        │      │                  7640050b5257ed2a70e88                                        
-                        │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
-                        │      │                  6f1ad8cbdb986098982f3                                        
-                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
-                        │      │                                                                               
-                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
-                        │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
-                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
-                        ├ [7]  ╭ VulnerabilityID : CVE-2026-88823 
-                        │      ├ PkgID           : libssl3@3.5.8-r0 
-                        │      ├ PkgName         : libssl3 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.8-r0?arch=x86_64&distro=3.
-                        │      │                  │       24.2 
-                        │      │                  ╰ UID : f290ab59b88b1c4a 
-                        │      ├ InstalledVersion: 3.5.8-r0 
-                        │      ├ FixedVersion    : 3.5.9-r1 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
-                        │      │                  │         e4c4b714dcfde2a102b5 
-                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
-                        │      │                            23ce36760701b0b7f711 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88823 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:b96daa3d9b88351563a81e1e2d1b7d7e7f804bb78593fea77e91a
-                        │      │                   508612be6dd 
-                        │      ├ Title           : Issue summary: The AES-GCM-SIV implementation treats a
-                        │      │                   zero-length Add ... 
-                        │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
-                        │      │                   zero-length Additional
-                        │      │                   Authenticated Data (AAD) update as a reset of all the AAD
-                        │      │                   supplied so far,
-                        │      │                   instead of leaving the AAD unchanged. An application that
-                        │      │                   supplies its AAD in
-                        │      │                   several fragments, one of which is empty, therefore produces
-                        │      │                    or verifies
-                        │      │                   messages whose authentication tag does not cover the AAD
-                        │      │                   supplied before
-                        │      │                   the empty fragment.
-                        │      │                   
-                        │      │                   Impact summary: Data an application intended to authenticate
-                        │      │                    alongside a
-                        │      │                   message is silently left unauthenticated. An attacker can
-                        │      │                   forge the AAD of such
-                        │      │                   a message.
-                        │      │                   CWE: CWE-325: Missing Cryptographic Step
-                        │      │                   Description: An application passing AAD in multiple chunks
-                        │      │                   of which some have
-                        │      │                   zero length will have the previous AAD chunks effectively
-                        │      │                   unauthenticated. Also,
-                        │      │                   on context re-initialisation, the AAD was not reset, which
-                        │      │                   meant that any AAD
-                        │      │                   accumulated from the previous context usage were also
-                        │      │                   included in the AAD of the
-                        │      │                   new message.
-                        │      │                   The fix makes a zero-length AAD update a no-op and clears
-                        │      │                   any accumulated AAD
-                        │      │                   whenever the context is re-initialised with a key or a
-                        │      │                   nonce.
-                        │      │                   A re-initialisation that only changes parameters keeps the
-                        │      │                   AAD.
-                        │      │                   FIPS impact: no
-                        │      │                   The FIPS modules are not affected, as AES-GCM-SIV is not a
-                        │      │                   FIPS approved
-                        │      │                   algorithm and is implemented only in the default provider,
-                        │      │                   outside the
-                        │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs                  
-                        │      │                  ───────
-                        │      │                  CWE-325
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ├ References                                                                    
-                        │      │                  ─────────────────────────────────────────────────────────────
-                        │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
-                        │      │                  ad768c8e141def4aa1eb4                                        
-                        │      │                  https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b
-                        │      │                  32f8b5c74f73c5773c682                                        
-                        │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
-                        │      │                  6438040a70b0b5e5e0a90                                        
-                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
-                        │      │                                                                               
-                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
-                        │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
-                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
-                        ├ [8]  ╭ VulnerabilityID : CVE-2026-95691 
+                        ├ [6]  ╭ VulnerabilityID : CVE-2026-95691 
                         │      ├ PkgID           : libssl3@3.5.8-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.8-r0?arch=x86_64&distro=3.
@@ -686,8 +572,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:d41ef57f3c7d7ee24a353bbc3f320c38460caa0ad444bca44c72c
                         │      │                   f5858682a08 
-                        │      ├ Title           : Issue summary: A retransmitted QUIC CRYPTO frame can release
-                        │      │                    packet st ... 
+                        │      ├ Title           : openssl: openssl: Denial of Service via overlapping QUIC
+                        │      │                   CRYPTO frame processing 
                         │      ├ Description     : Issue summary: A retransmitted QUIC CRYPTO frame can release
                         │      │                    packet storage
                         │      │                   while the TLS record layer retains a direct pointer into
@@ -726,21 +612,28 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 5.4 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-95691        
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
                         │      │                  6bb4a00be9ebabd84c2a1                                        
                         │      │                  https://github.com/openssl/openssl/commit/ec9d4de9d03989b29db
                         │      │                  5a3d7efdb4c285deaf386                                        
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-95691              
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-16T20:19:19.43Z 
-                        ├ [9]  ╭ VulnerabilityID : CVE-2026-95692 
+                        ├ [7]  ╭ VulnerabilityID : CVE-2026-95692 
                         │      ├ PkgID           : libssl3@3.5.8-r0 
                         │      ├ PkgName         : libssl3 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.8-r0?arch=x86_64&distro=3.
@@ -759,8 +652,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:57f399099745662d6114cfb492d18f45aab2dd8db538937a7a2dc
                         │      │                   921f8e6fa87 
-                        │      ├ Title           : Issue summary: Setting an AES-GCM-SIV IV shorter than the
-                        │      │                   expected non ... 
+                        │      ├ Title           : openssl: OpenSSL: Denial of Service via out-of-bounds read
+                        │      │                   in AES-GCM-SIV 
                         │      ├ Description     : Issue summary: Setting an AES-GCM-SIV IV shorter than the
                         │      │                   expected nonce
                         │      │                   length via EVP_CipherInit_ex() may trigger a heap
@@ -819,20 +712,197 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 4.8 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-95692        
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
                         │      │                  ef5b3e2d1c021a221b116                                        
                         │      │                  https://github.com/openssl/openssl/commit/510872388f5d145cf87
                         │      │                  0868b3d288a23822cb776                                        
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-95692              
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-16T19:17:54.88Z 
+                        ├ [8]  ╭ VulnerabilityID : CVE-2026-88822 
+                        │      ├ PkgID           : libssl3@3.5.8-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.8-r0?arch=x86_64&distro=3.
+                        │      │                  │       24.2 
+                        │      │                  ╰ UID : f290ab59b88b1c4a 
+                        │      ├ InstalledVersion: 3.5.8-r0 
+                        │      ├ FixedVersion    : 3.5.9-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
+                        │      │                  │         e4c4b714dcfde2a102b5 
+                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
+                        │      │                            23ce36760701b0b7f711 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88822 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:e8eebe6194231a34cec9e7861fc01770df036a819a7e7f9dbf048
+                        │      │                   240ccab4438 
+                        │      ├ Title           : openssl: openssl: Information disclosure via uninitialized
+                        │      │                   memory in QUIC peer detection 
+                        │      ├ Description     : Issue summary: QUIC, when performing automated peer
+                        │      │                   detection, may allow
+                        │      │                   uninitialized stack data to leak into the received address
+                        │      │                   which is then used
+                        │      │                   as the destination for outgoing packets.
+                        │      │                   
+                        │      │                   Impact summary: Applications using QUIC's automated peer
+                        │      │                   detection mechanism
+                        │      │                   may receive an invalid address, leading to connection loss
+                        │      │                   and disclosure of
+                        │      │                   uninitialized stack data to an attacker observing the
+                        │      │                   outgoing network traffic.
+                        │      │                   CWE: CWE-457 (Use of Uninitialized Variable)
+                        │      │                   Description: The OpenSSL QUIC stack contains a feature in
+                        │      │                   which, when using an
+                        │      │                   already connected socket, it will auto-detect the peer
+                        │      │                   address during the SSL
+                        │      │                   handshake.  This feature uses the getpeername() function,
+                        │      │                   passing a buffer of
+                        │      │                   sufficient length to hold any supported address family, but
+                        │      │                   passes a buffer
+                        │      │                   length that is only sized such that larger addresses, such
+                        │      │                   as IPv6, cannot be
+                        │      │                   retrieved. The getpeername() function however, still returns
+                        │      │                    the full address
+                        │      │                   length, which is accepted as the valid input buffer length,
+                        │      │                   leading to the
+                        │      │                   address buffer containing uninitialized stack data instead
+                        │      │                   of the actual peer
+                        │      │                   address. The invalid peer address is then used as
+                        │      │                   destination for the outgoing
+                        │      │                   packets which leads to a connectivity breakage and a leakage
+                        │      │                    of the
+                        │      │                   uninitialized stack data to passive network observers.
+                        │      │                   FIPS impact: no
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this CVE as
+                        │      │                   the affected protocol is not implemented in the FIPS
+                        │      │                   module. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs                  
+                        │      │                  ───────
+                        │      │                  CWE-457
+                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 3.7 
+                        │      ├ References                                                                    
+                        │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-88822        
+                        │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
+                        │      │                  329ea4779eadaa8d8fd75                                        
+                        │      │                  https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b77
+                        │      │                  7640050b5257ed2a70e88                                        
+                        │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
+                        │      │                  6f1ad8cbdb986098982f3                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88822              
+                        │      │                                                                               
+                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
+                        │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
+                        ├ [9]  ╭ VulnerabilityID : CVE-2026-88823 
+                        │      ├ PkgID           : libssl3@3.5.8-r0 
+                        │      ├ PkgName         : libssl3 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/libssl3@3.5.8-r0?arch=x86_64&distro=3.
+                        │      │                  │       24.2 
+                        │      │                  ╰ UID : f290ab59b88b1c4a 
+                        │      ├ InstalledVersion: 3.5.8-r0 
+                        │      ├ FixedVersion    : 3.5.9-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:e2de96513ba9eb53b431787ec8a65cdde380ac4772a3
+                        │      │                  │         e4c4b714dcfde2a102b5 
+                        │      │                  ╰ DiffID: sha256:74d97c428c51a828f9051a7a40a53ff1fc99e54fc303
+                        │      │                            23ce36760701b0b7f711 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88823 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:b96daa3d9b88351563a81e1e2d1b7d7e7f804bb78593fea77e91a
+                        │      │                   508612be6dd 
+                        │      ├ Title           : openssl: OpenSSL: Message authentication bypass via
+                        │      │                   zero-length AAD update 
+                        │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
+                        │      │                   zero-length Additional
+                        │      │                   Authenticated Data (AAD) update as a reset of all the AAD
+                        │      │                   supplied so far,
+                        │      │                   instead of leaving the AAD unchanged. An application that
+                        │      │                   supplies its AAD in
+                        │      │                   several fragments, one of which is empty, therefore produces
+                        │      │                    or verifies
+                        │      │                   messages whose authentication tag does not cover the AAD
+                        │      │                   supplied before
+                        │      │                   the empty fragment.
+                        │      │                   
+                        │      │                   Impact summary: Data an application intended to authenticate
+                        │      │                    alongside a
+                        │      │                   message is silently left unauthenticated. An attacker can
+                        │      │                   forge the AAD of such
+                        │      │                   a message.
+                        │      │                   CWE: CWE-325: Missing Cryptographic Step
+                        │      │                   Description: An application passing AAD in multiple chunks
+                        │      │                   of which some have
+                        │      │                   zero length will have the previous AAD chunks effectively
+                        │      │                   unauthenticated. Also,
+                        │      │                   on context re-initialisation, the AAD was not reset, which
+                        │      │                   meant that any AAD
+                        │      │                   accumulated from the previous context usage were also
+                        │      │                   included in the AAD of the
+                        │      │                   new message.
+                        │      │                   The fix makes a zero-length AAD update a no-op and clears
+                        │      │                   any accumulated AAD
+                        │      │                   whenever the context is re-initialised with a key or a
+                        │      │                   nonce.
+                        │      │                   A re-initialisation that only changes parameters keeps the
+                        │      │                   AAD.
+                        │      │                   FIPS impact: no
+                        │      │                   The FIPS modules are not affected, as AES-GCM-SIV is not a
+                        │      │                   FIPS approved
+                        │      │                   algorithm and is implemented only in the default provider,
+                        │      │                   outside the
+                        │      │                   OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs                  
+                        │      │                  ───────
+                        │      │                  CWE-325
+                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 3.7 
+                        │      ├ References                                                                    
+                        │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-88823        
+                        │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
+                        │      │                  ad768c8e141def4aa1eb4                                        
+                        │      │                  https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b
+                        │      │                  32f8b5c74f73c5773c682                                        
+                        │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
+                        │      │                  6438040a70b0b5e5e0a90                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88823              
+                        │      │                                                                               
+                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
+                        │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
                         ├ [10] ╭ VulnerabilityID : CVE-2026-107891 
                         │      ├ PkgID           : musl@1.2.6-r2 
                         │      ├ PkgName         : musl 
@@ -947,8 +1017,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:fe1f70d3674ab6839763aa0b7967fca536f65079d13f3eabc6c56
                         │      │                   7d01af370fc 
-                        │      ├ Title           : Issue summary: Encrypting a CMS message to an EC certificate
-                        │      │                    whose gro ... 
+                        │      ├ Title           : openssl: openssl: Denial of Service via crafted EC
+                        │      │                   certificate in CMS encryption 
                         │      ├ Description     : Issue summary: Encrypting a CMS message to an EC certificate
                         │      │                    whose group order
                         │      │                   is 1 may cause CMS_encrypt() or CMS_encrypt_ex() to loop
@@ -1007,177 +1077,28 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-835
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N
+                        │      │                           │           /A:H 
+                        │      │                           ╰ V3Score : 5.9 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-107496       
                         │      │                  https://github.com/openssl/openssl/commit/36e15b618decdff1b11
                         │      │                  6eead6747718e6e729ad2                                        
                         │      │                  https://github.com/openssl/openssl/commit/a0051cfe699bf5a047b
                         │      │                  c1c4faef65f80f7987366                                        
                         │      │                  https://github.com/openssl/openssl/commit/a8531368ddb1f86d2a2
                         │      │                  782a8b693926bb67b59e7                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-107496             
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-107496             
                         │      ├ PublishedDate   : 2026-11-10T19:18:02.583Z 
                         │      ╰ LastModifiedDate: 2026-11-16T19:17:24.6Z 
-                        ├ [13] ╭ VulnerabilityID : CVE-2026-88822 
-                        │      ├ PkgID           : openssl@3.5.8-r0 
-                        │      ├ PkgName         : openssl 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.8-r0?arch=x86_64&distro=3.
-                        │      │                  │       24.2 
-                        │      │                  ╰ UID : a9502a5f8f932606 
-                        │      ├ InstalledVersion: 3.5.8-r0 
-                        │      ├ FixedVersion    : 3.5.9-r1 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:f3e2eb3f4758f058ad81c38ff5aaf93c88d65d02e8c2
-                        │      │                  │         db28bd96b8c42d2c0fbf 
-                        │      │                  ╰ DiffID: sha256:7dc0a8014ae2ba40fe5bacf9b675dcd1d79d41b79922
-                        │      │                            bcc928768cbd62601436 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88822 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:d585d66b6b925d79bda10d9756a6ac2613c00ea786278a6740361
-                        │      │                   f052245ea9e 
-                        │      ├ Title           : Issue summary: QUIC, when performing automated peer
-                        │      │                   detection, may all ... 
-                        │      ├ Description     : Issue summary: QUIC, when performing automated peer
-                        │      │                   detection, may allow
-                        │      │                   uninitialized stack data to leak into the received address
-                        │      │                   which is then used
-                        │      │                   as the destination for outgoing packets.
-                        │      │                   
-                        │      │                   Impact summary: Applications using QUIC's automated peer
-                        │      │                   detection mechanism
-                        │      │                   may receive an invalid address, leading to connection loss
-                        │      │                   and disclosure of
-                        │      │                   uninitialized stack data to an attacker observing the
-                        │      │                   outgoing network traffic.
-                        │      │                   CWE: CWE-457 (Use of Uninitialized Variable)
-                        │      │                   Description: The OpenSSL QUIC stack contains a feature in
-                        │      │                   which, when using an
-                        │      │                   already connected socket, it will auto-detect the peer
-                        │      │                   address during the SSL
-                        │      │                   handshake.  This feature uses the getpeername() function,
-                        │      │                   passing a buffer of
-                        │      │                   sufficient length to hold any supported address family, but
-                        │      │                   passes a buffer
-                        │      │                   length that is only sized such that larger addresses, such
-                        │      │                   as IPv6, cannot be
-                        │      │                   retrieved. The getpeername() function however, still returns
-                        │      │                    the full address
-                        │      │                   length, which is accepted as the valid input buffer length,
-                        │      │                   leading to the
-                        │      │                   address buffer containing uninitialized stack data instead
-                        │      │                   of the actual peer
-                        │      │                   address. The invalid peer address is then used as
-                        │      │                   destination for the outgoing
-                        │      │                   packets which leads to a connectivity breakage and a leakage
-                        │      │                    of the
-                        │      │                   uninitialized stack data to passive network observers.
-                        │      │                   FIPS impact: no
-                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
-                        │      │                   affected by this CVE as
-                        │      │                   the affected protocol is not implemented in the FIPS
-                        │      │                   module. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs                  
-                        │      │                  ───────
-                        │      │                  CWE-457
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ├ References                                                                    
-                        │      │                  ─────────────────────────────────────────────────────────────
-                        │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
-                        │      │                  329ea4779eadaa8d8fd75                                        
-                        │      │                  https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b77
-                        │      │                  7640050b5257ed2a70e88                                        
-                        │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
-                        │      │                  6f1ad8cbdb986098982f3                                        
-                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
-                        │      │                                                                               
-                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
-                        │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
-                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
-                        ├ [14] ╭ VulnerabilityID : CVE-2026-88823 
-                        │      ├ PkgID           : openssl@3.5.8-r0 
-                        │      ├ PkgName         : openssl 
-                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.8-r0?arch=x86_64&distro=3.
-                        │      │                  │       24.2 
-                        │      │                  ╰ UID : a9502a5f8f932606 
-                        │      ├ InstalledVersion: 3.5.8-r0 
-                        │      ├ FixedVersion    : 3.5.9-r1 
-                        │      ├ Status          : fixed 
-                        │      ├ Layer            ╭ Digest: sha256:f3e2eb3f4758f058ad81c38ff5aaf93c88d65d02e8c2
-                        │      │                  │         db28bd96b8c42d2c0fbf 
-                        │      │                  ╰ DiffID: sha256:7dc0a8014ae2ba40fe5bacf9b675dcd1d79d41b79922
-                        │      │                            bcc928768cbd62601436 
-                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88823 
-                        │      ├ DataSource       ╭ ID  : alpine 
-                        │      │                  ├ Name: Alpine Secdb 
-                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │      ├ Fingerprint     : sha256:d6250e4429a829434abcc32a0a4b2bb5dd0e23a8ff2b8a0fd9ca3
-                        │      │                   4fd0ca7cf5d 
-                        │      ├ Title           : Issue summary: The AES-GCM-SIV implementation treats a
-                        │      │                   zero-length Add ... 
-                        │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
-                        │      │                   zero-length Additional
-                        │      │                   Authenticated Data (AAD) update as a reset of all the AAD
-                        │      │                   supplied so far,
-                        │      │                   instead of leaving the AAD unchanged. An application that
-                        │      │                   supplies its AAD in
-                        │      │                   several fragments, one of which is empty, therefore produces
-                        │      │                    or verifies
-                        │      │                   messages whose authentication tag does not cover the AAD
-                        │      │                   supplied before
-                        │      │                   the empty fragment.
-                        │      │                   
-                        │      │                   Impact summary: Data an application intended to authenticate
-                        │      │                    alongside a
-                        │      │                   message is silently left unauthenticated. An attacker can
-                        │      │                   forge the AAD of such
-                        │      │                   a message.
-                        │      │                   CWE: CWE-325: Missing Cryptographic Step
-                        │      │                   Description: An application passing AAD in multiple chunks
-                        │      │                   of which some have
-                        │      │                   zero length will have the previous AAD chunks effectively
-                        │      │                   unauthenticated. Also,
-                        │      │                   on context re-initialisation, the AAD was not reset, which
-                        │      │                   meant that any AAD
-                        │      │                   accumulated from the previous context usage were also
-                        │      │                   included in the AAD of the
-                        │      │                   new message.
-                        │      │                   The fix makes a zero-length AAD update a no-op and clears
-                        │      │                   any accumulated AAD
-                        │      │                   whenever the context is re-initialised with a key or a
-                        │      │                   nonce.
-                        │      │                   A re-initialisation that only changes parameters keeps the
-                        │      │                   AAD.
-                        │      │                   FIPS impact: no
-                        │      │                   The FIPS modules are not affected, as AES-GCM-SIV is not a
-                        │      │                   FIPS approved
-                        │      │                   algorithm and is implemented only in the default provider,
-                        │      │                   outside the
-                        │      │                   OpenSSL FIPS module boundary. 
-                        │      ├ Severity        : MEDIUM 
-                        │      ├ CweIDs                  
-                        │      │                  ───────
-                        │      │                  CWE-325
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
-                        │      ├ References                                                                    
-                        │      │                  ─────────────────────────────────────────────────────────────
-                        │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
-                        │      │                  ad768c8e141def4aa1eb4                                        
-                        │      │                  https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b
-                        │      │                  32f8b5c74f73c5773c682                                        
-                        │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
-                        │      │                  6438040a70b0b5e5e0a90                                        
-                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
-                        │      │                                                                               
-                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
-                        │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
-                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
-                        ├ [15] ╭ VulnerabilityID : CVE-2026-95691 
+                        ├ [13] ╭ VulnerabilityID : CVE-2026-95691 
                         │      ├ PkgID           : openssl@3.5.8-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.8-r0?arch=x86_64&distro=3.
@@ -1196,8 +1117,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:c48d8ec10969b5d2d1283fa9c15e4ae257daf7b54660c944a4cd4
                         │      │                   9f8486390c3 
-                        │      ├ Title           : Issue summary: A retransmitted QUIC CRYPTO frame can release
-                        │      │                    packet st ... 
+                        │      ├ Title           : openssl: openssl: Denial of Service via overlapping QUIC
+                        │      │                   CRYPTO frame processing 
                         │      ├ Description     : Issue summary: A retransmitted QUIC CRYPTO frame can release
                         │      │                    packet storage
                         │      │                   while the TLS record layer retains a direct pointer into
@@ -1236,21 +1157,28 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-416
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 5.4 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-95691        
                         │      │                  https://github.com/openssl/openssl/commit/dd90ceb99a3c2ddba33
                         │      │                  6bb4a00be9ebabd84c2a1                                        
                         │      │                  https://github.com/openssl/openssl/commit/ec9d4de9d03989b29db
                         │      │                  5a3d7efdb4c285deaf386                                        
                         │      │                  https://github.com/openssl/openssl/commit/f6244675833e097c242
                         │      │                  9a40d1b206d95385bd42f                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-95691              
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95691              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.377Z 
                         │      ╰ LastModifiedDate: 2026-11-16T20:19:19.43Z 
-                        ├ [16] ╭ VulnerabilityID : CVE-2026-95692 
+                        ├ [14] ╭ VulnerabilityID : CVE-2026-95692 
                         │      ├ PkgID           : openssl@3.5.8-r0 
                         │      ├ PkgName         : openssl 
                         │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.8-r0?arch=x86_64&distro=3.
@@ -1269,8 +1197,8 @@
                         │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
                         │      ├ Fingerprint     : sha256:357077708f942360782d28b5e7b82052281d32535ee1d590d315a
                         │      │                   6f1567235d3 
-                        │      ├ Title           : Issue summary: Setting an AES-GCM-SIV IV shorter than the
-                        │      │                   expected non ... 
+                        │      ├ Title           : openssl: OpenSSL: Denial of Service via out-of-bounds read
+                        │      │                   in AES-GCM-SIV 
                         │      ├ Description     : Issue summary: Setting an AES-GCM-SIV IV shorter than the
                         │      │                   expected nonce
                         │      │                   length via EVP_CipherInit_ex() may trigger a heap
@@ -1329,20 +1257,197 @@
                         │      ├ CweIDs                  
                         │      │                  ───────
                         │      │                  CWE-125
-                        │      ├ VendorSeverity   ─ ubuntu: 2 
+                        │      ├ VendorSeverity   ╭ redhat: 2 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
+                        │      │                           │           /A:L 
+                        │      │                           ╰ V3Score : 4.8 
                         │      ├ References                                                                    
                         │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-95692        
                         │      │                  https://github.com/openssl/openssl/commit/257a3427aa0ef8d9dd2
                         │      │                  ef5b3e2d1c021a221b116                                        
                         │      │                  https://github.com/openssl/openssl/commit/510872388f5d145cf87
                         │      │                  0868b3d288a23822cb776                                        
                         │      │                  https://github.com/openssl/openssl/commit/70a47ac78b6f3be1b22
                         │      │                  fb1551bd0bfcff4f29613                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-95692              
+                        │      │                                                                               
                         │      │                  https://openssl-library.org/news/secadv/20261110.txt         
                         │      │                                                                               
                         │      │                  https://www.cve.org/CVERecord?id=CVE-2026-95692              
                         │      ├ PublishedDate   : 2026-11-10T19:21:39.53Z 
                         │      ╰ LastModifiedDate: 2026-11-16T19:17:54.88Z 
+                        ├ [15] ╭ VulnerabilityID : CVE-2026-88822 
+                        │      ├ PkgID           : openssl@3.5.8-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.8-r0?arch=x86_64&distro=3.
+                        │      │                  │       24.2 
+                        │      │                  ╰ UID : a9502a5f8f932606 
+                        │      ├ InstalledVersion: 3.5.8-r0 
+                        │      ├ FixedVersion    : 3.5.9-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:f3e2eb3f4758f058ad81c38ff5aaf93c88d65d02e8c2
+                        │      │                  │         db28bd96b8c42d2c0fbf 
+                        │      │                  ╰ DiffID: sha256:7dc0a8014ae2ba40fe5bacf9b675dcd1d79d41b79922
+                        │      │                            bcc928768cbd62601436 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88822 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:d585d66b6b925d79bda10d9756a6ac2613c00ea786278a6740361
+                        │      │                   f052245ea9e 
+                        │      ├ Title           : openssl: openssl: Information disclosure via uninitialized
+                        │      │                   memory in QUIC peer detection 
+                        │      ├ Description     : Issue summary: QUIC, when performing automated peer
+                        │      │                   detection, may allow
+                        │      │                   uninitialized stack data to leak into the received address
+                        │      │                   which is then used
+                        │      │                   as the destination for outgoing packets.
+                        │      │                   
+                        │      │                   Impact summary: Applications using QUIC's automated peer
+                        │      │                   detection mechanism
+                        │      │                   may receive an invalid address, leading to connection loss
+                        │      │                   and disclosure of
+                        │      │                   uninitialized stack data to an attacker observing the
+                        │      │                   outgoing network traffic.
+                        │      │                   CWE: CWE-457 (Use of Uninitialized Variable)
+                        │      │                   Description: The OpenSSL QUIC stack contains a feature in
+                        │      │                   which, when using an
+                        │      │                   already connected socket, it will auto-detect the peer
+                        │      │                   address during the SSL
+                        │      │                   handshake.  This feature uses the getpeername() function,
+                        │      │                   passing a buffer of
+                        │      │                   sufficient length to hold any supported address family, but
+                        │      │                   passes a buffer
+                        │      │                   length that is only sized such that larger addresses, such
+                        │      │                   as IPv6, cannot be
+                        │      │                   retrieved. The getpeername() function however, still returns
+                        │      │                    the full address
+                        │      │                   length, which is accepted as the valid input buffer length,
+                        │      │                   leading to the
+                        │      │                   address buffer containing uninitialized stack data instead
+                        │      │                   of the actual peer
+                        │      │                   address. The invalid peer address is then used as
+                        │      │                   destination for the outgoing
+                        │      │                   packets which leads to a connectivity breakage and a leakage
+                        │      │                    of the
+                        │      │                   uninitialized stack data to passive network observers.
+                        │      │                   FIPS impact: no
+                        │      │                   The FIPS modules in 4.0, 3.6, 3.5, 3.4, and 3.0 are not
+                        │      │                   affected by this CVE as
+                        │      │                   the affected protocol is not implemented in the FIPS
+                        │      │                   module. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs                  
+                        │      │                  ───────
+                        │      │                  CWE-457
+                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 3.7 
+                        │      ├ References                                                                    
+                        │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-88822        
+                        │      │                  https://github.com/openssl/openssl/commit/1a73dc590cbad62d6f0
+                        │      │                  329ea4779eadaa8d8fd75                                        
+                        │      │                  https://github.com/openssl/openssl/commit/7b4f5344aa0401e7b77
+                        │      │                  7640050b5257ed2a70e88                                        
+                        │      │                  https://github.com/openssl/openssl/commit/911eee8eb7550b95a20
+                        │      │                  6f1ad8cbdb986098982f3                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88822              
+                        │      │                                                                               
+                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88822              
+                        │      ├ PublishedDate   : 2026-11-10T19:21:34.623Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.693Z 
+                        ├ [16] ╭ VulnerabilityID : CVE-2026-88823 
+                        │      ├ PkgID           : openssl@3.5.8-r0 
+                        │      ├ PkgName         : openssl 
+                        │      ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openssl@3.5.8-r0?arch=x86_64&distro=3.
+                        │      │                  │       24.2 
+                        │      │                  ╰ UID : a9502a5f8f932606 
+                        │      ├ InstalledVersion: 3.5.8-r0 
+                        │      ├ FixedVersion    : 3.5.9-r1 
+                        │      ├ Status          : fixed 
+                        │      ├ Layer            ╭ Digest: sha256:f3e2eb3f4758f058ad81c38ff5aaf93c88d65d02e8c2
+                        │      │                  │         db28bd96b8c42d2c0fbf 
+                        │      │                  ╰ DiffID: sha256:7dc0a8014ae2ba40fe5bacf9b675dcd1d79d41b79922
+                        │      │                            bcc928768cbd62601436 
+                        │      ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88823 
+                        │      ├ DataSource       ╭ ID  : alpine 
+                        │      │                  ├ Name: Alpine Secdb 
+                        │      │                  ╰ URL : https://secdb.alpinelinux.org/ 
+                        │      ├ Fingerprint     : sha256:d6250e4429a829434abcc32a0a4b2bb5dd0e23a8ff2b8a0fd9ca3
+                        │      │                   4fd0ca7cf5d 
+                        │      ├ Title           : openssl: OpenSSL: Message authentication bypass via
+                        │      │                   zero-length AAD update 
+                        │      ├ Description     : Issue summary: The AES-GCM-SIV implementation treats a
+                        │      │                   zero-length Additional
+                        │      │                   Authenticated Data (AAD) update as a reset of all the AAD
+                        │      │                   supplied so far,
+                        │      │                   instead of leaving the AAD unchanged. An application that
+                        │      │                   supplies its AAD in
+                        │      │                   several fragments, one of which is empty, therefore produces
+                        │      │                    or verifies
+                        │      │                   messages whose authentication tag does not cover the AAD
+                        │      │                   supplied before
+                        │      │                   the empty fragment.
+                        │      │                   
+                        │      │                   Impact summary: Data an application intended to authenticate
+                        │      │                    alongside a
+                        │      │                   message is silently left unauthenticated. An attacker can
+                        │      │                   forge the AAD of such
+                        │      │                   a message.
+                        │      │                   CWE: CWE-325: Missing Cryptographic Step
+                        │      │                   Description: An application passing AAD in multiple chunks
+                        │      │                   of which some have
+                        │      │                   zero length will have the previous AAD chunks effectively
+                        │      │                   unauthenticated. Also,
+                        │      │                   on context re-initialisation, the AAD was not reset, which
+                        │      │                   meant that any AAD
+                        │      │                   accumulated from the previous context usage were also
+                        │      │                   included in the AAD of the
+                        │      │                   new message.
+                        │      │                   The fix makes a zero-length AAD update a no-op and clears
+                        │      │                   any accumulated AAD
+                        │      │                   whenever the context is re-initialised with a key or a
+                        │      │                   nonce.
+                        │      │                   A re-initialisation that only changes parameters keeps the
+                        │      │                   AAD.
+                        │      │                   FIPS impact: no
+                        │      │                   The FIPS modules are not affected, as AES-GCM-SIV is not a
+                        │      │                   FIPS approved
+                        │      │                   algorithm and is implemented only in the default provider,
+                        │      │                   outside the
+                        │      │                   OpenSSL FIPS module boundary. 
+                        │      ├ Severity        : LOW 
+                        │      ├ CweIDs                  
+                        │      │                  ───────
+                        │      │                  CWE-325
+                        │      ├ VendorSeverity   ╭ redhat: 1 
+                        │      │                  ╰ ubuntu: 2 
+                        │      ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L
+                        │      │                           │           /A:N 
+                        │      │                           ╰ V3Score : 3.7 
+                        │      ├ References                                                                    
+                        │      │                  ─────────────────────────────────────────────────────────────
+                        │      │                  https://access.redhat.com/security/cve/CVE-2026-88823        
+                        │      │                  https://github.com/openssl/openssl/commit/159e1de0c448d7b9f09
+                        │      │                  ad768c8e141def4aa1eb4                                        
+                        │      │                  https://github.com/openssl/openssl/commit/2f5fc833ff9b5bfe00b
+                        │      │                  32f8b5c74f73c5773c682                                        
+                        │      │                  https://github.com/openssl/openssl/commit/6747b1a278816dd7db4
+                        │      │                  6438040a70b0b5e5e0a90                                        
+                        │      │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88823              
+                        │      │                                                                               
+                        │      │                  https://openssl-library.org/news/secadv/20261110.txt         
+                        │      │                                                                               
+                        │      │                  https://www.cve.org/CVERecord?id=CVE-2026-88823              
+                        │      ├ PublishedDate   : 2026-11-10T19:21:34.847Z 
+                        │      ╰ LastModifiedDate: 2026-11-16T20:19:17.89Z 
                         ├ [17] ╭ VulnerabilityID : CVE-2026-85091 
                         │      ├ PkgID           : zlib@1.3.2-r0 
                         │      ├ PkgName         : zlib 
