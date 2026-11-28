@@ -19,8 +19,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:24976c3657ea9a2c39fa3cb44bd1ad6ed83ee7de355dcd723a9f53
-                        │     │                   53dd994712 
+                        │     ├ Fingerprint     : sha256:22cf183e5c9bc7d4465cea8c81a104a01ee1415f9a8046715e4277
+                        │     │                   5154b404bc 
                         │     ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
                         │     │                   regcomp 
                         │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
@@ -67,8 +67,8 @@
                         │     ├ DataSource       ╭ ID  : alpine 
                         │     │                  ├ Name: Alpine Secdb 
                         │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:c82ff5c7afb1958316aeff00a9b4c1f3dc00ba985ad5f01948ce82
-                        │     │                   13b01b0be9 
+                        │     ├ Fingerprint     : sha256:c54f342a4be394a71850c26b149fc7110618f5fc4ac4ea4fd01345
+                        │     │                   8e4dade53e 
                         │     ├ Title           : musl: musl: Arbitrary code execution via integer overflow in
                         │     │                   regcomp 
                         │     ├ Description     : musl libc before 1.2.7, when an untrusted regular expression
@@ -98,175 +98,7 @@
                         │     │                  https://www.openwall.com/lists/musl/2026/10/21/1              
                         │     ├ PublishedDate   : 2026-11-05T16:17:32.15Z 
                         │     ╰ LastModifiedDate: 2026-11-12T22:09:39.233Z 
-                        ├ [2] ╭ VulnerabilityID : CVE-2026-88964 
-                        │     ├ PkgID           : openvpn@2.7.7-r0 
-                        │     ├ PkgName         : openvpn 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.7.7-r0?arch=x86_64&distro=3.2
-                        │     │                  │       4.4 
-                        │     │                  ╰ UID : bb737c530ca6ed98 
-                        │     ├ InstalledVersion: 2.7.7-r0 
-                        │     ├ FixedVersion    : 2.7.9-r0 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:aa551ea47fb8fac3d0def8b855cd156d02730633a8816
-                        │     │                  │         9c1cf06ca4df19de7cf 
-                        │     │                  ╰ DiffID: sha256:1735cb4d62b474454043c329c152b6b6a3ede04fcb4c1
-                        │     │                            c22e83e46836c641243 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88964 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:8c3fe01b61b143f1d5d3f5de04df1af30661719e61d41ea14fd705
-                        │     │                   53bd305dab 
-                        │     ├ Title           : openvpn: OpenVPN: Denial of Service via crafted domain search
-                        │     │                    options 
-                        │     ├ Description     : An integer underflow in OpenVPN version 2.7_alpha3 through
-                        │     │                   2.7.7 on Windows and Android allows remote authenticated
-                        │     │                   servers to cause a denial of service or memory disclosure via
-                        │     │                    crafted domain search options 
-                        │     ├ Severity        : HIGH 
-                        │     ├ CweIDs                  
-                        │     │                  ───────
-                        │     │                  CWE-125
-                        │     │                  CWE-191
-                        │     ├ VendorSeverity   ─ redhat: 3 
-                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-                        │     │                           │           A:H 
-                        │     │                           ╰ V3Score : 7.1 
-                        │     ├ References                                                                     
-                        │     │                  ──────────────────────────────────────────────────────────────
-                        │     │                  https://access.redhat.com/security/cve/CVE-2026-88964         
-                        │     │                  https://community.openvpn.net/Security%20Announcements/CVE-202
-                        │     │                  6-88964                                                       
-                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88964               
-                        │     │                                                                                
-                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-88964               
-                        │     ├ PublishedDate   : 2026-10-13T23:19:13.687Z 
-                        │     ╰ LastModifiedDate: 2026-10-15T20:38:04.303Z 
-                        ├ [3] ╭ VulnerabilityID : CVE-2026-84790 
-                        │     ├ PkgID           : openvpn@2.7.7-r0 
-                        │     ├ PkgName         : openvpn 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn@2.7.7-r0?arch=x86_64&distro=3.2
-                        │     │                  │       4.4 
-                        │     │                  ╰ UID : bb737c530ca6ed98 
-                        │     ├ InstalledVersion: 2.7.7-r0 
-                        │     ├ FixedVersion    : 2.7.9-r0 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:aa551ea47fb8fac3d0def8b855cd156d02730633a8816
-                        │     │                  │         9c1cf06ca4df19de7cf 
-                        │     │                  ╰ DiffID: sha256:1735cb4d62b474454043c329c152b6b6a3ede04fcb4c1
-                        │     │                            c22e83e46836c641243 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-84790 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:4accbb2576dc4c3905760c7f9d502163e1d22fbfa450f889f67758
-                        │     │                   df38e76d23 
-                        │     ├ Title           : OpenVPN 2.7_alpha1 through 2.7.7 allows remote authenticated
-                        │     │                   users to  ... 
-                        │     ├ Description     : OpenVPN 2.7_alpha1 through 2.7.7 allows remote authenticated
-                        │     │                   users to impersonate others via a crafted certificate subject
-                        │     │                    field 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ CweIDs                  
-                        │     │                  ───────
-                        │     │                  CWE-158
-                        │     │                  CWE-290
-                        │     ├ VendorSeverity   ╭ amazon: 3 
-                        │     │                  ╰ ubuntu: 2 
-                        │     ├ References                                                                     
-                        │     │                  ──────────────────────────────────────────────────────────────
-                        │     │                  https://community.openvpn.net/Security%20Announcements/CVE-202
-                        │     │                  6-84790                                                       
-                        │     │                  https://ubuntu.com/security/notices/USN-8953-1                
-                        │     │                                                                                
-                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-84790               
-                        │     ├ PublishedDate   : 2026-10-13T22:18:58.937Z 
-                        │     ╰ LastModifiedDate: 2026-10-18T14:16:56.797Z 
-                        ├ [4] ╭ VulnerabilityID : CVE-2026-88964 
-                        │     ├ PkgID           : openvpn-auth-pam@2.7.7-r0 
-                        │     ├ PkgName         : openvpn-auth-pam 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.7.7-r0?arch=x86_64&d
-                        │     │                  │       istro=3.24.4 
-                        │     │                  ╰ UID : f8bb922e230d2593 
-                        │     ├ InstalledVersion: 2.7.7-r0 
-                        │     ├ FixedVersion    : 2.7.9-r0 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:aa551ea47fb8fac3d0def8b855cd156d02730633a8816
-                        │     │                  │         9c1cf06ca4df19de7cf 
-                        │     │                  ╰ DiffID: sha256:1735cb4d62b474454043c329c152b6b6a3ede04fcb4c1
-                        │     │                            c22e83e46836c641243 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-88964 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:8f62a598b7aa024b50877a9a7ce5a87a50214b02a927e6eaa3e358
-                        │     │                   043215013d 
-                        │     ├ Title           : openvpn: OpenVPN: Denial of Service via crafted domain search
-                        │     │                    options 
-                        │     ├ Description     : An integer underflow in OpenVPN version 2.7_alpha3 through
-                        │     │                   2.7.7 on Windows and Android allows remote authenticated
-                        │     │                   servers to cause a denial of service or memory disclosure via
-                        │     │                    crafted domain search options 
-                        │     ├ Severity        : HIGH 
-                        │     ├ CweIDs                  
-                        │     │                  ───────
-                        │     │                  CWE-125
-                        │     │                  CWE-191
-                        │     ├ VendorSeverity   ─ redhat: 3 
-                        │     ├ CVSS             ─ redhat ╭ V3Vector: CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/
-                        │     │                           │           A:H 
-                        │     │                           ╰ V3Score : 7.1 
-                        │     ├ References                                                                     
-                        │     │                  ──────────────────────────────────────────────────────────────
-                        │     │                  https://access.redhat.com/security/cve/CVE-2026-88964         
-                        │     │                  https://community.openvpn.net/Security%20Announcements/CVE-202
-                        │     │                  6-88964                                                       
-                        │     │                  https://nvd.nist.gov/vuln/detail/CVE-2026-88964               
-                        │     │                                                                                
-                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-88964               
-                        │     ├ PublishedDate   : 2026-10-13T23:19:13.687Z 
-                        │     ╰ LastModifiedDate: 2026-10-15T20:38:04.303Z 
-                        ├ [5] ╭ VulnerabilityID : CVE-2026-84790 
-                        │     ├ PkgID           : openvpn-auth-pam@2.7.7-r0 
-                        │     ├ PkgName         : openvpn-auth-pam 
-                        │     ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/openvpn-auth-pam@2.7.7-r0?arch=x86_64&d
-                        │     │                  │       istro=3.24.4 
-                        │     │                  ╰ UID : f8bb922e230d2593 
-                        │     ├ InstalledVersion: 2.7.7-r0 
-                        │     ├ FixedVersion    : 2.7.9-r0 
-                        │     ├ Status          : fixed 
-                        │     ├ Layer            ╭ Digest: sha256:aa551ea47fb8fac3d0def8b855cd156d02730633a8816
-                        │     │                  │         9c1cf06ca4df19de7cf 
-                        │     │                  ╰ DiffID: sha256:1735cb4d62b474454043c329c152b6b6a3ede04fcb4c1
-                        │     │                            c22e83e46836c641243 
-                        │     ├ PrimaryURL      : https://avd.aquasec.com/nvd/cve-2026-84790 
-                        │     ├ DataSource       ╭ ID  : alpine 
-                        │     │                  ├ Name: Alpine Secdb 
-                        │     │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                        │     ├ Fingerprint     : sha256:0c9f24577b16ae12640c72f499252c5e468a4619c34f8eb0638b0b
-                        │     │                   2bba361ff8 
-                        │     ├ Title           : OpenVPN 2.7_alpha1 through 2.7.7 allows remote authenticated
-                        │     │                   users to  ... 
-                        │     ├ Description     : OpenVPN 2.7_alpha1 through 2.7.7 allows remote authenticated
-                        │     │                   users to impersonate others via a crafted certificate subject
-                        │     │                    field 
-                        │     ├ Severity        : MEDIUM 
-                        │     ├ CweIDs                  
-                        │     │                  ───────
-                        │     │                  CWE-158
-                        │     │                  CWE-290
-                        │     ├ VendorSeverity   ╭ amazon: 3 
-                        │     │                  ╰ ubuntu: 2 
-                        │     ├ References                                                                     
-                        │     │                  ──────────────────────────────────────────────────────────────
-                        │     │                  https://community.openvpn.net/Security%20Announcements/CVE-202
-                        │     │                  6-84790                                                       
-                        │     │                  https://ubuntu.com/security/notices/USN-8953-1                
-                        │     │                                                                                
-                        │     │                  https://www.cve.org/CVERecord?id=CVE-2026-84790               
-                        │     ├ PublishedDate   : 2026-10-13T22:18:58.937Z 
-                        │     ╰ LastModifiedDate: 2026-10-18T14:16:56.797Z 
-                        ╰ [6] ╭ VulnerabilityID : CVE-2026-4738 
+                        ╰ [2] ╭ VulnerabilityID : CVE-2026-4738 
                               ├ PkgID           : zlib@1.3.2-r1 
                               ├ PkgName         : zlib 
                               ├ PkgIdentifier    ╭ PURL: pkg:apk/alpine/zlib@1.3.2-r1?arch=x86_64&distro=3.24.4 
@@ -282,8 +114,8 @@
                               ├ DataSource       ╭ ID  : alpine 
                               │                  ├ Name: Alpine Secdb 
                               │                  ╰ URL : https://secdb.alpinelinux.org/ 
-                              ├ Fingerprint     : sha256:815487aa4ba4638b38bb84a637955dc12b78c0be533e903bc9415c
-                              │                   ac70e9b312 
+                              ├ Fingerprint     : sha256:30c20302c15cd694b5e1e6db70dd3c0c46fa2ca86133574edfab07
+                              │                   c743679dad 
                               ├ Title           : Improper Restriction of Operations within the Bounds of a
                               │                   Memory Buffe ... 
                               ├ Description     : Improper Restriction of Operations within the Bounds of a
